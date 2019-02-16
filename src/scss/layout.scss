@@ -1,0 +1,29 @@
+.container {
+  min-height: 30vh;
+}
+
+.section-margin {
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .text-content, .header-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .full-size-button {
+    width: 90%;
+  }
+
+  .contact-size-button {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .text-content, .header-content {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+}

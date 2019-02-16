@@ -1,0 +1,40 @@
+@import 'variables';
+
+*::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+*::-webkit-scrollbar-thumb:vertical {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0, 0, 0, 0.61);
+  -webkit-border-radius: 100px;
+}
+
+*::-webkit-scrollbar {
+  width: .4em;
+  overflow: visible;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  opacity: 0;
+  -webkit-transition: all .5s;
+}
+
+*::-webkit-scrollbar-thumb {
+  overflow: visible;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, .2);
+}
+
+.header-image {
+  background: url('#{$ASSET_BASE_PATH}/website-header-backdrops/home.png') no-repeat scroll center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 40vh;
+}

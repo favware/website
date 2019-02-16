@@ -1,0 +1,30 @@
+<div [class.is-mobile]="isSmall" class="container">
+    <mat-toolbar class="toolbar" color="primary">
+        <mat-toolbar-row>
+            <button (click)="drawer.toggle()" aria-label="Toggle sidenav" mat-icon-button type="button">
+                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            <h1 class="app-name">Favware</h1>
+
+            <span class="button-align-right"></span>
+        </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-sidenav-container [style.marginTop.px]="isSmall ? 56 : 0" class="sidenav-container">
+        <mat-sidenav #drawer [disableClose]="isSidenavClosable" [fixedInViewport]="isFixedInViewport"
+                     [mode]="sidenavMode"
+                     [opened]="isSidenavOpen" autoFocus fixedTopGap="56" role="navigation">
+            <mat-nav-list>
+                <p (click)="isSidenavClosable ? drawer.toggle() : null" *ngFor="let item of items">
+                    <a [routerLink]="item.routerLink" mat-list-item>
+                        <img [alt]="item.label + 'logo'" [src]="item.image" class="sidenav-item-image"/>
+                        {{item.label | titlecase }}
+                    </a>
+                </p>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

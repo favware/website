@@ -1,0 +1,208 @@
+[
+  {
+    "id": "module:ability",
+    "longname": "module:ability",
+    "name": "ability",
+    "kind": "module",
+    "description": "AbilityIntent - Gets information on an ability",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "SpeechValue"
+          ]
+        },
+        "description": "The name of the ability you want to find",
+        "name": "AbilityName"
+      }
+    ],
+    "examples": [
+      "ability multiscale",
+      "ability pressure"
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Speech"
+          ]
+        },
+        "description": "Voice Assistant will give the data on the requested ability"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "abilityintent.js",
+      "path": "E:\\UserFiles\\DevProjects\\dexa-google\\functions\\intents"
+    },
+    "preserveName": true,
+    "order": 0
+  },
+  {
+    "id": "module:dex",
+    "longname": "module:dex",
+    "name": "dex",
+    "kind": "module",
+    "description": "DexIntent - Gets information on a pokemon",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "SpeechValue"
+          ]
+        },
+        "description": "The name of the pokemon you want to find",
+        "name": "PokemonName"
+      }
+    ],
+    "examples": [
+      "pokemon dragonite",
+      "data on pikachu"
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Speech"
+          ]
+        },
+        "description": "Voice Assistant will give the data on the requested pokemon"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "dexintent.js",
+      "path": "E:\\UserFiles\\DevProjects\\dexa-google\\functions\\intents"
+    },
+    "preserveName": true,
+    "order": 1
+  },
+  {
+    "id": "module:item",
+    "longname": "module:item",
+    "name": "item",
+    "kind": "module",
+    "description": "ItemIntent - Gets information about an item",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "SpeechValue"
+          ]
+        },
+        "description": "The name of the item you want to find",
+        "name": "ItemName"
+      }
+    ],
+    "examples": [
+      "item life orb",
+      "item assault vest"
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Speech"
+          ]
+        },
+        "description": "Voice Assistant will give the data on the requested item"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "itemintent.js",
+      "path": "E:\\UserFiles\\DevProjects\\dexa-google\\functions\\intents"
+    },
+    "preserveName": true,
+    "order": 2
+  },
+  {
+    "id": "module:move",
+    "longname": "module:move",
+    "name": "move",
+    "kind": "module",
+    "description": "MoveIntent - Gets information on a move",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "SpeechValue"
+          ]
+        },
+        "description": "The name of the move you want to find",
+        "name": "MoveName"
+      }
+    ],
+    "examples": [
+      "move dragon dance",
+      "move extreme speed",
+      "move swords dance"
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Speech"
+          ]
+        },
+        "description": "Voice Assistant will give the data on the requested move"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "moveintent.js",
+      "path": "E:\\UserFiles\\DevProjects\\dexa-google\\functions\\intents"
+    },
+    "preserveName": true,
+    "order": 3
+  },
+  {
+    "id": "module:type",
+    "longname": "module:type",
+    "name": "type",
+    "kind": "module",
+    "description": "TypeIntent - Get the type matchup of any one or two types",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "SpeechValue"
+          ]
+        },
+        "description": "The name of the type you want to know the matchups for",
+        "name": "Type"
+      },
+      {
+        "type": {
+          "names": [
+            "SpeechValue"
+          ]
+        },
+        "optional": true,
+        "description": "An optional secondary type to go along with the first one",
+        "name": "SecondType"
+      }
+    ],
+    "examples": [
+      "type dragon",
+      "type fire water"
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Speech"
+          ]
+        },
+        "description": "Voice Assistant will give the type matchups of the request"
+      }
+    ],
+    "meta": {
+      "lineno": 1,
+      "filename": "typeintent.js",
+      "path": "E:\\UserFiles\\DevProjects\\dexa-google\\functions\\intents"
+    },
+    "preserveName": true,
+    "order": 4
+  }
+]

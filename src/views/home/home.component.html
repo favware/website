@@ -1,0 +1,48 @@
+<section>
+    <div class="container header-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
+         fxLayoutGap="0.5%">
+        <div class="center-text">
+            <h1 class="mat-display-2 header-text">{{headerTile.header}}</h1>
+            <h2 class="mat-h1 header-text">{{headerTile.subheader}}</h2>
+            <h3 class="mat-h2">{{headerTile.text}}</h3>
+        </div>
+    </div>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around" fxLayoutGap="0.5%">
+        <div>
+            <h1 class="mat-h1 center-text">{{aboutTile.header}}</h1>
+            <p *ngFor="let section of aboutTile.text" class="mat-h4 text-content" fxFlexAlign="stretch">{{section}}</p>
+        </div>
+    </div>
+
+    <div class="project-card-layout section-margin" fxLayout="row wrap" fxLayout.xs="column"
+         fxLayoutAlign="center center">
+        <div *ngFor="let card of projectsTile.cards">
+            <mat-card class="project-card">
+                <mat-card-header>
+                    <img [alt]="card.header.imageAlt" [src]="card.header.avatar" mat-card-avatar/>
+                    <mat-card-title>{{card.header.title}}</mat-card-title>
+                    <mat-card-subtitle>{{card.header.subtitle}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    {{card.content}}
+                </mat-card-content>
+                <mat-card-actions>
+                    <div *ngFor="let action of card.actions" style="display: inline-flex">
+                        <ng-container *ngIf="action.outer; else interalAction">
+                            <a [href]="action.link" [target]="action.link.startsWith('mailto') ? '_self' : '_blank'">
+                                <button mat-button>{{action.label | cardActionCase}}</button>
+                            </a>
+                        </ng-container>
+
+                        <ng-template #interalAction>
+                            <a [routerLink]="action.link">
+                                <button mat-button>{{action.label | cardActionCase}}</button>
+                            </a>
+                        </ng-template>
+                    </div>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</section>
