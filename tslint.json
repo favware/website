@@ -63,7 +63,7 @@
     "no-misused-new": true,
     "no-non-null-assertion": true,
     "no-null-keyword": false,
-    "no-object-literal-type-assertion": true,
+    "no-object-literal-type-assertion": false,
     "no-redundant-jsdoc": true,
     "no-reference": true,
     "no-require-imports": true,

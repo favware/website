@@ -16,13 +16,14 @@ import {
     ConverterComponent,
     DexaComponent,
     HomeComponent,
+    MilkylintComponent,
     QuerystringComponent,
     RibbonComponent,
-    RibbonzoneComponent,
     SeedcheckComponent,
-    SentienceComponent,
     TavaComponent,
     UnescapeComponent,
+    YamlreaderComponent,
+    ZalgoComponent,
 } from './views';
 
 @NgModule({
@@ -31,8 +32,6 @@ import {
         HomeComponent,
         RibbonComponent,
         ExtractTextPipe,
-        RibbonzoneComponent,
-        SentienceComponent,
         DexaComponent,
         SeedcheckComponent,
         ConvertbotComponent,
@@ -45,7 +44,10 @@ import {
         ConverterComponent,
         RibbonDocsTableComponent,
         DexaDocsTableComponent,
-        CardActionCasePipe
+        CardActionCasePipe,
+        MilkylintComponent,
+        YamlreaderComponent,
+        ZalgoComponent
     ],
     imports: [
         BrowserModule,

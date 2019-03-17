@@ -8,13 +8,14 @@ import {
     ConverterComponent,
     DexaComponent,
     HomeComponent,
+    MilkylintComponent,
     QuerystringComponent,
     RibbonComponent,
-    RibbonzoneComponent,
     SeedcheckComponent,
-    SentienceComponent,
     TavaComponent,
-    UnescapeComponent
+    UnescapeComponent,
+    YamlreaderComponent,
+    ZalgoComponent
 } from '../views';
 import { ASSET_BASE_PATH, DEXA_SKILL_URL, DISCORD_SERVER_URL, RIBBON_INVITE_URL } from './constants';
 import { RedirectGuard } from './redirectguard.guard';
@@ -44,28 +45,6 @@ const routes: Routes = [
                         description: 'Awesome Discord Bot!',
                         'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/ribbon.png`,
                         'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/ribbon.png`,
-                    },
-                },
-            },
-            {
-                path: 'ribbonzone',
-                component: RibbonzoneComponent,
-                data: {
-                    meta: {
-                        title: 'RibbonZone',
-                        description: 'Cute Block Simulator!',
-                        'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/ribbonzone.png`,
-                        'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/ribbonzone.png`,
-                    },
-                },
-            },
-            {
-                path: 'sentience',
-                component: SentienceComponent,
-                data: {
-                    meta: {
-                        title: 'Sentience',
-                        description: 'Watch out for CyberDyne Systems!',
                     },
                 },
             },
@@ -180,6 +159,46 @@ const routes: Routes = [
                 },
             },
             {
+                path: 'milkylint',
+                component: MilkylintComponent,
+                data: {
+                    meta: {
+                        title: 'Milky-TSLint',
+                        description: 'TypeScript linter plugin for Gulp',
+                    },
+                },
+            },
+            {
+                path: 'milky-tslint',
+                component: MilkylintComponent,
+                data: {
+                    meta: {
+                        title: 'Milky-TSLint',
+                        description: 'TypeScript linter plugin for Gulp',
+                    },
+                },
+            },
+            {
+                path: 'yamlreader',
+                component: YamlreaderComponent,
+                data: {
+                    meta: {
+                        title: 'Awesome YAML Reader',
+                        description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
+                    },
+                },
+            },
+            {
+                path: 'zalgo',
+                component: ZalgoComponent,
+                data: {
+                    meta: {
+                        title: 'Awesome Zalgo',
+                        description: 'Unleash and banish the Zalgo Monster!',
+                    },
+                },
+            },
+            {
                 path: 'contact',
                 component: ContactComponent,
                 data: {
@@ -189,7 +208,6 @@ const routes: Routes = [
                     },
                 },
             },
-            { path: 'redirect/zone', component: RibbonzoneComponent },
             { path: 'redirect/server', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: DISCORD_SERVER_URL } },
             { path: 'redirect/ribbon', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: RIBBON_INVITE_URL } },
             { path: 'redirect/dexa', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: DEXA_SKILL_URL } },

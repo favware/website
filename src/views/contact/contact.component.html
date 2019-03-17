@@ -11,10 +11,10 @@
          fxLayoutGap.xs="8%">
         <div *ngFor="let method of contactMethods" fxFill fxFlex="grow" fxFlexAlign="center">
             <a [href]="method.link" [target]="method.link.startsWith('mailto') ? '_self' : '_blank'">
-                <button [color]="method.color" mat-fab>
+                <button mat-button [color]="method.color" mat-fab>
                     <mat-icon [svgIcon]="method.logo" class="fab-icon"></mat-icon>
                 </button>
-                <button [color]="method.color" class="contact-size-button" mat-raised-button>
+                <button mat-button [color]="method.color" class="contact-size-button" mat-raised-button>
                     {{method.contact | uppercase}}
                 </button>
             </a>

@@ -29,6 +29,7 @@
 *.log
 *.stackdump
 .firebase/
+firebase-cors.json
 
 # System Files
 .DS_Store

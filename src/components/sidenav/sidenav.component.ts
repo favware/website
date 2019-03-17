@@ -28,16 +28,6 @@ export class SidenavComponent implements OnInit {
             image: `${ASSET_BASE_PATH}/website-project-icons/ribbon.png`,
         },
         {
-            routerLink: '/ribbonzone',
-            label: 'RibbonZone',
-            image: `${ASSET_BASE_PATH}/website-project-icons/ribbonzone.png`,
-        },
-        {
-            routerLink: '/sentience',
-            label: 'Sentience',
-            image: `${ASSET_BASE_PATH}/website-project-icons/sentience.png`,
-        },
-        {
             routerLink: '/dexa',
             label: 'Dexa',
             image: `${ASSET_BASE_PATH}/website-project-icons/dexa.png`,
@@ -76,6 +66,26 @@ export class SidenavComponent implements OnInit {
             routerLink: '/converter',
             label: 'Awesome Converter',
             image: `${ASSET_BASE_PATH}/website-project-icons/converter.png`,
+        },
+        {
+            routerLink: '/milkylint',
+            label: 'Milky TSLint',
+            image: `${ASSET_BASE_PATH}/website-project-icons/milkylint-square.png`,
+        },
+        {
+            routerLink: '/yamlreader',
+            label: 'Awesome YAML Reader',
+            image: `${ASSET_BASE_PATH}/website-project-icons/awesome-yaml-reader.png`,
+        },
+        {
+            routerLink: '/zalgo',
+            label: 'Awesome Zalgo',
+            image: `${ASSET_BASE_PATH}/website-project-icons/zalgo.png`,
+        },
+        {
+            routerLink: '/crypto',
+            label: 'Awesome Crypto',
+            image: `${ASSET_BASE_PATH}/website-project-icons/crypto.png`,
         },
         {
             routerLink: '/contact',
