@@ -50,7 +50,7 @@ export class HomeComponent {
                     Currently ${moment().diff('1995-02-21', 'years')} years old I am a developer hailing from The Netherlands.
                     Ever since I was a boy I have been a tech enthusiast with my main focus being the software side of the ICT.
                     While attending high school my first choice of optional subject was Informatics and this quickly showed to be my calling.
-                    After I graduated from High School I had no seconds thoughts about my next step - Software Engineering at a University.
+                    After I graduated from high school I had no seconds thoughts about my next step - Software Engineering at a University.
                     The university of choice ended up being The Hague University of Applied Sciences.
                     After 5 years attending this university I obtained my Bachelor of IT in the summer of 2019. At the time of writing I am
                     working for CGI Inc. in The Netherlands as a Frontend Software Engineer`,
