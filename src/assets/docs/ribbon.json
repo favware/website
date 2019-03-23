@@ -921,11 +921,11 @@
     "order": 27
   },
   {
-    "id": "module:yarn",
-    "longname": "module:yarn",
-    "name": "yarn",
+    "id": "module:mdn",
+    "longname": "module:mdn",
+    "name": "mdn",
     "kind": "module",
-    "description": "Docs MDNCommand - Responds with JS documentation pulled from Mozilla Developer Network\n\n**Aliases**: `npm`, `npm-package`",
+    "description": "Docs MDNCommand - Responds with JS documentation pulled from Mozilla Developer Network\n\n**Aliases**: `mozilla`, `moz`",
     "params": [
       {
         "type": {
@@ -933,8 +933,8 @@
             "string"
           ]
         },
-        "description": "The package to find",
-        "name": "pkg"
+        "description": "The property or prototype to find on MDN",
+        "name": "prop"
       }
     ],
     "meta": {
@@ -944,7 +944,7 @@
     },
     "preserveName": true,
     "examples": [
-      "yarn awesome-querystring"
+      "mdn map"
     ],
     "category": "docs",
     "order": 28

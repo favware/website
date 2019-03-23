@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
 import { CardActionCasePipe, MaterialModule, RedirectGuard } from 'src/util';
@@ -19,7 +19,6 @@ describe('HomeComponent', () => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule, KarmaRoutingModule ],
       declarations: [ HomeComponent, CardActionCasePipe ],
-      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
       providers: [RedirectGuard],
     })
     .compileComponents();

@@ -1,3 +1,21 @@
+@import '../../scss/variables';
+
+.header-dexa-text {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.header-dexa-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('#{$ASSET_BASE_PATH}/website-header-backdrops/dexa.png') no-repeat scroll center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 95vh;
+}
+
+.about-dexa-text {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
 favware-dexa-docs-table {
   width: 80%;
   margin: 20px auto;

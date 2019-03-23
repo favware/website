@@ -1,8 +1,7 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MaterialModule, MatIconService } from 'src/util';
 import { ContactComponent } from './contact.component';
-import { HttpClientModule } from '@angular/common/http';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -12,7 +11,6 @@ describe('ContactComponent', () => {
     TestBed.configureTestingModule({
         imports: [ MaterialModule, HttpClientModule ],
         declarations: [ContactComponent],
-        schemas: [CUSTOM_ELEMENTS_SCHEMA],
         providers: [MatIconService],
       })
       .compileComponents();

@@ -1,4 +1,7 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { ChangeATargetPipe, MaterialModule } from 'src/util';
 import { DexaComponent } from './dexa.component';
 
 describe('DexaComponent', () => {
@@ -7,7 +10,17 @@ describe('DexaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DexaComponent ],
+      imports: [
+        MaterialModule,
+        MarkdownModule.forRoot({
+          markedOptions: {
+            provide: MarkedOptions,
+            useValue: { gfm: true, tables: true, sanitize: true, smartLists: true, langPrefix: 'ts' },
+          },
+        })
+      ],
+      declarations: [ DexaComponent, ChangeATargetPipe ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     })
     .compileComponents();
   }));

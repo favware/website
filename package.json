@@ -20,11 +20,10 @@
     "postbuild": "concurrently \"rimraf dist/3rdpartylicenses.txt\" \"copyfiles -f ./src/config/robots.txt ./dist/\"",
     "deploy": "yarn build --prod && firebase deploy",
     "lint": "ng lint",
-    "e2e": "ng e2e",
     "firebase:serve": "firebase serve"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   },
   "private": true,
   "dependencies": {
@@ -56,10 +55,12 @@
     "@angular/cli": "^7.3.6",
     "@angular/compiler-cli": "^7.2.9",
     "@angular/language-service": "^7.2.9",
+    "@types/common-tags": "^1.8.0",
     "@types/jasmine": "^3.3.10",
     "@types/jasminewd2": "^2.0.6",
+    "@types/jest": "^24.0.11",
     "@types/node": "^11.11.3",
-    "codelyzer": "~5.0.0-beta.1",
+    "codelyzer": "~4.5.0",
     "concurrently": "^4.1.0",
     "copyfiles": "^2.1.0",
     "jasmine-core": "~3.3.0",
@@ -69,7 +70,6 @@
     "karma-coverage-istanbul-reporter": "~2.0.5",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
-    "protractor": "~5.4.2",
     "ts-node": "~8.0.3",
     "tslint": "~5.14.0",
     "typescript": "~3.2.2"
