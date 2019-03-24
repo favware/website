@@ -9,7 +9,7 @@ import { AWESOME_QUERYSTRING_GITHUB, AWESOME_QUERYSTRING_YARN, ICodeTile, IPrima
 export class QuerystringComponent {
   public readonly headerTile: IPrimaryTile = {
     header: 'Awesome Querystring',
-    subheader: 'Querystring that is robust in its working yet remains awesome to TypeScript users',
+    subheader: 'Robust and awesome querystring',
     buttons: [
       {
         text: 'yarn add awesome-querystring',
