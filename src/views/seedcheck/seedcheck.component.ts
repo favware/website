@@ -69,7 +69,7 @@ export class SeedcheckComponent {
     ],
   };
 
-  public slides: Array<{ url: string }> = [
+  public readonly slides: Array<{ url: string }> = [
     { url: '/assets/screenshots/seedcheck/base.png' },
     { url: '/assets/screenshots/seedcheck/noseed.png' },
     { url: '/assets/screenshots/seedcheck/seed.png' }
@@ -84,10 +84,10 @@ export class SeedcheckComponent {
     hideIndicators: false,
     color: 'warn',
     maxWidth: 'auto',
-    proportion: 45,
+    proportion: 35,
     slides: this.slides.length,
     overlayColor: '#00000040',
-    hideOverlay: false,
+    hideOverlay: true,
     useKeyboard: true,
     useMouseWheel: true,
     orientation: 'ltr',
