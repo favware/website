@@ -36,7 +36,8 @@
     </div>
   </div>
 
-  <div class="section-margin last-section" fxFlexFill fxLayout="row" fxLayout.xs="row" fxLayoutAlign="center space-around"
+  <div class="section-margin last-section" fxFlexFill fxLayout="row" fxLayout.xs="row"
+       fxLayoutAlign="center space-around"
        fxLayoutGap="0.5%">
 
     <div fxFlex="70" fxFlex.xs="80">
@@ -59,16 +60,8 @@
           *ngFor="let slide of slides"
           [hideOverlay]="carousel.hideOverlay"
           [overlayColor]="carousel.overlayColor"
-          [image]="slide.url"
-        >
-
-
-        </mat-carousel-slide>
-
-
+          [image]="slide.url"></mat-carousel-slide>
       </mat-carousel>
     </div>
-
   </div>
-
 </section>

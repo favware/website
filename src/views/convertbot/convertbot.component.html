@@ -26,6 +26,7 @@
        fxLayoutGap="0.5%">
     <div>
       <h1 class="mat-display-1 text-content">{{notesTile.header}}</h1>
+      <h2 class="mat-h2 text-content">{{notesTile.subheader}}</h2>
       <p *ngFor="let section of notesTile.text" [innerHTML]="section | markdown"
          class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
@@ -55,16 +56,8 @@
           *ngFor="let slide of slides"
           [hideOverlay]="carousel.hideOverlay"
           [overlayColor]="carousel.overlayColor"
-          [image]="slide.url"
-        >
-
-
-        </mat-carousel-slide>
-
-
+          [image]="slide.url"></mat-carousel-slide>
       </mat-carousel>
     </div>
-
   </div>
-
 </section>
