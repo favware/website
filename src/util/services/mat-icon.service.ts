@@ -65,5 +65,20 @@ export class MatIconService {
       'mat-youtube-icon',
       this.domSanitizer.bypassSecurityTrustResourceUrl(`${ASSET_BASE_PATH}/website-social-media-fabs/youtube.svg`)
     );
+
+    this.matIconRegistry.addSvgIcon(
+      'mat-tava-puzzle-icon',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`${ASSET_BASE_PATH}/website-svgs/icon-puzzle.svg`)
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'mat-tava-star-icon',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`${ASSET_BASE_PATH}/website-svgs/icon-star.svg`)
+    );
+
+    this.matIconRegistry.addSvgIcon(
+      'mat-tava-temple-icon',
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`${ASSET_BASE_PATH}/website-svgs/icon-temple.svg`)
+    );
   }
 }

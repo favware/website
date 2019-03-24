@@ -1,3 +1,77 @@
-<p>
-  TaVa Page is a Work In Progress
-</p>
+<section>
+  <div class="container header-tava-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
+       fxLayoutGap="0.5%">
+    <div class="center-text">
+      <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
+      <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
+      <p *ngFor="let button of headerTile.buttons" class="header-button">
+        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
+          <button [color]="button.color" class="full-size-button"
+                  mat-raised-button>{{button.text | uppercase}}</button>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section-margin">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
+         fxLayoutGap="0.5%">
+      <div>
+        <h1 class="mat-display-1 center-text tava-smallmargin-header">{{gameTileHeader.header | uppercase }}</h1>
+        <h2 class="mat-h2 center-text">{{gameTileHeader.subheader}}</h2>
+      </div>
+    </div>
+
+    <div fxFlexFill fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around" fxLayoutGap="0.5%"
+         class="tava-about-section">
+      <div fxFlex="40" fxFlex.xs="55" class="center-text" *ngFor="let tile of gameTile">
+        <mat-icon [svgIcon]="tile.icon" class="fab-icon center-text tava-icon"></mat-icon>
+        <h1 class="mat-display-1 center-text tava-smallmargin-header">{{tile.header | titlecase}}</h1>
+        <p class="mat-h3 center-text tava-smallpadding-inset">{{tile.description}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-margin">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
+         fxLayoutGap="0.5%">
+      <div>
+        <h1 class="mat-display-1 center-text tava-smallmargin-header">{{mediaTileHeader.header | uppercase }}</h1>
+      </div>
+    </div>
+
+    <div fxFlexFill fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around" fxLayoutGap="0.5%"
+         class="tava-about-section">
+      <div fxFlex="40" fxFlex.xs="55" class="center-text" *ngFor="let tile of mediaTile">
+        <img [src]="tile.icon" [alt]="tile.alt" class="tava-media-image"/>
+        <h1 class="mat-display-1 center-text tava-smallmargin-header">{{tile.header | titlecase}}</h1>
+        <p class="mat-h3 center-text tava-smallpadding-inset">{{tile.description}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-margin">
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
+         fxLayoutGap="0.5%">
+      <div>
+        <h1 class="mat-display-1 center-text tava-smallmargin-header">{{teamTileHeader.header | uppercase }}</h1>
+      </div>
+    </div>
+
+    <div fxFlexFill fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around" fxLayoutGap="0.5%"
+         class="tava-about-section">
+      <div fxFlex="40" fxFlex.xs="55" class="center-text" *ngFor="let tile of teamTileFirstLine">
+        <img [src]="tile.icon" [alt]="tile.alt" class="tava-team-image"/>
+        <h1 class="mat-display-1 center-text tava-smallmargin-header">{{tile.header | titlecase}}</h1>
+      </div>
+    </div>
+
+    <div fxFlexFill fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around" fxLayoutGap="0.5%"
+         class="tava-about-section">
+      <div fxFlex="40" fxFlex.xs="55" class="center-text" *ngFor="let tile of teamTileSecondLine">
+        <img [src]="tile.icon" [alt]="tile.alt" class="tava-team-image"/>
+        <h1 class="mat-display-1 center-text tava-smallmargin-header">{{tile.header | titlecase}}</h1>
+      </div>
+    </div>
+  </div>
+</section>

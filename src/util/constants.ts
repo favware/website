@@ -14,6 +14,8 @@ export const CONVERTBOT_GITHUB_URL = 'https://www.github.com/favna/convertbot';
 
 export const CATCHCALC_GITHUB_URL = 'https://www.github.com/favna/catchcalc';
 
+export const TAVA_SITE = 'http://tavagame.com';
+
 export const UNESCAPE_YARN = 'https://yarnpkg.com/en/package/unescape-es6';
 export const UNESCAPE_GITHUB = 'https://www.github.com/favna/unescape-es6';
 

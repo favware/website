@@ -42,6 +42,12 @@ export interface IPrimaryTile extends ITile {
   buttons?: IButtonData[];
 }
 
+export interface ITavaTile extends ITile {
+  icon: string;
+  alt?: string;
+  description: string;
+}
+
 export interface IProjectTile extends ITile {
   cards: ICard[];
 }
