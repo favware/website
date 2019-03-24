@@ -54,9 +54,9 @@ export class CatchcalcComponent {
       '_Step 4_',
       'Enter the maximum possible HP for Maximum HP',
       '_Step 5_',
-      'Ideally the `Current HP` will be 1, that is if you used False Swipe or Hold Back. If not then you are going have to make a guess and I cannot help here',
+      'Ideally the **Current HP** will be 1, that is if you used False Swipe or Hold Back. If not then you are going have to make a guess and I cannot help here',
       '_Step 6_',
-      'Set all your other variables if applicable then press the `Calculate chance to catch` button to have the program do its magic!'
+      'Set all your other variables if applicable then press the **Calculate chance to catch** button to have the program do its magic!'
     ],
   };
 
@@ -65,7 +65,7 @@ export class CatchcalcComponent {
     subheader: '',
     text: [
       '_**Q:** It doesn\'t start!_',
-      '**A:** Make sure you have associated the .jar extension with Java. To do so right click the program then `open with` and then select the `Java platform.`',
+      '**A:** Make sure you have associated the .jar extension with Java. To do so right click the program then **open with** and then select the **Java platform.**',
       '_**Q:** I can\'t find the Java platform in the list!_',
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
     ],

@@ -1,3 +1,32 @@
-<p>
-  Unescape Page is a Work In Progress
-</p>
+<section>
+  <div class="container header-small-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
+       fxLayoutGap="0.5%">
+    <div class="center-text">
+      <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
+      <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
+      <p *ngFor="let button of headerTile.buttons" class="header-button">
+        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
+          <button [color]="button.color" [disabled]="button.disabled" class="full-size-button" [class.mat-disabled]="button.disabled"
+                  mat-raised-button>{{button.text | uppercase}}</button>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section-margin" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
+       fxLayoutGap="0.5%">
+    <div>
+      <h1 class="mat-display-1 center-text">{{usageTile.header}}</h1>
+      <markdown ngPreserveWhitespaces [src]="usageTile.codeFile"></markdown>
+    </div>
+  </div>
+  
+    <div class="section-margin" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
+       fxLayoutGap="0.5%">
+    <div class="wide-table">
+      <h1 class="mat-display-1 center-text">{{characterTile.header}}</h1>
+      <h2 class="mat-h1 center-text">{{characterTile.subheader}}</h2>
+      <markdown>{{ characterTile.text[0] }}</markdown>
+    </div>
+  </div>
+</section>

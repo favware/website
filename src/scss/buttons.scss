@@ -11,6 +11,17 @@
   }
 }
 
+.mat-yarn {
+  background-color: $yarn-blue;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($yarn-blue, 5%) !important;
+  }
+}
+
 .mat-mail {
   background-color: $mail-greyish;
   color: $white;
@@ -117,6 +128,14 @@
     &:focus,
     &:active {
       background-color: lighten($secondary-color, 5%) !important;
+    }
+  }
+
+  &.mat-disabled {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: rgba(255, 255, 255, 0.12) !important;
     }
   }
 }

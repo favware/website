@@ -42,6 +42,10 @@ export interface IPrimaryTile extends ITile {
   buttons?: IButtonData[];
 }
 
+export interface ICodeTile extends ITile {
+  codeFile: string;
+}
+
 export interface ITavaTile extends ITile {
   icon: string;
   alt?: string;
@@ -60,9 +64,10 @@ export interface ISidenavLink {
 
 export interface IButtonData {
   text: string;
-  url: string;
+  url?: string;
   color: string;
-  outer: boolean;
+  outer?: boolean;
+  disabled?: boolean;
 }
 
 export interface IRibbonDocs {

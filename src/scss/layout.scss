@@ -10,6 +10,12 @@
   margin-bottom: 5%;
 }
 
+.wide-table {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
 @media only screen and (max-width: 1024px) {
   .text-content, .header-content {
     padding-left: 5%;
