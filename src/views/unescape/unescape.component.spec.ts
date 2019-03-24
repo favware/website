@@ -7,9 +7,9 @@ describe('UnescapeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UnescapeComponent ],
+      declarations: [UnescapeComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

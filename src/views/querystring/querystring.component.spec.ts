@@ -7,9 +7,9 @@ describe('QuerystringComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuerystringComponent ],
+      declarations: [QuerystringComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -8,9 +8,9 @@ describe('ZalgoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZalgoComponent ],
+      declarations: [ZalgoComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -308,6 +308,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@ngmodule/material-carousel@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@ngmodule/material-carousel/-/material-carousel-0.3.1.tgz#4aef9da3b764cf0387da8b021660cb14bdb702b9"
+  integrity sha512-MS8isGWGpDrHqh4Xi5M5e42lsryZLxNEKaQc6ZaPd7HUueSobNIM53uXcY2PAVKBEsBu3Qghpw5ZKE2j9BnoMA==
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngtools/webpack@7.3.6":
   version "7.3.6"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-7.3.6.tgz#3f90c60f7c1742fa4a557f90def8fe742304f4c5"

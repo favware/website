@@ -19,10 +19,10 @@ describe('RibbonComponent', () => {
           },
         })
       ],
-      declarations: [ RibbonComponent, ChangeATargetPipe ],
-      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+      declarations: [RibbonComponent, ChangeATargetPipe],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

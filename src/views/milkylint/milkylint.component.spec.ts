@@ -7,9 +7,9 @@ describe('MilkylintComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MilkylintComponent ],
+      declarations: [MilkylintComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

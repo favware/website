@@ -1,8 +1,4 @@
 import 'core-js/es6/array';
-import 'hammerjs';
-import 'web-animations-js';
-import 'zone.js/dist/zone';
-
 // IE9, IE10 and IE11 polyfills.
 import 'core-js/es6/date';
 import 'core-js/es6/function';
@@ -16,3 +12,6 @@ import 'core-js/es6/regexp';
 import 'core-js/es6/set';
 import 'core-js/es6/string';
 import 'core-js/es6/symbol';
+import 'hammerjs';
+import 'web-animations-js';
+import 'zone.js/dist/zone';

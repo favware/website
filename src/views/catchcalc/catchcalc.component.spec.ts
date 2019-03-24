@@ -7,9 +7,9 @@ describe('CatchcalcComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CatchcalcComponent ],
+      declarations: [CatchcalcComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

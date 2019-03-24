@@ -19,10 +19,10 @@ describe('DexaComponent', () => {
           },
         })
       ],
-      declarations: [ DexaComponent, ChangeATargetPipe ],
-      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+      declarations: [DexaComponent, ChangeATargetPipe],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

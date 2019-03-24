@@ -31,3 +31,24 @@ a {
   font-size: 2rem;
   margin: 0;
 }
+
+.header-text-shadow {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.about-text {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+strong {
+  font-weight: bolder !important;
+}
+
+code:not([class*=language-]) {
+  background: #393838 !important;
+  border-radius: 2px !important;
+  color: #DD4A68 !important;
+  // padding: 2px 4px !important;
+  font-family: 'Fira Code', monospace !important;
+}

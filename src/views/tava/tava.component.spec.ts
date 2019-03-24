@@ -7,9 +7,9 @@ describe('TavaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TavaComponent ],
+      declarations: [TavaComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

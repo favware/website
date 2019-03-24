@@ -1,30 +1,30 @@
 <section>
-    <div class="container header-ribbon-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
-         fxLayoutGap="0.5%">
-        <div class="center-text">
-            <h1 class="mat-display-2 header-text header-ribbon-text">{{headerTile.header}}</h1>
-            <h2 class="mat-h1 header-text header-ribbon-text">{{headerTile.subheader}}</h2>
-            <p *ngFor="let button of headerTile.buttons" class="header-button">
-                <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
-                    <button [color]="button.color" class="full-size-button"
-                            mat-raised-button>{{button.text | uppercase}}</button>
-                </a>
-            </p>
-        </div>
+  <div class="container header-ribbon-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
+       fxLayoutGap="0.5%">
+    <div class="center-text">
+      <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
+      <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
+      <p *ngFor="let button of headerTile.buttons" class="header-button">
+        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
+          <button [color]="button.color" class="full-size-button"
+                  mat-raised-button>{{button.text | uppercase}}</button>
+        </a>
+      </p>
     </div>
+  </div>
 
-    <div class="section-margin" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
-         fxLayoutGap="0.5%">
-        <div>
-            <h1 class="mat-display-1 center-text">{{aboutTile.header}}</h1>
-            <p *ngFor="let section of aboutTile.text" [innerHTML]="section | markdown | ChangeATarget"
-               class="mat-h4 text-content about-ribbon-text" fxFlexAlign="stretch"></p>
-        </div>
+  <div class="section-margin" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
+       fxLayoutGap="0.5%">
+    <div>
+      <h1 class="mat-display-1 center-text">{{aboutTile.header}}</h1>
+      <p *ngFor="let section of aboutTile.text" [innerHTML]="section | markdown | ChangeATarget"
+         class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
+  </div>
 
-    <div class="section-margin" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center space-around"
-         fxLayoutGap="0.5%">
-        <favware-ribbon-docs-table></favware-ribbon-docs-table>
-    </div>
+  <div class="section-margin" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center space-around"
+       fxLayoutGap="0.5%">
+    <favware-ribbon-docs-table></favware-ribbon-docs-table>
+  </div>
 
 </section>

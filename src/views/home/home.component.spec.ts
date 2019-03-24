@@ -17,11 +17,11 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule, KarmaRoutingModule ],
-      declarations: [ HomeComponent, CardActionCasePipe ],
+      imports: [MaterialModule, KarmaRoutingModule],
+      declarations: [HomeComponent, CardActionCasePipe],
       providers: [RedirectGuard],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

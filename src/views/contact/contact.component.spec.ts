@@ -7,12 +7,12 @@ describe('ContactComponent', () => {
   let component: ContactComponent;
   let fixture: ComponentFixture<ContactComponent>;
 
-  beforeEach(async (() => {
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
-        imports: [ MaterialModule, HttpClientModule ],
-        declarations: [ContactComponent],
-        providers: [MatIconService],
-      })
+      imports: [MaterialModule, HttpClientModule],
+      declarations: [ContactComponent],
+      providers: [MatIconService],
+    })
       .compileComponents();
   }));
 

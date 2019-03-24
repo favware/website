@@ -8,9 +8,9 @@ describe('YamlreaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ YamlreaderComponent ],
+      declarations: [YamlreaderComponent],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

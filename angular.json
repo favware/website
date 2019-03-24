@@ -59,7 +59,7 @@
           "options": {
             "browserTarget": "homesite:build",
             "port": 4200,
-            "host": "localhost",
+            "host": "192.168.2.4",
             "open": true
           },
           "configurations": {

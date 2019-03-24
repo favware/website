@@ -1,0 +1,8 @@
+@import '../../scss/variables';
+
+.header-seedcheck-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('#{$ASSET_BASE_PATH}/website-header-backdrops/seedcheck.png') no-repeat scroll center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  height: 95vh;
+}
