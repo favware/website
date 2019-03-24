@@ -18,7 +18,8 @@
     "build": "ng build",
     "test": "ng test",
     "postbuild": "concurrently \"rimraf dist/3rdpartylicenses.txt\" \"copyfiles -f ./src/config/robots.txt ./dist/\"",
-    "deploy": "yarn build --prod && firebase deploy",
+    "predeploy": "yarn build --prod",
+    "deploy": "firebase deploy",
     "lint": "ng lint",
     "firebase:serve": "firebase serve"
   },
