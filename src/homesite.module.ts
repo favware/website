@@ -27,22 +27,22 @@ import {
 } from './views';
 
 const markedOptions = (): MarkedOptions => {
-const renderer = new MarkedRenderer();
+  const renderer = new MarkedRenderer();
 
-renderer.blockquote = (text: string) => `<blockquote class="blockquote"><p>${text}</p></blockquote>`;
+  renderer.blockquote = (text: string) => `<blockquote class="blockquote"><p>${text}</p></blockquote>`;
 
-return {
-  renderer,
-  breaks: true,
-  gfm: true,
-  pedantic: false,
-  sanitize: true,
-  silent: true,
-  smartLists: true,
-  smartypants: false,
-  tables: true,
+  return {
+    renderer,
+    breaks: true,
+    gfm: true,
+    pedantic: false,
+    sanitize: true,
+    silent: true,
+    smartLists: true,
+    smartypants: false,
+    tables: true,
+  };
 };
-}
 
 @NgModule({
   declarations: [

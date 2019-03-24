@@ -6,7 +6,7 @@ import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN, ICodeTile, IPrimaryTi
   templateUrl: './converter.component.html',
   styleUrls: ['./converter.component.scss'],
 })
-export class ConverterComponent   {
+export class ConverterComponent {
   public readonly headerTile: IPrimaryTile = {
     header: 'Awesome Converter',
     subheader: 'An awesome and typesafe unit converter for NodeJS',
