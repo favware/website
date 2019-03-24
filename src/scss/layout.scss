@@ -10,10 +10,14 @@
   margin-bottom: 5%;
 }
 
-.wide-table {
+.page-wide-element {
   width: 90vw;
   margin-left: 5vw;
   margin-right: 5vw;
+}
+
+.small-section-header-margin {
+  margin-bottom: 0.83em;
 }
 
 @media only screen and (max-width: 1024px) {

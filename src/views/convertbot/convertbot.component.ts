@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { oneLine } from 'common-tags';
-import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTile } from '../../util';
+import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTile } from 'src/util';
 
 @Component({
   selector: 'favware-convertbot',

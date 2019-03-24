@@ -1,7 +1,7 @@
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, OnInit } from '@angular/core';
-import { ASSET_BASE_PATH, ISidenavLink } from '../../util';
+import { ASSET_BASE_PATH, ISidenavLink } from 'src/util';
 
 @Component({
   selector: 'favware-sidenav',

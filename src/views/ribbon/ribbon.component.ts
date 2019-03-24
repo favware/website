@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { oneLine } from 'common-tags';
-import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from '../../util';
+import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from 'src/util';
 
 @Component({
   selector: 'favware-ribbon',

@@ -29,7 +29,7 @@ import {
   SEEDCHECKER_GITHUB_URL,
   UNESCAPE_GITHUB,
   UNESCAPE_YARN
-} from '../../util';
+} from 'src/util';
 
 @Component({
   selector: 'favware-home',

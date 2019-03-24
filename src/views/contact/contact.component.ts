@@ -12,7 +12,7 @@ import {
   IContactMethod,
   IPrimaryTile,
   MatIconService
-} from '../../util';
+} from 'src/util';
 
 @Component({
   selector: 'favware-contact',

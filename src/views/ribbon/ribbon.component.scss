@@ -1,4 +1,4 @@
-@import '../../scss/variables';
+@import 'src/scss/variables';
 
 .header-ribbon-image {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('#{$ASSET_BASE_PATH}/website-header-backdrops/ribbon.png') no-repeat fixed center;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ICodeTile, IPrimaryTile, ITile, UNESCAPE_GITHUB, UNESCAPE_YARN } from '../../util';
+import { ICodeTile, IPrimaryTile, UNESCAPE_GITHUB, UNESCAPE_YARN } from 'src/util';
 
 @Component({
   selector: 'favware-unescape',

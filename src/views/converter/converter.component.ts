@@ -1,16 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN, ICodeTile, IPrimaryTile } from 'src/util';
 
 @Component({
   selector: 'favware-converter',
   templateUrl: './converter.component.html',
   styleUrls: ['./converter.component.scss'],
 })
-export class ConverterComponent implements OnInit {
+export class ConverterComponent   {
+  public readonly headerTile: IPrimaryTile = {
+    header: 'Awesome Converter',
+    subheader: 'An awesome and typesafe unit converter for NodeJS',
+    buttons: [
+      {
+        text: 'yarn add awesome-converter',
+        color: 'primary',
+        disabled: true,
+      },
+      {
+        text: 'View on Yarn',
+        url: AWESOME_CONVERTER_YARN,
+        color: 'yarn',
+        outer: true,
+      },
+      {
+        text: 'View on GitHub',
+        url: AWESOME_CONVERTER_GITHUB,
+        color: 'github',
+        outer: true,
+      }
+    ],
+  };
 
-  constructor () {
-  }
-
-  ngOnInit () {
-  }
-
+  public readonly usageTile: ICodeTile = {
+    header: 'Usage',
+    codeFile: '/assets/code/converter.js',
+  };
 }
