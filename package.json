@@ -14,7 +14,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --env=local",
+    "start": "ng serve",
     "test": "ng test",
     "lint": "ng lint",
     "build-dev": "ng build",

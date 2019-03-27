@@ -2,13 +2,13 @@ const { stringify } = require('awesome-querystring');
 // or for TypeScript:
 // import { stringify } from 'awesome-querystring';
 
-console.log(stringify({prop: 'value', prop2: 'value2'}));
+console.log(stringify({ prop: 'value', prop2: 'value2' }));
 //=> '?prop=value&prop2=value2'
 
 // supply options
-console.log(stringify({prop: 'value', prop2: 'value2'}, {separator: '&', equals: '=', includeQuestion: true}));
+console.log(stringify({ prop: 'value', prop2: 'value2' }, { separator: '&', equals: '=', includeQuestion: true }));
 //=> '?prop=value&prop2=value2'
 
 // customize options
-console.log(stringify({prop: 'value', prop2: 'value2'}, {separator: '&&', equals: '=', includeQuestion: false}));
+console.log(stringify({ prop: 'value', prop2: 'value2' }, { separator: '&&', equals: '=', includeQuestion: false }));
 //=> 'prop=value&&prop2=value2'

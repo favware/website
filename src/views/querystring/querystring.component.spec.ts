@@ -1,4 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { MaterialModule } from 'src/util';
+import markdownFactory from 'src/util/markdown.factory';
 import { QuerystringComponent } from './querystring.component';
 
 describe('QuerystringComponent', () => {
@@ -7,7 +12,18 @@ describe('QuerystringComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        HttpClientModule,
+        MaterialModule,
+        MarkdownModule.forRoot({
+          markedOptions: {
+            provide: MarkedOptions,
+            useFactory: markdownFactory,
+          },
+        })
+      ],
       declarations: [QuerystringComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
       .compileComponents();
   }));

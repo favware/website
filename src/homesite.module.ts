@@ -6,10 +6,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { MetaLoader, MetaModule } from '@ngx-meta/core';
-import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { DexaDocsTableComponent, RibbonDocsTableComponent, SidenavComponent } from './components';
 import environment from './environments/environment';
 import { CardActionCasePipe, ChangeATargetPipe, ExtractTextPipe, MaterialModule, MatIconService, metaFactory, RedirectGuard } from './util';
+import markdownFactory from './util/markdown.factory';
 import { RoutingModule } from './util/routing.module';
 import {
   CatchcalcComponent,
@@ -25,26 +26,8 @@ import {
   TavaComponent,
   UnescapeComponent,
   YamlreaderComponent,
-  ZalgoComponent,
+  ZalgoComponent
 } from './views';
-
-const markedOptions = (): MarkedOptions => {
-  const renderer = new MarkedRenderer();
-
-  renderer.blockquote = (text: string) => `<blockquote class="blockquote"><p>${text}</p></blockquote>`;
-
-  return {
-    renderer,
-    breaks: true,
-    gfm: true,
-    pedantic: false,
-    sanitize: true,
-    silent: true,
-    smartLists: true,
-    smartypants: false,
-    tables: true,
-  };
-};
 
 @NgModule({
   declarations: [
@@ -77,7 +60,7 @@ const markedOptions = (): MarkedOptions => {
     MarkdownModule.forRoot({
       markedOptions: {
         provide: MarkedOptions,
-        useFactory: markedOptions,
+        useFactory: markdownFactory,
       },
     }),
     FlexLayoutModule,

@@ -1,4 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { MaterialModule } from 'src/util';
+import markdownFactory from '../../util/markdown.factory';
 import { TavaComponent } from './tava.component';
 
 describe('TavaComponent', () => {
@@ -7,6 +11,16 @@ describe('TavaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        HttpClientModule,
+        MaterialModule,
+        MarkdownModule.forRoot({
+          markedOptions: {
+            provide: MarkedOptions,
+            useFactory: markdownFactory,
+          },
+        })
+      ],
       declarations: [TavaComponent],
     })
       .compileComponents();

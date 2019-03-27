@@ -2,6 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { ChangeATargetPipe, MaterialModule } from 'src/util';
+import markdownFactory from 'src/util/markdown.factory';
 import { DexaComponent } from './dexa.component';
 
 describe('DexaComponent', () => {
@@ -15,7 +16,7 @@ describe('DexaComponent', () => {
         MarkdownModule.forRoot({
           markedOptions: {
             provide: MarkedOptions,
-            useValue: { gfm: true, tables: true, sanitize: true, smartLists: true, langPrefix: 'ts' },
+            useFactory: markdownFactory,
           },
         })
       ],
