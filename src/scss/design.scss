@@ -36,14 +36,14 @@
 }
 
 .header-small-image {
-  background: url('#{$ASSET_BASE_PATH}/website-header-backdrops/home.png') no-repeat scroll center;
+  background: url('src/assets/backdrops/home.png') no-repeat scroll center;
   background-size: cover;
   -webkit-background-size: cover;
   height: 40vh;
 }
 
 .header-large-image {
-  background: url('#{$ASSET_BASE_PATH}/website-header-backdrops/home.png') no-repeat scroll center;
+  background: url('src/assets/backdrops/home.png') no-repeat scroll center;
   background-size: cover;
   -webkit-background-size: cover;
   height: 95vh;

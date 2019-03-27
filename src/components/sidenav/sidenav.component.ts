@@ -1,7 +1,7 @@
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, OnInit } from '@angular/core';
-import { ASSET_BASE_PATH, ISidenavLink } from 'src/util';
+import { ISidenavLink } from 'src/util';
 
 @Component({
   selector: 'favware-sidenav',
@@ -20,77 +20,77 @@ export class SidenavComponent implements OnInit {
     {
       routerLink: '.',
       label: 'Home',
-      image: `${ASSET_BASE_PATH}/website-project-icons/home.png`,
+      image: 'assets/icons/home.png',
     },
     {
       routerLink: '/ribbon',
       label: 'Ribbon',
-      image: `${ASSET_BASE_PATH}/website-project-icons/ribbon.png`,
+      image: 'assets/icons/ribbon.png',
     },
     {
       routerLink: '/dexa',
       label: 'Dexa',
-      image: `${ASSET_BASE_PATH}/website-project-icons/dexa.png`,
+      image: 'assets/icons/dexa.png',
     },
     {
       routerLink: '/seedcheck',
       label: 'SeedChecker',
-      image: `${ASSET_BASE_PATH}/website-project-icons/seedcheck.png`,
+      image: 'assets/icons/seedcheck.png',
     },
     {
       routerLink: '/convertbot',
       label: 'ConvertBot',
-      image: `${ASSET_BASE_PATH}/website-project-icons/convertbot.png`,
+      image: 'assets/icons/convertbot.png',
     },
     {
       routerLink: '/catchcalc',
       label: 'CatchCalc',
-      image: `${ASSET_BASE_PATH}/website-project-icons/catchcalc.png`,
+      image: 'assets/icons/catchcalc.png',
     },
     {
       routerLink: '/tava',
       label: 'Ta\'Va',
-      image: `${ASSET_BASE_PATH}/website-project-icons/tava.png`,
+      image: 'assets/icons/tava.png',
     },
     {
       routerLink: '/unescape',
       label: 'Unescape-ES6',
-      image: `${ASSET_BASE_PATH}/website-project-icons/unescape.png`,
+      image: 'assets/icons/unescape.png',
     },
     {
       routerLink: '/querystring',
       label: 'Awesome Querystring',
-      image: `${ASSET_BASE_PATH}/website-project-icons/querystring.png`,
+      image: 'assets/icons/querystring.png',
     },
     {
       routerLink: '/converter',
       label: 'Awesome Converter',
-      image: `${ASSET_BASE_PATH}/website-project-icons/converter.png`,
+      image: 'assets/icons/converter.png',
     },
     {
       routerLink: '/milkylint',
       label: 'Milky TSLint',
-      image: `${ASSET_BASE_PATH}/website-project-icons/milkylint-square.png`,
+      image: 'assets/icons/milkylint.png',
     },
     {
       routerLink: '/yamlreader',
       label: 'Awesome YAML Reader',
-      image: `${ASSET_BASE_PATH}/website-project-icons/awesome-yaml-reader.png`,
+      image: 'assets/icons/yamlreader.png',
     },
     {
       routerLink: '/zalgo',
       label: 'Awesome Zalgo',
-      image: `${ASSET_BASE_PATH}/website-project-icons/zalgo.png`,
+      image: 'assets/icons/zalgo.png',
     },
     {
       routerLink: '/crypto',
       label: 'Awesome Crypto',
-      image: `${ASSET_BASE_PATH}/website-project-icons/crypto.png`,
+      image: 'assets/icons/crypto.png',
     },
     {
       routerLink: '/contact',
       label: 'Contact',
-      image: `${ASSET_BASE_PATH}/website-project-icons/contact.png`,
+      image: 'assets/icons/contact.png',
     }
   ];
   private readonly breakpointObserver: BreakpointObserver;

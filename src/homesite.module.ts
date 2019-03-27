@@ -17,6 +17,7 @@ import {
   ContactComponent,
   ConvertbotComponent,
   ConverterComponent,
+  CryptoComponent,
   DexaComponent,
   HomeComponent,
   MilkylintComponent,
@@ -50,7 +51,8 @@ import {
     CardActionCasePipe,
     MilkylintComponent,
     YamlreaderComponent,
-    ZalgoComponent
+    ZalgoComponent,
+    CryptoComponent
   ],
   imports: [
     BrowserModule,

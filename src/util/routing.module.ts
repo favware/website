@@ -6,6 +6,7 @@ import {
   ContactComponent,
   ConvertbotComponent,
   ConverterComponent,
+  CryptoComponent,
   DexaComponent,
   HomeComponent,
   MilkylintComponent,
@@ -17,7 +18,7 @@ import {
   YamlreaderComponent,
   ZalgoComponent
 } from '../views';
-import { ASSET_BASE_PATH, DEXA_SKILL_URL, DISCORD_SERVER_URL, RIBBON_INVITE_URL } from './constants';
+import { DEXA_SKILL_URL, DISCORD_SERVER_URL, RIBBON_INVITE_URL } from './constants';
 import { RedirectGuard } from './redirectguard.guard';
 
 const routes: Routes = [
@@ -43,8 +44,8 @@ const routes: Routes = [
           meta: {
             title: 'Ribbon',
             description: 'Awesome Discord Bot!',
-            'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/ribbon.png`,
-            'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/ribbon.png`,
+            'og:image': `src/assets/backdrops/ribbon.png`,
+            'twitter:image': `src/assets/backdrops/ribbon.png`,
           },
         },
       },
@@ -55,8 +56,8 @@ const routes: Routes = [
           meta: {
             title: 'Dexa',
             description: 'Turn Alexa into your own Dexter',
-            'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/dexa.png`,
-            'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/dexa.png`,
+            'og:image': `src/assets/backdrops/dexa.png`,
+            'twitter:image': `src/assets/backdrops/dexa.png`,
           },
         },
       },
@@ -67,8 +68,8 @@ const routes: Routes = [
           meta: {
             title: 'SeedChecker',
             description: 'Ahoy 3DS mateys',
-            'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/seedcheck.png`,
-            'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/seedcheck.png`,
+            'og:image': `src/assets/backdrops/seedcheck.png`,
+            'twitter:image': `src/assets/backdrops/seedcheck.png`,
           },
         },
       },
@@ -79,8 +80,8 @@ const routes: Routes = [
           meta: {
             title: 'ConverBot',
             description: 'Unit convertion maximum',
-            'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/convertbot.png`,
-            'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/convertbot.png`,
+            'og:image': `src/assets/backdrops/convertbot.png`,
+            'twitter:image': `src/assets/backdrops/convertbot.png`,
           },
         },
       },
@@ -91,8 +92,8 @@ const routes: Routes = [
           meta: {
             title: 'CatchCalc',
             description: 'Gotta Catch Em\' All!',
-            'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/catchcalc.png`,
-            'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/catchcalc.png`,
+            'og:image': `src/assets/backdrops/catchcalc.png`,
+            'twitter:image': `src/assets/backdrops/catchcalc.png`,
           },
         },
       },
@@ -103,8 +104,8 @@ const routes: Routes = [
           meta: {
             title: 'Ta\'Va',
             description: 'Awesome Aztec Adventure Game',
-            'og:image': `${ASSET_BASE_PATH}/website-header-backdrops/tava.png`,
-            'twitter:image': `${ASSET_BASE_PATH}/website-header-backdrops/tava.png`,
+            'og:image': `src/assets/backdrops/tava.png`,
+            'twitter:image': `src/assets/backdrops/tava.png`,
           },
         },
       },
@@ -189,12 +190,62 @@ const routes: Routes = [
         },
       },
       {
+        path: 'awesome-yaml-reader',
+        component: YamlreaderComponent,
+        data: {
+          meta: {
+            title: 'Awesome YAML Reader',
+            description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
+          },
+        },
+      },
+      {
+        path: 'awesome-yamlreader',
+        component: YamlreaderComponent,
+        data: {
+          meta: {
+            title: 'Awesome YAML Reader',
+            description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
+          },
+        },
+      },
+      {
         path: 'zalgo',
         component: ZalgoComponent,
         data: {
           meta: {
             title: 'Awesome Zalgo',
             description: 'Unleash and banish the Zalgo Monster!',
+          },
+        },
+      },
+      {
+        path: 'awesome-zalgo',
+        component: ZalgoComponent,
+        data: {
+          meta: {
+            title: 'Awesome Zalgo',
+            description: 'Unleash and banish the Zalgo Monster!',
+          },
+        },
+      },
+      {
+        path: 'crypto',
+        component: CryptoComponent,
+        data: {
+          meta: {
+            title: 'Awesome Crypto',
+            description: 'Easily generate a random cryptographic!',
+          },
+        },
+      },
+      {
+        path: 'awesome-crypto',
+        component: CryptoComponent,
+        data: {
+          meta: {
+            title: 'Awesome Crypto',
+            description: 'Easily generate a random cryptographic!',
           },
         },
       },

@@ -1,7 +1,7 @@
 @import 'src/scss/variables';
 
 .header-dexa-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('#{$ASSET_BASE_PATH}/website-header-backdrops/dexa.png') no-repeat scroll center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('src/assets/backdrops/dexa.png') no-repeat scroll center;
   background-size: cover;
   -webkit-background-size: cover;
   height: 95vh;

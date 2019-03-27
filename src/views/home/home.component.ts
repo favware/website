@@ -74,7 +74,7 @@ export class HomeComponent {
     cards: [
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/ribbon.png`,
+          avatar: `assets/icons/ribbon.png`,
           imageAlt: 'Ribbon',
           title: 'Ribbon',
           subtitle: 'Discord Bot',
@@ -89,7 +89,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/dexa.png`,
+          avatar: `assets/icons/dexa.png`,
           imageAlt: 'Dexa',
           title: 'Dexa',
           subtitle: 'Advanced PokéDex Skill',
@@ -103,7 +103,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/seedcheck.png`,
+          avatar: `assets/icons/seedcheck.png`,
           imageAlt: 'Seedchecker',
           title: 'Seedchecker',
           subtitle: '3DS Utility',
@@ -117,7 +117,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/convertbot.png`,
+          avatar: `assets/icons/convertbot.png`,
           imageAlt: 'Convertbot',
           title: 'Convertbot',
           subtitle: 'Conversion Utility',
@@ -131,7 +131,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/catchcalc.png`,
+          avatar: `assets/icons/catchcalc.png`,
           imageAlt: 'CatchCalc',
           title: 'CatchCalc',
           subtitle: 'Pokémon Helper Tool',
@@ -145,7 +145,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/tava.png`,
+          avatar: `assets/icons/tava.png`,
           imageAlt: 'Ta\'Va',
           title: 'Ta\'Va - Trial of the Sun God',
           subtitle: 'Aztec adventure game',
@@ -159,7 +159,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/unescape.png`,
+          avatar: `assets/icons/unescape.png`,
           imageAlt: 'Unescape Project',
           title: 'Unescape-es6',
           subtitle: 'yarn add unescape-es6',
@@ -173,7 +173,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/querystring.png`,
+          avatar: `assets/icons/querystring.png`,
           imageAlt: 'Awesome Querystring',
           title: 'Awesome Querystring',
           subtitle: 'yarn add awesome-querystring',
@@ -187,7 +187,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/converter.png`,
+          avatar: `assets/icons/converter.png`,
           imageAlt: 'Awesome Converter',
           title: 'Awesome Converter',
           subtitle: 'yarn add awesome-converter',
@@ -201,7 +201,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/milkylint-square.png`,
+          avatar: `assets/icons/milkylint.png`,
           imageAlt: 'Milky TSLint',
           title: 'Milky TSLint',
           subtitle: 'yarn add -D milky-tslint',
@@ -215,7 +215,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/awesome-yaml-reader.png`,
+          avatar: `assets/icons/yamlreader.png`,
           imageAlt: 'Awesome YAML Reader',
           title: 'Awesome YAML Reader',
           subtitle: 'yarn add awesome-yaml-reader',
@@ -229,7 +229,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/zalgo.png`,
+          avatar: `assets/icons/zalgo.png`,
           imageAlt: 'Awesome Zalgo',
           title: 'Awesome Zalgo',
           subtitle: 'yarn add awesome-zalgo',
@@ -244,7 +244,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/crypto.png`,
+          avatar: `assets/icons/crypto.png`,
           imageAlt: 'Awesome Crypto',
           title: 'Awesome Crypto',
           subtitle: 'yarn add awesome-crypto',
@@ -258,7 +258,7 @@ export class HomeComponent {
       },
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/filler.png`,
+          avatar: `assets/icons/filler.png`,
           imageAlt: 'TBA',
           title: 'Something mysterious',
           subtitle: 'Filler slot',
@@ -271,7 +271,7 @@ export class HomeComponent {
 
       {
         header: {
-          avatar: `${ASSET_BASE_PATH}/website-project-icons/contact.png`,
+          avatar: `assets/icons/contact.png`,
           imageAlt: 'Contact Page',
           title: 'Contact Page',
           subtitle: 'Get in touch',

@@ -62,19 +62,19 @@ export class TavaComponent {
 
   public readonly mediaTile: ITavaTile[] = [
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/village.jpg`,
+      icon: `assets/screenshots/tava/village.jpg`,
       alt: 'village_screenshot',
       header: 'Explore',
       description: 'Mesoamerican mythology',
     },
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/cave.jpg`,
+      icon: `assets/screenshots/tava/cave.jpg`,
       alt: 'cave_screenshot',
       header: 'Challenges',
       description: 'The Boar Chase Challenge',
     },
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/puzzle.jpg`,
+      icon: `assets/screenshots/tava/puzzle.jpg`,
       alt: 'puzzle_screenshot',
       header: 'Puzzles',
       description: 'Push the boulders!',
@@ -88,19 +88,19 @@ export class TavaComponent {
 
   public readonly teamTileFirstLine: ITavaTile[] = [
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/art.jpg`,
+      icon: `assets/screenshots/tava/art.jpg`,
       alt: 'art_team_photo',
       header: 'Art Team',
       description: '',
     },
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/conceptowner.jpg`,
+      icon: `assets/screenshots/tava/conceptowner.jpg`,
       alt: 'conceptowner_photo',
       header: 'Concept Owner',
       description: '',
     },
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/gameplay.jpg`,
+      icon: `assets/screenshots/tava/gameplay.jpg`,
       alt: 'gameplay_team_photo',
       header: 'Gameplay Team',
       description: '',
@@ -109,13 +109,13 @@ export class TavaComponent {
 
   public readonly teamTileSecondLine: ITavaTile[] = [
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/programming.jpg`,
+      icon: `assets/screenshots/tava/programming.jpg`,
       alt: 'programming_team_photo',
       header: 'Programming Team',
       description: '',
     },
     {
-      icon: `${ASSET_BASE_PATH}/website-project-screenshots/tava/sound.jpg`,
+      icon: `assets/screenshots/tava/sound.jpg`,
       alt: 'sound_team_photo',
       header: 'Sound Owner',
       description: '',

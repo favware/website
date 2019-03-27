@@ -12,3 +12,4 @@ export { ConverterComponent } from './converter/converter.component';
 export { MilkylintComponent } from './milkylint/milkylint.component';
 export { YamlreaderComponent } from './yamlreader/yamlreader.component';
 export { ZalgoComponent } from './zalgo/zalgo.component';
+export { CryptoComponent } from './crypto/crypto.component';
