@@ -41,3 +41,13 @@
     padding-right: 12.5%;
   }
 }
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .header-small-image {
+    height: 95vh;
+  }
+
+  code[class*="language-"], pre[class*="language-"] {
+    font-size: 0.5rem;
+  }
+}
