@@ -14,7 +14,7 @@ jobs:
   build:
     working_directory: ~/favware
     docker:
-      - image: circleci/node:6.10-browsers
+      - image: circleci/node:11-browsers
     steps:
       - checkout
       - restore_cache:
@@ -54,7 +54,7 @@ jobs:
   deploy:
     working_directory: ~/favware
     docker:
-      - image: circleci/node:6.10-browsers
+      - image: circleci/node:11-browsers
     steps:
       # Restore cache from the build job which contains the
       # dist folder that needs to be deployed
