@@ -40,7 +40,7 @@ jobs:
           name: Building
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                yarn build-prod
+                yarn build
             else
                 yarn build-dev
             fi
