@@ -56,18 +56,9 @@ jobs:
     docker:
       - image: circleci/node:11-browsers
     steps:
-      - run:
-          name: 'Logging part 1'
-          command: 'ls -al'
       - checkout
-      - run:
-          name: 'Logging part 2'
-          command: 'ls -al'
       - restore_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
-      - run:
-          name: 'Logging part 3'
-          command: 'ls -al && echo "" && echo "" && yarn list --depth=0'
       - run:
           name: Install Firebase Tools
           command: yarn add firebase-tools
