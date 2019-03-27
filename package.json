@@ -14,14 +14,12 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --env=local",
     "test": "ng test",
-    "postbuild": "concurrently \"rimraf dist/3rdpartylicenses.txt\" \"copyfiles -f ./src/config/robots.txt ./dist/\"",
-    "predeploy": "yarn build --prod",
-    "deploy": "firebase deploy",
     "lint": "ng lint",
-    "firebase:serve": "firebase serve"
+    "build-dev": "ng build",
+    "build": "ng build --prod",
+    "postbuild": "copyfiles -f ./src/config/* ./dist/"
   },
   "engines": {
     "node": ">=10.0.0"
