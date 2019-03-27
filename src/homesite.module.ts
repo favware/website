@@ -4,9 +4,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { MetaLoader, MetaModule } from '@ngx-meta/core';
 import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 import { DexaDocsTableComponent, RibbonDocsTableComponent, SidenavComponent } from './components';
+import environment from './environments/environment';
 import { CardActionCasePipe, ChangeATargetPipe, ExtractTextPipe, MaterialModule, MatIconService, metaFactory, RedirectGuard } from './util';
 import { RoutingModule } from './util/routing.module';
 import {
@@ -84,7 +86,8 @@ const markedOptions = (): MarkedOptions => {
     MetaModule.forRoot({
       provide: MetaLoader,
       useFactory: (metaFactory),
-    })
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [RedirectGuard, MatIconService],
   bootstrap: [SidenavComponent],

@@ -22,8 +22,13 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": ["src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/assets",
+              "src/manifest.json"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": [],
             "es5BrowserSupport": true
           },
@@ -38,7 +43,7 @@
               "namedChunks": true,
               "optimization": true,
               "outputHashing": "all",
-              "serviceWorker": false,
+              "serviceWorker": true,
               "sourceMap": false,
               "vendorChunk": true,
               "fileReplacements": [
@@ -88,7 +93,10 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "assets": ["src/assets"]
+            "assets": [
+              "src/assets",
+              "src/manifest.json"
+            ]
           }
         },
         "lint": {

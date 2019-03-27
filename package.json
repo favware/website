@@ -19,7 +19,7 @@
     "lint": "ng lint",
     "build-dev": "ng build",
     "build": "ng build --prod",
-    "postbuild": "copyfiles -f ./src/config/* ./dist/"
+    "postbuild": "copyfiles -f ./src/robots.txt ./dist/"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -36,7 +36,9 @@
     "@angular/material": "^7.3.4",
     "@angular/platform-browser": "^7.2.9",
     "@angular/platform-browser-dynamic": "^7.2.9",
+    "@angular/pwa": "0.12",
     "@angular/router": "^7.2.9",
+    "@angular/service-worker": "^7.2.9",
     "@ngmodule/material-carousel": "^0.3.1",
     "@ngx-meta/core": "^7.0.0",
     "common-tags": "^1.8.0",
