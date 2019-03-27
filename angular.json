@@ -24,7 +24,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/assets",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -40,7 +41,6 @@
               "es5BrowserSupport": true,
               "extractCss": true,
               "extractLicenses": false,
-              "namedChunks": true,
               "optimization": true,
               "outputHashing": "all",
               "serviceWorker": true,
