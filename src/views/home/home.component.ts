@@ -110,7 +110,7 @@ export class HomeComponent {
         },
         content: oneLine`A simple tool to check if the decryption SEED is available for a Nintendo 3DS eShop title`,
         actions: [
-          { label: 'download', link: `${ASSET_BASE_PATH}/website-dist/SEEDChecker.java`, outer: true },
+          { label: 'download', link: `${ASSET_BASE_PATH}/website-dist/SEEDChecker.jar`, outer: true },
           { label: 'website', link: '/seedchecker', outer: false },
           { label: 'github', link: SEEDCHECKER_GITHUB_URL, outer: true }
         ],
@@ -166,7 +166,7 @@ export class HomeComponent {
         },
         content: oneLine`Convert HTML entities to HTML characters. For example "&amp;" converts to &`,
         actions: [
-          { label: 'yarn', link: UNESCAPE_YARN, outer: true },
+          { label: 'yarn page', link: UNESCAPE_YARN, outer: true },
           { label: 'website', link: '/unescape', outer: false },
           { label: 'github', link: UNESCAPE_GITHUB, outer: true }
         ],
@@ -180,7 +180,7 @@ export class HomeComponent {
         },
         content: oneLine`Querystring that is robust in its working yet remains awesome to TypeScript users`,
         actions: [
-          { label: 'yarn', link: AWESOME_QUERYSTRING_YARN, outer: true },
+          { label: 'yarn page', link: AWESOME_QUERYSTRING_YARN, outer: true },
           { label: 'website', link: '/querystring', outer: false },
           { label: 'github', link: AWESOME_QUERYSTRING_GITHUB, outer: true }
         ],
@@ -194,7 +194,7 @@ export class HomeComponent {
         },
         content: oneLine`Awesome and typesafe unit converter, supports many different systems of units`,
         actions: [
-          { label: 'yarn', link: AWESOME_CONVERTER_YARN, outer: true },
+          { label: 'yarn page', link: AWESOME_CONVERTER_YARN, outer: true },
           { label: 'website', link: '/converter', outer: false },
           { label: 'github', link: AWESOME_CONVERTER_GITHUB, outer: true }
         ],
@@ -208,7 +208,7 @@ export class HomeComponent {
         },
         content: oneLine`TypeScript linter plugin for Gulp. Gulp down that milk and lint your code!`,
         actions: [
-          { label: 'yarn', link: MILKY_TSLINT_YARN, outer: true },
+          { label: 'yarn page', link: MILKY_TSLINT_YARN, outer: true },
           { label: 'website', link: '/milkylint', outer: false },
           { label: 'github', link: MILKY_TSLINT_GITHUB, outer: true }
         ],
@@ -222,7 +222,7 @@ export class HomeComponent {
         },
         content: oneLine`Awesome minimal wrapper around js-yaml for directly reading in YAML files`,
         actions: [
-          { label: 'yarn', link: AWESOME_YAML_READER_YARN, outer: true },
+          { label: 'yarn page', link: AWESOME_YAML_READER_YARN, outer: true },
           { label: 'website', link: '/yamlreader', outer: false },
           { label: 'github', link: AWESOME_YAML_READER_GITHUB, outer: true }
         ],
@@ -237,7 +237,7 @@ export class HomeComponent {
         // tslint:disable-next-line:max-line-length
         content: oneLine`Unleash and banish the Zalgo Monster!  W̘͔̳͛̊ͥͤ̒Ä̺̠̫̮̦̽Ṯ̟̇̌̒̾̋C̳̱̻͐̉̓̋̒̎̚H̺͍̩̖͕̄̇͆̏́ͅ ̡̯̰̐ͨ͗ͫ̒̅O̯̠̞̯̒̂͗̾̔̕Ư̠͚̾͌̈́̇͆T̘̬̞͈̻̰͓ͯ͋͌ͬ̆ͨ̊!̤̮̯̜̟͂̉͂͊̚ ̟͚̟̩͚̉̓͑ͤͯḪ͙̦̦̘̣̳̅̈͆̿ͦ̓͜Ẹ̜̰͆ͨͪ̎ ͖͍͉̗͕̘ͯ̓ͣ̎̐͋ͧC͙̉̓̄̚͘O͓ͯ̑Ṃ̮̣͑̌̓̈́Ẹ͓͍̯̼̜̮͂͑͡S͇̣̣ͧ͒ͤ!̠͘  `,
         actions: [
-          { label: 'yarn', link: AWESOME_ZALGO_YARN, outer: true },
+          { label: 'yarn page', link: AWESOME_ZALGO_YARN, outer: true },
           { label: 'website', link: '/zalgo', outer: false },
           { label: 'github', link: AWESOME_ZALGO_GITHUB, outer: true }
         ],
@@ -251,7 +251,7 @@ export class HomeComponent {
         },
         content: oneLine`Generates secure random numbers using crypto.randomBytes(). Numbers can be of any magnitude and in any base from 2 to 64.`,
         actions: [
-          { label: 'yarn', link: AWESOME_CRYPTO_YARN, outer: true },
+          { label: 'yarn page', link: AWESOME_CRYPTO_YARN, outer: true },
           { label: 'website', link: '/yamlreader', outer: false },
           { label: 'github', link: AWESOME_CRYPTO_GITHUB, outer: true }
         ],

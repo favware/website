@@ -944,6 +944,11 @@ autoprefixer@9.4.6:
     postcss "^7.0.13"
     postcss-value-parser "^3.3.1"
 
+awesome-zalgo@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/awesome-zalgo/-/awesome-zalgo-1.0.5.tgz#570891d50ebac4ff075450f57f49a9b62b8f3b61"
+  integrity sha512-HG3QmbV1c9iKYYL9AQxXoEzsiP+PH8K191a8e2o1i7Qh926vO5avJG2oNPCm7tv8pSkTJRy35uruwlA1OlwatQ==
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -6630,7 +6635,7 @@ trim-right@^1.0.1:
   dependencies:
     glob "^7.1.2"
 
-ts-node@~8.0.3:
+ts-node@^8.0.3:
   version "8.0.3"
   resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.0.3.tgz#aa60b836a24dafd8bf21b54766841a232fdbc641"
   integrity sha512-2qayBA4vdtVRuDo11DEFSsD/SFsBXQBRZZhbRGSIkmYmVkWjULn/GGMdG10KVqkaGndljfaTD8dKjWgcejO8YA==

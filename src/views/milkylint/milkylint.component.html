@@ -1,3 +1,23 @@
-<p>
-  milkylint works!
-</p>
+<section>
+  <div class="container header-small-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
+       fxLayoutGap="0.5%">
+    <div class="center-text">
+      <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
+      <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
+      <p *ngFor="let button of headerTile.buttons" class="header-button">
+        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
+          <button [class.mat-disabled]="button.disabled" [color]="button.color" [disabled]="button.disabled"
+                  class="full-size-button" mat-raised-button>{{button.text | uppercase}}</button>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="section-margin" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
+       fxLayoutGap="0.5%">
+    <div class="page-wide-element">
+      <h1 class="mat-display-1 center-text small-section-header-margin">{{usageTile.header}}</h1>
+      <markdown [src]="usageTile.codeFile" ngPreserveWhitespaces></markdown>
+    </div>
+  </div>
+</section>

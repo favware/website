@@ -14,7 +14,7 @@ export class SeedcheckComponent {
     buttons: [
       {
         text: 'Download SEEDChecker',
-        url: `${ASSET_BASE_PATH}/website-dist/SEEDChecker.java`,
+        url: `${ASSET_BASE_PATH}/website-dist/SEEDChecker.jar`,
         color: 'primary',
         outer: true,
       },
