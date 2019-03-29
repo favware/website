@@ -1,20 +1,20 @@
 <section>
   <div class="container header-small-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
-       fxLayoutGap="0.5%">
+    fxLayoutGap="0.5%">
     <div class="center-text">
       <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
       <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
         <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
           <button [class.mat-disabled]="button.disabled" [color]="button.color" [disabled]="button.disabled"
-                  class="full-size-button" mat-raised-button>{{button.text | uppercase}}</button>
+            class="full-size-button" mat-raised-button>{{button.text | uppercase}}</button>
         </a>
       </p>
     </div>
   </div>
 
   <div class="section-margin" fxFlexFill fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
-       fxLayoutGap="5.5%">
+    fxLayoutGap="5.5%">
     <div fxFlex="40" fxFlex.xs="55">
       <h1 class="mat-display-1 text-content small-section-header-margin">{{yamlTile.header}}</h1>
       <markdown [src]="yamlTile.codeFile" ngPreserveWhitespaces></markdown>

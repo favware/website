@@ -8,11 +8,11 @@ import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, ICodeTile, IPrimaryTile } fro
 })
 export class ZalgoComponent {
   public readonly headerTile: IPrimaryTile = {
-    header: 'Awesome YAML Reader',
-    subheader: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
+    header: 'Awesome Zalgo',
+    subheader: 'Unleash and banish the Zalgo Monster!',
     buttons: [
       {
-        text: 'yarn add awesome-yaml-reader',
+        text: 'yarn add awesome-zalgo',
         color: 'primary',
         disabled: true,
       },
