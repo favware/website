@@ -1,5 +1,4 @@
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
-import { OverlayContainer } from '@angular/cdk/overlay';
 import { Component, OnInit } from '@angular/core';
 import { ISidenavLink } from 'src/util';
 
@@ -93,14 +92,8 @@ export class SidenavComponent implements OnInit {
       image: 'assets/icons/contact.png',
     }
   ];
-  private readonly breakpointObserver: BreakpointObserver;
 
-  private overlayContainer: OverlayContainer;
-
-  constructor (breakpointObserver: BreakpointObserver, overlayContainer: OverlayContainer) {
-    this.overlayContainer = overlayContainer;
-    this.breakpointObserver = breakpointObserver;
-  }
+  constructor (private breakpointObserver: BreakpointObserver) {}
 
   ngOnInit () {
     this.breakpointObserver
