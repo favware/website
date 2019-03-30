@@ -20,7 +20,6 @@ import { DexaDocsTableComponent } from './dexa-docs-table/dexa-docs-table.compon
 import { RibbonDocsTableComponent } from './ribbon-docs-table/ribbon-docs-table.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConvertbotComponent } from './convertbot/convertbot.component';
@@ -76,12 +75,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     ReactiveFormsModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    LayoutModule
   ],
   providers: [RedirectGuard, MatIconService],
   bootstrap: [SidenavComponent],

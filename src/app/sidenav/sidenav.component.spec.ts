@@ -10,6 +10,10 @@ import {
 } from '@angular/material';
 
 import { SidenavComponent } from './sidenav.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [];
 
 describe('SidenavComponent', () => {
   let component: SidenavComponent;
@@ -26,7 +30,9 @@ describe('SidenavComponent', () => {
         MatListModule,
         MatSidenavModule,
         MatToolbarModule,
-      ]
+        RouterModule.forRoot(routes)
+      ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 
