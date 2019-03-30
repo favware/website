@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IPrimaryTile, ICodeTile } from 'src/util/interfaces';
-import { AWESOME_CONVERTER_YARN, AWESOME_CONVERTER_GITHUB } from 'src/util/constants';
+import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN } from 'src/util/constants';
+import { ICodeTile, IPrimaryTile } from 'src/util/interfaces';
 
 
 @Component({

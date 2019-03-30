@@ -1,10 +1,10 @@
 import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
+import Fuse, { FuseOptions } from 'fuse.js';
 import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
 import { map } from 'rxjs/operators';
 import docs from 'src/assets/docs/dexa.json';
-import { IJSDocJSON, IDexaDocs } from 'src/util/interfaces.js';
-import Fuse, { FuseOptions } from 'fuse.js';
+import { IDexaDocs, IJSDocJSON } from 'src/util/interfaces.js';
 
 const ribbondocs: IJSDocJSON = docs as unknown as IJSDocJSON;
 
@@ -28,21 +28,21 @@ export class DexaDocsDatasource extends DataSource<IDexaDocs> {
   private paginator: MatPaginator;
   private sort: MatSort;
 
-  constructor(paginator: MatPaginator, sort: MatSort) {
+  constructor (paginator: MatPaginator, sort: MatSort) {
     super();
     this.sort = sort;
     this.paginator = paginator;
   }
 
-  get filter(): string {
+  get filter (): string {
     return this.filterChange.value;
   }
 
-  set filter(filter: string) {
+  set filter (filter: string) {
     this.filterChange.next(filter);
   }
 
-  connect(): Observable<IDexaDocs[]> {
+  connect (): Observable<IDexaDocs[]> {
     const dataMutations = [
       observableOf(this.data),
       this.paginator.page,
@@ -57,15 +57,15 @@ export class DexaDocsDatasource extends DataSource<IDexaDocs> {
     }));
   }
 
-  disconnect() {
+  disconnect () {
   }
 
-  private getPagedData(data: IDexaDocs[]) {
+  private getPagedData (data: IDexaDocs[]) {
     const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
     return data.splice(startIndex, this.paginator.pageSize);
   }
 
-  private getSortedData(data: IDexaDocs[]) {
+  private getSortedData (data: IDexaDocs[]) {
     if (!this.sort.active || this.sort.direction === '') {
       return data;
     }
@@ -85,12 +85,12 @@ export class DexaDocsDatasource extends DataSource<IDexaDocs> {
     });
   }
 
-  private getFilteredData(data: IDexaDocs[]): IDexaDocs[] {
+  private getFilteredData (data: IDexaDocs[]): IDexaDocs[] {
     if (this.filter) {
       const filterOptions: FuseOptions<IDexaDocs> = {
         keys: ['name', 'description', 'examples'],
         threshold: 0.2,
-        shouldSort: false
+        shouldSort: false,
       };
 
       const fuse = new Fuse(data, filterOptions);

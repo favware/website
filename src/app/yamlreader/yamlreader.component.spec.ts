@@ -4,8 +4,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { YamlreaderComponent } from './yamlreader.component';
 import { MaterialModule } from 'src/util/material';
+import { YamlreaderComponent } from './yamlreader.component';
 
 describe('YamlreaderComponent', () => {
   let component: YamlreaderComponent;

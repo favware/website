@@ -3,9 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { RibbonComponent } from './ribbon.component';
 import MaterialModule from 'src/util/material';
 import ChangeATargetPipe from 'src/util/pipes/ChangeATarget';
+import { RibbonComponent } from './ribbon.component';
 
 describe('RibbonComponent', () => {
   let component: RibbonComponent;

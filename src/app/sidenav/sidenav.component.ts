@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { Component, OnInit } from '@angular/core';
 import { ISidenavLink } from 'src/util/interfaces';
 
 @Component({
   selector: 'favware-sidenav',
   templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.scss']
+  styleUrls: ['./sidenav.component.scss'],
 })
-export class SidenavComponent {
+export class SidenavComponent implements OnInit {
 
   public sidenavMode = 'side';
   public isFixedInViewport = false;
@@ -93,9 +93,10 @@ export class SidenavComponent {
     }
   ];
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor (private breakpointObserver: BreakpointObserver) {
+  }
 
-  ngOnInit() {
+  ngOnInit () {
     this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.HandsetPortrait])
       .subscribe((state: BreakpointState) => {

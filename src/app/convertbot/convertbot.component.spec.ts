@@ -1,11 +1,11 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { ConvertbotComponent } from './convertbot.component';
 import MaterialModule from 'src/util/material';
+import { ConvertbotComponent } from './convertbot.component';
 
 describe('ConvertbotComponent', () => {
   let component: ConvertbotComponent;

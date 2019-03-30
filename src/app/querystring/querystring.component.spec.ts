@@ -3,8 +3,8 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import markdownFactory from 'src/util/markdown.factory';
-import { QuerystringComponent } from './querystring.component';
 import MaterialModule from 'src/util/material';
+import { QuerystringComponent } from './querystring.component';
 
 describe('QuerystringComponent', () => {
   let component: QuerystringComponent;

@@ -4,8 +4,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { ZalgoComponent } from './zalgo.component';
 import { MaterialModule } from 'src/util/material';
+import { ZalgoComponent } from './zalgo.component';
 
 describe('ZalgoComponent', () => {
   let component: ZalgoComponent;

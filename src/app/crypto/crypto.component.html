@@ -3,7 +3,9 @@
        fxLayoutGap="0.5%">
     <div class="center-text">
       <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
-      <h2 class="mat-h1 header-text header-text-shadow"><markdown>{{headerTile.subheader}}</markdown></h2>
+      <h2 class="mat-h1 header-text header-text-shadow">
+        <markdown>{{headerTile.subheader}}</markdown>
+      </h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
         <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
           <button [class.mat-disabled]="button.disabled" [color]="button.color" [disabled]="button.disabled"

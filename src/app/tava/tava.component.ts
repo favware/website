@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IPrimaryTile, ITavaTile } from 'src/util/interfaces';
 import { ASSET_BASE_PATH, TAVA_SITE } from 'src/util/constants';
+import { IPrimaryTile, ITavaTile } from 'src/util/interfaces';
 import MatIconService from 'src/util/services/mat-icon.service';
 
 

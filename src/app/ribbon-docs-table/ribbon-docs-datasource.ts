@@ -1,10 +1,10 @@
 import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
+import Fuse, { FuseOptions } from 'fuse.js';
 import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
 import { map } from 'rxjs/operators';
 import docs from 'src/assets/docs/ribbon.json';
 import { IJSDocJSON, IRibbonDocs } from 'src/util/interfaces';
-import Fuse, { FuseOptions } from 'fuse.js';
 
 const ribbondocs: IJSDocJSON = docs as unknown as IJSDocJSON;
 
@@ -26,30 +26,30 @@ const compare = (a, b, isAsc) => {
 
 export class RibbonDocsDatasource extends DataSource<IRibbonDocs> {
   data: IRibbonDocs[] = RIBBON_DATA;
-  _filterChange = new BehaviorSubject('');
+  private filterChange = new BehaviorSubject('');
   private paginator: MatPaginator;
   private sort: MatSort;
 
-  constructor(paginator: MatPaginator, sort: MatSort) {
+  constructor (paginator: MatPaginator, sort: MatSort) {
     super();
     this.sort = sort;
     this.paginator = paginator;
   }
 
-  get filter(): string {
-    return this._filterChange.value;
+  get filter (): string {
+    return this.filterChange.value;
   }
 
-  set filter(filter: string) {
-    this._filterChange.next(filter);
+  set filter (filter: string) {
+    this.filterChange.next(filter);
   }
 
-  connect(): Observable<IRibbonDocs[]> {
+  connect (): Observable<IRibbonDocs[]> {
     const dataMutations = [
       observableOf(this.data),
       this.paginator.page,
       this.sort.sortChange,
-      this._filterChange
+      this.filterChange
     ];
 
     this.paginator.length = this.data.length;
@@ -59,15 +59,15 @@ export class RibbonDocsDatasource extends DataSource<IRibbonDocs> {
     }));
   }
 
-  disconnect() {
+  disconnect () {
   }
 
-  private getPagedData(data: IRibbonDocs[]) {
+  private getPagedData (data: IRibbonDocs[]) {
     const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
     return data.splice(startIndex, this.paginator.pageSize);
   }
 
-  private getSortedData(data: IRibbonDocs[]) {
+  private getSortedData (data: IRibbonDocs[]) {
     if (!this.sort.active || this.sort.direction === '') {
       return data;
     }
@@ -89,12 +89,12 @@ export class RibbonDocsDatasource extends DataSource<IRibbonDocs> {
     });
   }
 
-  private getFilteredData(data: IRibbonDocs[]): IRibbonDocs[] {
+  private getFilteredData (data: IRibbonDocs[]): IRibbonDocs[] {
     if (this.filter) {
       const filterOptions: FuseOptions<IRibbonDocs> = {
         keys: ['name', 'description', 'aliases', 'category'],
         threshold: 0.2,
-        shouldSort: false
+        shouldSort: false,
       };
 
       const fuse = new Fuse(data, filterOptions);

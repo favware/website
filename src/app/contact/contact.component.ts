@@ -1,6 +1,16 @@
 import { Component } from '@angular/core';
-import { IPrimaryTile, IContactMethod } from 'src/util/interfaces';
-import { CONTACT_MAIL, CONTACT_GITHUB, CONTACT_LINKEDIN, DISCORD_SERVER_URL, CONTACT_TWITTER, CONTACT_FACEBOOK, CONTACT_REDDIT, CONTACT_TWITCH, CONTACT_YOUTUBE } from 'src/util/constants';
+import {
+  CONTACT_FACEBOOK,
+  CONTACT_GITHUB,
+  CONTACT_LINKEDIN,
+  CONTACT_MAIL,
+  CONTACT_REDDIT,
+  CONTACT_TWITCH,
+  CONTACT_TWITTER,
+  CONTACT_YOUTUBE,
+  DISCORD_SERVER_URL
+} from 'src/util/constants';
+import { IContactMethod, IPrimaryTile } from 'src/util/interfaces';
 import MatIconService from 'src/util/services/mat-icon.service';
 
 @Component({
@@ -28,7 +38,7 @@ export class ContactComponent {
 
   private matIconService: MatIconService;
 
-  constructor(matIconService: MatIconService) {
+  constructor (matIconService: MatIconService) {
     this.matIconService = matIconService;
     this.matIconService.init();
   }

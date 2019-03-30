@@ -1,10 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { RibbonDocsTableComponent } from './ribbon-docs-table.component';
-import MaterialModule from 'src/util/material';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import MaterialModule from 'src/util/material';
+
+import { RibbonDocsTableComponent } from './ribbon-docs-table.component';
 
 describe('RibbonDocsTableComponent', () => {
   let component: RibbonDocsTableComponent;
@@ -12,11 +12,11 @@ describe('RibbonDocsTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule, ReactiveFormsModule, NoopAnimationsModule ],
-      declarations: [ RibbonDocsTableComponent ],
+      imports: [MaterialModule, ReactiveFormsModule, NoopAnimationsModule],
+      declarations: [RibbonDocsTableComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

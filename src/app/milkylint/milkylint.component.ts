@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IPrimaryTile, ICodeTile } from 'src/util/interfaces';
-import { MILKY_TSLINT_YARN, MILKY_TSLINT_GITHUB } from 'src/util/constants';
+import { MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN } from 'src/util/constants';
+import { ICodeTile, IPrimaryTile } from 'src/util/interfaces';
 
 
 @Component({

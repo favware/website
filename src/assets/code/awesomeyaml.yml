@@ -1,8 +1,8 @@
 # YAML Pokédex
 Bulbasaur:
   types:
-  - Grass
-  - Poison
+    - Grass
+    - Poison
   genderRatio:
     M: 0.875
     F: 0.125
@@ -20,7 +20,7 @@ Bulbasaur:
   weightkg: 6.9
   color: Green
   evos:
-  - ivysaur
+    - ivysaur
   eggGroups:
-  - Monster
-  - Grass
+    - Monster
+    - Grass

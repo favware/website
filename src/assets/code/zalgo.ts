@@ -24,10 +24,10 @@ console.log(chars);
 // ZalgoOptions is an interface for TypeScript that has all the options you can supply to the Zalgo function. For example:
 
 const options: ZalgoOptions = {
-    up: true,
-    middle: true,
-    down: true,
-    size: 'maxi',
+  up: true,
+  middle: true,
+  down: true,
+  size: 'maxi',
 };
 
 zalgo('some text', options);
@@ -35,8 +35,8 @@ zalgo('some text', options);
 // Based on:
 
 interface ZalgoOptions {
-    up ?: boolean;
-    middle ?: boolean;
-    down ?: boolean;
-    size ?: 'mini' | 'maxi' | '';
+  up?: boolean;
+  middle?: boolean;
+  down?: boolean;
+  size?: 'mini' | 'maxi' | '';
 }

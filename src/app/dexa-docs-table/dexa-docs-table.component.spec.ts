@@ -1,10 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { DexaDocsTableComponent } from './dexa-docs-table.component';
-import MaterialModule from 'src/util/material';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import MaterialModule from 'src/util/material';
+
+import { DexaDocsTableComponent } from './dexa-docs-table.component';
 
 describe('DexaDocsTableComponent', () => {
   let component: DexaDocsTableComponent;
@@ -12,11 +12,11 @@ describe('DexaDocsTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule, ReactiveFormsModule, NoopAnimationsModule ],
-      declarations: [ DexaDocsTableComponent ],
+      imports: [MaterialModule, ReactiveFormsModule, NoopAnimationsModule],
+      declarations: [DexaDocsTableComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

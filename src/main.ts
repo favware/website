@@ -17,5 +17,5 @@ if (environment.production) {
 
 document.addEventListener('DOMContentLoaded', () => {
   platformBrowserDynamic().bootstrapModule(FavwareModule)
-  .catch(err => console.error(err));
+    .catch(err => console.error(err));
 });

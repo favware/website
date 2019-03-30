@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { MatPaginator, MatSort } from '@angular/material';
-import { FormControl, Validators } from '@angular/forms';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
+import { MatPaginator, MatSort } from '@angular/material';
 import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import RibbonDocsDatasource from './ribbon-docs-datasource';
@@ -10,7 +10,7 @@ import RibbonDocsErrorStateMatches from './ribbon-docs-error-state-matcher';
 @Component({
   selector: 'favware-ribbon-docs-table',
   templateUrl: './ribbon-docs-table.component.html',
-  styleUrls: ['./ribbon-docs-table.component.scss']
+  styleUrls: ['./ribbon-docs-table.component.scss'],
 })
 export class RibbonDocsTableComponent implements OnInit {
 

@@ -3,9 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { DexaComponent } from './dexa.component';
 import MaterialModule from 'src/util/material';
 import ChangeATargetPipe from 'src/util/pipes/ChangeATarget';
+import { DexaComponent } from './dexa.component';
 
 describe('DexaComponent', () => {
   let component: DexaComponent;

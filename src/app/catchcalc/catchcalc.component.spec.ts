@@ -1,12 +1,12 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { CatchcalcComponent } from './catchcalc.component';
 import MaterialModule from 'src/util/material';
 import ChangeATargetPipe from 'src/util/pipes/ChangeATarget';
+import { CatchcalcComponent } from './catchcalc.component';
 
 describe('CatchcalcComponent', () => {
   let component: CatchcalcComponent;

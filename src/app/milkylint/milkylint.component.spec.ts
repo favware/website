@@ -4,8 +4,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { MilkylintComponent } from './milkylint.component';
 import MaterialModule from 'src/util/material';
+import { MilkylintComponent } from './milkylint.component';
 
 describe('MilkylintComponent', () => {
   let component: MilkylintComponent;

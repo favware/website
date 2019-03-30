@@ -4,8 +4,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { CryptoComponent } from './crypto.component';
 import MaterialModule from 'src/util/material';
+import { CryptoComponent } from './crypto.component';
 
 describe('CryptoComponent', () => {
   let component: CryptoComponent;
@@ -23,10 +23,10 @@ describe('CryptoComponent', () => {
           },
         })
       ],
-      declarations: [ CryptoComponent ],
+      declarations: [CryptoComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

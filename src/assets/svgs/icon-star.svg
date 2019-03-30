@@ -1,1 +1,9 @@
-<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.82 247.82"><defs><style>.cls-1{fill:#fed137;}.cls-2{fill:#fff;}</style></defs><title>icon-star</title><circle class="cls-1" cx="123.91" cy="123.91" r="123.91"/><polygon class="cls-2" points="123.89 42.01 150.49 95.94 210.03 104.59 166.96 146.53 177.13 205.82 123.89 177.83 70.69 205.82 80.82 146.53 37.79 104.59 97.29 95.94 123.89 42.01"/></svg>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 247.82 247.82">
+  <defs>
+    <style>.cls-1{fill:#fed137;}.cls-2{fill:#fff;}</style>
+  </defs>
+  <title>icon-star</title>
+  <circle class="cls-1" cx="123.91" cy="123.91" r="123.91"/>
+  <polygon class="cls-2"
+           points="123.89 42.01 150.49 95.94 210.03 104.59 166.96 146.53 177.13 205.82 123.89 177.83 70.69 205.82 80.82 146.53 37.79 104.59 97.29 95.94 123.89 42.01"/>
+</svg>

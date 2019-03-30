@@ -4,8 +4,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { ConverterComponent } from './converter.component';
 import MaterialModule from 'src/util/material';
+import { ConverterComponent } from './converter.component';
 
 describe('ConverterComponent', () => {
   let component: ConverterComponent;

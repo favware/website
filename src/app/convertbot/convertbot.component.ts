@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { oneLine } from 'common-tags';
-import { IPrimaryTile, IMatCarouselOptions } from 'src/util/interfaces';
 import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL } from 'src/util/constants';
+import { IMatCarouselOptions, IPrimaryTile } from 'src/util/interfaces';
 
 
 @Component({

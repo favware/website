@@ -4,8 +4,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import markdownFactory from 'src/util/markdown.factory';
-import { UnescapeComponent } from './unescape.component';
 import { MaterialModule } from 'src/util/material';
+import { UnescapeComponent } from './unescape.component';
 
 describe('UnescapeComponent', () => {
   let component: UnescapeComponent;

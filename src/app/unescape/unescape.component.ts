@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IPrimaryTile, ICodeTile } from 'src/util/interfaces';
-import { UNESCAPE_YARN, UNESCAPE_GITHUB } from 'src/util/constants';
+import { UNESCAPE_GITHUB, UNESCAPE_YARN } from 'src/util/constants';
+import { ICodeTile, IPrimaryTile } from 'src/util/interfaces';
 
 
 @Component({

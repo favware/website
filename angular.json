@@ -106,7 +106,8 @@
             ],
             "exclude": [
               "**/node_modules/**"
-            ]
+            ],
+            "fix": true
           }
         },
         "server": {

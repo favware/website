@@ -7,7 +7,7 @@ const actual = readYaml('/path/to/some/yaml/file');
 
 
 /**
-  {
+ {
     Bulbasaur:
     {
         types: [ 'Grass', 'Poison' ],
