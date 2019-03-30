@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { oneLine } from 'common-tags';
-import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL } from 'src/util/constants';
-import { IPrimaryTile } from 'src/util/interfaces';
+
+import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile } from '../../util';
 
 
 @Component({

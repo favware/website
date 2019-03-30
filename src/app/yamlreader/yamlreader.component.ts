@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN } from 'src/util/constants';
-import { ICodeTile, IPrimaryTile } from 'src/util/interfaces';
+
+import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN, ICodeTile, IPrimaryTile } from '../../util';
 
 
 @Component({

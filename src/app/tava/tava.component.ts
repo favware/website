@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ASSET_BASE_PATH, MatIconService, TAVA_SITE } from 'src/util';
-import { IPrimaryTile, ITavaTile } from 'src/util/interfaces';
+
+import { ASSET_BASE_PATH, IPrimaryTile, ITavaTile, MatIconService, TAVA_SITE } from '../../util';
 
 @Component({
   selector: 'favware-tava',

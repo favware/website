@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { oneLine } from 'common-tags';
 import moment from 'moment';
+
 import {
   ASSET_BASE_PATH,
   AWESOME_CONVERTER_GITHUB,
@@ -19,6 +20,9 @@ import {
   DEXA_GITHUB_URL,
   DEXA_SKILL_URL,
   DISCORD_SERVER_URL,
+  IPrimaryTile,
+  IProjectTile,
+  ITile,
   MILKY_TSLINT_GITHUB,
   MILKY_TSLINT_YARN,
   RIBBON_GITHUB_URL,
@@ -26,8 +30,7 @@ import {
   SEEDCHECKER_GITHUB_URL,
   UNESCAPE_GITHUB,
   UNESCAPE_YARN
-} from 'src/util/constants';
-import { IPrimaryTile, IProjectTile, ITile } from 'src/util/interfaces';
+} from '../../util';
 
 @Component({
   selector: 'favware-home',

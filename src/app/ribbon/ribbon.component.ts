@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { oneLine } from 'common-tags';
-import { DISCORD_SERVER_URL, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from 'src/util/constants';
-import { IPrimaryTile } from 'src/util/interfaces';
+
+import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from '../../util';
 
 
 @Component({

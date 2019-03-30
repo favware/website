@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AWESOME_QUERYSTRING_GITHUB, AWESOME_QUERYSTRING_YARN } from 'src/util/constants';
-import { ICodeTile, IPrimaryTile } from 'src/util/interfaces';
+
+import { AWESOME_QUERYSTRING_GITHUB, AWESOME_QUERYSTRING_YARN, ICodeTile, IPrimaryTile } from '../../util';
 
 
 @Component({

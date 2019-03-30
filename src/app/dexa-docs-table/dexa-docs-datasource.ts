@@ -3,8 +3,9 @@ import { MatPaginator, MatSort } from '@angular/material';
 import Fuse, { FuseOptions } from 'fuse.js';
 import { merge, of as observableOf, BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import docs from 'src/assets/docs/dexa.json';
-import { IDexaDocs, IJSDocJSON } from 'src/util/interfaces.js';
+
+import docs from '../../assets/docs/dexa.json';
+import { IDexaDocs, IJSDocJSON } from '../../util';
 
 const ribbondocs: IJSDocJSON = docs as unknown as IJSDocJSON;
 

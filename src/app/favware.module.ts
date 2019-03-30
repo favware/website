@@ -7,8 +7,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
-import { environment } from 'src/environments/environment';
-import { markdownFactory, CardActionCasePipe, ChangeATargetPipe, ExtractTextPipe, MaterialModule, MatIconService, RedirectGuard } from 'src/util';
+
+import { environment } from '../environments/environment';
+import { markdownFactory, CardActionCasePipe, ChangeATargetPipe, ExtractTextPipe, MaterialModule, MatIconService, RedirectGuard } from '../util';
 
 import {
   CatchcalcComponent,
@@ -18,7 +19,6 @@ import {
   CryptoComponent,
   DexaComponent,
   DexaDocsTableComponent,
-  FavwareRoutingModule,
   HomeComponent,
   MilkylintComponent,
   QuerystringComponent,
@@ -31,6 +31,7 @@ import {
   YamlreaderComponent,
   ZalgoComponent
 } from '.';
+import { FavwareRoutingModule } from './favware-routing.module';
 
 @NgModule({
   declarations: [

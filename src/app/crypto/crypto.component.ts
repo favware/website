@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN } from 'src/util/constants';
-import { ICodeTile, IPrimaryTile } from 'src/util/interfaces';
+
+import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN, ICodeTile, IPrimaryTile } from '../../util';
 
 
 @Component({

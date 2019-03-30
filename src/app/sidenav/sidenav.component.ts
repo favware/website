@@ -1,6 +1,7 @@
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
-import { ISidenavLink } from 'src/util/interfaces';
+
+import { ISidenavLink } from '../../util';
 
 @Component({
   selector: 'favware-sidenav',

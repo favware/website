@@ -16,6 +16,3 @@ export { CryptoComponent } from './crypto/crypto.component';
 export { SidenavComponent } from './sidenav/sidenav.component';
 export { RibbonDocsTableComponent } from './ribbon-docs-table/ribbon-docs-table.component';
 export { DexaDocsTableComponent } from './dexa-docs-table/dexa-docs-table.component';
-export { FavwareRoutingModule } from './favware-routing.module';
-export { FavwareServerModule } from './favware-server.module';
-export { FavwareModule } from './favware.module';

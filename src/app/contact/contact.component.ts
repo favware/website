@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import {
   CONTACT_FACEBOOK,
   CONTACT_GITHUB,
@@ -9,9 +10,10 @@ import {
   CONTACT_TWITTER,
   CONTACT_YOUTUBE,
   DISCORD_SERVER_URL,
+  IContactMethod,
+  IPrimaryTile,
   MatIconService
-} from 'src/util';
-import { IContactMethod, IPrimaryTile } from 'src/util/interfaces';
+} from '../../util';
 
 @Component({
   selector: 'favware-contact',

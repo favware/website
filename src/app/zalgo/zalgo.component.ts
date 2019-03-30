@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN } from 'src/util/constants';
-import { ICodeTile, IPrimaryTile } from 'src/util/interfaces';
+
+import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, ICodeTile, IPrimaryTile } from '../../util';
 
 
 @Component({
