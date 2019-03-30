@@ -17,7 +17,7 @@ export class TavaComponent implements OnInit {
   private readonly metadata = {
     name: 'Ta\'Va - Trial of the Sun God',
     description: 'Mythological aztec puzzle game',
-    image: 'https://favna.xyz/assets/backdrops/tava.webp',
+    image: 'https://favna.xyz/assets/icons/tava-share.webp',
     imageAlt: 'Ta\'Va Preview Image',
   };
 

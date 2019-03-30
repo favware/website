@@ -17,7 +17,7 @@ export class ConvertbotComponent implements OnInit {
   private readonly metadata = {
     name: 'ConvertBot',
     description: 'Unit convertion tool written in C#',
-    image: 'https://favna.xyz/assets/backdrops/convertbot.webp',
+    image: 'https://favna.xyz/assets/icons/convertbot-share.webp',
     imageAlt: 'ConvertBot Preview Image',
   };
 

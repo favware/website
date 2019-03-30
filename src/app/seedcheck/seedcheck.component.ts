@@ -17,7 +17,7 @@ export class SeedcheckComponent implements OnInit {
   private readonly metadata = {
     name: 'SEEDChecker',
     description: '3DS SEEDChecking utility',
-    image: 'https://favna.xyz/assets/backdrops/seedcheck.webp',
+    image: 'https://favna.xyz/assets/icons/seedcheck-share.webp',
     imageAlt: 'SEEDChecker Preview Image',
   };
 

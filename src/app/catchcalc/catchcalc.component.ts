@@ -15,7 +15,7 @@ export class CatchcalcComponent implements OnInit {
   private readonly metadata = {
     name: 'CatchCalc',
     description: 'Gotta Catch Em\' All!',
-    image: 'https://favna.xyz/assets/backdrops/catchcalc.webp',
+    image: 'https://favna.xyz/assets/icons/catchcalc.webp',
     imageAlt: 'CatchCalc Preview Image',
   };
 
