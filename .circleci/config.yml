@@ -10,8 +10,8 @@ machine:
 # List of jobs
 jobs:
 
-  # Firebase Frontend job
-  frontend:
+  # Firebase Build
+  build:
     working_directory: ~/favware
     docker:
       - image: circleci/node:11-browsers
@@ -50,7 +50,7 @@ jobs:
           paths:
             - dist
 
-  # Deploy job
+  # Firebase Deploy
   deploy:
     working_directory: ~/favware
     docker:
@@ -70,7 +70,7 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - frontend
+      - build
       - deploy:
           requires:
             - build
