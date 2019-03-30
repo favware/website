@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/favware-server",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "removeComments": true
+  },
+  "angularCompilerOptions": {
+    "entryModule": "app/favware.server.module#FavwareServerModule"
+  }
+}

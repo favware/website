@@ -8,9 +8,14 @@ import 'prismjs/components/prism-yaml.min.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 
+import { FavwareModule } from './app/favware.module';
 import { environment } from './environments/environment';
-import { HomesiteModule } from './homesite.module';
 
-if (environment.production) enableProdMode();
+if (environment.production) {
+  enableProdMode();
+}
 
-platformBrowserDynamic().bootstrapModule(HomesiteModule).catch(err => console.error(err));
+document.addEventListener('DOMContentLoaded', () => {
+  platformBrowserDynamic().bootstrapModule(FavwareModule)
+  .catch(err => console.error(err));
+});

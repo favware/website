@@ -2,7 +2,7 @@
   "index": "/index.html",
   "assetGroups": [
     {
-      "name": "app",
+      "name": "favware",
       "installMode": "prefetch",
       "resources": {
         "files": [

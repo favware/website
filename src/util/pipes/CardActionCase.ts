@@ -17,3 +17,5 @@ export class CardActionCasePipe implements PipeTransform {
     }
   }
 }
+
+export default CardActionCasePipe;

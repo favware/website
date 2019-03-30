@@ -14,3 +14,5 @@ export class RedirectGuard implements CanActivate {
     return true;
   }
 }
+
+export default RedirectGuard;

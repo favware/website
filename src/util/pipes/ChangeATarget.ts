@@ -6,3 +6,5 @@ export class ChangeATargetPipe implements PipeTransform {
     return value.replace(/(.+)(<a )(.+)/, '$1$2target="_blank" $3');
   }
 }
+
+export default ChangeATargetPipe;

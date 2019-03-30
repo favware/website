@@ -42,7 +42,7 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
                 yarn build
             else
-                yarn build-dev
+                yarn build:dev
             fi
       # Cache the dist folder for the deploy job
       - save_cache:
