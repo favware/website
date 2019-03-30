@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
-import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, ICodeTile, IPrimaryTile } from '../../util';
+import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, COMMON_META_TAGS, ICodeTile, IPrimaryTile } from '../../util';
 
 
 @Component({
@@ -8,7 +9,17 @@ import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, ICodeTile, IPrimaryTile } fro
   templateUrl: './zalgo.component.html',
   styleUrls: ['./zalgo.component.scss'],
 })
-export class ZalgoComponent {
+export class ZalgoComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'Awesome Zalgo',
+    description: 'Unleash and banish the Zalgo Monster!',
+    image: 'https://favna.xyz/assets/icons/zalgo.png',
+    imageAlt: 'Awezome Zalgo Icon Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'Awesome Zalgo',
     subheader: 'Unleash and banish the Zalgo Monster!',
@@ -37,4 +48,20 @@ export class ZalgoComponent {
     header: 'Usage',
     codeFile: '/assets/code/zalgo.js',
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/zalgo' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

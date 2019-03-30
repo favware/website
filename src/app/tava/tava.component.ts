@@ -1,13 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
-import { ASSET_BASE_PATH, IPrimaryTile, ITavaTile, MatIconService, TAVA_SITE } from '../../util';
+import { ASSET_BASE_PATH, COMMON_META_TAGS, IPrimaryTile, ITavaTile, MatIconService, TAVA_SITE } from '../../util';
 
 @Component({
   selector: 'favware-tava',
   templateUrl: './tava.component.html',
   styleUrls: ['./tava.component.scss'],
 })
-export class TavaComponent {
+export class TavaComponent implements OnInit {
+
+  constructor (private matIconService: MatIconService , private title: Title, private meta: Meta) {
+    this.matIconService.init();
+  }
+
+  private readonly metadata = {
+    name: 'Ta\'Va - Trial of the Sun God',
+    description: 'Mythological aztec puzzle game',
+    image: 'https://favna.xyz/assets/backdrops/tava.png',
+    imageAlt: 'Ta\'Va Preview Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'Ta\'Va - Trial of the Sun God',
     subheader: 'Embark on a mythological aztec puzzle game',
@@ -123,10 +136,19 @@ export class TavaComponent {
     }
   ];
 
-  private matIconService: MatIconService;
-
-  constructor (matIconService: MatIconService) {
-    this.matIconService = matIconService;
-    this.matIconService.init();
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/tava' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
   }
 }

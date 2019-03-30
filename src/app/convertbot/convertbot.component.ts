@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTile } from '../../util';
+import { ASSET_BASE_PATH, COMMON_META_TAGS, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTile } from '../../util';
 
 
 @Component({
@@ -9,7 +10,17 @@ import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTi
   templateUrl: './convertbot.component.html',
   styleUrls: ['./convertbot.component.scss'],
 })
-export class ConvertbotComponent {
+export class ConvertbotComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'ConvertBot',
+    description: 'Unit convertion tool written in C#',
+    image: 'https://favna.xyz/assets/backdrops/convertbot.png',
+    imageAlt: 'ConvertBot Preview Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'ConvertBot',
     subheader: 'A C++ based unit conversion utility',
@@ -82,4 +93,20 @@ export class ConvertbotComponent {
     useMouseWheel: true,
     orientation: 'ltr',
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/convertbot' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

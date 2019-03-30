@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
-import { ICodeTile, IPrimaryTile, UNESCAPE_GITHUB, UNESCAPE_YARN } from '../../util';
+import { COMMON_META_TAGS, ICodeTile, IPrimaryTile, UNESCAPE_GITHUB, UNESCAPE_YARN } from '../../util';
 
 
 @Component({
@@ -8,7 +9,17 @@ import { ICodeTile, IPrimaryTile, UNESCAPE_GITHUB, UNESCAPE_YARN } from '../../u
   templateUrl: './unescape.component.html',
   styleUrls: ['./unescape.component.scss'],
 })
-export class UnescapeComponent {
+export class UnescapeComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'Unescape ES6',
+    description: 'Convert HTML entities to HTML characters. For example "&amp;" converts to &',
+    image: 'https://favna.xyz/assets/icons/unescape.png',
+    imageAlt: 'Unescape Icon Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'Unescape-ES6',
     subheader: 'Convert HTML entities to HTML characters',
@@ -60,4 +71,20 @@ export class UnescapeComponent {
   `
     ],
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/unescape' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

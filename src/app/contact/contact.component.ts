@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 import {
+  COMMON_META_TAGS,
   CONTACT_FACEBOOK,
   CONTACT_GITHUB,
   CONTACT_LINKEDIN,
@@ -20,7 +22,19 @@ import {
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+
+  constructor (private matIconService: MatIconService, private title: Title, private meta: Meta) {
+    this.matIconService.init();
+  }
+
+  private readonly metadata = {
+    name: 'Favware Contact',
+    description: 'Have questions, support requests or just want to get in contact with Favna? Go here!',
+    image: 'https://favna.xyz/assets/icons/contact.png',
+    imageAlt: 'Fancy Embedded Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'Got questions, concerns or business inquires?',
     subheader: 'Contact me through one of these sources',
@@ -38,10 +52,19 @@ export class ContactComponent {
     { logo: 'mat-youtube-icon', link: CONTACT_YOUTUBE, color: 'youtube', contact: 'subscribe to me on youtube' }
   ];
 
-  private matIconService: MatIconService;
-
-  constructor (matIconService: MatIconService) {
-    this.matIconService = matIconService;
-    this.matIconService.init();
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/contact' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
   }
 }

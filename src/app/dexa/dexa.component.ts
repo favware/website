@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile } from '../../util';
+import { COMMON_META_TAGS, DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile } from '../../util';
 
 
 @Component({
@@ -9,7 +10,16 @@ import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile } fro
   templateUrl: './dexa.component.html',
   styleUrls: ['./dexa.component.scss'],
 })
-export class DexaComponent {
+export class DexaComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'Dexa',
+    description: 'Turn your Alexa device into your own personal PokéDex',
+    image: 'https://favna.xyz/assets/backdrops/dexa.png',
+    imageAlt: 'Dexa Preview Image',
+  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Dexa',
@@ -46,4 +56,20 @@ export class DexaComponent {
             combining "Dex" with "Alexa". Dexa is made for
             [the Alexa devices from Amazon](https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011).`],
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/dexa' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

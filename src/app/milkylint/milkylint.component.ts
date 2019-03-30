@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
-import { ICodeTile, IPrimaryTile, MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN } from '../../util';
+import { COMMON_META_TAGS, ICodeTile, IPrimaryTile, MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN } from '../../util';
 
 
 @Component({
@@ -8,7 +9,17 @@ import { ICodeTile, IPrimaryTile, MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN } from 
   templateUrl: './milkylint.component.html',
   styleUrls: ['./milkylint.component.scss'],
 })
-export class MilkylintComponent {
+export class MilkylintComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'Milky TSLint',
+    description: 'TypeScript linter plugin for Gulp',
+    image: 'https://favna.xyz/assets/icons/milkylint.png',
+    imageAlt: 'Milky TSLint Icon',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'Milky TSLint',
     subheader: 'TypeScript linter plugin for Gulp',
@@ -37,4 +48,20 @@ export class MilkylintComponent {
     header: 'Usage',
     codeFile: '/assets/code/milkylint.js',
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/milkylint' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

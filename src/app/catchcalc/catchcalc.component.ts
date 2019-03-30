@@ -1,14 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, IMatCarouselOptions, IPrimaryTile } from '../../util';
+import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, COMMON_META_TAGS, IMatCarouselOptions, IPrimaryTile } from '../../util';
 
 @Component({
   selector: 'favware-catchcalc',
   templateUrl: './catchcalc.component.html',
   styleUrls: ['./catchcalc.component.scss'],
 })
-export class CatchcalcComponent {
+export class CatchcalcComponent implements OnInit {
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'CatchCalc',
+    description: 'Gotta Catch Em\' All!',
+    image: 'https://favna.xyz/assets/backdrops/catchcalc.png',
+    imageAlt: 'CatchCalc Preview Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'CatchCalc',
     subheader: 'Calculate Pokémon Generation 6 (XYORAS) catch rates',
@@ -95,4 +105,20 @@ export class CatchcalcComponent {
     useMouseWheel: true,
     orientation: 'ltr',
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/catchcalc' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from '../../util';
+import { COMMON_META_TAGS, DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from '../../util';
 
 
 @Component({
@@ -9,7 +10,17 @@ import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL 
   templateUrl: './ribbon.component.html',
   styleUrls: ['./ribbon.component.scss'],
 })
-export class RibbonComponent {
+export class RibbonComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'Ribbon',
+    description: 'Amazing multifunctional Discord bot that can do anything you want anywhere you want',
+    image: 'https://favna.xyz/assets/backdrops/ribbon.png',
+    imageAlt: 'Ribbon Preview Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'Ribbon',
     subheader: 'A feature rich, modular Discord.JS-Commando server bot',
@@ -43,4 +54,20 @@ export class RibbonComponent {
             Ribbon features commands from searching the web, moderating your server to streaming music and a lot more.
             You can check a more extensive list of commands below.`],
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/ribbon' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

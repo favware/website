@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 import moment from 'moment';
 
@@ -15,6 +16,7 @@ import {
   AWESOME_ZALGO_GITHUB,
   AWESOME_ZALGO_YARN,
   CATCHCALC_GITHUB_URL,
+  COMMON_META_TAGS,
   CONTACT_MAIL,
   CONVERTBOT_GITHUB_URL,
   DEXA_GITHUB_URL,
@@ -37,7 +39,17 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'Favware',
+    description: 'For heart and home, find my projects here',
+    image: 'https://favna.xyz/assets/og-image.png',
+    imageAlt: 'Social Embedding Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'Developer in Web, NodeJS, Unity3D and Java',
     subheader: 'From Web design to discord bots to indie games',
@@ -285,4 +297,20 @@ export class HomeComponent {
       }
     ],
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }

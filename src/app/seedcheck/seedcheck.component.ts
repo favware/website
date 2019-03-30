@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { ASSET_BASE_PATH, IMatCarouselOptions, IPrimaryTile, SEEDCHECKER_GITHUB_URL } from '../../util';
+import { ASSET_BASE_PATH, COMMON_META_TAGS, IMatCarouselOptions, IPrimaryTile, SEEDCHECKER_GITHUB_URL } from '../../util';
 
 
 @Component({
@@ -9,7 +10,17 @@ import { ASSET_BASE_PATH, IMatCarouselOptions, IPrimaryTile, SEEDCHECKER_GITHUB_
   templateUrl: './seedcheck.component.html',
   styleUrls: ['./seedcheck.component.scss'],
 })
-export class SeedcheckComponent {
+export class SeedcheckComponent implements OnInit {
+
+  constructor (private title: Title, private meta: Meta) {}
+
+  private readonly metadata = {
+    name: 'SEEDChecker',
+    description: '3DS SEEDChecking utility',
+    image: 'https://favna.xyz/assets/backdrops/seedcheck.png',
+    imageAlt: 'SEEDChecker Preview Image',
+  };
+
   public readonly headerTile: IPrimaryTile = {
     header: 'SEEDChecker',
     subheader: 'Periodically check if the SEED for a Nintendo 3DS title is available',
@@ -94,4 +105,20 @@ export class SeedcheckComponent {
     useMouseWheel: true,
     orientation: 'ltr',
   };
+
+  ngOnInit (): void {
+    this.title.setTitle(this.metadata.name);
+    this.meta.addTags([
+      { name: 'og:url', content: '/seedcheck' },
+      { name: 'og:title', content: this.metadata.name },
+      { name: 'og:description', content: this.metadata.description },
+      { name: 'og:image', content: this.metadata.image },
+      { name: 'og:image:alt', content: this.metadata.imageAlt },
+      { name: 'twitter:title', content: this.metadata.name },
+      { name: 'twitter:description', content: this.metadata.description },
+      { name: 'twitter:image', content: this.metadata.image },
+      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
+      ...COMMON_META_TAGS
+    ]);
+  }
 }
