@@ -84,8 +84,11 @@ jobs:
       - restore_cache:
           key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
       - run:
+          name: Build Firebase
+          command: pushd functions && yarn --ignore-engines && popd
+      - run:
           name: Install Firebase Tools
-          command: yarn add firebase-tools
+          command: yarn add firebase-tools copy-dir del
       - run:
           name: Deploy Firebase
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
