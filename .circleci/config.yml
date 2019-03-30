@@ -14,7 +14,7 @@ jobs:
   build:
     working_directory: ~/favware
     docker:
-      - image: circleci/node:11-browsers
+      - image: circleci/node:11
     steps:
       - checkout
       - restore_cache:
@@ -57,7 +57,7 @@ jobs:
   deploy:
     working_directory: ~/favware
     docker:
-      - image: circleci/node:11-browsers
+      - image: circleci/node:11
     steps:
       - checkout
       - restore_cache:

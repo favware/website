@@ -18,6 +18,7 @@
     "fs-extra": "^7.0.1"
   },
   "devDependencies": {
+    "@firebase/app-types": "^0.3.7",
     "typescript": "^3.2.2"
   },
   "private": true
