@@ -35,6 +35,6 @@ export class ZalgoComponent {
 
   public readonly usageTile: ICodeTile = {
     header: 'Usage',
-    codeFile: '/assets/code/zalgo.ts',
+    codeFile: '/assets/code/zalgo.js',
   };
 }

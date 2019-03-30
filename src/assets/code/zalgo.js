@@ -21,22 +21,13 @@ banish('ŝ̜̩͇̼̥̼́̏͢o͎͊͜ḿ̛̩̳̖͕̞̩̭ͪe͖̺̣̹̺̋̀͛̽͝ �
 const { chars } = require('awesome-zalgo/dist/chars');
 console.log(chars);
 
-// ZalgoOptions is an interface for TypeScript that has all the options you can supply to the Zalgo function. For example:
+// Zalgo supports options:
 
-const options: ZalgoOptions = {
+const options = {
   up: true,
   middle: true,
   down: true,
-  size: 'maxi',
+  size: 'maxi', // or 'mini' or ''
 };
 
 zalgo('some text', options);
-
-// Based on:
-
-interface ZalgoOptions {
-  up?: boolean;
-  middle?: boolean;
-  down?: boolean;
-  size?: 'mini' | 'maxi' | '';
-}
