@@ -5,6 +5,7 @@
   "author": "Jeroen (Favna) Claassens <support@favna.xyz>",
   "license": "GPL-3.0",
   "homepage": "https://favna.xyz",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Favna/homesite.git"
@@ -13,7 +14,7 @@
     "url": "https://github.com/Favna/homesite/issues"
   },
   "engines": {
-    "node": ">=11.0.0"
+    "node": ">=10"
   },
   "scripts": {
     "ng": "ng",
@@ -28,7 +29,6 @@
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run favware-site:server:production"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^7.2.11",
     "@angular/cdk": "^7.3.6",
