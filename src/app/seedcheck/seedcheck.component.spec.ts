@@ -3,8 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { SeedcheckComponent } from '..';
 import { markdownFactory, ChangeATargetPipe, MaterialModule } from '../../util';
+
+import { SeedcheckComponent } from './seedcheck.component';
 
 
 describe('SeedcheckComponent', () => {

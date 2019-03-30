@@ -3,8 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { CatchcalcComponent } from '..';
 import { markdownFactory, ChangeATargetPipe, MaterialModule } from '../../util';
+
+import { CatchcalcComponent } from './catchcalc.component';
 
 describe('CatchcalcComponent', () => {
   let component: CatchcalcComponent;

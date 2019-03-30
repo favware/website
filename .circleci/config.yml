@@ -10,8 +10,8 @@ machine:
 # List of jobs
 jobs:
 
-  # Build job
-  build:
+  # Firebase Frontend job
+  frontend:
     working_directory: ~/favware
     docker:
       - image: circleci/node:11-browsers
@@ -40,9 +40,9 @@ jobs:
           name: Building
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                yarn build
+                yarn build:ssr
             else
-                yarn build:dev
+                yarn build
             fi
       # Cache the dist folder for the deploy job
       - save_cache:
@@ -70,7 +70,7 @@ workflows:
   version: 2
   build_and_deploy:
     jobs:
-      - build
+      - frontend
       - deploy:
           requires:
             - build

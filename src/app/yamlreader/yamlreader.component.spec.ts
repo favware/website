@@ -3,8 +3,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { YamlreaderComponent } from '..';
 import { markdownFactory, MaterialModule } from '../../util';
+
+import { YamlreaderComponent } from './yamlreader.component';
 
 describe('YamlreaderComponent', () => {
   let component: YamlreaderComponent;

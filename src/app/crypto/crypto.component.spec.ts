@@ -3,8 +3,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { CryptoComponent } from '..';
 import { markdownFactory, MaterialModule } from '../../util';
+
+import { CryptoComponent } from './crypto.component';
 
 describe('CryptoComponent', () => {
   let component: CryptoComponent;

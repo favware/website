@@ -5,7 +5,7 @@ import { MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToo
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
-import { SidenavComponent } from '..';
+import { SidenavComponent } from './sidenav.component';
 
 const routes: Routes = [];
 

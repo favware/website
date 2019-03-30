@@ -3,8 +3,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { ConvertbotComponent } from '..';
 import { markdownFactory, MaterialModule } from '../../util';
+
+import { ConvertbotComponent } from './convertbot.component';
 
 describe('ConvertbotComponent', () => {
   let component: ConvertbotComponent;

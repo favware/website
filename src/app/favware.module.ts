@@ -11,27 +11,25 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { environment } from '../environments/environment';
 import { markdownFactory, CardActionCasePipe, ChangeATargetPipe, ExtractTextPipe, MaterialModule, MatIconService, RedirectGuard } from '../util';
 
-import {
-  CatchcalcComponent,
-  ContactComponent,
-  ConvertbotComponent,
-  ConverterComponent,
-  CryptoComponent,
-  DexaComponent,
-  DexaDocsTableComponent,
-  HomeComponent,
-  MilkylintComponent,
-  QuerystringComponent,
-  RibbonComponent,
-  RibbonDocsTableComponent,
-  SeedcheckComponent,
-  SidenavComponent,
-  TavaComponent,
-  UnescapeComponent,
-  YamlreaderComponent,
-  ZalgoComponent
-} from '.';
+import { CatchcalcComponent } from './catchcalc/catchcalc.component';
+import { ContactComponent } from './contact/contact.component';
+import { ConvertbotComponent } from './convertbot/convertbot.component';
+import { ConverterComponent } from './converter/converter.component';
+import { CryptoComponent } from './crypto/crypto.component';
+import { DexaDocsTableComponent } from './dexa-docs-table/dexa-docs-table.component';
+import { DexaComponent } from './dexa/dexa.component';
 import { FavwareRoutingModule } from './favware-routing.module';
+import { HomeComponent } from './home/home.component';
+import { MilkylintComponent } from './milkylint/milkylint.component';
+import { QuerystringComponent } from './querystring/querystring.component';
+import { RibbonDocsTableComponent } from './ribbon-docs-table/ribbon-docs-table.component';
+import { RibbonComponent } from './ribbon/ribbon.component';
+import { SeedcheckComponent } from './seedcheck/seedcheck.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { TavaComponent } from './tava/tava.component';
+import { UnescapeComponent } from './unescape/unescape.component';
+import { YamlreaderComponent } from './yamlreader/yamlreader.component';
+import { ZalgoComponent } from './zalgo/zalgo.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +56,7 @@ import { FavwareRoutingModule } from './favware-routing.module';
     ZalgoComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({ appId: 'serverFavware' }),
     BrowserAnimationsModule,
     FavwareRoutingModule,
     MaterialModule,

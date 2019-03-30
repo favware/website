@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FlexLayoutServerModule } from '@angular/flex-layout/server';
 import { ServerModule } from '@angular/platform-server';
 import { ModuleMapLoaderModule } from '@nguniversal/module-map-ngfactory-loader';
 
@@ -9,7 +10,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
   imports: [
     FavwareModule,
     ServerModule,
-    ModuleMapLoaderModule
+    ModuleMapLoaderModule,
+    FlexLayoutServerModule
   ],
   bootstrap: [SidenavComponent],
 })

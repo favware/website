@@ -4,4 +4,4 @@ import { environment } from './environments/environment';
 
 if (environment.production) enableProdMode();
 
-export { FavwareServerModule } from './app/favware-server.module';
+export { FavwareServerModule } from './app/favware.server.module';

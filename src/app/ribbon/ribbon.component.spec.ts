@@ -2,8 +2,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { RibbonComponent } from '..';
 import { markdownFactory, ChangeATargetPipe, MaterialModule } from '../../util';
+
+import { RibbonComponent } from './ribbon.component';
 
 describe('RibbonComponent', () => {
   let component: RibbonComponent;

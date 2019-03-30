@@ -3,8 +3,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { ZalgoComponent } from '..';
 import { markdownFactory, MaterialModule } from '../../util';
+
+import { ZalgoComponent } from './zalgo.component';
 
 describe('ZalgoComponent', () => {
   let component: ZalgoComponent;

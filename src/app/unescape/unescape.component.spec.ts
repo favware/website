@@ -3,8 +3,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { UnescapeComponent } from '..';
 import { markdownFactory, MaterialModule } from '../../util';
+
+import { UnescapeComponent } from './unescape.component';
 
 describe('UnescapeComponent', () => {
   let component: UnescapeComponent;
