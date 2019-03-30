@@ -10,7 +10,7 @@
   <div class="center-text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1.5%" fxLayoutGap.sm="8%"
        fxLayoutGap.xs="8%">
     <div *ngFor="let method of contactMethods" fxFill fxFlex="grow" fxFlexAlign="center">
-      <a [href]="method.link" [target]="method.link.startsWith('mailto') ? '_self' : '_blank'">
+      <a [href]="method.link" [target]="method.link.startsWith('mailto') ? '_self' : '_blank'" [rel]="button.outer ? 'noreferrer' : ''">
         <button [color]="method.color" mat-button mat-fab>
           <mat-icon [svgIcon]="method.logo" class="fab-icon"></mat-icon>
         </button>

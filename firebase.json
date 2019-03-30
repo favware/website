@@ -9,12 +9,17 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [
-      {
-        "source": "**",
-        "function": "favware"
-      }
-    ]
+    "rewrites": [{
+      "source": "**",
+      "function": "favware"
+    }],
+    "headers": [{
+      "source" : "**",
+      "headers" : [{
+        "key" : "Cache-Control",
+        "value" : "max-age=31536000"
+      }]
+    }]
   },
   "storage": {
     "rules": "storage.rules"

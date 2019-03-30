@@ -17,7 +17,7 @@ export class ConvertbotComponent implements OnInit {
   private readonly metadata = {
     name: 'ConvertBot',
     description: 'Unit convertion tool written in C#',
-    image: 'https://favna.xyz/assets/backdrops/convertbot.png',
+    image: 'https://favna.xyz/assets/backdrops/convertbot.webp',
     imageAlt: 'ConvertBot Preview Image',
   };
 
@@ -71,9 +71,9 @@ export class ConvertbotComponent implements OnInit {
   };
 
   public readonly slides: Array<{ url: string }> = [
-    { url: '/assets/screenshots/convertbot/base.png' },
-    { url: '/assets/screenshots/convertbot/degrees.png' },
-    { url: '/assets/screenshots/convertbot/length.png' }
+    { url: '/assets/screenshots/convertbot/base.webp' },
+    { url: '/assets/screenshots/convertbot/degrees.webp' },
+    { url: '/assets/screenshots/convertbot/length.webp' }
   ];
 
   public readonly carousel: IMatCarouselOptions = {

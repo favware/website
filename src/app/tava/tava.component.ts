@@ -17,7 +17,7 @@ export class TavaComponent implements OnInit {
   private readonly metadata = {
     name: 'Ta\'Va - Trial of the Sun God',
     description: 'Mythological aztec puzzle game',
-    image: 'https://favna.xyz/assets/backdrops/tava.png',
+    image: 'https://favna.xyz/assets/backdrops/tava.webp',
     imageAlt: 'Ta\'Va Preview Image',
   };
 
@@ -76,19 +76,19 @@ export class TavaComponent implements OnInit {
 
   public readonly mediaTile: ITavaTile[] = [
     {
-      icon: `assets/screenshots/tava/village.jpg`,
+      icon: `assets/screenshots/tava/village.webp`,
       alt: 'village_screenshot',
       header: 'Explore',
       description: 'Mesoamerican mythology',
     },
     {
-      icon: `assets/screenshots/tava/cave.jpg`,
+      icon: `assets/screenshots/tava/cave.webp`,
       alt: 'cave_screenshot',
       header: 'Challenges',
       description: 'The Boar Chase Challenge',
     },
     {
-      icon: `assets/screenshots/tava/puzzle.jpg`,
+      icon: `assets/screenshots/tava/puzzle.webp`,
       alt: 'puzzle_screenshot',
       header: 'Puzzles',
       description: 'Push the boulders!',
@@ -102,19 +102,19 @@ export class TavaComponent implements OnInit {
 
   public readonly teamTileFirstLine: ITavaTile[] = [
     {
-      icon: `assets/screenshots/tava/art.jpg`,
+      icon: `assets/screenshots/tava/art.webp`,
       alt: 'art_team_photo',
       header: 'Art Team',
       description: '',
     },
     {
-      icon: `assets/screenshots/tava/conceptowner.jpg`,
+      icon: `assets/screenshots/tava/conceptowner.webp`,
       alt: 'conceptowner_photo',
       header: 'Concept Owner',
       description: '',
     },
     {
-      icon: `assets/screenshots/tava/gameplay.jpg`,
+      icon: `assets/screenshots/tava/gameplay.webp`,
       alt: 'gameplay_team_photo',
       header: 'Gameplay Team',
       description: '',
@@ -123,13 +123,13 @@ export class TavaComponent implements OnInit {
 
   public readonly teamTileSecondLine: ITavaTile[] = [
     {
-      icon: `assets/screenshots/tava/programming.jpg`,
+      icon: `assets/screenshots/tava/programming.webp`,
       alt: 'programming_team_photo',
       header: 'Programming Team',
       description: '',
     },
     {
-      icon: `assets/screenshots/tava/sound.jpg`,
+      icon: `assets/screenshots/tava/sound.webp`,
       alt: 'sound_team_photo',
       header: 'Sound Owner',
       description: '',

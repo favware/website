@@ -30,7 +30,7 @@
         <mat-card-actions>
           <div *ngFor="let action of card.actions" style="display: inline-flex">
             <ng-container *ngIf="action.outer; else interalAction">
-              <a [href]="action.link" [target]="action.link.startsWith('mailto') ? '_self' : '_blank'">
+              <a [href]="action.link" [target]="action.link.startsWith('mailto') ? '_self' : '_blank'" rel="noreferrer">
                 <button mat-button>{{action.label | cardActionCase}}</button>
               </a>
             </ng-container>

@@ -5,7 +5,7 @@
       <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
       <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
-        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'">
+        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'" [rel]="button.outer ? 'noreferrer' : ''">
           <button [color]="button.color" class="full-size-button"
                   mat-raised-button>{{button.text | uppercase}}</button>
         </a>

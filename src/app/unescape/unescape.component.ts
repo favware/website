@@ -16,7 +16,7 @@ export class UnescapeComponent implements OnInit {
   private readonly metadata = {
     name: 'Unescape ES6',
     description: 'Convert HTML entities to HTML characters. For example "&amp;" converts to &',
-    image: 'https://favna.xyz/assets/icons/unescape.png',
+    image: 'https://favna.xyz/assets/icons/unescape.webp',
     imageAlt: 'Unescape Icon Image',
   };
 

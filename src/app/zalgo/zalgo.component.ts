@@ -16,7 +16,7 @@ export class ZalgoComponent implements OnInit {
   private readonly metadata = {
     name: 'Awesome Zalgo',
     description: 'Unleash and banish the Zalgo Monster!',
-    image: 'https://favna.xyz/assets/icons/zalgo.png',
+    image: 'https://favna.xyz/assets/icons/zalgo.webp',
     imageAlt: 'Awezome Zalgo Icon Image',
   };
 

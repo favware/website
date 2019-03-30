@@ -16,7 +16,7 @@ export class QuerystringComponent implements OnInit {
   private readonly metadata = {
     name: 'Awesome Querystring',
     description: 'Querystring that is robust in its working yet remains awesome to TypeScript users',
-    image: 'https://favna.xyz/assets/icons/querystring.png',
+    image: 'https://favna.xyz/assets/icons/querystring.webp',
     imageAlt: 'Awesome Querystring Icon',
   };
 

@@ -16,7 +16,7 @@ export class ConverterComponent implements OnInit {
   private readonly metadata = {
     name: 'Awesome Converter',
     description: 'Awesome and typesafe unit converter, supports many different systems of units',
-    image: 'https://favna.xyz/assets/icons/converter.png',
+    image: 'https://favna.xyz/assets/icons/converter.webp',
     imageAlt: 'Awesome Converter Icon',
   };
 
