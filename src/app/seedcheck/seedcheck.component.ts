@@ -17,7 +17,7 @@ export class SeedcheckComponent implements OnInit {
   private readonly metadata = {
     name: 'SEEDChecker',
     description: '3DS SEEDChecking utility',
-    image: 'https://favna.xyz/assets/icons/seedcheck-share.webp',
+    image: 'https://favna.xyz/assets/icons/seedcheck-share.png',
     imageAlt: 'SEEDChecker Preview Image',
   };
 
@@ -83,9 +83,9 @@ export class SeedcheckComponent implements OnInit {
   };
 
   public readonly slides: Array<{ url: string }> = [
-    { url: '/assets/screenshots/seedcheck/base.webp' },
-    { url: '/assets/screenshots/seedcheck/noseed.webp' },
-    { url: '/assets/screenshots/seedcheck/seed.webp' }
+    { url: '/assets/screenshots/seedcheck/base.png' },
+    { url: '/assets/screenshots/seedcheck/noseed.png' },
+    { url: '/assets/screenshots/seedcheck/seed.png' }
   ];
 
   public readonly carousel: IMatCarouselOptions = {

@@ -17,7 +17,7 @@ export class RibbonComponent implements OnInit {
   private readonly metadata = {
     name: 'Ribbon',
     description: 'Amazing multifunctional Discord bot that can do anything you want anywhere you want',
-    image: 'https://favna.xyz/assets/icons/ribbon.webp',
+    image: 'https://favna.xyz/assets/icons/ribbon.png',
     imageAlt: 'Ribbon Preview Image',
   };
 

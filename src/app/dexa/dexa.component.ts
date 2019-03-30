@@ -17,7 +17,7 @@ export class DexaComponent implements OnInit {
   private readonly metadata = {
     name: 'Dexa',
     description: 'Turn your Alexa device into your own personal PokéDex',
-    image: 'https://favna.xyz/assets/icons/dexa.webp',
+    image: 'https://favna.xyz/assets/icons/dexa.png',
     imageAlt: 'Dexa Preview Image',
   };
 

@@ -16,7 +16,7 @@ export class YamlreaderComponent implements OnInit {
   private readonly metadata = {
     name: 'Awesome YAML Reader',
     description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
-    image: 'https://favna.xyz/assets/icons/yamlreader.webp',
+    image: 'https://favna.xyz/assets/icons/yamlreader.png',
     imageAlt: 'Awesome YAML Reader Icon Image',
   };
 

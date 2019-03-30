@@ -16,7 +16,7 @@ export class MilkylintComponent implements OnInit {
   private readonly metadata = {
     name: 'Milky TSLint',
     description: 'TypeScript linter plugin for Gulp',
-    image: 'https://favna.xyz/assets/icons/milkylint.webp',
+    image: 'https://favna.xyz/assets/icons/milkylint.png',
     imageAlt: 'Milky TSLint Icon',
   };
 

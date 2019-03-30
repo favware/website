@@ -15,7 +15,7 @@ export class CatchcalcComponent implements OnInit {
   private readonly metadata = {
     name: 'CatchCalc',
     description: 'Gotta Catch Em\' All!',
-    image: 'https://favna.xyz/assets/icons/catchcalc.webp',
+    image: 'https://favna.xyz/assets/icons/catchcalc.png',
     imageAlt: 'CatchCalc Preview Image',
   };
 
@@ -83,9 +83,9 @@ export class CatchcalcComponent implements OnInit {
   };
 
   public readonly slides: Array<{ url: string }> = [
-    { url: '/assets/screenshots/catchcalc/base.webp' },
-    { url: '/assets/screenshots/catchcalc/easymon.webp' },
-    { url: '/assets/screenshots/catchcalc/hardmon.webp' }
+    { url: '/assets/screenshots/catchcalc/base.png' },
+    { url: '/assets/screenshots/catchcalc/easymon.png' },
+    { url: '/assets/screenshots/catchcalc/hardmon.png' }
   ];
 
   public readonly carousel: IMatCarouselOptions = {

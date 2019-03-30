@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
   private readonly metadata = {
     name: 'Favware',
     description: 'For heart and home, find my projects here',
-    image: 'https://favna.xyz/assets/og-image.webp',
+    image: 'https://favna.xyz/assets/og-image.png',
     imageAlt: 'Social Embedding Image',
   };
 
@@ -87,7 +87,7 @@ export class HomeComponent implements OnInit {
     cards: [
       {
         header: {
-          avatar: `assets/icons/ribbon.webp`,
+          avatar: `assets/icons/ribbon.png`,
           imageAlt: 'Ribbon',
           title: 'Ribbon',
           subtitle: 'Discord Bot',
@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/dexa.webp`,
+          avatar: `assets/icons/dexa.png`,
           imageAlt: 'Dexa',
           title: 'Dexa',
           subtitle: 'Advanced PokéDex Skill',
@@ -116,7 +116,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/seedcheck.webp`,
+          avatar: `assets/icons/seedcheck.png`,
           imageAlt: 'Seedchecker',
           title: 'Seedchecker',
           subtitle: '3DS Utility',
@@ -130,7 +130,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/convertbot.webp`,
+          avatar: `assets/icons/convertbot.png`,
           imageAlt: 'Convertbot',
           title: 'Convertbot',
           subtitle: 'Conversion Utility',
@@ -144,7 +144,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/catchcalc.webp`,
+          avatar: `assets/icons/catchcalc.png`,
           imageAlt: 'CatchCalc',
           title: 'CatchCalc',
           subtitle: 'Pokémon Helper Tool',
@@ -158,7 +158,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/tava.webp`,
+          avatar: `assets/icons/tava.png`,
           imageAlt: 'Ta\'Va',
           title: 'Ta\'Va - Trial of the Sun God',
           subtitle: 'Aztec adventure game',
@@ -172,7 +172,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/unescape.webp`,
+          avatar: `assets/icons/unescape.png`,
           imageAlt: 'Unescape Project',
           title: 'Unescape-es6',
           subtitle: 'yarn add unescape-es6',
@@ -186,7 +186,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/querystring.webp`,
+          avatar: `assets/icons/querystring.png`,
           imageAlt: 'Awesome Querystring',
           title: 'Awesome Querystring',
           subtitle: 'yarn add awesome-querystring',
@@ -200,7 +200,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/converter.webp`,
+          avatar: `assets/icons/converter.png`,
           imageAlt: 'Awesome Converter',
           title: 'Awesome Converter',
           subtitle: 'yarn add awesome-converter',
@@ -214,7 +214,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/milkylint.webp`,
+          avatar: `assets/icons/milkylint.png`,
           imageAlt: 'Milky TSLint',
           title: 'Milky TSLint',
           subtitle: 'yarn add -D milky-tslint',
@@ -228,7 +228,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/yamlreader.webp`,
+          avatar: `assets/icons/yamlreader.png`,
           imageAlt: 'Awesome YAML Reader',
           title: 'Awesome YAML Reader',
           subtitle: 'yarn add awesome-yaml-reader',
@@ -242,7 +242,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/zalgo.webp`,
+          avatar: `assets/icons/zalgo.png`,
           imageAlt: 'Awesome Zalgo',
           title: 'Awesome Zalgo',
           subtitle: 'yarn add awesome-zalgo',
@@ -257,7 +257,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/crypto.webp`,
+          avatar: `assets/icons/crypto.png`,
           imageAlt: 'Awesome Crypto',
           title: 'Awesome Crypto',
           subtitle: 'yarn add awesome-crypto',
@@ -271,7 +271,7 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/filler.webp`,
+          avatar: `assets/icons/filler.png`,
           imageAlt: 'TBA',
           title: 'Something mysterious',
           subtitle: 'Filler slot',
@@ -284,7 +284,7 @@ export class HomeComponent implements OnInit {
 
       {
         header: {
-          avatar: `assets/icons/contact.webp`,
+          avatar: `assets/icons/contact.png`,
           imageAlt: 'Contact Page',
           title: 'Contact Page',
           subtitle: 'Get in touch',

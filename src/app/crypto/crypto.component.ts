@@ -16,7 +16,7 @@ export class CryptoComponent implements OnInit {
   private readonly metadata = {
     name: 'Awesome Crypto',
     description: 'Easily generate a random cryptographic in NodeJS!',
-    image: 'https://favna.xyz/assets/icons/crypto.webp',
+    image: 'https://favna.xyz/assets/icons/crypto.png',
     imageAlt: 'Awesome Crypto Icon',
   };
 

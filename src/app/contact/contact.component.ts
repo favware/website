@@ -31,7 +31,7 @@ export class ContactComponent implements OnInit {
   private readonly metadata = {
     name: 'Favware Contact',
     description: 'Have questions, support requests or just want to get in contact with Favna? Go here!',
-    image: 'https://favna.xyz/assets/icons/contact.webp',
+    image: 'https://favna.xyz/assets/icons/contact.png',
     imageAlt: 'Fancy Embedded Image',
   };
 

@@ -20,77 +20,77 @@ export class SidenavComponent implements OnInit {
     {
       routerLink: '.',
       label: 'Home',
-      image: 'assets/icons/home.webp',
+      image: 'assets/icons/home.png',
     },
     {
       routerLink: '/ribbon',
       label: 'Ribbon',
-      image: 'assets/icons/ribbon.webp',
+      image: 'assets/icons/ribbon.png',
     },
     {
       routerLink: '/dexa',
       label: 'Dexa',
-      image: 'assets/icons/dexa.webp',
+      image: 'assets/icons/dexa.png',
     },
     {
       routerLink: '/seedcheck',
       label: 'SeedChecker',
-      image: 'assets/icons/seedcheck.webp',
+      image: 'assets/icons/seedcheck.png',
     },
     {
       routerLink: '/convertbot',
       label: 'ConvertBot',
-      image: 'assets/icons/convertbot.webp',
+      image: 'assets/icons/convertbot.png',
     },
     {
       routerLink: '/catchcalc',
       label: 'CatchCalc',
-      image: 'assets/icons/catchcalc.webp',
+      image: 'assets/icons/catchcalc.png',
     },
     {
       routerLink: '/tava',
       label: 'Ta\'Va',
-      image: 'assets/icons/tava.webp',
+      image: 'assets/icons/tava.png',
     },
     {
       routerLink: '/unescape',
       label: 'Unescape-ES6',
-      image: 'assets/icons/unescape.webp',
+      image: 'assets/icons/unescape.png',
     },
     {
       routerLink: '/querystring',
       label: 'Awesome Querystring',
-      image: 'assets/icons/querystring.webp',
+      image: 'assets/icons/querystring.png',
     },
     {
       routerLink: '/converter',
       label: 'Awesome Converter',
-      image: 'assets/icons/converter.webp',
+      image: 'assets/icons/converter.png',
     },
     {
       routerLink: '/milkylint',
       label: 'Milky TSLint',
-      image: 'assets/icons/milkylint.webp',
+      image: 'assets/icons/milkylint.png',
     },
     {
       routerLink: '/yamlreader',
       label: 'Awesome YAML Reader',
-      image: 'assets/icons/yamlreader.webp',
+      image: 'assets/icons/yamlreader.png',
     },
     {
       routerLink: '/zalgo',
       label: 'Awesome Zalgo',
-      image: 'assets/icons/zalgo.webp',
+      image: 'assets/icons/zalgo.png',
     },
     {
       routerLink: '/crypto',
       label: 'Awesome Crypto',
-      image: 'assets/icons/crypto.webp',
+      image: 'assets/icons/crypto.png',
     },
     {
       routerLink: '/contact',
       label: 'Contact',
-      image: 'assets/icons/contact.webp',
+      image: 'assets/icons/contact.png',
     }
   ];
 
