@@ -1,7 +1,7 @@
 import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
 import Fuse, { FuseOptions } from 'fuse.js';
-import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
+import { merge, of as observableOf, BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import docs from 'src/assets/docs/dexa.json';
 import { IDexaDocs, IJSDocJSON } from 'src/util/interfaces.js';
@@ -102,5 +102,3 @@ export class DexaDocsDatasource extends DataSource<IDexaDocs> {
     return data;
   }
 }
-
-export default DexaDocsDatasource;

@@ -96,5 +96,3 @@ export class CatchcalcComponent {
     orientation: 'ltr',
   };
 }
-
-export default CatchcalcComponent;

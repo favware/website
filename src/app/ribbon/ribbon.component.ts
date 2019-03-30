@@ -44,5 +44,3 @@ export class RibbonComponent {
             You can check a more extensive list of commands below.`],
   };
 }
-
-export default RibbonComponent;

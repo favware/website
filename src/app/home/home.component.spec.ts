@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
-import MaterialModule from 'src/util/material';
-import CardActionCasePipe from 'src/util/pipes/CardActionCase';
-import RedirectGuard from 'src/util/redirectguard.guard';
+import { CardActionCasePipe, MaterialModule, RedirectGuard } from 'src/util';
 
-import { HomeComponent } from './home.component';
+import { HomeComponent } from '..';
 
 @NgModule({
   imports: [RouterModule.forRoot([], { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],

@@ -8,10 +8,10 @@ import {
   CONTACT_TWITCH,
   CONTACT_TWITTER,
   CONTACT_YOUTUBE,
-  DISCORD_SERVER_URL
-} from 'src/util/constants';
+  DISCORD_SERVER_URL,
+  MatIconService
+} from 'src/util';
 import { IContactMethod, IPrimaryTile } from 'src/util/interfaces';
-import MatIconService from 'src/util/services/mat-icon.service';
 
 @Component({
   selector: 'favware-contact',
@@ -43,6 +43,3 @@ export class ContactComponent {
     this.matIconService.init();
   }
 }
-
-
-export default ContactComponent;

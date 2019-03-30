@@ -3,8 +3,9 @@ import { FormControl, Validators } from '@angular/forms';
 import { MatPaginator, MatSort } from '@angular/material';
 import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import DexaDocsDatasource from './dexa-docs-datasource';
-import DexaDocsErrorStateMatches from './dexa-docs-error-state-matcher';
+
+import { DexaDocsDatasource } from './dexa-docs-datasource';
+import { DexaDocsErrorStateMatches } from './dexa-docs-error-state-matcher';
 
 @Component({
   selector: 'favware-dexa-docs-table',
@@ -33,7 +34,4 @@ export class DexaDocsTableComponent implements OnInit {
     this.searchFormControl.setValue('');
     this.dataSource.filter = '';
   }
-
 }
-
-export default DexaDocsTableComponent;

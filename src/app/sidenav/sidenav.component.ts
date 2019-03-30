@@ -1,4 +1,4 @@
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { ISidenavLink } from 'src/util/interfaces';
 
@@ -114,7 +114,4 @@ export class SidenavComponent implements OnInit {
         }
       });
   }
-
 }
-
-export default SidenavComponent;

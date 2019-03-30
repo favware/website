@@ -2,11 +2,10 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { markdownFactory, ChangeATargetPipe, MaterialModule } from 'src/util';
 
-import markdownFactory from 'src/util/markdown.factory';
-import MaterialModule from 'src/util/material';
-import ChangeATargetPipe from 'src/util/pipes/ChangeATarget';
-import { SeedcheckComponent } from './seedcheck.component';
+import { SeedcheckComponent } from '..';
+
 
 describe('SeedcheckComponent', () => {
   let component: SeedcheckComponent;

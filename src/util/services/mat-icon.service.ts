@@ -81,5 +81,3 @@ export class MatIconService {
     );
   }
 }
-
-export default MatIconService;

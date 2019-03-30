@@ -29,5 +29,3 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 export class MaterialModule {
 
 }
-
-export default MaterialModule;

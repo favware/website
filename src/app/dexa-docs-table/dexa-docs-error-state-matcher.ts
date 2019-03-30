@@ -6,5 +6,3 @@ export class DexaDocsErrorStateMatches implements ErrorStateMatcher {
     return !!(control && control.invalid);
   }
 }
-
-export default DexaDocsErrorStateMatches;

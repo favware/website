@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DEXA_SKILL_URL, DISCORD_SERVER_URL, RIBBON_INVITE_URL } from '../util/constants';
-import RedirectGuard from '../util/redirectguard.guard';
-import CatchcalcComponent from './catchcalc/catchcalc.component';
-import ContactComponent from './contact/contact.component';
-import ConvertbotComponent from './convertbot/convertbot.component';
-import ConverterComponent from './converter/converter.component';
-import CryptoComponent from './crypto/crypto.component';
-import DexaComponent from './dexa/dexa.component';
-import HomeComponent from './home/home.component';
-import MilkylintComponent from './milkylint/milkylint.component';
-import QuerystringComponent from './querystring/querystring.component';
-import RibbonComponent from './ribbon/ribbon.component';
-import SeedcheckComponent from './seedcheck/seedcheck.component';
-import TavaComponent from './tava/tava.component';
-import UnescapeComponent from './unescape/unescape.component';
-import YamlreaderComponent from './yamlreader/yamlreader.component';
-import ZalgoComponent from './zalgo/zalgo.component';
+import { DEXA_SKILL_URL, DISCORD_SERVER_URL, RedirectGuard, RIBBON_INVITE_URL } from 'src/util';
+
+import {
+  CatchcalcComponent,
+  ContactComponent,
+  ConvertbotComponent,
+  ConverterComponent,
+  CryptoComponent,
+  DexaComponent,
+  HomeComponent,
+  MilkylintComponent,
+  QuerystringComponent,
+  RibbonComponent,
+  SeedcheckComponent,
+  TavaComponent,
+  UnescapeComponent,
+  YamlreaderComponent,
+  ZalgoComponent
+} from '.';
 
 const routes: Routes = [
   {
@@ -264,5 +266,3 @@ const routes: Routes = [
 })
 export class FavwareRoutingModule {
 }
-
-export default FavwareRoutingModule;

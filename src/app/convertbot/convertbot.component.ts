@@ -83,6 +83,3 @@ export class ConvertbotComponent {
     orientation: 'ltr',
   };
 }
-
-
-export default ConvertbotComponent;

@@ -1,11 +1,12 @@
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatPaginator, MatSort } from '@angular/material';
 import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-import RibbonDocsDatasource from './ribbon-docs-datasource';
-import RibbonDocsErrorStateMatches from './ribbon-docs-error-state-matcher';
+
+import { RibbonDocsDatasource } from './ribbon-docs-datasource';
+import { RibbonDocsErrorStateMatches } from './ribbon-docs-error-state-matcher';
 
 @Component({
   selector: 'favware-ribbon-docs-table',
@@ -48,7 +49,4 @@ export class RibbonDocsTableComponent implements OnInit {
     this.searchFormControl.setValue('');
     this.dataSource.filter = '';
   }
-
 }
-
-export default RibbonDocsTableComponent;

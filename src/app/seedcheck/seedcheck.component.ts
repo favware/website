@@ -95,5 +95,3 @@ export class SeedcheckComponent {
     orientation: 'ltr',
   };
 }
-
-export default SeedcheckComponent;

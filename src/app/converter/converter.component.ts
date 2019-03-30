@@ -38,6 +38,3 @@ export class ConverterComponent {
     codeFile: '/assets/code/converter.js',
   };
 }
-
-
-export default ConverterComponent;

@@ -38,5 +38,3 @@ export class MilkylintComponent {
     codeFile: '/assets/code/milkylint.js',
   };
 }
-
-export default MilkylintComponent;

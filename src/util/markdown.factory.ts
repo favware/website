@@ -1,7 +1,7 @@
 import { MarkedOptions } from 'marked';
 import { MarkedRenderer } from 'ngx-markdown';
 
-const markdownFactory = (): MarkedOptions => {
+export const markdownFactory = (): MarkedOptions => {
   const renderer = new MarkedRenderer();
 
   renderer.blockquote = (text: string) => `<blockquote class="blockquote"><p>${text}</p></blockquote>`;
@@ -18,5 +18,3 @@ const markdownFactory = (): MarkedOptions => {
     tables: true,
   };
 };
-
-export default markdownFactory;

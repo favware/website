@@ -38,7 +38,4 @@ export class CryptoComponent {
     header: 'Usage',
     codeFile: '/assets/code/crypto.js',
   };
-
 }
-
-export default CryptoComponent;

@@ -43,5 +43,3 @@ export class YamlreaderComponent {
     codeFile: '/assets/code/awesomeyaml.yml',
   };
 }
-
-export default YamlreaderComponent;

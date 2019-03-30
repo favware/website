@@ -8,7 +8,7 @@ import 'prismjs/components/prism-yaml.min.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 
-import { FavwareModule } from './app/favware.module';
+import { FavwareModule } from './app';
 import { environment } from './environments/environment';
 
 if (environment.production) {

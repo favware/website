@@ -6,5 +6,3 @@ export class RibbonDocsErrorStateMatches implements ErrorStateMatcher {
     return !!(control && control.invalid);
   }
 }
-
-export default RibbonDocsErrorStateMatches;

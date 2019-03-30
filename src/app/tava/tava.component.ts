@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { ASSET_BASE_PATH, TAVA_SITE } from 'src/util/constants';
+import { ASSET_BASE_PATH, MatIconService, TAVA_SITE } from 'src/util';
 import { IPrimaryTile, ITavaTile } from 'src/util/interfaces';
-import MatIconService from 'src/util/services/mat-icon.service';
-
 
 @Component({
   selector: 'favware-tava',
@@ -132,5 +130,3 @@ export class TavaComponent {
     this.matIconService.init();
   }
 }
-
-export default TavaComponent;

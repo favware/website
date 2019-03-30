@@ -283,5 +283,3 @@ export class HomeComponent {
     ],
   };
 }
-
-export default HomeComponent;

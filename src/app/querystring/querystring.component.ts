@@ -43,5 +43,3 @@ export class QuerystringComponent {
     codeFile: '/assets/code/querystring.parse.js',
   };
 }
-
-export default QuerystringComponent;

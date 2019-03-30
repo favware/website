@@ -46,7 +46,4 @@ export class DexaComponent {
             combining "Dex" with "Alexa". Dexa is made for
             [the Alexa devices from Amazon](https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011).`],
   };
-
 }
-
-export default DexaComponent;

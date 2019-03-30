@@ -6,5 +6,3 @@ export class ExtractTextPipe implements PipeTransform {
     return value[section];
   }
 }
-
-export default ExtractTextPipe;

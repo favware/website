@@ -1,7 +1,7 @@
 import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
 import Fuse, { FuseOptions } from 'fuse.js';
-import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
+import { merge, of as observableOf, BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import docs from 'src/assets/docs/ribbon.json';
 import { IJSDocJSON, IRibbonDocs } from 'src/util/interfaces';
@@ -106,5 +106,3 @@ export class RibbonDocsDatasource extends DataSource<IRibbonDocs> {
     return data;
   }
 }
-
-export default RibbonDocsDatasource;

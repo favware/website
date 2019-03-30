@@ -1,10 +1,10 @@
 import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
-import { MaterialModule } from 'src/util/material';
+import { markdownFactory } from 'src/util';
+import { MaterialModule } from 'src/util/material.module';
 
-import markdownFactory from '../../util/markdown.factory';
-import { TavaComponent } from './tava.component';
+import { TavaComponent } from '..';
 
 describe('TavaComponent', () => {
   let component: TavaComponent;

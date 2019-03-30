@@ -2,10 +2,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+import { markdownFactory, MaterialModule } from 'src/util';
 
-import markdownFactory from 'src/util/markdown.factory';
-import { MaterialModule } from 'src/util/material';
-import { UnescapeComponent } from './unescape.component';
+import { UnescapeComponent } from '..';
 
 describe('UnescapeComponent', () => {
   let component: UnescapeComponent;

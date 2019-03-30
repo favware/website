@@ -38,5 +38,3 @@ export class ZalgoComponent {
     codeFile: '/assets/code/zalgo.ts',
   };
 }
-
-export default ZalgoComponent;
