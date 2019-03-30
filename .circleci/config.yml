@@ -37,9 +37,6 @@ jobs:
           name: Testing
           command: yarn test --no-watch
       - run:
-          name: Build Firebase
-          command: pushd functions && yarn --ignore-engines && popd
-      - run:
           name: Building
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then

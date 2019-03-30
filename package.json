@@ -24,6 +24,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:dev": "ng build",
+    "prebuild:ssr": "pushd functions && yarn --ignore-engines && popd",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run favware-site:server:production"
   },
