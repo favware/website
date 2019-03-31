@@ -10,5 +10,7 @@ To get ready to work on the codebase, please do the following:
 1. Fork & clone the repository, and make sure you're on the **master** branch
 2. Run `yarn install`
 3. Code your heart out!
-4. Run `yarn run lint` to run TSLint and ensure your code abides by the coding style
-5. [Submit a pull request](https://github.com/favna/homesite/compare)
+4. Run `yarn lint` to confirm the linting is correct
+5. Run `yarn test` to confirm all unit tests pass
+6. Run `yarn build:ssr` to confirm the SSR build can be made
+7. [Submit a pull request](https://github.com/favna/homesite/compare)
