@@ -3,7 +3,6 @@ import { enableProdMode } from '@angular/core';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 // Import module map for lazy loading
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
-
 import * as express from 'express';
 import { join } from 'path';
 import 'zone.js/dist/zone-node';
@@ -25,7 +24,7 @@ app.engine('html', ngExpressEngine({
   bootstrap: FavwareServerModuleNgFactory,
   providers: [
     provideModuleMap(LAZY_MODULE_MAP)
-  ]
+  ],
 }));
 
 app.set('view engine', 'html');
@@ -35,7 +34,7 @@ app.set('views', DIST_FOLDER);
 // app.get('/api/**', (req, res) => { });
 // Serve static files from /browser
 app.get('*.*', express.static(DIST_FOLDER, {
-  maxAge: '1y'
+  maxAge: '1y',
 }));
 
 // All regular routes use the Universal engine
