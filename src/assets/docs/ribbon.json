@@ -29,7 +29,7 @@
     "meta": {
       "lineno": 2,
       "filename": "badwords.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -88,7 +88,7 @@
     "meta": {
       "lineno": 2,
       "filename": "duptext.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -137,7 +137,7 @@
     "meta": {
       "lineno": 2,
       "filename": "excessivecaps.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -186,7 +186,7 @@
     "meta": {
       "lineno": 2,
       "filename": "excessiveemojis.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -225,7 +225,7 @@
     "meta": {
       "lineno": 2,
       "filename": "excessivementions.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -255,7 +255,7 @@
     "meta": {
       "lineno": 2,
       "filename": "externallinks.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -284,7 +284,7 @@
     "meta": {
       "lineno": 2,
       "filename": "invitesfilter.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -323,7 +323,7 @@
     "meta": {
       "lineno": 2,
       "filename": "slowmode.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\automod"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
     "examples": [
@@ -341,7 +341,7 @@
     "meta": {
       "lineno": 2,
       "filename": "bank.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -359,7 +359,7 @@
     "meta": {
       "lineno": 2,
       "filename": "chips.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -397,7 +397,7 @@
     "meta": {
       "lineno": 2,
       "filename": "coin.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -416,7 +416,7 @@
     "meta": {
       "lineno": 2,
       "filename": "daily.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "order": 11
@@ -441,7 +441,7 @@
     "meta": {
       "lineno": 2,
       "filename": "deposit.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -479,7 +479,7 @@
     "meta": {
       "lineno": 2,
       "filename": "give.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -498,7 +498,7 @@
     "meta": {
       "lineno": 2,
       "filename": "leaderboard.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "order": 14
@@ -523,7 +523,7 @@
     "meta": {
       "lineno": 2,
       "filename": "memberbalance.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -552,7 +552,7 @@
     "meta": {
       "lineno": 2,
       "filename": "slots.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -571,7 +571,7 @@
     "meta": {
       "lineno": 2,
       "filename": "weekly.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "order": 17
@@ -596,7 +596,7 @@
     "meta": {
       "lineno": 2,
       "filename": "wheeloffortune.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -625,7 +625,7 @@
     "meta": {
       "lineno": 2,
       "filename": "withdraw.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\casino"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
     "examples": [
@@ -672,7 +672,7 @@
     "meta": {
       "lineno": 2,
       "filename": "length.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\converters"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
     "examples": [
@@ -719,7 +719,7 @@
     "meta": {
       "lineno": 2,
       "filename": "mass.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\converters"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
     "examples": [
@@ -748,7 +748,7 @@
     "meta": {
       "lineno": 2,
       "filename": "math.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\converters"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
     "examples": [
@@ -795,7 +795,7 @@
     "meta": {
       "lineno": 2,
       "filename": "oxr.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\converters"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
     "examples": [
@@ -842,7 +842,7 @@
     "meta": {
       "lineno": 2,
       "filename": "temperature.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\converters"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
     "examples": [
@@ -861,7 +861,7 @@
     "meta": {
       "lineno": 2,
       "filename": "favna.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\custom"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\custom"
     },
     "preserveName": true,
     "order": 25
@@ -876,7 +876,7 @@
     "meta": {
       "lineno": 2,
       "filename": "kai.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\custom"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\custom"
     },
     "preserveName": true,
     "order": 26
@@ -911,7 +911,7 @@
     "meta": {
       "lineno": 2,
       "filename": "docs.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\docs"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\docs"
     },
     "preserveName": true,
     "examples": [
@@ -940,7 +940,7 @@
     "meta": {
       "lineno": 2,
       "filename": "mdn.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\docs"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\docs"
     },
     "preserveName": true,
     "examples": [
@@ -969,7 +969,7 @@
     "meta": {
       "lineno": 2,
       "filename": "yarn.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\docs"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\docs"
     },
     "preserveName": true,
     "examples": [
@@ -998,7 +998,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypasta.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1036,7 +1036,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypastaadd.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1055,7 +1055,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypastalist.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "order": 32
@@ -1080,7 +1080,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypastaremove.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1109,7 +1109,7 @@
     "meta": {
       "lineno": 2,
       "filename": "qrgen.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1139,7 +1139,7 @@
     "meta": {
       "lineno": 2,
       "filename": "randomcol.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1177,7 +1177,7 @@
     "meta": {
       "lineno": 2,
       "filename": "remind.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1206,7 +1206,7 @@
     "meta": {
       "lineno": 2,
       "filename": "say.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1225,7 +1225,7 @@
     "meta": {
       "lineno": 2,
       "filename": "saywut.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "order": 38
@@ -1250,7 +1250,7 @@
     "meta": {
       "lineno": 2,
       "filename": "time.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1297,7 +1297,7 @@
     "meta": {
       "lineno": 2,
       "filename": "translate.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1326,7 +1326,7 @@
     "meta": {
       "lineno": 2,
       "filename": "weather.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1345,7 +1345,7 @@
     "meta": {
       "lineno": 2,
       "filename": "xkcd.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "order": 42
@@ -1370,7 +1370,7 @@
     "meta": {
       "lineno": 2,
       "filename": "zalgo.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\extra"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
     "examples": [
@@ -1399,7 +1399,7 @@
     "meta": {
       "lineno": 2,
       "filename": "8ball.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\games"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
     "examples": [
@@ -1437,7 +1437,7 @@
     "meta": {
       "lineno": 2,
       "filename": "dice.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\games"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
     "examples": [
@@ -1456,7 +1456,7 @@
     "meta": {
       "lineno": 2,
       "filename": "dndcoin.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\games"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
     "order": 46
@@ -1490,7 +1490,7 @@
     "meta": {
       "lineno": 2,
       "filename": "fight.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\games"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
     "examples": [
@@ -1519,7 +1519,7 @@
     "meta": {
       "lineno": 2,
       "filename": "rps.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\games"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
     "examples": [
@@ -1559,7 +1559,7 @@
     "meta": {
       "lineno": 2,
       "filename": "ship.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\games"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
     "examples": [
@@ -1597,7 +1597,7 @@
     "meta": {
       "lineno": 2,
       "filename": "strawpoll.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\games"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
     "examples": [
@@ -1627,7 +1627,7 @@
     "meta": {
       "lineno": 2,
       "filename": "activity.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "examples": [
@@ -1666,7 +1666,7 @@
     "meta": {
       "lineno": 2,
       "filename": "avatar.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "examples": [
@@ -1696,7 +1696,7 @@
     "meta": {
       "lineno": 2,
       "filename": "discordbots.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "examples": [
@@ -1715,7 +1715,7 @@
     "meta": {
       "lineno": 2,
       "filename": "emotes.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "order": 54
@@ -1740,7 +1740,7 @@
     "meta": {
       "lineno": 2,
       "filename": "iam.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "examples": [
@@ -1769,7 +1769,7 @@
     "meta": {
       "lineno": 2,
       "filename": "iamnot.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "examples": [
@@ -1788,7 +1788,7 @@
     "meta": {
       "lineno": 2,
       "filename": "invite.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "order": 57
@@ -1813,7 +1813,7 @@
     "meta": {
       "lineno": 2,
       "filename": "reddit.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "examples": [
@@ -1832,7 +1832,7 @@
     "meta": {
       "lineno": 2,
       "filename": "server.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "order": 59
@@ -1847,7 +1847,7 @@
     "meta": {
       "lineno": 2,
       "filename": "stats.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "order": 60
@@ -1872,7 +1872,7 @@
     "meta": {
       "lineno": 2,
       "filename": "userinfo.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\info"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
     "examples": [
@@ -1910,7 +1910,7 @@
     "meta": {
       "lineno": 2,
       "filename": "fortnite.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -1939,7 +1939,7 @@
     "meta": {
       "lineno": 2,
       "filename": "osu.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -1988,7 +1988,7 @@
     "meta": {
       "lineno": 2,
       "filename": "overwatch.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -2026,7 +2026,7 @@
     "meta": {
       "lineno": 2,
       "filename": "pubg.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -2055,7 +2055,7 @@
     "meta": {
       "lineno": 2,
       "filename": "showdown.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -2093,7 +2093,7 @@
     "meta": {
       "lineno": 2,
       "filename": "addrole.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2122,7 +2122,7 @@
     "meta": {
       "lineno": 2,
       "filename": "announce.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2161,7 +2161,7 @@
     "meta": {
       "lineno": 2,
       "filename": "automod.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2200,7 +2200,7 @@
     "meta": {
       "lineno": 2,
       "filename": "ban.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2239,7 +2239,7 @@
     "meta": {
       "lineno": 2,
       "filename": "casinolimit.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2269,7 +2269,7 @@
     "meta": {
       "lineno": 2,
       "filename": "confmute.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2316,7 +2316,7 @@
     "meta": {
       "lineno": 2,
       "filename": "countdownadd.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2335,7 +2335,7 @@
     "meta": {
       "lineno": 2,
       "filename": "countdownlist.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "order": 74
@@ -2360,7 +2360,7 @@
     "meta": {
       "lineno": 2,
       "filename": "countdownremove.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2389,7 +2389,7 @@
     "meta": {
       "lineno": 2,
       "filename": "defaultrole.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2418,7 +2418,7 @@
     "meta": {
       "lineno": 2,
       "filename": "deletecommandmessages.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2457,7 +2457,7 @@
     "meta": {
       "lineno": 2,
       "filename": "deletewarn.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2496,7 +2496,7 @@
     "meta": {
       "lineno": 2,
       "filename": "delrole.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2535,7 +2535,7 @@
     "meta": {
       "lineno": 2,
       "filename": "joinmessages.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2574,7 +2574,7 @@
     "meta": {
       "lineno": 2,
       "filename": "kick.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2613,7 +2613,7 @@
     "meta": {
       "lineno": 2,
       "filename": "leavemessages.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2642,7 +2642,7 @@
     "meta": {
       "lineno": 2,
       "filename": "listwarn.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2660,7 +2660,7 @@
     "meta": {
       "lineno": 2,
       "filename": "lockdown.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "params": [
@@ -2708,7 +2708,7 @@
     "meta": {
       "lineno": 2,
       "filename": "memberlogs.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2747,7 +2747,7 @@
     "meta": {
       "lineno": 2,
       "filename": "modlogs.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2776,7 +2776,7 @@
     "meta": {
       "lineno": 2,
       "filename": "mute.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2814,7 +2814,7 @@
     "meta": {
       "lineno": 2,
       "filename": "nickname.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2843,7 +2843,7 @@
     "meta": {
       "lineno": 2,
       "filename": "purge.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2872,7 +2872,7 @@
     "meta": {
       "lineno": 2,
       "filename": "regexmatchtoggle.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2902,7 +2902,7 @@
     "meta": {
       "lineno": 2,
       "filename": "selfroles.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2932,7 +2932,7 @@
     "meta": {
       "lineno": 2,
       "filename": "setannounce.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2961,7 +2961,7 @@
     "meta": {
       "lineno": 2,
       "filename": "setnonexplicitblock.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2999,7 +2999,7 @@
     "meta": {
       "lineno": 2,
       "filename": "softban.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3047,7 +3047,7 @@
     "meta": {
       "lineno": 2,
       "filename": "tempban.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3094,7 +3094,7 @@
     "meta": {
       "lineno": 2,
       "filename": "timeradd.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3113,7 +3113,7 @@
     "meta": {
       "lineno": 2,
       "filename": "timerlist.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "order": 97
@@ -3138,7 +3138,7 @@
     "meta": {
       "lineno": 2,
       "filename": "timerremove.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3167,7 +3167,7 @@
     "meta": {
       "lineno": 2,
       "filename": "unknownmessages.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3186,7 +3186,7 @@
     "meta": {
       "lineno": 2,
       "filename": "unlock.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "order": 100
@@ -3211,7 +3211,7 @@
     "meta": {
       "lineno": 2,
       "filename": "unmute.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3258,7 +3258,7 @@
     "meta": {
       "lineno": 2,
       "filename": "warn.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3288,7 +3288,7 @@
     "meta": {
       "lineno": 2,
       "filename": "defaultvolume.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3317,7 +3317,7 @@
     "meta": {
       "lineno": 2,
       "filename": "launch.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3348,7 +3348,7 @@
     "meta": {
       "lineno": 2,
       "filename": "maxlength.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3379,7 +3379,7 @@
     "meta": {
       "lineno": 2,
       "filename": "maxsongs.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3398,7 +3398,7 @@
     "meta": {
       "lineno": 2,
       "filename": "pause.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "order": 107
@@ -3424,7 +3424,7 @@
     "meta": {
       "lineno": 2,
       "filename": "queue.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3443,7 +3443,7 @@
     "meta": {
       "lineno": 2,
       "filename": "resume.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "order": 109
@@ -3458,7 +3458,7 @@
     "meta": {
       "lineno": 2,
       "filename": "save.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "order": 110
@@ -3472,7 +3472,7 @@
     "meta": {
       "lineno": 2,
       "filename": "shuffle.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3502,7 +3502,7 @@
     "meta": {
       "lineno": 2,
       "filename": "skip.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3521,7 +3521,7 @@
     "meta": {
       "lineno": 2,
       "filename": "status.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "order": 113
@@ -3536,7 +3536,7 @@
     "meta": {
       "lineno": 2,
       "filename": "stop.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "order": 114
@@ -3562,7 +3562,7 @@
     "meta": {
       "lineno": 2,
       "filename": "volume.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\music"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
     "examples": [
@@ -3591,7 +3591,7 @@
     "meta": {
       "lineno": 2,
       "filename": "e621.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3620,7 +3620,7 @@
     "meta": {
       "lineno": 2,
       "filename": "gelbooru.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3649,7 +3649,7 @@
     "meta": {
       "lineno": 2,
       "filename": "paheal.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3678,7 +3678,7 @@
     "meta": {
       "lineno": 2,
       "filename": "pornvids.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3707,7 +3707,7 @@
     "meta": {
       "lineno": 2,
       "filename": "rule34.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3726,7 +3726,7 @@
     "meta": {
       "lineno": 2,
       "filename": "checkguilds.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\owner"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
     "order": 121
@@ -3760,7 +3760,7 @@
     "meta": {
       "lineno": 2,
       "filename": "customtopup.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\owner"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
     "examples": [
@@ -3779,7 +3779,7 @@
     "meta": {
       "lineno": 2,
       "filename": "dbpost.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\owner"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
     "order": 123
@@ -3794,7 +3794,7 @@
     "meta": {
       "lineno": 2,
       "filename": "eshopfetch.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\owner"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
     "order": 124
@@ -3819,7 +3819,7 @@
     "meta": {
       "lineno": 2,
       "filename": "tagmember.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\owner"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
     "examples": [
@@ -3838,7 +3838,7 @@
     "meta": {
       "lineno": 2,
       "filename": "unknowncommand.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\owner"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
     "order": 126
@@ -3863,7 +3863,7 @@
     "meta": {
       "lineno": 2,
       "filename": "dex.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -3892,7 +3892,7 @@
     "meta": {
       "lineno": 2,
       "filename": "flavor.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -3921,7 +3921,7 @@
     "meta": {
       "lineno": 2,
       "filename": "item.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -3980,7 +3980,7 @@
     "meta": {
       "lineno": 2,
       "filename": "learn.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -4011,7 +4011,7 @@
     "meta": {
       "lineno": 2,
       "filename": "ability.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -4040,7 +4040,7 @@
     "meta": {
       "lineno": 2,
       "filename": "move.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -4070,7 +4070,7 @@
     "meta": {
       "lineno": 2,
       "filename": "tcg.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -4099,7 +4099,7 @@
     "meta": {
       "lineno": 2,
       "filename": "type.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -4128,7 +4128,7 @@
     "meta": {
       "lineno": 2,
       "filename": "anime.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4157,7 +4157,7 @@
     "meta": {
       "lineno": 2,
       "filename": "cydia.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4186,7 +4186,7 @@
     "meta": {
       "lineno": 2,
       "filename": "define.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4215,7 +4215,7 @@
     "meta": {
       "lineno": 2,
       "filename": "eshop.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4244,7 +4244,7 @@
     "meta": {
       "lineno": 2,
       "filename": "girlsfrontline.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4273,7 +4273,7 @@
     "meta": {
       "lineno": 2,
       "filename": "google.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4302,7 +4302,7 @@
     "meta": {
       "lineno": 2,
       "filename": "igdb.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4331,7 +4331,7 @@
     "meta": {
       "lineno": 2,
       "filename": "image.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4360,7 +4360,7 @@
     "meta": {
       "lineno": 2,
       "filename": "itunes.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4389,7 +4389,7 @@
     "meta": {
       "lineno": 2,
       "filename": "lmgtfy.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4418,7 +4418,7 @@
     "meta": {
       "lineno": 2,
       "filename": "manga.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4447,7 +4447,7 @@
     "meta": {
       "lineno": 2,
       "filename": "steam.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4476,7 +4476,7 @@
     "meta": {
       "lineno": 2,
       "filename": "tmdb.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4505,7 +4505,7 @@
     "meta": {
       "lineno": 2,
       "filename": "tvdb.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4534,7 +4534,7 @@
     "meta": {
       "lineno": 2,
       "filename": "urban.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4563,7 +4563,7 @@
     "meta": {
       "lineno": 2,
       "filename": "youtube.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\searches"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
     "examples": [
@@ -4592,7 +4592,7 @@
     "meta": {
       "lineno": 2,
       "filename": "twitchmonitors.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\streamwatch"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
     },
     "preserveName": true,
     "examples": [
@@ -4621,7 +4621,7 @@
     "meta": {
       "lineno": 2,
       "filename": "twitchoutput.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\streamwatch"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
     },
     "preserveName": true,
     "examples": [
@@ -4650,7 +4650,7 @@
     "meta": {
       "lineno": 2,
       "filename": "twitchtoggle.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\streamwatch"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
     },
     "preserveName": true,
     "examples": [
@@ -4668,7 +4668,7 @@
     "meta": {
       "lineno": 2,
       "filename": "cookie.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "params": [
@@ -4707,7 +4707,7 @@
     "meta": {
       "lineno": 2,
       "filename": "cuddle.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4737,7 +4737,7 @@
     "meta": {
       "lineno": 2,
       "filename": "feed.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4767,7 +4767,7 @@
     "meta": {
       "lineno": 2,
       "filename": "hug.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4797,7 +4797,7 @@
     "meta": {
       "lineno": 2,
       "filename": "kiss.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4815,7 +4815,7 @@
     "meta": {
       "lineno": 2,
       "filename": "neko.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4845,7 +4845,7 @@
     "meta": {
       "lineno": 2,
       "filename": "pat.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4875,7 +4875,7 @@
     "meta": {
       "lineno": 2,
       "filename": "poke.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4905,7 +4905,7 @@
     "meta": {
       "lineno": 2,
       "filename": "slap.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4935,7 +4935,7 @@
     "meta": {
       "lineno": 2,
       "filename": "smug.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
@@ -4965,7 +4965,7 @@
     "meta": {
       "lineno": 2,
       "filename": "tickle.js",
-      "path": "E:\\UserFiles\\DevProjects\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
     "examples": [
