@@ -10,7 +10,8 @@
 
   <mat-sidenav-container
     [style.marginTop.px]="isSmall ? 56 : 0"
-    class="sidenav-container">
+    class="sidenav-container"
+    [hasBackdrop]="false">
     <mat-sidenav #drawer [disableClose]="isSidenavClosable" [fixedInViewport]="isFixedInViewport"
                  [mode]="sidenavMode"
                  [opened]="isSidenavOpen" autoFocus fixedTopGap="56" role="navigation">
