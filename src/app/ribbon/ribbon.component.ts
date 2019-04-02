@@ -18,7 +18,7 @@ export class RibbonComponent implements OnInit {
     description: 'Amazing multifunctional Discord bot that can do anything you want anywhere you want',
     image: 'https://favna.xyz/assets/icons/ribbon.png',
     imageAlt: 'Ribbon Preview Image',
-    url: '/ribbon'
+    url: '/ribbon',
   };
 
   public readonly headerTile: IPrimaryTile = {

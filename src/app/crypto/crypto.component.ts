@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 
 import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
@@ -18,7 +17,7 @@ export class CryptoComponent implements OnInit {
     description: 'Easily generate a random cryptographic in NodeJS!',
     image: 'https://favna.xyz/assets/icons/crypto.png',
     imageAlt: 'Awesome Crypto Icon',
-    url: '/crypto'
+    url: '/crypto',
   };
 
   public readonly headerTile: IPrimaryTile = {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, SeoService, ICodeTile, IPrimaryTile } from '../../util';
+import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
 
 @Component({

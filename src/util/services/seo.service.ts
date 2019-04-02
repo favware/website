@@ -8,7 +8,7 @@ type seoTags = {
   slug?: string;
   imageAlt?: string;
   url?: string;
-}
+};
 
 @Injectable({
   providedIn: 'root',

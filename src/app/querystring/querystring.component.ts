@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 
 import { AWESOME_QUERYSTRING_GITHUB, AWESOME_QUERYSTRING_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
@@ -18,7 +17,7 @@ export class QuerystringComponent implements OnInit {
     description: 'Querystring that is robust in its working yet remains awesome to TypeScript users',
     image: 'https://favna.xyz/assets/icons/querystring.png',
     imageAlt: 'Awesome Querystring Icon',
-    url: '/querystring'
+    url: '/querystring',
   };
 
   public readonly headerTile: IPrimaryTile = {

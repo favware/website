@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 
 import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
-
 
 @Component({
   selector: 'favware-converter',

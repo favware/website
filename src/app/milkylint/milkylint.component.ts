@@ -17,7 +17,7 @@ export class MilkylintComponent implements OnInit {
     description: 'TypeScript linter plugin for Gulp',
     image: 'https://favna.xyz/assets/icons/milkylint.png',
     imageAlt: 'Milky TSLint Icon',
-    url: '/milkylint'
+    url: '/milkylint',
   };
 
   public readonly headerTile: IPrimaryTile = {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { oneLine } from 'common-tags';
 
-import { ASSET_BASE_PATH, IMatCarouselOptions, IPrimaryTile, SEEDCHECKER_GITHUB_URL, SeoService } from '../../util';
+import { ASSET_BASE_PATH, IMatCarouselOptions, IPrimaryTile, SeoService, SEEDCHECKER_GITHUB_URL } from '../../util';
 
 
 @Component({

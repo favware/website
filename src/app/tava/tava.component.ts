@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 
-import { ASSET_BASE_PATH, IPrimaryTile, ITavaTile, MatIconService, TAVA_SITE, SeoService } from '../../util';
+import { ASSET_BASE_PATH, IPrimaryTile, ITavaTile, MatIconService, SeoService, TAVA_SITE } from '../../util';
 
 @Component({
   selector: 'favware-tava',
@@ -19,7 +18,7 @@ export class TavaComponent implements OnInit {
     description: 'Mythological aztec puzzle game',
     image: 'https://favna.xyz/assets/icons/tava-share.png',
     imageAlt: 'Ta\'Va Preview Image',
-    url: '/tava'
+    url: '/tava',
   };
 
   public readonly headerTile: IPrimaryTile = {

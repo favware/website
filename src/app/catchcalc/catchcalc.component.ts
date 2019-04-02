@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, SeoService, IMatCarouselOptions, IPrimaryTile } from '../../util';
+import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, IMatCarouselOptions, IPrimaryTile, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-catchcalc',
