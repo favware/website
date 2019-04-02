@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { COMMON_META_TAGS, DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from '../../util';
+import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL, SeoService } from '../../util';
 
 
 @Component({
@@ -12,13 +11,14 @@ import { COMMON_META_TAGS, DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, 
 })
 export class RibbonComponent implements OnInit {
 
-  constructor (private title: Title, private meta: Meta) {}
+  constructor (private seo: SeoService) {}
 
   private readonly metadata = {
-    name: 'Ribbon',
+    title: 'Ribbon',
     description: 'Amazing multifunctional Discord bot that can do anything you want anywhere you want',
     image: 'https://favna.xyz/assets/icons/ribbon.png',
     imageAlt: 'Ribbon Preview Image',
+    url: '/ribbon'
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -56,18 +56,12 @@ export class RibbonComponent implements OnInit {
   };
 
   ngOnInit (): void {
-    this.title.setTitle(this.metadata.name);
-    this.meta.addTags([
-      { name: 'og:url', content: '/ribbon' },
-      { name: 'og:title', content: this.metadata.name },
-      { name: 'og:description', content: this.metadata.description },
-      { name: 'og:image', content: this.metadata.image },
-      { name: 'og:image:alt', content: this.metadata.imageAlt },
-      { name: 'twitter:title', content: this.metadata.name },
-      { name: 'twitter:description', content: this.metadata.description },
-      { name: 'twitter:image', content: this.metadata.image },
-      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
-      ...COMMON_META_TAGS
-    ]);
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+    });
   }
 }

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 
-import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN, COMMON_META_TAGS, ICodeTile, IPrimaryTile } from '../../util';
-
+import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-yamlreader',
@@ -11,13 +9,14 @@ import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN, COMMON_META_TAGS,
 })
 export class YamlreaderComponent implements OnInit {
 
-  constructor (private title: Title, private meta: Meta) {}
+  constructor (private seo: SeoService) {}
 
   private readonly metadata = {
-    name: 'Awesome YAML Reader',
+    title: 'Awesome YAML Reader',
     description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
     image: 'https://favna.xyz/assets/icons/yamlreader.png',
     imageAlt: 'Awesome YAML Reader Icon Image',
+    url: '/yamlreader',
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -55,18 +54,12 @@ export class YamlreaderComponent implements OnInit {
   };
 
   ngOnInit (): void {
-    this.title.setTitle(this.metadata.name);
-    this.meta.addTags([
-      { name: 'og:url', content: '/yamlreader' },
-      { name: 'og:title', content: this.metadata.name },
-      { name: 'og:description', content: this.metadata.description },
-      { name: 'og:image', content: this.metadata.image },
-      { name: 'og:image:alt', content: this.metadata.imageAlt },
-      { name: 'twitter:title', content: this.metadata.name },
-      { name: 'twitter:description', content: this.metadata.description },
-      { name: 'twitter:image', content: this.metadata.image },
-      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
-      ...COMMON_META_TAGS
-    ]);
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+    });
   }
 }

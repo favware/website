@@ -9,7 +9,11 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { environment } from '../environments/environment';
-import { markdownFactory, CardActionCasePipe, ChangeATargetPipe, ExtractTextPipe, MaterialModule, MatIconService, RedirectGuard } from '../util';
+import {
+  markdownFactory, CardActionCasePipe, ChangeATargetPipe,
+  ExtractTextPipe, MaterialModule, MatIconService, RedirectGuard,
+  SeoService,
+} from '../util';
 
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
@@ -72,7 +76,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     LayoutModule
   ],
-  providers: [RedirectGuard, MatIconService],
+  providers: [RedirectGuard, MatIconService, SeoService],
   bootstrap: [SidenavComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

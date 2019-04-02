@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 
 import {
-  COMMON_META_TAGS,
   CONTACT_FACEBOOK,
   CONTACT_GITHUB,
   CONTACT_LINKEDIN,
@@ -14,7 +12,8 @@ import {
   DISCORD_SERVER_URL,
   IContactMethod,
   IPrimaryTile,
-  MatIconService
+  MatIconService,
+  SeoService
 } from '../../util';
 
 @Component({
@@ -24,15 +23,16 @@ import {
 })
 export class ContactComponent implements OnInit {
 
-  constructor (private matIconService: MatIconService, private title: Title, private meta: Meta) {
+  constructor (private matIconService: MatIconService, private seo: SeoService) {
     this.matIconService.init();
   }
 
   private readonly metadata = {
-    name: 'Favware Contact',
+    title: 'Favware Contact',
     description: 'Have questions, support requests or just want to get in contact with Favna? Go here!',
     image: 'https://favna.xyz/assets/icons/contact.png',
     imageAlt: 'Fancy Embedded Image',
+    url: '/contact',
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -53,18 +53,12 @@ export class ContactComponent implements OnInit {
   ];
 
   ngOnInit (): void {
-    this.title.setTitle(this.metadata.name);
-    this.meta.addTags([
-      { name: 'og:url', content: '/contact' },
-      { name: 'og:title', content: this.metadata.name },
-      { name: 'og:description', content: this.metadata.description },
-      { name: 'og:image', content: this.metadata.image },
-      { name: 'og:image:alt', content: this.metadata.imageAlt },
-      { name: 'twitter:title', content: this.metadata.name },
-      { name: 'twitter:description', content: this.metadata.description },
-      { name: 'twitter:image', content: this.metadata.image },
-      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
-      ...COMMON_META_TAGS
-    ]);
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+    });
   }
 }

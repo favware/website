@@ -47,11 +47,3 @@ export const CONTACT_TWITCH = 'https://www.twitch.tv/favna';
 export const CONTACT_TWITTER = 'https://twitter.com/intent/follow?screen_name=favna_';
 export const CONTACT_MAIL = `mailto:${COMMON_EMAIL}`;
 export const CONTACT_YOUTUBE = 'https://www.youtube.com/c/favna?sub_confirmation=1';
-
-export const COMMON_META_TAGS: MetaDefinition[] = [
-    { name: 'og:image:type', content: 'image/png' },
-    { name: 'og:type', content: 'website' },
-    { name: 'fb:app_id', content: '977960562367980' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:site', content: '@Favna_' }
-];

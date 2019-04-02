@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, COMMON_META_TAGS, IMatCarouselOptions, IPrimaryTile } from '../../util';
+import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, SeoService, IMatCarouselOptions, IPrimaryTile } from '../../util';
 
 @Component({
   selector: 'favware-catchcalc',
@@ -10,13 +10,14 @@ import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, COMMON_META_TAGS, IMatCarouselOp
   styleUrls: ['./catchcalc.component.scss'],
 })
 export class CatchcalcComponent implements OnInit {
-  constructor (private title: Title, private meta: Meta) {}
+  constructor (private seo: SeoService) {}
 
   private readonly metadata = {
-    name: 'CatchCalc',
+    title: 'CatchCalc',
     description: 'Gotta Catch Em\' All!',
     image: 'https://favna.xyz/assets/icons/catchcalc.png',
     imageAlt: 'CatchCalc Preview Image',
+    url: '/catchcalc',
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -107,18 +108,12 @@ export class CatchcalcComponent implements OnInit {
   };
 
   ngOnInit (): void {
-    this.title.setTitle(this.metadata.name);
-    this.meta.addTags([
-      { name: 'og:url', content: '/catchcalc' },
-      { name: 'og:title', content: this.metadata.name },
-      { name: 'og:description', content: this.metadata.description },
-      { name: 'og:image', content: this.metadata.image },
-      { name: 'og:image:alt', content: this.metadata.imageAlt },
-      { name: 'twitter:title', content: this.metadata.name },
-      { name: 'twitter:description', content: this.metadata.description },
-      { name: 'twitter:image', content: this.metadata.image },
-      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
-      ...COMMON_META_TAGS
-    ]);
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+    });
   }
 }

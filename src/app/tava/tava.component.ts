@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
-import { ASSET_BASE_PATH, COMMON_META_TAGS, IPrimaryTile, ITavaTile, MatIconService, TAVA_SITE } from '../../util';
+import { ASSET_BASE_PATH, IPrimaryTile, ITavaTile, MatIconService, TAVA_SITE, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-tava',
@@ -10,15 +10,16 @@ import { ASSET_BASE_PATH, COMMON_META_TAGS, IPrimaryTile, ITavaTile, MatIconServ
 })
 export class TavaComponent implements OnInit {
 
-  constructor (private matIconService: MatIconService , private title: Title, private meta: Meta) {
+  constructor (private matIconService: MatIconService, private seo: SeoService) {
     this.matIconService.init();
   }
 
   private readonly metadata = {
-    name: 'Ta\'Va - Trial of the Sun God',
+    title: 'Ta\'Va - Trial of the Sun God',
     description: 'Mythological aztec puzzle game',
     image: 'https://favna.xyz/assets/icons/tava-share.png',
     imageAlt: 'Ta\'Va Preview Image',
+    url: '/tava'
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -137,18 +138,12 @@ export class TavaComponent implements OnInit {
   ];
 
   ngOnInit (): void {
-    this.title.setTitle(this.metadata.name);
-    this.meta.addTags([
-      { name: 'og:url', content: '/tava' },
-      { name: 'og:title', content: this.metadata.name },
-      { name: 'og:description', content: this.metadata.description },
-      { name: 'og:image', content: this.metadata.image },
-      { name: 'og:image:alt', content: this.metadata.imageAlt },
-      { name: 'twitter:title', content: this.metadata.name },
-      { name: 'twitter:description', content: this.metadata.description },
-      { name: 'twitter:image', content: this.metadata.image },
-      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
-      ...COMMON_META_TAGS
-    ]);
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+    });
   }
 }

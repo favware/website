@@ -7,3 +7,4 @@ export { CardActionCasePipe } from './pipes/CardActionCase';
 export { ExtractTextPipe } from './pipes/ExtractText';
 export { ChangeATargetPipe } from './pipes/ChangeATarget';
 export { MatIconService } from './services/mat-icon.service';
+export { SeoService } from './services/seo.service';

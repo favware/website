@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { COMMON_META_TAGS, DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile } from '../../util';
+import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile, SeoService } from '../../util';
 
 
 @Component({
@@ -12,13 +12,14 @@ import { COMMON_META_TAGS, DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, 
 })
 export class DexaComponent implements OnInit {
 
-  constructor (private title: Title, private meta: Meta) {}
+  constructor (private seo: SeoService) {}
 
   private readonly metadata = {
-    name: 'Dexa',
+    title: 'Dexa',
     description: 'Turn your Alexa device into your own personal PokéDex',
     image: 'https://favna.xyz/assets/icons/dexa.png',
     imageAlt: 'Dexa Preview Image',
+    url: '/dexa',
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -58,18 +59,12 @@ export class DexaComponent implements OnInit {
   };
 
   ngOnInit (): void {
-    this.title.setTitle(this.metadata.name);
-    this.meta.addTags([
-      { name: 'og:url', content: '/dexa' },
-      { name: 'og:title', content: this.metadata.name },
-      { name: 'og:description', content: this.metadata.description },
-      { name: 'og:image', content: this.metadata.image },
-      { name: 'og:image:alt', content: this.metadata.imageAlt },
-      { name: 'twitter:title', content: this.metadata.name },
-      { name: 'twitter:description', content: this.metadata.description },
-      { name: 'twitter:image', content: this.metadata.image },
-      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
-      ...COMMON_META_TAGS
-    ]);
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+    });
   }
 }

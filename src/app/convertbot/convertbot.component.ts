@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
 import { oneLine } from 'common-tags';
 
-import { ASSET_BASE_PATH, COMMON_META_TAGS, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTile } from '../../util';
+import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTile, SeoService } from '../../util';
 
 
 @Component({
@@ -12,13 +11,14 @@ import { ASSET_BASE_PATH, COMMON_META_TAGS, CONVERTBOT_GITHUB_URL, IMatCarouselO
 })
 export class ConvertbotComponent implements OnInit {
 
-  constructor (private title: Title, private meta: Meta) {}
+  constructor (private seo: SeoService) {}
 
   private readonly metadata = {
-    name: 'ConvertBot',
+    title: 'ConvertBot',
     description: 'Unit convertion tool written in C#',
     image: 'https://favna.xyz/assets/icons/convertbot-share.png',
     imageAlt: 'ConvertBot Preview Image',
+    url: '/convertbot',
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -95,18 +95,12 @@ export class ConvertbotComponent implements OnInit {
   };
 
   ngOnInit (): void {
-    this.title.setTitle(this.metadata.name);
-    this.meta.addTags([
-      { name: 'og:url', content: '/convertbot' },
-      { name: 'og:title', content: this.metadata.name },
-      { name: 'og:description', content: this.metadata.description },
-      { name: 'og:image', content: this.metadata.image },
-      { name: 'og:image:alt', content: this.metadata.imageAlt },
-      { name: 'twitter:title', content: this.metadata.name },
-      { name: 'twitter:description', content: this.metadata.description },
-      { name: 'twitter:image', content: this.metadata.image },
-      { name: 'twitter:image:alt', content: this.metadata.imageAlt },
-      ...COMMON_META_TAGS
-    ]);
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+    });
   }
 }
