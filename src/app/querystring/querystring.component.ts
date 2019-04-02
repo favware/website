@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import { AWESOME_QUERYSTRING_GITHUB, AWESOME_QUERYSTRING_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
-
 
 @Component({
   selector: 'favware-querystring',
@@ -18,6 +18,11 @@ export class QuerystringComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/querystring.png',
     imageAlt: 'Awesome Querystring Icon',
     url: '/querystring',
+    summary: oneLine`A NodeJS library that can stringify and parse any querystring.
+    It is in a sense similar to many other querystringifiers, with the exception of being written
+    in TypeScript thus offering great support to TypeScript users.
+    Install it today with "yarn add awesome-querystring"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'querystring', 'awesome-querystring', 'stringify', 'parse', 'safe'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -61,6 +66,8 @@ export class QuerystringComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

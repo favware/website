@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import {
   CONTACT_FACEBOOK,
@@ -33,6 +34,8 @@ export class ContactComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/contact.png',
     imageAlt: 'Fancy Embedded Image',
     url: '/contact',
+    summary: oneLine`Eager to get in contact with me? Be sure to visit this page!`,
+    keywords: ['contact', 'email', 'github', 'youtube', 'facebook', 'twitch', 'twitter', 'linkedin', 'discord', 'reddit'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -59,6 +62,8 @@ export class ContactComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

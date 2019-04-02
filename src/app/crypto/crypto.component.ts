@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
-
 
 @Component({
   selector: 'favware-crypto',
@@ -18,6 +18,10 @@ export class CryptoComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/crypto.png',
     imageAlt: 'Awesome Crypto Icon',
     url: '/crypto',
+    summary: oneLine`A NodeJS library that can generate secure random cryptographic strings using NodeJS's own "Crypto.RandomBytes()" function.
+    Written in TypeScript so it is entirely typesafe!
+    Install it today with "yarn add awesome-crypto"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'crypto', 'awesome-crypto', 'cryptography'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -55,6 +59,8 @@ export class CryptoComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

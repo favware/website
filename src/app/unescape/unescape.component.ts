@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import { ICodeTile, IPrimaryTile, SeoService, UNESCAPE_GITHUB, UNESCAPE_YARN } from '../../util';
-
 
 @Component({
   selector: 'favware-unescape',
@@ -18,6 +18,9 @@ export class UnescapeComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/unescape.png',
     imageAlt: 'Unescape Icon Image',
     url: '/unescape',
+    summary: oneLine`A NodeJS library that can transform HTML tags to their unescaped variants.
+    Install it today with "yarn add unescape-es6"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'unescape', 'unescape-es6', 'escape', 'html', 'entities'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -79,6 +82,8 @@ export class UnescapeComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

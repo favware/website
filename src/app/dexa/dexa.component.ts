@@ -19,6 +19,9 @@ export class DexaComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/dexa.png',
     imageAlt: 'Dexa Preview Image',
     url: '/dexa',
+    summary: oneLine`A skill for Alexa enabled devices that allows you to look up virtually any data from the Pokémon Pokédex.
+      Ask Dexa questions such as "Ask dexa pokemon data on Dragonite" to get a lot of information about the best dragon in the Pokémon franchise!`,
+    keywords: ['alexa', 'skill', 'pokemon', 'pokedex', 'info', 'search', 'voice', 'invocation'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -64,6 +67,8 @@ export class DexaComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

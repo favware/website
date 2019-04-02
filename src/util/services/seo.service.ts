@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
+import { COMMON_EMAIL } from '../constants';
+
 type seoTags = {
   title: string;
   description: string;
   image: string;
+  summary: string;
   slug?: string;
   imageAlt?: string;
   url?: string;
+  keywords?: string[];
 };
 
 @Injectable({
@@ -19,15 +23,19 @@ export class SeoService {
 
   generateTags (tags: seoTags) {
     tags = {
-      title: 'Favware',
+      title: '',
       description: 'For Hearth and Home! Check out my projects here!',
+      summary: 'This is my personal website showing off all the projects that I have made. Be sure to try some of them out!',
       image: 'https://favna.xyz/assets/og-image.png',
       slug: '',
       ...tags,
     };
 
-    // Update title
-    this.titleService.setTitle(tags.title);
+    // Update title and description
+    this.titleService.setTitle(`Favware - ${tags.title}`);
+    this.meta.updateTag({ name: 'description', content: tags.description });
+    this.meta.updateTag({ name: 'summary', content: tags.summary });
+    this.meta.updateTag({ name: 'keywords', content: ['favna', 'favware', 'portfolio', 'development', ...tags.keywords].join(' ')});
 
     // Set Meta Tags
     this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
@@ -40,6 +48,8 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:site_name', content: 'Favware' });
     this.meta.updateTag({ property: 'og:image:type', content: 'image/png' });
+    this.meta.updateTag({ property: 'og:site_name', content: 'Favware' });
+    this.meta.updateTag({ property: 'og:email', content: COMMON_EMAIL });
     this.meta.updateTag({ property: 'fb:app_id', content: '977960562367980' });
     this.meta.updateTag({ property: 'og:title', content: tags.title });
     this.meta.updateTag({ property: 'og:description', content: tags.description });

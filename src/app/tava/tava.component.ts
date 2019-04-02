@@ -19,6 +19,8 @@ export class TavaComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/tava-share.png',
     imageAlt: 'Ta\'Va Preview Image',
     url: '/tava',
+    summary: 'An epic puzzle adventure in a mythological aztec world. A game build by students in the Unity 3D engine.',
+    keywords: ['unity', 'videogame', 'game', 'adventure', 'puzzle', 'action', 'studentgame', 'student', 'aztec', 'mythology', 'mythological'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -143,6 +145,8 @@ export class TavaComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import { ICodeTile, IPrimaryTile, MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN, SeoService } from '../../util';
-
 
 @Component({
   selector: 'favware-milkylint',
@@ -18,6 +18,9 @@ export class MilkylintComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/milkylint.png',
     imageAlt: 'Milky TSLint Icon',
     url: '/milkylint',
+    summary: oneLine`A NodeJS library meant for Gulp that can lint your TypeScript code.
+    Install it today with "yarn add milky-tslint"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'gulp', 'typescript', 'tslint', 'milk'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -56,6 +59,8 @@ export class MilkylintComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

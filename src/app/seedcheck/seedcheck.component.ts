@@ -19,6 +19,8 @@ export class SeedcheckComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/seedcheck-share.png',
     imageAlt: 'SEEDChecker Preview Image',
     url: '/seedcheck',
+    summary: oneLine`A Java based utility that can be used to fetch the SEED descryption keys for 3DS games`,
+    keywords: ['3ds', 'nintendo', 'hacking', 'seed', 'java', 'program', 'utility', 'tool'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -113,6 +115,8 @@ export class SeedcheckComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

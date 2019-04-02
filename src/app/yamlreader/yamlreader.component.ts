@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
@@ -17,6 +18,9 @@ export class YamlreaderComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/yamlreader.png',
     imageAlt: 'Awesome YAML Reader Icon Image',
     url: '/yamlreader',
+    summary: oneLine`A NodeJS library that can read YAML files and will output them to a standard JSON object.
+      Install it today with "yarn add awesome-yaml-reader"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'yaml', 'yamlreader', 'awesome-yaml-reader', 'awesomeyamlreader', 'json'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -60,6 +64,8 @@ export class YamlreaderComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

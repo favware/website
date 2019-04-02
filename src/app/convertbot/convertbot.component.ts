@@ -19,6 +19,8 @@ export class ConvertbotComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/convertbot-share.png',
     imageAlt: 'ConvertBot Preview Image',
     url: '/convertbot',
+    summary: oneLine`A C# based utility program for unit conversion.`,
+    keywords: ['C#', 'CSharp', 'convert', 'unit', 'conversion', 'program', 'utility'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -101,6 +103,8 @@ export class ConvertbotComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

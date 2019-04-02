@@ -43,11 +43,14 @@ export class HomeComponent implements OnInit {
   constructor (private seo: SeoService) {}
 
   private readonly metadata = {
-    title: 'Favware',
-    description: 'For heart and home, find my projects here',
+    title: 'Home',
+    description: 'For Hearth and Home! Check out my projects here!',
     image: 'https://favna.xyz/assets/og-image.png',
     imageAlt: 'Social Embedding Image',
     url: '',
+    summary: oneLine`On this website I am listing all the notable projects I have worked on.
+      Consider it to be my portfolio of sorts as well as a knowledge base of information.
+      There are also some small fun features here and more will be added in the future.`,
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -305,6 +308,7 @@ export class HomeComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
     });
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
-
 
 @Component({
   selector: 'favware-zalgo',
@@ -18,6 +18,9 @@ export class ZalgoComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/zalgo.png',
     imageAlt: 'Awezome Zalgo Icon Image',
     url: '/zalgo',
+    summary: oneLine`A NodeJS library that can transform any text into standard "zalgo" formatted text,
+      as well as banish most common Zalgo. Install it today with "yarn add awesome-zalgo"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'zalgo', 'banish', 'awesome-zalog'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -56,6 +59,8 @@ export class ZalgoComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

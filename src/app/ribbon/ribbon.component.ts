@@ -19,6 +19,9 @@ export class RibbonComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/ribbon.png',
     imageAlt: 'Ribbon Preview Image',
     url: '/ribbon',
+    summary: oneLine`A rich all purpose Discord bot that can make your server both more productive and lots more fun.
+      It comes jam-packed with features and it should be your go-to number one bot for any server of any kind or size!`,
+    keywords: ['discord', 'ribbon', 'bot', 'all-purpose', 'all', 'purpose', 'chat', 'pokemon', 'casino', 'automod', 'music', 'stream', '8ball', 'fun'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -62,6 +65,8 @@ export class RibbonComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

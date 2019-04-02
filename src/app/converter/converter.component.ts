@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
 import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
@@ -17,6 +18,10 @@ export class ConverterComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/converter.png',
     imageAlt: 'Awesome Converter Icon',
     url: 'converter',
+    summary: oneLine`A NodeJS library that can convert many units to many other units.
+    From mass, length and volume to temperature and more!
+    Install it today with "yarn add awesome-converter"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'converter', 'awesome-converter'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -55,6 +60,8 @@ export class ConverterComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

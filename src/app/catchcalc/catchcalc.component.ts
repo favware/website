@@ -17,6 +17,8 @@ export class CatchcalcComponent implements OnInit {
     image: 'https://favna.xyz/assets/icons/catchcalc.png',
     imageAlt: 'CatchCalc Preview Image',
     url: '/catchcalc',
+    summary: oneLine`A Java program that can calculate the catchrate of any Pokémon in the 6th generation of games.`,
+    keywords: ['catchcalc', 'java', 'pokemon', 'catchrate', 'calculate'],
   };
 
   public readonly headerTile: IPrimaryTile = {
@@ -113,6 +115,8 @@ export class CatchcalcComponent implements OnInit {
       image: this.metadata.image,
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
+      summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }
