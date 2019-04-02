@@ -13,7 +13,6 @@ node_modules
 # Firebase
 .firebase/
 firebase-cors.json
-storage.rules
 
 # System Files
 .DS_Store

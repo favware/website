@@ -1,0 +1,12 @@
+function isSignedIn() {
+  return request.auth != null;
+}
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow write: if isSignedIn();
+      allow read: if true;
+    }
+  }
+}
