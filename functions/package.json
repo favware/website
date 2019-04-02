@@ -6,6 +6,8 @@
   "scripts": {
     "build": "node cp-angular && tsc",
     "serve": "npm run build && firebase serve --only functions",
+    "build-and-serve": "tsc & firebase serve --only functions",
+    "servemon": "nodemon --exec yarn build-and-serve --watch src -e ts",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@firebase/app-types": "^0.3.7",
+    "nodemon": "^1.18.10",
     "typescript": "^3.2.2"
   },
   "private": true

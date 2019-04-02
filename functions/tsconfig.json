@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
     "outDir": "lib",
     "sourceMap": true,
-    "strict": true,
-    "target": "es2015"
+    "target": "es2015",
+    "noFallthroughCasesInSwitch": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"removeComments": true,
+		"strict": true
   },
   "compileOnSave": true,
   "include": [
