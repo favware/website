@@ -1,7 +1,8 @@
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
+import { oneLine } from 'common-tags';
 
-import { ISidenavLink } from '../../util';
+import { ISidenavLink, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-sidenav',
@@ -9,6 +10,17 @@ import { ISidenavLink } from '../../util';
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent implements OnInit {
+
+  private readonly metadata = {
+    title: 'Home',
+    description: 'For Hearth and Home! Check out my projects here!',
+    image: 'https://favna.xyz/assets/og-image.png',
+    imageAlt: 'Social Embedding Image',
+    url: '',
+    summary: oneLine`On this website I am listing all the notable projects I have worked on.
+      Consider it to be my portfolio of sorts as well as a knowledge base of information.
+      There are also some small fun features here and more will be added in the future.`,
+  };
 
   public sidenavMode = 'side';
   public isFixedInViewport = false;
@@ -94,10 +106,9 @@ export class SidenavComponent implements OnInit {
     }
   ];
 
-  constructor (private breakpointObserver: BreakpointObserver) {
-  }
+  constructor (private breakpointObserver: BreakpointObserver, private seo: SeoService) { }
 
-  ngOnInit () {
+  ngOnInit (): void {
     this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.HandsetPortrait])
       .subscribe((state: BreakpointState) => {
@@ -114,5 +125,14 @@ export class SidenavComponent implements OnInit {
           this.sidenavMode = 'side';
         }
       });
+
+    this.seo.generateTags({
+      title: this.metadata.title,
+      description: this.metadata.description,
+      image: this.metadata.image,
+      imageAlt: this.metadata.imageAlt,
+      url: this.metadata.url,
+      summary: this.metadata.summary,
+    });
   }
 }
