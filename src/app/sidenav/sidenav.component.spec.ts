@@ -1,12 +1,9 @@
-import { LayoutModule } from '@angular/cdk/layout';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
+import { TestModule } from '@util/testing.module';
 
 import { SidenavComponent } from './sidenav.component';
-import { TestModule } from '@util/testing.module';
 
 const routes: Routes = [];
 

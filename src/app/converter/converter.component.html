@@ -1,19 +1,20 @@
 <section>
   <div class="container header-small-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
-    fxLayoutGap="0.5%">
+       fxLayoutGap="0.5%">
     <div class="center-text">
       <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
       <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
         <ng-container *ngIf="button.disabled; else linkButton">
-          <button [color]="button.color" class="full-size-button" mat-raised-button
-            ngxClipboard [cbContent]="button.text">{{button.text | uppercase}} <span class="copy-button-subtext">(click to copy)</span></button>
+          <button [cbContent]="button.text" [color]="button.color" class="full-size-button"
+                  mat-raised-button ngxClipboard>{{button.text | uppercase}} <span class="copy-button-subtext">(click to copy)</span>
+          </button>
         </ng-container>
 
         <ng-template #linkButton>
           <a [href]="button.url" [rel]="button.outer ? 'noreferrer' : ''" [target]="button.outer ? '_blank' : '_self'">
             <button [color]="button.color" class="full-size-button"
-              mat-raised-button>{{button.text | uppercase}}</button>
+                    mat-raised-button>{{button.text | uppercase}}</button>
           </a>
         </ng-template>
       </p>

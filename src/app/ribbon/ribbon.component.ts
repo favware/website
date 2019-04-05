@@ -70,7 +70,7 @@ export class RibbonComponent implements OnInit {
   collection: AngularFirestoreCollection<Node>;
   documents: Observable<Node[]>;
 
-  constructor (private seo: SeoService, private afs:  AngularFirestore) {
+  constructor (private seo: SeoService, private afs: AngularFirestore) {
     this.isDoneLoading = false;
   }
 

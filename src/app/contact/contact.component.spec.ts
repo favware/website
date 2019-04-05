@@ -1,10 +1,8 @@
-import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatIconService } from '@services/mat-icon.service';
-import { MaterialModule } from '@util/material.module';
+import { TestModule } from '@util/testing.module';
 
 import { ContactComponent } from './contact.component';
-import { TestModule } from '@util/testing.module';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;

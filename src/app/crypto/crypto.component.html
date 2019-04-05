@@ -8,14 +8,15 @@
       </h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
         <ng-container *ngIf="button.disabled; else linkButton">
-          <button [color]="button.color" class="full-size-button" mat-raised-button
-            ngxClipboard [cbContent]="button.text">{{button.text | uppercase}} <span class="copy-button-subtext">(click to copy)</span></button>
+          <button [cbContent]="button.text" [color]="button.color" class="full-size-button"
+                  mat-raised-button ngxClipboard>{{button.text | uppercase}} <span class="copy-button-subtext">(click to copy)</span>
+          </button>
         </ng-container>
 
         <ng-template #linkButton>
           <a [href]="button.url" [rel]="button.outer ? 'noreferrer' : ''" [target]="button.outer ? '_blank' : '_self'">
             <button [color]="button.color" class="full-size-button"
-              mat-raised-button>{{button.text | uppercase}}</button>
+                    mat-raised-button>{{button.text | uppercase}}</button>
           </a>
         </ng-template>
       </p>
