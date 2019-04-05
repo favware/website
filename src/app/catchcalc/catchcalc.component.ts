@@ -16,7 +16,7 @@ export class CatchcalcComponent implements OnInit {
     buttons: [
       {
         text: 'Download CatchCalc',
-        url: `${ASSET_BASE_PATH}/website-dist/catchcalc.java`,
+        url: `${ASSET_BASE_PATH}/website-dist/catchcalc.jar`,
         color: 'primary',
         outer: true,
       },
