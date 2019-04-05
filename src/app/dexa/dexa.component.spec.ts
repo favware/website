@@ -6,6 +6,7 @@ import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { DexaComponent } from './dexa.component';
+import { TestModule } from '@util/testing.module';
 
 describe('DexaComponent', () => {
   let component: DexaComponent;
@@ -13,15 +14,7 @@ describe('DexaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [DexaComponent, ChangeATargetPipe],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })

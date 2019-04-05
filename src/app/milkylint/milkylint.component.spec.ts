@@ -6,6 +6,7 @@ import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { MilkylintComponent } from './milkylint.component';
+import { TestModule } from '@util/testing.module';
 
 describe('MilkylintComponent', () => {
   let component: MilkylintComponent;
@@ -13,16 +14,7 @@ describe('MilkylintComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        HttpClientModule,
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [MilkylintComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })

@@ -4,6 +4,7 @@ import { MatIconService } from '@services/mat-icon.service';
 import { MaterialModule } from '@util/material.module';
 
 import { ContactComponent } from './contact.component';
+import { TestModule } from '@util/testing.module';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -11,7 +12,7 @@ describe('ContactComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MaterialModule, HttpClientModule],
+      imports: [TestModule],
       declarations: [ContactComponent],
       providers: [MatIconService],
     })

@@ -5,6 +5,7 @@ import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { TavaComponent } from './tava.component';
+import { TestModule } from '@util/testing.module';
 
 describe('TavaComponent', () => {
   let component: TavaComponent;
@@ -12,16 +13,7 @@ describe('TavaComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        HttpClientModule,
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [TavaComponent],
     })
       .compileComponents();

@@ -6,6 +6,7 @@ import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { ConvertbotComponent } from './convertbot.component';
+import { TestModule } from '@util/testing.module';
 
 describe('ConvertbotComponent', () => {
   let component: ConvertbotComponent;
@@ -13,16 +14,7 @@ describe('ConvertbotComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        NoopAnimationsModule,
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [ConvertbotComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })

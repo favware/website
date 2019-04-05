@@ -6,6 +6,7 @@ import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { ConverterComponent } from './converter.component';
+import { TestModule } from '@util/testing.module';
 
 describe('ConverterComponent', () => {
   let component: ConverterComponent;
@@ -13,16 +14,7 @@ describe('ConverterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        HttpClientModule,
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [ConverterComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })

@@ -9,6 +9,7 @@ import { environment } from 'environments/environment';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { RibbonComponent } from './ribbon.component';
+import { TestModule } from '@util/testing.module';
 
 describe('RibbonComponent', () => {
   let component: RibbonComponent;
@@ -16,17 +17,7 @@ describe('RibbonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        AngularFireModule.initializeApp(environment.firebaseConfig),
-        AngularFirestoreModule.enablePersistence(),
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [RibbonComponent, ChangeATargetPipe],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })

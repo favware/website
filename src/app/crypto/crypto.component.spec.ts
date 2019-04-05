@@ -6,6 +6,7 @@ import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { CryptoComponent } from './crypto.component';
+import { TestModule } from '@util/testing.module';
 
 describe('CryptoComponent', () => {
   let component: CryptoComponent;
@@ -13,16 +14,7 @@ describe('CryptoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        HttpClientModule,
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [CryptoComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })

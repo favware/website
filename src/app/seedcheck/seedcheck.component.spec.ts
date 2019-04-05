@@ -7,6 +7,7 @@ import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { SeedcheckComponent } from './seedcheck.component';
+import { TestModule } from '@util/testing.module';
 
 
 describe('SeedcheckComponent', () => {
@@ -15,16 +16,7 @@ describe('SeedcheckComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        NoopAnimationsModule,
-        MaterialModule,
-        MarkdownModule.forRoot({
-          markedOptions: {
-            provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
-        })
-      ],
+      imports: [TestModule],
       declarations: [SeedcheckComponent, ChangeATargetPipe],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     })
