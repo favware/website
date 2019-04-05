@@ -1,54 +1,55 @@
 <section>
   <div class="container header-ribbon-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
-       fxLayoutGap="0.5%">
+    fxLayoutGap="0.5%">
     <div class="center-text">
       <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
       <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
-        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'" [rel]="button.outer ? 'noreferrer' : ''">
-          <button [color]="button.color" class="full-size-button"
-                  mat-raised-button>{{button.text | uppercase}}</button>
+        <a [href]="button.url" [rel]="button.outer ? 'noreferrer' : ''" [target]="button.outer ? '_blank' : '_self'">
+          <button [color]="button.color" class="full-size-button" mat-raised-button>{{button.text | uppercase}}</button>
         </a>
       </p>
     </div>
   </div>
 
   <div class="section-margin" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center space-around"
-       fxLayoutGap="0.5%">
+    fxLayoutGap="0.5%">
     <div>
       <h1 class="mat-display-1 center-text">{{aboutTile.header}}</h1>
       <p *ngFor="let section of aboutTile.text" [innerHTML]="section | markdown | ChangeATarget"
-         class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
+        class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
   </div>
 
-  <div class="section-margin card-wrapper">
-    <h1 class="mat-display-1 center-text">{{statsHeader}}</h1>
-    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
-      <p *ngFor="let card of statMap.values()" class="card-paragraph">
-        <mat-card class="material-card card">
-          <mat-card-header>
-            <mat-card-title>{{card.header}}</mat-card-title>
-            <mat-card-subtitle>{{sinceLabel}}</mat-card-subtitle>
-          </mat-card-header>
-          <mat-card-content class='card-content'>
-            <ng-container *ngIf="!card.loading; else loadingSpinner">
-              <mat-chip-list>
-                <mat-chip color="accent" selected>{{card.count | async | json | statEvaluator}}</mat-chip>
-              </mat-chip-list>
-            </ng-container>
+  <div class="section-margin">
+    <h1 class="mat-display-1 center-text">{{ statsHeader }}</h1>
+    <div *ngIf="documents | async as document">
+      <div class="project-card-layout" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
+        <div *ngFor="let node of document" class="card-widener">
+          <mat-card class="material-card">
+            <mat-card-header>
+              <mat-card-title>{{ node.header }}</mat-card-title>
+              <mat-card-subtitle>{{ sinceLabel }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content class="card-content">
+              <ng-container *ngIf="isDoneLoading; else loadingSpinner">
+                <mat-chip-list>
+                  <mat-chip color="accent" selected>{{ node.value }}</mat-chip>
+                </mat-chip-list>
+              </ng-container>
 
-            <ng-template #loadingSpinner>
+              <ng-template #loadingSpinner>
                 <mat-progress-spinner color="warn" mode="indeterminate" diameter="75"></mat-progress-spinner>
-            </ng-template>
-          </mat-card-content>
-        </mat-card>
-      </p>
+              </ng-template>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="section-margin" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center space-around"
-       fxLayoutGap="0.5%">
+    fxLayoutGap="0.5%">
     <favware-ribbon-docs-table></favware-ribbon-docs-table>
   </div>
 

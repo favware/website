@@ -1,8 +1,8 @@
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
-import { ISidenavLink } from '@util/interfaces';
+import { SidenavLink } from '@util/interfaces';
 import { oneLine } from 'common-tags';
+import { SeoService } from '@services/seo.service';
 
 @Component({
   selector: 'favware-sidenav',
@@ -28,7 +28,7 @@ export class SidenavComponent implements OnInit {
   public isSidenavClosable = true;
   public isSmall = false;
 
-  public readonly items: ISidenavLink[] = [
+  public readonly items: SidenavLink[] = [
     {
       routerLink: '.',
       label: 'Home',

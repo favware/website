@@ -26,7 +26,7 @@ import {
   UNESCAPE_GITHUB,
   UNESCAPE_YARN
 } from '@util/constants';
-import { IPrimaryTile, IProjectTile, ITile } from '@util/interfaces';
+import { IPrimaryTile, IProjectTile, Tile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
 import moment from 'moment';
 
@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
     subheader: 'From Web design to discord bots to indie games',
     text: ['Scroll down to see my projects'],
   };
-  public readonly aboutTile: ITile = {
+  public readonly aboutTile: Tile = {
     header: 'About me',
     text: [
       'Greetings, My name is Jeroen Claassens (a.k.a. Favna)',

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatIconService } from '@services/mat-icon.service';
 import { SeoService } from '@services/seo.service';
 import { CONTACT_FACEBOOK, CONTACT_GITHUB, CONTACT_LINKEDIN, CONTACT_MAIL, CONTACT_REDDIT, CONTACT_TWITCH, CONTACT_TWITTER, CONTACT_YOUTUBE, DISCORD_SERVER_URL } from '@util/constants';
-import { IContactMethod, IPrimaryTile } from '@util/interfaces';
+import { ContactMethod, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
     subheader: 'Contact me through one of these sources',
     text: ['Or fill in the form below to send an email'],
   };
-  public readonly contactMethods: IContactMethod[] = [
+  public readonly contactMethods: ContactMethod[] = [
     { logo: 'mat-mail-icon', link: CONTACT_MAIL, color: 'mail', contact: 'send an email' },
     { logo: 'mat-github-icon', link: CONTACT_GITHUB, color: 'github', contact: 'find me on github' },
     { logo: 'mat-linkedin-icon', link: CONTACT_LINKEDIN, color: 'linkedin', contact: 'connect on linkedin' },

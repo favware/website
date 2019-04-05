@@ -1,16 +1,16 @@
 import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
-import { IDexaDocs, IJSDocJSON } from '@util/interfaces.js';
+import { DexaDocs, JSDocJSON } from '@util/interfaces.js';
 import Fuse, { FuseOptions } from 'fuse.js';
 import { merge, of as observableOf, BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import docs from '../../assets/docs/dexa.json';
 
-const ribbondocs: IJSDocJSON = docs as unknown as IJSDocJSON;
+const ribbondocs: JSDocJSON = docs as unknown as JSDocJSON;
 
 // @ts-ignore Ignoring TypeScript errors because it cannot properly parse JSON despite that it does work
-const DEXA_DATA: IDexaDocs[] = ribbondocs.map((docItem: IJSDocItem) => (
+const DEXA_DATA: DexaDocs[] = ribbondocs.map((docItem: IJSDocItem) => (
     {
       name: docItem.name,
       description: docItem.description.replace(/.+ - (.+)/g, '$1'),
@@ -23,8 +23,8 @@ const compare = (a, b, isAsc) => {
   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
 };
 
-export class DexaDocsDatasource extends DataSource<IDexaDocs> {
-  data: IDexaDocs[] = DEXA_DATA;
+export class DexaDocsDatasource extends DataSource<DexaDocs> {
+  data: DexaDocs[] = DEXA_DATA;
   private filterChange = new BehaviorSubject('');
   private paginator: MatPaginator;
   private sort: MatSort;
@@ -43,7 +43,7 @@ export class DexaDocsDatasource extends DataSource<IDexaDocs> {
     this.filterChange.next(filter);
   }
 
-  connect (): Observable<IDexaDocs[]> {
+  connect (): Observable<DexaDocs[]> {
     const dataMutations = [
       observableOf(this.data),
       this.paginator.page,
@@ -61,12 +61,12 @@ export class DexaDocsDatasource extends DataSource<IDexaDocs> {
   disconnect () {
   }
 
-  private getPagedData (data: IDexaDocs[]) {
+  private getPagedData (data: DexaDocs[]) {
     const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
     return data.splice(startIndex, this.paginator.pageSize);
   }
 
-  private getSortedData (data: IDexaDocs[]) {
+  private getSortedData (data: DexaDocs[]) {
     if (!this.sort.active || this.sort.direction === '') {
       return data;
     }
@@ -86,9 +86,9 @@ export class DexaDocsDatasource extends DataSource<IDexaDocs> {
     });
   }
 
-  private getFilteredData (data: IDexaDocs[]): IDexaDocs[] {
+  private getFilteredData (data: DexaDocs[]): DexaDocs[] {
     if (this.filter) {
-      const filterOptions: FuseOptions<IDexaDocs> = {
+      const filterOptions: FuseOptions<DexaDocs> = {
         keys: ['name', 'description', 'examples'],
         threshold: 0.2,
         shouldSort: false,

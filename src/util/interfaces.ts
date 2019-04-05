@@ -1,68 +1,49 @@
 import { MatCarousel } from '@ngmodule/material-carousel';
 
-export interface ITile {
-  header: string;
-  text?: string[];
-}
-
-interface ICardActions {
+type CardActions = {
   label: string;
   link: string;
   outer: boolean;
 }
 
-interface ICardHeader {
+type CardHeader = {
   avatar: string;
   imageAlt: string;
   title: string;
   subtitle: string;
 }
 
-interface ICard {
-  header: ICardHeader;
+type Card = {
+  header: CardHeader;
   content: string;
-  actions: ICardActions[];
+  actions: CardActions[];
 }
 
-interface IJSDocMeta {
+type JSDocMeta = {
   lineno: number;
   filename: string;
   path: string;
 }
 
-export interface IContactMethod {
+export type Tile = {
+  header: string;
+  text?: string[];
+}
+
+export type ContactMethod = {
   logo: string;
   link: string;
   color: string;
   contact: string;
 }
 
-export interface IPrimaryTile extends ITile {
-  subheader: string;
-  buttons?: IButtonData[];
-}
-
-export interface ICodeTile extends ITile {
-  codeFile: string;
-}
-
-export interface ITavaTile extends ITile {
-  icon: string;
-  alt?: string;
-  description: string;
-}
-
-export interface IProjectTile extends ITile {
-  cards: ICard[];
-}
-
-export interface ISidenavLink {
+export type SidenavLink = {
   routerLink: string;
   label: string;
   image: string;
 }
 
-export interface IButtonData {
+export type ButtonData = {
   text: string;
   url?: string;
   color: string;
@@ -70,40 +51,59 @@ export interface IButtonData {
   disabled?: boolean;
 }
 
-export interface IRibbonDocs {
+export type RibbonDocs = {
   name: string;
   aliases: string;
   description: string;
   category: string;
 }
 
-export interface IDexaDocs {
+export type DexaDocs = {
   name: string;
   description: string;
   examples: string;
 }
 
-export interface IJSDocItem {
+export type JSDocItem = {
   id: string;
   longname: string;
   name: string;
   kind: string;
   description: string;
-  meta: IJSDocMeta;
+  meta: JSDocMeta;
   preserveName: boolean;
   examples: string[];
   category: string;
   order: number;
-  returns: IJSDocMeta[];
+  returns: JSDocMeta[];
 
-  [propName: string]: string | string[] | number | boolean | IJSDocMeta | IJSDocMeta[];
+  [propName: string]: string | string[] | number | boolean | JSDocMeta | JSDocMeta[];
 }
 
-export interface IJSDocJSON {
-  [propName: string]: IJSDocItem[];
+export type JSDocJSON = {
+  [propName: string]: JSDocItem[];
 }
 
 export interface IMatCarouselOptions extends MatCarousel {
   overlayColor: string;
   hideOverlay: boolean;
+}
+
+export interface IPrimaryTile extends Tile {
+  subheader: string;
+  buttons?: ButtonData[];
+}
+
+export interface ICodeTile extends Tile {
+  codeFile: string;
+}
+
+export interface ITavaTile extends Tile {
+  icon: string;
+  alt?: string;
+  description: string;
+}
+
+export interface IProjectTile extends Tile {
+  cards: Card[];
 }

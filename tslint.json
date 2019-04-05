@@ -243,6 +243,7 @@
       "ban-keywords",
       "check-format",
       "require-const-for-all-caps"
-    ]
+    ],
+    "interface-name": false,
   }
 }
