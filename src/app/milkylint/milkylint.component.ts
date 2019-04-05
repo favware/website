@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN } from '@util/constants';
+import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { ICodeTile, IPrimaryTile, MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-milkylint',
@@ -9,19 +10,6 @@ import { ICodeTile, IPrimaryTile, MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN, SeoSer
   styleUrls: ['./milkylint.component.scss'],
 })
 export class MilkylintComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'Milky TSLint',
-    description: 'TypeScript linter plugin for Gulp',
-    image: 'https://favna.xyz/assets/icons/milkylint.png',
-    imageAlt: 'Milky TSLint Icon',
-    url: '/milkylint',
-    summary: oneLine`A NodeJS library meant for Gulp that can lint your TypeScript code.
-    Install it today with "yarn add milky-tslint"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'gulp', 'typescript', 'tslint', 'milk'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Milky TSLint',
@@ -46,11 +34,23 @@ export class MilkylintComponent implements OnInit {
       }
     ],
   };
-
   public readonly usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/milkylint.js',
   };
+  private readonly metadata = {
+    title: 'Milky TSLint',
+    description: 'TypeScript linter plugin for Gulp',
+    image: 'https://favna.xyz/assets/icons/milkylint.png',
+    imageAlt: 'Milky TSLint Icon',
+    url: '/milkylint',
+    summary: oneLine`A NodeJS library meant for Gulp that can lint your TypeScript code.
+    Install it today with "yarn add milky-tslint"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'gulp', 'typescript', 'tslint', 'milk'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

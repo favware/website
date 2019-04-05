@@ -1,5 +1,3 @@
-import { MetaDefinition } from '@angular/platform-browser';
-
 export const ASSET_BASE_PATH = 'https://storage.googleapis.com/data-sunlight-146313.appspot.com';
 export const DISCORD_SERVER_URL = 'https://www.discord.gg/sguypX8';
 export const COMMON_EMAIL = 'support@favna.xyz';

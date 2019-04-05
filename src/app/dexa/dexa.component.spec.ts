@@ -1,8 +1,9 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ChangeATargetPipe } from '@pipes/ChangeATarget';
+import { markdownFactory } from '@util/markdown.factory';
+import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
-
-import { markdownFactory, ChangeATargetPipe, MaterialModule } from '../../util';
 
 import { DexaComponent } from './dexa.component';
 

@@ -1,8 +1,8 @@
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { ISidenavLink } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { ISidenavLink, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-sidenav',

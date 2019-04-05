@@ -1,21 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatIconService } from '@services/mat-icon.service';
+import { SeoService } from '@services/seo.service';
+import { CONTACT_FACEBOOK, CONTACT_GITHUB, CONTACT_LINKEDIN, CONTACT_MAIL, CONTACT_REDDIT, CONTACT_TWITCH, CONTACT_TWITTER, CONTACT_YOUTUBE, DISCORD_SERVER_URL } from '@util/constants';
+import { IContactMethod, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import {
-  CONTACT_FACEBOOK,
-  CONTACT_GITHUB,
-  CONTACT_LINKEDIN,
-  CONTACT_MAIL,
-  CONTACT_REDDIT,
-  CONTACT_TWITCH,
-  CONTACT_TWITTER,
-  CONTACT_YOUTUBE,
-  DISCORD_SERVER_URL,
-  IContactMethod,
-  IPrimaryTile,
-  MatIconService,
-  SeoService
-} from '../../util';
 
 @Component({
   selector: 'favware-contact',
@@ -23,20 +11,6 @@ import {
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-
-  constructor (private matIconService: MatIconService, private seo: SeoService) {
-    this.matIconService.init();
-  }
-
-  private readonly metadata = {
-    title: 'Favware Contact',
-    description: 'Have questions, support requests or just want to get in contact with Favna? Go here!',
-    image: 'https://favna.xyz/assets/icons/contact.png',
-    imageAlt: 'Fancy Embedded Image',
-    url: '/contact',
-    summary: oneLine`Eager to get in contact with me? Be sure to visit this page!`,
-    keywords: ['contact', 'email', 'github', 'youtube', 'facebook', 'twitch', 'twitter', 'linkedin', 'discord', 'reddit'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Got questions, concerns or business inquires?',
@@ -54,6 +28,19 @@ export class ContactComponent implements OnInit {
     { logo: 'mat-twitch-icon', link: CONTACT_TWITCH, color: 'twitch', contact: 'watch my twitch streams' },
     { logo: 'mat-youtube-icon', link: CONTACT_YOUTUBE, color: 'youtube', contact: 'subscribe to me on youtube' }
   ];
+  private readonly metadata = {
+    title: 'Favware Contact',
+    description: 'Have questions, support requests or just want to get in contact with Favna? Go here!',
+    image: 'https://favna.xyz/assets/icons/contact.png',
+    imageAlt: 'Fancy Embedded Image',
+    url: '/contact',
+    summary: oneLine`Eager to get in contact with me? Be sure to visit this page!`,
+    keywords: ['contact', 'email', 'github', 'youtube', 'facebook', 'twitch', 'twitter', 'linkedin', 'discord', 'reddit'],
+  };
+
+  constructor (private matIconService: MatIconService, private seo: SeoService) {
+    this.matIconService.init();
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

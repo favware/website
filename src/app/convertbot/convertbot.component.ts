@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL } from '@util/constants';
+import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTile, SeoService } from '../../util';
-
 
 @Component({
   selector: 'favware-convertbot',
@@ -10,18 +10,6 @@ import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL, IMatCarouselOptions, IPrimaryTi
   styleUrls: ['./convertbot.component.scss'],
 })
 export class ConvertbotComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'ConvertBot',
-    description: 'Unit convertion tool written in C#',
-    image: 'https://favna.xyz/assets/icons/convertbot-share.png',
-    imageAlt: 'ConvertBot Preview Image',
-    url: '/convertbot',
-    summary: oneLine`A C# based utility program for unit conversion.`,
-    keywords: ['C#', 'CSharp', 'convert', 'unit', 'conversion', 'program', 'utility'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'ConvertBot',
@@ -41,7 +29,6 @@ export class ConvertbotComponent implements OnInit {
       }
     ],
   };
-
   public readonly aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
@@ -52,7 +39,6 @@ export class ConvertbotComponent implements OnInit {
     A few months later we finished our tool, dubbed it ConvertBot and passed our course with flying colours.
     I have always held onto the source code for ConvertBot and find it only appropriate to show it off here.`],
   };
-
   public readonly notesTile: IPrimaryTile = {
     header: 'Notes',
     subheader: 'There are some things to note when using ConvertBot',
@@ -71,13 +57,11 @@ export class ConvertbotComponent implements OnInit {
       'Acres as coded as regular Acres'
     ],
   };
-
   public readonly slides: Array<{ url: string }> = [
     { url: '/assets/screenshots/convertbot/base.png' },
     { url: '/assets/screenshots/convertbot/degrees.png' },
     { url: '/assets/screenshots/convertbot/length.png' }
   ];
-
   public readonly carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
@@ -95,6 +79,18 @@ export class ConvertbotComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
+  private readonly metadata = {
+    title: 'ConvertBot',
+    description: 'Unit convertion tool written in C#',
+    image: 'https://favna.xyz/assets/icons/convertbot-share.png',
+    imageAlt: 'ConvertBot Preview Image',
+    url: '/convertbot',
+    summary: oneLine`A C# based utility program for unit conversion.`,
+    keywords: ['C#', 'CSharp', 'convert', 'unit', 'conversion', 'program', 'utility'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

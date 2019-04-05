@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { DEXA_SKILL_URL, DISCORD_SERVER_URL, RedirectGuard, RIBBON_INVITE_URL } from '../util';
+import { DEXA_SKILL_URL, DISCORD_SERVER_URL, RIBBON_INVITE_URL } from '@util/constants';
+import { RedirectGuard } from '@util/redirectguard.guard';
 
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';

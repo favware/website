@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
-import { ASSET_BASE_PATH, IPrimaryTile, ITavaTile, MatIconService, SeoService, TAVA_SITE } from '../../util';
+import { MatIconService } from '@services/mat-icon.service';
+import { SeoService } from '@services/seo.service';
+import { ASSET_BASE_PATH, TAVA_SITE } from '@util/constants';
+import { IPrimaryTile, ITavaTile } from '@util/interfaces';
 
 @Component({
   selector: 'favware-tava',
@@ -8,20 +10,6 @@ import { ASSET_BASE_PATH, IPrimaryTile, ITavaTile, MatIconService, SeoService, T
   styleUrls: ['./tava.component.scss'],
 })
 export class TavaComponent implements OnInit {
-
-  constructor (private matIconService: MatIconService, private seo: SeoService) {
-    this.matIconService.init();
-  }
-
-  private readonly metadata = {
-    title: 'Ta\'Va - Trial of the Sun God',
-    description: 'Mythological aztec puzzle game',
-    image: 'https://favna.xyz/assets/icons/tava-share.png',
-    imageAlt: 'Ta\'Va Preview Image',
-    url: '/tava',
-    summary: 'An epic puzzle adventure in a mythological aztec world. A game build by students in the Unity 3D engine.',
-    keywords: ['unity', 'videogame', 'game', 'adventure', 'puzzle', 'action', 'studentgame', 'student', 'aztec', 'mythology', 'mythological'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Ta\'Va - Trial of the Sun God',
@@ -47,12 +35,10 @@ export class TavaComponent implements OnInit {
       }
     ],
   };
-
   public readonly gameTileHeader: IPrimaryTile = {
     header: 'The Game',
     subheader: 'Ta\'Va is a puzzle/platform game made with Unity',
   };
-
   public readonly gameTile: ITavaTile[] = [
     {
       icon: 'mat-tava-puzzle-icon',
@@ -70,12 +56,10 @@ export class TavaComponent implements OnInit {
       description: 'The world of Ta\'Va is a mythological place. During your travels you will explore floating islands, mythical creatures and the plane of the gods.',
     }
   ];
-
   public readonly mediaTileHeader: IPrimaryTile = {
     header: 'Media',
     subheader: '',
   };
-
   public readonly mediaTile: ITavaTile[] = [
     {
       icon: `assets/screenshots/tava/village.png`,
@@ -96,12 +80,10 @@ export class TavaComponent implements OnInit {
       description: 'Push the boulders!',
     }
   ];
-
   public readonly teamTileHeader: IPrimaryTile = {
     header: 'Our Amazing Team',
     subheader: '',
   };
-
   public readonly teamTileFirstLine: ITavaTile[] = [
     {
       icon: `assets/screenshots/tava/art.png`,
@@ -122,7 +104,6 @@ export class TavaComponent implements OnInit {
       description: '',
     }
   ];
-
   public readonly teamTileSecondLine: ITavaTile[] = [
     {
       icon: `assets/screenshots/tava/programming.png`,
@@ -137,6 +118,19 @@ export class TavaComponent implements OnInit {
       description: '',
     }
   ];
+  private readonly metadata = {
+    title: 'Ta\'Va - Trial of the Sun God',
+    description: 'Mythological aztec puzzle game',
+    image: 'https://favna.xyz/assets/icons/tava-share.png',
+    imageAlt: 'Ta\'Va Preview Image',
+    url: '/tava',
+    summary: 'An epic puzzle adventure in a mythological aztec world. A game build by students in the Unity 3D engine.',
+    keywords: ['unity', 'videogame', 'game', 'adventure', 'puzzle', 'action', 'studentgame', 'student', 'aztec', 'mythology', 'mythological'],
+  };
+
+  constructor (private matIconService: MatIconService, private seo: SeoService) {
+    this.matIconService.init();
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

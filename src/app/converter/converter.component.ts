@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN } from '@util/constants';
+import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-converter',
@@ -9,20 +10,6 @@ import { AWESOME_CONVERTER_GITHUB, AWESOME_CONVERTER_YARN, ICodeTile, IPrimaryTi
   styleUrls: ['./converter.component.scss'],
 })
 export class ConverterComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'Awesome Converter',
-    description: 'Awesome and typesafe unit converter, supports many different systems of units',
-    image: 'https://favna.xyz/assets/icons/converter.png',
-    imageAlt: 'Awesome Converter Icon',
-    url: 'converter',
-    summary: oneLine`A NodeJS library that can convert many units to many other units.
-    From mass, length and volume to temperature and more!
-    Install it today with "yarn add awesome-converter"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'converter', 'awesome-converter'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Awesome Converter',
@@ -47,11 +34,24 @@ export class ConverterComponent implements OnInit {
       }
     ],
   };
-
   public readonly usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/converter.js',
   };
+  private readonly metadata = {
+    title: 'Awesome Converter',
+    description: 'Awesome and typesafe unit converter, supports many different systems of units',
+    image: 'https://favna.xyz/assets/icons/converter.png',
+    imageAlt: 'Awesome Converter Icon',
+    url: 'converter',
+    summary: oneLine`A NodeJS library that can convert many units to many other units.
+    From mass, length and volume to temperature and more!
+    Install it today with "yarn add awesome-converter"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'converter', 'awesome-converter'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL } from '@util/constants';
+import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, IMatCarouselOptions, IPrimaryTile, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-catchcalc',
@@ -9,18 +10,6 @@ import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL, IMatCarouselOptions, IPrimaryTil
   styleUrls: ['./catchcalc.component.scss'],
 })
 export class CatchcalcComponent implements OnInit {
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'CatchCalc',
-    description: 'Gotta Catch Em\' All!',
-    image: 'https://favna.xyz/assets/icons/catchcalc.png',
-    imageAlt: 'CatchCalc Preview Image',
-    url: '/catchcalc',
-    summary: oneLine`A Java program that can calculate the catchrate of any Pokémon in the 6th generation of games.`,
-    keywords: ['catchcalc', 'java', 'pokemon', 'catchrate', 'calculate'],
-  };
-
   public readonly headerTile: IPrimaryTile = {
     header: 'CatchCalc',
     subheader: 'Calculate Pokémon Generation 6 (XYORAS) catch rates',
@@ -45,7 +34,6 @@ export class CatchcalcComponent implements OnInit {
       }
     ],
   };
-
   public readonly aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
@@ -53,7 +41,6 @@ export class CatchcalcComponent implements OnInit {
             if the decryption seed for a given title is available.
             If a SEED is available it is automatically downloaded to your default "Downloads" folder`],
   };
-
   public readonly instructionsTile: IPrimaryTile = {
     header: 'Instructions',
     subheader: '',
@@ -72,7 +59,6 @@ export class CatchcalcComponent implements OnInit {
       'Set all your other variables if applicable then press the **Calculate chance to catch** button to have the program do its magic!'
     ],
   };
-
   public readonly faqTile: IPrimaryTile = {
     header: 'FAQ',
     subheader: '',
@@ -83,13 +69,11 @@ export class CatchcalcComponent implements OnInit {
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
     ],
   };
-
   public readonly slides: Array<{ url: string }> = [
     { url: '/assets/screenshots/catchcalc/base.png' },
     { url: '/assets/screenshots/catchcalc/easymon.png' },
     { url: '/assets/screenshots/catchcalc/hardmon.png' }
   ];
-
   public readonly carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
@@ -107,6 +91,18 @@ export class CatchcalcComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
+  private readonly metadata = {
+    title: 'CatchCalc',
+    description: 'Gotta Catch Em\' All!',
+    image: 'https://favna.xyz/assets/icons/catchcalc.png',
+    imageAlt: 'CatchCalc Preview Image',
+    url: '/catchcalc',
+    summary: oneLine`A Java program that can calculate the catchrate of any Pokémon in the 6th generation of games.`,
+    keywords: ['catchcalc', 'java', 'pokemon', 'catchrate', 'calculate'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

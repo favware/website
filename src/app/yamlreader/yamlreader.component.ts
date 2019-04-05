@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN } from '@util/constants';
+import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-yamlreader',
@@ -9,19 +10,6 @@ import { AWESOME_YAML_READER_GITHUB, AWESOME_YAML_READER_YARN, ICodeTile, IPrima
   styleUrls: ['./yamlreader.component.scss'],
 })
 export class YamlreaderComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'Awesome YAML Reader',
-    description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
-    image: 'https://favna.xyz/assets/icons/yamlreader.png',
-    imageAlt: 'Awesome YAML Reader Icon Image',
-    url: '/yamlreader',
-    summary: oneLine`A NodeJS library that can read YAML files and will output them to a standard JSON object.
-      Install it today with "yarn add awesome-yaml-reader"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'yaml', 'yamlreader', 'awesome-yaml-reader', 'awesomeyamlreader', 'json'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Awesome YAML Reader',
@@ -46,16 +34,27 @@ export class YamlreaderComponent implements OnInit {
       }
     ],
   };
-
   public readonly usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/yamlreader.js',
   };
-
   public readonly yamlTile: ICodeTile = {
     header: 'YAML file',
     codeFile: '/assets/code/awesomeyaml.yml',
   };
+  private readonly metadata = {
+    title: 'Awesome YAML Reader',
+    description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
+    image: 'https://favna.xyz/assets/icons/yamlreader.png',
+    imageAlt: 'Awesome YAML Reader Icon Image',
+    url: '/yamlreader',
+    summary: oneLine`A NodeJS library that can read YAML files and will output them to a standard JSON object.
+      Install it today with "yarn add awesome-yaml-reader"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'yaml', 'yamlreader', 'awesome-yaml-reader', 'awesomeyamlreader', 'json'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

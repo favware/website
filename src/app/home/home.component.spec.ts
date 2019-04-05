@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
-
-import { CardActionCasePipe, MaterialModule, RedirectGuard } from '../../util';
+import { CardActionCasePipe } from '@pipes/CardActionCase';
+import { MaterialModule } from '@util/material.module';
+import { RedirectGuard } from '@util/redirectguard.guard';
 
 import { HomeComponent } from './home.component';
 

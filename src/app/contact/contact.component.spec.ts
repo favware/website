@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { MaterialModule, MatIconService } from '../../util';
+import { MatIconService } from '@services/mat-icon.service';
+import { MaterialModule } from '@util/material.module';
 
 import { ContactComponent } from './contact.component';
 

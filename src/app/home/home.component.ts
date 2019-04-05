@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { oneLine } from 'common-tags';
-import moment from 'moment';
-
+import { SeoService } from '@services/seo.service';
 import {
   ASSET_BASE_PATH,
   AWESOME_CONVERTER_GITHUB,
@@ -20,18 +18,17 @@ import {
   DEXA_GITHUB_URL,
   DEXA_SKILL_URL,
   DISCORD_SERVER_URL,
-  IPrimaryTile,
-  IProjectTile,
-  ITile,
   MILKY_TSLINT_GITHUB,
   MILKY_TSLINT_YARN,
   RIBBON_GITHUB_URL,
   RIBBON_INVITE_URL,
-  SeoService,
   SEEDCHECKER_GITHUB_URL,
   UNESCAPE_GITHUB,
   UNESCAPE_YARN
-} from '../../util';
+} from '@util/constants';
+import { IPrimaryTile, IProjectTile, ITile } from '@util/interfaces';
+import { oneLine } from 'common-tags';
+import moment from 'moment';
 
 @Component({
   selector: 'favware-home',
@@ -39,19 +36,6 @@ import {
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'Home',
-    description: 'For Hearth and Home! Check out my projects here!',
-    image: 'https://favna.xyz/assets/og-image.png',
-    imageAlt: 'Social Embedding Image',
-    url: '',
-    summary: oneLine`On this website I am listing all the notable projects I have worked on.
-      Consider it to be my portfolio of sorts as well as a knowledge base of information.
-      There are also some small fun features here and more will be added in the future.`,
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Developer in Web, NodeJS, Unity3D and Java',
@@ -300,6 +284,19 @@ export class HomeComponent implements OnInit {
       }
     ],
   };
+  private readonly metadata = {
+    title: 'Home',
+    description: 'For Hearth and Home! Check out my projects here!',
+    image: 'https://favna.xyz/assets/og-image.png',
+    imageAlt: 'Social Embedding Image',
+    url: '',
+    summary: oneLine`On this website I am listing all the notable projects I have worked on.
+      Consider it to be my portfolio of sorts as well as a knowledge base of information.
+      There are also some small fun features here and more will be added in the future.`,
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

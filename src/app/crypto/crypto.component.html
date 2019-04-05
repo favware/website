@@ -7,7 +7,7 @@
         <markdown>{{headerTile.subheader}}</markdown>
       </h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
-        <a [href]="button.url" [target]="button.outer ? '_blank' : '_self'" [rel]="button.outer ? 'noreferrer' : ''">
+        <a [href]="button.url" [rel]="button.outer ? 'noreferrer' : ''" [target]="button.outer ? '_blank' : '_self'">
           <button [class.mat-disabled]="button.disabled" [color]="button.color" [disabled]="button.disabled"
                   class="full-size-button" mat-raised-button>{{button.text | uppercase}}</button>
         </a>

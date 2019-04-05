@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN } from '@util/constants';
+import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN, ICodeTile, IPrimaryTile, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-crypto',
@@ -9,20 +10,6 @@ import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN, ICodeTile, IPrimaryTile, Se
   styleUrls: ['./crypto.component.scss'],
 })
 export class CryptoComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'Awesome Crypto',
-    description: 'Easily generate a random cryptographic in NodeJS!',
-    image: 'https://favna.xyz/assets/icons/crypto.png',
-    imageAlt: 'Awesome Crypto Icon',
-    url: '/crypto',
-    summary: oneLine`A NodeJS library that can generate secure random cryptographic strings using NodeJS's own "Crypto.RandomBytes()" function.
-    Written in TypeScript so it is entirely typesafe!
-    Install it today with "yarn add awesome-crypto"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'crypto', 'awesome-crypto', 'cryptography'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Awesome Crypto',
@@ -47,11 +34,25 @@ export class CryptoComponent implements OnInit {
       }
     ],
   };
-
   public readonly usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/crypto.js',
   };
+  private readonly metadata = {
+    title: 'Awesome Crypto',
+    description: 'Easily generate a random cryptographic in NodeJS!',
+    image: 'https://favna.xyz/assets/icons/crypto.png',
+    imageAlt: 'Awesome Crypto Icon',
+    url: '/crypto',
+    summary: oneLine`A NodeJS library that can generate secure random cryptographic strings using NodeJS's own "Crypto.RandomBytes()" function.
+    Written in TypeScript so it is entirely typesafe!
+    Install it today with "yarn add awesome-crypto"`,
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'crypto', 'awesome-crypto', 'cryptography'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
+
   ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { ASSET_BASE_PATH, SEEDCHECKER_GITHUB_URL } from '@util/constants';
+import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { ASSET_BASE_PATH, IMatCarouselOptions, IPrimaryTile, SeoService, SEEDCHECKER_GITHUB_URL } from '../../util';
-
 
 @Component({
   selector: 'favware-seedcheck',
@@ -10,18 +10,6 @@ import { ASSET_BASE_PATH, IMatCarouselOptions, IPrimaryTile, SeoService, SEEDCHE
   styleUrls: ['./seedcheck.component.scss'],
 })
 export class SeedcheckComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'SEEDChecker',
-    description: '3DS SEEDChecking utility',
-    image: 'https://favna.xyz/assets/icons/seedcheck-share.png',
-    imageAlt: 'SEEDChecker Preview Image',
-    url: '/seedcheck',
-    summary: oneLine`A Java based utility that can be used to fetch the SEED descryption keys for 3DS games`,
-    keywords: ['3ds', 'nintendo', 'hacking', 'seed', 'java', 'program', 'utility', 'tool'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'SEEDChecker',
@@ -47,7 +35,6 @@ export class SeedcheckComponent implements OnInit {
       }
     ],
   };
-
   public readonly aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
@@ -55,7 +42,6 @@ export class SeedcheckComponent implements OnInit {
             if the decryption seed for a given title is available.
             If a SEED is available it is automatically downloaded to your default "Downloads" folder`],
   };
-
   public readonly instructionsTile: IPrimaryTile = {
     header: 'Instructions',
     subheader: '',
@@ -72,7 +58,6 @@ export class SeedcheckComponent implements OnInit {
       'If you want to quit checking either close the program or click the **Cancel SEED Checking** button'
     ],
   };
-
   public readonly faqTile: IPrimaryTile = {
     header: 'FAQ',
     subheader: '',
@@ -83,13 +68,11 @@ export class SeedcheckComponent implements OnInit {
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
     ],
   };
-
   public readonly slides: Array<{ url: string }> = [
     { url: '/assets/screenshots/seedcheck/base.png' },
     { url: '/assets/screenshots/seedcheck/noseed.png' },
     { url: '/assets/screenshots/seedcheck/seed.png' }
   ];
-
   public readonly carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
@@ -107,6 +90,18 @@ export class SeedcheckComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
+  private readonly metadata = {
+    title: 'SEEDChecker',
+    description: '3DS SEEDChecking utility',
+    image: 'https://favna.xyz/assets/icons/seedcheck-share.png',
+    imageAlt: 'SEEDChecker Preview Image',
+    url: '/seedcheck',
+    summary: oneLine`A Java based utility that can be used to fetch the SEED descryption keys for 3DS games`,
+    keywords: ['3ds', 'nintendo', 'hacking', 'seed', 'java', 'program', 'utility', 'tool'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({

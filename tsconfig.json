@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -21,6 +21,11 @@
       "es2018",
       "dom"
     ],
-    "removeComments": true
+    "removeComments": true,
+    "paths": {
+      "@pipes/*": ["util/pipes/*"],
+      "@services/*": ["util/services/*"],
+      "@util/*": ["util/*"]
+    }
   }
 }

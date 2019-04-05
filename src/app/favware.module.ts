@@ -8,14 +8,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { CardActionCasePipe } from '@pipes/CardActionCase';
+import { ChangeATargetPipe } from '@pipes/ChangeATarget';
+import { ExtractTextPipe } from '@pipes/ExtractText';
+import { MatIconService } from '@services/mat-icon.service';
+import { SeoService } from '@services/seo.service';
+import { markdownFactory } from '@util/markdown.factory';
+import { MaterialModule } from '@util/material.module';
+import { RedirectGuard } from '@util/redirectguard.guard';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { environment } from '../environments/environment';
-import {
-  markdownFactory, CardActionCasePipe, ChangeATargetPipe,
-  ExtractTextPipe, FirestoreService, MaterialModule, MatIconService,
-  RedirectGuard, SeoService, StatEvaluatorPipe,
-} from '../util';
 
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
@@ -29,6 +32,7 @@ import { HomeComponent } from './home/home.component';
 import { MilkylintComponent } from './milkylint/milkylint.component';
 import { QuerystringComponent } from './querystring/querystring.component';
 import { RibbonDocsTableComponent } from './ribbon-docs-table/ribbon-docs-table.component';
+import { RibbonStatsComponent } from './ribbon-stats/ribbon-stats.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { SeedcheckComponent } from './seedcheck/seedcheck.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -42,7 +46,6 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     CardActionCasePipe,
     ExtractTextPipe,
     ChangeATargetPipe,
-    StatEvaluatorPipe,
     DexaDocsTableComponent,
     RibbonDocsTableComponent,
     SidenavComponent,
@@ -60,7 +63,8 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     TavaComponent,
     UnescapeComponent,
     YamlreaderComponent,
-    ZalgoComponent
+    ZalgoComponent,
+    RibbonStatsComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),
@@ -81,7 +85,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     LayoutModule
   ],
-  providers: [RedirectGuard, MatIconService, SeoService, AngularFirestore, FirestoreService],
+  providers: [RedirectGuard, MatIconService, SeoService, AngularFirestore],
   bootstrap: [SidenavComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

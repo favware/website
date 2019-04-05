@@ -1,8 +1,8 @@
 import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { markdownFactory } from '@util/markdown.factory';
+import { MaterialModule } from '@util/material.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
-
-import { markdownFactory, MaterialModule } from '../../util';
 
 import { TavaComponent } from './tava.component';
 

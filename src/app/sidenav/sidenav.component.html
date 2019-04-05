@@ -9,9 +9,9 @@
   </mat-toolbar>
 
   <mat-sidenav-container
+    [hasBackdrop]="false"
     [style.marginTop.px]="isSmall ? 56 : 0"
-    class="sidenav-container"
-    [hasBackdrop]="false">
+    class="sidenav-container">
     <mat-sidenav #drawer [disableClose]="isSidenavClosable" [fixedInViewport]="isFixedInViewport"
                  [mode]="sidenavMode"
                  [opened]="isSidenavOpen" autoFocus fixedTopGap="56" role="navigation">

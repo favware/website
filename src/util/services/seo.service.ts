@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-
-import { COMMON_EMAIL } from '../constants';
+import { COMMON_EMAIL } from '@util/constants';
 
 type seoTags = {
   title: string;
@@ -19,7 +18,8 @@ type seoTags = {
 })
 export class SeoService {
 
-  constructor (private meta: Meta, private titleService: Title) { }
+  constructor (private meta: Meta, private titleService: Title) {
+  }
 
   generateTags (tags: seoTags) {
     tags = {
@@ -35,15 +35,15 @@ export class SeoService {
     this.titleService.setTitle(`Favware - ${tags.title}`);
     this.meta.updateTag({ name: 'description', content: tags.description });
     this.meta.updateTag({ name: 'summary', content: tags.summary });
-    this.meta.updateTag({ name: 'keywords', content: ['favna', 'favware', 'portfolio', 'development', ...tags.keywords].join(' ')});
+    this.meta.updateTag({ name: 'keywords', content: ['favna', 'favware', 'portfolio', 'development', ...tags.keywords].join(' ') });
 
     // Set Meta Tags
     this.meta.updateTag({ name: 'twitter:card', content: 'summary' });
     this.meta.updateTag({ name: 'twitter:site', content: '@Favna_' });
     this.meta.updateTag({ name: 'twitter:title', content: tags.title });
     this.meta.updateTag({ name: 'twitter:description', content: tags.description });
-    this.meta.updateTag({ name: 'twitter:image', content: tags.image});
-    this.meta.updateTag({ name: 'twitter:image:alt', content: tags.imageAlt});
+    this.meta.updateTag({ name: 'twitter:image', content: tags.image });
+    this.meta.updateTag({ name: 'twitter:image:alt', content: tags.imageAlt });
 
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:site_name', content: 'Favware' });

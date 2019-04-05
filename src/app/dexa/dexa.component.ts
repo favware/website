@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
+import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL } from '@util/constants';
+import { IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-
-import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile, SeoService } from '../../util';
-
 
 @Component({
   selector: 'favware-dexa',
@@ -10,19 +10,6 @@ import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL, IPrimaryTile, SeoS
   styleUrls: ['./dexa.component.scss'],
 })
 export class DexaComponent implements OnInit {
-
-  constructor (private seo: SeoService) {}
-
-  private readonly metadata = {
-    title: 'Dexa',
-    description: 'Turn your Alexa device into your own personal PokéDex',
-    image: 'https://favna.xyz/assets/icons/dexa.png',
-    imageAlt: 'Dexa Preview Image',
-    url: '/dexa',
-    summary: oneLine`A skill for Alexa enabled devices that allows you to look up virtually any data from the Pokémon Pokédex.
-      Ask Dexa questions such as "Ask dexa pokemon data on Dragonite" to get a lot of information about the best dragon in the Pokémon franchise!`,
-    keywords: ['alexa', 'skill', 'pokemon', 'pokedex', 'info', 'search', 'voice', 'invocation'],
-  };
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Dexa',
@@ -48,7 +35,6 @@ export class DexaComponent implements OnInit {
       }
     ],
   };
-
   public readonly aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
@@ -59,6 +45,19 @@ export class DexaComponent implements OnInit {
             combining "Dex" with "Alexa". Dexa is made for
             [the Alexa devices from Amazon](https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011).`],
   };
+  private readonly metadata = {
+    title: 'Dexa',
+    description: 'Turn your Alexa device into your own personal PokéDex',
+    image: 'https://favna.xyz/assets/icons/dexa.png',
+    imageAlt: 'Dexa Preview Image',
+    url: '/dexa',
+    summary: oneLine`A skill for Alexa enabled devices that allows you to look up virtually any data from the Pokémon Pokédex.
+      Ask Dexa questions such as "Ask dexa pokemon data on Dragonite" to get a lot of information about the best dragon in the Pokémon franchise!`,
+    keywords: ['alexa', 'skill', 'pokemon', 'pokedex', 'info', 'search', 'voice', 'invocation'],
+  };
+
+  constructor (private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.seo.generateTags({
