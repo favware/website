@@ -17,7 +17,7 @@ export class MilkylintComponent implements OnInit {
     buttons: [
       {
         text: 'yarn add -D milky-tslint ',
-        color: 'primary',
+        color: 'accent',
         disabled: true,
       },
       {

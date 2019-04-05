@@ -16,6 +16,7 @@ import { SeoService } from '@services/seo.service';
 import { markdownFactory } from '@util/markdown.factory';
 import { MaterialModule } from '@util/material.module';
 import { RedirectGuard } from '@util/redirectguard.guard';
+import { ClipboardModule } from 'ngx-clipboard';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { environment } from '../environments/environment';
@@ -43,45 +44,46 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
 @NgModule({
   declarations: [
     CardActionCasePipe,
-    ExtractTextPipe,
-    ChangeATargetPipe,
-    DexaDocsTableComponent,
-    RibbonDocsTableComponent,
-    SidenavComponent,
     CatchcalcComponent,
+    ChangeATargetPipe,
     ContactComponent,
     ConvertbotComponent,
     ConverterComponent,
     CryptoComponent,
     DexaComponent,
+    DexaDocsTableComponent,
+    ExtractTextPipe,
     HomeComponent,
     MilkylintComponent,
     QuerystringComponent,
     RibbonComponent,
+    RibbonDocsTableComponent,
     SeedcheckComponent,
+    SidenavComponent,
     TavaComponent,
     UnescapeComponent,
     YamlreaderComponent,
     ZalgoComponent
   ],
   imports: [
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule.enablePersistence(),
     BrowserModule.withServerTransition({ appId: 'serverFavware' }),
-    BrowserAnimationsModule,
+    HttpClientModule,
     FavwareRoutingModule,
     MaterialModule,
+    LayoutModule,
+    FlexLayoutModule,
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule.enablePersistence(),
+    BrowserAnimationsModule,
     MarkdownModule.forRoot({
       markedOptions: {
         provide: MarkedOptions,
         useFactory: markdownFactory,
       },
     }),
-    FlexLayoutModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    LayoutModule
+    ClipboardModule
   ],
   providers: [RedirectGuard, MatIconService, SeoService, AngularFirestore],
   bootstrap: [SidenavComponent],

@@ -7,10 +7,17 @@
         <markdown>{{headerTile.subheader}}</markdown>
       </h2>
       <p *ngFor="let button of headerTile.buttons" class="header-button">
-        <a [href]="button.url" [rel]="button.outer ? 'noreferrer' : ''" [target]="button.outer ? '_blank' : '_self'">
-          <button [class.mat-disabled]="button.disabled" [color]="button.color" [disabled]="button.disabled"
-                  class="full-size-button" mat-raised-button>{{button.text | uppercase}}</button>
-        </a>
+        <ng-container *ngIf="button.disabled; else linkButton">
+          <button [color]="button.color" class="full-size-button" mat-raised-button
+            ngxClipboard [cbContent]="button.text">{{button.text + " (click to copy)" | uppercase}}</button>
+        </ng-container>
+
+        <ng-template #linkButton>
+          <a [href]="button.url" [rel]="button.outer ? 'noreferrer' : ''" [target]="button.outer ? '_blank' : '_self'">
+            <button [color]="button.color" class="full-size-button"
+              mat-raised-button>{{button.text | uppercase}}</button>
+          </a>
+        </ng-template>
       </p>
     </div>
   </div>

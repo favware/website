@@ -17,7 +17,7 @@ export class UnescapeComponent implements OnInit {
     buttons: [
       {
         text: 'yarn add unescape-es6',
-        color: 'primary',
+        color: 'accent',
         disabled: true,
       },
       {

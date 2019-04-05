@@ -17,7 +17,7 @@ export class ConverterComponent implements OnInit {
     buttons: [
       {
         text: 'yarn add awesome-converter',
-        color: 'primary',
+        color: 'accent',
         disabled: true,
       },
       {

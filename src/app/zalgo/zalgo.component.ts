@@ -17,7 +17,7 @@ export class ZalgoComponent implements OnInit {
     buttons: [
       {
         text: 'yarn add awesome-zalgo',
-        color: 'primary',
+        color: 'accent',
         disabled: true,
       },
       {

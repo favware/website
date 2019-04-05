@@ -17,7 +17,7 @@ export class YamlreaderComponent implements OnInit {
     buttons: [
       {
         text: 'yarn add awesome-yaml-reader',
-        color: 'primary',
+        color: 'accent',
         disabled: true,
       },
       {

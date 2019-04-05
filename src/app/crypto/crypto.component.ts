@@ -17,7 +17,7 @@ export class CryptoComponent implements OnInit {
     buttons: [
       {
         text: 'yarn add awesome-crypto',
-        color: 'primary',
+        color: 'accent',
         disabled: true,
       },
       {

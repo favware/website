@@ -17,7 +17,7 @@ export class QuerystringComponent implements OnInit {
     buttons: [
       {
         text: 'yarn add awesome-querystring',
-        color: 'primary',
+        color: 'accent',
         disabled: true,
       },
       {
