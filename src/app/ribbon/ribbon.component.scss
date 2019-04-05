@@ -22,3 +22,31 @@ favware-ribbon-docs-table {
     margin: 2vh auto;
   }
 }
+
+.card-paragraph {
+  width: 33%;
+}
+
+.card {
+  height: 16vh;
+  display: grid;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+    flex-direction: column;
+    vertical-align: middle;
+    align-content: space-between;
+  }
+
+  &-wrapper {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+#loadingSpinner {
+  text-align: center;
+  margin: 0 10px;
+}

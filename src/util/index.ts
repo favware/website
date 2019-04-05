@@ -6,5 +6,7 @@ export { RedirectGuard } from './redirectguard.guard';
 export { CardActionCasePipe } from './pipes/CardActionCase';
 export { ExtractTextPipe } from './pipes/ExtractText';
 export { ChangeATargetPipe } from './pipes/ChangeATarget';
+export { StatEvaluatorPipe } from './pipes/StatEvaluator';
 export { MatIconService } from './services/mat-icon.service';
 export { SeoService } from './services/seo.service';
+export { FirestoreService } from './services/firestore.service';

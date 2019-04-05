@@ -22,6 +22,31 @@
     </div>
   </div>
 
+  <div class="section-margin card-wrapper">
+    <h1 class="mat-display-1 center-text">{{statsHeader}}</h1>
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
+      <p *ngFor="let card of statMap.values()" class="card-paragraph">
+        <mat-card class="material-card card">
+          <mat-card-header>
+            <mat-card-title>{{card.header}}</mat-card-title>
+            <mat-card-subtitle>{{sinceLabel}}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content class='card-content'>
+            <ng-container *ngIf="!card.loading; else loadingSpinner">
+              <mat-chip-list>
+                <mat-chip color="accent" selected>{{card.count | async | json | statEvaluator}}</mat-chip>
+              </mat-chip-list>
+            </ng-container>
+
+            <ng-template #loadingSpinner>
+                <mat-progress-spinner color="warn" mode="indeterminate" diameter="75"></mat-progress-spinner>
+            </ng-template>
+          </mat-card-content>
+        </mat-card>
+      </p>
+    </div>
+  </div>
+
   <div class="section-margin" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center space-around"
        fxLayoutGap="0.5%">
     <favware-ribbon-docs-table></favware-ribbon-docs-table>

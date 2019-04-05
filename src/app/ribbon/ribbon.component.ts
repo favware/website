@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { oneLine } from 'common-tags';
+import moment from 'moment';
+import 'moment-duration-format';
 
-import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL, SeoService } from '../../util';
-
+import { DISCORD_SERVER_URL, FirestoreService, IPrimaryTile, IRibbonStatsCard, RIBBON_GITHUB_URL, RIBBON_INVITE_URL, SeoService } from '../../util';
 
 @Component({
   selector: 'favware-ribbon',
@@ -11,7 +12,14 @@ import { DISCORD_SERVER_URL, IPrimaryTile, RIBBON_GITHUB_URL, RIBBON_INVITE_URL,
 })
 export class RibbonComponent implements OnInit {
 
-  constructor (private seo: SeoService) {}
+  constructor (private seo: SeoService, private firestore: FirestoreService) {
+    this.statMap.set('commands', { header: 'Total commands ran', count: null, loading: true });
+    this.statMap.set('channels', { header: 'Channels being spyed on', count: null, loading: true });
+    this.statMap.set('users', { header: 'Discord users served', count: null, loading: true });
+    this.statMap.set('servers', { header: 'Servers being powered up', count: null, loading: true });
+    this.statMap.set('messages', { header: 'Messages sent', count: null, loading: true });
+    this.statMap.set('uptime', { header: 'Total uptime', count: null, loading: true });
+  }
 
   private readonly metadata = {
     title: 'Ribbon',
@@ -23,6 +31,11 @@ export class RibbonComponent implements OnInit {
       It comes jam-packed with features and it should be your go-to number one bot for any server of any kind or size!`,
     keywords: ['discord', 'ribbon', 'bot', 'all-purpose', 'all', 'purpose', 'chat', 'pokemon', 'casino', 'automod', 'music', 'stream', '8ball', 'fun'],
   };
+
+  public readonly statsHeader: string = 'Statistics';
+  public readonly sinceLabel: string = `Since ${moment('20190405T15:00:00', 'YYYYMMDDTHH:mm:ss').format('MMMM Do YYYY [at] HH:mm')}`;
+
+  private readonly statMap: Map<string, IRibbonStatsCard> = new Map();
 
   public readonly headerTile: IPrimaryTile = {
     header: 'Ribbon',
@@ -68,5 +81,16 @@ export class RibbonComponent implements OnInit {
       summary: this.metadata.summary,
       keywords: this.metadata.keywords,
     });
+
+    this.statMap.set('commands', { header: 'Total commands ran', count: this.firestore.getData('ribbon/commands'), loading: false });
+    this.statMap.set('channels', { header: 'Channels being spyed on', count: this.firestore.getData('ribbon/channels'), loading: false });
+    this.statMap.set('users', { header: 'Discord users served', count: this.firestore.getData('ribbon/users'), loading: false });
+    this.statMap.set('servers', { header: 'Servers being powered up', count: this.firestore.getData('ribbon/servers'), loading: false });
+    this.statMap.set('messages', { header: 'Messages sent', count: this.firestore.getData('ribbon/messages'), loading: false });
+    this.statMap.set('uptime', { header: 'Total uptime', count: this.firestore.getData('ribbon/uptime'), loading: false });
+
+    for(let card of this.statMap.values()) {
+      card.count.subscribe(val => console.log(val.count));
+    }
   }
 }

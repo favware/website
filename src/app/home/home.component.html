@@ -18,7 +18,7 @@
   <div class="project-card-layout section-margin" fxLayout="row wrap" fxLayout.xs="column"
        fxLayoutAlign="center center">
     <div *ngFor="let card of projectsTile.cards">
-      <mat-card class="project-card">
+      <mat-card class="material-card">
         <mat-card-header>
           <img [alt]="card.header.imageAlt" [src]="card.header.avatar" mat-card-avatar/>
           <mat-card-title>{{card.header.title}}</mat-card-title>

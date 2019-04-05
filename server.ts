@@ -6,6 +6,10 @@ import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import * as express from 'express';
 import { join } from 'path';
 import 'zone.js/dist/zone-node';
+import 'reflect-metadata';
+
+(global as any).WebSocket = require('ws');
+(global as any).XMLHttpRequest = require('xhr2');
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
@@ -42,7 +46,10 @@ app.get('*', (req, res) => {
   res.render('index', { req });
 });
 
-// Start up the Node server
-// app.listen(PORT, () => {
-//   console.log(`Node Express server listening on http://localhost:${PORT}`);
-// });
+// If we're not in the Cloud Functions environment, spin up a Node server
+if (!process.env.FUNCTION_NAME) {
+  const PORT = process.env.PORT || 4000;
+  app.listen(PORT, () => {
+    console.log(`Node server listening on http://localhost:${PORT}`);
+  });
+}

@@ -1,4 +1,5 @@
 import { MatCarousel } from '@ngmodule/material-carousel';
+import { Observable } from 'rxjs';
 
 export interface ITile {
   header: string;
@@ -54,6 +55,14 @@ export interface ITavaTile extends ITile {
 
 export interface IProjectTile extends ITile {
   cards: ICard[];
+}
+
+export type FireDocument = { count: number };
+
+export interface IRibbonStatsCard {
+  header: string;
+  count: Observable<FireDocument> | null;
+  loading: boolean;
 }
 
 export interface ISidenavLink {

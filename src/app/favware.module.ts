@@ -1,6 +1,8 @@
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,8 +13,8 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { environment } from '../environments/environment';
 import {
   markdownFactory, CardActionCasePipe, ChangeATargetPipe,
-  ExtractTextPipe, MaterialModule, MatIconService, RedirectGuard,
-  SeoService,
+  ExtractTextPipe, FirestoreService, MaterialModule, MatIconService,
+  RedirectGuard, SeoService, StatEvaluatorPipe,
 } from '../util';
 
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
@@ -40,6 +42,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     CardActionCasePipe,
     ExtractTextPipe,
     ChangeATargetPipe,
+    StatEvaluatorPipe,
     DexaDocsTableComponent,
     RibbonDocsTableComponent,
     SidenavComponent,
@@ -60,6 +63,8 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     ZalgoComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule.enablePersistence(),
     BrowserModule.withServerTransition({ appId: 'serverFavware' }),
     BrowserAnimationsModule,
     FavwareRoutingModule,
@@ -76,7 +81,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     LayoutModule
   ],
-  providers: [RedirectGuard, MatIconService, SeoService],
+  providers: [RedirectGuard, MatIconService, SeoService, AngularFirestore, FirestoreService],
   bootstrap: [SidenavComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
