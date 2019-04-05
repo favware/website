@@ -9,7 +9,7 @@
       <p *ngFor="let button of headerTile.buttons" class="header-button">
         <ng-container *ngIf="button.disabled; else linkButton">
           <button [color]="button.color" class="full-size-button" mat-raised-button
-            ngxClipboard [cbContent]="button.text">{{button.text + " (click to copy)" | uppercase}}</button>
+            ngxClipboard [cbContent]="button.text">{{button.text | uppercase}} <span class="copy-button-subtext">(click to copy)</span></button>
         </ng-container>
 
         <ng-template #linkButton>
