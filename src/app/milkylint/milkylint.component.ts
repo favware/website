@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class MilkylintComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Milky TSLint',
     subheader: 'TypeScript linter plugin for Gulp',
     buttons: [
@@ -34,11 +34,11 @@ export class MilkylintComponent implements OnInit {
       }
     ],
   };
-  public readonly usageTile: ICodeTile = {
+  usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/milkylint.js',
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Milky TSLint',
     description: 'TypeScript linter plugin for Gulp',
     image: 'https://favna.xyz/assets/icons/milkylint.png',

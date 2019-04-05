@@ -21,12 +21,12 @@ export class RibbonDocsTableComponent implements OnInit {
 
   public dataSource: RibbonDocsDatasource;
   public isSmall = false;
-  public readonly fullSizeColumns = ['name', 'aliases', 'description', 'category'];
-  public readonly smallSizeColumns = ['name', 'category'];
-  public readonly searchFormControl = new FormControl('', [Validators.pattern(/[A-z]+/g)]);
-  public readonly matcher = new RibbonDocsErrorStateMatches();
+  fullSizeColumns = ['name', 'aliases', 'description', 'category'];
+  smallSizeColumns = ['name', 'category'];
+  searchFormControl = new FormControl('', [Validators.pattern(/[A-z]+/g)]);
+  matcher = new RibbonDocsErrorStateMatches();
 
-  private readonly breakpointObserver: BreakpointObserver;
+  breakpointObserver: BreakpointObserver;
 
   constructor (breakpointObserver: BreakpointObserver) {
     this.breakpointObserver = breakpointObserver;

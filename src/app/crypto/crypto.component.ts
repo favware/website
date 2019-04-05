@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class CryptoComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Awesome Crypto',
     subheader: 'Generates secure random numbers using `crypto.randomBytes()`',
     buttons: [
@@ -34,11 +34,11 @@ export class CryptoComponent implements OnInit {
       }
     ],
   };
-  public readonly usageTile: ICodeTile = {
+  usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/crypto.js',
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Awesome Crypto',
     description: 'Easily generate a random cryptographic in NodeJS!',
     image: 'https://favna.xyz/assets/icons/crypto.png',

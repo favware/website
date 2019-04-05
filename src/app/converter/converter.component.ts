@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class ConverterComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Awesome Converter',
     subheader: 'An awesome and typesafe unit converter for NodeJS',
     buttons: [
@@ -34,11 +34,11 @@ export class ConverterComponent implements OnInit {
       }
     ],
   };
-  public readonly usageTile: ICodeTile = {
+  usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/converter.js',
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Awesome Converter',
     description: 'Awesome and typesafe unit converter, supports many different systems of units',
     image: 'https://favna.xyz/assets/icons/converter.png',

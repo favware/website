@@ -7,10 +7,9 @@ type seoTags = {
   description: string;
   image: string;
   summary: string;
-  slug?: string;
-  imageAlt?: string;
-  url?: string;
-  keywords?: string[];
+  imageAlt: string;
+  url: string;
+  keywords: string[];
 };
 
 @Injectable({
@@ -27,7 +26,6 @@ export class SeoService {
       description: 'For Hearth and Home! Check out my projects here!',
       summary: 'This is my personal website showing off all the projects that I have made. Be sure to try some of them out!',
       image: 'https://favna.xyz/assets/og-image.png',
-      slug: '',
       ...tags,
     };
 

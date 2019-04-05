@@ -1,8 +1,8 @@
 import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
+import { SeoService } from '@services/seo.service';
 import { SidenavLink } from '@util/interfaces';
 import { oneLine } from 'common-tags';
-import { SeoService } from '@services/seo.service';
 
 @Component({
   selector: 'favware-sidenav',
@@ -10,25 +10,25 @@ import { SeoService } from '@services/seo.service';
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent implements OnInit {
-
-  private readonly metadata = {
-    title: 'Home',
-    description: 'For Hearth and Home! Check out my projects here!',
-    image: 'https://favna.xyz/assets/og-image.png',
-    imageAlt: 'Social Embedding Image',
-    url: '',
-    summary: oneLine`On this website I am listing all the notable projects I have worked on.
-      Consider it to be my portfolio of sorts as well as a knowledge base of information.
-      There are also some small fun features here and more will be added in the future.`,
-  };
-
   public sidenavMode = 'side';
   public isFixedInViewport = false;
   public isSidenavOpen = false;
   public isSidenavClosable = true;
   public isSmall = false;
 
-  public readonly items: SidenavLink[] = [
+  metadata = {
+    title: 'Home',
+    description: 'For Hearth and Home! Check out my projects here!',
+    image: 'https://favna.xyz/assets/og-image.png',
+    imageAlt: 'Social Embedding Image',
+    url: '/home',
+    summary: oneLine`On this website I am listing all the notable projects I have worked on.
+      Consider it to be my portfolio of sorts as well as a knowledge base of information.
+      There are also some small fun features here and more will be added in the future.`,
+    keywords: [],
+  };
+
+  items: SidenavLink[] = [
     {
       routerLink: '.',
       label: 'Home',
@@ -106,7 +106,8 @@ export class SidenavComponent implements OnInit {
     }
   ];
 
-  constructor (private breakpointObserver: BreakpointObserver, private seo: SeoService) { }
+  constructor (private breakpointObserver: BreakpointObserver, private seo: SeoService) {
+  }
 
   ngOnInit (): void {
     this.breakpointObserver
@@ -133,6 +134,7 @@ export class SidenavComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

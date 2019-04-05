@@ -37,12 +37,12 @@ import moment from 'moment';
 })
 export class HomeComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Developer in Web, NodeJS, Unity3D and Java',
     subheader: 'From Web design to discord bots to indie games',
     text: ['Scroll down to see my projects'],
   };
-  public readonly aboutTile: Tile = {
+  aboutTile: Tile = {
     header: 'About me',
     text: [
       'Greetings, My name is Jeroen Claassens (a.k.a. Favna)',
@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit {
                    at home where I found my first job after graduation.`
     ],
   };
-  public readonly projectsTile: IProjectTile = {
+  projectsTile: IProjectTile = {
     header: 'My Projects',
     cards: [
       {
@@ -284,15 +284,16 @@ export class HomeComponent implements OnInit {
       }
     ],
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Home',
     description: 'For Hearth and Home! Check out my projects here!',
     image: 'https://favna.xyz/assets/og-image.png',
     imageAlt: 'Social Embedding Image',
-    url: '',
+    url: '/home',
     summary: oneLine`On this website I am listing all the notable projects I have worked on.
       Consider it to be my portfolio of sorts as well as a knowledge base of information.
       There are also some small fun features here and more will be added in the future.`,
+    keywords: [],
   };
 
   constructor (private seo: SeoService) {
@@ -306,6 +307,7 @@ export class HomeComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
+      keywords: this.metadata.keywords,
     });
   }
 }

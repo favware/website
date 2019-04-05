@@ -11,7 +11,7 @@ import { IPrimaryTile, ITavaTile } from '@util/interfaces';
 })
 export class TavaComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Ta\'Va - Trial of the Sun God',
     subheader: 'Embark on a mythological aztec puzzle game',
     buttons: [
@@ -35,11 +35,11 @@ export class TavaComponent implements OnInit {
       }
     ],
   };
-  public readonly gameTileHeader: IPrimaryTile = {
+  gameTileHeader: IPrimaryTile = {
     header: 'The Game',
     subheader: 'Ta\'Va is a puzzle/platform game made with Unity',
   };
-  public readonly gameTile: ITavaTile[] = [
+  gameTile: ITavaTile[] = [
     {
       icon: 'mat-tava-puzzle-icon',
       header: 'Puzzles',
@@ -56,69 +56,69 @@ export class TavaComponent implements OnInit {
       description: 'The world of Ta\'Va is a mythological place. During your travels you will explore floating islands, mythical creatures and the plane of the gods.',
     }
   ];
-  public readonly mediaTileHeader: IPrimaryTile = {
+  mediaTileHeader: IPrimaryTile = {
     header: 'Media',
     subheader: '',
   };
-  public readonly mediaTile: ITavaTile[] = [
+  mediaTile: ITavaTile[] = [
     {
-      icon: `assets/screenshots/tava/village.png`,
+      icon: `/assets/screenshots/tava/village.png`,
       alt: 'village_screenshot',
       header: 'Explore',
       description: 'Mesoamerican mythology',
     },
     {
-      icon: `assets/screenshots/tava/cave.png`,
+      icon: `/assets/screenshots/tava/cave.png`,
       alt: 'cave_screenshot',
       header: 'Challenges',
       description: 'The Boar Chase Challenge',
     },
     {
-      icon: `assets/screenshots/tava/puzzle.png`,
+      icon: `/assets/screenshots/tava/puzzle.png`,
       alt: 'puzzle_screenshot',
       header: 'Puzzles',
       description: 'Push the boulders!',
     }
   ];
-  public readonly teamTileHeader: IPrimaryTile = {
+  teamTileHeader: IPrimaryTile = {
     header: 'Our Amazing Team',
     subheader: '',
   };
-  public readonly teamTileFirstLine: ITavaTile[] = [
+  teamTileFirstLine: ITavaTile[] = [
     {
-      icon: `assets/screenshots/tava/art.png`,
+      icon: `/assets/screenshots/tava/art.png`,
       alt: 'art_team_photo',
       header: 'Art Team',
       description: '',
     },
     {
-      icon: `assets/screenshots/tava/conceptowner.png`,
+      icon: `/assets/screenshots/tava/conceptowner.png`,
       alt: 'conceptowner_photo',
       header: 'Concept Owner',
       description: '',
     },
     {
-      icon: `assets/screenshots/tava/gameplay.png`,
+      icon: `/assets/screenshots/tava/gameplay.png`,
       alt: 'gameplay_team_photo',
       header: 'Gameplay Team',
       description: '',
     }
   ];
-  public readonly teamTileSecondLine: ITavaTile[] = [
+  teamTileSecondLine: ITavaTile[] = [
     {
-      icon: `assets/screenshots/tava/programming.png`,
+      icon: `/assets/screenshots/tava/programming.png`,
       alt: 'programming_team_photo',
       header: 'Programming Team',
       description: '',
     },
     {
-      icon: `assets/screenshots/tava/sound.png`,
+      icon: `/assets/screenshots/tava/sound.png`,
       alt: 'sound_team_photo',
       header: 'Sound Owner',
       description: '',
     }
   ];
-  private readonly metadata = {
+  metadata = {
     title: 'Ta\'Va - Trial of the Sun God',
     description: 'Mythological aztec puzzle game',
     image: 'https://favna.xyz/assets/icons/tava-share.png',

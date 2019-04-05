@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class ZalgoComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Awesome Zalgo',
     subheader: 'Unleash and banish the Zalgo Monster!',
     buttons: [
@@ -34,11 +34,11 @@ export class ZalgoComponent implements OnInit {
       }
     ],
   };
-  public readonly usageTile: ICodeTile = {
+  usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/zalgo.js',
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Awesome Zalgo',
     description: 'Unleash and banish the Zalgo Monster!',
     image: 'https://favna.xyz/assets/icons/zalgo.png',

@@ -19,9 +19,9 @@ export class DexaDocsTableComponent implements OnInit {
   @ViewChild('filter') filter: ElementRef;
 
   public dataSource: DexaDocsDatasource;
-  public readonly definitionColumns = ['name', 'description', 'examples'];
-  public readonly searchFormControl = new FormControl('', [Validators.pattern(/[A-z]+/g)]);
-  public readonly matcher = new DexaDocsErrorStateMatches();
+  definitionColumns = ['name', 'description', 'examples'];
+  searchFormControl = new FormControl('', [Validators.pattern(/[A-z]+/g)]);
+  matcher = new DexaDocsErrorStateMatches();
 
   ngOnInit () {
     this.dataSource = new DexaDocsDatasource(this.paginator, this.sort);

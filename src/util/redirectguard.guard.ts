@@ -3,7 +3,7 @@ import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from
 
 @Injectable()
 export class RedirectGuard implements CanActivate {
-  private readonly router: Router;
+  router: Router;
 
   constructor (router: Router) {
     this.router = router;

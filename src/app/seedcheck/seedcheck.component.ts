@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class SeedcheckComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'SEEDChecker',
     subheader: 'Periodically check if the SEED for a Nintendo 3DS title is available',
     buttons: [
@@ -35,14 +35,14 @@ export class SeedcheckComponent implements OnInit {
       }
     ],
   };
-  public readonly aboutTile: IPrimaryTile = {
+  aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`SEEDChecker is a Java application that can periodically check
             if the decryption seed for a given title is available.
             If a SEED is available it is automatically downloaded to your default "Downloads" folder`],
   };
-  public readonly instructionsTile: IPrimaryTile = {
+  instructionsTile: IPrimaryTile = {
     header: 'Instructions',
     subheader: '',
     text: [
@@ -58,7 +58,7 @@ export class SeedcheckComponent implements OnInit {
       'If you want to quit checking either close the program or click the **Cancel SEED Checking** button'
     ],
   };
-  public readonly faqTile: IPrimaryTile = {
+  faqTile: IPrimaryTile = {
     header: 'FAQ',
     subheader: '',
     text: [
@@ -68,12 +68,12 @@ export class SeedcheckComponent implements OnInit {
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
     ],
   };
-  public readonly slides: Array<{ url: string }> = [
+  slides: Array<{ url: string }> = [
     { url: '/assets/screenshots/seedcheck/base.png' },
     { url: '/assets/screenshots/seedcheck/noseed.png' },
     { url: '/assets/screenshots/seedcheck/seed.png' }
   ];
-  public readonly carousel: IMatCarouselOptions = {
+  carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,
@@ -90,7 +90,7 @@ export class SeedcheckComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
-  private readonly metadata = {
+  metadata = {
     title: 'SEEDChecker',
     description: '3DS SEEDChecking utility',
     image: 'https://favna.xyz/assets/icons/seedcheck-share.png',

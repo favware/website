@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class YamlreaderComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Awesome YAML Reader',
     subheader: 'Awesome minimal wrapper around js-yaml',
     buttons: [
@@ -34,15 +34,15 @@ export class YamlreaderComponent implements OnInit {
       }
     ],
   };
-  public readonly usageTile: ICodeTile = {
+  usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/yamlreader.js',
   };
-  public readonly yamlTile: ICodeTile = {
+  yamlTile: ICodeTile = {
     header: 'YAML file',
     codeFile: '/assets/code/awesomeyaml.yml',
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Awesome YAML Reader',
     description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
     image: 'https://favna.xyz/assets/icons/yamlreader.png',

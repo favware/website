@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class UnescapeComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Unescape-ES6',
     subheader: 'Convert HTML entities to HTML characters',
     buttons: [
@@ -34,11 +34,11 @@ export class UnescapeComponent implements OnInit {
       }
     ],
   };
-  public readonly usageTile: ICodeTile = {
+  usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/unescape.js',
   };
-  public readonly characterTile: IPrimaryTile = {
+  characterTile: IPrimaryTile = {
     header: 'Characters',
     subheader: 'For performance, this library only handles the following common entities',
     text: [
@@ -60,7 +60,7 @@ export class UnescapeComponent implements OnInit {
   `
     ],
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Unescape ES6',
     description: 'Convert HTML entities to HTML characters. For example "&amp;" converts to &',
     image: 'https://favna.xyz/assets/icons/unescape.png',

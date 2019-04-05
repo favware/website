@@ -32,7 +32,6 @@ import { HomeComponent } from './home/home.component';
 import { MilkylintComponent } from './milkylint/milkylint.component';
 import { QuerystringComponent } from './querystring/querystring.component';
 import { RibbonDocsTableComponent } from './ribbon-docs-table/ribbon-docs-table.component';
-import { RibbonStatsComponent } from './ribbon-stats/ribbon-stats.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { SeedcheckComponent } from './seedcheck/seedcheck.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
@@ -63,8 +62,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     TavaComponent,
     UnescapeComponent,
     YamlreaderComponent,
-    ZalgoComponent,
-    RibbonStatsComponent
+    ZalgoComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebaseConfig),

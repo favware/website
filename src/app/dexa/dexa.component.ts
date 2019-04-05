@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class DexaComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Dexa',
     subheader: 'Simple, Complete and Expansive PokeDex for the Amazon Alexa assisstant',
     buttons: [
@@ -35,7 +35,7 @@ export class DexaComponent implements OnInit {
       }
     ],
   };
-  public readonly aboutTile: IPrimaryTile = {
+  aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`
@@ -45,7 +45,7 @@ export class DexaComponent implements OnInit {
             combining "Dex" with "Alexa". Dexa is made for
             [the Alexa devices from Amazon](https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011).`],
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Dexa',
     description: 'Turn your Alexa device into your own personal PokéDex',
     image: 'https://favna.xyz/assets/icons/dexa.png',

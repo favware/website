@@ -11,7 +11,7 @@ type Node = {
   header: string;
   value: string;
   id?: any;
-}
+};
 
 @Component({
   selector: 'favware-ribbon',
@@ -19,8 +19,8 @@ type Node = {
   styleUrls: ['./ribbon.component.scss'],
 })
 export class RibbonComponent implements OnInit {
-  public readonly statsHeader: string = 'Statistics';
-  public readonly headerTile: IPrimaryTile = {
+  statsHeader = 'Statistics';
+  headerTile: IPrimaryTile = {
     header: 'Ribbon',
     subheader: 'A feature rich, modular Discord.JS-Commando server bot',
     buttons: [
@@ -44,7 +44,7 @@ export class RibbonComponent implements OnInit {
       }
     ],
   };
-  public readonly aboutTile: IPrimaryTile = {
+  aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`
@@ -53,7 +53,7 @@ export class RibbonComponent implements OnInit {
             Ribbon features commands from searching the web, moderating your server to streaming music and a lot more.
             You can check a more extensive list of commands below.`],
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Ribbon',
     description: 'Amazing multifunctional Discord bot that can do anything you want anywhere you want',
     image: 'https://favna.xyz/assets/icons/ribbon.png',

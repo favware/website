@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class QuerystringComponent implements OnInit {
 
-  public readonly headerTile: IPrimaryTile = {
+  headerTile: IPrimaryTile = {
     header: 'Awesome Querystring',
     subheader: 'Robust and awesome querystring',
     buttons: [
@@ -34,15 +34,15 @@ export class QuerystringComponent implements OnInit {
       }
     ],
   };
-  public readonly stringifyUsageTile: ICodeTile = {
+  stringifyUsageTile: ICodeTile = {
     header: 'Usage - Stringify',
     codeFile: '/assets/code/querystring.stringify.js',
   };
-  public readonly parseUsageTile: ICodeTile = {
+  parseUsageTile: ICodeTile = {
     header: 'Usage - Parse',
     codeFile: '/assets/code/querystring.parse.js',
   };
-  private readonly metadata = {
+  metadata = {
     title: 'Awesome Querystring',
     description: 'Querystring that is robust in its working yet remains awesome to TypeScript users',
     image: 'https://favna.xyz/assets/icons/querystring.png',
