@@ -65,7 +65,7 @@ export class RibbonComponent implements OnInit {
   };
 
   isDoneLoading: boolean;
-  sinceLabel = `Since ${moment('20190405T15:00:00', 'YYYYMMDDTHH:mm:ss').format('MMMM Do YYYY [at] HH:mm')}`;
+  sinceLabel = `Since ${moment('20190406T16:00:00', 'YYYYMMDDTHH:mm:ss').format('MMMM Do YYYY [at] HH:mm')}`;
 
   collection: AngularFirestoreCollection<Node>;
   documents: Observable<Node[]>;
