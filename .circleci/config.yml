@@ -91,7 +91,7 @@ jobs:
           command: yarn add firebase-tools copy-dir del --ignore-engines
       - run:
           name: Deploy Firebase
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN --except functions
 
 workflows:
   version: 2

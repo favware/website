@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "outDir": "lib",
-    "sourceMap": true,
+    "sourceMap": false,
     "target": "es2015",
     "noFallthroughCasesInSwitch": true,
 		"noImplicitAny": true,
