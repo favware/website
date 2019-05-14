@@ -29,7 +29,7 @@
     "meta": {
       "lineno": 2,
       "filename": "badwords.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -88,7 +88,7 @@
     "meta": {
       "lineno": 2,
       "filename": "duptext.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -137,7 +137,7 @@
     "meta": {
       "lineno": 2,
       "filename": "excessivecaps.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -186,7 +186,7 @@
     "meta": {
       "lineno": 2,
       "filename": "excessiveemojis.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -225,7 +225,7 @@
     "meta": {
       "lineno": 2,
       "filename": "excessivementions.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -255,7 +255,7 @@
     "meta": {
       "lineno": 2,
       "filename": "externallinks.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -284,7 +284,7 @@
     "meta": {
       "lineno": 2,
       "filename": "invitesfilter.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -323,7 +323,7 @@
     "meta": {
       "lineno": 2,
       "filename": "slowmode.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\automod"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/automod"
     },
     "preserveName": true,
     "examples": [
@@ -341,7 +341,7 @@
     "meta": {
       "lineno": 2,
       "filename": "bank.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -359,7 +359,7 @@
     "meta": {
       "lineno": 2,
       "filename": "chips.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -397,7 +397,7 @@
     "meta": {
       "lineno": 2,
       "filename": "coin.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -416,7 +416,7 @@
     "meta": {
       "lineno": 2,
       "filename": "daily.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "order": 11
@@ -441,7 +441,7 @@
     "meta": {
       "lineno": 2,
       "filename": "deposit.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -479,7 +479,7 @@
     "meta": {
       "lineno": 2,
       "filename": "give.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -498,7 +498,7 @@
     "meta": {
       "lineno": 2,
       "filename": "leaderboard.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "order": 14
@@ -523,7 +523,7 @@
     "meta": {
       "lineno": 2,
       "filename": "memberbalance.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -552,7 +552,7 @@
     "meta": {
       "lineno": 2,
       "filename": "slots.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -571,7 +571,7 @@
     "meta": {
       "lineno": 2,
       "filename": "weekly.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "order": 17
@@ -596,7 +596,7 @@
     "meta": {
       "lineno": 2,
       "filename": "wheeloffortune.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -625,7 +625,7 @@
     "meta": {
       "lineno": 2,
       "filename": "withdraw.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\casino"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/casino"
     },
     "preserveName": true,
     "examples": [
@@ -672,7 +672,7 @@
     "meta": {
       "lineno": 2,
       "filename": "length.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/converters"
     },
     "preserveName": true,
     "examples": [
@@ -719,7 +719,7 @@
     "meta": {
       "lineno": 2,
       "filename": "mass.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/converters"
     },
     "preserveName": true,
     "examples": [
@@ -748,7 +748,7 @@
     "meta": {
       "lineno": 2,
       "filename": "math.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/converters"
     },
     "preserveName": true,
     "examples": [
@@ -795,7 +795,7 @@
     "meta": {
       "lineno": 2,
       "filename": "oxr.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/converters"
     },
     "preserveName": true,
     "examples": [
@@ -842,7 +842,7 @@
     "meta": {
       "lineno": 2,
       "filename": "temperature.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\converters"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/converters"
     },
     "preserveName": true,
     "examples": [
@@ -861,7 +861,7 @@
     "meta": {
       "lineno": 2,
       "filename": "favna.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\custom"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/custom"
     },
     "preserveName": true,
     "order": 25
@@ -876,7 +876,7 @@
     "meta": {
       "lineno": 2,
       "filename": "kai.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\custom"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/custom"
     },
     "preserveName": true,
     "order": 26
@@ -911,7 +911,7 @@
     "meta": {
       "lineno": 2,
       "filename": "docs.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\docs"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/docs"
     },
     "preserveName": true,
     "examples": [
@@ -940,7 +940,7 @@
     "meta": {
       "lineno": 2,
       "filename": "mdn.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\docs"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/docs"
     },
     "preserveName": true,
     "examples": [
@@ -969,7 +969,7 @@
     "meta": {
       "lineno": 2,
       "filename": "yarn.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\docs"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/docs"
     },
     "preserveName": true,
     "examples": [
@@ -983,7 +983,7 @@
     "longname": "module:copypasta",
     "name": "copypasta",
     "kind": "module",
-    "description": "Extra CopyPastaCommand - Sends a copypasta to the chat\n\nNote: It is possible to get copypastas with more than 2000 characters. Ask me to add it through my server!\n\n**Aliases**: `cp`, `pasta`, `tag`",
+    "description": "Extra CopypastaCommand - Sends a copypasta to the chat\n\nNote: It is possible to get copypastas with more than 2000 characters. Ask me to add it through my server!\n\n**Aliases**: `cp`, `pasta`, `tag`",
     "params": [
       {
         "type": {
@@ -998,7 +998,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypasta.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1012,7 +1012,7 @@
     "longname": "module:copypastaadd",
     "name": "copypastaadd",
     "kind": "module",
-    "description": "Extra CopyPastaAddCommand - Adds a new copypasta for your server\n\n**Aliases**: `cpadd`, `pastaadd`, `tagadd`, `newtag`",
+    "description": "Extra CopypastaAddCommand - Adds a new copypasta for your server\n\n**Aliases**: `cpadd`, `pastaadd`, `tagadd`, `newtag`",
     "params": [
       {
         "type": {
@@ -1036,7 +1036,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypastaadd.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1055,7 +1055,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypastalist.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "order": 32
@@ -1065,7 +1065,7 @@
     "longname": "module:copypastaremove",
     "name": "copypastaremove",
     "kind": "module",
-    "description": "Extra CopyPastaRemoveCommand - Remove a specified copypasta\n\nUse the copypastalist command to find the ID for deleting\n\n**Aliases**: `cpremove`, `copypastadelete`, `cpdelete`, `cpd`, `cpr`, `pastadelete`, `pasteremove`, `tagdelete`, `tagremove`",
+    "description": "Extra CopypastaRemoveCommand - Remove a specified copypasta\n\nUse the copypastalist command to find the ID for deleting\n\n**Aliases**: `cpremove`, `copypastadelete`, `cpdelete`, `cpd`, `cpr`, `pastadelete`, `pasteremove`, `tagdelete`, `tagremove`",
     "params": [
       {
         "type": {
@@ -1080,7 +1080,7 @@
     "meta": {
       "lineno": 2,
       "filename": "copypastaremove.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1109,7 +1109,7 @@
     "meta": {
       "lineno": 2,
       "filename": "qrgen.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1139,7 +1139,7 @@
     "meta": {
       "lineno": 2,
       "filename": "randomcol.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1177,7 +1177,7 @@
     "meta": {
       "lineno": 2,
       "filename": "remind.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1206,7 +1206,7 @@
     "meta": {
       "lineno": 2,
       "filename": "say.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1225,7 +1225,7 @@
     "meta": {
       "lineno": 2,
       "filename": "saywut.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "order": 38
@@ -1250,7 +1250,7 @@
     "meta": {
       "lineno": 2,
       "filename": "time.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1297,7 +1297,7 @@
     "meta": {
       "lineno": 2,
       "filename": "translate.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1326,7 +1326,7 @@
     "meta": {
       "lineno": 2,
       "filename": "weather.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1345,7 +1345,7 @@
     "meta": {
       "lineno": 2,
       "filename": "xkcd.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "order": 42
@@ -1370,7 +1370,7 @@
     "meta": {
       "lineno": 2,
       "filename": "zalgo.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\extra"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
     "examples": [
@@ -1399,7 +1399,7 @@
     "meta": {
       "lineno": 2,
       "filename": "8ball.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
     "examples": [
@@ -1437,7 +1437,7 @@
     "meta": {
       "lineno": 2,
       "filename": "dice.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
     "examples": [
@@ -1456,7 +1456,7 @@
     "meta": {
       "lineno": 2,
       "filename": "dndcoin.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
     "order": 46
@@ -1490,7 +1490,7 @@
     "meta": {
       "lineno": 2,
       "filename": "fight.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
     "examples": [
@@ -1519,7 +1519,7 @@
     "meta": {
       "lineno": 2,
       "filename": "rps.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
     "examples": [
@@ -1559,7 +1559,7 @@
     "meta": {
       "lineno": 2,
       "filename": "ship.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
     "examples": [
@@ -1597,7 +1597,7 @@
     "meta": {
       "lineno": 2,
       "filename": "strawpoll.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\games"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
     "examples": [
@@ -1627,7 +1627,7 @@
     "meta": {
       "lineno": 2,
       "filename": "activity.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1666,7 +1666,7 @@
     "meta": {
       "lineno": 2,
       "filename": "avatar.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1696,7 +1696,7 @@
     "meta": {
       "lineno": 2,
       "filename": "discordbots.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1715,7 +1715,7 @@
     "meta": {
       "lineno": 2,
       "filename": "emotes.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "order": 54
@@ -1741,7 +1741,7 @@
     "meta": {
       "lineno": 2,
       "filename": "help.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1772,7 +1772,7 @@
     "meta": {
       "lineno": 2,
       "filename": "iam.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1801,7 +1801,7 @@
     "meta": {
       "lineno": 2,
       "filename": "iamnot.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1820,7 +1820,7 @@
     "meta": {
       "lineno": 2,
       "filename": "invite.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "order": 58
@@ -1845,7 +1845,7 @@
     "meta": {
       "lineno": 2,
       "filename": "reddit.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1864,7 +1864,7 @@
     "meta": {
       "lineno": 2,
       "filename": "server.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "order": 60
@@ -1879,7 +1879,7 @@
     "meta": {
       "lineno": 2,
       "filename": "stats.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "order": 61
@@ -1904,7 +1904,7 @@
     "meta": {
       "lineno": 2,
       "filename": "userinfo.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\info"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
     "examples": [
@@ -1942,7 +1942,7 @@
     "meta": {
       "lineno": 2,
       "filename": "fortnite.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -1971,7 +1971,7 @@
     "meta": {
       "lineno": 2,
       "filename": "osu.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -2020,7 +2020,7 @@
     "meta": {
       "lineno": 2,
       "filename": "overwatch.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -2058,7 +2058,7 @@
     "meta": {
       "lineno": 2,
       "filename": "pubg.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -2087,7 +2087,7 @@
     "meta": {
       "lineno": 2,
       "filename": "showdown.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/leaderboards"
     },
     "preserveName": true,
     "examples": [
@@ -2125,7 +2125,7 @@
     "meta": {
       "lineno": 2,
       "filename": "addrole.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2154,7 +2154,7 @@
     "meta": {
       "lineno": 2,
       "filename": "announce.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2193,7 +2193,7 @@
     "meta": {
       "lineno": 2,
       "filename": "automod.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2232,7 +2232,7 @@
     "meta": {
       "lineno": 2,
       "filename": "ban.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2271,7 +2271,7 @@
     "meta": {
       "lineno": 2,
       "filename": "casinolimit.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2301,7 +2301,7 @@
     "meta": {
       "lineno": 2,
       "filename": "confmute.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2348,7 +2348,7 @@
     "meta": {
       "lineno": 2,
       "filename": "countdownadd.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2362,12 +2362,12 @@
     "longname": "module:countdownlist",
     "name": "countdownlist",
     "kind": "module",
-    "description": "Moderation CountDownList - List all stored countdown messages in the current guild\n\n**Aliases**: `cl`, `cdlist`",
+    "description": "Moderation CountdownList - List all stored countdown messages in the current guild\n\n**Aliases**: `cl`, `cdlist`",
     "category": "moderation",
     "meta": {
       "lineno": 2,
       "filename": "countdownlist.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "order": 75
@@ -2377,7 +2377,7 @@
     "longname": "module:countdownremove",
     "name": "countdownremove",
     "kind": "module",
-    "description": "Moderation CountDownRemove - Remove a specified countdown\n\nUse the countdownlist command to find the ID for deleting\n\n**Aliases**: `cdremove`, `countdowndelete`, `cddelete`, `cdd`, `cdr`",
+    "description": "Moderation CountdownRemove - Remove a specified countdown\n\nUse the countdownlist command to find the ID for deleting\n\n**Aliases**: `cdremove`, `countdowndelete`, `cddelete`, `cdd`, `cdr`",
     "params": [
       {
         "type": {
@@ -2392,7 +2392,7 @@
     "meta": {
       "lineno": 2,
       "filename": "countdownremove.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2406,7 +2406,7 @@
     "longname": "module:defaultrole",
     "name": "defaultrole",
     "kind": "module",
-    "description": "Moderation DefaultroleCommand - Sets a default role that should be assigned to all new joining members\n\n**Aliases**: `defrole`",
+    "description": "Moderation DefaultRoleCommand - Sets a default role that should be assigned to all new joining members\n\n**Aliases**: `defrole`",
     "params": [
       {
         "type": {
@@ -2421,7 +2421,7 @@
     "meta": {
       "lineno": 2,
       "filename": "defaultrole.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2450,7 +2450,7 @@
     "meta": {
       "lineno": 2,
       "filename": "deletecommandmessages.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2489,7 +2489,7 @@
     "meta": {
       "lineno": 2,
       "filename": "deletewarn.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2528,7 +2528,7 @@
     "meta": {
       "lineno": 2,
       "filename": "delrole.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2536,6 +2536,37 @@
     ],
     "category": "moderation",
     "order": 80
+  },
+  {
+    "id": "module:i18n",
+    "longname": "module:i18n",
+    "name": "i18n",
+    "kind": "module",
+    "description": "Moderation I18nCommand - Sets the guild language\n\nThis affects various parts of the responses of the bot, primarily the help prompts.\nAny data returned from external sources is not translated.\n\n\nCurrent supported languages are 'en' for English and 'nl' for Dutch\n\n**Aliases**: `language`, `lang`, `lng`",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "en",
+            "nl"
+          ]
+        },
+        "description": "The new language to set",
+        "name": "Language"
+      }
+    ],
+    "meta": {
+      "lineno": 2,
+      "filename": "i18n.js",
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
+    },
+    "preserveName": true,
+    "examples": [
+      "i18n en",
+      "i18n nl"
+    ],
+    "category": "moderation",
+    "order": 81
   },
   {
     "id": "module:joinmessages",
@@ -2567,14 +2598,14 @@
     "meta": {
       "lineno": 2,
       "filename": "joinmessages.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "joinmessages enable"
     ],
     "category": "moderation",
-    "order": 81
+    "order": 82
   },
   {
     "id": "module:kick",
@@ -2606,14 +2637,14 @@
     "meta": {
       "lineno": 2,
       "filename": "kick.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "kick ThunderKai"
     ],
     "category": "moderation",
-    "order": 82
+    "order": 83
   },
   {
     "id": "module:leavemessages",
@@ -2645,14 +2676,14 @@
     "meta": {
       "lineno": 2,
       "filename": "leavemessages.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "leavemessages enable"
     ],
     "category": "moderation",
-    "order": 83
+    "order": 84
   },
   {
     "id": "module:listwarn",
@@ -2674,14 +2705,14 @@
     "meta": {
       "lineno": 2,
       "filename": "listwarn.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "listwarn Biscuit"
     ],
     "category": "moderation",
-    "order": 84
+    "order": 85
   },
   {
     "id": "module:lockdown",
@@ -2692,7 +2723,7 @@
     "meta": {
       "lineno": 2,
       "filename": "lockdown.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "params": [
@@ -2708,7 +2739,7 @@
       }
     ],
     "category": "moderation",
-    "order": 85
+    "order": 86
   },
   {
     "id": "module:memberlogs",
@@ -2740,14 +2771,14 @@
     "meta": {
       "lineno": 2,
       "filename": "memberlogs.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "memberlogs enable"
     ],
     "category": "moderation",
-    "order": 86
+    "order": 87
   },
   {
     "id": "module:modlogs",
@@ -2779,14 +2810,14 @@
     "meta": {
       "lineno": 2,
       "filename": "modlogs.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "modlogs enable"
     ],
     "category": "moderation",
-    "order": 87
+    "order": 88
   },
   {
     "id": "module:mute",
@@ -2808,14 +2839,14 @@
     "meta": {
       "lineno": 2,
       "filename": "mute.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "mute Muffin"
     ],
     "category": "moderation",
-    "order": 88
+    "order": 89
   },
   {
     "id": "module:nickname",
@@ -2846,14 +2877,14 @@
     "meta": {
       "lineno": 2,
       "filename": "nickname.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "nick Muffin Cupcake"
     ],
     "category": "moderation",
-    "order": 89
+    "order": 90
   },
   {
     "id": "module:purge",
@@ -2875,14 +2906,14 @@
     "meta": {
       "lineno": 2,
       "filename": "purge.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "purge 10"
     ],
     "category": "moderation",
-    "order": 90
+    "order": 91
   },
   {
     "id": "module:regexmatchtoggle",
@@ -2904,14 +2935,14 @@
     "meta": {
       "lineno": 2,
       "filename": "regexmatchtoggle.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "regexmatchtoggle enable"
     ],
     "category": "moderation",
-    "order": 91
+    "order": 92
   },
   {
     "id": "module:selfroles",
@@ -2934,7 +2965,7 @@
     "meta": {
       "lineno": 2,
       "filename": "selfroles.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -2942,7 +2973,7 @@
       "selfroles uploader superuploader"
     ],
     "category": "moderation",
-    "order": 92
+    "order": 93
   },
   {
     "id": "module:setannounce",
@@ -2964,40 +2995,11 @@
     "meta": {
       "lineno": 2,
       "filename": "setannounce.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
       "setannounce #updates"
-    ],
-    "category": "moderation",
-    "order": 93
-  },
-  {
-    "id": "module:setnonexplicitblock",
-    "longname": "module:setnonexplicitblock",
-    "name": "setnonexplicitblock",
-    "kind": "module",
-    "description": "Moderation SetNonExplicitBlockCommand - Toggle whether the bot should block non explicit commands or not\n\nSome commands can potentially give NSFW results, however they do not show NSFW images (for example, certain definitions on Urban Dictionary).\n    These type of commands are considered non explicit, as opposed to full nsfw commands.\n    By default these commands are blocked outside of NSFW channels, however at staff\n    digression they can be allowed outside of NSFW channels by toggling this option off\n\n**Aliases**: `sub`, `sneb`, `seb`, `allowub`",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "boolean"
-          ]
-        },
-        "description": "On or Off",
-        "name": "Option"
-      }
-    ],
-    "meta": {
-      "lineno": 2,
-      "filename": "setnonexplicitblock.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
-    },
-    "preserveName": true,
-    "examples": [
-      "setnonexplicitblock off"
     ],
     "category": "moderation",
     "order": 94
@@ -3031,7 +3033,7 @@
     "meta": {
       "lineno": 2,
       "filename": "softban.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3045,7 +3047,7 @@
     "longname": "module:tempban",
     "name": "tempban",
     "kind": "module",
-    "description": "Moderation TempBanCommand - Temporary bans a member, then unbans them when the timer expires\n\nGiven amount of minutes, hours or days in the format of `5m`, `2h` or `1d`\n\n**Aliases**: `tb`, `rottenbanana`",
+    "description": "Moderation TempbanCommand - Temporary bans a member, then unbans them when the timer expires\n\nGiven amount of minutes, hours or days in the format of `5m`, `2h` or `1d`\n\n**Aliases**: `tb`, `rottenbanana`",
     "params": [
       {
         "type": {
@@ -3079,7 +3081,7 @@
     "meta": {
       "lineno": 2,
       "filename": "tempban.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3126,7 +3128,7 @@
     "meta": {
       "lineno": 2,
       "filename": "timeradd.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3145,7 +3147,7 @@
     "meta": {
       "lineno": 2,
       "filename": "timerlist.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "order": 98
@@ -3170,7 +3172,7 @@
     "meta": {
       "lineno": 2,
       "filename": "timerremove.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3199,7 +3201,7 @@
     "meta": {
       "lineno": 2,
       "filename": "unknownmessages.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3218,7 +3220,7 @@
     "meta": {
       "lineno": 2,
       "filename": "unlock.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "order": 101
@@ -3243,7 +3245,7 @@
     "meta": {
       "lineno": 2,
       "filename": "unmute.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3290,7 +3292,7 @@
     "meta": {
       "lineno": 2,
       "filename": "warn.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\moderation"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
     "examples": [
@@ -3320,7 +3322,7 @@
     "meta": {
       "lineno": 2,
       "filename": "defaultvolume.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3349,7 +3351,7 @@
     "meta": {
       "lineno": 2,
       "filename": "launch.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3380,7 +3382,7 @@
     "meta": {
       "lineno": 2,
       "filename": "maxlength.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3411,7 +3413,7 @@
     "meta": {
       "lineno": 2,
       "filename": "maxsongs.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3430,7 +3432,7 @@
     "meta": {
       "lineno": 2,
       "filename": "pause.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "order": 108
@@ -3456,7 +3458,7 @@
     "meta": {
       "lineno": 2,
       "filename": "queue.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3475,7 +3477,7 @@
     "meta": {
       "lineno": 2,
       "filename": "resume.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "order": 110
@@ -3490,7 +3492,7 @@
     "meta": {
       "lineno": 2,
       "filename": "save.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "order": 111
@@ -3504,7 +3506,7 @@
     "meta": {
       "lineno": 2,
       "filename": "shuffle.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3534,7 +3536,7 @@
     "meta": {
       "lineno": 2,
       "filename": "skip.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3553,7 +3555,7 @@
     "meta": {
       "lineno": 2,
       "filename": "status.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "order": 114
@@ -3568,7 +3570,7 @@
     "meta": {
       "lineno": 2,
       "filename": "stop.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "order": 115
@@ -3594,7 +3596,7 @@
     "meta": {
       "lineno": 2,
       "filename": "volume.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\music"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
     "examples": [
@@ -3623,7 +3625,7 @@
     "meta": {
       "lineno": 2,
       "filename": "e621.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3652,7 +3654,7 @@
     "meta": {
       "lineno": 2,
       "filename": "gelbooru.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3681,7 +3683,7 @@
     "meta": {
       "lineno": 2,
       "filename": "paheal.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3710,7 +3712,7 @@
     "meta": {
       "lineno": 2,
       "filename": "pornvids.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3739,7 +3741,7 @@
     "meta": {
       "lineno": 2,
       "filename": "rule34.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\nsfw"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/nsfw"
     },
     "preserveName": true,
     "examples": [
@@ -3758,7 +3760,7 @@
     "meta": {
       "lineno": 2,
       "filename": "checkguilds.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
     "order": 122
@@ -3792,7 +3794,7 @@
     "meta": {
       "lineno": 2,
       "filename": "customtopup.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
     "examples": [
@@ -3811,25 +3813,10 @@
     "meta": {
       "lineno": 2,
       "filename": "dbpost.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
     "order": 124
-  },
-  {
-    "id": "module:eshopfetch",
-    "longname": "module:eshopfetch",
-    "name": "eshopfetch",
-    "kind": "module",
-    "description": "Owner EShopFetchCommand - Fetch the latest data for the eShop command\n\n**Aliases**: `efetch`",
-    "category": "owner",
-    "meta": {
-      "lineno": 2,
-      "filename": "eshopfetch.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
-    },
-    "preserveName": true,
-    "order": 125
   },
   {
     "id": "module:tagmember",
@@ -3851,14 +3838,14 @@
     "meta": {
       "lineno": 2,
       "filename": "tagmember.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
     "examples": [
       "tagmember ☜(⌒▽⌒)☞guy"
     ],
     "category": "owner",
-    "order": 126
+    "order": 125
   },
   {
     "id": "module:unknowncommand",
@@ -3870,10 +3857,10 @@
     "meta": {
       "lineno": 2,
       "filename": "unknowncommand.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\owner"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
-    "order": 127
+    "order": 126
   },
   {
     "id": "module:dex",
@@ -3895,14 +3882,14 @@
     "meta": {
       "lineno": 2,
       "filename": "dex.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
       "dex dragonite"
     ],
     "category": "pokemon",
-    "order": 129
+    "order": 128
   },
   {
     "id": "module:flavor",
@@ -3924,14 +3911,14 @@
     "meta": {
       "lineno": 2,
       "filename": "flavor.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
       "flavor dragonite"
     ],
     "category": "pokemon",
-    "order": 130
+    "order": 129
   },
   {
     "id": "module:item",
@@ -3953,14 +3940,14 @@
     "meta": {
       "lineno": 2,
       "filename": "item.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
       "item assault vest"
     ],
     "category": "pokemon",
-    "order": 131
+    "order": 130
   },
   {
     "id": "module:learn",
@@ -4012,7 +3999,7 @@
     "meta": {
       "lineno": 2,
       "filename": "learn.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
@@ -4021,7 +4008,7 @@
       "learn dragonite dragon dance, dragon claw --gen 6"
     ],
     "category": "pokemon",
-    "order": 132
+    "order": 131
   },
   {
     "id": "module:ability",
@@ -4043,14 +4030,14 @@
     "meta": {
       "lineno": 2,
       "filename": "ability.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
       "ability multiscale"
     ],
     "category": "pokémon",
-    "order": 128
+    "order": 127
   },
   {
     "id": "module:move",
@@ -4072,14 +4059,14 @@
     "meta": {
       "lineno": 2,
       "filename": "move.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
       "move dragon dance"
     ],
     "category": "pokémon",
-    "order": 133
+    "order": 132
   },
   {
     "id": "module:TCG",
@@ -4102,14 +4089,14 @@
     "meta": {
       "lineno": 2,
       "filename": "tcg.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
       "tcg name types subtype"
     ],
     "category": "pokémon",
-    "order": 134
+    "order": 133
   },
   {
     "id": "module:type",
@@ -4131,14 +4118,14 @@
     "meta": {
       "lineno": 2,
       "filename": "type.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\pokemon"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/pokemon"
     },
     "preserveName": true,
     "examples": [
       "type dragon flying"
     ],
     "category": "pokémon",
-    "order": 135
+    "order": 134
   },
   {
     "id": "module:anime",
@@ -4160,14 +4147,14 @@
     "meta": {
       "lineno": 2,
       "filename": "anime.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "anime Yu-Gi-Oh Dual Monsters"
     ],
     "category": "searches",
-    "order": 136
+    "order": 135
   },
   {
     "id": "module:cydia",
@@ -4189,14 +4176,14 @@
     "meta": {
       "lineno": 2,
       "filename": "cydia.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "cydia Anemone"
     ],
     "category": "searches",
-    "order": 137
+    "order": 136
   },
   {
     "id": "module:define",
@@ -4218,14 +4205,14 @@
     "meta": {
       "lineno": 2,
       "filename": "define.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "define Google"
     ],
     "category": "searches",
-    "order": 138
+    "order": 137
   },
   {
     "id": "module:eshop",
@@ -4247,14 +4234,14 @@
     "meta": {
       "lineno": 2,
       "filename": "eshop.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "eshop Breath of The Wild"
     ],
     "category": "searches",
-    "order": 139
+    "order": 138
   },
   {
     "id": "module:girlsfrontline",
@@ -4276,14 +4263,14 @@
     "meta": {
       "lineno": 2,
       "filename": "girlsfrontline.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "girlsfrontline Negev"
     ],
     "category": "searches",
-    "order": 140
+    "order": 139
   },
   {
     "id": "module:google",
@@ -4305,14 +4292,14 @@
     "meta": {
       "lineno": 2,
       "filename": "google.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "google Pyrrha Nikos"
     ],
     "category": "searches",
-    "order": 141
+    "order": 140
   },
   {
     "id": "module:igdb",
@@ -4334,14 +4321,14 @@
     "meta": {
       "lineno": 2,
       "filename": "igdb.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "igdb Tales of Berseria"
     ],
     "category": "searches",
-    "order": 142
+    "order": 141
   },
   {
     "id": "module:image",
@@ -4363,14 +4350,14 @@
     "meta": {
       "lineno": 2,
       "filename": "image.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "image Pyrrha Nikos'"
     ],
     "category": "searches",
-    "order": 143
+    "order": 142
   },
   {
     "id": "module:itunes",
@@ -4392,14 +4379,14 @@
     "meta": {
       "lineno": 2,
       "filename": "itunes.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "itunes dash berlin symphony"
     ],
     "category": "searches",
-    "order": 144
+    "order": 143
   },
   {
     "id": "module:lmgtfy",
@@ -4421,14 +4408,14 @@
     "meta": {
       "lineno": 2,
       "filename": "lmgtfy.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "lmgtfy is it legal to kill an ant???"
     ],
     "category": "searches",
-    "order": 145
+    "order": 144
   },
   {
     "id": "module:manga",
@@ -4450,14 +4437,14 @@
     "meta": {
       "lineno": 2,
       "filename": "manga.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "manga Yu-Gi-Oh"
     ],
     "category": "searches",
-    "order": 146
+    "order": 145
   },
   {
     "id": "module:saucenao",
@@ -4479,14 +4466,14 @@
     "meta": {
       "lineno": 2,
       "filename": "saucenao.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "saucenao https://i.imgur.com/6FjildG.jpg"
     ],
     "category": "searches",
-    "order": 147
+    "order": 146
   },
   {
     "id": "module:steam",
@@ -4508,14 +4495,14 @@
     "meta": {
       "lineno": 2,
       "filename": "steam.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "steam Tales of Berseria"
     ],
     "category": "searches",
-    "order": 148
+    "order": 147
   },
   {
     "id": "module:tmdb",
@@ -4537,14 +4524,14 @@
     "meta": {
       "lineno": 2,
       "filename": "tmdb.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "tmdb Pokemon 2000"
     ],
     "category": "searches",
-    "order": 149
+    "order": 148
   },
   {
     "id": "module:tvdb",
@@ -4566,14 +4553,14 @@
     "meta": {
       "lineno": 2,
       "filename": "tvdb.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "tvdb Pokemon"
     ],
     "category": "searches",
-    "order": 150
+    "order": 149
   },
   {
     "id": "module:urban",
@@ -4595,14 +4582,14 @@
     "meta": {
       "lineno": 2,
       "filename": "urban.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "urban Everclear"
     ],
     "category": "searches",
-    "order": 151
+    "order": 150
   },
   {
     "id": "module:youtube",
@@ -4624,14 +4611,14 @@
     "meta": {
       "lineno": 2,
       "filename": "youtube.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\searches"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/searches"
     },
     "preserveName": true,
     "examples": [
       "youtube Voldemort Origins of the heir"
     ],
     "category": "searches",
-    "order": 152
+    "order": 151
   },
   {
     "id": "module:twitchmonitors",
@@ -4653,14 +4640,14 @@
     "meta": {
       "lineno": 2,
       "filename": "twitchmonitors.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/streamwatch"
     },
     "preserveName": true,
     "examples": [
       "twitchmonitors techagent favna"
     ],
     "category": "streamwatch",
-    "order": 153
+    "order": 152
   },
   {
     "id": "module:twitchoutput",
@@ -4682,14 +4669,14 @@
     "meta": {
       "lineno": 2,
       "filename": "twitchoutput.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/streamwatch"
     },
     "preserveName": true,
     "examples": [
       "twitchoutput #twitch-notifications"
     ],
     "category": "streamwatch",
-    "order": 154
+    "order": 153
   },
   {
     "id": "module:twitchtoggle",
@@ -4711,14 +4698,14 @@
     "meta": {
       "lineno": 2,
       "filename": "twitchtoggle.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/streamwatch"
     },
     "preserveName": true,
     "examples": [
       "twitchtoggle enable"
     ],
     "category": "streamwatch",
-    "order": 155
+    "order": 154
   },
   {
     "id": "module:biscuit",
@@ -4729,7 +4716,7 @@
     "meta": {
       "lineno": 2,
       "filename": "cookie.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "params": [
@@ -4745,7 +4732,7 @@
       }
     ],
     "category": "weeb",
-    "order": 156
+    "order": 155
   },
   {
     "id": "module:cuddle",
@@ -4768,14 +4755,14 @@
     "meta": {
       "lineno": 2,
       "filename": "cuddle.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "cuddle Velvet"
     ],
     "category": "weeb",
-    "order": 157
+    "order": 156
   },
   {
     "id": "module:feed",
@@ -4798,14 +4785,14 @@
     "meta": {
       "lineno": 2,
       "filename": "feed.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "feed Ren"
     ],
     "category": "weeb",
-    "order": 158
+    "order": 157
   },
   {
     "id": "module:hug",
@@ -4828,14 +4815,14 @@
     "meta": {
       "lineno": 2,
       "filename": "hug.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "hug Nora"
     ],
     "category": "weeb",
-    "order": 159
+    "order": 158
   },
   {
     "id": "module:kiss",
@@ -4858,14 +4845,14 @@
     "meta": {
       "lineno": 2,
       "filename": "kiss.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "kiss Pyrrha"
     ],
     "category": "weeb",
-    "order": 160
+    "order": 159
   },
   {
     "id": "module:neko",
@@ -4876,14 +4863,14 @@
     "meta": {
       "lineno": 2,
       "filename": "neko.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "neko"
     ],
     "category": "weeb",
-    "order": 161
+    "order": 160
   },
   {
     "id": "module:pat",
@@ -4906,14 +4893,14 @@
     "meta": {
       "lineno": 2,
       "filename": "pat.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "pat Ruby"
     ],
     "category": "weeb",
-    "order": 162
+    "order": 161
   },
   {
     "id": "module:poke",
@@ -4936,14 +4923,14 @@
     "meta": {
       "lineno": 2,
       "filename": "poke.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "poke Weiss"
     ],
     "category": "weeb",
-    "order": 163
+    "order": 162
   },
   {
     "id": "module:slap",
@@ -4966,14 +4953,14 @@
     "meta": {
       "lineno": 2,
       "filename": "slap.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "slap Cinder"
     ],
     "category": "weeb",
-    "order": 164
+    "order": 163
   },
   {
     "id": "module:smug",
@@ -4996,14 +4983,14 @@
     "meta": {
       "lineno": 2,
       "filename": "smug.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "smug McDonalds"
     ],
     "category": "weeb",
-    "order": 165
+    "order": 164
   },
   {
     "id": "module:tickle",
@@ -5026,13 +5013,13 @@
     "meta": {
       "lineno": 2,
       "filename": "tickle.js",
-      "path": "E:\\UserFiles\\dev\\ribbon\\docsbuild\\commands\\weeb"
+      "path": "/Users/favna/dev/ribbon/docsbuild/commands/weeb"
     },
     "preserveName": true,
     "examples": [
       "tickle Yang"
     ],
     "category": "weeb",
-    "order": 166
+    "order": 165
   }
 ]
