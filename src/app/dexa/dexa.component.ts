@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class DexaComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
+  public headerTile: IPrimaryTile = {
     header: 'Dexa',
     subheader: 'Simple, Complete and Expansive PokeDex for the Amazon Alexa assisstant',
     buttons: [
@@ -35,7 +35,7 @@ export class DexaComponent implements OnInit {
       }
     ],
   };
-  aboutTile: IPrimaryTile = {
+  public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`
@@ -45,10 +45,10 @@ export class DexaComponent implements OnInit {
             combining "Dex" with "Alexa". Dexa is made for
             [the Alexa devices from Amazon](https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011).`],
   };
-  metadata = {
+  public metadata = {
     title: 'Dexa',
     description: 'Turn your Alexa device into your own personal PokéDex',
-    image: 'https://favna.xyz/assets/icons/dexa.png',
+    image: 'https://favware.tech/assets/icons/dexa.png',
     imageAlt: 'Dexa Preview Image',
     url: '/dexa',
     summary: oneLine`A skill for Alexa enabled devices that allows you to look up virtually any data from the Pokémon Pokédex.
@@ -59,7 +59,7 @@ export class DexaComponent implements OnInit {
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

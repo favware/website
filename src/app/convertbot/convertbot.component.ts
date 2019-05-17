@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class ConvertbotComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
+  public headerTile: IPrimaryTile = {
     header: 'ConvertBot',
     subheader: 'A C++ based unit conversion utility',
     buttons: [
@@ -29,7 +29,7 @@ export class ConvertbotComponent implements OnInit {
       }
     ],
   };
-  aboutTile: IPrimaryTile = {
+  public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`ConvertBot is a very basic conversion tool I wrote as my final assignment at High School.
@@ -39,7 +39,7 @@ export class ConvertbotComponent implements OnInit {
     A few months later we finished our tool, dubbed it ConvertBot and passed our course with flying colours.
     I have always held onto the source code for ConvertBot and find it only appropriate to show it off here.`],
   };
-  notesTile: IPrimaryTile = {
+  public notesTile: IPrimaryTile = {
     header: 'Notes',
     subheader: 'There are some things to note when using ConvertBot',
     text: [
@@ -57,12 +57,12 @@ export class ConvertbotComponent implements OnInit {
       'Acres as coded as regular Acres'
     ],
   };
-  slides: Array<{ url: string }> = [
+  public slides: { url: string }[] = [
     { url: '/assets/screenshots/convertbot/base.png' },
     { url: '/assets/screenshots/convertbot/degrees.png' },
     { url: '/assets/screenshots/convertbot/length.png' }
   ];
-  carousel: IMatCarouselOptions = {
+  public carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,
@@ -79,10 +79,10 @@ export class ConvertbotComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
-  metadata = {
+  public metadata = {
     title: 'ConvertBot',
     description: 'Unit convertion tool written in C#',
-    image: 'https://favna.xyz/assets/icons/convertbot-share.png',
+    image: 'https://favware.tech/assets/icons/convertbot-share.png',
     imageAlt: 'ConvertBot Preview Image',
     url: '/convertbot',
     summary: oneLine`A C# based utility program for unit conversion.`,
@@ -92,7 +92,7 @@ export class ConvertbotComponent implements OnInit {
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

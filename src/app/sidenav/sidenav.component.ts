@@ -1,4 +1,4 @@
-import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import { SidenavLink } from '@util/interfaces';
@@ -16,10 +16,10 @@ export class SidenavComponent implements OnInit {
   public isSidenavClosable = true;
   public isSmall = false;
 
-  metadata = {
+  public metadata = {
     title: 'Home',
     description: 'For Hearth and Home! Check out my projects here!',
-    image: 'https://favna.xyz/assets/og-image.png',
+    image: 'https://favware.tech/assets/og-image.png',
     imageAlt: 'Social Embedding Image',
     url: '/home',
     summary: oneLine`On this website I am listing all the notable projects I have worked on.
@@ -28,7 +28,7 @@ export class SidenavComponent implements OnInit {
     keywords: [],
   };
 
-  items: SidenavLink[] = [
+  public items: SidenavLink[] = [
     {
       routerLink: '.',
       label: 'Home',
@@ -66,37 +66,37 @@ export class SidenavComponent implements OnInit {
     },
     {
       routerLink: '/unescape',
-      label: 'Unescape-ES6',
+      label: '@Favware/Unescape',
       image: 'assets/icons/unescape.png',
     },
     {
       routerLink: '/querystring',
-      label: 'Awesome Querystring',
+      label: '@Favware/Querystring',
       image: 'assets/icons/querystring.png',
     },
     {
       routerLink: '/converter',
-      label: 'Awesome Converter',
+      label: '@Favware/Converter',
       image: 'assets/icons/converter.png',
     },
     {
       routerLink: '/milkylint',
-      label: 'Milky TSLint',
+      label: '@Favware/Milky-TSLint',
       image: 'assets/icons/milkylint.png',
     },
     {
       routerLink: '/yamlreader',
-      label: 'Awesome YAML Reader',
+      label: '@Favware/yamlreader',
       image: 'assets/icons/yamlreader.png',
     },
     {
       routerLink: '/zalgo',
-      label: 'Awesome Zalgo',
+      label: '@Favware/zalgo',
       image: 'assets/icons/zalgo.png',
     },
     {
       routerLink: '/crypto',
-      label: 'Awesome Crypto',
+      label: '@Favware/crypto',
       image: 'assets/icons/crypto.png',
     },
     {
@@ -109,7 +109,7 @@ export class SidenavComponent implements OnInit {
   constructor (private breakpointObserver: BreakpointObserver, private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.breakpointObserver
       .observe([Breakpoints.Small, Breakpoints.HandsetPortrait])
       .subscribe((state: BreakpointState) => {

@@ -1,4 +1,4 @@
-import { Breakpoints, BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatPaginator, MatSort } from '@angular/material';
@@ -15,24 +15,24 @@ import { RibbonDocsErrorStateMatches } from './ribbon-docs-error-state-matcher';
 })
 export class RibbonDocsTableComponent implements OnInit {
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
-  @ViewChild('filter') filter: ElementRef;
+  @ViewChild(MatPaginator) public paginator: MatPaginator;
+  @ViewChild(MatSort) public sort: MatSort;
+  @ViewChild('filter') public filter: ElementRef;
 
   public dataSource: RibbonDocsDatasource;
   public isSmall = false;
-  fullSizeColumns = ['name', 'aliases', 'description', 'category'];
-  smallSizeColumns = ['name', 'category'];
-  searchFormControl = new FormControl('', [Validators.pattern(/[A-z]+/g)]);
-  matcher = new RibbonDocsErrorStateMatches();
+  public fullSizeColumns = ['name', 'aliases', 'description', 'category'];
+  public smallSizeColumns = ['name', 'category'];
+  public searchFormControl = new FormControl('', [Validators.pattern(/[A-z]+/g)]);
+  public matcher = new RibbonDocsErrorStateMatches();
 
-  breakpointObserver: BreakpointObserver;
+  public breakpointObserver: BreakpointObserver;
 
   constructor (breakpointObserver: BreakpointObserver) {
     this.breakpointObserver = breakpointObserver;
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.dataSource = new RibbonDocsDatasource(this.paginator, this.sort);
     fromEvent(this.filter.nativeElement, 'keyup')
       .pipe(debounceTime(150), distinctUntilChanged())
@@ -45,7 +45,7 @@ export class RibbonDocsTableComponent implements OnInit {
       });
   }
 
-  clearFilter () {
+  public clearFilter () {
     this.searchFormControl.setValue('');
     this.dataSource.filter = '';
   }

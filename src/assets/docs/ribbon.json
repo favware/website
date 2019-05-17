@@ -973,7 +973,7 @@
     },
     "preserveName": true,
     "examples": [
-      "yarn awesome-querystring"
+      "yarn @favware/querystring"
     ],
     "category": "docs",
     "order": 29
@@ -1113,7 +1113,7 @@
     },
     "preserveName": true,
     "examples": [
-      "qrgen https://favna.xyz/ribbon"
+      "qrgen https://favware.tech/ribbon"
     ],
     "category": "extra",
     "order": 34

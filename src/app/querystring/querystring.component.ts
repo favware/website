@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
-import { AWESOME_QUERYSTRING_GITHUB, AWESOME_QUERYSTRING_YARN } from '@util/constants';
+import { QUERYSTRING_GITHUB, QUERYSTRING_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
 
@@ -11,54 +11,54 @@ import { oneLine } from 'common-tags';
 })
 export class QuerystringComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
-    header: 'Awesome Querystring',
+  public headerTile: IPrimaryTile = {
+    header: '@Favware/Querystring',
     subheader: 'Robust and awesome querystring',
     buttons: [
       {
-        text: 'yarn add awesome-querystring',
+        text: 'yarn add @favware/querystring',
         color: 'accent',
         disabled: true,
       },
       {
         text: 'View on Yarn',
-        url: AWESOME_QUERYSTRING_YARN,
+        url: QUERYSTRING_YARN,
         color: 'yarn',
         outer: true,
       },
       {
         text: 'View on GitHub',
-        url: AWESOME_QUERYSTRING_GITHUB,
+        url: QUERYSTRING_GITHUB,
         color: 'github',
         outer: true,
       }
     ],
   };
-  stringifyUsageTile: ICodeTile = {
+  public stringifyUsageTile: ICodeTile = {
     header: 'Usage - Stringify',
     codeFile: '/assets/code/querystring.stringify.js',
   };
-  parseUsageTile: ICodeTile = {
+  public parseUsageTile: ICodeTile = {
     header: 'Usage - Parse',
     codeFile: '/assets/code/querystring.parse.js',
   };
-  metadata = {
-    title: 'Awesome Querystring',
+  public metadata = {
+    title: '@Favware/Querystring',
     description: 'Querystring that is robust in its working yet remains awesome to TypeScript users',
-    image: 'https://favna.xyz/assets/icons/querystring.png',
-    imageAlt: 'Awesome Querystring Icon',
+    image: 'https://favware.tech/assets/icons/querystring.png',
+    imageAlt: '@Favware/Querystring Icon',
     url: '/querystring',
     summary: oneLine`A NodeJS library that can stringify and parse any querystring.
     It is in a sense similar to many other querystringifiers, with the exception of being written
     in TypeScript thus offering great support to TypeScript users.
-    Install it today with "yarn add awesome-querystring"`,
+    Install it today with "yarn add @favware/querystring"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'querystring', 'awesome-querystring', 'stringify', 'parse', 'safe'],
   };
 
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

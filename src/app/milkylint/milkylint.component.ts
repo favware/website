@@ -11,12 +11,12 @@ import { oneLine } from 'common-tags';
 })
 export class MilkylintComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
+  public headerTile: IPrimaryTile = {
     header: 'Milky TSLint',
     subheader: 'TypeScript linter plugin for Gulp',
     buttons: [
       {
-        text: 'yarn add -D milky-tslint ',
+        text: '@favware/milky-tslint ',
         color: 'accent',
         disabled: true,
       },
@@ -34,25 +34,25 @@ export class MilkylintComponent implements OnInit {
       }
     ],
   };
-  usageTile: ICodeTile = {
+  public usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/milkylint.js',
   };
-  metadata = {
+  public metadata = {
     title: 'Milky TSLint',
     description: 'TypeScript linter plugin for Gulp',
-    image: 'https://favna.xyz/assets/icons/milkylint.png',
+    image: 'https://favware.tech/assets/icons/milkylint.png',
     imageAlt: 'Milky TSLint Icon',
     url: '/milkylint',
     summary: oneLine`A NodeJS library meant for Gulp that can lint your TypeScript code.
-    Install it today with "yarn add milky-tslint"`,
+    Install it today with "yarn add @favware/milky-tslint"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'gulp', 'typescript', 'tslint', 'milk'],
   };
 
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

@@ -11,7 +11,7 @@ import { IPrimaryTile, ITavaTile } from '@util/interfaces';
 })
 export class TavaComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
+  public headerTile: IPrimaryTile = {
     header: 'Ta\'Va - Trial of the Sun God',
     subheader: 'Embark on a mythological aztec puzzle game',
     buttons: [
@@ -35,11 +35,11 @@ export class TavaComponent implements OnInit {
       }
     ],
   };
-  gameTileHeader: IPrimaryTile = {
+  public gameTileHeader: IPrimaryTile = {
     header: 'The Game',
     subheader: 'Ta\'Va is a puzzle/platform game made with Unity',
   };
-  gameTile: ITavaTile[] = [
+  public gameTile: ITavaTile[] = [
     {
       icon: 'mat-tava-puzzle-icon',
       header: 'Puzzles',
@@ -56,11 +56,11 @@ export class TavaComponent implements OnInit {
       description: 'The world of Ta\'Va is a mythological place. During your travels you will explore floating islands, mythical creatures and the plane of the gods.',
     }
   ];
-  mediaTileHeader: IPrimaryTile = {
+  public mediaTileHeader: IPrimaryTile = {
     header: 'Media',
     subheader: '',
   };
-  mediaTile: ITavaTile[] = [
+  public mediaTile: ITavaTile[] = [
     {
       icon: `/assets/screenshots/tava/village.png`,
       alt: 'village_screenshot',
@@ -80,11 +80,11 @@ export class TavaComponent implements OnInit {
       description: 'Push the boulders!',
     }
   ];
-  teamTileHeader: IPrimaryTile = {
+  public teamTileHeader: IPrimaryTile = {
     header: 'Our Amazing Team',
     subheader: '',
   };
-  teamTileFirstLine: ITavaTile[] = [
+  public teamTileFirstLine: ITavaTile[] = [
     {
       icon: `/assets/screenshots/tava/art.png`,
       alt: 'art_team_photo',
@@ -104,7 +104,7 @@ export class TavaComponent implements OnInit {
       description: '',
     }
   ];
-  teamTileSecondLine: ITavaTile[] = [
+  public teamTileSecondLine: ITavaTile[] = [
     {
       icon: `/assets/screenshots/tava/programming.png`,
       alt: 'programming_team_photo',
@@ -118,10 +118,10 @@ export class TavaComponent implements OnInit {
       description: '',
     }
   ];
-  metadata = {
+  public metadata = {
     title: 'Ta\'Va - Trial of the Sun God',
     description: 'Mythological aztec puzzle game',
-    image: 'https://favna.xyz/assets/icons/tava-share.png',
+    image: 'https://favware.tech/assets/icons/tava-share.png',
     imageAlt: 'Ta\'Va Preview Image',
     url: '/tava',
     summary: 'An epic puzzle adventure in a mythological aztec world. A game build by students in the Unity 3D engine.',
@@ -132,7 +132,7 @@ export class TavaComponent implements OnInit {
     this.matIconService.init();
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
-import { AWESOME_CRYPTO_GITHUB, AWESOME_CRYPTO_YARN } from '@util/constants';
+import { CRYPTO_GITHUB, CRYPTO_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
 
@@ -11,49 +11,49 @@ import { oneLine } from 'common-tags';
 })
 export class CryptoComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
-    header: 'Awesome Crypto',
+  public headerTile: IPrimaryTile = {
+    header: '@Favware/Crypto',
     subheader: 'Generates secure random numbers using `crypto.randomBytes()`',
     buttons: [
       {
-        text: 'yarn add awesome-crypto',
+        text: 'yarn add @favware/crypto',
         color: 'accent',
         disabled: true,
       },
       {
         text: 'View on Yarn',
-        url: AWESOME_CRYPTO_YARN,
+        url: CRYPTO_YARN,
         color: 'yarn',
         outer: true,
       },
       {
         text: 'View on GitHub',
-        url: AWESOME_CRYPTO_GITHUB,
+        url: CRYPTO_GITHUB,
         color: 'github',
         outer: true,
       }
     ],
   };
-  usageTile: ICodeTile = {
+  public usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/crypto.js',
   };
-  metadata = {
-    title: 'Awesome Crypto',
+  public metadata = {
+    title: '@favware/crypto',
     description: 'Easily generate a random cryptographic in NodeJS!',
-    image: 'https://favna.xyz/assets/icons/crypto.png',
-    imageAlt: 'Awesome Crypto Icon',
+    image: 'https://favware.tech/assets/icons/crypto.png',
+    imageAlt: '@favware/crypto Icon',
     url: '/crypto',
     summary: oneLine`A NodeJS library that can generate secure random cryptographic strings using NodeJS's own "Crypto.RandomBytes()" function.
     Written in TypeScript so it is entirely typesafe!
-    Install it today with "yarn add awesome-crypto"`,
+    Install it today with "yarn add @favware/crypto"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'crypto', 'awesome-crypto', 'cryptography'],
   };
 
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

@@ -2,7 +2,7 @@ import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
 import { JSDocJSON, RibbonDocs } from '@util/interfaces.js';
 import Fuse, { FuseOptions } from 'fuse.js';
-import { merge, of as observableOf, BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import docs from '../../assets/docs/ribbon.json';
@@ -26,7 +26,7 @@ const compare = (a, b, isAsc) => {
 };
 
 export class RibbonDocsDatasource extends DataSource<RibbonDocs> {
-  data: RibbonDocs[] = RIBBON_DATA;
+  public data: RibbonDocs[] = RIBBON_DATA;
   private filterChange = new BehaviorSubject('');
   private paginator: MatPaginator;
   private sort: MatSort;
@@ -45,7 +45,7 @@ export class RibbonDocsDatasource extends DataSource<RibbonDocs> {
     this.filterChange.next(filter);
   }
 
-  connect (): Observable<RibbonDocs[]> {
+  public connect (): Observable<RibbonDocs[]> {
     const dataMutations = [
       observableOf(this.data),
       this.paginator.page,
@@ -60,9 +60,9 @@ export class RibbonDocsDatasource extends DataSource<RibbonDocs> {
     }));
   }
 
-  disconnect () {
-  }
-
+  public disconnect () {
+    // Intentionally empty
+ }
   private getPagedData (data: RibbonDocs[]) {
     const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
     return data.splice(startIndex, this.paginator.pageSize);

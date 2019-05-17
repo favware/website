@@ -2,29 +2,29 @@ import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import {
   ASSET_BASE_PATH,
-  AWESOME_CONVERTER_GITHUB,
-  AWESOME_CONVERTER_YARN,
-  AWESOME_CRYPTO_GITHUB,
-  AWESOME_CRYPTO_YARN,
-  AWESOME_QUERYSTRING_GITHUB,
-  AWESOME_QUERYSTRING_YARN,
-  AWESOME_YAML_READER_GITHUB,
-  AWESOME_YAML_READER_YARN,
-  AWESOME_ZALGO_GITHUB,
-  AWESOME_ZALGO_YARN,
   CATCHCALC_GITHUB_URL,
   CONTACT_MAIL,
   CONVERTBOT_GITHUB_URL,
+  CONVERTER_GITHUB,
+  CONVERTER_YARN,
+  CRYPTO_GITHUB,
+  CRYPTO_YARN,
   DEXA_GITHUB_URL,
   DEXA_SKILL_URL,
   DISCORD_SERVER_URL,
   MILKY_TSLINT_GITHUB,
   MILKY_TSLINT_YARN,
+  QUERYSTRING_GITHUB,
+  QUERYSTRING_YARN,
   RIBBON_GITHUB_URL,
   RIBBON_INVITE_URL,
   SEEDCHECKER_GITHUB_URL,
   UNESCAPE_GITHUB,
-  UNESCAPE_YARN
+  UNESCAPE_YARN,
+  YAMLREADER_GITHUB,
+  YAMLREADER_YARN,
+  ZALGO_GITHUB,
+  ZALGO_YARN
 } from '@util/constants';
 import { IPrimaryTile, IProjectTile, Tile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
@@ -37,15 +37,15 @@ import moment from 'moment';
 })
 export class HomeComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
+  public headerTile: IPrimaryTile = {
     header: 'Developer in Web, NodeJS, Unity3D and Java',
     subheader: 'From Web design to discord bots to indie games',
     text: ['Scroll down to see my projects'],
   };
-  aboutTile: Tile = {
+  public aboutTile: Tile = {
     header: 'About me',
     text: [
-      'Greetings, My name is Jeroen Claassens (a.k.a. Favna)',
+      'Greetings, My name is Jeroen Claassens (a.k.a. Favna) and I manage Favware',
       oneLine`
                     Currently ${moment().diff('1995-02-21', 'years')} years old I am a developer hailing from The Netherlands.
                     Ever since I was a boy I have been a tech enthusiast with my main focus being the software side of the ICT.
@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit {
                    at home where I found my first job after graduation.`
     ],
   };
-  projectsTile: IProjectTile = {
+  public projectsTile: IProjectTile = {
     header: 'My Projects',
     cards: [
       {
@@ -174,29 +174,29 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/querystring.png`,
-          imageAlt: 'Awesome Querystring',
-          title: 'Awesome Querystring',
-          subtitle: 'yarn add awesome-querystring',
+          imageAlt: '@Favware/Querystring',
+          title: '@Favware/Querystring',
+          subtitle: 'yarn add @favware/querystring',
         },
         content: oneLine`Querystring that is robust in its working yet remains awesome to TypeScript users`,
         actions: [
-          { label: 'yarn page', link: AWESOME_QUERYSTRING_YARN, outer: true },
+          { label: 'yarn page', link: QUERYSTRING_YARN, outer: true },
           { label: 'website', link: '/querystring', outer: false },
-          { label: 'github', link: AWESOME_QUERYSTRING_GITHUB, outer: true }
+          { label: 'github', link: QUERYSTRING_GITHUB, outer: true }
         ],
       },
       {
         header: {
           avatar: `assets/icons/converter.png`,
-          imageAlt: 'Awesome Converter',
-          title: 'Awesome Converter',
-          subtitle: 'yarn add awesome-converter',
+          imageAlt: '@Favware/Converter',
+          title: '@Favware/Converter',
+          subtitle: '@favware/converter',
         },
         content: oneLine`Awesome and typesafe unit converter, supports many different systems of units`,
         actions: [
-          { label: 'yarn page', link: AWESOME_CONVERTER_YARN, outer: true },
+          { label: 'yarn page', link: CONVERTER_YARN, outer: true },
           { label: 'website', link: '/converter', outer: false },
-          { label: 'github', link: AWESOME_CONVERTER_GITHUB, outer: true }
+          { label: 'github', link: CONVERTER_GITHUB, outer: true }
         ],
       },
       {
@@ -204,7 +204,7 @@ export class HomeComponent implements OnInit {
           avatar: `assets/icons/milkylint.png`,
           imageAlt: 'Milky TSLint',
           title: 'Milky TSLint',
-          subtitle: 'yarn add -D milky-tslint',
+          subtitle: '@favware/milky-tslint',
         },
         content: oneLine`TypeScript linter plugin for Gulp. Gulp down that milk and lint your code!`,
         actions: [
@@ -216,44 +216,44 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/yamlreader.png`,
-          imageAlt: 'Awesome YAML Reader',
-          title: 'Awesome YAML Reader',
-          subtitle: 'yarn add awesome-yaml-reader',
+          imageAlt: '@Favware/yamlreader',
+          title: '@Favware/yamlreader',
+          subtitle: '@favware/yamlreader',
         },
         content: oneLine`Awesome minimal wrapper around js-yaml for directly reading in YAML files`,
         actions: [
-          { label: 'yarn page', link: AWESOME_YAML_READER_YARN, outer: true },
+          { label: 'yarn page', link: YAMLREADER_YARN, outer: true },
           { label: 'website', link: '/yamlreader', outer: false },
-          { label: 'github', link: AWESOME_YAML_READER_GITHUB, outer: true }
+          { label: 'github', link: YAMLREADER_GITHUB, outer: true }
         ],
       },
       {
         header: {
           avatar: `assets/icons/zalgo.png`,
-          imageAlt: 'Awesome Zalgo',
-          title: 'Awesome Zalgo',
-          subtitle: 'yarn add awesome-zalgo',
+          imageAlt: '@Favware/zalgo',
+          title: '@Favware/zalgo',
+          subtitle: '@favware/zalgo',
         },
         // tslint:disable-next-line:max-line-length
         content: oneLine`Unleash and banish the Zalgo Monster!  W̘͔̳͛̊ͥͤ̒Ä̺̠̫̮̦̽Ṯ̟̇̌̒̾̋C̳̱̻͐̉̓̋̒̎̚H̺͍̩̖͕̄̇͆̏́ͅ ̡̯̰̐ͨ͗ͫ̒̅O̯̠̞̯̒̂͗̾̔̕Ư̠͚̾͌̈́̇͆T̘̬̞͈̻̰͓ͯ͋͌ͬ̆ͨ̊!̤̮̯̜̟͂̉͂͊̚ ̟͚̟̩͚̉̓͑ͤͯḪ͙̦̦̘̣̳̅̈͆̿ͦ̓͜Ẹ̜̰͆ͨͪ̎ ͖͍͉̗͕̘ͯ̓ͣ̎̐͋ͧC͙̉̓̄̚͘O͓ͯ̑Ṃ̮̣͑̌̓̈́Ẹ͓͍̯̼̜̮͂͑͡S͇̣̣ͧ͒ͤ!̠͘  `,
         actions: [
-          { label: 'yarn page', link: AWESOME_ZALGO_YARN, outer: true },
+          { label: 'yarn page', link: ZALGO_YARN, outer: true },
           { label: 'website', link: '/zalgo', outer: false },
-          { label: 'github', link: AWESOME_ZALGO_GITHUB, outer: true }
+          { label: 'github', link: ZALGO_GITHUB, outer: true }
         ],
       },
       {
         header: {
           avatar: `assets/icons/crypto.png`,
-          imageAlt: 'Awesome Crypto',
-          title: 'Awesome Crypto',
-          subtitle: 'yarn add awesome-crypto',
+          imageAlt: '@Favware/crypto',
+          title: '@Favware/crypto',
+          subtitle: '@favware/crypto',
         },
         content: oneLine`Generates secure random numbers using crypto.randomBytes(). Numbers can be of any magnitude and in any base from 2 to 64.`,
         actions: [
-          { label: 'yarn page', link: AWESOME_CRYPTO_YARN, outer: true },
+          { label: 'yarn page', link: CRYPTO_YARN, outer: true },
           { label: 'website', link: '/yamlreader', outer: false },
-          { label: 'github', link: AWESOME_CRYPTO_GITHUB, outer: true }
+          { label: 'github', link: CRYPTO_GITHUB, outer: true }
         ],
       },
       {
@@ -284,10 +284,10 @@ export class HomeComponent implements OnInit {
       }
     ],
   };
-  metadata = {
+  public metadata = {
     title: 'Home',
     description: 'For Hearth and Home! Check out my projects here!',
-    image: 'https://favna.xyz/assets/og-image.png',
+    image: 'https://favware.tech/assets/og-image.png',
     imageAlt: 'Social Embedding Image',
     url: '/home',
     summary: oneLine`On this website I am listing all the notable projects I have worked on.
@@ -299,7 +299,7 @@ export class HomeComponent implements OnInit {
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

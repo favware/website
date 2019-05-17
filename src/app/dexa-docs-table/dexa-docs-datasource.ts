@@ -2,7 +2,7 @@ import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator, MatSort } from '@angular/material';
 import { DexaDocs, JSDocJSON } from '@util/interfaces.js';
 import Fuse, { FuseOptions } from 'fuse.js';
-import { merge, of as observableOf, BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import docs from '../../assets/docs/dexa.json';
@@ -24,7 +24,7 @@ const compare = (a, b, isAsc) => {
 };
 
 export class DexaDocsDatasource extends DataSource<DexaDocs> {
-  data: DexaDocs[] = DEXA_DATA;
+  public data: DexaDocs[] = DEXA_DATA;
   private filterChange = new BehaviorSubject('');
   private paginator: MatPaginator;
   private sort: MatSort;
@@ -43,7 +43,7 @@ export class DexaDocsDatasource extends DataSource<DexaDocs> {
     this.filterChange.next(filter);
   }
 
-  connect (): Observable<DexaDocs[]> {
+  public connect (): Observable<DexaDocs[]> {
     const dataMutations = [
       observableOf(this.data),
       this.paginator.page,
@@ -58,7 +58,8 @@ export class DexaDocsDatasource extends DataSource<DexaDocs> {
     }));
   }
 
-  disconnect () {
+  public disconnect () {
+     // Intentionally empty
   }
 
   private getPagedData (data: DexaDocs[]) {

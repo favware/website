@@ -1,17 +1,17 @@
 {
-  "name": "favware-site",
+  "name": "@favware/website",
   "version": "1.0.0",
   "description": "For hearth and home",
-  "author": "Jeroen (Favna) Claassens <support@favna.xyz>",
+  "author": "@favware",
   "license": "GPL-3.0",
-  "homepage": "https://favna.xyz",
+  "homepage": "https://favware.tech",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Favna/homesite.git"
+    "url": "git+https://github.com/favware/website.git"
   },
   "bugs": {
-    "url": "https://github.com/Favna/homesite/issues"
+    "url": "https://github.com/favware/website/issues"
   },
   "engines": {
     "node": ">=10"
@@ -71,6 +71,7 @@
     "@angular/cli": "^7.3.9",
     "@angular/compiler-cli": "^7.2.15",
     "@angular/language-service": "^7.2.15",
+    "@favware/tslint-config": "^1.0.0",
     "@firebase/app-types": "^0.4.0",
     "@firebase/util": "^0.2.15",
     "@types/common-tags": "^1.8.0",

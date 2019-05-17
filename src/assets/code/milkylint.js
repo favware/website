@@ -1,6 +1,6 @@
 const tslint = require("tslint");
 const ts = require('typescript');
-const { milkyLint, milkyReport } = require("milky-tslint");
+const { milkyLint, milkyReport } = require("@favware/milky-tslint");
 
 gulp.task("lint", () => {
   const lintProgram = tslint.Linter.createProgram('./tsconfig.json', '.');

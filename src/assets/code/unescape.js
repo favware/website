@@ -1,6 +1,6 @@
-const { unescape } = require('unescape-es6');
+const { unescape } = require('@favware/unescape');
 // or for TypeScript:
-// import { unescape } from 'unescape-es6';
+// import { unescape } from '@favware/unescape';
 
 console.log(unescape('&lt;div&gt;abc&lt;/div&gt;'));
 //=> '<div>abc</div>'

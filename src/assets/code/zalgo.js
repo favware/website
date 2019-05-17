@@ -1,8 +1,7 @@
-// const { zalgo, banish } = require('awesome-zalgo');
-// Or for babel / typescript:
-// import { zalgo, banish, ZalgoOptions } from 'awesome-zalgo';
+const { zalgo, banish } = require('@favware/zalgo');
+// Or for babel / typescript:// import { zalgo, banish, ZalgoOptions } from '@favware/zalgo';
 // Zalgo is also available as default import. For example
-// import zalgo, { banish, ZalgoOptions } from 'awesome-zalgo';
+// import zalgo, { banish, ZalgoOptions } from '@favware/zalgo';
 
 // Zalgo usage
 zalgo('some text');
@@ -18,7 +17,7 @@ banish('ŝ̜̩͇̼̥̼́̏͢o͎͊͜ḿ̛̩̳̖͕̞̩̭ͪe͖̺̣̹̺̋̀͛̽͝ �
 // => some text
 
 // To log all the supported chars use:
-const { chars } = require('awesome-zalgo/dist/chars');
+const { chars } = require('@favware/zalgo/dist/chars');
 console.log(chars);
 
 // Zalgo supports options:

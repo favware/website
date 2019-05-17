@@ -1,5 +1,5 @@
-const { readYaml } = require('awesome-yaml-reader');
-// supports default import for ES6: import readYaml from 'awesome-yaml-reader'
+const { readYaml } = require('@favware/yarmlreader');
+// supports default import for ES6: import readYaml from '@favware/yarmlreader'
 
 const actual = readYaml('/path/to/some/yaml/file');
 // => JavaScript object with the keys from the yaml

@@ -20,12 +20,12 @@ export class SeoService {
   constructor (private meta: Meta, private titleService: Title) {
   }
 
-  generateTags (tags: seoTags) {
+  public generateTags (tags: seoTags) {
     tags = {
       title: '',
       description: 'For Hearth and Home! Check out my projects here!',
       summary: 'This is my personal website showing off all the projects that I have made. Be sure to try some of them out!',
-      image: 'https://favna.xyz/assets/og-image.png',
+      image: 'https://favware.tech/assets/og-image.png',
       ...tags,
     };
 
@@ -52,7 +52,7 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:title', content: tags.title });
     this.meta.updateTag({ property: 'og:description', content: tags.description });
     this.meta.updateTag({ property: 'og:image', content: tags.image });
-    this.meta.updateTag({ property: 'og:url', content: `https://favna.xyz/${tags.url}` });
+    this.meta.updateTag({ property: 'og:url', content: `https://favware.tech/${tags.url}` });
     this.meta.updateTag({ property: 'og:image:alt', content: tags.imageAlt });
   }
 }

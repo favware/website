@@ -11,7 +11,7 @@ import { oneLine } from 'common-tags';
 })
 export class SeedcheckComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
+  public headerTile: IPrimaryTile = {
     header: 'SEEDChecker',
     subheader: 'Periodically check if the SEED for a Nintendo 3DS title is available',
     buttons: [
@@ -35,14 +35,14 @@ export class SeedcheckComponent implements OnInit {
       }
     ],
   };
-  aboutTile: IPrimaryTile = {
+  public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`SEEDChecker is a Java application that can periodically check
             if the decryption seed for a given title is available.
             If a SEED is available it is automatically downloaded to your default "Downloads" folder`],
   };
-  instructionsTile: IPrimaryTile = {
+  public instructionsTile: IPrimaryTile = {
     header: 'Instructions',
     subheader: '',
     text: [
@@ -58,7 +58,7 @@ export class SeedcheckComponent implements OnInit {
       'If you want to quit checking either close the program or click the **Cancel SEED Checking** button'
     ],
   };
-  faqTile: IPrimaryTile = {
+  public faqTile: IPrimaryTile = {
     header: 'FAQ',
     subheader: '',
     text: [
@@ -68,12 +68,12 @@ export class SeedcheckComponent implements OnInit {
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
     ],
   };
-  slides: Array<{ url: string }> = [
+  public slides: { url: string }[] = [
     { url: '/assets/screenshots/seedcheck/base.png' },
     { url: '/assets/screenshots/seedcheck/noseed.png' },
     { url: '/assets/screenshots/seedcheck/seed.png' }
   ];
-  carousel: IMatCarouselOptions = {
+  public carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,
@@ -90,10 +90,10 @@ export class SeedcheckComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
-  metadata = {
+  public metadata = {
     title: 'SEEDChecker',
     description: '3DS SEEDChecking utility',
-    image: 'https://favna.xyz/assets/icons/seedcheck-share.png',
+    image: 'https://favware.tech/assets/icons/seedcheck-share.png',
     imageAlt: 'SEEDChecker Preview Image',
     url: '/seedcheck',
     summary: oneLine`A Java based utility that can be used to fetch the SEED descryption keys for 3DS games`,
@@ -103,7 +103,7 @@ export class SeedcheckComponent implements OnInit {
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

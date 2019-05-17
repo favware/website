@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
-import { AWESOME_ZALGO_GITHUB, AWESOME_ZALGO_YARN } from '@util/constants';
+import { ZALGO_GITHUB, ZALGO_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import { oneLine } from 'common-tags';
 
@@ -11,48 +11,48 @@ import { oneLine } from 'common-tags';
 })
 export class ZalgoComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
-    header: 'Awesome Zalgo',
+  public headerTile: IPrimaryTile = {
+    header: '@Favware/zalgo',
     subheader: 'Unleash and banish the Zalgo Monster!',
     buttons: [
       {
-        text: 'yarn add awesome-zalgo',
+        text: '@favware/zalgo',
         color: 'accent',
         disabled: true,
       },
       {
         text: 'View on Yarn',
-        url: AWESOME_ZALGO_YARN,
+        url: ZALGO_YARN,
         color: 'yarn',
         outer: true,
       },
       {
         text: 'View on GitHub',
-        url: AWESOME_ZALGO_GITHUB,
+        url: ZALGO_GITHUB,
         color: 'github',
         outer: true,
       }
     ],
   };
-  usageTile: ICodeTile = {
+  public usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/zalgo.js',
   };
-  metadata = {
-    title: 'Awesome Zalgo',
+  public metadata = {
+    title: '@Favware/zalgo',
     description: 'Unleash and banish the Zalgo Monster!',
-    image: 'https://favna.xyz/assets/icons/zalgo.png',
+    image: 'https://favware.tech/assets/icons/zalgo.png',
     imageAlt: 'Awezome Zalgo Icon Image',
     url: '/zalgo',
     summary: oneLine`A NodeJS library that can transform any text into standard "zalgo" formatted text,
-      as well as banish most common Zalgo. Install it today with "yarn add awesome-zalgo"`,
+      as well as banish most common Zalgo. Install it today with "@favware/zalgo"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'zalgo', 'banish', 'awesome-zalog'],
   };
 
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

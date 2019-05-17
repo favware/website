@@ -1,7 +1,7 @@
-const { convert, definitions } = require('awesome-converter');
+const { convert, definitions } = require('@favware/converter');
 const { inspect } = require('util');
 // Or for babel / typescript:
-// import { convert, definitions } from 'awesome-querystring';
+// import { convert, definitions } from '@favware/converter';
 // import { inspect } from 'util'; ==> Note that this requires @types/node !!
 
 // Just pass required arguments

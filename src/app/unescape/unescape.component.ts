@@ -11,12 +11,12 @@ import { oneLine } from 'common-tags';
 })
 export class UnescapeComponent implements OnInit {
 
-  headerTile: IPrimaryTile = {
-    header: 'Unescape-ES6',
+  public headerTile: IPrimaryTile = {
+    header: '@Favware/Unescape',
     subheader: 'Convert HTML entities to HTML characters',
     buttons: [
       {
-        text: 'yarn add unescape-es6',
+        text: 'yarn add @favware/unescape',
         color: 'accent',
         disabled: true,
       },
@@ -34,11 +34,11 @@ export class UnescapeComponent implements OnInit {
       }
     ],
   };
-  usageTile: ICodeTile = {
+  public usageTile: ICodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/unescape.js',
   };
-  characterTile: IPrimaryTile = {
+  public characterTile: IPrimaryTile = {
     header: 'Characters',
     subheader: 'For performance, this library only handles the following common entities',
     text: [
@@ -60,21 +60,21 @@ export class UnescapeComponent implements OnInit {
   `
     ],
   };
-  metadata = {
+  public metadata = {
     title: 'Unescape ES6',
     description: 'Convert HTML entities to HTML characters. For example "&amp;" converts to &',
-    image: 'https://favna.xyz/assets/icons/unescape.png',
+    image: 'https://favware.tech/assets/icons/unescape.png',
     imageAlt: 'Unescape Icon Image',
     url: '/unescape',
     summary: oneLine`A NodeJS library that can transform HTML tags to their unescaped variants.
-    Install it today with "yarn add unescape-es6"`,
+    Install it today with "yarn add @favware/unescape"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'unescape', 'unescape-es6', 'escape', 'html', 'entities'],
   };
 
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

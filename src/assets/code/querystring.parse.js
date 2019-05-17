@@ -1,6 +1,6 @@
-const { parse } = require('awesome-querystring');
+const { parse } = require('@favware/querystring');
 // or for TypeScript:
-// import { parse } from 'awesome-querystring';
+// import { parse } from '@favware/querystring';
 
 console.log(parse('?prop=value&prop2=value2'));
 //=> {prop: 'value', prop2: 'value2'}

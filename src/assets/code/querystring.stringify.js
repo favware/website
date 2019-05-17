@@ -1,6 +1,6 @@
-const { stringify } = require('awesome-querystring');
+const { stringify } = require('@favware/querystring');
 // or for TypeScript:
-// import { stringify } from 'awesome-querystring';
+// import { stringify } from '@favware/querystring';
 
 console.log(stringify({ prop: 'value', prop2: 'value2' }));
 //=> '?prop=value&prop2=value2'

@@ -19,8 +19,8 @@ type Node = {
   styleUrls: ['./ribbon.component.scss'],
 })
 export class RibbonComponent implements OnInit {
-  statsHeader = 'Statistics';
-  headerTile: IPrimaryTile = {
+  public statsHeader = 'Statistics';
+  public headerTile: IPrimaryTile = {
     header: 'Ribbon',
     subheader: 'A feature rich, modular Discord.JS-Commando server bot',
     buttons: [
@@ -44,7 +44,7 @@ export class RibbonComponent implements OnInit {
       }
     ],
   };
-  aboutTile: IPrimaryTile = {
+  public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`
@@ -53,10 +53,10 @@ export class RibbonComponent implements OnInit {
             Ribbon features commands from searching the web, moderating your server to streaming music and a lot more.
             You can check a more extensive list of commands below.`],
   };
-  metadata = {
+  public metadata = {
     title: 'Ribbon',
     description: 'Amazing multifunctional Discord bot that can do anything you want anywhere you want',
-    image: 'https://favna.xyz/assets/icons/ribbon.png',
+    image: 'https://favware.tech/assets/icons/ribbon.png',
     imageAlt: 'Ribbon Preview Image',
     url: '/ribbon',
     summary: oneLine`A rich all purpose Discord bot that can make your server both more productive and lots more fun.
@@ -64,17 +64,17 @@ export class RibbonComponent implements OnInit {
     keywords: ['discord', 'ribbon', 'bot', 'all-purpose', 'all', 'purpose', 'chat', 'pokemon', 'casino', 'automod', 'music', 'stream', '8ball', 'fun'],
   };
 
-  isDoneLoading: boolean;
-  sinceLabel = `Since ${moment('20190406T16:00:00', 'YYYYMMDDTHH:mm:ss').format('MMMM Do YYYY [at] HH:mm')}`;
+  public isDoneLoading: boolean;
+  public sinceLabel = `Since ${moment('20190406T16:00:00', 'YYYYMMDDTHH:mm:ss').format('MMMM Do YYYY [at] HH:mm')}`;
 
-  collection: AngularFirestoreCollection<Node>;
-  documents: Observable<Node[]>;
+  public collection: AngularFirestoreCollection<Node>;
+  public documents: Observable<Node[]>;
 
   constructor (private seo: SeoService, private afs: AngularFirestore) {
     this.isDoneLoading = false;
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

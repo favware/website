@@ -10,7 +10,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./catchcalc.component.scss'],
 })
 export class CatchcalcComponent implements OnInit {
-  headerTile: IPrimaryTile = {
+  public headerTile: IPrimaryTile = {
     header: 'CatchCalc',
     subheader: 'Calculate Pokémon Generation 6 (XYORAS) catch rates',
     buttons: [
@@ -34,14 +34,14 @@ export class CatchcalcComponent implements OnInit {
       }
     ],
   };
-  aboutTile: IPrimaryTile = {
+  public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
     text: [oneLine`SEEDChecker is a Java application that can periodically check
             if the decryption seed for a given title is available.
             If a SEED is available it is automatically downloaded to your default "Downloads" folder`],
   };
-  instructionsTile: IPrimaryTile = {
+  public instructionsTile: IPrimaryTile = {
     header: 'Instructions',
     subheader: '',
     text: [
@@ -59,7 +59,7 @@ export class CatchcalcComponent implements OnInit {
       'Set all your other variables if applicable then press the **Calculate chance to catch** button to have the program do its magic!'
     ],
   };
-  faqTile: IPrimaryTile = {
+  public faqTile: IPrimaryTile = {
     header: 'FAQ',
     subheader: '',
     text: [
@@ -69,12 +69,12 @@ export class CatchcalcComponent implements OnInit {
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
     ],
   };
-  slides: Array<{ url: string }> = [
+  public slides: { url: string }[] = [
     { url: '/assets/screenshots/catchcalc/base.png' },
     { url: '/assets/screenshots/catchcalc/easymon.png' },
     { url: '/assets/screenshots/catchcalc/hardmon.png' }
   ];
-  carousel: IMatCarouselOptions = {
+  public carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,
@@ -91,10 +91,10 @@ export class CatchcalcComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
-  metadata = {
+  public metadata = {
     title: 'CatchCalc',
     description: 'Gotta Catch Em\' All!',
-    image: 'https://favna.xyz/assets/icons/catchcalc.png',
+    image: 'https://favware.tech/assets/icons/catchcalc.png',
     imageAlt: 'CatchCalc Preview Image',
     url: '/catchcalc',
     summary: oneLine`A Java program that can calculate the catchrate of any Pokémon in the 6th generation of games.`,
@@ -104,7 +104,7 @@ export class CatchcalcComponent implements OnInit {
   constructor (private seo: SeoService) {
   }
 
-  ngOnInit (): void {
+  public ngOnInit (): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,

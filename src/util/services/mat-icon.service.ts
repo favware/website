@@ -14,7 +14,7 @@ export class MatIconService {
     this.matIconRegistry = matIconRegistry;
   }
 
-  init () {
+  public init () {
     this.matIconRegistry.addSvgIcon(
       'mat-mail-icon',
       this.domSanitizer.bypassSecurityTrustResourceUrl(`assets/svgs/mail.svg`)
