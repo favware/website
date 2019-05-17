@@ -4,10 +4,26 @@ import { ngExpressEngine } from '@nguniversal/express-engine';
 // Import module map for lazy loading
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import * as express from 'express';
-import { join } from 'path';
-import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
+import 'zone.js/dist/zone-node';
+const domino = require('domino');
+const fs = require('fs');
+const path = require('path');
 
+const PORT = process.env.PORT || 4000;
+const DIST_FOLDER = path.join(process.cwd(), 'dist/browser');
+
+const template = fs.readFileSync(path.join(DIST_FOLDER, 'index.html')).toString();
+const win = domino.createWindow(template);
+
+(global as any).window = win;
+(global as any).document = win.document;
+(global as any).DOMTokenList = win.DOMTokenList;
+(global as any).Node = win.Node;
+(global as any).Text = win.Text;
+(global as any).HTMLElement = win.HTMLElement;
+(global as any).navigator = win.navigator;
+(global as any).MutationObserver = getMockMutationObserver();
 (global as any).WebSocket = require('ws');
 (global as any).XMLHttpRequest = require('xhr2');
 
@@ -16,9 +32,6 @@ enableProdMode();
 
 // Express server
 export const app = express();
-
-const PORT = process.env.PORT || 4000;
-const DIST_FOLDER = join(process.cwd(), 'dist/browser');
 
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
 const { FavwareServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/main');
@@ -52,4 +65,19 @@ if (!process.env.FUNCTION_NAME) {
   app.listen(PORT, () => {
     console.log(`Node server listening on http://localhost:${PORT}`);
   });
+}
+
+// tslint:disable-next-line: only-arrow-functions
+function getMockMutationObserver () {
+  return class {
+    // tslint:disable-next-line: no-empty
+    public observe (node, options) {
+    }
+    // tslint:disable-next-line: no-empty
+    public disconnect () {
+    }
+    public takeRecords () {
+      return [];
+    }
+  };
 }

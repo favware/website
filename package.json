@@ -51,6 +51,7 @@
     "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
     "common-tags": "^1.8.0",
     "core-js": "^2.5.4",
+    "domino": "^2.1.3",
     "express": "^4.16.4",
     "firebase": "^5.11.1",
     "fuse.js": "^3.4.4",
