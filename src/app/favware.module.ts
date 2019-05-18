@@ -87,6 +87,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
   ],
   providers: [RedirectGuard, MatIconService, SeoService, AngularFirestore],
   bootstrap: [SidenavComponent],
+  entryComponents: [SidenavComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class FavwareModule {

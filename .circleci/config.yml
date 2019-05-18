@@ -12,7 +12,7 @@ jobs:
 
   # Bundle Testing
   test:
-    working_directory: ~/favware
+    working_directory: ~/favware-website
     docker:
       - image: circleci/node:11-browsers
     steps:

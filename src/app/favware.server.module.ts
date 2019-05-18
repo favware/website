@@ -14,6 +14,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     FlexLayoutServerModule
   ],
   bootstrap: [SidenavComponent],
+  entryComponents: [SidenavComponent],
 })
 export class FavwareServerModule {
 }
