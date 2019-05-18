@@ -87,9 +87,6 @@ jobs:
           name: Build Firebase
           command: pushd functions && yarn --ignore-engines && popd
       - run:
-          name: Install Firebase Tools
-          command: yarn add firebase-tools copy-dir del --ignore-engines
-      - run:
           name: Deploy Firebase
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
 
