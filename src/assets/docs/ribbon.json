@@ -852,36 +852,6 @@
     "order": 24
   },
   {
-    "id": "module:favna",
-    "longname": "module:favna",
-    "name": "favna",
-    "kind": "module",
-    "description": "Custom FavnaCommand - Custom Command exclusive to ChaosGamez server\n\nA joke command to praise Favna\nServer admins can disable this command entirely by using the `rmt off` command\n**Aliases**: `.favna`",
-    "category": "custom",
-    "meta": {
-      "lineno": 2,
-      "filename": "favna.js",
-      "path": "/Users/favna/dev/ribbon/docsbuild/commands/custom"
-    },
-    "preserveName": true,
-    "order": 25
-  },
-  {
-    "id": "module:kai",
-    "longname": "module:kai",
-    "name": "kai",
-    "kind": "module",
-    "description": "Custom KaiCommand - Custom Command exclusive to ChaosGamez server\n\nA joke command to spite Kai. Server admins can disable this command entirely by using the `rmt off` command\n\n**Aliases**: `.kai`",
-    "category": "custom",
-    "meta": {
-      "lineno": 2,
-      "filename": "kai.js",
-      "path": "/Users/favna/dev/ribbon/docsbuild/commands/custom"
-    },
-    "preserveName": true,
-    "order": 26
-  },
-  {
     "id": "module:docs",
     "longname": "module:docs",
     "name": "docs",
@@ -918,7 +888,7 @@
       "docs ClientUser"
     ],
     "category": "docs",
-    "order": 27
+    "order": 25
   },
   {
     "id": "module:mdn",
@@ -947,7 +917,7 @@
       "mdn map"
     ],
     "category": "docs",
-    "order": 28
+    "order": 26
   },
   {
     "id": "module:yarn",
@@ -976,7 +946,7 @@
       "yarn @favware/querystring"
     ],
     "category": "docs",
-    "order": 29
+    "order": 27
   },
   {
     "id": "module:copypasta",
@@ -1005,7 +975,7 @@
       "copypasta navy"
     ],
     "category": "extra",
-    "order": 30
+    "order": 28
   },
   {
     "id": "module:copypastaadd",
@@ -1043,7 +1013,7 @@
       "copypastaadd lipsum Lorem ipsum dolor sit amet."
     ],
     "category": "extra",
-    "order": 31
+    "order": 29
   },
   {
     "id": "module:copypastalist",
@@ -1058,7 +1028,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
-    "order": 32
+    "order": 30
   },
   {
     "id": "module:copypastaremove",
@@ -1087,7 +1057,7 @@
       "copypastaremove 1"
     ],
     "category": "extra",
-    "order": 33
+    "order": 31
   },
   {
     "id": "module:qrgen",
@@ -1113,10 +1083,10 @@
     },
     "preserveName": true,
     "examples": [
-      "qrgen https://favware.tech/ribbon"
+      "qrgen https://favna.xyz/ribbon"
     ],
     "category": "extra",
-    "order": 34
+    "order": 32
   },
   {
     "id": "module:randomcol",
@@ -1146,7 +1116,7 @@
       "randomcol\n-OR-\nrandomcol #990000\n-OR-\nrandomcol 36B56e"
     ],
     "category": "extra",
-    "order": 35
+    "order": 33
   },
   {
     "id": "module:remind",
@@ -1184,7 +1154,7 @@
       "remind 1h To continue developing Ribbon"
     ],
     "category": "extra",
-    "order": 36
+    "order": 34
   },
   {
     "id": "module:say",
@@ -1213,7 +1183,7 @@
       "say Favna is a great coder!"
     ],
     "category": "extra",
-    "order": 37
+    "order": 35
   },
   {
     "id": "module:saywut",
@@ -1228,7 +1198,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
-    "order": 38
+    "order": 36
   },
   {
     "id": "module:time",
@@ -1257,7 +1227,7 @@
       "time Amsterdam"
     ],
     "category": "extra",
-    "order": 39
+    "order": 37
   },
   {
     "id": "module:translate",
@@ -1304,7 +1274,7 @@
       "translate en nl Hello World"
     ],
     "category": "extra",
-    "order": 40
+    "order": 38
   },
   {
     "id": "module:weather",
@@ -1333,7 +1303,7 @@
       "weather Amsterdam"
     ],
     "category": "extra",
-    "order": 41
+    "order": 39
   },
   {
     "id": "module:xkcd",
@@ -1348,7 +1318,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/extra"
     },
     "preserveName": true,
-    "order": 42
+    "order": 40
   },
   {
     "id": "module:zalgo",
@@ -1377,7 +1347,7 @@
       "zalgo HE COMES"
     ],
     "category": "extra",
-    "order": 43
+    "order": 41
   },
   {
     "id": "module:8ball",
@@ -1406,7 +1376,7 @@
       "8ball is Favna a genius coder?"
     ],
     "category": "games",
-    "order": 44
+    "order": 42
   },
   {
     "id": "module:dice",
@@ -1444,7 +1414,7 @@
       "dice 5 6"
     ],
     "category": "games",
-    "order": 45
+    "order": 43
   },
   {
     "id": "module:dndc",
@@ -1459,7 +1429,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/games"
     },
     "preserveName": true,
-    "order": 46
+    "order": 44
   },
   {
     "id": "module:fight",
@@ -1497,7 +1467,7 @@
       "fight Pyrrha Ruby"
     ],
     "category": "games",
-    "order": 47
+    "order": 45
   },
   {
     "id": "module:rps",
@@ -1526,7 +1496,7 @@
       "rps Rock"
     ],
     "category": "games",
-    "order": 48
+    "order": 46
   },
   {
     "id": "module:ship",
@@ -1566,7 +1536,7 @@
       "ship Biscuit Rei"
     ],
     "category": "games",
-    "order": 49
+    "order": 47
   },
   {
     "id": "module:strawpoll",
@@ -1605,7 +1575,7 @@
       "strawpoll 'Best coding language?' JavaScript C# C++"
     ],
     "category": "games",
-    "order": 50
+    "order": 48
   },
   {
     "id": "module:activity",
@@ -1634,7 +1604,7 @@
       "activity Favna"
     ],
     "category": "info",
-    "order": 51
+    "order": 49
   },
   {
     "id": "module:avatar",
@@ -1673,7 +1643,7 @@
       "avatar Favna"
     ],
     "category": "info",
-    "order": 52
+    "order": 50
   },
   {
     "id": "module:discordbots",
@@ -1703,7 +1673,7 @@
       "discordbots 512150391471996930"
     ],
     "category": "info",
-    "order": 53
+    "order": 51
   },
   {
     "id": "module:emotes",
@@ -1718,7 +1688,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
-    "order": 54
+    "order": 52
   },
   {
     "id": "module:help",
@@ -1750,7 +1720,7 @@
       "help avatar"
     ],
     "category": "info",
-    "order": 55
+    "order": 53
   },
   {
     "id": "module:iam",
@@ -1779,7 +1749,7 @@
       "iam uploader"
     ],
     "category": "info",
-    "order": 56
+    "order": 54
   },
   {
     "id": "module:iamnot",
@@ -1808,7 +1778,7 @@
       "iamnot uploader"
     ],
     "category": "info",
-    "order": 57
+    "order": 55
   },
   {
     "id": "module:invite",
@@ -1823,7 +1793,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
-    "order": 58
+    "order": 56
   },
   {
     "id": "module:Reddit",
@@ -1852,7 +1822,7 @@
       "reddit favna"
     ],
     "category": "info",
-    "order": 59
+    "order": 57
   },
   {
     "id": "module:server",
@@ -1867,7 +1837,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
-    "order": 60
+    "order": 58
   },
   {
     "id": "module:stats",
@@ -1882,7 +1852,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/info"
     },
     "preserveName": true,
-    "order": 61
+    "order": 59
   },
   {
     "id": "module:userinfo",
@@ -1911,7 +1881,7 @@
       "userinfo Favna"
     ],
     "category": "info",
-    "order": 62
+    "order": 60
   },
   {
     "id": "module:fortnite",
@@ -1949,7 +1919,7 @@
       "fortnite darkentz014 pc"
     ],
     "category": "leaderboards",
-    "order": 63
+    "order": 61
   },
   {
     "id": "module:osu",
@@ -1978,7 +1948,7 @@
       "osu WubWoofWolf"
     ],
     "category": "leaderboards",
-    "order": 64
+    "order": 62
   },
   {
     "id": "module:overwatch",
@@ -2027,7 +1997,7 @@
       "overwatch Camoflouge#1267"
     ],
     "category": "leaderboards",
-    "order": 65
+    "order": 63
   },
   {
     "id": "module:pubg",
@@ -2065,7 +2035,7 @@
       "pubg shroud pc-na"
     ],
     "category": "leaderboards",
-    "order": 66
+    "order": 64
   },
   {
     "id": "module:showdown",
@@ -2094,7 +2064,7 @@
       "showdown ou"
     ],
     "category": "leaderboards",
-    "order": 67
+    "order": 65
   },
   {
     "id": "module:addrole",
@@ -2132,7 +2102,7 @@
       "addrole Favna Member"
     ],
     "category": "moderation",
-    "order": 68
+    "order": 66
   },
   {
     "id": "module:announce",
@@ -2161,7 +2131,7 @@
       "announce Pokemon Switch has released!"
     ],
     "category": "moderation",
-    "order": 69
+    "order": 67
   },
   {
     "id": "module:automod",
@@ -2200,7 +2170,7 @@
       "automod enable"
     ],
     "category": "moderation",
-    "order": 70
+    "order": 68
   },
   {
     "id": "module:ban",
@@ -2239,7 +2209,7 @@
       "ban MultiMegaMander"
     ],
     "category": "moderation",
-    "order": 71
+    "order": 69
   },
   {
     "id": "module:casinolimit",
@@ -2279,7 +2249,7 @@
       "casinolimit 20000 1000"
     ],
     "category": "moderation",
-    "order": 72
+    "order": 70
   },
   {
     "id": "module:confmute",
@@ -2308,7 +2278,7 @@
       "confmute mute"
     ],
     "category": "moderation",
-    "order": 73
+    "order": 71
   },
   {
     "id": "module:countdownadd",
@@ -2355,7 +2325,7 @@
       "countdownadd 2018-12-31T18:00 #general New years day!"
     ],
     "category": "moderation",
-    "order": 74
+    "order": 72
   },
   {
     "id": "module:countdownlist",
@@ -2370,7 +2340,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
-    "order": 75
+    "order": 73
   },
   {
     "id": "module:countdownremove",
@@ -2399,7 +2369,7 @@
       "countdownremove 1"
     ],
     "category": "moderation",
-    "order": 76
+    "order": 74
   },
   {
     "id": "module:defaultrole",
@@ -2428,7 +2398,7 @@
       "defaultrole Member"
     ],
     "category": "moderation",
-    "order": 77
+    "order": 75
   },
   {
     "id": "module:deletecommandmessages",
@@ -2457,7 +2427,7 @@
       "deletecommandmessages enable"
     ],
     "category": "moderation",
-    "order": 78
+    "order": 76
   },
   {
     "id": "module:deletewarn",
@@ -2497,7 +2467,7 @@
       "deletewarn favna"
     ],
     "category": "moderation",
-    "order": 79
+    "order": 77
   },
   {
     "id": "module:delrole",
@@ -2535,7 +2505,7 @@
       "delrole Favna Member"
     ],
     "category": "moderation",
-    "order": 80
+    "order": 78
   },
   {
     "id": "module:i18n",
@@ -2566,7 +2536,7 @@
       "i18n nl"
     ],
     "category": "moderation",
-    "order": 81
+    "order": 79
   },
   {
     "id": "module:joinmessages",
@@ -2605,7 +2575,7 @@
       "joinmessages enable"
     ],
     "category": "moderation",
-    "order": 82
+    "order": 80
   },
   {
     "id": "module:kick",
@@ -2644,7 +2614,7 @@
       "kick ThunderKai"
     ],
     "category": "moderation",
-    "order": 83
+    "order": 81
   },
   {
     "id": "module:leavemessages",
@@ -2683,7 +2653,7 @@
       "leavemessages enable"
     ],
     "category": "moderation",
-    "order": 84
+    "order": 82
   },
   {
     "id": "module:listwarn",
@@ -2712,7 +2682,7 @@
       "listwarn Biscuit"
     ],
     "category": "moderation",
-    "order": 85
+    "order": 83
   },
   {
     "id": "module:lockdown",
@@ -2739,7 +2709,7 @@
       }
     ],
     "category": "moderation",
-    "order": 86
+    "order": 84
   },
   {
     "id": "module:memberlogs",
@@ -2778,7 +2748,7 @@
       "memberlogs enable"
     ],
     "category": "moderation",
-    "order": 87
+    "order": 85
   },
   {
     "id": "module:modlogs",
@@ -2817,7 +2787,7 @@
       "modlogs enable"
     ],
     "category": "moderation",
-    "order": 88
+    "order": 86
   },
   {
     "id": "module:mute",
@@ -2846,7 +2816,7 @@
       "mute Muffin"
     ],
     "category": "moderation",
-    "order": 89
+    "order": 87
   },
   {
     "id": "module:nickname",
@@ -2884,7 +2854,7 @@
       "nick Muffin Cupcake"
     ],
     "category": "moderation",
-    "order": 90
+    "order": 88
   },
   {
     "id": "module:purge",
@@ -2913,7 +2883,7 @@
       "purge 10"
     ],
     "category": "moderation",
-    "order": 91
+    "order": 89
   },
   {
     "id": "module:regexmatchtoggle",
@@ -2942,7 +2912,7 @@
       "regexmatchtoggle enable"
     ],
     "category": "moderation",
-    "order": 92
+    "order": 90
   },
   {
     "id": "module:selfroles",
@@ -2973,7 +2943,7 @@
       "selfroles uploader superuploader"
     ],
     "category": "moderation",
-    "order": 93
+    "order": 91
   },
   {
     "id": "module:setannounce",
@@ -3002,7 +2972,7 @@
       "setannounce #updates"
     ],
     "category": "moderation",
-    "order": 94
+    "order": 92
   },
   {
     "id": "module:softban",
@@ -3040,7 +3010,7 @@
       "softban ImmortalZypther"
     ],
     "category": "moderation",
-    "order": 95
+    "order": 93
   },
   {
     "id": "module:tempban",
@@ -3088,7 +3058,7 @@
       "tempban Kai"
     ],
     "category": "moderation",
-    "order": 96
+    "order": 94
   },
   {
     "id": "module:timeradd",
@@ -3135,7 +3105,7 @@
       "timeradd 1d #general Please read the rules everyone!"
     ],
     "category": "moderation",
-    "order": 97
+    "order": 95
   },
   {
     "id": "module:timerlist",
@@ -3150,7 +3120,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
-    "order": 98
+    "order": 96
   },
   {
     "id": "module:timerremove",
@@ -3179,7 +3149,7 @@
       "timerremove 1"
     ],
     "category": "moderation",
-    "order": 99
+    "order": 97
   },
   {
     "id": "module:unknownmessages",
@@ -3208,7 +3178,7 @@
       "unknownmessages enable"
     ],
     "category": "moderation",
-    "order": 100
+    "order": 98
   },
   {
     "id": "module:unlock",
@@ -3223,7 +3193,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/moderation"
     },
     "preserveName": true,
-    "order": 101
+    "order": 99
   },
   {
     "id": "module:unmute",
@@ -3252,7 +3222,7 @@
       "unmute Muffin"
     ],
     "category": "moderation",
-    "order": 102
+    "order": 100
   },
   {
     "id": "module:warn",
@@ -3299,7 +3269,7 @@
       "warn Biscuit 5 Not giving everyone cookies"
     ],
     "category": "moderation",
-    "order": 103
+    "order": 101
   },
   {
     "id": "module:defaultvolume",
@@ -3329,7 +3299,7 @@
       "defaultvolume 2"
     ],
     "category": "music",
-    "order": 104
+    "order": 102
   },
   {
     "id": "module:launch",
@@ -3358,7 +3328,7 @@
       "play final fantasy one winged angel"
     ],
     "category": "music",
-    "order": 105
+    "order": 103
   },
   {
     "id": "module:maxlength",
@@ -3389,7 +3359,7 @@
       "maxlength 10"
     ],
     "category": "music",
-    "order": 106
+    "order": 104
   },
   {
     "id": "module:maxsongs",
@@ -3420,7 +3390,7 @@
       "maxsongs 2"
     ],
     "category": "music",
-    "order": 107
+    "order": 105
   },
   {
     "id": "module:pause",
@@ -3435,7 +3405,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
-    "order": 108
+    "order": 106
   },
   {
     "id": "module:queue",
@@ -3465,7 +3435,7 @@
       "queue 2"
     ],
     "category": "music",
-    "order": 109
+    "order": 107
   },
   {
     "id": "module:resume",
@@ -3480,7 +3450,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
-    "order": 110
+    "order": 108
   },
   {
     "id": "module:save",
@@ -3495,7 +3465,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
-    "order": 111
+    "order": 109
   },
   {
     "id": "module:queue",
@@ -3513,7 +3483,7 @@
       "queue 2"
     ],
     "category": "music",
-    "order": 112
+    "order": 110
   },
   {
     "id": "module:skip",
@@ -3543,7 +3513,7 @@
       "skip\n-OR-\nskip force"
     ],
     "category": "music",
-    "order": 113
+    "order": 111
   },
   {
     "id": "module:status",
@@ -3558,7 +3528,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
-    "order": 114
+    "order": 112
   },
   {
     "id": "module:stop",
@@ -3573,7 +3543,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/music"
     },
     "preserveName": true,
-    "order": 115
+    "order": 113
   },
   {
     "id": "module:volume",
@@ -3603,7 +3573,7 @@
       "volume 2"
     ],
     "category": "music",
-    "order": 116
+    "order": 114
   },
   {
     "id": "module:e621",
@@ -3632,7 +3602,7 @@
       "e621 pyrrha_nikos"
     ],
     "category": "nsfw",
-    "order": 117
+    "order": 115
   },
   {
     "id": "module:gelbooru",
@@ -3661,7 +3631,7 @@
       "gelbooru pyrrha_nikos"
     ],
     "category": "nsfw",
-    "order": 118
+    "order": 116
   },
   {
     "id": "module:paheal",
@@ -3690,7 +3660,7 @@
       "paheal pyrrha_nikos"
     ],
     "category": "nsfw",
-    "order": 119
+    "order": 117
   },
   {
     "id": "module:pornvids",
@@ -3719,7 +3689,7 @@
       "pornvids babe"
     ],
     "category": "nsfw",
-    "order": 120
+    "order": 118
   },
   {
     "id": "module:rule34",
@@ -3748,7 +3718,7 @@
       "rule34 pyrrha_nikos"
     ],
     "category": "nsfw",
-    "order": 121
+    "order": 119
   },
   {
     "id": "module:checkguilds",
@@ -3763,7 +3733,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
-    "order": 122
+    "order": 120
   },
   {
     "id": "module:customtopup",
@@ -3801,7 +3771,7 @@
       "ctu Biscuit 1000"
     ],
     "category": "owner",
-    "order": 123
+    "order": 121
   },
   {
     "id": "module:dbpost",
@@ -3816,7 +3786,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
-    "order": 124
+    "order": 122
   },
   {
     "id": "module:tagmember",
@@ -3845,7 +3815,7 @@
       "tagmember ☜(⌒▽⌒)☞guy"
     ],
     "category": "owner",
-    "order": 125
+    "order": 123
   },
   {
     "id": "module:unknowncommand",
@@ -3860,7 +3830,7 @@
       "path": "/Users/favna/dev/ribbon/docsbuild/commands/owner"
     },
     "preserveName": true,
-    "order": 126
+    "order": 124
   },
   {
     "id": "module:dex",
@@ -3889,7 +3859,7 @@
       "dex dragonite"
     ],
     "category": "pokemon",
-    "order": 128
+    "order": 126
   },
   {
     "id": "module:flavor",
@@ -3918,7 +3888,7 @@
       "flavor dragonite"
     ],
     "category": "pokemon",
-    "order": 129
+    "order": 127
   },
   {
     "id": "module:item",
@@ -3947,7 +3917,7 @@
       "item assault vest"
     ],
     "category": "pokemon",
-    "order": 130
+    "order": 128
   },
   {
     "id": "module:learn",
@@ -4008,7 +3978,7 @@
       "learn dragonite dragon dance, dragon claw --gen 6"
     ],
     "category": "pokemon",
-    "order": 131
+    "order": 129
   },
   {
     "id": "module:ability",
@@ -4037,7 +4007,7 @@
       "ability multiscale"
     ],
     "category": "pokémon",
-    "order": 127
+    "order": 125
   },
   {
     "id": "module:move",
@@ -4066,7 +4036,7 @@
       "move dragon dance"
     ],
     "category": "pokémon",
-    "order": 132
+    "order": 130
   },
   {
     "id": "module:TCG",
@@ -4096,7 +4066,7 @@
       "tcg name types subtype"
     ],
     "category": "pokémon",
-    "order": 133
+    "order": 131
   },
   {
     "id": "module:type",
@@ -4125,7 +4095,7 @@
       "type dragon flying"
     ],
     "category": "pokémon",
-    "order": 134
+    "order": 132
   },
   {
     "id": "module:anime",
@@ -4154,7 +4124,7 @@
       "anime Yu-Gi-Oh Dual Monsters"
     ],
     "category": "searches",
-    "order": 135
+    "order": 133
   },
   {
     "id": "module:cydia",
@@ -4183,7 +4153,7 @@
       "cydia Anemone"
     ],
     "category": "searches",
-    "order": 136
+    "order": 134
   },
   {
     "id": "module:define",
@@ -4212,7 +4182,7 @@
       "define Google"
     ],
     "category": "searches",
-    "order": 137
+    "order": 135
   },
   {
     "id": "module:eshop",
@@ -4241,7 +4211,7 @@
       "eshop Breath of The Wild"
     ],
     "category": "searches",
-    "order": 138
+    "order": 136
   },
   {
     "id": "module:girlsfrontline",
@@ -4270,7 +4240,7 @@
       "girlsfrontline Negev"
     ],
     "category": "searches",
-    "order": 139
+    "order": 137
   },
   {
     "id": "module:google",
@@ -4299,7 +4269,7 @@
       "google Pyrrha Nikos"
     ],
     "category": "searches",
-    "order": 140
+    "order": 138
   },
   {
     "id": "module:igdb",
@@ -4328,7 +4298,7 @@
       "igdb Tales of Berseria"
     ],
     "category": "searches",
-    "order": 141
+    "order": 139
   },
   {
     "id": "module:image",
@@ -4357,7 +4327,7 @@
       "image Pyrrha Nikos'"
     ],
     "category": "searches",
-    "order": 142
+    "order": 140
   },
   {
     "id": "module:itunes",
@@ -4386,7 +4356,7 @@
       "itunes dash berlin symphony"
     ],
     "category": "searches",
-    "order": 143
+    "order": 141
   },
   {
     "id": "module:lmgtfy",
@@ -4415,7 +4385,7 @@
       "lmgtfy is it legal to kill an ant???"
     ],
     "category": "searches",
-    "order": 144
+    "order": 142
   },
   {
     "id": "module:manga",
@@ -4444,7 +4414,7 @@
       "manga Yu-Gi-Oh"
     ],
     "category": "searches",
-    "order": 145
+    "order": 143
   },
   {
     "id": "module:saucenao",
@@ -4473,7 +4443,7 @@
       "saucenao https://i.imgur.com/6FjildG.jpg"
     ],
     "category": "searches",
-    "order": 146
+    "order": 144
   },
   {
     "id": "module:steam",
@@ -4502,7 +4472,7 @@
       "steam Tales of Berseria"
     ],
     "category": "searches",
-    "order": 147
+    "order": 145
   },
   {
     "id": "module:tmdb",
@@ -4531,7 +4501,7 @@
       "tmdb Pokemon 2000"
     ],
     "category": "searches",
-    "order": 148
+    "order": 146
   },
   {
     "id": "module:tvdb",
@@ -4560,7 +4530,7 @@
       "tvdb Pokemon"
     ],
     "category": "searches",
-    "order": 149
+    "order": 147
   },
   {
     "id": "module:urban",
@@ -4589,7 +4559,7 @@
       "urban Everclear"
     ],
     "category": "searches",
-    "order": 150
+    "order": 148
   },
   {
     "id": "module:youtube",
@@ -4618,7 +4588,7 @@
       "youtube Voldemort Origins of the heir"
     ],
     "category": "searches",
-    "order": 151
+    "order": 149
   },
   {
     "id": "module:twitchmonitors",
@@ -4647,7 +4617,7 @@
       "twitchmonitors techagent favna"
     ],
     "category": "streamwatch",
-    "order": 152
+    "order": 150
   },
   {
     "id": "module:twitchoutput",
@@ -4676,7 +4646,7 @@
       "twitchoutput #twitch-notifications"
     ],
     "category": "streamwatch",
-    "order": 153
+    "order": 151
   },
   {
     "id": "module:twitchtoggle",
@@ -4705,7 +4675,7 @@
       "twitchtoggle enable"
     ],
     "category": "streamwatch",
-    "order": 154
+    "order": 152
   },
   {
     "id": "module:biscuit",
@@ -4732,7 +4702,7 @@
       }
     ],
     "category": "weeb",
-    "order": 155
+    "order": 153
   },
   {
     "id": "module:cuddle",
@@ -4762,7 +4732,7 @@
       "cuddle Velvet"
     ],
     "category": "weeb",
-    "order": 156
+    "order": 154
   },
   {
     "id": "module:feed",
@@ -4792,7 +4762,7 @@
       "feed Ren"
     ],
     "category": "weeb",
-    "order": 157
+    "order": 155
   },
   {
     "id": "module:hug",
@@ -4822,7 +4792,7 @@
       "hug Nora"
     ],
     "category": "weeb",
-    "order": 158
+    "order": 156
   },
   {
     "id": "module:kiss",
@@ -4852,7 +4822,7 @@
       "kiss Pyrrha"
     ],
     "category": "weeb",
-    "order": 159
+    "order": 157
   },
   {
     "id": "module:neko",
@@ -4870,7 +4840,7 @@
       "neko"
     ],
     "category": "weeb",
-    "order": 160
+    "order": 158
   },
   {
     "id": "module:pat",
@@ -4900,7 +4870,7 @@
       "pat Ruby"
     ],
     "category": "weeb",
-    "order": 161
+    "order": 159
   },
   {
     "id": "module:poke",
@@ -4930,7 +4900,7 @@
       "poke Weiss"
     ],
     "category": "weeb",
-    "order": 162
+    "order": 160
   },
   {
     "id": "module:slap",
@@ -4960,7 +4930,7 @@
       "slap Cinder"
     ],
     "category": "weeb",
-    "order": 163
+    "order": 161
   },
   {
     "id": "module:smug",
@@ -4990,7 +4960,7 @@
       "smug McDonalds"
     ],
     "category": "weeb",
-    "order": 164
+    "order": 162
   },
   {
     "id": "module:tickle",
@@ -5020,6 +4990,6 @@
       "tickle Yang"
     ],
     "category": "weeb",
-    "order": 165
+    "order": 163
   }
 ]
