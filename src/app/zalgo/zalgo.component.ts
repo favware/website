@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 export class ZalgoComponent implements OnInit {
 
   public headerTile: IPrimaryTile = {
-    header: '@Favware/zalgo',
+    header: '@Favware/Zalgo',
     subheader: 'Unleash and banish the Zalgo Monster!',
     buttons: [
       {

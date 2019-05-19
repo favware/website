@@ -161,8 +161,8 @@ export class HomeComponent implements OnInit {
         header: {
           avatar: `assets/icons/unescape.png`,
           imageAlt: 'Unescape Project',
-          title: 'Unescape-es6',
-          subtitle: 'yarn add unescape-es6',
+          title: '@favware/unescape',
+          subtitle: 'yarn add @favware/unescape',
         },
         content: oneLine`Convert HTML entities to HTML characters. For example "&amp;" converts to &`,
         actions: [
@@ -190,7 +190,7 @@ export class HomeComponent implements OnInit {
           avatar: `assets/icons/converter.png`,
           imageAlt: '@Favware/Converter',
           title: '@Favware/Converter',
-          subtitle: '@favware/converter',
+          subtitle: 'yarn add @favware/converter',
         },
         content: oneLine`Awesome and typesafe unit converter, supports many different systems of units`,
         actions: [
@@ -202,9 +202,9 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/milkylint.png`,
-          imageAlt: 'Milky TSLint',
-          title: 'Milky TSLint',
-          subtitle: '@favware/milky-tslint',
+          imageAlt: '@favware/milky-tslint',
+          title: '@favware/Milky-TSLint',
+          subtitle: 'yarn add @favware/milky-tslint',
         },
         content: oneLine`TypeScript linter plugin for Gulp. Gulp down that milk and lint your code!`,
         actions: [
@@ -218,7 +218,7 @@ export class HomeComponent implements OnInit {
           avatar: `assets/icons/yamlreader.png`,
           imageAlt: '@Favware/yamlreader',
           title: '@Favware/yamlreader',
-          subtitle: '@favware/yamlreader',
+          subtitle: 'yarn add @favware/yamlreader',
         },
         content: oneLine`Awesome minimal wrapper around js-yaml for directly reading in YAML files`,
         actions: [
@@ -230,9 +230,9 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/zalgo.png`,
-          imageAlt: '@Favware/zalgo',
-          title: '@Favware/zalgo',
-          subtitle: '@favware/zalgo',
+          imageAlt: '@Favware/Zalgo',
+          title: '@Favware/Zalgo',
+          subtitle: 'yarn add @favware/zalgo',
         },
         // tslint:disable-next-line:max-line-length
         content: oneLine`Unleash and banish the Zalgo Monster!  W̘͔̳͛̊ͥͤ̒Ä̺̠̫̮̦̽Ṯ̟̇̌̒̾̋C̳̱̻͐̉̓̋̒̎̚H̺͍̩̖͕̄̇͆̏́ͅ ̡̯̰̐ͨ͗ͫ̒̅O̯̠̞̯̒̂͗̾̔̕Ư̠͚̾͌̈́̇͆T̘̬̞͈̻̰͓ͯ͋͌ͬ̆ͨ̊!̤̮̯̜̟͂̉͂͊̚ ̟͚̟̩͚̉̓͑ͤͯḪ͙̦̦̘̣̳̅̈͆̿ͦ̓͜Ẹ̜̰͆ͨͪ̎ ͖͍͉̗͕̘ͯ̓ͣ̎̐͋ͧC͙̉̓̄̚͘O͓ͯ̑Ṃ̮̣͑̌̓̈́Ẹ͓͍̯̼̜̮͂͑͡S͇̣̣ͧ͒ͤ!̠͘  `,
@@ -245,9 +245,9 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/crypto.png`,
-          imageAlt: '@Favware/crypto',
-          title: '@Favware/crypto',
-          subtitle: '@favware/crypto',
+          imageAlt: '@Favware/Crypto',
+          title: '@Favware/Crypto',
+          subtitle: 'yarn add @favware/Crypto',
         },
         content: oneLine`Generates secure random numbers using crypto.randomBytes(). Numbers can be of any magnitude and in any base from 2 to 64.`,
         actions: [
