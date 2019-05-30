@@ -77,7 +77,7 @@
     "@firebase/app-types": "^0.4.0",
     "@firebase/util": "^0.2.15",
     "@types/common-tags": "^1.8.0",
-    "@types/jasmine": "^3.3.12",
+    "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "^2.0.6",
     "@types/moment-duration-format": "^2.2.2",
     "@types/node": "^11.13.0",
