@@ -60,7 +60,7 @@
     "moment": "^2.24.0",
     "moment-duration-format": "^2.2.2",
     "ngx-clipboard": "^12.1.0-beta0",
-    "ngx-markdown": "^7.1.5",
+    "ngx-markdown": "^8.0.1",
     "normalize-scss": "^7.0.1",
     "rxjs": "~6.5.2",
     "tslib": "^1.9.0",
