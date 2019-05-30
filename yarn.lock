@@ -4917,10 +4917,10 @@ neo-async@^2.5.0, neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
 
-ngx-clipboard@^12.1.0-beta0:
-  version "12.1.0-beta0"
-  resolved "https://registry.yarnpkg.com/ngx-clipboard/-/ngx-clipboard-12.1.0-beta0.tgz#51c2e062e0d565844c03d9b71bff166cf7d8c66f"
-  integrity sha512-2ige4H2Axy5SEPInWWtoB2D2Z6ZdRJo3oxrYCZlV69fhEfd3ACAgLU9StdqIPMY9af4fLawklkMfMhV+RY/x7w==
+ngx-clipboard@^12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-clipboard/-/ngx-clipboard-12.1.0.tgz#41d10c9d031d5d6e854f8c21c85460c96685b10b"
+  integrity sha512-RgFQeaqtRvuHK1E3AaYwZt0j+mroDI98qWfNrux952d5XtoUzg05ZNfzpNXi/tz5DfRXKbbV/JfCoefy85TcUQ==
   dependencies:
     ngx-window-token "^2.0.0"
     tslib "^1.9.0"
