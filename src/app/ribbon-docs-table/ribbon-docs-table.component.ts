@@ -1,7 +1,8 @@
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { MatPaginator, MatSort } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
@@ -15,9 +16,9 @@ import { RibbonDocsErrorStateMatches } from './ribbon-docs-error-state-matcher';
 })
 export class RibbonDocsTableComponent implements OnInit {
 
-  @ViewChild(MatPaginator) public paginator: MatPaginator;
-  @ViewChild(MatSort) public sort: MatSort;
-  @ViewChild('filter') public filter: ElementRef;
+  @ViewChild(MatPaginator, { static: true }) public paginator: MatPaginator;
+  @ViewChild(MatSort, { static: true }) public sort: MatSort;
+  @ViewChild('filter', { static: true }) public filter: ElementRef;
 
   public dataSource: RibbonDocsDatasource;
   public isSmall = false;

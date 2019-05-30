@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { MatPaginator, MatSort } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { fromEvent } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 
@@ -14,9 +15,9 @@ import { DexaDocsErrorStateMatches } from './dexa-docs-error-state-matcher';
 })
 export class DexaDocsTableComponent implements OnInit {
 
-  @ViewChild(MatPaginator) public paginator: MatPaginator;
-  @ViewChild(MatSort) public sort: MatSort;
-  @ViewChild('filter') public filter: ElementRef;
+  @ViewChild(MatPaginator, { static: true }) public paginator: MatPaginator;
+  @ViewChild(MatSort, { static: true }) public sort: MatSort;
+  @ViewChild('filter', { static: true }) public filter: ElementRef;
 
   public dataSource: DexaDocsDatasource;
   public definitionColumns = ['name', 'description', 'examples'];

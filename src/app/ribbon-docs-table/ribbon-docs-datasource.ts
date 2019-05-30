@@ -1,5 +1,6 @@
 import { DataSource } from '@angular/cdk/collections';
-import { MatPaginator, MatSort } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { JSDocJSON, RibbonDocs } from '@util/interfaces.js';
 import Fuse, { FuseOptions } from 'fuse.js';
 import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
