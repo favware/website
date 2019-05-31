@@ -2,6 +2,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import { SidenavLink } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -10,6 +11,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent implements OnInit {
+  public ngForTrackBy = ngForTrackBy;
   public sidenavMode = 'side';
   public isFixedInViewport = false;
   public isSidenavOpen = false;

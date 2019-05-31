@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import { CONVERTER_GITHUB, CONVERTER_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -10,7 +11,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./converter.component.scss'],
 })
 export class ConverterComponent implements OnInit {
-
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: '@Favware/Converter',
     subheader: 'An awesome and typesafe unit converter for NodeJS',

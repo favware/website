@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import { QUERYSTRING_GITHUB, QUERYSTRING_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -10,7 +11,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./querystring.component.scss'],
 })
 export class QuerystringComponent implements OnInit {
-
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: '@Favware/Querystring',
     subheader: 'Robust and awesome querystring',

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL } from '@util/constants';
 import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -10,6 +11,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./catchcalc.component.scss'],
 })
 export class CatchcalcComponent implements OnInit {
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: 'CatchCalc',
     subheader: 'Calculate Pokémon Generation 6 (XYORAS) catch rates',

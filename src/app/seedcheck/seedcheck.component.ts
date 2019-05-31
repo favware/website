@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import { ASSET_BASE_PATH, SEEDCHECKER_GITHUB_URL } from '@util/constants';
 import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -10,7 +11,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./seedcheck.component.scss'],
 })
 export class SeedcheckComponent implements OnInit {
-
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: 'SEEDChecker',
     subheader: 'Periodically check if the SEED for a Nintendo 3DS title is available',

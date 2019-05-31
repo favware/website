@@ -3,6 +3,7 @@ import { MatIconService } from '@services/mat-icon.service';
 import { SeoService } from '@services/seo.service';
 import { ASSET_BASE_PATH, TAVA_SITE } from '@util/constants';
 import { IPrimaryTile, ITavaTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 
 @Component({
   selector: 'favware-tava',
@@ -10,7 +11,7 @@ import { IPrimaryTile, ITavaTile } from '@util/interfaces';
   styleUrls: ['./tava.component.scss'],
 })
 export class TavaComponent implements OnInit {
-
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: 'Ta\'Va - Trial of the Sun God',
     subheader: 'Embark on a mythological aztec puzzle game',

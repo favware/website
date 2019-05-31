@@ -27,6 +27,7 @@ import {
   ZALGO_YARN
 } from '@util/constants';
 import { IPrimaryTile, IProjectTile, Tile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 import moment from 'moment';
 
@@ -36,7 +37,7 @@ import moment from 'moment';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: 'Developer in Web, NodeJS, Unity3D and Java',
     subheader: 'From Web design to discord bots to indie games',

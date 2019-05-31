@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SeoService } from '@services/seo.service';
 import { YAMLREADER_GITHUB, YAMLREADER_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -10,7 +11,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./yamlreader.component.scss'],
 })
 export class YamlreaderComponent implements OnInit {
-
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: '@Favware/yamlreader',
     subheader: 'Awesome minimal wrapper around js-yaml',

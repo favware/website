@@ -18,9 +18,7 @@ import { MaterialModule } from '@util/material.module';
 import { RedirectGuard } from '@util/redirectguard.guard';
 import { ClipboardModule } from 'ngx-clipboard';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
-
 import { environment } from '../environments/environment';
-
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConvertbotComponent } from './convertbot/convertbot.component';

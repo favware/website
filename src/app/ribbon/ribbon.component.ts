@@ -3,6 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { SeoService } from '@services/seo.service';
 import { DISCORD_SERVER_URL, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from '@util/constants';
 import { IPrimaryTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 import moment from 'moment';
 import { Observable } from 'rxjs';
@@ -19,6 +20,7 @@ type Node = {
   styleUrls: ['./ribbon.component.scss'],
 })
 export class RibbonComponent implements OnInit {
+  public ngForTrackBy = ngForTrackBy;
   public statsHeader = 'Statistics';
   public headerTile: IPrimaryTile = {
     header: 'Ribbon',

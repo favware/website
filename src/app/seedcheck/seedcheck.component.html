@@ -4,7 +4,7 @@
     <div class="center-text">
       <h1 class="mat-display-2 header-text header-text-shadow">{{headerTile.header}}</h1>
       <h2 class="mat-h1 header-text header-text-shadow">{{headerTile.subheader}}</h2>
-      <p *ngFor="let button of headerTile.buttons" class="header-button">
+      <p *ngFor="let button of headerTile.buttons; trackBy: ngForTrackBy" class="header-button">
         <a [href]="button.url" [rel]="button.outer ? 'noreferrer' : ''" [target]="button.outer ? '_blank' : '_self'">
           <button [color]="button.color" class="full-size-button"
                   mat-raised-button>{{button.text | uppercase}}</button>
@@ -17,7 +17,7 @@
        fxLayoutGap="0.5%">
     <div>
       <h1 class="mat-display-1 center-text">{{aboutTile.header}}</h1>
-      <p *ngFor="let section of aboutTile.text" [innerHTML]="section | markdown | ChangeATarget"
+      <p *ngFor="let section of aboutTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown | ChangeATarget"
          class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
   </div>
@@ -26,12 +26,12 @@
        fxLayoutGap="0.5%">
     <div fxFlex="40" fxFlex.xs="55">
       <h1 class="mat-display-1 text-content">{{instructionsTile.header}}</h1>
-      <p *ngFor="let section of instructionsTile.text" [innerHTML]="section | markdown | ChangeATarget"
+      <p *ngFor="let section of instructionsTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown | ChangeATarget"
          class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
     <div fxFlex="40">
       <h1 class="mat-display-1 text-content">{{faqTile.header}}</h1>
-      <p *ngFor="let section of faqTile.text" [innerHTML]="section | markdown"
+      <p *ngFor="let section of faqTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown"
          class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
   </div>
@@ -57,7 +57,7 @@
         [useMouseWheel]="carousel.useMouseWheel"
       >
         <mat-carousel-slide
-          *ngFor="let slide of slides"
+          *ngFor="let slide of slides; trackBy: ngForTrackBy"
           [hideOverlay]="carousel.hideOverlay"
           [image]="slide.url"
           [overlayColor]="carousel.overlayColor"></mat-carousel-slide>

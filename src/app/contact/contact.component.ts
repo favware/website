@@ -3,6 +3,7 @@ import { MatIconService } from '@services/mat-icon.service';
 import { SeoService } from '@services/seo.service';
 import { CONTACT_FACEBOOK, CONTACT_GITHUB, CONTACT_LINKEDIN, CONTACT_MAIL, CONTACT_REDDIT, CONTACT_TWITCH, CONTACT_TWITTER, CONTACT_YOUTUBE, DISCORD_SERVER_URL } from '@util/constants';
 import { ContactMethod, IPrimaryTile } from '@util/interfaces';
+import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
@@ -11,7 +12,7 @@ import { oneLine } from 'common-tags';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-
+  public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: 'Got questions, concerns or business inquires?',
     subheader: 'Contact me through one of these sources',
