@@ -1,18 +1,11 @@
 version: 2.1
 
-# Machine configuration
-machine:
-  node:
-    version: 11
-  npm:
-    version: 6
-
 # List of jobs
 jobs:
 
   # Bundle Testing
   test:
-    working_directory: ~/favware-website
+    working_directory: ~/favware-project-{{ .Revision }}-{{ .BuildNum }}-{{ .CheckoutKey }}-{{ epoch }}
     docker:
       - image: circleci/node:11-browsers
     steps:
@@ -94,7 +87,7 @@ jobs:
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
 
 workflows:
-  version: 2
+  version: 2.1
   build_and_deploy:
     jobs:
       - test
