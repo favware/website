@@ -1,4 +1,4 @@
-import { MatCarousel } from '@ngmodule/material-carousel';
+import { ThemePalette } from '@angular/material';
 
 type CardActions = {
   label: string;
@@ -84,7 +84,20 @@ export type JSDocJSON = {
   [propName: string]: JSDocItem[];
 };
 
-export interface IMatCarouselOptions extends MatCarousel {
+export interface IMatCarouselOptions {
+  timings: string;
+  autoplay: boolean;
+  interval: number;
+  loop: boolean;
+  hideArrows: boolean;
+  hideIndicators: boolean;
+  color: ThemePalette;
+  maxWidth: string;
+  proportion: number;
+  slides: number;
+  useKeyboard: boolean;
+  useMouseWheel: boolean;
+  orientation: 'ltr' | 'rtl';
   overlayColor: string;
   hideOverlay: boolean;
 }
