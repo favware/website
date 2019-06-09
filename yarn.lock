@@ -200,10 +200,10 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/fire@next":
-  version "5.2.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@angular/fire/-/fire-5.2.0-rc.3.tgz#4cf2b618ec3683f83232d626e3d22d42ba056602"
-  integrity sha512-L6DpJBeEQrRGar0Fzho3EP1xBnd2rvBh4Ae27++lNs7IyZkoZNCV1LRtERRsFi2aRWp0HgO69POv2crl1LAF4A==
+"@angular/fire@^5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@angular/fire/-/fire-5.2.1.tgz#4b966aaed10cda0b430c9d80769b39d08032004d"
+  integrity sha512-pS4zWhLLANzMbYVIKNtebDQKhm9+KANUDvDV6DwKP24XHzkZdvazKe1HC6uXWlf7QmDxSPFleCSBkn0tnQQzdQ==
 
 "@angular/flex-layout@^8.0.0-beta.26":
   version "8.0.0-beta.26"
