@@ -79,7 +79,7 @@
     "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "^2.0.6",
     "@types/moment-duration-format": "^2.2.2",
-    "@types/node": "^12.0.4",
+    "@types/node": "^12.0.7",
     "bufferutil": "^4.0.1",
     "codelyzer": "^5.0.1",
     "jasmine-core": "^3.4.0",
