@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import {
   ASSET_BASE_PATH,
   CATCHCALC_GITHUB_URL,
@@ -24,7 +24,9 @@ import {
   YAMLREADER_GITHUB,
   YAMLREADER_YARN,
   ZALGO_GITHUB,
-  ZALGO_YARN
+  ZALGO_YARN,
+  CREATE_DJSBOT_YARN,
+  CREATE_DJSBOT_GITHUB
 } from '@util/constants';
 import { IPrimaryTile, IProjectTile, Tile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -259,14 +261,16 @@ export class HomeComponent implements OnInit {
       },
       {
         header: {
-          avatar: `assets/icons/filler.png`,
-          imageAlt: 'TBA',
-          title: 'Something mysterious',
-          subtitle: 'Filler slot',
+          avatar: `assets/icons/create-djsbot.png`,
+          imageAlt: 'Create DJS Bot',
+          title: 'Create DJS Bot',
+          subtitle: 'yarn create djsbot',
         },
-        content: oneLine`Reserving this slot for any future project. Who knows what is next on the horizon`,
+        content: oneLine`⚡Bootstrapping CLI tool for quickly setting up a Discord bot project`,
         actions: [
-          { label: 'the void', link: '/', outer: false }
+          { label: 'yarn page', link: CREATE_DJSBOT_YARN, outer: true },
+          { label: 'website', link: '/create-djsbot', outer: false },
+          { label: 'github', link: CREATE_DJSBOT_GITHUB, outer: true }
         ],
       },
 
@@ -285,7 +289,7 @@ export class HomeComponent implements OnInit {
       }
     ],
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'Home',
     description: 'For Hearth and Home! Check out my projects here!',
     image: 'https://favware.tech/assets/og-image.png',

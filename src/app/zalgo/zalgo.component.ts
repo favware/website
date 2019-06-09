@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { ZALGO_GITHUB, ZALGO_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -39,7 +39,7 @@ export class ZalgoComponent implements OnInit {
     header: 'Usage',
     codeFile: '/assets/code/zalgo.js',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: '@Favware/zalgo',
     description: 'Unleash and banish the Zalgo Monster!',
     image: 'https://favware.tech/assets/icons/zalgo.png',

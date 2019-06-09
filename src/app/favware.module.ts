@@ -38,6 +38,7 @@ import { TavaComponent } from './tava/tava.component';
 import { UnescapeComponent } from './unescape/unescape.component';
 import { YamlreaderComponent } from './yamlreader/yamlreader.component';
 import { ZalgoComponent } from './zalgo/zalgo.component';
+import { CreateDjsBotComponentComponent } from './create-djs-bot-component/create-djs-bot-component.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     TavaComponent,
     UnescapeComponent,
     YamlreaderComponent,
-    ZalgoComponent
+    ZalgoComponent,
+    CreateDjsBotComponentComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverFavware' }),

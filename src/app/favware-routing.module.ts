@@ -7,6 +7,7 @@ import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConvertbotComponent } from './convertbot/convertbot.component';
 import { ConverterComponent } from './converter/converter.component';
+import { CreateDjsBotComponentComponent } from './create-djs-bot-component/create-djs-bot-component.component';
 import { CryptoComponent } from './crypto/crypto.component';
 import { DexaComponent } from './dexa/dexa.component';
 import { HomeComponent } from './home/home.component';
@@ -58,7 +59,7 @@ const routes: Routes = [
   },
   {
     path: 'awesome-querystring',
-    component: QuerystringComponent,
+    redirectTo: '/querystring',
   },
   {
     path: 'converter',
@@ -66,7 +67,7 @@ const routes: Routes = [
   },
   {
     path: 'awesome-converter',
-    component: ConverterComponent,
+    redirectTo: '/converter',
   },
   {
     path: 'milkylint',
@@ -74,7 +75,7 @@ const routes: Routes = [
   },
   {
     path: 'milky-tslint',
-    component: MilkylintComponent,
+    redirectTo: '/milkylint',
   },
   {
     path: 'yamlreader',
@@ -82,11 +83,11 @@ const routes: Routes = [
   },
   {
     path: 'awesome-yaml-reader',
-    component: YamlreaderComponent,
+    redirectTo: '/yamlreader',
   },
   {
     path: 'awesome-yamlreader',
-    component: YamlreaderComponent,
+    redirectTo: '/yamlreader',
   },
   {
     path: 'zalgo',
@@ -94,7 +95,7 @@ const routes: Routes = [
   },
   {
     path: 'awesome-zalgo',
-    component: ZalgoComponent,
+    redirectTo: '/zalgo',
   },
   {
     path: 'crypto',
@@ -102,7 +103,27 @@ const routes: Routes = [
   },
   {
     path: 'awesome-crypto',
-    component: CryptoComponent,
+    redirectTo: '/crypto',
+  },
+  {
+    path: 'create-djsbot',
+    component: CreateDjsBotComponentComponent,
+  },
+  {
+    path: 'create-discordbot',
+    redirectTo: '/create-djsbot',
+  },
+  {
+    path: 'create-bot',
+    redirectTo: '/create-djsbot',
+  },
+  {
+    path: 'djsbot',
+    redirectTo: '/create-djsbot',
+  },
+  {
+    path: 'discordbot',
+    redirectTo: '/create-djsbot',
   },
   {
     path: 'contact',

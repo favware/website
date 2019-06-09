@@ -2,6 +2,7 @@ import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import 'hammerjs';
 import 'prismjs';
+import 'prismjs/components/prism-bash.min.js';
 import 'prismjs/components/prism-javascript.min.js';
 import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/components/prism-yaml.min.js';

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL } from '@util/constants';
 import { IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -46,7 +46,7 @@ export class DexaComponent implements OnInit {
             combining "Dex" with "Alexa". Dexa is made for
             [the Alexa devices from Amazon](https://www.amazon.com/Amazon-Echo-And-Alexa-Devices/b?ie=UTF8&node=9818047011).`],
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'Dexa',
     description: 'Turn your Alexa device into your own personal PokéDex',
     image: 'https://favware.tech/assets/icons/dexa.png',

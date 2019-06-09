@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { UNESCAPE_GITHUB, UNESCAPE_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -61,7 +61,7 @@ export class UnescapeComponent implements OnInit {
   `
     ],
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'Unescape ES6',
     description: 'Convert HTML entities to HTML characters. For example "&amp;" converts to &',
     image: 'https://favware.tech/assets/icons/unescape.png',

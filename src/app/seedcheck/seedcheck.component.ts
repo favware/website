@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, SEEDCHECKER_GITHUB_URL } from '@util/constants';
 import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -91,7 +91,7 @@ export class SeedcheckComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'SEEDChecker',
     description: '3DS SEEDChecking utility',
     image: 'https://favware.tech/assets/icons/seedcheck-share.png',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatIconService } from '@services/mat-icon.service';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { CONTACT_FACEBOOK, CONTACT_GITHUB, CONTACT_LINKEDIN, CONTACT_MAIL, CONTACT_REDDIT, CONTACT_TWITCH, CONTACT_TWITTER, CONTACT_YOUTUBE, DISCORD_SERVER_URL } from '@util/constants';
 import { ContactMethod, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
     { logo: 'mat-twitch-icon', link: CONTACT_TWITCH, color: 'twitch', contact: 'watch my twitch streams' },
     { logo: 'mat-youtube-icon', link: CONTACT_YOUTUBE, color: 'youtube', contact: 'subscribe to me on youtube' }
   ];
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'Favware Contact',
     description: 'Have questions, support requests or just want to get in contact with Favware? Go here!',
     image: 'https://favware.tech/assets/icons/contact.png',

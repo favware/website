@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { DISCORD_SERVER_URL, RIBBON_GITHUB_URL, RIBBON_INVITE_URL } from '@util/constants';
 import { IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -55,7 +55,7 @@ export class RibbonComponent implements OnInit {
             Ribbon features commands from searching the web, moderating your server to streaming music and a lot more.
             You can check a more extensive list of commands below.`],
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'Ribbon',
     description: 'Amazing multifunctional Discord bot that can do anything you want anywhere you want',
     image: 'https://favware.tech/assets/icons/ribbon.png',

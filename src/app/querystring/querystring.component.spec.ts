@@ -11,8 +11,8 @@ describe('QuerystringComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [TestModule],
-      declarations: [QuerystringComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      declarations: [QuerystringComponent],
     })
       .compileComponents();
   }));

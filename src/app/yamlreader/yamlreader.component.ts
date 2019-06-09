@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { YAMLREADER_GITHUB, YAMLREADER_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -43,7 +43,7 @@ export class YamlreaderComponent implements OnInit {
     header: 'YAML file',
     codeFile: '/assets/code/awesomeyaml.yml',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: '@Favware/yamlreader',
     description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
     image: 'https://favware.tech/assets/icons/yamlreader.png',

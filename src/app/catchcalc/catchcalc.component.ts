@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL } from '@util/constants';
 import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -93,7 +93,7 @@ export class CatchcalcComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'CatchCalc',
     description: 'Gotta Catch Em\' All!',
     image: 'https://favware.tech/assets/icons/catchcalc.png',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL } from '@util/constants';
 import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -80,7 +80,7 @@ export class ConvertbotComponent implements OnInit {
     useMouseWheel: true,
     orientation: 'ltr',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'ConvertBot',
     description: 'Unit convertion tool written in C#',
     image: 'https://favware.tech/assets/icons/convertbot-share.png',

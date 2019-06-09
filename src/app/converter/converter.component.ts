@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { CONVERTER_GITHUB, CONVERTER_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -39,7 +39,7 @@ export class ConverterComponent implements OnInit {
     header: 'Usage',
     codeFile: '/assets/code/converter.js',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: '@Favware/Converter',
     description: 'Awesome and typesafe unit converter, supports many different systems of units',
     image: 'https://favware.tech/assets/icons/converter.png',

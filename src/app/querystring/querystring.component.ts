@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { QUERYSTRING_GITHUB, QUERYSTRING_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -43,7 +43,7 @@ export class QuerystringComponent implements OnInit {
     header: 'Usage - Parse',
     codeFile: '/assets/code/querystring.parse.js',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: '@Favware/Querystring',
     description: 'Querystring that is robust in its working yet remains awesome to TypeScript users',
     image: 'https://favware.tech/assets/icons/querystring.png',

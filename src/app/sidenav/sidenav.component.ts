@@ -1,6 +1,6 @@
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { SidenavLink } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
@@ -18,7 +18,7 @@ export class SidenavComponent implements OnInit {
   public isSidenavClosable = true;
   public isSmall = false;
 
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'Home',
     description: 'For Hearth and Home! Check out my projects here!',
     image: 'https://favware.tech/assets/og-image.png',
@@ -65,6 +65,11 @@ export class SidenavComponent implements OnInit {
       routerLink: '/tava',
       label: 'Ta\'Va',
       image: 'assets/icons/tava.png',
+    },
+    {
+      routerLink: '/create-djsbot',
+      label: 'Create DJS Bot',
+      image: 'assets/icons/create-djsbot.png',
     },
     {
       routerLink: '/unescape',

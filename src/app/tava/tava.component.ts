@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatIconService } from '@services/mat-icon.service';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, TAVA_SITE } from '@util/constants';
 import { IPrimaryTile, ITavaTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -119,7 +119,7 @@ export class TavaComponent implements OnInit {
       description: '',
     }
   ];
-  public metadata = {
+  public metadata: SeoTags = {
     title: 'Ta\'Va - Trial of the Sun God',
     description: 'Mythological aztec puzzle game',
     image: 'https://favware.tech/assets/icons/tava-share.png',

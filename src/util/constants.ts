@@ -37,6 +37,9 @@ export const ZALGO_GITHUB = 'https://www.github.com/favware/zalgo';
 export const CRYPTO_YARN = 'https://yarnpkg.com/en/package/@favware/crypto';
 export const CRYPTO_GITHUB = 'https://www.github.com/favware/crypto';
 
+export const CREATE_DJSBOT_YARN = 'https://yarnpkg.com/en/package/create-djsbot';
+export const CREATE_DJSBOT_GITHUB = 'https://www.github.com/favware/create-djsbot';
+
 export const CONTACT_FACEBOOK = 'https://www.facebook.com/messages/t/FavnaX';
 export const CONTACT_GITHUB = 'https://www.github.com/favware';
 export const CONTACT_LINKEDIN = 'https://www.linkedin.com/in/jeroenclaassensict';

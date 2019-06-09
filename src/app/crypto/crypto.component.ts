@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SeoService } from '@services/seo.service';
+import { SeoService, SeoTags } from '@services/seo.service';
 import { CRYPTO_GITHUB, CRYPTO_YARN } from '@util/constants';
 import { ICodeTile, IPrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -39,7 +39,7 @@ export class CryptoComponent implements OnInit {
     header: 'Usage',
     codeFile: '/assets/code/crypto.js',
   };
-  public metadata = {
+  public metadata: SeoTags = {
     title: '@favware/crypto',
     description: 'Easily generate a random cryptographic in NodeJS!',
     image: 'https://favware.tech/assets/icons/crypto.png',

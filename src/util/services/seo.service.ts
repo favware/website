@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { COMMON_EMAIL } from '@util/constants';
 
-type seoTags = {
+export type SeoTags = {
   title: string;
   description: string;
   image: string;
@@ -20,7 +20,7 @@ export class SeoService {
   constructor (private meta: Meta, private titleService: Title) {
   }
 
-  public generateTags (tags: seoTags) {
+  public generateTags (tags: SeoTags) {
     tags = {
       title: '',
       description: 'For Hearth and Home! Check out my projects here!',
