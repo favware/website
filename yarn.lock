@@ -522,10 +522,10 @@
     lodash.camelcase "^4.3.0"
     protobufjs "^6.8.6"
 
-"@ngmodule/material-carousel@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@ngmodule/material-carousel/-/material-carousel-0.3.1.tgz#4aef9da3b764cf0387da8b021660cb14bdb702b9"
-  integrity sha512-MS8isGWGpDrHqh4Xi5M5e42lsryZLxNEKaQc6ZaPd7HUueSobNIM53uXcY2PAVKBEsBu3Qghpw5ZKE2j9BnoMA==
+"@ngmodule/material-carousel@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@ngmodule/material-carousel/-/material-carousel-0.4.0.tgz#a17cd4769f2ec4add21ef4aa6d53800388ac1953"
+  integrity sha512-yaxFxMFvqz7yXx3Hsbh0tuqk9Zd/wOS25Qizw6lgB5a6PEz0PhFdhJ9bDMOuQLxlEjENAAJE+VXwB/0XH7I+gw==
   dependencies:
     tslib "^1.9.0"
 

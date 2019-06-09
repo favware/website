@@ -46,7 +46,7 @@
     "@angular/pwa": "^0.800.1",
     "@angular/router": "^8.0.0",
     "@angular/service-worker": "^8.0.0",
-    "@ngmodule/material-carousel": "^0.3.1",
+    "@ngmodule/material-carousel": "^0.4.0",
     "@nguniversal/express-engine": "next",
     "@nguniversal/module-map-ngfactory-loader": "next",
     "common-tags": "^1.8.0",
