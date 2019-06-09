@@ -74,7 +74,7 @@
     "@angular/language-service": "^8.0.0",
     "@favware/tslint-config": "^1.0.1",
     "@firebase/app-types": "^0.4.0",
-    "@firebase/util": "^0.2.17",
+    "@firebase/util": "^0.2.18",
     "@types/common-tags": "^1.8.0",
     "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "^2.0.6",
