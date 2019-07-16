@@ -21,6 +21,11 @@ h1.app-name {
 
 .sidenav-container {
   flex: 1;
+
+  > .mat-drawer-backdrop.mat-drawer-shown {
+    background-color: rgba(23, 23, 23, 0.89);
+  }
+
 }
 
 .mat-drawer {
@@ -38,4 +43,20 @@ h1.app-name {
 
 .is-mobile .sidenav-container {
   flex: 1 0 auto;
+}
+
+:host(.mat-drawer-backdrop.ng-star-inserted.mat-drawer-shown) {
+  background-color: rgba(23, 23, 23, 0.89);
+}
+
+:host-context(.mat-drawer-backdrop.ng-star-inserted.mat-drawer-shown) {
+  background-color: rgba(23, 23, 23, 0.89);
+}
+
+:host(.sidenav-container > .mat-drawer-backdrop.ng-star-inserted.mat-drawer-shown) {
+  background-color: rgba(23, 23, 23, 0.89);
+}
+
+:host-context(.sidenav-container > .mat-drawer-backdrop.ng-star-inserted.mat-drawer-shown) {
+  background-color: rgba(23, 23, 23, 0.89);
 }

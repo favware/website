@@ -15,7 +15,6 @@ export class SidenavComponent implements OnInit {
   public sidenavMode = 'side';
   public isFixedInViewport = false;
   public isSidenavOpen = false;
-  public isSidenavClosable = true;
   public isSmall = false;
 
   public metadata: SeoTags = {
@@ -123,12 +122,10 @@ export class SidenavComponent implements OnInit {
         this.isSmall = state.matches;
         if (state.matches) {
           this.isFixedInViewport = true;
-          this.isSidenavClosable = true;
           this.isSidenavOpen = false;
           this.sidenavMode = 'over';
         } else {
           this.isFixedInViewport = false;
-          this.isSidenavClosable = false;
           this.isSidenavOpen = true;
           this.sidenavMode = 'side';
         }
