@@ -24,6 +24,8 @@
 
 ## Buy me a donut
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/favware/website.svg)](https://greenkeeper.io/)
+
 This project is open source and always will be, even if I don't get donations. That said, I know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!
 
 I accept donations through PayPal, BitCoin, Ethereum and LiteCoin. You can use the buttons below to donate through your method of choice
