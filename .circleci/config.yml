@@ -7,11 +7,11 @@ aliases:
 job_common: &job_common
   working_directory: ~/favware
   docker:
-    - image: circleci/node:11-browsers
+    - image: circleci/node:10-browsers
 
 run_yarn: &run_yarn
   name: Install yarn packages
-  command: yarn install --frozen-lockfile --ignore-engines
+  command: yarn install --frozen-lockfile
 
 save_git: &save_git
   save_cache:
@@ -97,7 +97,7 @@ commands:
         <<: *run_yarn
     - run:
         name: Build Firebase
-        command: pushd functions && yarn --ignore-engines && popd
+        command: pushd functions && yarn && popd
     - run:
         name: Building
         command: |
@@ -115,10 +115,10 @@ commands:
     - <<: *restore_dist
     - run:
         name: Build Firebase
-        command: pushd functions && yarn --ignore-engines && popd
+        command: pushd functions && yarn && popd
     - run:
         name: Install Firebase Tools
-        command: yarn add firebase-tools --ignore-engines
+        command: yarn add firebase-tools
     - run:
         name: Deploy Firebase
         command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
