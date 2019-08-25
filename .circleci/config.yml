@@ -1,81 +1,111 @@
 version: 2.1
 
-# List of jobs
-jobs:
+aliases:
+  - &checkout
+    checkout
 
-  # Bundle Testing
-  test:
-    working_directory: ~/favware
-    docker:
-      - image: circleci/node:11-browsers
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile --ignore-engines
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-            - node_modules
-      - run:
-          name: Linting
-          command: yarn lint
-      - run:
-          name: Testing
-          command: yarn test --no-watch
+job_common: &job_common
+  working_directory: ~/favware
+  docker:
+    - image: circleci/node:11-browsers
 
-  # Firebase Build
-  build:
-    working_directory: ~/favware
-    docker:
-      - image: circleci/node:11
-    steps:
-      - checkout
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile --ignore-engines
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-            - node_modules
-      - run:
-          name: Build Firebase
-          command: pushd functions && yarn --ignore-engines && popd
-      - run:
-          name: Building
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                yarn build:ssr
-            else
-                yarn build
-            fi
-      # Cache the dist folder for the deploy job
-      - save_cache:
-          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
-          paths:
-            - dist
+run_yarn: &run_yarn
+  name: Install yarn packages
+  command: yarn install --frozen-lockfile --ignore-engines
 
-  # Firebase Deploy
-  deploy:
-    working_directory: ~/favware
-    docker:
-      - image: circleci/node:11
+save_git: &save_git
+  save_cache:
+    name: Save Git Cache
+    key: git-code-{{ .Revision }}
+    paths:
+      - .git
+      - ~/.ssh
+
+save_yarn: &save_yarn
+  save_cache:
+    name: Save Yarn Package Cache
+    key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+    paths:
+      - ~/.cache/yarn
+      - node_modules
+
+save_dist: &save_dist
+  save_cache:
+    name: Save dist folder
+    key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+    paths:
+      - dist
+
+restore_git: &restore_git
+  restore_cache:
+    name: Restore Git Cache
+    key: git-code-{{ .Revision }}
+
+restore_yarn: &restore_yarn
+  restore_cache:
+    name: Restore Yarn Package Cache
+    key: yarn-packages-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+restore_dist: &restore_dist
+  restore_cache:
+    name: Restore dist folder
+    key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+
+commands:
+  greenkeeper_update:
     steps:
-      - checkout
-      - restore_cache:
-          key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+    - *checkout
+    - <<: [*restore_git, *restore_yarn]
+    - run:
+        name: update lockfile
+        command:
+          export PATH=$PATH:$(yarn global bin) &&
+          yarn global add greenkeeper-lockfile@2 &&
+          greenkeeper-lockfile-update
+    - run:
+        name: Install dependencies
+        command: yarn install --frozen-lockfile
+    - <<: [*save_yarn, *save_git]
+  linting:
+    steps:
+    - *checkout
+    - <<: [*restore_git, *restore_yarn]
+    - run:
+        <<: *run_yarn
+    - run:
+        name: Run Linting
+        command: yarn lint
+  testing:
+    steps:
+    - *checkout
+    - <<: [*restore_git, *restore_yarn]
+    - run:
+        <<: *run_yarn
+    - run:
+        name: Run Tests
+        command: yarn test --no-watch
+  building:
+    steps:
+    - *checkout
+    - <<: [*restore_git, *restore_yarn]
+    - run:
+        <<: *run_yarn
+    - run:
+        name: Build Firebase
+        command: pushd functions && yarn --ignore-engines && popd
+    - run:
+        name: Building
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              yarn build:ssr
+          else
+              yarn build
+          fi
+    - <<: *save_dist
+  deployment:
+    steps:
+      - *checkout
+      - <<: [*restore_git, *restore_yarn, *restore_dist]
       - run:
           name: Build Firebase
           command: pushd functions && yarn --ignore-engines && popd
@@ -85,15 +115,64 @@ jobs:
       - run:
           name: Deploy Firebase
           command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+  greenkeeper_upload:
+    steps:
+    - *checkout
+    - <<: [*restore_git, *restore_yarn]
+    - run:
+        name: Upload lockfile
+        command:
+          export PATH=$PATH:$(yarn global bin) &&
+          yarn global add greenkeeper-lockfile@2 &&
+          greenkeeper-lockfile-update
+
+jobs:
+  lockfile_update:
+    <<: *job_common
+    steps:
+      - greenkeeper_update
+  test:
+    <<: *job_common
+    steps:
+      - testing
+  lint:
+    <<: *job_common
+    steps:
+      - linting
+  build:
+    <<: *job_common
+    steps:
+      - building
+  deploy:
+    <<: *job_common
+    steps:
+      - deployment
+  lockfile_upload:
+    <<: *job_common
+    steps:
+      - greenkeeper_upload
 
 workflows:
   version: 2.1
   build_and_deploy:
     jobs:
-      - test
+      - lockfile_update
+      - test:
+          requires:
+            - lockfile_update
+      - lint:
+          requires:
+            - lockfile_update
       - build:
           requires:
+            - lint
             - test
+      - lockfile_upload:
+          requires:
+            - lockfile_update
+            - lint
+            - test
+            - build
       - deploy:
           requires:
             - build
