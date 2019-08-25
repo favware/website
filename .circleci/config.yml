@@ -32,7 +32,7 @@ save_yarn: &save_yarn
 save_dist: &save_dist
   save_cache:
     name: Save dist folder
-    key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+    key: dist-latest
     paths:
       - dist
 
@@ -49,13 +49,14 @@ restore_yarn: &restore_yarn
 restore_dist: &restore_dist
   restore_cache:
     name: Restore dist folder
-    key: v1-dist-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_SHA1 }}
+    key: dist-latest
 
 commands:
   greenkeeper_update:
     steps:
     - *checkout
-    - <<: [*restore_git, *restore_yarn]
+    - <<: *restore_git
+    - <<: *restore_yarn
     - run:
         name: update lockfile
         command:
@@ -69,7 +70,8 @@ commands:
   linting:
     steps:
     - *checkout
-    - <<: [*restore_git, *restore_yarn]
+    - <<: *restore_git
+    - <<: *restore_yarn
     - run:
         <<: *run_yarn
     - run:
@@ -78,7 +80,8 @@ commands:
   testing:
     steps:
     - *checkout
-    - <<: [*restore_git, *restore_yarn]
+    - <<: *restore_git
+    - <<: *restore_yarn
     - run:
         <<: *run_yarn
     - run:
@@ -87,7 +90,8 @@ commands:
   building:
     steps:
     - *checkout
-    - <<: [*restore_git, *restore_yarn]
+    - <<: *restore_git
+    - <<: *restore_yarn
     - run:
         <<: *run_yarn
     - run:
@@ -105,7 +109,9 @@ commands:
   deployment:
     steps:
       - *checkout
-      - <<: [*restore_git, *restore_yarn, *restore_dist]
+      - <<: *restore_git
+      - <<: *restore_yarn
+      - <<: *restore_dist
       - run:
           name: Build Firebase
           command: pushd functions && yarn --ignore-engines && popd
@@ -118,7 +124,8 @@ commands:
   greenkeeper_upload:
     steps:
     - *checkout
-    - <<: [*restore_git, *restore_yarn]
+    - <<: *restore_git
+    - <<: *restore_yarn
     - run:
         name: Upload lockfile
         command:
