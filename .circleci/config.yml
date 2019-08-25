@@ -66,7 +66,8 @@ commands:
     - run:
         name: Install dependencies
         command: yarn install --frozen-lockfile
-    - <<: [*save_yarn, *save_git]
+    - <<: *save_yarn
+    - <<: *save_git
   linting:
     steps:
     - *checkout
@@ -108,19 +109,19 @@ commands:
     - <<: *save_dist
   deployment:
     steps:
-      - *checkout
-      - <<: *restore_git
-      - <<: *restore_yarn
-      - <<: *restore_dist
-      - run:
-          name: Build Firebase
-          command: pushd functions && yarn --ignore-engines && popd
-      - run:
-          name: Install Firebase Tools
-          command: yarn add firebase-tools --ignore-engines
-      - run:
-          name: Deploy Firebase
-          command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
+    - *checkout
+    - <<: *restore_git
+    - <<: *restore_yarn
+    - <<: *restore_dist
+    - run:
+        name: Build Firebase
+        command: pushd functions && yarn --ignore-engines && popd
+    - run:
+        name: Install Firebase Tools
+        command: yarn add firebase-tools --ignore-engines
+    - run:
+        name: Deploy Firebase
+        command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
   greenkeeper_upload:
     steps:
     - *checkout
