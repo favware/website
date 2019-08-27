@@ -1,5 +1,4 @@
 <div align="center">
-
   <p>
   <a href="https://favware.tech/ribbon"><img src="https://storage.googleapis.com/data-sunlight-146313.appspot.com/website-project-icons/home.png" height="200" alt="logo"/></a>
   </p>
@@ -9,22 +8,24 @@
 <h3> Angular files for <a href="https://favware.tech">my website</a></h3>
   </p>
 
-  <p>
-  <img src="https://img.shields.io/badge/angular-powered-brightgreen.svg?logo=angular&colorB=DD0031&style=flat-square" alt="Angular Powered" title="Angular Powered" /><!--
-  --><a href="https://github.com/favware/website/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPLv3-brightgreen.svg?logo=read-the-docs&colorB=8CA1AF&style=flat-square&link=https://twitter.com/Favna_/follow" alt="License Button" title="License Button"></a><!--
---><a href="https://twitter.com/Favna_/follow"><img src="https://img.shields.io/badge/twitter-follow-brightgreen.svg?logo=twitter&colorB=1DA1F2&style=flat-square&link=https://twitter.com/Favna_/follow" alt="Follow me on Twitter" title="Follow me on Twitter" /></a><!--
-  --><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34"><img src="https://img.shields.io/badge/paypal-donate-brightgreen.svg?logo=paypal&colorB=00457C&style=flat-square&link=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34" alt="Donate with PayPal" title="Donate with PayPal" /></a><!--
-  --><a href="https://www.patreon.com/bePatron?u=9336537"><img src="https://img.shields.io/badge/patreon-donate-brightgreen.svg?logo=patreon&colorB=F96854&style=flat-square&link=https://www.patreon.com/bePatron?u=9336537" alt="Become a Patron" title="Become a Patron" /></a>
-  </p>
-
-<p>
-  <a href="https://favware.tech/redirect/server"><img src="https://discordapp.com/api/guilds/512303595966824458/widget.png?style=banner2" alt="Join Discord Server"/></a>
-</p>
 </div>
 
-## Buy me a donut
+---
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/favware/website.svg)](https://greenkeeper.io/)
+**Project Status**
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/favware/website.svg?style=flat-square)](https://greenkeeper.io/)
+[![GitHub](https://img.shields.io/github/license/favware/website?logo=github&style=flat-square)](https://github.com/favware/website/blob/master/LICENSE.md)
+[![CircleCI](https://img.shields.io/circleci/build/github/favware/website?logo=circleci&style=flat-square)](https://circleci.com/gh/favware/website/tree/master)
+
+**Social Media and Donations**
+
+[![Join Discord server](https://img.shields.io/discord/512303595966824458?color=697EC4&label=Join%20Discord%20Server&logo=discord&logoColor=FDFEFE&style=flat-square)](https://favware.tech/redirect/server)
+[![Twitter Follow](https://img.shields.io/twitter/follow/favna_?label=Follow%20@Favna_&logo=twitter&colorB=1DA1F2&style=flat-square)](https://twitter.com/Favna_/follow)
+[![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://www.patreon.com/bePatron?u=9336537)](https://www.patreon.com/bePatron?u=9336537)
+[![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)](https://www.patreon.com/bePatron?u=9336537)
+
+## Buy me a donut
 
 This project is open source and always will be, even if I don't get donations. That said, I know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!
 
