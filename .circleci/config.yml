@@ -4,10 +4,15 @@ aliases:
   - &checkout
     checkout
 
-job_common: &job_common
+common_config: &common_config
   working_directory: ~/favware
   docker:
     - image: circleci/node:10-browsers
+
+deploy_config: &deploy_config
+  working_directory: ~/favware
+  docker:
+    - image: circleci/node:8
 
 run_yarn: &run_yarn
   name: Install yarn packages
@@ -93,19 +98,19 @@ commands:
 
 jobs:
   test:
-    <<: *job_common
+    <<: *common_config
     steps:
       - testing
   lint:
-    <<: *job_common
+    <<: *common_config
     steps:
       - linting
   build:
-    <<: *job_common
+    <<: *common_config
     steps:
       - building
   deploy:
-    <<: *job_common
+    <<: *deploy_config
     steps:
       - deployment
 
