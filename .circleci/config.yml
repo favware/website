@@ -7,9 +7,9 @@ aliases:
 main_flow_config: &main_flow_config
   working_directory: ~/favware
   docker:
-    - image: circleci/node:10-browsers
+    - image: circleci/node:12-browsers
 
-build_and_deploy_config: &build_and_deploy_config
+deploy_config: &deploy_config
   working_directory: ~/favware
   docker:
     - image: circleci/node:8
@@ -106,11 +106,11 @@ jobs:
     steps:
       - linting
   build:
-    <<: *build_and_deploy_config
+    <<: *main_flow_config
     steps:
       - building
   deploy:
-    <<: *build_and_deploy_config
+    <<: *deploy_config
     steps:
       - deployment
 
