@@ -13,14 +13,6 @@ run_yarn: &run_yarn
   name: Install yarn packages
   command: yarn install --frozen-lockfile
 
-save_git: &save_git
-  save_cache:
-    name: Save Git Cache
-    key: git-code-{{ .Revision }}
-    paths:
-      - .git
-      - ~/.ssh
-
 save_yarn: &save_yarn
   save_cache:
     name: Save Yarn Package Cache
@@ -36,11 +28,6 @@ save_dist: &save_dist
     paths:
       - dist
 
-restore_git: &restore_git
-  restore_cache:
-    name: Restore Git Cache
-    key: git-code-{{ .Revision }}
-
 restore_yarn: &restore_yarn
   restore_cache:
     name: Restore Yarn Package Cache
@@ -52,36 +39,19 @@ restore_dist: &restore_dist
     key: dist-latest
 
 commands:
-  greenkeeper_update:
-    steps:
-    - *checkout
-    - <<: *restore_git
-    - <<: *restore_yarn
-    - run:
-        name: update lockfile
-        command:
-          export PATH=$PATH:$(yarn global bin) &&
-          yarn global add greenkeeper-lockfile@2 &&
-          greenkeeper-lockfile-update
-    - run:
-        name: Install dependencies
-        command: yarn install --frozen-lockfile
-    - <<: *save_yarn
-    - <<: *save_git
   linting:
     steps:
     - *checkout
-    - <<: *restore_git
     - <<: *restore_yarn
     - run:
         <<: *run_yarn
     - run:
         name: Run Linting
         command: yarn lint
+    - <<: *save_yarn
   testing:
     steps:
     - *checkout
-    - <<: *restore_git
     - <<: *restore_yarn
     - run:
         <<: *run_yarn
@@ -91,7 +61,6 @@ commands:
   building:
     steps:
     - *checkout
-    - <<: *restore_git
     - <<: *restore_yarn
     - run:
         <<: *run_yarn
@@ -110,7 +79,6 @@ commands:
   deployment:
     steps:
     - *checkout
-    - <<: *restore_git
     - <<: *restore_yarn
     - <<: *restore_dist
     - run:
@@ -122,23 +90,8 @@ commands:
     - run:
         name: Deploy Firebase
         command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
-  greenkeeper_upload:
-    steps:
-    - *checkout
-    - <<: *restore_git
-    - <<: *restore_yarn
-    - run:
-        name: Upload lockfile
-        command:
-          export PATH=$PATH:$(yarn global bin) &&
-          yarn global add greenkeeper-lockfile@2 &&
-          greenkeeper-lockfile-update
 
 jobs:
-  lockfile_update:
-    <<: *job_common
-    steps:
-      - greenkeeper_update
   test:
     <<: *job_common
     steps:
@@ -155,32 +108,17 @@ jobs:
     <<: *job_common
     steps:
       - deployment
-  lockfile_upload:
-    <<: *job_common
-    steps:
-      - greenkeeper_upload
 
 workflows:
   version: 2.1
   build_and_deploy:
     jobs:
-      - lockfile_update
-      - test:
-          requires:
-            - lockfile_update
-      - lint:
-          requires:
-            - lockfile_update
+      - test
+      - lint
       - build:
           requires:
             - lint
             - test
-      - lockfile_upload:
-          requires:
-            - lockfile_update
-            - lint
-            - test
-            - build
       - deploy:
           requires:
             - build
