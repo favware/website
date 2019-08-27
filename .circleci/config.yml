@@ -4,19 +4,19 @@ aliases:
   - &checkout
     checkout
 
-lint_and_test: &lint_and_test
+main_flow_config: &main_flow_config
   working_directory: ~/favware
   docker:
     - image: circleci/node:10-browsers
 
-build_and_deploy_config: &build_and_deploy_config
+deploy_config: &deploy_config
   working_directory: ~/favware
   docker:
-    - image: circleci/node:8-browsers
+    - image: circleci/node:8
 
 run_yarn: &run_yarn
   name: Install yarn packages
-  command: yarn install --frozen-lockfile
+  command: yarn install --frozen-lockfile --ignore-engines
 
 save_yarn: &save_yarn
   save_cache:
@@ -88,29 +88,29 @@ commands:
     - <<: *restore_dist
     - run:
         name: Build Firebase
-        command: pushd functions && yarn && popd
+        command: pushd functions && yarn --ignore-engines && popd
     - run:
         name: Install Firebase Tools
-        command: yarn add firebase-tools
+        command: yarn add firebase-tools --ignore-engines
     - run:
         name: Deploy Firebase
         command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
 
 jobs:
   test:
-    <<: *lint_and_test
+    <<: *main_flow_config
     steps:
       - testing
   lint:
-    <<: *lint_and_test
+    <<: *main_flow_config
     steps:
       - linting
   build:
-    <<: *build_and_deploy_config
+    <<: *main_flow_config
     steps:
       - building
   deploy:
-    <<: *build_and_deploy_config
+    <<: *deploy_config
     steps:
       - deployment
 
