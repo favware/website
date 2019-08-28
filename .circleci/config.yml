@@ -87,6 +87,12 @@ commands:
     - <<: *restore_yarn
     - <<: *restore_dist
     - run:
+        name: Rebuild NPM
+        command: npm rebuild
+    - run:
+        name: Install with NPM
+        command: npm install
+    - run:
         name: Build Firebase
         command: pushd functions && yarn --ignore-engines && popd
     - run:
