@@ -16,7 +16,7 @@ build_and_deploy_config: &build_and_deploy_config
 
 run_yarn: &run_yarn
   name: Install yarn packages
-  command: yarn install --ignore-engines
+  command: yarn install --frozen-lockfile --ignore-engines
 
 save_yarn: &save_yarn
   save_cache:
