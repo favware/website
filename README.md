@@ -14,7 +14,6 @@
 
 **Project Status**
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/favware/website.svg?style=flat-square)](https://greenkeeper.io/)
 [![GitHub](https://img.shields.io/github/license/favware/website?logo=github&style=flat-square)](https://github.com/favware/website/blob/master/LICENSE.md)
 [![CircleCI](https://img.shields.io/circleci/build/github/favware/website?logo=circleci&style=flat-square)](https://circleci.com/gh/favware/website/tree/master)
 
