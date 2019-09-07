@@ -32,21 +32,21 @@
     "up": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
-    "@angular/animations": "8.2.4",
+    "@angular/animations": "8.2.5",
     "@angular/cdk": "8.1.4",
-    "@angular/common": "8.2.4",
-    "@angular/compiler": "8.2.4",
-    "@angular/core": "8.2.4",
+    "@angular/common": "8.2.5",
+    "@angular/compiler": "8.2.5",
+    "@angular/core": "8.2.5",
     "@angular/fire": "5.2.1",
     "@angular/flex-layout": "8.0.0-beta.27",
-    "@angular/forms": "8.2.4",
+    "@angular/forms": "8.2.5",
     "@angular/material": "8.1.4",
-    "@angular/platform-browser": "8.2.4",
-    "@angular/platform-browser-dynamic": "8.2.4",
-    "@angular/platform-server": "8.2.4",
+    "@angular/platform-browser": "8.2.5",
+    "@angular/platform-browser-dynamic": "8.2.5",
+    "@angular/platform-server": "8.2.5",
     "@angular/pwa": "0.803.3",
-    "@angular/router": "8.2.4",
-    "@angular/service-worker": "8.2.4",
+    "@angular/router": "8.2.5",
+    "@angular/service-worker": "8.2.5",
     "@ngmodule/material-carousel": "0.5.0",
     "@nguniversal/express-engine": "8.1.1",
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
@@ -71,7 +71,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "0.803.3",
     "@angular/cli": "8.3.3",
-    "@angular/compiler-cli": "8.2.4",
+    "@angular/compiler-cli": "8.2.5",
     "@angular/language-service": "8.2.5",
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
@@ -119,7 +119,7 @@
   },
   "lint-staged": {
     "*.{js,ts,html,scss}": [
-      "yarn lint",
+      "ng lint",
       "git add"
     ]
   },

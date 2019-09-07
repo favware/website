@@ -25,7 +25,6 @@ h1.app-name {
   > .mat-drawer-backdrop.mat-drawer-shown {
     background-color: rgba(23, 23, 23, 0.89);
   }
-
 }
 
 .mat-drawer {
@@ -43,6 +42,23 @@ h1.app-name {
 
 .is-mobile .sidenav-container {
   flex: 1 0 auto;
+}
+
+.sidenav-spacer {
+  flex: 1 1 auto;
+}
+
+.link-button:visited {
+  color: white;
+}
+
+.link-button:link {
+  color: white;
+}
+
+.link-button svg {
+  color: green;
+  fill: rgba(0,0,0,0);
 }
 
 :host(.mat-drawer-backdrop.ng-star-inserted.mat-drawer-shown) {

@@ -23,6 +23,7 @@ import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConvertbotComponent } from './convertbot/convertbot.component';
 import { ConverterComponent } from './converter/converter.component';
+import { CreateDjsBotComponentComponent } from './create-djs-bot-component/create-djs-bot-component.component';
 import { CryptoComponent } from './crypto/crypto.component';
 import { DexaDocsTableComponent } from './dexa-docs-table/dexa-docs-table.component';
 import { DexaComponent } from './dexa/dexa.component';
@@ -38,7 +39,6 @@ import { TavaComponent } from './tava/tava.component';
 import { UnescapeComponent } from './unescape/unescape.component';
 import { YamlreaderComponent } from './yamlreader/yamlreader.component';
 import { ZalgoComponent } from './zalgo/zalgo.component';
-import { CreateDjsBotComponentComponent } from './create-djs-bot-component/create-djs-bot-component.component';
 
 @NgModule({
   declarations: [

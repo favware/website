@@ -1,6 +1,8 @@
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
+import { MatIconService } from '@services/mat-icon.service';
 import { SeoService, SeoTags } from '@services/seo.service';
+import { DISCORD_SERVER_URL, GITHUB_PROFILE, TWITTER_PROFILE } from '@util/constants';
 import { SidenavLink } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
@@ -15,7 +17,11 @@ export class SidenavComponent implements OnInit {
   public sidenavMode = 'side';
   public isFixedInViewport = false;
   public isSidenavOpen = false;
+  public isSidenavClosable = true;
   public isSmall = false;
+  public githubProfile = GITHUB_PROFILE;
+  public discordServer = DISCORD_SERVER_URL;
+  public twitterProfile = TWITTER_PROFILE;
 
   public metadata: SeoTags = {
     title: 'Home',
@@ -112,7 +118,8 @@ export class SidenavComponent implements OnInit {
     }
   ];
 
-  constructor (private breakpointObserver: BreakpointObserver, private seo: SeoService) {
+  constructor (private matIconService: MatIconService, private breakpointObserver: BreakpointObserver, private seo: SeoService) {
+    this.matIconService.init();
   }
 
   public ngOnInit (): void {
@@ -122,10 +129,12 @@ export class SidenavComponent implements OnInit {
         this.isSmall = state.matches;
         if (state.matches) {
           this.isFixedInViewport = true;
+          this.isSidenavClosable = true;
           this.isSidenavOpen = false;
           this.sidenavMode = 'over';
         } else {
           this.isFixedInViewport = false;
+          this.isSidenavClosable = false;
           this.isSidenavOpen = true;
           this.sidenavMode = 'side';
         }

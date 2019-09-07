@@ -7,6 +7,8 @@ import {
   CONVERTBOT_GITHUB_URL,
   CONVERTER_GITHUB,
   CONVERTER_YARN,
+  CREATE_DJSBOT_GITHUB,
+  CREATE_DJSBOT_YARN,
   CRYPTO_GITHUB,
   CRYPTO_YARN,
   DEXA_GITHUB_URL,
@@ -24,9 +26,7 @@ import {
   YAMLREADER_GITHUB,
   YAMLREADER_YARN,
   ZALGO_GITHUB,
-  ZALGO_YARN,
-  CREATE_DJSBOT_YARN,
-  CREATE_DJSBOT_GITHUB
+  ZALGO_YARN
 } from '@util/constants';
 import { IPrimaryTile, IProjectTile, Tile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
       'Greetings, My name is Jeroen Claassens (a.k.a. Favna) and I manage Favware',
       oneLine`
                     Currently ${moment().diff('1995-02-21', 'years')} years old I am a developer hailing from The Netherlands.
-                    Ever since I was a boy I have been a tech enthusiast with my main focus being the software side of the ICT.
+                    I have been a tech enthusiast for as long as I can remember.
                     While attending high school my first choice of optional subject was Informatics and this quickly showed to be my calling.
                     After I graduated from high school I had no seconds thoughts about my next step - Software Engineering at a University.
                     The university of choice ended up being The Hague University of Applied Sciences.
