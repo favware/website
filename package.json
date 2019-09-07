@@ -108,19 +108,12 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint-staged"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "*.{js,ts,html,scss}": [
-      "ng lint",
-      "git add"
     ]
   },
   "config": {
