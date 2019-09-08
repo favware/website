@@ -1,12 +1,18 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "../out-tsc/favware",
     "types": [],
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "removeComments": true
+    "esModuleInterop": true
   },
+  "angularCompilerOptions": {
+    "enableIvy": true
+  },
+  "include": [
+    "./**/*.ts"
+  ],
   "exclude": [
     "test.ts",
     "**/*.spec.ts",

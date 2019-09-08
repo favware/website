@@ -1,20 +1,17 @@
-const path = require('path');
+const {join} = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  mode: 'none',
   entry: { server: './server.ts'},
+  resolve: { extensions: ['.js', '.ts'] },
   target: 'node',
-  resolve: { extensions: ['.ts', '.js'] },
-  optimization: {
-    minimize: false
-  },
+  mode: 'none',
   externals: [
     /^firebase/
   ],
   output: {
     // Puts the output at the root of the dist folder
-    path: path.join(__dirname, 'dist'),
+    path: join(__dirname, 'dist'),
     library: 'app',
     libraryTarget: 'umd',
     filename: '[name].js'
@@ -31,17 +28,20 @@ module.exports = {
     ]
   },
   plugins: [
+    // Temporary Fix for issue: https://github.com/angular/angular/issues/11580
+    // for 'WARNING Critical dependency: the request of a dependency is an expression'
     new webpack.ContextReplacementPlugin(
-      // fixes WARNING Critical dependency: the request of a dependency is an expression
       /(.+)?angular(\\|\/)core(.+)?/,
-      path.join(__dirname, 'src'), // location of your src
+      join(__dirname, 'src'), // location of your src
       {} // a map of your routes
     ),
     new webpack.ContextReplacementPlugin(
-      // fixes WARNING Critical dependency: the request of a dependency is an expression
       /(.+)?express(\\|\/)(.+)?/,
-      path.join(__dirname, 'src'),
+      join(__dirname, 'src'),
       {}
     )
-  ]
+  ],
+  optimization: {
+    minimize: false,
+  },
 };

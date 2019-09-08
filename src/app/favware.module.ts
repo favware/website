@@ -66,7 +66,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     CreateDjsBotComponentComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverFavware' }),
+    BrowserModule.withServerTransition({ appId: 'favware' }),
     HttpClientModule,
     FavwareRoutingModule,
     MaterialModule,

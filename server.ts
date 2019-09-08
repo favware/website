@@ -1,19 +1,20 @@
+import 'reflect-metadata';
+import 'zone.js/dist/zone-node';
+
 import { enableProdMode } from '@angular/core';
 // Express Engine
 import { ngExpressEngine } from '@nguniversal/express-engine';
 // Import module map for lazy loading
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import * as express from 'express';
-import 'reflect-metadata';
-import 'zone.js/dist/zone-node';
 const domino = require('domino');
 const fs = require('fs');
-const path = require('path');
+const {join} = require('path');
 
 const PORT = process.env.PORT || 4000;
-const DIST_FOLDER = path.join(process.cwd(), 'dist/browser');
+const DIST_FOLDER = join(process.cwd(), 'dist');
 
-const template = fs.readFileSync(path.join(DIST_FOLDER, 'index.html')).toString();
+const template = fs.readFileSync(join(DIST_FOLDER, 'browser', 'index.html')).toString();
 const win = domino.createWindow(template);
 
 (global as any).window = win;
@@ -45,14 +46,11 @@ app.engine('html', ngExpressEngine({
 }));
 
 app.set('view engine', 'html');
-app.set('views', DIST_FOLDER);
+app.set('views', join(DIST_FOLDER, 'browser'));
 
-// Example Express Rest API endpoints
-// app.get('/api/**', (req, res) => { });
-// Serve static files from /browser
-app.get('*.*', express.static(DIST_FOLDER, {
-  maxAge: '1y',
-}));
+// Server static files from /browser
+app.get('*.*', express.static(join(DIST_FOLDER, 'browser')));
+app.get('/assets', express.static(join(DIST_FOLDER, 'browser', 'assets')));
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {

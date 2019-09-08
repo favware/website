@@ -1,12 +1,18 @@
 {
-  "extends": "./tsconfig.app.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/favware-server",
-    "baseUrl": ".",
-    "esModuleInterop": true,
-    "removeComments": true
+    "baseUrl": "./",
+    "types": [],
+    "module": "commonjs",
+    "esModuleInterop": true
   },
   "angularCompilerOptions": {
-    "entryModule": "app/favware.server.module#FavwareServerModule"
-  }
+    "entryModule": "./app/favware.server.module#FavwareServerModule",
+    "enableIvy": false
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
 }

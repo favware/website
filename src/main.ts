@@ -17,8 +17,4 @@ if (environment.production) {
   enableProdMode();
 }
 
-// tslint:disable:no-console
-document.addEventListener('DOMContentLoaded', () => {
-  platformBrowserDynamic().bootstrapModule(FavwareModule)
-    .catch(err => console.error(err));
-});
+platformBrowserDynamic().bootstrapModule(FavwareModule);
