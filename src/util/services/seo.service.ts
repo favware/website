@@ -46,7 +46,6 @@ export class SeoService {
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:site_name', content: 'Favware' });
     this.meta.updateTag({ property: 'og:image:type', content: 'image/png' });
-    this.meta.updateTag({ property: 'og:site_name', content: 'Favware' });
     this.meta.updateTag({ property: 'og:email', content: COMMON_EMAIL });
     this.meta.updateTag({ property: 'fb:app_id', content: '977960562367980' });
     this.meta.updateTag({ property: 'og:title', content: tags.title });
