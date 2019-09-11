@@ -1033,10 +1033,10 @@
   dependencies:
     find-up "^4.0.0"
 
-"@favware/tslint-config@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@favware/tslint-config/-/tslint-config-1.0.3.tgz#e63fc5adb6cecd8b8a045e1c827488cc8ee89064"
-  integrity sha512-JwoTmd0uhtQKxyYYGtrrOhLBO5uW0NJg0OLM0g5Hh7pBI+VZhaUXu68C8icdEidZLvjWILwzTTCVzZ4Im9jiVw==
+"@favware/tslint-config@1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@favware/tslint-config/-/tslint-config-1.0.5.tgz#f73ddd82e36fb497c9b9197a709eb6d00074d7e5"
+  integrity sha512-G155BWU3qvR1LLJ+MAq0maBy9ZKT09PnyFr1QmgAjCjCoppXl7eC7QDmC4GQ0Bu4G2SLS9fE2wLGoAqqIIlSDQ==
 
 "@firebase/app-types@0.4.3", "@firebase/app-types@0.x":
   version "0.4.3"
