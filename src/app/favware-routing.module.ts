@@ -138,8 +138,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  declarations: [
+    RedirectGuard
+  ],
   imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],
   exports: [RouterModule],
+  entryComponents: [RedirectGuard]
 })
 export class FavwareRoutingModule {
 }
