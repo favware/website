@@ -1,13 +1,13 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Inject, Injectable, PLATFORM_ID, Component } from '@angular/core';
+import { Component, Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
 
 @Component({
   selector: 'favware-redirect-guard',
-  template: `<span>/<span>`
+  template: `<span>/<span>`,
 })
 @Injectable()
-export class RedirectGuard implements CanActivate {
+export class RedirectGuardComponent implements CanActivate {
   public router: Router;
   private isBrowser: boolean;
 

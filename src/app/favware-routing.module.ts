@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DEXA_SKILL_URL, DISCORD_SERVER_URL, GITHUB_PROFILE, RIBBON_INVITE_URL } from '@util/constants';
-import { RedirectGuard } from '@util/redirectguard.guard';
-
+import { RedirectGuardComponent } from '@util/redirectguard.guard';
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConvertbotComponent } from './convertbot/convertbot.component';
@@ -19,6 +18,7 @@ import { TavaComponent } from './tava/tava.component';
 import { UnescapeComponent } from './unescape/unescape.component';
 import { YamlreaderComponent } from './yamlreader/yamlreader.component';
 import { ZalgoComponent } from './zalgo/zalgo.component';
+
 
 const routes: Routes = [
   {
@@ -129,21 +129,21 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
   },
-  { path: 'redirect/server', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: DISCORD_SERVER_URL } },
-  { path: 'redirect/github', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: GITHUB_PROFILE } },
-  { path: 'redirect/ribbon', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: RIBBON_INVITE_URL } },
-  { path: 'redirect/dexa', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: DEXA_SKILL_URL } },
-  { path: 'redirect/dexa-alexa', canActivate: [RedirectGuard], component: RedirectGuard, data: { externalUrl: DEXA_SKILL_URL } },
+  { path: 'redirect/server', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: DISCORD_SERVER_URL } },
+  { path: 'redirect/github', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: GITHUB_PROFILE } },
+  { path: 'redirect/ribbon', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: RIBBON_INVITE_URL } },
+  { path: 'redirect/dexa', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: DEXA_SKILL_URL } },
+  { path: 'redirect/dexa-alexa', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: DEXA_SKILL_URL } },
   { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
   declarations: [
-    RedirectGuard
+    RedirectGuardComponent
   ],
   imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],
   exports: [RouterModule],
-  entryComponents: [RedirectGuard]
+  entryComponents: [RedirectGuardComponent],
 })
 export class FavwareRoutingModule {
 }

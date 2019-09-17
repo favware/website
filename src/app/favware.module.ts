@@ -15,7 +15,7 @@ import { MatIconService } from '@services/mat-icon.service';
 import { SeoService } from '@services/seo.service';
 import { markdownFactory } from '@util/markdown.factory';
 import { MaterialModule } from '@util/material.module';
-import { RedirectGuard } from '@util/redirectguard.guard';
+import { RedirectGuardComponent } from '@util/redirectguard.guard';
 import { ClipboardModule } from 'ngx-clipboard';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { environment } from '../environments/environment';
@@ -85,7 +85,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     }),
     ClipboardModule
   ],
-  providers: [RedirectGuard, MatIconService, SeoService, AngularFirestore],
+  providers: [RedirectGuardComponent, MatIconService, SeoService, AngularFirestore],
   bootstrap: [SidenavComponent],
   entryComponents: [SidenavComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
