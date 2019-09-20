@@ -93,17 +93,6 @@
     rxjs "6.4.0"
     webpack-merge "4.2.1"
 
-"@angular-devkit/core@8.3.4":
-  version "8.3.4"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.4.tgz#cdd0593ca4dc5eaff2adc77bda9aed1327dbb405"
-  integrity sha512-QjUN9EakpQ+sFYeMfBMecxVhgI4Vdg0k20h6PZDjZ9lqYNXjpaQVtBo7qiPYHh5kQeJEvdrzca6yeYuCP3TvZw==
-  dependencies:
-    ajv "6.10.2"
-    fast-json-stable-stringify "2.0.0"
-    magic-string "0.25.3"
-    rxjs "6.4.0"
-    source-map "0.7.3"
-
 "@angular-devkit/core@8.3.5":
   version "8.3.5"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.5.tgz#d1b58df73a379e29f3ddc1cb36cf29d8e476786e"
@@ -8960,10 +8949,10 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
   integrity sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
 
-ts-loader@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-6.1.0.tgz#999cb0a7644f9c7c6c0901802dce50ceb0a76e5b"
-  integrity sha512-7JedeOu2rsYHQDEr2fwmMozABwbQTZXEaEMZPSIWG7gpzRefOLJCqwdazcegHtyaxp04PeEgs/b0m08WMpnIzQ==
+ts-loader@6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-6.1.1.tgz#f30c68aa1ce59fa266f0bb70a36959ca68f40ddc"
+  integrity sha512-AoOek8ZWJlWwTRH5ttNmZPBRcASUJZc8wc8E/2PGOXef96H97J8KaLXaW/zUnvyFjvCoRBhTGh9ZIMKL1arcCA==
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"
