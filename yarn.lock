@@ -2846,6 +2846,11 @@ commander@^2.11.0, commander@^2.12.1, commander@^2.20.0, commander@~2.20.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   integrity sha512-7j2y+40w61zy6YC2iRNpUe/NwhNyoXrYpHMrSunaMG64nRnaf96zO/KMQR4OyN/UnE5KLyEBnKHd4aG3rskjpQ==
 
+commander@^2.19.0:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.1.tgz#3863ce3ca92d0831dcf2a102f5fb4b5926afd0f9"
+  integrity sha512-cCuLsMhJeWQ/ZpsFTbE765kvVfoeSddc4nU3up4fV+fDBcfUXnbITJ+JzhkdjzOqhURjZgujxaioam4RM9yGUg==
+
 commitizen@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.0.3.tgz#c19a4213257d0525b85139e2f36db7cc3b4f6dae"
@@ -5650,6 +5655,13 @@ karma@4.3.0:
     tmp "0.0.33"
     useragent "2.3.0"
 
+katex@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.11.1.tgz#df30ca40c565c9df01a466a00d53e079e84ffaa2"
+  integrity sha512-5oANDICCTX0NqYIyAiFCCwjQ7ERu3DQG2JFHLbYOf+fXaMoH8eg/zOq5WSYJsKMi/QebW+Eh3gSM+oss1H/bww==
+  dependencies:
+    commander "^2.19.0"
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -6422,12 +6434,13 @@ ngx-clipboard@12.2.1:
     ngx-window-token "^2.0.0"
     tslib "^1.9.0"
 
-ngx-markdown@8.1.2:
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-8.1.2.tgz#de2116a2a55192409fed3be196413848226de6bc"
-  integrity sha512-PF0+SkzlILxIZ/Q6pGwo5VUJ82rdknm0ZleGZLT2Tk7REM0qLdm0znVJSMIyC3q77hxOq8BZFs6w2PTzbBATkQ==
+ngx-markdown@8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/ngx-markdown/-/ngx-markdown-8.2.0.tgz#4ad622d8222946735f107942015a8a2c80e4a192"
+  integrity sha512-4sWz08Hjqvz35OGtSUcfnO9grkkC7+agRlsVZxi2xpYbkmFiRk7cMKGVfRFe+tqzjOxKi1j3BwUG+x2tAGpVlA==
   dependencies:
     "@types/marked" "^0.6.5"
+    katex "^0.11.1"
     marked "^0.7.0"
     prismjs "^1.16.0"
     tslib "^1.9.0"
