@@ -76,7 +76,7 @@
     "@angular/language-service": "8.2.10",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
-    "@favware/tslint-config": "1.0.5",
+    "@favware/tslint-config": "1.1.2",
     "@firebase/app-types": "0.4.5",
     "@firebase/util": "0.2.29",
     "@types/common-tags": "1.8.0",
