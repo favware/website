@@ -78,7 +78,7 @@
     "@commitlint/config-conventional": "8.2.0",
     "@favware/tslint-config": "1.1.2",
     "@firebase/app-types": "0.4.6",
-    "@firebase/util": "0.2.30",
+    "@firebase/util": "0.2.31",
     "@types/common-tags": "1.8.0",
     "@types/jasmine": "3.4.4",
     "@types/jasminewd2": "2.0.8",
