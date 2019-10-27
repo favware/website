@@ -85,7 +85,7 @@
     "@types/moment-duration-format": "2.2.2",
     "@types/node": "12.11.7",
     "bufferutil": "4.0.1",
-    "codelyzer": "5.1.2",
+    "codelyzer": "5.2.0",
     "cz-conventional-changelog": "3.0.2",
     "husky": "3.0.9",
     "jasmine-core": "3.5.0",
