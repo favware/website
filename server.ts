@@ -11,7 +11,7 @@ const domino = require('domino');
 const fs = require('fs');
 const {join} = require('path');
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4001;
 const DIST_FOLDER = join(process.cwd(), 'dist');
 
 const template = fs.readFileSync(join(DIST_FOLDER, 'browser', 'index.html')).toString();
@@ -59,7 +59,6 @@ app.get('*', (req, res) => {
 
 // If we're not in the Cloud Functions environment, spin up a Node server
 if (!process.env.FUNCTION_NAME) {
-  const PORT = process.env.PORT || 4001;
   app.listen(PORT, () => {
     console.log(`Node server listening on http://localhost:${PORT}`);
   });
