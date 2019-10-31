@@ -3,6 +3,7 @@
     "predeploy": "npm --prefix \"$RESOURCE_DIR\" run build"
   },
   "hosting": {
+    "site": "favware",
     "public": "dist/browser",
     "ignore": [
       "firebase.json",
