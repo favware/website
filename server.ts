@@ -6,10 +6,10 @@ import { enableProdMode } from '@angular/core';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 // Import module map for lazy loading
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
-import * as express from 'express';
-const domino = require('domino');
-const fs = require('fs');
-const {join} = require('path');
+import express from 'express';
+import domino from 'domino';
+import fs from 'fs';
+import { join } from 'path';
 
 const PORT = process.env.PORT || 4001;
 const DIST_FOLDER = join(process.cwd(), 'dist');
@@ -19,10 +19,6 @@ const win = domino.createWindow(template);
 
 (global as any).window = win;
 (global as any).document = win.document;
-(global as any).DOMTokenList = win.DOMTokenList;
-(global as any).Node = win.Node;
-(global as any).Text = win.Text;
-(global as any).HTMLElement = win.HTMLElement;
 (global as any).navigator = win.navigator;
 (global as any).MutationObserver = getMockMutationObserver();
 (global as any).WebSocket = require('ws');
@@ -65,15 +61,15 @@ if (!process.env.FUNCTION_NAME) {
 }
 
 // tslint:disable-next-line: only-arrow-functions
-function getMockMutationObserver () {
+function getMockMutationObserver() {
   return class {
     // tslint:disable-next-line: no-empty
-    public observe (node, options) {
+    public observe(node, options) {
     }
     // tslint:disable-next-line: no-empty
-    public disconnect () {
+    public disconnect() {
     }
-    public takeRecords () {
+    public takeRecords() {
       return [];
     }
   };
