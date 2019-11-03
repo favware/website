@@ -10,17 +10,30 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites": [{
-      "source": "**",
-      "function": "favware"
-    }],
-    "headers": [{
-      "source" : "**",
-      "headers" : [{
-        "key" : "Cache-Control",
-        "value" : "max-age=31536000"
-      }]
-    }]
+    "rewrites": [
+      {
+        "source": "**/!(api)",
+        "function": "favware"
+      },
+      {
+        "source": "/api{,/**}",
+        "run": {
+          "serviceId": "graphql-pokemon",
+          "region": "europe-west1"
+        }
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
+      }
+    ]
   },
   "storage": {
     "rules": "storage.rules"
