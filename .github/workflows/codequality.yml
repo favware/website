@@ -29,22 +29,16 @@ jobs:
       run: yarn lint
 
   Test:
-    name: Test using v${{ matrix.node_version }} - ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node_version: [10, 12, 13]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-
+    name: Jasmine Tests
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node_version }}
+    - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node_version }}
+        node-version: 12
 
     - name: Cache node modules
-      if: matrix.os != 'windows-latest'
       uses: actions/cache@v1
       with:
         path: node_modules
