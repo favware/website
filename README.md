@@ -15,7 +15,6 @@
 **Project Status**
 
 [![GitHub](https://img.shields.io/github/license/favware/website?logo=github&style=flat-square)](https://github.com/favware/website/blob/master/LICENSE.md)
-[![CircleCI](https://img.shields.io/circleci/build/github/favware/website?logo=circleci&style=flat-square)](https://circleci.com/gh/favware/website/tree/master)
 
 **Social Media and Donations**
 
