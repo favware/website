@@ -52,4 +52,4 @@ jobs:
     - name: Install Deps
       run: yarn
     - name: Test
-      run: yarn test
+      run: yarn test --no-watch
