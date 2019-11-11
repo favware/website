@@ -62,6 +62,11 @@ jobs:
       with:
         path: node_modules
         key: ${{ runner.os }}-10-${{ hashFiles('**/yarn.lock') }}
+    - name: Restore Firebase CI Cache
+      uses: actions/cache@v1
+      with:
+        path: functions/node_modules
+        key: ${{ runner.os }}-10-${{ hashFiles('**/functions/yarn.lock') }}
     - name: Install Deps
       run: yarn
     - name: Install Deps - Firebase
