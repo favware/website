@@ -1,0 +1,71 @@
+name: Code Quality
+
+on: [push, pull_request]
+
+jobs:
+  TSLint:
+    name: TSLint
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: Restore CI Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-10-${{ hashFiles('**/yarn.lock') }}
+    - name: Install Deps
+      run: yarn
+    - name: Run TSLint
+      run: yarn lint
+
+  Test:
+    name: Jasmine Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: Restore CI Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-10-${{ hashFiles('**/yarn.lock') }}
+    - name: Install Deps
+      run: yarn
+    - name: Test
+      run: yarn test --no-watch
+
+  deploy:
+    name: Deploy to Firebase
+    needs: [TSLint, Test]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v1
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - name: Restore CI Cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-10-${{ hashFiles('**/yarn.lock') }}
+    - name: Install Deps
+      run: yarn
+    - name: Install Deps - Firebase
+      run: pushd functions && yarn && popd
+    - name: Build
+      run: yarn build:ssr
+    - name: Install Firebase Tools
+      run: yarn add firebase-tools
+    - name: Deploy to Firebase
+      run: ./node_modules/.bin/firebase deploy --token=${{ secrets.FIREBASE_TOKEN }}
