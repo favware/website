@@ -1,4 +1,5 @@
 import { isDevMode } from '@angular/core';
+import { environment } from '../environments/environment';
 
 export const ASSET_BASE_PATH = 'https://storage.googleapis.com/data-sunlight-146313.appspot.com';
 export const DISCORD_SERVER_URL = 'https://www.discord.gg/sguypX8';
@@ -11,7 +12,7 @@ export const RIBBON_GITHUB_URL = 'https://www.github.com/favna/ribbon';
 export const DEXA_SKILL_URL = 'https://skills-store.amazon.com/deeplink/dp/B07DQM8CVR';
 export const DEXA_GITHUB_URL = 'https://www.github.com/favware/Dexa';
 
-export const GRAPHQL_POKEMON_PLAYGROUND = isDevMode() ? 'http://localhost:4000/api?ngsw-bypass=true' : 'https://favware.tech/api?ngsw-bypass=true';
+export const GRAPHQL_POKEMON_PLAYGROUND = environment.production ? 'https://favware.tech/api?ngsw-bypass=true' : 'http://localhost:4000/api?ngsw-bypass=true';
 export const GRAPHQL_POKEMON_GITHUB_URL = 'https://www.github.com/favware/graphql-pokemon';
 export const GRAPHQL_POKEMON_YARN = 'https://yarnpkg.com/en/package/@favware/graphql-pokemon';
 
