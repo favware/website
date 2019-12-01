@@ -52,6 +52,11 @@ export class SidenavComponent implements OnInit {
       image: 'assets/icons/dexa.png',
     },
     {
+      routerLink: '/graphql-pokemon',
+      label: 'GraphQL-Pokemon',
+      image: 'assets/icons/gqlp.png',
+    },
+    {
       routerLink: '/seedcheck',
       label: 'SeedChecker',
       image: 'assets/icons/seedcheck.png',

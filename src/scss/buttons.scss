@@ -110,6 +110,17 @@
   }
 }
 
+.mat-playground {
+  background-color: $playground-pink;
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: lighten($playground-pink, 5%) !important;
+  }
+}
+
 .full-size-button {
   width: 100%;
   padding-left: 5%;

@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { CardActionCasePipe } from '@pipes/CardActionCase';
 import { MaterialModule } from '@util/material.module';
 import { RedirectGuardComponent } from '@util/redirectguard.guard';
+import { TestModule } from '@util/testing.module';
 import { HomeComponent } from './home.component';
 
 @NgModule({
@@ -19,7 +20,7 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [MaterialModule, KarmaRoutingModule],
+      imports: [MaterialModule, KarmaRoutingModule, TestModule],
       declarations: [HomeComponent, CardActionCasePipe],
       providers: [RedirectGuardComponent],
     })

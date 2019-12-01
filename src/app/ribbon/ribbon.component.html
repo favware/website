@@ -16,35 +16,8 @@
        fxLayoutGap="0.5%">
     <div>
       <h1 class="mat-display-1 center-text">{{aboutTile.header}}</h1>
-      <p *ngFor="let section of aboutTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown | ChangeATarget"
+      <p *ngFor="let section of aboutTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown"
          class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
-    </div>
-  </div>
-
-  <div class="section-margin">
-    <h1 class="mat-display-1 center-text">{{ statsHeader }}</h1>
-    <div *ngIf="documents | async as document">
-      <div class="project-card-layout" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center center">
-        <div *ngFor="let node of document; trackBy: ngForTrackBy" class="card-widener">
-          <mat-card class="material-card">
-            <mat-card-header>
-              <mat-card-title>{{ node.header }}</mat-card-title>
-              <mat-card-subtitle>{{ sinceLabel }}</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content class="card-content">
-              <ng-container *ngIf="isDoneLoading; else loadingSpinner">
-                <mat-chip-list>
-                  <mat-chip color="accent" selected>{{ node.value }}</mat-chip>
-                </mat-chip-list>
-              </ng-container>
-
-              <ng-template #loadingSpinner>
-                <mat-progress-spinner color="warn" diameter="75" mode="indeterminate"></mat-progress-spinner>
-              </ng-template>
-            </mat-card-content>
-          </mat-card>
-        </div>
-      </div>
     </div>
   </div>
 

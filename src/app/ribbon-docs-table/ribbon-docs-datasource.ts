@@ -100,7 +100,7 @@ export class RibbonDocsDatasource extends DataSource<RibbonDocs> {
       };
 
       const fuse = new Fuse(data, filterOptions);
-      const search = fuse.search(this.filter);
+      const search = fuse.search(this.filter) as RibbonDocs[];
 
       return search;
     }

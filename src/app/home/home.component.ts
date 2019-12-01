@@ -14,12 +14,13 @@ import {
   DEXA_GITHUB_URL,
   DEXA_SKILL_URL,
   DISCORD_SERVER_URL,
+  GRAPHQL_POKEMON_GITHUB_URL,
+  GRAPHQL_POKEMON_PLAYGROUND,
   MILKY_TSLINT_GITHUB,
   MILKY_TSLINT_YARN,
   QUERYSTRING_GITHUB,
   QUERYSTRING_YARN,
   RIBBON_GITHUB_URL,
-  RIBBON_INVITE_URL,
   SEEDCHECKER_GITHUB_URL,
   UNESCAPE_GITHUB,
   UNESCAPE_YARN,
@@ -84,7 +85,6 @@ export class HomeComponent implements OnInit {
         },
         content: oneLine`Ever expanding all purpose Discord bot build with Discord.JS in the Commando framework. Want a feature? Request it!`,
         actions: [
-          { label: 'add bot', link: RIBBON_INVITE_URL, outer: true },
           { label: 'website', link: '/ribbon', outer: false },
           { label: 'support', link: DISCORD_SERVER_URL, outer: true },
           { label: 'github', link: RIBBON_GITHUB_URL, outer: true }
@@ -102,6 +102,20 @@ export class HomeComponent implements OnInit {
           { label: 'add skill', link: DEXA_SKILL_URL, outer: true },
           { label: 'website', link: '/dexa', outer: false },
           { label: 'github', link: DEXA_GITHUB_URL, outer: true }
+        ],
+      },
+      {
+        header: {
+          avatar: `assets/icons/gqlp.png`,
+          imageAlt: 'GraphQL-Pokemon',
+          title: 'GraphQL-Pokemon',
+          subtitle: 'Advanced GraphQL Pokémon Data API',
+        },
+        content: oneLine`GraphQL based API offering a massive amount of Pokémon data - currently serving at least [Skyra](https://skyra.pw) and [Dexa](https://favware.tech/dexa)`,
+        actions: [
+          { label: 'playground', link: GRAPHQL_POKEMON_PLAYGROUND, outer: true },
+          { label: 'website', link: '/graphql-pokemon', outer: false },
+          { label: 'github', link: GRAPHQL_POKEMON_GITHUB_URL, outer: true }
         ],
       },
       {

@@ -1,15 +1,12 @@
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/firestore';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { CardActionCasePipe } from '@pipes/CardActionCase';
-import { ChangeATargetPipe } from '@pipes/ChangeATarget';
 import { ExtractTextPipe } from '@pipes/ExtractText';
 import { MatIconService } from '@services/mat-icon.service';
 import { SeoService } from '@services/seo.service';
@@ -28,6 +25,7 @@ import { CryptoComponent } from './crypto/crypto.component';
 import { DexaDocsTableComponent } from './dexa-docs-table/dexa-docs-table.component';
 import { DexaComponent } from './dexa/dexa.component';
 import { FavwareRoutingModule } from './favware-routing.module';
+import { GraphqlPokemonComponent } from './graphql-pokemon/graphql-pokemon.component';
 import { HomeComponent } from './home/home.component';
 import { MilkylintComponent } from './milkylint/milkylint.component';
 import { QuerystringComponent } from './querystring/querystring.component';
@@ -44,7 +42,6 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
   declarations: [
     CardActionCasePipe,
     CatchcalcComponent,
-    ChangeATargetPipe,
     ContactComponent,
     ConvertbotComponent,
     ConverterComponent,
@@ -63,7 +60,8 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     UnescapeComponent,
     YamlreaderComponent,
     ZalgoComponent,
-    CreateDjsBotComponentComponent
+    CreateDjsBotComponentComponent,
+    GraphqlPokemonComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'favware' }),
@@ -74,8 +72,6 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     FlexLayoutModule,
     ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule.enablePersistence(),
     BrowserAnimationsModule,
     MarkdownModule.forRoot({
       markedOptions: {
@@ -85,7 +81,7 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     }),
     ClipboardModule
   ],
-  providers: [RedirectGuardComponent, MatIconService, SeoService, AngularFirestore],
+  providers: [RedirectGuardComponent, MatIconService, SeoService],
   bootstrap: [SidenavComponent],
   entryComponents: [SidenavComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

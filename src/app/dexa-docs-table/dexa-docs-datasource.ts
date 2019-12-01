@@ -97,7 +97,7 @@ export class DexaDocsDatasource extends DataSource<DexaDocs> {
       };
 
       const fuse = new Fuse(data, filterOptions);
-      const search = fuse.search(this.filter);
+      const search = fuse.search(this.filter) as DexaDocs[];
 
       return search;
     }

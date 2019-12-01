@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DEXA_SKILL_URL, DISCORD_SERVER_URL, GITHUB_PROFILE, RIBBON_INVITE_URL } from '@util/constants';
+import { DEXA_SKILL_URL, DISCORD_SERVER_URL, GITHUB_PROFILE } from '@util/constants';
 import { RedirectGuardComponent } from '@util/redirectguard.guard';
 import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
@@ -9,6 +9,7 @@ import { ConverterComponent } from './converter/converter.component';
 import { CreateDjsBotComponentComponent } from './create-djs-bot-component/create-djs-bot-component.component';
 import { CryptoComponent } from './crypto/crypto.component';
 import { DexaComponent } from './dexa/dexa.component';
+import { GraphqlPokemonComponent } from './graphql-pokemon/graphql-pokemon.component';
 import { HomeComponent } from './home/home.component';
 import { MilkylintComponent } from './milkylint/milkylint.component';
 import { QuerystringComponent } from './querystring/querystring.component';
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'dexa',
     component: DexaComponent,
+  },
+  {
+    path: 'graphql-pokemon',
+    component: GraphqlPokemonComponent,
   },
   {
     path: 'seedcheck',
@@ -126,12 +131,19 @@ const routes: Routes = [
     redirectTo: '/create-djsbot',
   },
   {
+    path: 'gqlp',
+    redirectTo: '/graphql-pokemon',
+  },
+  {
+    path: 'graphqlpokemon',
+    redirectTo: '/graphql-pokemon',
+  },
+  {
     path: 'contact',
     component: ContactComponent,
   },
   { path: 'redirect/server', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: DISCORD_SERVER_URL } },
   { path: 'redirect/github', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: GITHUB_PROFILE } },
-  { path: 'redirect/ribbon', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: RIBBON_INVITE_URL } },
   { path: 'redirect/dexa', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: DEXA_SKILL_URL } },
   { path: 'redirect/dexa-alexa', canActivate: [RedirectGuardComponent], component: RedirectGuardComponent, data: { externalUrl: DEXA_SKILL_URL } },
   { path: '**', component: HomeComponent }

@@ -1,14 +1,19 @@
+import { isDevMode } from '@angular/core';
+
 export const ASSET_BASE_PATH = 'https://storage.googleapis.com/data-sunlight-146313.appspot.com';
 export const DISCORD_SERVER_URL = 'https://www.discord.gg/sguypX8';
 export const GITHUB_PROFILE = 'https://github.com/favna';
-export const TWITTER_PROFILE  = 'https://twitter.com/favna_';
+export const TWITTER_PROFILE = 'https://twitter.com/favna_';
 export const COMMON_EMAIL = 'support@favware.tech';
 
-export const RIBBON_INVITE_URL = 'https://www.discordapp.com/oauth2/authorize?client_id=512150391471996930&permissions=8&redirect_uri=https%3A%2F%2Ffavware.tech%2Fribbon&response_type=code&scope=bot';
 export const RIBBON_GITHUB_URL = 'https://www.github.com/favna/ribbon';
 
 export const DEXA_SKILL_URL = 'https://skills-store.amazon.com/deeplink/dp/B07DQM8CVR';
 export const DEXA_GITHUB_URL = 'https://www.github.com/favware/Dexa';
+
+export const GRAPHQL_POKEMON_PLAYGROUND = isDevMode() ? 'http://localhost:4000/api?ngsw-bypass=true' : 'https://favware.tech/api?ngsw-bypass=true';
+export const GRAPHQL_POKEMON_GITHUB_URL = 'https://www.github.com/favware/graphql-pokemon';
+export const GRAPHQL_POKEMON_YARN = 'https://yarnpkg.com/en/package/@favware/graphql-pokemon';
 
 export const SEEDCHECKER_GITHUB_URL = 'https://www.github.com/favna/seedchecker';
 

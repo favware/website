@@ -12,22 +12,6 @@ favware-ribbon-docs-table {
   margin: 2vh 0;
 }
 
-#loadingSpinner {
-  text-align: center;
-  margin: 0 10px;
-}
-
-.card {
-  &-widener {
-    width: 25vw;
-  }
-
-  &-content {
-    display: flex;
-    justify-content: center;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
   .header-ribbon-image {
     background-attachment: scroll;
@@ -36,41 +20,5 @@ favware-ribbon-docs-table {
   favware-ribbon-docs-table {
     width: 80%;
     margin: 2vh auto;
-  }
-
-  .card {
-    &-widener {
-      width: 100vw;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) and (max-width: 1024px) {
-  .card {
-    &-widener {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  .material-card {
-    width: 80vw;
-    min-width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
-}
-
-@media only screen and (width: 1024px) {
-  .card {
-    &-widener {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  .material-card {
-    width: 60vw;
-    min-width: 60vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
   }
 }

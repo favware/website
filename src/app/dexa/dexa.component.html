@@ -17,7 +17,7 @@
        fxLayoutGap="0.5%">
     <div>
       <h1 class="mat-display-1 center-text">{{aboutTile.header}}</h1>
-      <p *ngFor="let section of aboutTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown | ChangeATarget"
+      <p *ngFor="let section of aboutTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown"
          class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
   </div>

@@ -2,23 +2,23 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { TestModule } from '@util/testing.module';
 
-import { DexaComponent } from './dexa.component';
+import { GraphqlPokemonComponent } from './graphql-pokemon.component';
 
-describe('DexaComponent', () => {
-  let component: DexaComponent;
-  let fixture: ComponentFixture<DexaComponent>;
+describe('GraphqlPokemonComponent', () => {
+  let component: GraphqlPokemonComponent;
+  let fixture: ComponentFixture<GraphqlPokemonComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [TestModule],
-      declarations: [DexaComponent],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      declarations: [ GraphqlPokemonComponent ],
     })
-      .compileComponents();
+    .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DexaComponent);
+    fixture = TestBed.createComponent(GraphqlPokemonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
