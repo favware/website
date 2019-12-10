@@ -85,7 +85,7 @@
     "@types/jasmine": "^3.5.0",
     "@types/jasminewd2": "^2.0.8",
     "@types/moment-duration-format": "^2.2.2",
-    "@types/node": "^12.12.14",
+    "@types/node": "^12.12.17",
     "bufferutil": "^4.0.1",
     "codelyzer": "^5.2.0",
     "cz-conventional-changelog": "^3.0.2",
@@ -124,5 +124,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "resolutions": {
+    "**/**/serialize-javascript": "^2.1.1"
   }
 }
