@@ -63,7 +63,7 @@
     "ngx-clipboard": "^12.3.0",
     "ngx-markdown": "^8.2.1",
     "normalize-scss": "^7.0.1",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "typeface-roboto": "^0.0.75",
     "web-animations-js": "^2.3.2",
