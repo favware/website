@@ -1,4 +1,3 @@
-import { isDevMode } from '@angular/core';
 import { environment } from '../environments/environment';
 
 export const ASSET_BASE_PATH = 'https://storage.googleapis.com/data-sunlight-146313.appspot.com';

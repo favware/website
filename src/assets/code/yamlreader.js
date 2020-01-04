@@ -1,7 +1,7 @@
 const { readYaml } = require('@favware/yarmlreader');
 // supports default import for ES6: import readYaml from '@favware/yarmlreader'
 
-const actual = readYaml('/path/to/some/yaml/file');
+readYaml('/path/to/some/yaml/file');
 // => JavaScript object with the keys from the yaml
 // => Using the YAML file as shown here procudes the following JSON:
 
@@ -18,7 +18,7 @@ const actual = readYaml('/path/to/some/yaml/file');
         weightkg: 6.9,
         color: 'Green',
         evos: [ 'ivysaur' ],
-        eggGroups: [ 'Monster', 'Grass' ] 
+        eggGroups: [ 'Monster', 'Grass' ]
     }
   }
  */
