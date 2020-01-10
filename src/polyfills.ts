@@ -19,7 +19,7 @@
  */
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
-import 'classlist.js';  // Run `npm install --save classlist.js`.
+// import 'classlist.js';  // Run `npm install --save classlist.js`.
 
 /** IE10 and IE11 requires the following for the Reflect API. */
 /**
@@ -28,7 +28,7 @@ import 'classlist.js';  // Run `npm install --save classlist.js`.
  * are required for JIT compilation.  StackBlitz examples are
  * compiled using JIT.
  */
-import 'core-js/features/reflect';
+// import 'core-js/features/reflect';
 
 /**
  * Web Animations `@angular/platform-browser/animations`

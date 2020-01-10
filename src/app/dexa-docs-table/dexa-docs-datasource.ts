@@ -1,26 +1,35 @@
 import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { DexaDocs, JSDocJSON } from '@util/interfaces.js';
+import { DexaDocs } from '@util/interfaces.js';
 import Fuse, { FuseOptions } from 'fuse.js';
 import { BehaviorSubject, merge, Observable, of as observableOf } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import docs from '../../assets/docs/dexa.json';
-
-const ribbondocs: JSDocJSON = docs as unknown as JSDocJSON;
-
-// @ts-ignore Ignoring TypeScript errors because it cannot properly parse JSON despite that it does work
-const DEXA_DATA: DexaDocs[] = ribbondocs.map((docItem: IJSDocItem) => (
+const DEXA_DATA: DexaDocs[] = [
     {
-      name: docItem.name,
-      description: docItem.description.replace(/.+ - (.+)/g, '$1'),
-      examples: docItem.examples.join(', '),
-    }
-  )
-);
+      name: 'ability',
+      description: 'Gets information on an ability',
+      examples: 'ability data multiscale, ability data pressure'
+    },
+    {
+      name: 'dex',
+      description: 'Gets information on a Pokémon',
+      examples: 'pokemon data dragonite, data on pikachu'
+    },
+    {
+      name: 'item',
+      description: 'Gets information on an item',
+      examples: 'item data life orb, item data assault vest'
+    },
+    {
+      name: 'move',
+      description: 'Gets information on a move',
+      examples: 'move data dragon dance, move data swords dance'
+    },
+]
 
-const compare = (a, b, isAsc) => {
+const compare = (a: string, b: string, isAsc: boolean) => {
   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
 };
 
