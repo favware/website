@@ -65,7 +65,7 @@
     "tslib": "^1.10.0",
     "typeface-roboto": "^0.0.75",
     "web-animations-js": "^2.3.2",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.23",
@@ -83,11 +83,11 @@
     "@types/jasmine": "^3.5.1",
     "@types/jasminewd2": "^2.0.8",
     "@types/moment-duration-format": "^2.2.2",
-    "@types/node": "^13.1.8",
+    "@types/node": "^13.5.0",
     "bufferutil": "^4.0.1",
     "codelyzer": "^5.2.1",
     "cz-conventional-changelog": "^3.0.2",
-    "husky": "^4.2.0",
+    "husky": "^4.2.1",
     "jasmine-core": "^3.5.0",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^4.4.1",
