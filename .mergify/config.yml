@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: Automatic Depfu merging
+    conditions:
+      - approved-reviews-by=Favna
+      - base=react-rewrite
+      - label~=^Meta:\ Dependencies
+      - title~=Yarn\ dependencies
+    actions:
+      merge:
+        method: squash

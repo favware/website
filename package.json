@@ -14,120 +14,90 @@
     "url": "https://github.com/favware/website/issues"
   },
   "engines": {
-    "node": ">=8"
+    "node": "10"
   },
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "compile:server": "webpack --config webpack.server.config.js --progress --colors",
-    "serve:ssr": "node dist/server",
-    "build:dev": "ng build",
-    "build:firebase": "pushd functions/ && yarn --ignore-engines && popd",
-    "build:ssr": "yarn build:client-and-server-bundles && yarn compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run favware-site:server:production",
+    "lint": "eslint src --fix --ext ts,tsx",
     "up": "yarn upgrade-interactive --latest",
-    "ssr": "run-s build:ssr serve:ssr"
+    "dev": "next dev src",
+    "prebuild": "yarn build:sitemap",
+    "build": "next build src",
+    "start": "next start src",
+    "export": "next export src",
+    "preserve": "run-s clean build:**",
+    "clean": "rimraf src/.next",
+    "build:sitemap": "node scripts/sitemapGenerator.js",
+    "style": "prettier --write --loglevel=warn src/**/*.{ts,tsx,html,json,xml}",
+    "netlify:build": "run-s build export",
+    "docker:build": "docker build -t favware/website:latest .",
+    "docker:run": "docker container run -d -it --name favware-website -p 2114:2114 favware/website:latest",
+    "docker:clean": "docker container stop favware-website && docker container rm favware-website && docker rmi -f favware/website"
   },
   "dependencies": {
-    "@angular/animations": "^8.2.14",
-    "@angular/cdk": "^8.2.3",
-    "@angular/common": "^8.2.14",
-    "@angular/compiler": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/fire": "^5.4.0",
-    "@angular/flex-layout": "^8.0.0-beta.27",
-    "@angular/forms": "^8.2.14",
-    "@angular/material": "^8.2.3",
-    "@angular/platform-browser": "^8.2.14",
-    "@angular/platform-browser-dynamic": "^8.2.14",
-    "@angular/platform-server": "^8.2.14",
-    "@angular/pwa": "^0.803.24",
-    "@angular/router": "^8.2.14",
-    "@angular/service-worker": "^8.2.14",
-    "@ngmodule/material-carousel": "^0.6.0",
-    "@nguniversal/express-engine": "^8.2.6",
-    "@nguniversal/module-map-ngfactory-loader": "^8.2.6",
-    "common-tags": "^1.8.0",
-    "domino": "^2.1.4",
-    "express": "^4.17.1",
-    "firebase": "^7.8.0",
-    "fuse.js": "^3.4.6",
-    "hammerjs": "^2.0.8",
-    "moment": "^2.24.0",
-    "moment-duration-format": "^2.3.2",
-    "ngx-clipboard": "^12.3.0",
-    "ngx-markdown": "^8.2.2",
-    "normalize-scss": "^7.0.1",
-    "rxjs": "~6.5.4",
-    "tslib": "^1.10.0",
-    "typeface-roboto": "^0.0.75",
-    "web-animations-js": "^2.3.2",
-    "zone.js": "~0.9.1"
+    "@klasa/utils": "^0.0.8",
+    "@material-ui/core": "^4.10.1",
+    "@material-ui/icons": "^4.9.1",
+    "@skyra/discord-components-core": "^1.1.1",
+    "@skyra/discord-components-react": "^1.1.1",
+    "clsx": "^1.1.1",
+    "mdi-react": "^7.3.0",
+    "next": "^9.4.4",
+    "next-seo": "^4.5.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-emoji-render": "^1.2.4",
+    "react-ga": "^3.0.0",
+    "react-if": "^3.4.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.24",
-    "@angular/cli": "^8.3.24",
-    "@angular/compiler-cli": "^8.2.14",
-    "@angular/language-service": "^8.2.14",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@favware/graphql-pokemon": "^1.7.0",
-    "@favware/tslint-config": "1.1.3",
-    "@firebase/app-types": "^0.5.0",
-    "@firebase/util": "^0.2.39",
-    "@types/common-tags": "^1.8.0",
-    "@types/express": "^4.17.2",
-    "@types/jasmine": "^3.5.2",
-    "@types/jasminewd2": "^2.0.8",
-    "@types/moment-duration-format": "^2.2.2",
-    "@types/node": "^13.7.0",
-    "bufferutil": "^4.0.1",
-    "codelyzer": "^5.2.1",
-    "cz-conventional-changelog": "^3.1.0",
-    "husky": "^4.2.1",
-    "jasmine-core": "^3.5.0",
-    "jasmine-spec-reporter": "^4.2.1",
-    "karma": "^4.4.1",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-coverage-istanbul-reporter": "^2.1.1",
-    "karma-jasmine": "^3.1.0",
-    "karma-jasmine-html-reporter": "^1.5.1",
+    "@favware/eslint-config-react-app": "0.1.0-alpha.0",
+    "@favware/ts-config": "^3.0.0",
+    "@rws-air/commitizen-config": "^2.0.1",
+    "@rws-air/commitlint-config": "^2.0.1",
+    "@types/node": "^14.0.11",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "16.9.8",
+    "@types/react-gtm-module": "^2.0.0",
+    "cpx": "1.5.0",
+    "cross-env": "7.0.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
+    "nextjs-sitemap-generator": "^1.0.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^2.0.1",
-    "reflect-metadata": "^0.1.13",
-    "ts-loader": "^6.2.1",
-    "ts-node": "^8.6.2",
-    "tslint": "^6.0.0",
-    "typescript": "~3.5.3",
-    "utf-8-validate": "^5.0.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "ws": "^7.2.1",
-    "xhr2": "^0.2.0"
+    "prettier": "^2.0.5",
+    "rimraf": "3.0.2",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.9.5"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "lint-staged"
     }
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@rws-air"
     ]
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/@rws-air/commitizen-config"
     }
   },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix --ext ts,tsx"
+    ],
+    "*.{html,babelrc,js,ts,tsx}": [
+      "prettier --write"
+    ]
+  },
   "resolutions": {
-    "serialize-javascript": "^3.0.0",
-    "acorn": "^7.1.1",
-    "minimist": "^1.2.2"
+    "acorn": "^6.4.1",
+    "minimist": "^1.2.2",
+    "kind-of": "^6.0.3"
   }
 }
