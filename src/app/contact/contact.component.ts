@@ -34,7 +34,7 @@ export class ContactComponent implements OnInit {
     description: 'Have questions, support requests or just want to get in contact with Favware? Go here!',
     image: 'https://favware.tech/assets/icons/contact.png',
     imageAlt: 'Fancy Embedded Image',
-    url: '/contact',
+    url: 'contact',
     summary: oneLine`Eager to get in contact with me? Be sure to visit this page!`,
     keywords: ['contact', 'email', 'github', 'youtube', 'facebook', 'twitch', 'twitter', 'linkedin', 'discord', 'reddit']
   };

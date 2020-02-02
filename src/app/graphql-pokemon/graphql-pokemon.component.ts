@@ -60,7 +60,7 @@ export class GraphqlPokemonComponent implements OnInit {
     description: 'GraphQL API for Pokémon data',
     image: 'https://favware.tech/assets/icons/gqlp.png',
     imageAlt: 'GraphQL-Pokemon Logo',
-    url: '/graphql-pokemon',
+    url: 'graphql-pokemon',
     summary: 'GraphQL based API offering a massive amount of Pokémon data',
     keywords: ['graphql', 'pokemon', 'api', 'favware']
   };

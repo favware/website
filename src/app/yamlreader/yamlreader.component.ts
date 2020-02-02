@@ -13,7 +13,7 @@ import { oneLine } from 'common-tags';
 export class YamlreaderComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
-    header: '@Favware/yamlreader',
+    header: '@favware/yamlreader',
     subheader: 'Awesome minimal wrapper around js-yaml',
     buttons: [
       {
@@ -44,11 +44,11 @@ export class YamlreaderComponent implements OnInit {
     codeFile: '/assets/code/awesomeyaml.yml'
   };
   public metadata: SeoTags = {
-    title: '@Favware/yamlreader',
+    title: '@favware/yamlreader',
     description: 'Awesome minimal wrapper around js-yaml for directly reading in YAML files',
     image: 'https://favware.tech/assets/icons/yamlreader.png',
-    imageAlt: '@Favware/yamlreader Icon Image',
-    url: '/yamlreader',
+    imageAlt: '@favware/yamlreader Icon Image',
+    url: 'yamlreader',
     summary: oneLine`A NodeJS library that can read YAML files and will output them to a standard JSON object.
       Install it today with "@favware/yamlreader"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'yaml', 'yamlreader', 'awesome-yaml-reader', 'awesomeyamlreader', 'json']

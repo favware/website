@@ -13,7 +13,7 @@ import { oneLine } from 'common-tags';
 export class QuerystringComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
-    header: '@Favware/Querystring',
+    header: '@favware/querystring',
     subheader: 'Robust and awesome querystring',
     buttons: [
       {
@@ -44,11 +44,11 @@ export class QuerystringComponent implements OnInit {
     codeFile: '/assets/code/querystring.parse.js'
   };
   public metadata: SeoTags = {
-    title: '@Favware/Querystring',
+    title: '@favware/querystring',
     description: 'Querystring that is robust in its working yet remains awesome to TypeScript users',
     image: 'https://favware.tech/assets/icons/querystring.png',
-    imageAlt: '@Favware/Querystring Icon',
-    url: '/querystring',
+    imageAlt: '@favware/querystring Icon',
+    url: 'querystring',
     summary: oneLine`A NodeJS library that can stringify and parse any querystring.
     It is in a sense similar to many other querystringifiers, with the exception of being written
     in TypeScript thus offering great support to TypeScript users.

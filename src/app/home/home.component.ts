@@ -233,8 +233,8 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/querystring.png`,
-          imageAlt: '@favware/Querystring',
-          title: '@favware/Querystring',
+          imageAlt: '@favware/querystring',
+          title: '@favware/querystring',
           subtitle: 'yarn add @favware/querystring'
         },
         content: oneLine`Querystring that is robust in its working yet remains awesome to TypeScript users`,
@@ -247,8 +247,8 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/converter.png`,
-          imageAlt: '@favware/Converter',
-          title: '@favware/Converter',
+          imageAlt: '@favware/converter',
+          title: '@favware/converter',
           subtitle: 'yarn add @favware/converter'
         },
         content: oneLine`Awesome and typesafe unit converter, supports many different systems of units`,
@@ -262,7 +262,7 @@ export class HomeComponent implements OnInit {
         header: {
           avatar: `assets/icons/milkylint.png`,
           imageAlt: '@favware/milky-tslint',
-          title: '@favware/Milky-TSLint',
+          title: '@favware/milky-tslint',
           subtitle: 'yarn add @favware/milky-tslint'
         },
         content: oneLine`TypeScript linter plugin for Gulp. Gulp down that milk and lint your code!`,
@@ -289,8 +289,8 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/zalgo.png`,
-          imageAlt: '@favware/Zalgo',
-          title: '@favware/Zalgo',
+          imageAlt: '@favware/zalgo',
+          title: '@favware/zalgo',
           subtitle: 'yarn add @favware/zalgo'
         },
         // tslint:disable-next-line:max-line-length
@@ -304,9 +304,9 @@ export class HomeComponent implements OnInit {
       {
         header: {
           avatar: `assets/icons/crypto.png`,
-          imageAlt: '@favware/Crypto',
-          title: '@favware/Crypto',
-          subtitle: 'yarn add @favware/Crypto'
+          imageAlt: '@favware/crypto',
+          title: '@favware/crypto',
+          subtitle: 'yarn add @favware/crypto'
         },
         content: oneLine`Generates secure random numbers using crypto.randomBytes(). Numbers can be of any magnitude and in any base from 2 to 64.`,
         actions: [
@@ -350,7 +350,7 @@ export class HomeComponent implements OnInit {
     description: 'For Hearth and Home! Check out my projects here!',
     image: 'https://favware.tech/assets/og-image.png',
     imageAlt: 'Social Embedding Image',
-    url: '/home',
+    url: 'home',
     summary: oneLine`On this website I am listing all the notable projects I have worked on.
       Consider it to be my portfolio of sorts as well as a knowledge base of information.
       There are also some small fun features here and more will be added in the future.`,

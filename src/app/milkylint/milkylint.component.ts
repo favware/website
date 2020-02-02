@@ -13,7 +13,7 @@ import { oneLine } from 'common-tags';
 export class MilkylintComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
-    header: '@Favware/Milky-TSLint',
+    header: '@favware/milky-tslint',
     subheader: 'TypeScript linter plugin for Gulp',
     buttons: [
       {
@@ -40,11 +40,11 @@ export class MilkylintComponent implements OnInit {
     codeFile: '/assets/code/milkylint.js'
   };
   public metadata: SeoTags = {
-    title: '@Favware/Milky-TSLint',
+    title: '@favware/milky-tslint',
     description: 'TypeScript linter plugin for Gulp',
     image: 'https://favware.tech/assets/icons/milkylint.png',
-    imageAlt: '@Favware/Milky-TSLint Icon',
-    url: '/milkylint',
+    imageAlt: '@favware/milky-tslint Icon',
+    url: 'milkylint',
     summary: oneLine`A NodeJS library meant for Gulp that can lint your TypeScript code.
     Install it today with "yarn add @favware/milky-tslint"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'gulp', 'typescript', 'tslint', 'milk']

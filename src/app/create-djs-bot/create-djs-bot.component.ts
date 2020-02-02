@@ -51,7 +51,7 @@ export class CreateDjsBotComponent implements OnInit {
     description: '⚡Bootstrapping CLI tool for quickly setting up a Discord bot project',
     image: 'https://favware/tech/assets/icons/create-djsbot.png',
     imageAlt: 'Create-DJSBot Icon',
-    url: '/create-djsbot',
+    url: 'create-djsbot',
     summary: oneLine`A NodeJS library that helps you to quickly get started with your Discord bot by providing a ready-to-run boilerplate
     using the Discord.JS-Commando framework. Supports a JavaScript and a TypeScript template`,
     keywords: ['nodejs', 'javascript', 'typescript', 'discord', 'boilerplate', 'create', 'discord.js', 'djs', 'commando', 'discord.js-commando']

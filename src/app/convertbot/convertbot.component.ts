@@ -83,7 +83,7 @@ export class ConvertbotComponent implements OnInit {
     description: 'Unit convertion tool written in C#',
     image: 'https://favware.tech/assets/icons/convertbot-share.png',
     imageAlt: 'ConvertBot Preview Image',
-    url: '/convertbot',
+    url: 'convertbot',
     summary: oneLine`A C# based utility program for unit conversion.`,
     keywords: ['C#', 'CSharp', 'convert', 'unit', 'conversion', 'program', 'utility']
   };

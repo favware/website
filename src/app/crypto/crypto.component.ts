@@ -13,7 +13,7 @@ import { oneLine } from 'common-tags';
 export class CryptoComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
-    header: '@Favware/Crypto',
+    header: '@favware/crypto',
     subheader: 'Generates secure random numbers using `crypto.randomBytes()`',
     buttons: [
       {
@@ -44,7 +44,7 @@ export class CryptoComponent implements OnInit {
     description: 'Easily generate a random cryptographic in NodeJS!',
     image: 'https://favware.tech/assets/icons/crypto.png',
     imageAlt: '@favware/crypto Icon',
-    url: '/crypto',
+    url: 'crypto',
     summary: oneLine`A NodeJS library that can generate secure random cryptographic strings using NodeJS's own "Crypto.RandomBytes()" function.
     Written in TypeScript so it is entirely typesafe!
     Install it today with "yarn add @favware/crypto"`,

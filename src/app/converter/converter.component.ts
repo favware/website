@@ -13,7 +13,7 @@ import { oneLine } from 'common-tags';
 export class ConverterComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
-    header: '@favware/Converter',
+    header: '@favware/converter',
     subheader: 'An awesome and typesafe unit converter for NodeJS',
     buttons: [
       {
@@ -40,10 +40,10 @@ export class ConverterComponent implements OnInit {
     codeFile: '/assets/code/converter.js'
   };
   public metadata: SeoTags = {
-    title: '@favware/Converter',
+    title: '@favware/converter',
     description: 'Awesome and typesafe unit converter, supports many different systems of units',
     image: 'https://favware.tech/assets/icons/converter.png',
-    imageAlt: '@favware/Converter Icon',
+    imageAlt: '@favware/converter Icon',
     url: 'converter',
     summary: oneLine`A NodeJS library that can convert many units to many other units.
     From mass, length and volume to temperature and more!

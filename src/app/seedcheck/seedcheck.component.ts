@@ -94,7 +94,7 @@ export class SeedcheckComponent implements OnInit {
     description: '3DS SEEDChecking utility',
     image: 'https://favware.tech/assets/icons/seedcheck-share.png',
     imageAlt: 'SEEDChecker Preview Image',
-    url: '/seedcheck',
+    url: 'seedcheck',
     summary: oneLine`A Java based utility that can be used to fetch the SEED descryption keys for 3DS games`,
     keywords: ['3ds', 'nintendo', 'hacking', 'seed', 'java', 'program', 'utility', 'tool']
   };

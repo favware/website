@@ -41,7 +41,7 @@ export class RibbonComponent implements OnInit {
     description: 'Multifunctional Discord bot',
     image: 'https://favware.tech/assets/icons/ribbon.png',
     imageAlt: 'Ribbon Preview Image',
-    url: '/ribbon',
+    url: 'ribbon',
     summary: oneLine`A rich all purpose Discord bot.`,
     keywords: ['discord', 'ribbon', 'bot', 'all-purpose', 'all', 'purpose', 'chat', 'pokemon', 'casino', 'automod', 'music', 'stream', '8ball', 'fun']
   };

@@ -84,11 +84,11 @@ export class SkyraComponent implements OnInit {
 
   public metadata: SeoTags = {
     title: 'Skyra',
-    description: "Skyra is the single most advanced moderation bot you'll ever need. She's a configurable Discord Bot with fun commands, social, moderation, and much more!",
-    image: 'https://favware.tech/assets/icons/skyra-avatar.png',
-    imageAlt: 'Skyra',
-    url: '/skyra',
-    summary: `Skyra is the single most advanced moderation bot you\'ll ever need. She\'s a configurable Discord Bot with fun commands, social, moderation, and much more!`,
+    description: 'Multipurpose Discord Bot.',
+    image: 'https://favware.tech/assets/icons/skyra.png',
+    imageAlt: 'Skyra Logo',
+    url: 'skyra',
+    summary: `Skyra is the single most advanced moderation bot you\'ll ever need!`,
     keywords: ['discord', 'bot', 'skyra', 'kyra', 'favna', 'pokemon', 'moderation', 'dashboard']
   };
 

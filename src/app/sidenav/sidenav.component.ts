@@ -28,7 +28,7 @@ export class SidenavComponent implements OnInit {
     description: 'For Hearth and Home! Check out my projects here!',
     image: 'https://favware.tech/assets/og-image.png',
     imageAlt: 'Social Embedding Image',
-    url: '/home',
+    url: 'home',
     summary: oneLine`On this website I am listing all the notable projects I have worked on.
       Consider it to be my portfolio of sorts as well as a knowledge base of information.
       There are also some small fun features here and more will be added in the future.`,

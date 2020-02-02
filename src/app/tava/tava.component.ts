@@ -124,7 +124,7 @@ export class TavaComponent implements OnInit {
     description: 'Mythological aztec puzzle game',
     image: 'https://favware.tech/assets/icons/tava-share.png',
     imageAlt: "Ta'Va Preview Image",
-    url: '/tava',
+    url: 'tava',
     summary: 'An epic puzzle adventure in a mythological aztec world. A game build by students in the Unity 3D engine.',
     keywords: ['unity', 'videogame', 'game', 'adventure', 'puzzle', 'action', 'studentgame', 'student', 'aztec', 'mythology', 'mythological']
   };

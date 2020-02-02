@@ -13,7 +13,7 @@ import { oneLine } from 'common-tags';
 export class UnescapeComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
-    header: '@Favware/Unescape',
+    header: '@favware/unescape',
     subheader: 'Convert HTML entities to HTML characters',
     buttons: [
       {
@@ -66,7 +66,7 @@ export class UnescapeComponent implements OnInit {
     description: 'Convert HTML entities to HTML characters. For example "&amp;" converts to &',
     image: 'https://favware.tech/assets/icons/unescape.png',
     imageAlt: 'Unescape Icon Image',
-    url: '/unescape',
+    url: 'unescape',
     summary: oneLine`A NodeJS library that can transform HTML tags to their unescaped variants.
     Install it today with "yarn add @favware/unescape"`,
     keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'unescape', 'unescape-es6', 'escape', 'html', 'entities']
