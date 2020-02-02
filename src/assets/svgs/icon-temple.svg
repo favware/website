@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="Laag_1" data-name="Laag 1" viewBox="0 0 247.82 247.82">
-    <title>
-        icon-temple
-    </title>
-    <circle cx="123.91" cy="123.91" r="123.91" style="fill:#fed137"/>
-    <path d="M201.41,167.43v-16h-9.84V136.05h-9.47V120.27h-10l.19-15.6h-9.84l.37-15.78H149.23V66.41H100.77V88.88H87.22l.37,15.78H77.75l.19,15.6h-10v15.78H58.44v15.41H48.59v16H39.12v16.15H95.38l18.8-93.31h2.23l-12.91,93.31h43.09L133.69,90.27h2.23l18.8,93.31h56.16V167.43Zm-71.29-78h-10v-9.1h10Z" transform="translate(-1.09 -1.09)" style="fill:#fff"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Laag_1" data-name="Laag 1" viewBox="0 0 247.82 247.82"><title>icon-temple</title><circle cx="123.91" cy="123.91" r="123.91" fill="#fed137"/><path fill="#fff" d="M201.41,167.43v-16h-9.84V136.05h-9.47V120.27h-10l.19-15.6h-9.84l.37-15.78H149.23V66.41H100.77V88.88H87.22l.37,15.78H77.75l.19,15.6h-10v15.78H58.44v15.41H48.59v16H39.12v16.15H95.38l18.8-93.31h2.23l-12.91,93.31h43.09L133.69,90.27h2.23l18.8,93.31h56.16V167.43Zm-71.29-78h-10v-9.1h10Z" transform="translate(-1.09 -1.09)"/></svg>
