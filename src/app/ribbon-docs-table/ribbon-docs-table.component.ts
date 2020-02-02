@@ -12,10 +12,9 @@ import { RibbonDocsErrorStateMatches } from './ribbon-docs-error-state-matcher';
 @Component({
   selector: 'favware-ribbon-docs-table',
   templateUrl: './ribbon-docs-table.component.html',
-  styleUrls: ['./ribbon-docs-table.component.scss'],
+  styleUrls: ['./ribbon-docs-table.component.scss']
 })
 export class RibbonDocsTableComponent implements OnInit {
-
   @ViewChild(MatPaginator, { static: true }) public paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) public sort: MatSort;
   @ViewChild('filter', { static: true }) public filter: ElementRef;
@@ -29,24 +28,22 @@ export class RibbonDocsTableComponent implements OnInit {
 
   public breakpointObserver: BreakpointObserver;
 
-  constructor (breakpointObserver: BreakpointObserver) {
+  constructor(breakpointObserver: BreakpointObserver) {
     this.breakpointObserver = breakpointObserver;
   }
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.dataSource = new RibbonDocsDatasource(this.paginator, this.sort);
     fromEvent(this.filter.nativeElement, 'keyup')
       .pipe(debounceTime(150), distinctUntilChanged())
-      .subscribe(() => this.dataSource.filter = this.filter.nativeElement.value);
+      .subscribe(() => (this.dataSource.filter = this.filter.nativeElement.value));
 
-    this.breakpointObserver
-      .observe([Breakpoints.Small, Breakpoints.HandsetPortrait])
-      .subscribe((state: BreakpointState) => {
-        this.isSmall = state.matches;
-      });
+    this.breakpointObserver.observe([Breakpoints.Small, Breakpoints.HandsetPortrait]).subscribe((state: BreakpointState) => {
+      this.isSmall = state.matches;
+    });
   }
 
-  public clearFilter () {
+  public clearFilter() {
     this.searchFormControl.setValue('');
     this.dataSource.filter = '';
   }

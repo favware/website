@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-yamlreader',
   templateUrl: './yamlreader.component.html',
-  styleUrls: ['./yamlreader.component.scss'],
+  styleUrls: ['./yamlreader.component.scss']
 })
 export class YamlreaderComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -19,29 +19,29 @@ export class YamlreaderComponent implements OnInit {
       {
         text: '@favware/yamlreader',
         color: 'accent',
-        disabled: true,
+        disabled: true
       },
       {
         text: 'View on Yarn',
         url: YAMLREADER_YARN,
         color: 'yarn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: YAMLREADER_GITHUB,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public usageTile: ICodeTile = {
     header: 'Usage',
-    codeFile: '/assets/code/yamlreader.js',
+    codeFile: '/assets/code/yamlreader.js'
   };
   public yamlTile: ICodeTile = {
     header: 'YAML file',
-    codeFile: '/assets/code/awesomeyaml.yml',
+    codeFile: '/assets/code/awesomeyaml.yml'
   };
   public metadata: SeoTags = {
     title: '@Favware/yamlreader',
@@ -51,13 +51,12 @@ export class YamlreaderComponent implements OnInit {
     url: '/yamlreader',
     summary: oneLine`A NodeJS library that can read YAML files and will output them to a standard JSON object.
       Install it today with "@favware/yamlreader"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'yaml', 'yamlreader', 'awesome-yaml-reader', 'awesomeyamlreader', 'json'],
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'yaml', 'yamlreader', 'awesome-yaml-reader', 'awesomeyamlreader', 'json']
   };
 
-  constructor (private seo: SeoService) {
-  }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -65,7 +64,7 @@ export class YamlreaderComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

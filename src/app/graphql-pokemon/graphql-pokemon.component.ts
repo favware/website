@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-graphql-pokemon',
   templateUrl: './graphql-pokemon.component.html',
-  styleUrls: ['./graphql-pokemon.component.scss'],
+  styleUrls: ['./graphql-pokemon.component.scss']
 })
 export class GraphqlPokemonComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -19,39 +19,41 @@ export class GraphqlPokemonComponent implements OnInit {
       {
         text: 'yarn add --dev @favware/graphql-pokemon',
         color: 'accent',
-        disabled: true,
+        disabled: true
       },
       {
         text: 'View on Yarn',
         url: GRAPHQL_POKEMON_YARN,
         color: 'yarn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: GRAPHQL_POKEMON_GITHUB_URL,
         color: 'github',
-        outer: true,
+        outer: true
       },
       {
         text: 'Use GraphQL Playground',
         url: GRAPHQL_POKEMON_PLAYGROUND,
         color: 'playground',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
-    text: [oneLine`
+    text: [
+      oneLine`
       The GraphQL Pokemon API is my first venture into building an open API offering data to consumers.
       I've written the API using GraphQL and type-graphql to achieve type-safety both in development and deployment.
-      The API has many queries, which can best be explored using the [GraphQL Playground](${GRAPHQL_POKEMON_PLAYGROUND})`],
+      The API has many queries, which can best be explored using the [GraphQL Playground](${GRAPHQL_POKEMON_PLAYGROUND})`
+    ]
   };
   public graphqlUsageTile: ICodeTile = {
     header: 'Usage - Fetch',
-    codeFile: '/assets/code/graphql-pokemon.ts',
+    codeFile: '/assets/code/graphql-pokemon.ts'
   };
   public metadata: SeoTags = {
     title: 'Graphql-Pokemon',
@@ -60,12 +62,12 @@ export class GraphqlPokemonComponent implements OnInit {
     imageAlt: 'GraphQL-Pokemon Logo',
     url: '/graphql-pokemon',
     summary: 'GraphQL based API offering a massive amount of Pokémon data',
-    keywords: ['graphql', 'pokemon', 'api', 'favware'],
+    keywords: ['graphql', 'pokemon', 'api', 'favware']
   };
 
-  constructor (private seo: SeoService) { }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -73,9 +75,7 @@ export class GraphqlPokemonComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
-
   }
-
 }

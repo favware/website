@@ -8,18 +8,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Optional: comma separated list of words to filter",
@@ -32,9 +28,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "badwords enable"
-    ],
+    "examples": ["badwords enable"],
     "category": "automod",
     "order": 0
   },
@@ -47,18 +41,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "Amount of minutes between which text is checked",
@@ -66,9 +56,7 @@
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "Amount of similar messages before purging",
@@ -76,9 +64,7 @@
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "Levenshtein distance for similarity",
@@ -91,9 +77,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "duptext enable"
-    ],
+    "examples": ["duptext enable"],
     "category": "automod",
     "order": 1
   },
@@ -106,18 +90,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "How much percent of a message should be caps to delete",
@@ -125,9 +105,7 @@
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "Minimum length of message before it is checked",
@@ -140,9 +118,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "excessivecaps enable"
-    ],
+    "examples": ["excessivecaps enable"],
     "category": "automod",
     "order": 2
   },
@@ -155,18 +131,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "How much percent of a message should be emojis to delete",
@@ -174,9 +146,7 @@
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "Minimum length of message before it is checked",
@@ -189,9 +159,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "excessiveemojis enable"
-    ],
+    "examples": ["excessiveemojis enable"],
     "category": "automod",
     "order": 3
   },
@@ -204,18 +172,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "How many mentions allowed in 1 message",
@@ -228,10 +192,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "excessivementions enable",
-      "emf enable 3"
-    ],
+    "examples": ["excessivementions enable", "emf enable 3"],
     "category": "automod",
     "order": 4
   },
@@ -244,9 +205,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
@@ -258,9 +217,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "externallinks enable"
-    ],
+    "examples": ["externallinks enable"],
     "category": "automod",
     "order": 5
   },
@@ -273,9 +230,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
@@ -287,9 +242,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "invitesfilter enable"
-    ],
+    "examples": ["invitesfilter enable"],
     "category": "automod",
     "order": 6
   },
@@ -302,18 +255,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "Optional: Boundaries for slowmode",
@@ -326,9 +275,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\automod"
     },
     "preserveName": true,
-    "examples": [
-      "slowmode enable"
-    ],
+    "examples": ["slowmode enable"],
     "category": "automod",
     "order": 7
   },
@@ -344,9 +291,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "bank"
-    ],
+    "examples": ["bank"],
     "category": "casino",
     "order": 8
   },
@@ -362,9 +307,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "chips"
-    ],
+    "examples": ["chips"],
     "category": "casino",
     "order": 9
   },
@@ -377,18 +320,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "Amount of chips you want to gamble",
         "name": "AmountOfChips"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The side of the coin you want to bet on",
         "name": "CoinSide"
@@ -400,9 +339,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "coin 10 heads"
-    ],
+    "examples": ["coin 10 heads"],
     "category": "casino",
     "order": 10
   },
@@ -430,9 +367,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of chips to deposit",
         "name": "ChipsAmount"
@@ -444,9 +379,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "deposit 100"
-    ],
+    "examples": ["deposit 100"],
     "category": "casino",
     "order": 12
   },
@@ -459,18 +392,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member you want to give some chips",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of chips you want to give",
         "name": "ChipsAmount"
@@ -482,9 +411,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "give Favna 10"
-    ],
+    "examples": ["give Favna 10"],
     "category": "casino",
     "order": 13
   },
@@ -512,9 +439,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member to get the balance for",
         "name": "AnyMember"
@@ -526,9 +451,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "mchips Rohul"
-    ],
+    "examples": ["mchips Rohul"],
     "category": "casino",
     "order": 15
   },
@@ -541,9 +464,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of chips you want to gamble",
         "name": "ChipsAmount"
@@ -555,9 +476,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "slots 5"
-    ],
+    "examples": ["slots 5"],
     "category": "casino",
     "order": 16
   },
@@ -585,9 +504,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of chips you want to gamble",
         "name": "ChipsAmount"
@@ -599,9 +516,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "wof 5"
-    ],
+    "examples": ["wof 5"],
     "category": "casino",
     "order": 18
   },
@@ -614,9 +529,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of chips to withdraw",
         "name": "ChipsAmount"
@@ -628,9 +541,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\casino"
     },
     "preserveName": true,
-    "examples": [
-      "withdraw 100"
-    ],
+    "examples": ["withdraw 100"],
     "category": "casino",
     "order": 19
   },
@@ -643,27 +554,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of something to convert",
         "name": "AmountToConvert"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The unit to convert from",
         "name": "FromUnit"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The unit to convert to",
         "name": "ToUnit"
@@ -675,9 +580,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
-    "examples": [
-      "length 1 gram pound"
-    ],
+    "examples": ["length 1 gram pound"],
     "category": "converters",
     "order": 20
   },
@@ -690,27 +593,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of something to convert",
         "name": "AmountToConvert"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The unit to convert from",
         "name": "FromUnit"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The unit to convert to",
         "name": "ToUnit"
@@ -722,9 +619,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
-    "examples": [
-      "length 1.7m f"
-    ],
+    "examples": ["length 1.7m f"],
     "category": "converters",
     "order": 21
   },
@@ -737,9 +632,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The equation to solve",
         "name": "Equation"
@@ -751,9 +644,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
-    "examples": [
-      "math (pi - 1) * 3"
-    ],
+    "examples": ["math (pi - 1) * 3"],
     "category": "converters",
     "order": 22
   },
@@ -766,27 +657,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "Amount of money to convert",
         "name": "MoneyAmount"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Currency to convert from",
         "name": "OriginCurrency"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Currency to convert to",
         "name": "TargetCurrency"
@@ -798,9 +683,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
-    "examples": [
-      "oxr 1 EUR USD"
-    ],
+    "examples": ["oxr 1 EUR USD"],
     "category": "converters",
     "order": 23
   },
@@ -813,27 +696,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of something to convert",
         "name": "AmountToConvert"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The unit to convert from",
         "name": "FromUnit"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The unit to convert to",
         "name": "ToUnit"
@@ -845,9 +722,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\converters"
     },
     "preserveName": true,
-    "examples": [
-      "temperature 20 c f"
-    ],
+    "examples": ["temperature 20 c f"],
     "category": "converters",
     "order": 24
   },
@@ -860,18 +735,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The entry from the docs you want to get info about",
         "name": "DocEntry"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "The Doc version to pick, one of `stable`, `master` or `commando`",
@@ -884,9 +755,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\docs"
     },
     "preserveName": true,
-    "examples": [
-      "docs ClientUser"
-    ],
+    "examples": ["docs ClientUser"],
     "category": "docs",
     "order": 25
   },
@@ -899,9 +768,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The property or prototype to find on MDN",
         "name": "prop"
@@ -913,9 +780,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\docs"
     },
     "preserveName": true,
-    "examples": [
-      "mdn map"
-    ],
+    "examples": ["mdn map"],
     "category": "docs",
     "order": 26
   },
@@ -928,9 +793,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The package to find",
         "name": "pkg"
@@ -942,9 +805,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\docs"
     },
     "preserveName": true,
-    "examples": [
-      "yarn @favware/querystring"
-    ],
+    "examples": ["yarn @favware/querystring"],
     "category": "docs",
     "order": 27
   },
@@ -957,9 +818,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the copypasta to send",
         "name": "PastaName"
@@ -971,9 +830,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "copypasta navy"
-    ],
+    "examples": ["copypasta navy"],
     "category": "extra",
     "order": 28
   },
@@ -986,18 +843,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name for the new pasta",
         "name": "PasteName"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Content for the new pasta",
         "name": "PastaContent"
@@ -1009,9 +862,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "copypastaadd lipsum Lorem ipsum dolor sit amet."
-    ],
+    "examples": ["copypastaadd lipsum Lorem ipsum dolor sit amet."],
     "category": "extra",
     "order": 29
   },
@@ -1039,9 +890,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The ID of the Copypasta to remove",
         "name": "CopyPastaID"
@@ -1053,9 +902,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "copypastaremove lipsum"
-    ],
+    "examples": ["copypastaremove lipsum"],
     "category": "extra",
     "order": 31
   },
@@ -1068,9 +915,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "URL you want to encode into a QR image",
         "name": "URL"
@@ -1082,9 +927,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "qrgen https://favware.tech/ribbon"
-    ],
+    "examples": ["qrgen https://favware.tech/ribbon"],
     "category": "extra",
     "order": 32
   },
@@ -1097,9 +940,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Optional: colour hex to display",
@@ -1112,9 +953,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "randomcol\n-OR-\nrandomcol #990000\n-OR-\nrandomcol 36B56e"
-    ],
+    "examples": ["randomcol\n-OR-\nrandomcol #990000\n-OR-\nrandomcol 36B56e"],
     "category": "extra",
     "order": 33
   },
@@ -1127,18 +966,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Amount of time you want to be reminded in",
         "name": "Time"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Thing you want Ribbon to remind you of",
         "name": "Reminder"
@@ -1150,9 +985,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "remind 1h To continue developing Ribbon"
-    ],
+    "examples": ["remind 1h To continue developing Ribbon"],
     "category": "extra",
     "order": 34
   },
@@ -1165,9 +998,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Message you want to have repeated",
         "name": "Text"
@@ -1179,9 +1010,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "say Favna is a great coder!"
-    ],
+    "examples": ["say Favna is a great coder!"],
     "category": "extra",
     "order": 35
   },
@@ -1209,9 +1038,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Place where you want to get the current time for",
         "name": "Location"
@@ -1223,9 +1050,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "time Amsterdam"
-    ],
+    "examples": ["time Amsterdam"],
     "category": "extra",
     "order": 37
   },
@@ -1238,27 +1063,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The language to translate from",
         "name": "FromLanguage"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The language to translate to",
         "name": "ToLanguage"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The word or text to translate",
         "name": "Text"
@@ -1270,9 +1089,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "translate en nl Hello World"
-    ],
+    "examples": ["translate en nl Hello World"],
     "category": "extra",
     "order": 38
   },
@@ -1285,9 +1102,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the city to get the weather forecast for",
         "name": "CityName"
@@ -1299,9 +1114,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "weather Amsterdam"
-    ],
+    "examples": ["weather Amsterdam"],
     "category": "extra",
     "order": 39
   },
@@ -1329,9 +1142,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Your input to transform with Zalgo",
         "name": "SomeText"
@@ -1343,9 +1154,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\extra"
     },
     "preserveName": true,
-    "examples": [
-      "zalgo HE COMES"
-    ],
+    "examples": ["zalgo HE COMES"],
     "category": "extra",
     "order": 41
   },
@@ -1358,9 +1167,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Question you want the 8 ball to answer",
         "name": "question"
@@ -1372,9 +1179,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
-    "examples": [
-      "8ball is Favna a genius coder?"
-    ],
+    "examples": ["8ball is Favna a genius coder?"],
     "category": "games",
     "order": 42
   },
@@ -1387,18 +1192,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The amount of sides the dice should have",
         "name": "DiceSides"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The amount of dice to roll",
         "name": "AmountOfRolls"
@@ -1410,9 +1211,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
-    "examples": [
-      "dice 5 6"
-    ],
+    "examples": ["dice 5 6"],
     "category": "games",
     "order": 43
   },
@@ -1440,18 +1239,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The first combatant",
         "name": "FighterOne"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The second combatant",
         "name": "FighterTwo"
@@ -1463,9 +1258,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
-    "examples": [
-      "fight Pyrrha Ruby"
-    ],
+    "examples": ["fight Pyrrha Ruby"],
     "category": "games",
     "order": 45
   },
@@ -1478,9 +1271,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The hand that you want to play",
         "name": "HandToPlay"
@@ -1492,9 +1283,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
-    "examples": [
-      "rps Rock"
-    ],
+    "examples": ["rps Rock"],
     "category": "games",
     "order": 46
   },
@@ -1507,9 +1296,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "The first member to ship",
@@ -1517,9 +1304,7 @@
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "The second member to ship",
@@ -1532,9 +1317,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
-    "examples": [
-      "ship Biscuit Rei"
-    ],
+    "examples": ["ship Biscuit Rei"],
     "category": "games",
     "order": 47
   },
@@ -1547,18 +1330,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The question that the strawpoll needs to answer. Recommended to wrap in `\" \"` (or\n    `' '`) to allow spaces",
         "name": "Question"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The options the strawpoll should have. Recommended to wrap in `\" \"` (or `' '`) to\n    allow spaces. Splits on every \\`|\\`",
         "name": "Options"
@@ -1570,10 +1349,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\games"
     },
     "preserveName": true,
-    "examples": [
-      "strawpoll 'Best RWBY girl?' 'Pyrrha Nikos' 'Ruby Rose'",
-      "strawpoll 'Best coding language?' JavaScript C# C++"
-    ],
+    "examples": ["strawpoll 'Best RWBY girl?' 'Pyrrha Nikos' 'Ruby Rose'", "strawpoll 'Best coding language?' JavaScript C# C++"],
     "category": "games",
     "order": 48
   },
@@ -1586,9 +1362,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member to get the activity for",
         "name": "member"
@@ -1600,9 +1374,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
-    "examples": [
-      "activity Favna"
-    ],
+    "examples": ["activity Favna"],
     "category": "info",
     "order": 49
   },
@@ -1615,18 +1387,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member to get the avatar from",
         "name": "MemberName"
       },
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Optional: Size of the avatar to get. Defaults to 1024",
@@ -1639,9 +1407,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
-    "examples": [
-      "avatar Favna"
-    ],
+    "examples": ["avatar Favna"],
     "category": "info",
     "order": 50
   },
@@ -1669,9 +1435,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Command name to get info for, nothing for the default or all to get all commands",
@@ -1684,11 +1448,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
-    "examples": [
-      "help",
-      "help all",
-      "help avatar"
-    ],
+    "examples": ["help", "help all", "help avatar"],
     "category": "info",
     "order": 52
   },
@@ -1701,9 +1461,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "description": "The role you want to assign to yourself",
         "name": "AnyRole"
@@ -1715,9 +1473,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
-    "examples": [
-      "iam uploader"
-    ],
+    "examples": ["iam uploader"],
     "category": "info",
     "order": 53
   },
@@ -1730,9 +1486,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "description": "The role you want to remove from yourself",
         "name": "AnyRole"
@@ -1744,9 +1498,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
-    "examples": [
-      "iamnot uploader"
-    ],
+    "examples": ["iamnot uploader"],
     "category": "info",
     "order": 54
   },
@@ -1774,9 +1526,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The Reddit user you want to look up",
         "name": "RedditUser"
@@ -1788,9 +1538,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
-    "examples": [
-      "reddit favna"
-    ],
+    "examples": ["reddit favna"],
     "category": "info",
     "order": 56
   },
@@ -1833,9 +1581,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member you want to get info about",
         "name": "AnyMember"
@@ -1847,9 +1593,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\info"
     },
     "preserveName": true,
-    "examples": [
-      "userinfo Favna"
-    ],
+    "examples": ["userinfo Favna"],
     "category": "info",
     "order": 59
   },
@@ -1862,18 +1606,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The Epic Username of the player you want to find",
         "name": "Username"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The platform the player plays on (pc, xbox or psn)",
         "name": "Platform"
@@ -1885,9 +1625,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
-    "examples": [
-      "fortnite darkentz014 pc"
-    ],
+    "examples": ["fortnite darkentz014 pc"],
     "category": "leaderboards",
     "order": 60
   },
@@ -1900,9 +1638,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the OSU player",
         "name": "PlayerName"
@@ -1914,9 +1650,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
-    "examples": [
-      "osu WubWoofWolf"
-    ],
+    "examples": ["osu WubWoofWolf"],
     "category": "leaderboards",
     "order": 61
   },
@@ -1929,18 +1663,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "BattleTag for that overwatch player",
         "name": "BattleTag"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Optiona: The platform the player is on. One of pc, psn or xbl",
@@ -1948,9 +1678,7 @@
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Optional: The region the player plays in. Of of us, eu, asia",
@@ -1963,9 +1691,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
-    "examples": [
-      "overwatch Camoflouge#1267"
-    ],
+    "examples": ["overwatch Camoflouge#1267"],
     "category": "leaderboards",
     "order": 62
   },
@@ -1978,18 +1704,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The username you want to find statistics for",
         "name": "PubgUsername"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "A combination of platform and region to look through, for example `pc-na` for PC in\n    North America",
         "name": "Shard"
@@ -2001,9 +1723,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
-    "examples": [
-      "pubg shroud pc-na"
-    ],
+    "examples": ["pubg shroud pc-na"],
     "category": "leaderboards",
     "order": 63
   },
@@ -2016,9 +1736,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the tier to view the leaderboard for",
         "name": "TierName"
@@ -2030,9 +1748,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\leaderboards"
     },
     "preserveName": true,
-    "examples": [
-      "showdown ou"
-    ],
+    "examples": ["showdown ou"],
     "category": "leaderboards",
     "order": 64
   },
@@ -2045,18 +1761,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member to give a role",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "description": "Role to give",
         "name": "AnyRole"
@@ -2068,9 +1780,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "addrole Favna Member"
-    ],
+    "examples": ["addrole Favna Member"],
     "category": "moderation",
     "order": 65
   },
@@ -2083,9 +1793,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The announcement you want to make",
         "name": "Announcement"
@@ -2097,9 +1805,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "announce Pokemon Switch has released!"
-    ],
+    "examples": ["announce Pokemon Switch has released!"],
     "category": "moderation",
     "order": 66
   },
@@ -2112,18 +1818,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "optional": true,
         "description": "Roles that are exempted from automod",
@@ -2136,9 +1838,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "automod enable"
-    ],
+    "examples": ["automod enable"],
     "category": "moderation",
     "order": 67
   },
@@ -2151,18 +1851,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member to ban from the server",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Reason for this banishment. Include `--no-delete` anywhere in the reason to\n    prevent Ribbon from deleting the banned member's messages",
@@ -2175,9 +1871,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "ban MultiMegaMander"
-    ],
+    "examples": ["ban MultiMegaMander"],
     "category": "moderation",
     "order": 68
   },
@@ -2190,18 +1884,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The new upper limit to set",
         "name": "UpperLimit"
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "Optional: The new lower limit",
@@ -2214,10 +1904,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "casinolimit 20000",
-      "casinolimit 20000 1000"
-    ],
+    "examples": ["casinolimit 20000", "casinolimit 20000 1000"],
     "category": "moderation",
     "order": 69
   },
@@ -2230,9 +1917,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "description": "Role to set as mute role",
         "name": "Role"
@@ -2244,9 +1929,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "confmute mute"
-    ],
+    "examples": ["confmute mute"],
     "category": "moderation",
     "order": 70
   },
@@ -2259,27 +1942,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The date (and time) of the event",
         "name": "DateTime"
       },
       {
         "type": {
-          "names": [
-            "ChannelResolvable"
-          ]
+          "names": ["ChannelResolvable"]
         },
         "description": "The channel to send countdown reminders in",
         "name": "Channel"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The message to repeat",
         "name": "Message"
@@ -2291,9 +1968,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "countdownadd newyears 2020-12-31T18:00 #general New years day!"
-    ],
+    "examples": ["countdownadd newyears 2020-12-31T18:00 #general New years day!"],
     "category": "moderation",
     "order": 71
   },
@@ -2321,9 +1996,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The ID of the Countdown to remove",
         "name": "CountdownID"
@@ -2335,9 +2008,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "countdownremove newyears"
-    ],
+    "examples": ["countdownremove newyears"],
     "category": "moderation",
     "order": 73
   },
@@ -2350,9 +2021,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "description": "Role to assign to all new joining members",
         "name": "AnyRole"
@@ -2364,9 +2033,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "defaultrole Member"
-    ],
+    "examples": ["defaultrole Member"],
     "category": "moderation",
     "order": 74
   },
@@ -2379,9 +2046,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
@@ -2393,9 +2058,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "deletecommandmessages enable"
-    ],
+    "examples": ["deletecommandmessages enable"],
     "category": "moderation",
     "order": 75
   },
@@ -2408,18 +2071,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "MemberResolvable"
-          ]
+          "names": ["MemberResolvable"]
         },
         "description": "The member to remove warning points from",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "The amount of warning points to remove",
@@ -2432,10 +2091,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "deletewarn favna",
-      "deletewarn favna"
-    ],
+    "examples": ["deletewarn favna", "deletewarn favna"],
     "category": "moderation",
     "order": 76
   },
@@ -2448,18 +2104,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member to remove a role from",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "description": "The role to remove",
         "name": "AnyRole"
@@ -2471,9 +2123,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "delrole Favna Member"
-    ],
+    "examples": ["delrole Favna Member"],
     "category": "moderation",
     "order": 77
   },
@@ -2486,10 +2136,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "en",
-            "nl"
-          ]
+          "names": ["en", "nl"]
         },
         "description": "The new language to set",
         "name": "Language"
@@ -2501,10 +2148,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "i18n en",
-      "i18n nl"
-    ],
+    "examples": ["i18n en", "i18n nl"],
     "category": "moderation",
     "order": 78
   },
@@ -2517,18 +2161,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "TextChannel"
-          ]
+          "names": ["TextChannel"]
         },
         "optional": true,
         "description": "TextChannel the Join Message is sent to, required when enabling",
@@ -2541,9 +2181,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "joinmessages enable"
-    ],
+    "examples": ["joinmessages enable"],
     "category": "moderation",
     "order": 79
   },
@@ -2556,18 +2194,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member to kick from the server",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Reason for this kick.",
@@ -2580,9 +2214,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "kick ThunderKai"
-    ],
+    "examples": ["kick ThunderKai"],
     "category": "moderation",
     "order": 80
   },
@@ -2595,18 +2227,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "TextChannel"
-          ]
+          "names": ["TextChannel"]
         },
         "optional": true,
         "description": "TextChannel the Leave Message is sent to, required when enabling",
@@ -2619,9 +2247,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "leavemessages enable"
-    ],
+    "examples": ["leavemessages enable"],
     "category": "moderation",
     "order": 81
   },
@@ -2634,9 +2260,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member of whom to list the warning points",
         "name": "AnyMember"
@@ -2648,9 +2272,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "listwarn Biscuit"
-    ],
+    "examples": ["listwarn Biscuit"],
     "category": "moderation",
     "order": 82
   },
@@ -2669,9 +2291,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "optional": true,
         "description": "Optional: A role the lockdown is applied to, defaults to @everyone",
@@ -2690,18 +2310,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "TextChannel"
-          ]
+          "names": ["TextChannel"]
         },
         "optional": true,
         "description": "TextChannel the Member Logs are sent to, required when enabling",
@@ -2714,9 +2330,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "memberlogs enable"
-    ],
+    "examples": ["memberlogs enable"],
     "category": "moderation",
     "order": 84
   },
@@ -2729,18 +2343,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
       },
       {
         "type": {
-          "names": [
-            "TextChannel"
-          ]
+          "names": ["TextChannel"]
         },
         "optional": true,
         "description": "TextChannel the Mod Logs are sent to, required when enabling",
@@ -2753,9 +2363,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "modlogs enable"
-    ],
+    "examples": ["modlogs enable"],
     "category": "moderation",
     "order": 85
   },
@@ -2768,9 +2376,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member to mute",
         "name": "AnyMember"
@@ -2782,9 +2388,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "mute Muffin"
-    ],
+    "examples": ["mute Muffin"],
     "category": "moderation",
     "order": 86
   },
@@ -2797,18 +2401,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member to give a nickname",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Nickname to assign",
         "name": "NewNickname"
@@ -2820,9 +2420,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "nick Muffin Cupcake"
-    ],
+    "examples": ["nick Muffin Cupcake"],
     "category": "moderation",
     "order": 87
   },
@@ -2835,9 +2433,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of messages to delete, between 1 and 99",
         "name": "MessageAmount"
@@ -2849,9 +2445,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "purge 10"
-    ],
+    "examples": ["purge 10"],
     "category": "moderation",
     "order": 88
   },
@@ -2864,9 +2458,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
@@ -2878,9 +2470,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "regexmatchtoggle enable"
-    ],
+    "examples": ["regexmatchtoggle enable"],
     "category": "moderation",
     "order": 89
   },
@@ -2893,9 +2483,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "RoleResolvable"
-          ]
+          "names": ["RoleResolvable"]
         },
         "optional": true,
         "description": "Role to set, can be multiple split by spaces",
@@ -2908,10 +2496,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "selfroles uploader",
-      "selfroles uploader superuploader"
-    ],
+    "examples": ["selfroles uploader", "selfroles uploader superuploader"],
     "category": "moderation",
     "order": 90
   },
@@ -2924,9 +2509,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "ChannelResolvable"
-          ]
+          "names": ["ChannelResolvable"]
         },
         "description": "The channel to set the announcements to",
         "name": "AnnounceChannel"
@@ -2938,9 +2521,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "setannounce #updates"
-    ],
+    "examples": ["setannounce #updates"],
     "category": "moderation",
     "order": 91
   },
@@ -2953,18 +2534,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member to softban from the server",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Reason for this softban.",
         "name": "TheReason"
@@ -2976,9 +2553,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "softban ImmortalZypther"
-    ],
+    "examples": ["softban ImmortalZypther"],
     "category": "moderation",
     "order": 92
   },
@@ -2991,27 +2566,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member to ban from the server",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The amount of time this member should be banned",
         "name": "Time"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Reason for this banishment. Include `--no-delete` anywhere in the reason to\n    prevent Ribbon from deleting the banned member's messages",
@@ -3024,9 +2593,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "tempban Kai"
-    ],
+    "examples": ["tempban Kai"],
     "category": "moderation",
     "order": 93
   },
@@ -3039,27 +2606,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The interval at which the message(s) should be repeated",
         "name": "Interval"
       },
       {
         "type": {
-          "names": [
-            "ChannelResolvable"
-          ]
+          "names": ["ChannelResolvable"]
         },
         "description": "The channel to send the timed message in",
         "name": "Channel"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The message(s) to repeat",
         "name": "Message"
@@ -3071,9 +2632,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "timeradd reminder 1d #general \"Please read the rules everyone!\""
-    ],
+    "examples": ["timeradd reminder 1d #general \"Please read the rules everyone!\""],
     "category": "moderation",
     "order": 94
   },
@@ -3101,9 +2660,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The ID of the timed message to remove",
         "name": "TimerID"
@@ -3115,9 +2672,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "timerremove reminder"
-    ],
+    "examples": ["timerremove reminder"],
     "category": "moderation",
     "order": 96
   },
@@ -3130,9 +2685,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
@@ -3144,9 +2697,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "unknownmessages enable"
-    ],
+    "examples": ["unknownmessages enable"],
     "category": "moderation",
     "order": 97
   },
@@ -3174,9 +2725,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member to remove a role from",
         "name": "AnyMember"
@@ -3188,9 +2737,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "unmute Muffin"
-    ],
+    "examples": ["unmute Muffin"],
     "category": "moderation",
     "order": 99
   },
@@ -3203,27 +2750,21 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member to give warning points",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of warning points to give",
         "name": "WarningPoints"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Reason for warning",
         "name": "TheReason"
@@ -3235,9 +2776,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\moderation"
     },
     "preserveName": true,
-    "examples": [
-      "warn Biscuit 5 Not giving everyone cookies"
-    ],
+    "examples": ["warn Biscuit 5 Not giving everyone cookies"],
     "category": "moderation",
     "order": 100
   },
@@ -3250,9 +2789,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number/\"show\""
-          ]
+          "names": ["number/\"show\""]
         },
         "optional": true,
         "description": "The volume to set or use \"show\" to show current default volume",
@@ -3265,9 +2802,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "defaultvolume 2"
-    ],
+    "examples": ["defaultvolume 2"],
     "category": "music",
     "order": 101
   },
@@ -3280,9 +2815,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "One of the options linking to a video to play",
         "name": "Video"
@@ -3294,9 +2827,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "play final fantasy one winged angel"
-    ],
+    "examples": ["play final fantasy one winged angel"],
     "category": "music",
     "order": 102
   },
@@ -3309,10 +2840,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number",
-            "\"default\""
-          ]
+          "names": ["number", "\"default\""]
         },
         "optional": true,
         "description": "New maximum length in minutes",
@@ -3325,9 +2853,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "maxlength 10"
-    ],
+    "examples": ["maxlength 10"],
     "category": "music",
     "order": 103
   },
@@ -3340,10 +2866,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number",
-            "\"default\""
-          ]
+          "names": ["number", "\"default\""]
         },
         "optional": true,
         "description": "New maximum number of songs",
@@ -3356,9 +2879,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "maxsongs 2"
-    ],
+    "examples": ["maxsongs 2"],
     "category": "music",
     "order": 104
   },
@@ -3386,9 +2907,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Page to show",
@@ -3401,9 +2920,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "queue 2"
-    ],
+    "examples": ["queue 2"],
     "category": "music",
     "order": 106
   },
@@ -3449,9 +2966,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "queue 2"
-    ],
+    "examples": ["queue 2"],
     "category": "music",
     "order": 109
   },
@@ -3464,9 +2979,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Force the skip if you are the requester or a server moderator",
@@ -3479,9 +2992,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "skip\n-OR-\nskip force"
-    ],
+    "examples": ["skip\n-OR-\nskip force"],
     "category": "music",
     "order": 110
   },
@@ -3524,9 +3035,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "optional": true,
         "description": "The new volume to set",
@@ -3539,9 +3048,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\music"
     },
     "preserveName": true,
-    "examples": [
-      "volume 2"
-    ],
+    "examples": ["volume 2"],
     "category": "music",
     "order": 113
   },
@@ -3554,9 +3061,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Something you want to find",
         "name": "Query"
@@ -3568,9 +3073,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
-    "examples": [
-      "e621 pyrrha_nikos"
-    ],
+    "examples": ["e621 pyrrha_nikos"],
     "category": "nsfw",
     "order": 114
   },
@@ -3583,9 +3086,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Something you want to find",
         "name": "Query"
@@ -3597,9 +3098,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
-    "examples": [
-      "gelbooru pyrrha_nikos"
-    ],
+    "examples": ["gelbooru pyrrha_nikos"],
     "category": "nsfw",
     "order": 115
   },
@@ -3612,9 +3111,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Something you want to find",
         "name": "Query"
@@ -3626,9 +3123,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
-    "examples": [
-      "paheal pyrrha_nikos"
-    ],
+    "examples": ["paheal pyrrha_nikos"],
     "category": "nsfw",
     "order": 116
   },
@@ -3641,9 +3136,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Something you want to find",
         "name": "Query"
@@ -3655,9 +3148,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
-    "examples": [
-      "pornvids babe"
-    ],
+    "examples": ["pornvids babe"],
     "category": "nsfw",
     "order": 117
   },
@@ -3670,9 +3161,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Something you want to find",
         "name": "Query"
@@ -3684,9 +3173,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\nsfw"
     },
     "preserveName": true,
-    "examples": [
-      "rule34 pyrrha_nikos"
-    ],
+    "examples": ["rule34 pyrrha_nikos"],
     "category": "nsfw",
     "order": 118
   },
@@ -3714,18 +3201,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "The member you want to give some chips",
         "name": "AnyMember"
       },
       {
         "type": {
-          "names": [
-            "number"
-          ]
+          "names": ["number"]
         },
         "description": "The amount of chips you want to give",
         "name": "ChipsAmount"
@@ -3737,9 +3220,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
-    "examples": [
-      "ctu Biscuit 1000"
-    ],
+    "examples": ["ctu Biscuit 1000"],
     "category": "owner",
     "order": 120
   },
@@ -3752,9 +3233,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "description": "Member to make a mention to",
         "name": "AnyMember"
@@ -3766,9 +3245,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\owner"
     },
     "preserveName": true,
-    "examples": [
-      "tagmember ☜(⌒▽⌒)☞guy"
-    ],
+    "examples": ["tagmember ☜(⌒▽⌒)☞guy"],
     "category": "owner",
     "order": 121
   },
@@ -3796,9 +3273,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The name of the pokemon you want to find",
         "name": "PokemonName"
@@ -3810,9 +3285,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "dex dragonite"
-    ],
+    "examples": ["dex dragonite"],
     "category": "pokemon",
     "order": 124
   },
@@ -3825,9 +3298,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The name of the pokemon you want to get flavor text for",
         "name": "PokemonName"
@@ -3839,9 +3310,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "flavor dragonite"
-    ],
+    "examples": ["flavor dragonite"],
     "category": "pokemon",
     "order": 125
   },
@@ -3854,9 +3323,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the item to find",
         "name": "ItemName"
@@ -3868,9 +3335,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "item assault vest"
-    ],
+    "examples": ["item assault vest"],
     "category": "pokemon",
     "order": 126
   },
@@ -3883,18 +3348,14 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the pokemon to get the match for",
         "name": "PokemonName"
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Name of the move you want to find out about",
@@ -3902,9 +3363,7 @@
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Any additional moves you also want to find out about",
@@ -3912,9 +3371,7 @@
       },
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "The generation to find the match for",
@@ -3927,11 +3384,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "learn dragonite dragon dance",
-      "learn dragonite dragon dance,dragon claw",
-      "learn dragonite dragon dance, dragon claw --gen 6"
-    ],
+    "examples": ["learn dragonite dragon dance", "learn dragonite dragon dance,dragon claw", "learn dragonite dragon dance, dragon claw --gen 6"],
     "category": "pokemon",
     "order": 127
   },
@@ -3944,9 +3397,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The name of the ability you  want to find",
         "name": "AbilityName"
@@ -3958,9 +3409,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "ability multiscale"
-    ],
+    "examples": ["ability multiscale"],
     "category": "pokémon",
     "order": 123
   },
@@ -3973,9 +3422,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The move you want to find",
         "name": "MoveName"
@@ -3987,9 +3434,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "move dragon dance"
-    ],
+    "examples": ["move dragon dance"],
     "category": "pokémon",
     "order": 128
   },
@@ -4002,9 +3447,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "optional": true,
         "description": "Properties you want to use for your search",
@@ -4017,9 +3460,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "tcg name types subtype"
-    ],
+    "examples": ["tcg name types subtype"],
     "category": "pokémon",
     "order": 129
   },
@@ -4032,9 +3473,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "One or two types to find the matchup for",
         "name": "Types"
@@ -4046,9 +3485,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\pokemon"
     },
     "preserveName": true,
-    "examples": [
-      "type dragon flying"
-    ],
+    "examples": ["type dragon flying"],
     "category": "pokémon",
     "order": 130
   },
@@ -4061,9 +3498,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "anime to look up",
         "name": "AnimeName"
@@ -4075,9 +3510,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "anime Yu-Gi-Oh Dual Monsters"
-    ],
+    "examples": ["anime Yu-Gi-Oh Dual Monsters"],
     "category": "searches",
     "order": 131
   },
@@ -4090,9 +3523,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the tweak to find",
         "name": "TweakName"
@@ -4104,9 +3535,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "cydia Anemone"
-    ],
+    "examples": ["cydia Anemone"],
     "category": "searches",
     "order": 132
   },
@@ -4119,9 +3548,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "the word you want to define",
         "name": "Word"
@@ -4133,9 +3560,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "define Google"
-    ],
+    "examples": ["define Google"],
     "category": "searches",
     "order": 133
   },
@@ -4148,9 +3573,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Game that you want to find in the eShop",
         "name": "GameName"
@@ -4162,9 +3585,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "eshop Breath of The Wild"
-    ],
+    "examples": ["eshop Breath of The Wild"],
     "category": "searches",
     "order": 134
   },
@@ -4177,9 +3598,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name (species), number or type of the girl you want to find",
         "name": "CharacterName"
@@ -4191,9 +3610,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "girlsfrontline Negev"
-    ],
+    "examples": ["girlsfrontline Negev"],
     "category": "searches",
     "order": 135
   },
@@ -4206,9 +3623,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Thing to find on Google",
         "name": "SearchQuery"
@@ -4220,9 +3635,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "google Pyrrha Nikos"
-    ],
+    "examples": ["google Pyrrha Nikos"],
     "category": "searches",
     "order": 136
   },
@@ -4235,9 +3648,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The name of any game that you want to find",
         "name": "GameName"
@@ -4249,9 +3660,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "igdb Tales of Berseria"
-    ],
+    "examples": ["igdb Tales of Berseria"],
     "category": "searches",
     "order": 137
   },
@@ -4264,9 +3673,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Image to find on Google Images",
         "name": "ImageQuery"
@@ -4278,9 +3685,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "image Pyrrha Nikos'"
-    ],
+    "examples": ["image Pyrrha Nikos'"],
     "category": "searches",
     "order": 138
   },
@@ -4293,9 +3698,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The music track to look up",
         "name": "TrackQuery"
@@ -4307,9 +3710,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "itunes dash berlin symphony"
-    ],
+    "examples": ["itunes dash berlin symphony"],
     "category": "searches",
     "order": 139
   },
@@ -4322,9 +3723,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The dumb sh*t people need to use google for",
         "name": "SearchQuery"
@@ -4336,9 +3735,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "lmgtfy is it legal to kill an ant???"
-    ],
+    "examples": ["lmgtfy is it legal to kill an ant???"],
     "category": "searches",
     "order": 140
   },
@@ -4351,9 +3748,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "manga to look up",
         "name": "AnyManga"
@@ -4365,9 +3760,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "manga Yu-Gi-Oh"
-    ],
+    "examples": ["manga Yu-Gi-Oh"],
     "category": "searches",
     "order": 141
   },
@@ -4380,9 +3773,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Image to get the source for",
         "name": "ImageURL"
@@ -4394,9 +3785,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "saucenao https://i.imgur.com/6FjildG.jpg"
-    ],
+    "examples": ["saucenao https://i.imgur.com/6FjildG.jpg"],
     "category": "searches",
     "order": 142
   },
@@ -4409,9 +3798,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "The name of any game that you want to find",
         "name": "GameName"
@@ -4423,9 +3810,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "steam Tales of Berseria"
-    ],
+    "examples": ["steam Tales of Berseria"],
     "category": "searches",
     "order": 143
   },
@@ -4438,9 +3823,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the movie you want to find",
         "name": "MovieName"
@@ -4452,9 +3835,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "tmdb Pokemon 2000"
-    ],
+    "examples": ["tmdb Pokemon 2000"],
     "category": "searches",
     "order": 144
   },
@@ -4467,9 +3848,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Name of the TV serie you want to find",
         "name": "SeriesName"
@@ -4481,9 +3860,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "tvdb Pokemon"
-    ],
+    "examples": ["tvdb Pokemon"],
     "category": "searches",
     "order": 145
   },
@@ -4496,9 +3873,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Phrase that you want to define",
         "name": "PhraseQuery"
@@ -4510,9 +3885,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "urban Everclear"
-    ],
+    "examples": ["urban Everclear"],
     "category": "searches",
     "order": 146
   },
@@ -4525,9 +3898,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "Video to find on YouTube",
         "name": "VideoQuery"
@@ -4539,9 +3910,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\searches"
     },
     "preserveName": true,
-    "examples": [
-      "youtube Voldemort Origins of the heir"
-    ],
+    "examples": ["youtube Voldemort Origins of the heir"],
     "category": "searches",
     "order": 147
   },
@@ -4554,9 +3923,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "string"
-          ]
+          "names": ["string"]
         },
         "description": "List of members to monitor space delimited",
         "name": "AnyMembers"
@@ -4568,9 +3935,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
     },
     "preserveName": true,
-    "examples": [
-      "twitchmonitors techagent favna"
-    ],
+    "examples": ["twitchmonitors techagent favna"],
     "category": "streamwatch",
     "order": 148
   },
@@ -4583,9 +3948,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "ChannelResolvable"
-          ]
+          "names": ["ChannelResolvable"]
         },
         "description": "Channel to output notifs to",
         "name": "AnyChannel"
@@ -4597,9 +3960,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
     },
     "preserveName": true,
-    "examples": [
-      "twitchoutput #twitch-notifications"
-    ],
+    "examples": ["twitchoutput #twitch-notifications"],
     "category": "streamwatch",
     "order": 149
   },
@@ -4612,9 +3973,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "boolean"
-          ]
+          "names": ["boolean"]
         },
         "description": "True or False",
         "name": "Option"
@@ -4626,9 +3985,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\streamwatch"
     },
     "preserveName": true,
-    "examples": [
-      "twitchtoggle enable"
-    ],
+    "examples": ["twitchtoggle enable"],
     "category": "streamwatch",
     "order": 150
   },
@@ -4647,9 +4004,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "MemberResolvable"
-          ]
+          "names": ["MemberResolvable"]
         },
         "optional": true,
         "description": "Optional: Member to steal a cookie from",
@@ -4668,9 +4023,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to cuddle",
@@ -4683,9 +4036,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "cuddle Velvet"
-    ],
+    "examples": ["cuddle Velvet"],
     "category": "weeb",
     "order": 152
   },
@@ -4698,9 +4049,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to feed",
@@ -4713,9 +4062,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "feed Ren"
-    ],
+    "examples": ["feed Ren"],
     "category": "weeb",
     "order": 153
   },
@@ -4728,9 +4075,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to give a hug",
@@ -4743,9 +4088,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "hug Nora"
-    ],
+    "examples": ["hug Nora"],
     "category": "weeb",
     "order": 154
   },
@@ -4758,9 +4101,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to give a kiss",
@@ -4773,9 +4114,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "kiss Pyrrha"
-    ],
+    "examples": ["kiss Pyrrha"],
     "category": "weeb",
     "order": 155
   },
@@ -4791,9 +4130,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "neko"
-    ],
+    "examples": ["neko"],
     "category": "weeb",
     "order": 156
   },
@@ -4806,9 +4143,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to pat",
@@ -4821,9 +4156,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "pat Ruby"
-    ],
+    "examples": ["pat Ruby"],
     "category": "weeb",
     "order": 157
   },
@@ -4836,9 +4169,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to poke",
@@ -4851,9 +4182,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "poke Weiss"
-    ],
+    "examples": ["poke Weiss"],
     "category": "weeb",
     "order": 158
   },
@@ -4866,9 +4195,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to slap",
@@ -4881,9 +4208,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "slap Cinder"
-    ],
+    "examples": ["slap Cinder"],
     "category": "weeb",
     "order": 159
   },
@@ -4896,9 +4221,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to give a hug",
@@ -4911,9 +4234,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "smug McDonalds"
-    ],
+    "examples": ["smug McDonalds"],
     "category": "weeb",
     "order": 160
   },
@@ -4926,9 +4247,7 @@
     "params": [
       {
         "type": {
-          "names": [
-            "GuildMemberResolvable"
-          ]
+          "names": ["GuildMemberResolvable"]
         },
         "optional": true,
         "description": "Name of the member you want to tickle",
@@ -4941,9 +4260,7 @@
       "path": "e:\\dev\\ribbon\\docsbuild\\commands\\weeb"
     },
     "preserveName": true,
-    "examples": [
-      "tickle Yang"
-    ],
+    "examples": ["tickle Yang"],
     "category": "weeb",
     "order": 161
   }

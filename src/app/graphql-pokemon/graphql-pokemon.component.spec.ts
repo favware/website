@@ -12,9 +12,8 @@ describe('GraphqlPokemonComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      declarations: [ GraphqlPokemonComponent ],
-    })
-    .compileComponents();
+      declarations: [GraphqlPokemonComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

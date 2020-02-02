@@ -6,13 +6,10 @@ const { zalgo, banish } = require('@favware/zalgo');
 // Zalgo usage
 zalgo('some text');
 
-
 // => ŝ̜̩͇̼̥̼́̏͢o͎͊͜ḿ̛̩̳̖͕̞̩̭ͪe͖̺̣̹̺̋̀͛̽͝ ̖͍̭͓̯̠͑͑͢t̼̪̋͌͢eͯ̋͏͖͎͍̩̭̮x̢͚̄̾̀̈ͧ̓ͩ̚t̪ͫ͝
-
 
 // Banish usage
 banish('ŝ̜̩͇̼̥̼́̏͢o͎͊͜ḿ̛̩̳̖͕̞̩̭ͪe͖̺̣̹̺̋̀͛̽͝ ̖͍̭͓̯̠͑͑͢t̼̪̋͌͢eͯ̋͏͖͎͍̩̭̮x̢͚̄̾̀̈ͧ̓ͩ̚t̪ͫ͝');
-
 
 // => some text
 
@@ -26,7 +23,7 @@ const options = {
   up: true,
   middle: true,
   down: true,
-  size: 'maxi', // or 'mini' or ''
+  size: 'maxi' // or 'mini' or ''
 };
 
 zalgo('some text', options);

@@ -10,8 +10,5 @@
     "entryModule": "./app/favware.server.module#FavwareServerModule",
     "enableIvy": false
   },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["test.ts", "**/*.spec.ts"]
 }

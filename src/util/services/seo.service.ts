@@ -13,20 +13,18 @@ export type SeoTags = {
 };
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class SeoService {
+  constructor(private meta: Meta, private titleService: Title) {}
 
-  constructor (private meta: Meta, private titleService: Title) {
-  }
-
-  public generateTags (tags: SeoTags) {
+  public generateTags(tags: SeoTags) {
     tags = {
       title: '',
       description: 'For Hearth and Home! Check out my projects here!',
       summary: 'This is my personal website showing off all the projects that I have made. Be sure to try some of them out!',
       image: 'https://favware.tech/assets/og-image.png',
-      ...tags,
+      ...tags
     };
 
     // Update title and description

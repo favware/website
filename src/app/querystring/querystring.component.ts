@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-querystring',
   templateUrl: './querystring.component.html',
-  styleUrls: ['./querystring.component.scss'],
+  styleUrls: ['./querystring.component.scss']
 })
 export class QuerystringComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -19,29 +19,29 @@ export class QuerystringComponent implements OnInit {
       {
         text: 'yarn add @favware/querystring',
         color: 'accent',
-        disabled: true,
+        disabled: true
       },
       {
         text: 'View on Yarn',
         url: QUERYSTRING_YARN,
         color: 'yarn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: QUERYSTRING_GITHUB,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public stringifyUsageTile: ICodeTile = {
     header: 'Usage - Stringify',
-    codeFile: '/assets/code/querystring.stringify.js',
+    codeFile: '/assets/code/querystring.stringify.js'
   };
   public parseUsageTile: ICodeTile = {
     header: 'Usage - Parse',
-    codeFile: '/assets/code/querystring.parse.js',
+    codeFile: '/assets/code/querystring.parse.js'
   };
   public metadata: SeoTags = {
     title: '@Favware/Querystring',
@@ -53,13 +53,12 @@ export class QuerystringComponent implements OnInit {
     It is in a sense similar to many other querystringifiers, with the exception of being written
     in TypeScript thus offering great support to TypeScript users.
     Install it today with "yarn add @favware/querystring"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'querystring', 'awesome-querystring', 'stringify', 'parse', 'safe'],
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'querystring', 'awesome-querystring', 'stringify', 'parse', 'safe']
   };
 
-  constructor (private seo: SeoService) {
-  }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -67,7 +66,7 @@ export class QuerystringComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

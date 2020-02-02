@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-zalgo',
   templateUrl: './zalgo.component.html',
-  styleUrls: ['./zalgo.component.scss'],
+  styleUrls: ['./zalgo.component.scss']
 })
 export class ZalgoComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -19,25 +19,25 @@ export class ZalgoComponent implements OnInit {
       {
         text: '@favware/zalgo',
         color: 'accent',
-        disabled: true,
+        disabled: true
       },
       {
         text: 'View on Yarn',
         url: ZALGO_YARN,
         color: 'yarn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: ZALGO_GITHUB,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public usageTile: ICodeTile = {
     header: 'Usage',
-    codeFile: '/assets/code/zalgo.js',
+    codeFile: '/assets/code/zalgo.js'
   };
   public metadata: SeoTags = {
     title: '@Favware/zalgo',
@@ -47,13 +47,12 @@ export class ZalgoComponent implements OnInit {
     url: '/zalgo',
     summary: oneLine`A NodeJS library that can transform any text into standard "zalgo" formatted text,
       as well as banish most common Zalgo. Install it today with "@favware/zalgo"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'zalgo', 'banish', 'awesome-zalog'],
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'zalgo', 'banish', 'awesome-zalog']
   };
 
-  constructor (private seo: SeoService) {
-  }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -61,7 +60,7 @@ export class ZalgoComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

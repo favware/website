@@ -12,9 +12,8 @@ describe('RibbonComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [RibbonComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

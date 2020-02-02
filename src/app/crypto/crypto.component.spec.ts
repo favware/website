@@ -12,9 +12,8 @@ describe('CryptoComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [CryptoComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

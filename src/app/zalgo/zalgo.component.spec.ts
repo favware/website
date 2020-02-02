@@ -12,9 +12,8 @@ describe('ZalgoComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [ZalgoComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

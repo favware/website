@@ -34,12 +34,13 @@ export const app = express();
 const { FavwareServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/main');
 
 // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
-app.engine('html', ngExpressEngine({
-  bootstrap: FavwareServerModuleNgFactory,
-  providers: [
-    provideModuleMap(LAZY_MODULE_MAP)
-  ],
-}));
+app.engine(
+  'html',
+  ngExpressEngine({
+    bootstrap: FavwareServerModuleNgFactory,
+    providers: [provideModuleMap(LAZY_MODULE_MAP)]
+  })
+);
 
 app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
@@ -64,11 +65,9 @@ if (!process.env.FIREBASE_CONFIG) {
 function getMockMutationObserver() {
   return class {
     // tslint:disable-next-line: no-empty
-    public observe(node, options) {
-    }
+    public observe(node, options) {}
     // tslint:disable-next-line: no-empty
-    public disconnect() {
-    }
+    public disconnect() {}
     public takeRecords() {
       return [];
     }

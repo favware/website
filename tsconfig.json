@@ -15,10 +15,7 @@
     "downlevelIteration": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "lib": ["es2018", "dom"],
     "removeComments": true,
     "paths": {
       "@pipes/*": ["util/pipes/*"],

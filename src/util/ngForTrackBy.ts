@@ -1,4 +1,4 @@
 export default (index: number, item: any) => {
-    if (!item) return null;
-    return index;
+  if (!item) return null;
+  return index;
 };

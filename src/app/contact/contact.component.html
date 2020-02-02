@@ -1,21 +1,19 @@
 <section>
-  <div class="container header-ribbon-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
-       fxLayoutGap="0.5%">
-    <div class="center-text">
-      <h1 class="mat-display-2 header-text">{{headerTile.header}}</h1>
-      <h2 class="mat-h1">{{headerTile.subheader}}</h2>
+  <div class="container header-ribbon-image" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="0.5%">
+    <div class="center-text header-full-size">
+      <h1 class="mat-display-2 header-text">{{ headerTile.header }}</h1>
+      <h2 class="mat-h1">{{ headerTile.subheader }}</h2>
     </div>
   </div>
 
-  <div class="center-text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1.5%" fxLayoutGap.sm="8%"
-       fxLayoutGap.xs="8%">
+  <div class="center-text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1.5%" fxLayoutGap.sm="8%" fxLayoutGap.xs="8%">
     <div *ngFor="let method of contactMethods; trackBy: ngForTrackBy" fxFill fxFlex="grow" fxFlexAlign="center">
       <a [href]="method.link" [target]="method.link.startsWith('mailto') ? '_self' : '_blank'" rel="noreferrer">
         <button [color]="method.color" mat-button mat-fab>
           <mat-icon [svgIcon]="method.logo" class="fab-icon"></mat-icon>
         </button>
         <button [color]="method.color" class="contact-size-button" mat-button mat-raised-button>
-          {{method.contact | uppercase}}
+          {{ method.contact | uppercase }}
         </button>
       </a>
     </div>

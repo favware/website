@@ -47,6 +47,11 @@ export const CRYPTO_GITHUB = 'https://www.github.com/favware/node-packages/tree/
 export const CREATE_DJSBOT_YARN = 'https://yarnpkg.com/en/package/create-djsbot';
 export const CREATE_DJSBOT_GITHUB = 'https://www.github.com/favware/create-djsbot';
 
+export const SKYRA_SERVER_URL = 'https://join.skyra.pw';
+export const SKYRA_INVITE_URL = 'https://invite.skyra.pw';
+export const SKYRA_GITHUB_URL = 'https://github.com/skyra-project/skyra';
+export const SKYRA_DASHBOARD_URL = 'https://skyra.pw';
+
 export const CONTACT_FACEBOOK = 'https://www.facebook.com/messages/t/FavnaX';
 export const CONTACT_GITHUB = 'https://www.github.com/favware';
 export const CONTACT_LINKEDIN = 'https://www.linkedin.com/in/jeroenclaassensict';

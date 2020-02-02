@@ -4,7 +4,6 @@ import { TestModule } from '@util/testing.module';
 
 import { SeedcheckComponent } from './seedcheck.component';
 
-
 describe('SeedcheckComponent', () => {
   let component: SeedcheckComponent;
   let fixture: ComponentFixture<SeedcheckComponent>;
@@ -13,9 +12,8 @@ describe('SeedcheckComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [SeedcheckComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,17 +1,20 @@
-const tslint = require("tslint");
+const tslint = require('tslint');
 const ts = require('typescript');
-const { milkyLint, milkyReport } = require("@favware/milky-tslint");
+const { milkyLint, milkyReport } = require('@favware/milky-tslint');
 
-gulp.task("lint", () => {
+gulp.task('lint', () => {
   const lintProgram = tslint.Linter.createProgram('./tsconfig.json', '.');
   ts.getPreEmitDiagnostics(lintProgram);
 
-  return gulp.src(tsSource)
-    .pipe(milkyLint({
-      formatter: 'stylish',
-      program: lintProgram,
-      tslint: tslint,
-      fix: !!argv.fix,
-    }))
+  return gulp
+    .src(tsSource)
+    .pipe(
+      milkyLint({
+        formatter: 'stylish',
+        program: lintProgram,
+        tslint: tslint,
+        fix: !!argv.fix
+      })
+    )
     .pipe(milkyReport());
 });

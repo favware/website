@@ -6,11 +6,11 @@ import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
 @Component({
-  selector: 'favware-create-djs-bot-component',
-  templateUrl: './create-djs-bot-component.component.html',
-  styleUrls: ['./create-djs-bot-component.component.scss'],
+  selector: 'favware-create-djs-bot',
+  templateUrl: './create-djs-bot.component.html',
+  styleUrls: ['./create-djs-bot.component.scss']
 })
-export class CreateDjsBotComponentComponent implements OnInit {
+export class CreateDjsBotComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: 'Create DJS Bot',
@@ -19,31 +19,31 @@ export class CreateDjsBotComponentComponent implements OnInit {
       {
         text: 'yarn create djsbot',
         color: 'accent',
-        disabled: true,
+        disabled: true
       },
       {
         text: 'View on Yarn',
         url: CREATE_DJSBOT_YARN,
         color: 'yarn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: CREATE_DJSBOT_GITHUB,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
 
   public createDjsBotYarnTile: ICodeTile = {
     header: 'Usage - npx or yarn',
-    codeFile: '/assets/code/createdjsbot.yarn.bash',
+    codeFile: '/assets/code/createdjsbot.yarn.bash'
   };
 
   public createDjsBotGlobalTile: ICodeTile = {
     header: 'Usage - global usage',
-    codeFile: '/assets/code/createdjsbot.global.bash',
+    codeFile: '/assets/code/createdjsbot.global.bash'
   };
 
   public metadata: SeoTags = {
@@ -54,12 +54,12 @@ export class CreateDjsBotComponentComponent implements OnInit {
     url: '/create-djsbot',
     summary: oneLine`A NodeJS library that helps you to quickly get started with your Discord bot by providing a ready-to-run boilerplate
     using the Discord.JS-Commando framework. Supports a JavaScript and a TypeScript template`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'discord', 'boilerplate', 'create', 'discord.js', 'djs', 'commando', 'discord.js-commando'],
+    keywords: ['nodejs', 'javascript', 'typescript', 'discord', 'boilerplate', 'create', 'discord.js', 'djs', 'commando', 'discord.js-commando']
   };
 
-  constructor (private seo: SeoService) { }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit () {
+  public ngOnInit() {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -67,7 +67,7 @@ export class CreateDjsBotComponentComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

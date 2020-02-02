@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-ribbon',
   templateUrl: './ribbon.component.html',
-  styleUrls: ['./ribbon.component.scss'],
+  styleUrls: ['./ribbon.component.scss']
 })
 export class RibbonComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -20,19 +20,21 @@ export class RibbonComponent implements OnInit {
         text: 'View on GitHub',
         url: RIBBON_GITHUB_URL,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
-    text: [oneLine`
+    text: [
+      oneLine`
             Ribbon was a public server bot written for the [all-in-one voice and text chat application Discord](https://discordapp.com).
             It offered a rich amount of features to make your experience on Discord much easier, faster and better.
             As of December 1st 2019 Ribbon has been discontinued after about 2 years of continued support. This decision was made for me
             to be able to put my full efforts in the joint project to make Skyra ([website](https://skyra.pw)) an even better Discord bot
-            than it already is. Skyra offers all features that Ribbon used to + much much more!`],
+            than it already is. Skyra offers all features that Ribbon used to + much much more!`
+    ]
   };
   public metadata: SeoTags = {
     title: 'Ribbon',
@@ -41,12 +43,12 @@ export class RibbonComponent implements OnInit {
     imageAlt: 'Ribbon Preview Image',
     url: '/ribbon',
     summary: oneLine`A rich all purpose Discord bot.`,
-    keywords: ['discord', 'ribbon', 'bot', 'all-purpose', 'all', 'purpose', 'chat', 'pokemon', 'casino', 'automod', 'music', 'stream', '8ball', 'fun'],
+    keywords: ['discord', 'ribbon', 'bot', 'all-purpose', 'all', 'purpose', 'chat', 'pokemon', 'casino', 'automod', 'music', 'stream', '8ball', 'fun']
   };
 
-  constructor (private seo: SeoService) {}
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -54,8 +56,7 @@ export class RibbonComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
-
   }
 }

@@ -19,14 +19,13 @@ describe('CatchcalcComponent', () => {
         MarkdownModule.forRoot({
           markedOptions: {
             provide: MarkedOptions,
-            useFactory: markdownFactory,
-          },
+            useFactory: markdownFactory
+          }
         })
       ],
       declarations: [CatchcalcComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

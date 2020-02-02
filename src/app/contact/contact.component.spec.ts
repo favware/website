@@ -12,9 +12,8 @@ describe('ContactComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [ContactComponent],
-      providers: [MatIconService],
-    })
-      .compileComponents();
+      providers: [MatIconService]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
@@ -17,17 +18,40 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
   imports: [
-    CommonModule, MatButtonModule, MatToolbarModule, MatDatepickerModule, MatIconModule,
-    MatSidenavModule, MatListModule, MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule,
-    MatInputModule, MatCarouselModule, MatProgressSpinnerModule, MatChipsModule
+    CommonModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatInputModule,
+    MatCarouselModule,
+    MatProgressSpinnerModule,
+    MatChipsModule,
+    MatDividerModule
   ],
   exports: [
-    CommonModule, MatButtonModule, MatToolbarModule, MatDatepickerModule, MatIconModule,
-    MatSidenavModule, MatListModule, MatCardModule, MatTableModule, MatPaginatorModule, MatSortModule,
-    MatInputModule, MatCarouselModule, MatProgressSpinnerModule, MatChipsModule
-  ],
+    CommonModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatInputModule,
+    MatCarouselModule,
+    MatProgressSpinnerModule,
+    MatChipsModule,
+    MatDividerModule
+  ]
 })
-
-export class MaterialModule {
-
-}
+export class MaterialModule {}

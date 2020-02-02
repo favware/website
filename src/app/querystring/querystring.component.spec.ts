@@ -12,9 +12,8 @@ describe('QuerystringComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      declarations: [QuerystringComponent],
-    })
-      .compileComponents();
+      declarations: [QuerystringComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

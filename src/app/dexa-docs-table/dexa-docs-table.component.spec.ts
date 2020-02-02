@@ -12,9 +12,8 @@ describe('DexaDocsTableComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [DexaDocsTableComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

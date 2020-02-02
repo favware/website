@@ -45,7 +45,9 @@ strong {
   font-weight: bolder !important;
 }
 
-pre, code, .token {
+pre,
+code,
+.token {
   font-family: $coding_fonts !important;
   font-display: swap;
 }

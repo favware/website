@@ -1,7 +1,7 @@
 import { Query } from '@favware/graphql-pokemon';
 
 interface GraphQLPokemonResponse<K extends keyof Omit<Query, '__typename'>> {
-	data: Record<K, Omit<Query[K], '__typename'>>;
+  data: Record<K, Omit<Query[K], '__typename'>>;
 }
 
 fetch('https://favware.tech/api', {
@@ -22,5 +22,5 @@ fetch('https://favware.tech/api', {
     `
   })
 })
-.then(res => res.json() as Promise<GraphQLPokemonResponse<'getPokemonDetails'>>)
-.then(json => console.log(json.data))
+  .then(res => res.json() as Promise<GraphQLPokemonResponse<'getPokemonDetails'>>)
+  .then(json => console.log(json.data));

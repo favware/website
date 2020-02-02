@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-milkylint',
   templateUrl: './milkylint.component.html',
-  styleUrls: ['./milkylint.component.scss'],
+  styleUrls: ['./milkylint.component.scss']
 })
 export class MilkylintComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -19,25 +19,25 @@ export class MilkylintComponent implements OnInit {
       {
         text: '@favware/milky-tslint ',
         color: 'accent',
-        disabled: true,
+        disabled: true
       },
       {
         text: 'View on Yarn',
         url: MILKY_TSLINT_YARN,
         color: 'yarn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: MILKY_TSLINT_GITHUB,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public usageTile: ICodeTile = {
     header: 'Usage',
-    codeFile: '/assets/code/milkylint.js',
+    codeFile: '/assets/code/milkylint.js'
   };
   public metadata: SeoTags = {
     title: '@Favware/Milky-TSLint',
@@ -47,13 +47,12 @@ export class MilkylintComponent implements OnInit {
     url: '/milkylint',
     summary: oneLine`A NodeJS library meant for Gulp that can lint your TypeScript code.
     Install it today with "yarn add @favware/milky-tslint"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'gulp', 'typescript', 'tslint', 'milk'],
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'gulp', 'typescript', 'tslint', 'milk']
   };
 
-  constructor (private seo: SeoService) {
-  }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -61,7 +60,7 @@ export class MilkylintComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

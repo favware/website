@@ -27,7 +27,8 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .text-content, .header-content {
+  .text-content,
+  .header-content {
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -40,14 +41,16 @@
     width: 75%;
   }
 
-  code[class*="language-"], pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     padding: 1em !important;
     margin: 1em !important;
   }
 }
 
 @media only screen and (min-width: 601px) {
-  .text-content, .header-content {
+  .text-content,
+  .header-content {
     padding-left: 12.5%;
     padding-right: 12.5%;
   }
@@ -58,7 +61,8 @@
     height: 95vh;
   }
 
-  code[class*="language-"], pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     font-size: 0.5rem;
   }
 }

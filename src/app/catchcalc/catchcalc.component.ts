@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-catchcalc',
   templateUrl: './catchcalc.component.html',
-  styleUrls: ['./catchcalc.component.scss'],
+  styleUrls: ['./catchcalc.component.scss']
 })
 export class CatchcalcComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -20,28 +20,30 @@ export class CatchcalcComponent implements OnInit {
         text: 'Download CatchCalc',
         url: `${ASSET_BASE_PATH}/website-dist/catchcalc.jar`,
         color: 'primary',
-        outer: true,
+        outer: true
       },
       {
         text: 'Download Java Corretto',
         url: 'https://aws.amazon.com/corretto/',
         color: 'warn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: CATCHCALC_GITHUB_URL,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
-    text: [oneLine`SEEDChecker is a Java application that can periodically check
+    text: [
+      oneLine`SEEDChecker is a Java application that can periodically check
             if the decryption seed for a given title is available.
-            If a SEED is available it is automatically downloaded to your default "Downloads" folder`],
+            If a SEED is available it is automatically downloaded to your default "Downloads" folder`
+    ]
   };
   public instructionsTile: IPrimaryTile = {
     header: 'Instructions',
@@ -59,23 +61,19 @@ export class CatchcalcComponent implements OnInit {
       'Ideally the **Current HP** will be 1, that is if you used False Swipe or Hold Back. If not then you are going have to make a guess and I cannot help here',
       '_Step 6_',
       'Set all your other variables if applicable then press the **Calculate chance to catch** button to have the program do its magic!'
-    ],
+    ]
   };
   public faqTile: IPrimaryTile = {
     header: 'FAQ',
     subheader: '',
     text: [
-      '_**Q:** It doesn\'t start!_',
+      "_**Q:** It doesn't start!_",
       '**A:** Make sure you have associated the .jar extension with Java. To do so right click the program then **open with** and then select the **Java platform.**',
-      '_**Q:** I can\'t find the Java platform in the list!_',
+      "_**Q:** I can't find the Java platform in the list!_",
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
-    ],
+    ]
   };
-  public slides: { url: string }[] = [
-    { url: '/assets/screenshots/catchcalc/base.png' },
-    { url: '/assets/screenshots/catchcalc/easymon.png' },
-    { url: '/assets/screenshots/catchcalc/hardmon.png' }
-  ];
+  public slides: { url: string }[] = [{ url: '/assets/screenshots/catchcalc/base.png' }, { url: '/assets/screenshots/catchcalc/easymon.png' }, { url: '/assets/screenshots/catchcalc/hardmon.png' }];
   public carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
@@ -91,22 +89,21 @@ export class CatchcalcComponent implements OnInit {
     hideOverlay: true,
     useKeyboard: true,
     useMouseWheel: true,
-    orientation: 'ltr',
+    orientation: 'ltr'
   };
   public metadata: SeoTags = {
     title: 'CatchCalc',
-    description: 'Gotta Catch Em\' All!',
+    description: "Gotta Catch Em' All!",
     image: 'https://favware.tech/assets/icons/catchcalc.png',
     imageAlt: 'CatchCalc Preview Image',
     url: '/catchcalc',
     summary: oneLine`A Java program that can calculate the catchrate of any Pokémon in the 6th generation of games.`,
-    keywords: ['catchcalc', 'java', 'pokemon', 'catchrate', 'calculate'],
+    keywords: ['catchcalc', 'java', 'pokemon', 'catchrate', 'calculate']
   };
 
-  constructor (private seo: SeoService) {
-  }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -114,7 +111,7 @@ export class CatchcalcComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

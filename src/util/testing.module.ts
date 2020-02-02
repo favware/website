@@ -20,25 +20,13 @@ const routes: Routes = [];
     MarkdownModule.forRoot({
       markedOptions: {
         provide: MarkedOptions,
-        useFactory: markdownFactory,
-      },
+        useFactory: markdownFactory
+      }
     }),
     ClipboardModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
-  exports: [
-    HttpClientModule,
-    NoopAnimationsModule,
-    LayoutModule,
-    MaterialModule,
-    MarkdownModule,
-    ClipboardModule,
-    ReactiveFormsModule,
-    RouterModule
-  ],
+  exports: [HttpClientModule, NoopAnimationsModule, LayoutModule, MaterialModule, MarkdownModule, ClipboardModule, ReactiveFormsModule, RouterModule]
 })
-
-export class TestModule {
-
-}
+export class TestModule {}

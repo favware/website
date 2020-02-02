@@ -4,19 +4,21 @@ import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from
 
 @Component({
   selector: 'favware-redirect-guard',
-  template: `<span>/<span>`,
+  template: `
+    <span>/<span></span></span>
+  `
 })
 @Injectable()
 export class RedirectGuardComponent implements CanActivate {
   public router: Router;
   private isBrowser: boolean;
 
-  constructor (router: Router, @Inject(PLATFORM_ID) private platformId: any) {
+  constructor(router: Router, @Inject(PLATFORM_ID) private platformId: any) {
     this.router = router;
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
-  public canActivate (route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+  public canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
     if (this.isBrowser) window.location.href = route.data.externalUrl;
     return true;
   }

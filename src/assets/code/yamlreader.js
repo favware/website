@@ -5,7 +5,6 @@ readYaml('/path/to/some/yaml/file');
 // => JavaScript object with the keys from the yaml
 // => Using the YAML file as shown here procudes the following JSON:
 
-
 /**
  {
     Bulbasaur:

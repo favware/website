@@ -12,9 +12,8 @@ describe('MilkylintComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [MilkylintComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

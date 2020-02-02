@@ -19,7 +19,6 @@ export const markdownFactory = (): MarkedOptions => {
     sanitize: true,
     silent: true,
     smartLists: true,
-    smartypants: false,
-    tables: true,
+    smartypants: false
   };
 };

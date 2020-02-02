@@ -2,23 +2,22 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { TestModule } from '@util/testing.module';
 
-import { CreateDjsBotComponentComponent } from './create-djs-bot-component.component';
+import { CreateDjsBotComponent } from './create-djs-bot.component';
 
 describe('CreateDjsBotComponentComponent', () => {
-  let component: CreateDjsBotComponentComponent;
-  let fixture: ComponentFixture<CreateDjsBotComponentComponent>;
+  let component: CreateDjsBotComponent;
+  let fixture: ComponentFixture<CreateDjsBotComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [TestModule],
-      declarations: [ CreateDjsBotComponentComponent ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+      declarations: [CreateDjsBotComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CreateDjsBotComponentComponent);
+    fixture = TestBed.createComponent(CreateDjsBotComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

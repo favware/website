@@ -11,10 +11,9 @@ import { DexaDocsErrorStateMatches } from './dexa-docs-error-state-matcher';
 @Component({
   selector: 'favware-dexa-docs-table',
   templateUrl: './dexa-docs-table.component.html',
-  styleUrls: ['./dexa-docs-table.component.scss'],
+  styleUrls: ['./dexa-docs-table.component.scss']
 })
 export class DexaDocsTableComponent implements OnInit {
-
   @ViewChild(MatPaginator, { static: true }) public paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) public sort: MatSort;
   @ViewChild('filter', { static: true }) public filter: ElementRef;
@@ -24,14 +23,14 @@ export class DexaDocsTableComponent implements OnInit {
   public searchFormControl = new FormControl('', [Validators.pattern(/[A-z]+/g)]);
   public matcher = new DexaDocsErrorStateMatches();
 
-  public ngOnInit () {
+  public ngOnInit() {
     this.dataSource = new DexaDocsDatasource(this.paginator, this.sort);
     fromEvent(this.filter.nativeElement, 'keyup')
       .pipe(debounceTime(150), distinctUntilChanged())
-      .subscribe(() => this.dataSource.filter = this.filter.nativeElement.value);
+      .subscribe(() => (this.dataSource.filter = this.filter.nativeElement.value));
   }
 
-  public clearFilter () {
+  public clearFilter() {
     this.searchFormControl.setValue('');
     this.dataSource.filter = '';
   }

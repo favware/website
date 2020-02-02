@@ -9,10 +9,9 @@ import { HomeComponent } from './home.component';
 
 @NgModule({
   imports: [RouterModule.forRoot([], { scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' })],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-class KarmaRoutingModule {
-}
+class KarmaRoutingModule {}
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -22,9 +21,8 @@ describe('HomeComponent', () => {
     TestBed.configureTestingModule({
       imports: [MaterialModule, KarmaRoutingModule, TestModule],
       declarations: [HomeComponent, CardActionCasePipe],
-      providers: [RedirectGuardComponent],
-    })
-      .compileComponents();
+      providers: [RedirectGuardComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

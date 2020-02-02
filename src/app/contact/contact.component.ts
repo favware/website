@@ -9,14 +9,14 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
   public headerTile: IPrimaryTile = {
     header: 'Got questions, concerns or business inquires?',
     subheader: 'Contact me through one of these sources',
-    text: ['Or fill in the form below to send an email'],
+    text: ['Or fill in the form below to send an email']
   };
   public contactMethods: ContactMethod[] = [
     { logo: 'mat-mail-icon', link: CONTACT_MAIL, color: 'mail', contact: 'send an email' },
@@ -36,14 +36,14 @@ export class ContactComponent implements OnInit {
     imageAlt: 'Fancy Embedded Image',
     url: '/contact',
     summary: oneLine`Eager to get in contact with me? Be sure to visit this page!`,
-    keywords: ['contact', 'email', 'github', 'youtube', 'facebook', 'twitch', 'twitter', 'linkedin', 'discord', 'reddit'],
+    keywords: ['contact', 'email', 'github', 'youtube', 'facebook', 'twitch', 'twitter', 'linkedin', 'discord', 'reddit']
   };
 
-  constructor (private matIconService: MatIconService, private seo: SeoService) {
+  constructor(private matIconService: MatIconService, private seo: SeoService) {
     this.matIconService.init();
   }
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -51,7 +51,7 @@ export class ContactComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

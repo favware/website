@@ -15,7 +15,7 @@ describe('SidenavComponent', () => {
     TestBed.configureTestingModule({
       declarations: [SidenavComponent],
       imports: [TestModule],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     }).compileComponents();
   }));
 

@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-seedcheck',
   templateUrl: './seedcheck.component.html',
-  styleUrls: ['./seedcheck.component.scss'],
+  styleUrls: ['./seedcheck.component.scss']
 })
 export class SeedcheckComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -20,28 +20,30 @@ export class SeedcheckComponent implements OnInit {
         text: 'Download SEEDChecker',
         url: `${ASSET_BASE_PATH}/website-dist/SEEDChecker.jar`,
         color: 'primary',
-        outer: true,
+        outer: true
       },
       {
-        text: 'Download Java Corretto',
-        url: 'https://aws.amazon.com/corretto/',
+        text: 'Download Java',
+        url: 'https://adoptopenjdk.net/',
         color: 'warn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: SEEDCHECKER_GITHUB_URL,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public aboutTile: IPrimaryTile = {
     header: 'About',
     subheader: '',
-    text: [oneLine`SEEDChecker is a Java application that can periodically check
+    text: [
+      oneLine`SEEDChecker is a Java application that can periodically check
             if the decryption seed for a given title is available.
-            If a SEED is available it is automatically downloaded to your default "Downloads" folder`],
+            If a SEED is available it is automatically downloaded to your default "Downloads" folder`
+    ]
   };
   public instructionsTile: IPrimaryTile = {
     header: 'Instructions',
@@ -57,23 +59,19 @@ export class SeedcheckComponent implements OnInit {
       'Press **Start SEED Checking** to start the process',
       '_Quitting_',
       'If you want to quit checking either close the program or click the **Cancel SEED Checking** button'
-    ],
+    ]
   };
   public faqTile: IPrimaryTile = {
     header: 'FAQ',
     subheader: '',
     text: [
-      '_**Q:** It doesn\'t start!_',
+      "_**Q:** It doesn't start!_",
       '**A:** Make sure you have associated the .jar extension with Java. To do so right click the program then `open with` and then select the `Java platform.`',
-      '_**Q:** I can\'t find the Java platform in the list!_',
+      "_**Q:** I can't find the Java platform in the list!_",
       '**A:** Make sure you install Java using the button above. Amazon Corretto version of Java is guaranteed to work!'
-    ],
+    ]
   };
-  public slides: { url: string }[] = [
-    { url: '/assets/screenshots/seedcheck/base.png' },
-    { url: '/assets/screenshots/seedcheck/noseed.png' },
-    { url: '/assets/screenshots/seedcheck/seed.png' }
-  ];
+  public slides: { url: string }[] = [{ url: '/assets/screenshots/seedcheck/base.png' }, { url: '/assets/screenshots/seedcheck/noseed.png' }, { url: '/assets/screenshots/seedcheck/seed.png' }];
   public carousel: IMatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
@@ -89,7 +87,7 @@ export class SeedcheckComponent implements OnInit {
     hideOverlay: true,
     useKeyboard: true,
     useMouseWheel: true,
-    orientation: 'ltr',
+    orientation: 'ltr'
   };
   public metadata: SeoTags = {
     title: 'SEEDChecker',
@@ -98,13 +96,12 @@ export class SeedcheckComponent implements OnInit {
     imageAlt: 'SEEDChecker Preview Image',
     url: '/seedcheck',
     summary: oneLine`A Java based utility that can be used to fetch the SEED descryption keys for 3DS games`,
-    keywords: ['3ds', 'nintendo', 'hacking', 'seed', 'java', 'program', 'utility', 'tool'],
+    keywords: ['3ds', 'nintendo', 'hacking', 'seed', 'java', 'program', 'utility', 'tool']
   };
 
-  constructor (private seo: SeoService) {
-  }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -112,7 +109,7 @@ export class SeedcheckComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }

@@ -20,7 +20,7 @@ import { CatchcalcComponent } from './catchcalc/catchcalc.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConvertbotComponent } from './convertbot/convertbot.component';
 import { ConverterComponent } from './converter/converter.component';
-import { CreateDjsBotComponentComponent } from './create-djs-bot-component/create-djs-bot-component.component';
+import { CreateDjsBotComponent } from './create-djs-bot/create-djs-bot.component';
 import { CryptoComponent } from './crypto/crypto.component';
 import { DexaDocsTableComponent } from './dexa-docs-table/dexa-docs-table.component';
 import { DexaComponent } from './dexa/dexa.component';
@@ -33,6 +33,7 @@ import { RibbonDocsTableComponent } from './ribbon-docs-table/ribbon-docs-table.
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { SeedcheckComponent } from './seedcheck/seedcheck.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { SkyraComponent } from './skyra/skyra.component';
 import { TavaComponent } from './tava/tava.component';
 import { UnescapeComponent } from './unescape/unescape.component';
 import { YamlreaderComponent } from './yamlreader/yamlreader.component';
@@ -60,8 +61,9 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     UnescapeComponent,
     YamlreaderComponent,
     ZalgoComponent,
-    CreateDjsBotComponentComponent,
-    GraphqlPokemonComponent
+    CreateDjsBotComponent,
+    GraphqlPokemonComponent,
+    SkyraComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'favware' }),
@@ -71,20 +73,21 @@ import { ZalgoComponent } from './zalgo/zalgo.component';
     LayoutModule,
     FlexLayoutModule,
     ReactiveFormsModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    }),
     BrowserAnimationsModule,
     MarkdownModule.forRoot({
       markedOptions: {
         provide: MarkedOptions,
-        useFactory: markdownFactory,
-      },
+        useFactory: markdownFactory
+      }
     }),
     ClipboardModule
   ],
   providers: [RedirectGuardComponent, MatIconService, SeoService],
   bootstrap: [SidenavComponent],
   entryComponents: [SidenavComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class FavwareModule {
-}
+export class FavwareModule {}

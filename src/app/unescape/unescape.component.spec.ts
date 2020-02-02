@@ -12,9 +12,8 @@ describe('UnescapeComponent', () => {
     TestBed.configureTestingModule({
       imports: [TestModule],
       declarations: [UnescapeComponent],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

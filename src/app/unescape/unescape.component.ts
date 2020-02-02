@@ -8,7 +8,7 @@ import { oneLine } from 'common-tags';
 @Component({
   selector: 'favware-unescape',
   templateUrl: './unescape.component.html',
-  styleUrls: ['./unescape.component.scss'],
+  styleUrls: ['./unescape.component.scss']
 })
 export class UnescapeComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
@@ -19,25 +19,25 @@ export class UnescapeComponent implements OnInit {
       {
         text: 'yarn add @favware/unescape',
         color: 'accent',
-        disabled: true,
+        disabled: true
       },
       {
         text: 'View on Yarn',
         url: UNESCAPE_YARN,
         color: 'yarn',
-        outer: true,
+        outer: true
       },
       {
         text: 'View on GitHub',
         url: UNESCAPE_GITHUB,
         color: 'github',
-        outer: true,
+        outer: true
       }
-    ],
+    ]
   };
   public usageTile: ICodeTile = {
     header: 'Usage',
-    codeFile: '/assets/code/unescape.js',
+    codeFile: '/assets/code/unescape.js'
   };
   public characterTile: IPrimaryTile = {
     header: 'Characters',
@@ -59,7 +59,7 @@ export class UnescapeComponent implements OnInit {
       |   £           | pound                              | \`&pound;\`      | \`&#163;\`         |        \`&#xa3;\`   |
       |   ¥           | yen                                | \`&yen;\`        | \`&#165;\`         |        \`&#xa5;\`   |
   `
-    ],
+    ]
   };
   public metadata: SeoTags = {
     title: 'Unescape ES6',
@@ -69,13 +69,12 @@ export class UnescapeComponent implements OnInit {
     url: '/unescape',
     summary: oneLine`A NodeJS library that can transform HTML tags to their unescaped variants.
     Install it today with "yarn add @favware/unescape"`,
-    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'unescape', 'unescape-es6', 'escape', 'html', 'entities'],
+    keywords: ['nodejs', 'javascript', 'typescript', 'library', 'package', 'npm', 'yarn', 'unescape', 'unescape-es6', 'escape', 'html', 'entities']
   };
 
-  constructor (private seo: SeoService) {
-  }
+  constructor(private seo: SeoService) {}
 
-  public ngOnInit (): void {
+  public ngOnInit(): void {
     this.seo.generateTags({
       title: this.metadata.title,
       description: this.metadata.description,
@@ -83,7 +82,7 @@ export class UnescapeComponent implements OnInit {
       imageAlt: this.metadata.imageAlt,
       url: this.metadata.url,
       summary: this.metadata.summary,
-      keywords: this.metadata.keywords,
+      keywords: this.metadata.keywords
     });
   }
 }
