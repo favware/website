@@ -1,7 +1,7 @@
 {
   "functions": {
     "source": "dist/functions",
-    "predeploy": ["yarn lint", "yarn typecheck-app", "yarn build-functions", "yarn build-app", "yarn copy-deps", "yarn install-deps"]
+    "predeploy": ["yarn clean", "yarn lint", "yarn typecheck-app", "yarn build-functions", "yarn build-app", "yarn copy-deps", "yarn install-deps"]
   },
   "hosting": {
     "site": "favware",
