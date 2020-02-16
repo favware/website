@@ -1471,6 +1471,11 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-gtm-module@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-gtm-module/-/react-gtm-module-2.0.0.tgz#25a118bbcadd518f376ee52626ab0829cb824874"
+  integrity sha512-2d7TUhOQBG6cSVSSSWaoSu+Ds84VQFTuVKLeGNc2GtfA7JDr+z3ujl4n/rezaRRNEhjn+9SllwHy1iNxxP8jDg==
+
 "@types/react-transition-group@^4.2.0":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.2.3.tgz#4924133f7268694058e415bf7aea2d4c21131470"
@@ -7664,6 +7669,11 @@ next-compose-plugins@^2.2.0:
   resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.2.0.tgz#95cd8eb40ab0652070d76572fb648354191628b0"
   integrity sha512-ChUlpT9tWfJ7YxqGw/WQ2T1gf8EeX93n1XqeQw0lkvGa7seszahvF4eOZUJoq7Hetsbzg4UHVnPoCXfXTyQR3g==
 
+next-seo@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.1.0.tgz#1f87a5184a81af7aab07409f40eab99ee638da8a"
+  integrity sha512-wHFrn20xc1jPaCaAviD11F1lNdmbp07kysFiLXZTArIqk8YSWOXCEkmh3kgVuXBkHeZOhIUdbuEc9xtf0LgCLg==
+
 next-tick@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.1.0.tgz#1836ee30ad56d67ef281b22bd199f709449b35eb"
@@ -9284,6 +9294,11 @@ react-error-overlay@5.1.6:
   version "5.1.6"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
+
+react-gtm-module@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/react-gtm-module/-/react-gtm-module-2.0.8.tgz#0d37c4f2a4e3a8efa40c76c8b2aa1b7cacc16c6f"
+  integrity sha512-OU5FwAHC3gWnnxJ+MLwBMLZO1Pmn1DiVCGHqptwDnNojE3QRrNxjqozkW5cNS4Zp+C6HZ8a4ZIt0QPNlpzua4Q==
 
 react-is@16.8.6:
   version "16.8.6"
