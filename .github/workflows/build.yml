@@ -1,0 +1,43 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  Build:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Restore CI Cache
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
+      - name: Restore Firebase CI Cache
+        uses: actions/cache@v1
+        with:
+          path: functions/node_modules
+          key: ${{ runner.os }}-12-${{ hashFiles('**/functions/yarn.lock') }}
+      - name: Install Dependencies
+        run: yarn
+      - name: Install Dependencies - Firebase
+        run: |
+          pushd functions &&
+          yarn &&
+          popd
+      - name: Build SSR Bundle
+        run: yarn build:ssr
+      - name: Install Firebase Tools
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: yarn add firebase-tools
+      - name: Deploy to Firebase
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        run: ./node_modules/.bin/firebase deploy --token=${{ secrets.FIREBASE_TOKEN }}
