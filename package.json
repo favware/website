@@ -21,7 +21,7 @@
     "up": "yarn upgrade-interactive --latest",
     "dev": "next src/app",
     "build": "run-s typecheck-app build-public build-functions build-app",
-    "preserve": "run-s build-public build-functions build-app copy-deps install-deps",
+    "preserve": "run-s clean build-public build-functions build-app copy-deps install-deps",
     "serve": "cross-env NODE_ENV=production firebase serve",
     "deploy": "cross-env NODE_ENV=production firebase deploy",
     "clean": "rimraf \"dist/functions\" && rimraf \"dist/public\"",
