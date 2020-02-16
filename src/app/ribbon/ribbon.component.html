@@ -17,8 +17,4 @@
       <p *ngFor="let section of aboutTile.text; trackBy: ngForTrackBy" [innerHTML]="section | markdown" class="mat-h4 text-content about-text" fxFlexAlign="stretch"></p>
     </div>
   </div>
-
-  <div class="section-margin" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="center space-around" fxLayoutGap="0.5%">
-    <favware-ribbon-docs-table></favware-ribbon-docs-table>
-  </div>
 </section>

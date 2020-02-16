@@ -1,70 +1,70 @@
-import { ThemePalette } from '@angular/material';
+import { ThemePalette } from '@angular/material/core';
 
-type CardActions = {
+interface CardActions {
   label: string;
   link: string;
   outer: boolean;
-};
+}
 
-type CardHeader = {
+interface CardHeader {
   avatar: string;
   imageAlt: string;
   title: string;
   subtitle: string;
-};
+}
 
-type Card = {
+interface Card {
   header: CardHeader;
   content: string;
   actions: CardActions[];
-};
+}
 
-type JSDocMeta = {
+interface JSDocMeta {
   lineno: number;
   filename: string;
   path: string;
-};
+}
 
-export type Tile = {
+export interface Tile {
   header: string;
   text?: string[];
-};
+}
 
-export type ContactMethod = {
+export interface ContactMethod {
   logo: string;
   link: string;
   color: string;
   contact: string;
-};
+}
 
-export type SidenavLink = {
+export interface SidenavLink {
   routerLink: string;
   label: string;
   image: string;
-};
+}
 
-export type ButtonData = {
+export interface ButtonData {
   text: string;
   url?: string;
   color: string;
   outer?: boolean;
   disabled?: boolean;
-};
+}
 
-export type RibbonDocs = {
+export interface RibbonDocs {
   name: string;
   aliases: string;
   description: string;
   category: string;
-};
+}
 
-export type DexaDocs = {
+export interface DexaDocs {
   name: string;
   description: string;
   examples: string;
-};
+}
 
-export type JSDocItem = {
+export interface JSDocItem {
   id: string;
   longname: string;
   name: string;
@@ -78,13 +78,13 @@ export type JSDocItem = {
   returns: JSDocMeta[];
 
   [propName: string]: string | string[] | number | boolean | JSDocMeta | JSDocMeta[];
-};
+}
 
-export type JSDocJSON = {
+export interface JSDocJSON {
   [propName: string]: JSDocItem[];
-};
+}
 
-export interface IMatCarouselOptions {
+export interface MatCarouselOptions {
   timings: string;
   autoplay: boolean;
   interval: number;
@@ -102,21 +102,21 @@ export interface IMatCarouselOptions {
   hideOverlay: boolean;
 }
 
-export interface IPrimaryTile extends Tile {
+export interface PrimaryTile extends Tile {
   subheader: string;
   buttons?: ButtonData[];
 }
 
-export interface ICodeTile extends Tile {
+export interface CodeTile extends Tile {
   codeFile: string;
 }
 
-export interface ITavaTile extends Tile {
+export interface TavaTile extends Tile {
   icon: string;
   alt?: string;
   description: string;
 }
 
-export interface IProjectTile extends Tile {
+export interface ProjectTile extends Tile {
   cards: Card[];
 }

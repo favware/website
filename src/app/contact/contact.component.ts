@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatIconService } from '@services/mat-icon.service';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { CONTACT_FACEBOOK, CONTACT_GITHUB, CONTACT_LINKEDIN, CONTACT_MAIL, CONTACT_REDDIT, CONTACT_TWITCH, CONTACT_TWITTER, CONTACT_YOUTUBE, DISCORD_SERVER_URL } from '@util/constants';
-import { ContactMethod, IPrimaryTile } from '@util/interfaces';
+import { ContactMethod, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -13,7 +13,7 @@ import { oneLine } from 'common-tags';
 })
 export class ContactComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'Got questions, concerns or business inquires?',
     subheader: 'Contact me through one of these sources',
     text: ['Or fill in the form below to send an email']

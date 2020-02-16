@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { SKYRA_DASHBOARD_URL, SKYRA_GITHUB_URL, SKYRA_INVITE_URL, SKYRA_SERVER_URL } from '@util/constants';
-import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
+import { MatCarouselOptions, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 
 @Component({
@@ -11,7 +11,7 @@ import ngForTrackBy from '@util/ngForTrackBy';
 })
 export class SkyraComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'Skyra',
     subheader: 'Multipurpose Discord Bot',
     buttons: [
@@ -42,7 +42,7 @@ export class SkyraComponent implements OnInit {
     ]
   };
 
-  public aboutTile: IPrimaryTile = {
+  public aboutTile: PrimaryTile = {
     header: 'About',
     subheader: '',
     text: [
@@ -88,7 +88,7 @@ export class SkyraComponent implements OnInit {
     image: 'https://favware.tech/assets/icons/skyra-avatar.png',
     imageAlt: 'Skyra Logo',
     url: 'skyra',
-    summary: `Skyra is the single most advanced moderation bot you\'ll ever need!`,
+    summary: `Skyra is the single most advanced moderation bot you'll ever need!`,
     keywords: ['discord', 'bot', 'skyra', 'kyra', 'favna', 'pokemon', 'moderation', 'dashboard']
   };
 
@@ -99,7 +99,7 @@ export class SkyraComponent implements OnInit {
     { url: '/assets/screenshots/skyra/pokemon.png' },
     { url: '/assets/screenshots/skyra/weeb.png' }
   ];
-  public carousel: IMatCarouselOptions = {
+  public carousel: MatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+
 const { join } = require('path');
 const webpack = require('webpack');
 

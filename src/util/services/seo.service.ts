@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { COMMON_EMAIL } from '@util/constants';
 
-export type SeoTags = {
+export interface SeoTags {
   title: string;
   description: string;
   image: string;
@@ -10,7 +10,7 @@ export type SeoTags = {
   imageAlt: string;
   url: string;
   keywords: string[];
-};
+}
 
 @Injectable({
   providedIn: 'root'

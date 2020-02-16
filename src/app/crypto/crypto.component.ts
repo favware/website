@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { CRYPTO_GITHUB, CRYPTO_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class CryptoComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: '@favware/crypto',
     subheader: 'Generates secure random numbers using `crypto.randomBytes()`',
     buttons: [
@@ -35,7 +35,7 @@ export class CryptoComponent implements OnInit {
       }
     ]
   };
-  public usageTile: ICodeTile = {
+  public usageTile: CodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/crypto.js'
   };

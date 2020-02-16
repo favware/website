@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, CONVERTBOT_GITHUB_URL } from '@util/constants';
-import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
+import { MatCarouselOptions, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class ConvertbotComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'ConvertBot',
     subheader: 'A C++ based unit conversion utility',
     buttons: [
@@ -30,7 +30,7 @@ export class ConvertbotComponent implements OnInit {
       }
     ]
   };
-  public aboutTile: IPrimaryTile = {
+  public aboutTile: PrimaryTile = {
     header: 'About',
     subheader: '',
     text: [
@@ -42,7 +42,7 @@ export class ConvertbotComponent implements OnInit {
     I have always held onto the source code for ConvertBot and find it only appropriate to show it off here.`
     ]
   };
-  public notesTile: IPrimaryTile = {
+  public notesTile: PrimaryTile = {
     header: 'Notes',
     subheader: 'There are some things to note when using ConvertBot',
     text: [
@@ -61,7 +61,7 @@ export class ConvertbotComponent implements OnInit {
     ]
   };
   public slides: { url: string }[] = [{ url: '/assets/screenshots/convertbot/base.png' }, { url: '/assets/screenshots/convertbot/degrees.png' }, { url: '/assets/screenshots/convertbot/length.png' }];
-  public carousel: IMatCarouselOptions = {
+  public carousel: MatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { RIBBON_GITHUB_URL } from '@util/constants';
-import { IPrimaryTile } from '@util/interfaces';
+import { PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class RibbonComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'Ribbon',
     subheader: 'A feature rich, modular Discord.JS-Commando server bot',
     buttons: [
@@ -24,7 +24,7 @@ export class RibbonComponent implements OnInit {
       }
     ]
   };
-  public aboutTile: IPrimaryTile = {
+  public aboutTile: PrimaryTile = {
     header: 'About',
     subheader: '',
     text: [

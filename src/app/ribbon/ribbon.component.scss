@@ -7,18 +7,8 @@
   height: 95vh;
 }
 
-favware-ribbon-docs-table {
-  width: 80%;
-  margin: 2vh 0;
-}
-
 @media only screen and (max-width: 1024px) {
   .header-ribbon-image {
     background-attachment: scroll;
-  }
-
-  favware-ribbon-docs-table {
-    width: 80%;
-    margin: 2vh auto;
   }
 }

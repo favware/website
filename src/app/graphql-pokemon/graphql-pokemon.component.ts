@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { GRAPHQL_POKEMON_GITHUB_URL, GRAPHQL_POKEMON_PLAYGROUND, GRAPHQL_POKEMON_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class GraphqlPokemonComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'GraphQL-Pokemon',
     subheader: 'GraphQL API for Pokémon data',
     buttons: [
@@ -41,7 +41,7 @@ export class GraphqlPokemonComponent implements OnInit {
       }
     ]
   };
-  public aboutTile: IPrimaryTile = {
+  public aboutTile: PrimaryTile = {
     header: 'About',
     subheader: '',
     text: [
@@ -51,7 +51,7 @@ export class GraphqlPokemonComponent implements OnInit {
       The API has many queries, which can best be explored using the [GraphQL Playground](${GRAPHQL_POKEMON_PLAYGROUND})`
     ]
   };
-  public graphqlUsageTile: ICodeTile = {
+  public graphqlUsageTile: CodeTile = {
     header: 'Usage - Fetch',
     codeFile: '/assets/code/graphql-pokemon.ts'
   };

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { QUERYSTRING_GITHUB, QUERYSTRING_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class QuerystringComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: '@favware/querystring',
     subheader: 'Robust and awesome querystring',
     buttons: [
@@ -35,11 +35,11 @@ export class QuerystringComponent implements OnInit {
       }
     ]
   };
-  public stringifyUsageTile: ICodeTile = {
+  public stringifyUsageTile: CodeTile = {
     header: 'Usage - Stringify',
     codeFile: '/assets/code/querystring.stringify.js'
   };
-  public parseUsageTile: ICodeTile = {
+  public parseUsageTile: CodeTile = {
     header: 'Usage - Parse',
     codeFile: '/assets/code/querystring.parse.js'
   };

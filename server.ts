@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function, @typescript-eslint/no-var-requires */
+
 import 'reflect-metadata';
 import 'zone.js/dist/zone-node';
 
@@ -10,6 +12,16 @@ import express from 'express';
 import domino from 'domino';
 import fs from 'fs';
 import { join } from 'path';
+
+const getMockMutationObserver = () => {
+  return class {
+    public observe(node, options) {}
+    public disconnect() {}
+    public takeRecords() {
+      return [];
+    }
+  };
+};
 
 const PORT = process.env.PORT || 4001;
 const DIST_FOLDER = join(process.cwd(), 'dist');
@@ -33,7 +45,6 @@ export const app = express();
 // * NOTE :: leave this as require() since this file is built Dynamically from webpack
 const { FavwareServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/main');
 
-// Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
 app.engine(
   'html',
   ngExpressEngine({
@@ -59,17 +70,4 @@ if (!process.env.FIREBASE_CONFIG) {
   app.listen(PORT, () => {
     console.log(`Node server listening on http://localhost:${PORT}`);
   });
-}
-
-// tslint:disable-next-line: only-arrow-functions
-function getMockMutationObserver() {
-  return class {
-    // tslint:disable-next-line: no-empty
-    public observe(node, options) {}
-    // tslint:disable-next-line: no-empty
-    public disconnect() {}
-    public takeRecords() {
-      return [];
-    }
-  };
 }

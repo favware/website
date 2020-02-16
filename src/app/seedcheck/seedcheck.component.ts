@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, SEEDCHECKER_GITHUB_URL } from '@util/constants';
-import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
+import { MatCarouselOptions, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class SeedcheckComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'SEEDChecker',
     subheader: 'Periodically check if the SEED for a Nintendo 3DS title is available',
     buttons: [
@@ -36,7 +36,7 @@ export class SeedcheckComponent implements OnInit {
       }
     ]
   };
-  public aboutTile: IPrimaryTile = {
+  public aboutTile: PrimaryTile = {
     header: 'About',
     subheader: '',
     text: [
@@ -45,7 +45,7 @@ export class SeedcheckComponent implements OnInit {
             If a SEED is available it is automatically downloaded to your default "Downloads" folder`
     ]
   };
-  public instructionsTile: IPrimaryTile = {
+  public instructionsTile: PrimaryTile = {
     header: 'Instructions',
     subheader: '',
     text: [
@@ -61,7 +61,7 @@ export class SeedcheckComponent implements OnInit {
       'If you want to quit checking either close the program or click the **Cancel SEED Checking** button'
     ]
   };
-  public faqTile: IPrimaryTile = {
+  public faqTile: PrimaryTile = {
     header: 'FAQ',
     subheader: '',
     text: [
@@ -72,7 +72,7 @@ export class SeedcheckComponent implements OnInit {
     ]
   };
   public slides: { url: string }[] = [{ url: '/assets/screenshots/seedcheck/base.png' }, { url: '/assets/screenshots/seedcheck/noseed.png' }, { url: '/assets/screenshots/seedcheck/seed.png' }];
-  public carousel: IMatCarouselOptions = {
+  public carousel: MatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,

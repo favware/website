@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, CATCHCALC_GITHUB_URL } from '@util/constants';
-import { IMatCarouselOptions, IPrimaryTile } from '@util/interfaces';
+import { MatCarouselOptions, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class CatchcalcComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'CatchCalc',
     subheader: 'Calculate Pokémon Generation 6 (XYORAS) catch rates',
     buttons: [
@@ -36,7 +36,7 @@ export class CatchcalcComponent implements OnInit {
       }
     ]
   };
-  public aboutTile: IPrimaryTile = {
+  public aboutTile: PrimaryTile = {
     header: 'About',
     subheader: '',
     text: [
@@ -45,7 +45,7 @@ export class CatchcalcComponent implements OnInit {
             If a SEED is available it is automatically downloaded to your default "Downloads" folder`
     ]
   };
-  public instructionsTile: IPrimaryTile = {
+  public instructionsTile: PrimaryTile = {
     header: 'Instructions',
     subheader: '',
     text: [
@@ -63,7 +63,7 @@ export class CatchcalcComponent implements OnInit {
       'Set all your other variables if applicable then press the **Calculate chance to catch** button to have the program do its magic!'
     ]
   };
-  public faqTile: IPrimaryTile = {
+  public faqTile: PrimaryTile = {
     header: 'FAQ',
     subheader: '',
     text: [
@@ -74,7 +74,7 @@ export class CatchcalcComponent implements OnInit {
     ]
   };
   public slides: { url: string }[] = [{ url: '/assets/screenshots/catchcalc/base.png' }, { url: '/assets/screenshots/catchcalc/easymon.png' }, { url: '/assets/screenshots/catchcalc/hardmon.png' }];
-  public carousel: IMatCarouselOptions = {
+  public carousel: MatCarouselOptions = {
     timings: '250ms ease-in',
     autoplay: true,
     interval: 5000,

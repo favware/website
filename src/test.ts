@@ -5,7 +5,8 @@ import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@ang
 import 'hammerjs';
 import 'zone.js/dist/zone-testing';
 
-declare const require: any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+declare const require: NodeRequire & { context: (path: string, bool: boolean, pattern: RegExp) => any };
 
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicTesting());

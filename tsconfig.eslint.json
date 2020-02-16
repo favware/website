@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": true,
+    "checkJs": true
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.js", "./functions/src/index.ts", "webpack.server.config.js", "server.ts"]
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { DEXA_GITHUB_URL, DEXA_SKILL_URL, DISCORD_SERVER_URL } from '@util/constants';
-import { IPrimaryTile } from '@util/interfaces';
+import { PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class DexaComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'Dexa',
     subheader: 'Simple, Complete and Expansive PokeDex for the Amazon Alexa assisstant',
     buttons: [
@@ -36,7 +36,7 @@ export class DexaComponent implements OnInit {
       }
     ]
   };
-  public aboutTile: IPrimaryTile = {
+  public aboutTile: PrimaryTile = {
     header: 'About',
     subheader: '',
     text: [

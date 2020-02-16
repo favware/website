@@ -13,7 +13,7 @@ gulp.task('lint', () => {
         formatter: 'stylish',
         program: lintProgram,
         tslint: tslint,
-        fix: !!argv.fix
+        fix: Boolean(argv.fix)
       })
     )
     .pipe(milkyReport());

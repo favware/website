@@ -1,0 +1,6 @@
+{
+    "extends": "@favware",
+    "rules": {
+        "no-invalid-this": "off"
+    }
+}

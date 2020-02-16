@@ -12,8 +12,7 @@ export class CardActionCasePipe implements PipeTransform {
       case 'windows':
         return 'Windows Download';
       default:
-        const titleCasePipe = new TitleCasePipe();
-        return titleCasePipe.transform(value);
+        return new TitleCasePipe().transform(value);
     }
   }
 }

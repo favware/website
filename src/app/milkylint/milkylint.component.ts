@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { MILKY_TSLINT_GITHUB, MILKY_TSLINT_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class MilkylintComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: '@favware/milky-tslint',
     subheader: 'TypeScript linter plugin for Gulp',
     buttons: [
@@ -35,7 +35,7 @@ export class MilkylintComponent implements OnInit {
       }
     ]
   };
-  public usageTile: ICodeTile = {
+  public usageTile: CodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/milkylint.js'
   };

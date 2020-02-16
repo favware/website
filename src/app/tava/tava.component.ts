@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatIconService } from '@services/mat-icon.service';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { ASSET_BASE_PATH, TAVA_SITE } from '@util/constants';
-import { IPrimaryTile, ITavaTile } from '@util/interfaces';
+import { PrimaryTile, TavaTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 
 @Component({
@@ -12,7 +12,7 @@ import ngForTrackBy from '@util/ngForTrackBy';
 })
 export class TavaComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: "Ta'Va - Trial of the Sun God",
     subheader: 'Embark on a mythological aztec puzzle game',
     buttons: [
@@ -36,11 +36,11 @@ export class TavaComponent implements OnInit {
       }
     ]
   };
-  public gameTileHeader: IPrimaryTile = {
+  public gameTileHeader: PrimaryTile = {
     header: 'The Game',
     subheader: "Ta'Va is a puzzle/platform game made with Unity"
   };
-  public gameTile: ITavaTile[] = [
+  public gameTile: TavaTile[] = [
     {
       icon: 'mat-tava-puzzle-icon',
       header: 'Puzzles',
@@ -57,11 +57,11 @@ export class TavaComponent implements OnInit {
       description: "The world of Ta'Va is a mythological place. During your travels you will explore floating islands, mythical creatures and the plane of the gods."
     }
   ];
-  public mediaTileHeader: IPrimaryTile = {
+  public mediaTileHeader: PrimaryTile = {
     header: 'Media',
     subheader: ''
   };
-  public mediaTile: ITavaTile[] = [
+  public mediaTile: TavaTile[] = [
     {
       icon: `/assets/screenshots/tava/village.png`,
       alt: 'village_screenshot',
@@ -81,11 +81,11 @@ export class TavaComponent implements OnInit {
       description: 'Push the boulders!'
     }
   ];
-  public teamTileHeader: IPrimaryTile = {
+  public teamTileHeader: PrimaryTile = {
     header: 'Our Amazing Team',
     subheader: ''
   };
-  public teamTileFirstLine: ITavaTile[] = [
+  public teamTileFirstLine: TavaTile[] = [
     {
       icon: `/assets/screenshots/tava/art.png`,
       alt: 'art_team_photo',
@@ -105,7 +105,7 @@ export class TavaComponent implements OnInit {
       description: ''
     }
   ];
-  public teamTileSecondLine: ITavaTile[] = [
+  public teamTileSecondLine: TavaTile[] = [
     {
       icon: `/assets/screenshots/tava/programming.png`,
       alt: 'programming_team_photo',

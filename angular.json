@@ -84,15 +84,6 @@
             "assets": ["src/favicon.ico", "src/assets", "src/manifest.json"]
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"],
-            "fix": true,
-            "format": "verbose"
-          }
-        },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {

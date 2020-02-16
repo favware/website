@@ -32,7 +32,7 @@ import {
   ZALGO_GITHUB,
   ZALGO_YARN
 } from '@util/constants';
-import { IPrimaryTile, IProjectTile, Tile } from '@util/interfaces';
+import { PrimaryTile, ProjectTile, Tile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 import moment from 'moment';
@@ -44,7 +44,7 @@ import moment from 'moment';
 })
 export class HomeComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'Developer in Web, NodeJS, Unity3D and Java',
     subheader: 'From Web design to discord bots to indie games',
     text: ['Scroll down to see my projects']
@@ -76,7 +76,7 @@ export class HomeComponent implements OnInit {
                    at home where I found my first job after graduation.`
     ]
   };
-  public projectsTile: IProjectTile = {
+  public projectsTile: ProjectTile = {
     header: 'My Projects',
     cards: [
       {

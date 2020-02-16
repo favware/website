@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { UNESCAPE_GITHUB, UNESCAPE_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class UnescapeComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: '@favware/unescape',
     subheader: 'Convert HTML entities to HTML characters',
     buttons: [
@@ -35,11 +35,11 @@ export class UnescapeComponent implements OnInit {
       }
     ]
   };
-  public usageTile: ICodeTile = {
+  public usageTile: CodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/unescape.js'
   };
-  public characterTile: IPrimaryTile = {
+  public characterTile: PrimaryTile = {
     header: 'Characters',
     subheader: 'For performance, this library only handles the following common entities',
     text: [

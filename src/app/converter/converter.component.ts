@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { CONVERTER_GITHUB, CONVERTER_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class ConverterComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: '@favware/converter',
     subheader: 'An awesome and typesafe unit converter for NodeJS',
     buttons: [
@@ -35,7 +35,7 @@ export class ConverterComponent implements OnInit {
       }
     ]
   };
-  public usageTile: ICodeTile = {
+  public usageTile: CodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/converter.js'
   };

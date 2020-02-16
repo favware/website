@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { CREATE_DJSBOT_GITHUB, CREATE_DJSBOT_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class CreateDjsBotComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: 'Create DJS Bot',
     subheader: '⚡Bootstrapping CLI tool for quickly setting up a Discord bot project',
     buttons: [
@@ -36,12 +36,12 @@ export class CreateDjsBotComponent implements OnInit {
     ]
   };
 
-  public createDjsBotYarnTile: ICodeTile = {
+  public createDjsBotYarnTile: CodeTile = {
     header: 'Usage - npx or yarn',
     codeFile: '/assets/code/createdjsbot.yarn.bash'
   };
 
-  public createDjsBotGlobalTile: ICodeTile = {
+  public createDjsBotGlobalTile: CodeTile = {
     header: 'Usage - global usage',
     codeFile: '/assets/code/createdjsbot.global.bash'
   };

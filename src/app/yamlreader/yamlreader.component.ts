@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SeoService, SeoTags } from '@services/seo.service';
 import { YAMLREADER_GITHUB, YAMLREADER_YARN } from '@util/constants';
-import { ICodeTile, IPrimaryTile } from '@util/interfaces';
+import { CodeTile, PrimaryTile } from '@util/interfaces';
 import ngForTrackBy from '@util/ngForTrackBy';
 import { oneLine } from 'common-tags';
 
@@ -12,7 +12,7 @@ import { oneLine } from 'common-tags';
 })
 export class YamlreaderComponent implements OnInit {
   public ngForTrackBy = ngForTrackBy;
-  public headerTile: IPrimaryTile = {
+  public headerTile: PrimaryTile = {
     header: '@favware/yamlreader',
     subheader: 'Awesome minimal wrapper around js-yaml',
     buttons: [
@@ -35,11 +35,11 @@ export class YamlreaderComponent implements OnInit {
       }
     ]
   };
-  public usageTile: ICodeTile = {
+  public usageTile: CodeTile = {
     header: 'Usage',
     codeFile: '/assets/code/yamlreader.js'
   };
-  public yamlTile: ICodeTile = {
+  public yamlTile: CodeTile = {
     header: 'YAML file',
     codeFile: '/assets/code/awesomeyaml.yml'
   };
