@@ -1,0 +1,30 @@
+{
+  "extends": "@favware/ts-config",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "lib": ["dom", "es2020"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@Config/*": ["components/Config/*"],
+      "@Mui/*": ["components/Material-UI/*"],
+      "@Next/*": ["components/Next/*"],
+      "@Pres/*": ["components/Presentational/*"],
+      "@Pages/*": ["pages/*"]
+    },
+    "allowJs": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
