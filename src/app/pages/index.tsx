@@ -1,9 +1,12 @@
 import App from 'components/App';
 import NoScript from 'components/Presentational/NoScript';
 import React from 'react';
+import { NextSeo } from 'next-seo';
+import { createSeoProps } from '@Config/next-seo.config';
 
 export default () => (
   <>
+    <NextSeo {...createSeoProps({ title: 'Index' })} />
     <App>
       <p>Index Page</p>
     </App>
