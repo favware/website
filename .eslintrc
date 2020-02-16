@@ -1,0 +1,6 @@
+{
+    "extends": ["@favware", "@rws-air"],
+    "rules": {
+        "no-invalid-this": "off"
+    }
+}
