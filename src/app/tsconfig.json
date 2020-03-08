@@ -21,9 +21,10 @@
       "@Mui/*": ["components/Material-UI/*"],
       "@Next/*": ["components/Next/*"],
       "@Pres/*": ["components/Presentational/*"],
-      "@Pages/*": ["pages/*"]
+      "@Svgs/*": ["components/Svgs/*"]
     },
-    "allowJs": true
+    "allowJs": true,
+    "incremental": false
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
