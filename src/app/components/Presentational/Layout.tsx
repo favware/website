@@ -1,5 +1,4 @@
-import Collection from '@discordjs/collection';
-import { createStyles, makeStyles, Theme, useMediaQuery, useTheme } from '@material-ui/core';
+import { createStyles, makeStyles, Theme, useTheme } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
@@ -10,14 +9,29 @@ import Typography from '@material-ui/core/Typography';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
-import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
-import ListItem from '@Mui/ListItem';
-import SkyraLogo from '@Svgs/SkyraLogo';
+import ListItem, { ListItemProps } from '@Mui/ListItem';
 import clsx from 'clsx';
-import React, { PropsWithChildren, ReactElement } from 'react';
+import CatchCalcLogo from 'components/Assets/CatchCalcLogo';
+import ConvertBotLogo from 'components/Assets/ConvertBotLogo';
+import ConverterLogo from 'components/Assets/ConverterLogo';
+import CreateDJSBotLogo from 'components/Assets/CreateDJSBotLogo';
+import CryptoLogo from 'components/Assets/CryptoLogo';
+import DexaLogo from 'components/Assets/DexaLogo';
+import GraphqlPokemonLogo from 'components/Assets/GraphqlPokemonLogo';
+import HomeIcon from 'components/Assets/HomeIcon';
+import MilkyTSLintLogo from 'components/Assets/MilkyTSLintLogo';
+import QuerystringLogo from 'components/Assets/QuerystringLogo';
+import RibbonIcon from 'components/Assets/RibbonLogo';
+import SeedCheckerLogo from 'components/Assets/SeedCheckerLogo';
+import SkyraLogo from 'components/Assets/Svgs/SkyraLogo';
+import TavaLogo from 'components/Assets/TavaLogo';
+import UnescapeLogo from 'components/Assets/UnescapeLogo';
+import YamlreaderLogo from 'components/Assets/YamlreaderLogo';
+import ZalgoLogo from 'components/Assets/ZalgoLogo';
+import React, { PropsWithChildren, ReactElement, useState } from 'react';
 
-const drawerWidth = 240;
+const drawerWidth = 260;
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -85,11 +99,10 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function MiniDrawer({ children }: PropsWithChildren<unknown>) {
+export default ({ children }: PropsWithChildren<unknown>) => {
   const classes = useStyles();
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('lg'));
-  const [open, setOpen] = React.useState(matches);
+  const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -99,26 +112,25 @@ export default function MiniDrawer({ children }: PropsWithChildren<unknown>) {
     setOpen(false);
   };
 
-  const navItems = new Collection<string, NavItem>([
-    [
-      'home',
-      {
-        text: 'Home',
-        icon: <HomeIcon />,
-        linkTo: '/',
-        selected: false
-      }
-    ],
-    [
-      'skyra',
-      {
-        text: 'Skyra',
-        icon: <SkyraLogo />,
-        linkTo: '/skyra',
-        selected: false
-      }
-    ]
-  ]);
+  const navItems: NavItem[] = [
+    { text: 'Home', icon: <HomeIcon />, linkTo: '/' },
+    { text: 'Skyra', icon: <SkyraLogo />, linkTo: '/skyra', enableExtraPadding: true },
+    { text: 'Dexa', icon: <DexaLogo />, linkTo: '/dexa' },
+    { text: 'GraphQL Pokemon', icon: <GraphqlPokemonLogo />, linkTo: '/graphql-pokemon' },
+    { text: 'Ribbon', icon: <RibbonIcon />, linkTo: '/ribbon' },
+    { text: 'SeedChecker', icon: <SeedCheckerLogo />, linkTo: '/seedchecker' },
+    { text: 'ConvertBot', icon: <ConvertBotLogo />, linkTo: '/convertbot' },
+    { text: 'CatchCalc', icon: <CatchCalcLogo />, linkTo: '/catchcalc' },
+    { text: "Ta'Va", icon: <TavaLogo />, linkTo: '/tava' },
+    { text: '@favware/querystring', icon: <QuerystringLogo />, linkTo: '/querystring' },
+    { text: '@favware/converter', icon: <ConverterLogo />, linkTo: '/converter' },
+    { text: '@favware/crypto', icon: <CryptoLogo />, linkTo: '/crypto' },
+    { text: '@favware/zalgo', icon: <ZalgoLogo />, linkTo: '/zalgo' },
+    { text: '@favware/yamlreader', icon: <YamlreaderLogo />, linkTo: '/yamlreader' },
+    { text: '@favware/unescape', icon: <UnescapeLogo />, linkTo: '/unescape' },
+    { text: 'Create DJS Bot', icon: <CreateDJSBotLogo />, linkTo: '/create-djsbot' },
+    { text: '@favware/milky-tslint', icon: <MilkyTSLintLogo />, linkTo: '/milky-tslint' }
+  ];
 
   return (
     <div className={classes.root}>
@@ -163,13 +175,13 @@ export default function MiniDrawer({ children }: PropsWithChildren<unknown>) {
         </div>
         <Divider />
         <List>
-          <ListItem openState={open} text="Contact" linkTo="contact" selected>
+          <ListItem key={-1} text="Contact" linkTo="contact" openState={open} enableExtraPadding>
             <ContactMailIcon />
           </ListItem>
         </List>
         <Divider light classes={{ root: classes.divider }} />
         {navItems.map((navItem, index) => (
-          <ListItem openState={open} text={navItem.text} key={index} linkTo={navItem.linkTo} selected={navItem.selected}>
+          <ListItem key={index} text={navItem.text} linkTo={navItem.linkTo} openState={open} enableExtraPadding={navItem.enableExtraPadding}>
             {navItem.icon}
           </ListItem>
         ))}
@@ -180,11 +192,9 @@ export default function MiniDrawer({ children }: PropsWithChildren<unknown>) {
       </main>
     </div>
   );
-}
+};
 
-interface NavItem {
-  text: string;
+interface NavItem extends Pick<ListItemProps, 'text' | 'linkTo'> {
   icon: ReactElement;
-  linkTo: string;
-  selected: boolean;
+  enableExtraPadding?: boolean;
 }

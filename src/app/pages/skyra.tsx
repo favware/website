@@ -5,9 +5,9 @@ import React from 'react';
 
 export default () => (
   <>
-    <NextSeo {...createSeoProps({ title: 'About' })} />
+    <NextSeo {...createSeoProps({ title: 'Skyra' })} />
     <Layout>
-      <p>About Page</p>
+      <p>Skyra Page</p>
     </Layout>
   </>
 );
