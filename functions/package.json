@@ -22,5 +22,10 @@
     "@firebase/util": "^0.2.39",
     "typescript": "~3.5.3"
   },
+  "resolutions": {
+    "serialize-javascript": "^3.0.0",
+    "acorn": "^7.1.1",
+    "minimist": "^1.2.2"
+  },
   "private": true
 }
