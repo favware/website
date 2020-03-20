@@ -18,7 +18,10 @@ export default (props: PropsWithChildren<unknown>) => (
     </g>
     <g className="twitch_svg__st0">
       <circle cx={200} cy={200} r={200} className="twitch_svg__st4" />
-      <path d="M323.5 350.9c8.5 0 15.3-7.5 15.3-16.7V65.7c0-9.2-6.9-16.7-15.3-16.7h-247c-8.5 0-15.3 7.5-15.3 16.7v268.6c0 9.2 6.9 16.7 15.3 16.7h247z" className="twitch_svg__st4" />
+      <path
+        d="M323.5 350.9c8.5 0 15.3-7.5 15.3-16.7V65.7c0-9.2-6.9-16.7-15.3-16.7h-247c-8.5 0-15.3 7.5-15.3 16.7v268.6c0 9.2 6.9 16.7 15.3 16.7h247z"
+        className="twitch_svg__st4"
+      />
       <path
         d="M218.3 328.1V211.2h36.1l5.4-45.6h-41.5v-29.1c0-13.2 3.4-22.2 20.8-22.2h22.2V73.7c-3.8-.6-17-1.8-32.3-1.8-32 0-53.9 21.2-53.9 60.2v33.6h-36.2v45.6H175v116.9h43.3z"
         className="twitch_svg__st5"
@@ -27,7 +30,10 @@ export default (props: PropsWithChildren<unknown>) => (
     <g className="twitch_svg__st0">
       <circle cx={200} cy={200} r={200} fill="#007bb5" />
       <g className="twitch_svg__st1">
-        <path fill="#007bb5" d="M318.1 58.5H79.8c-11.4 0-20.6 9-20.6 20.1V318c0 11.1 9.3 20.2 20.6 20.2h238.3c11.4 0 20.7-9 20.7-20.2V78.7c0-11.1-9.3-20.2-20.7-20.2z" />
+        <path
+          fill="#007bb5"
+          d="M318.1 58.5H79.8c-11.4 0-20.6 9-20.6 20.1V318c0 11.1 9.3 20.2 20.6 20.2h238.3c11.4 0 20.7-9 20.7-20.2V78.7c0-11.1-9.3-20.2-20.7-20.2z"
+        />
         <path
           d="M100.7 163.4h41.5v133.4h-41.5V163.4zM121.4 97c13.3 0 24 10.8 24 24 0 13.3-10.8 24.1-24 24.1-13.3 0-24.1-10.8-24.1-24.1.1-13.2 10.8-24 24.1-24M168.2 163.4H208v18.2h.6c5.5-10.5 19.1-21.6 39.2-21.6 42 0 49.8 27.6 49.8 63.6v73.2H256v-64.9c0-15.5-.3-35.4-21.6-35.4-21.6 0-24.9 16.9-24.9 34.3v66h-41.4V163.4z"
           className="twitch_svg__st3"
@@ -76,7 +82,10 @@ export default (props: PropsWithChildren<unknown>) => (
     <g className="twitch_svg__st0">
       <circle cx={200} cy={200} r={200} fill="#d6d6d6" />
       <g className="twitch_svg__st1">
-        <path fill="#e3e3e3" d="M303.4 289.3H94.6c-8.1 0-14.9-6.6-14.9-14.9V123.6c0-8.1 6.6-14.9 14.9-14.9h208.8c8.1 0 14.9 6.6 14.9 14.9v150.8c0 8.3-6.6 14.9-14.9 14.9z" />
+        <path
+          fill="#e3e3e3"
+          d="M303.4 289.3H94.6c-8.1 0-14.9-6.6-14.9-14.9V123.6c0-8.1 6.6-14.9 14.9-14.9h208.8c8.1 0 14.9 6.6 14.9 14.9v150.8c0 8.3-6.6 14.9-14.9 14.9z"
+        />
         <path fill="#231f20" d="M109.5 289.3l89.3-71.8.6-3.8-92-66.3-.2 138.7 2.3 3.2z" opacity={0.1} />
         <path d="M94.6 289.3c-8.3 0-14.9-6.6-14.9-14.9v-151c0-8.3 6.6-9.8 14.9-9.8s14.9 1.7 14.9 9.8v165.9H94.6z" className="twitch_svg__st16" />
         <path
@@ -88,7 +97,14 @@ export default (props: PropsWithChildren<unknown>) => (
           d="M303.4 115.7c9.6 0 12.8 1.9 12.8 7.2v151.7c0 7-5.8 12.8-12.8 12.8h-12.8V122.9c0-5.5 3.2-7.2 12.8-7.2zm0-2.1c-8.3 0-14.9 1.1-14.9 9.4v166.6h14.9c8.3 0 14.9-6.6 14.9-14.9V122.9c0-8.3-6.6-9.3-14.9-9.3z"
           className="twitch_svg__st17"
         />
-        <linearGradient x1={-104.272} x2={-103.334} y1={594.806} y2={594.806} gradientTransform="matrix(253.1598 0 0 -174.8345 26478.361 104199.977)" gradientUnits="userSpaceOnUse">
+        <linearGradient
+          x1={-104.272}
+          x2={-103.334}
+          y1={594.806}
+          y2={594.806}
+          gradientTransform="matrix(253.1598 0 0 -174.8345 26478.361 104199.977)"
+          gradientUnits="userSpaceOnUse"
+        >
           <stop offset={0} stopOpacity={0.1} />
           <stop offset={1} stopOpacity={0.2} />
         </linearGradient>
