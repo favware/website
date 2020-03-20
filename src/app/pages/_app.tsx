@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { PropsWithChildren, useEffect } from 'react';
 import TagManager, { TagManagerArgs } from 'react-gtm-module';
+import Layout from '@Pres/Layout';
 
 const NoScript = dynamic(() => import('@Pres/NoScript'));
 
@@ -46,7 +47,9 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
 
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </>
   );
