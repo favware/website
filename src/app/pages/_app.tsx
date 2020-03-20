@@ -2,13 +2,13 @@ import { DefaultSeo as DefaultSeoProps } from '@Config/next-seo.config';
 import theme from '@Config/Theme';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
+import Layout from '@Pres/Layout';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { PropsWithChildren, useEffect } from 'react';
 import TagManager, { TagManagerArgs } from 'react-gtm-module';
-import Layout from '@Pres/Layout';
 
 const NoScript = dynamic(() => import('@Pres/NoScript'));
 
@@ -50,6 +50,13 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
 
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <style jsx global>{`
+          a,
+          a:hover,
+          a:focus {
+            text-decoration: none !important;
+          }
+        `}</style>
         <Layout>
           <Component {...pageProps} />
         </Layout>
