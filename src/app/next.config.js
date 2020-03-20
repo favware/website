@@ -1,13 +1,10 @@
-/* eslint-disable @typescript-eslint/no-var-requires, @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-var-requires */
 
-const withPlugins = require('next-compose-plugins');
-const withCSS = require('@zeit/next-css');
-const withSCSS = require('@zeit/next-sass');
 const TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { join } = require('path');
 
-module.exports = withPlugins([[withCSS], [withSCSS]], {
-  webpack: (config, _) => {
+module.exports = {
+  webpack: config => {
     if (config.resolve.plugins) {
       config.resolve.plugins.push(
         new TsConfigPathsPlugin({
@@ -25,4 +22,4 @@ module.exports = withPlugins([[withCSS], [withSCSS]], {
     return config;
   },
   distDir: '../../dist/functions/next'
-});
+};

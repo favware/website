@@ -25,7 +25,10 @@ const useStyles = makeStyles((theme: Theme) =>
       }
     },
     extraPadding: ({ enableExtraPadding }: Pick<ListItemProps, 'enableExtraPadding'>) => ({
-      paddingLeft: enableExtraPadding ? theme.spacing(2.75) : theme.spacing(2)
+      paddingLeft: enableExtraPadding ? theme.spacing(2.75) : theme.spacing(2),
+      [theme.breakpoints.down('sm')]: {
+        paddingLeft: theme.spacing(2)
+      }
     })
   })
 );
@@ -35,10 +38,14 @@ export default ({ children, text, linkTo, openState, enableExtraPadding = false 
   const [selected, setSelected] = useState(false);
 
   useEffect(() => {
+    setSelected(false);
     const currentPath = window.location.pathname;
 
+    console.log(currentPath, linkTo);
+
     if (linkTo === currentPath) setSelected(true);
-  }, [linkTo]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [linkTo, window.location.pathname]);
 
   return (
     <Link href={linkTo}>

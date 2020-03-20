@@ -1,13 +1,10 @@
 import { createSeoProps } from '@Config/next-seo.config';
-import Layout from '@Pres/Layout';
 import { NextSeo } from 'next-seo';
 import React from 'react';
 
 export default () => (
   <>
     <NextSeo {...createSeoProps({ title: 'Crypto' })} />
-    <Layout>
-      <p>Crypto Page</p>
-    </Layout>
+    <p>Crypto Page</p>
   </>
 );

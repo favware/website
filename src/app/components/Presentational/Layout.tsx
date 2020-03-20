@@ -175,16 +175,18 @@ export default ({ children }: PropsWithChildren<unknown>) => {
         </div>
         <Divider />
         <List>
-          <ListItem key={-1} text="Contact" linkTo="contact" openState={open} enableExtraPadding>
+          <ListItem key={-1} text="Contact" linkTo="/contact" openState={open} enableExtraPadding>
             <ContactMailIcon />
           </ListItem>
+
+          <Divider light classes={{ root: classes.divider }} />
+
+          {navItems.map((navItem, index) => (
+            <ListItem key={index} text={navItem.text} linkTo={navItem.linkTo} openState={open} enableExtraPadding={navItem.enableExtraPadding}>
+              {navItem.icon}
+            </ListItem>
+          ))}
         </List>
-        <Divider light classes={{ root: classes.divider }} />
-        {navItems.map((navItem, index) => (
-          <ListItem key={index} text={navItem.text} linkTo={navItem.linkTo} openState={open} enableExtraPadding={navItem.enableExtraPadding}>
-            {navItem.icon}
-          </ListItem>
-        ))}
       </Drawer>
       <main className={classes.content}>
         <div className={classes.toolbar} />
