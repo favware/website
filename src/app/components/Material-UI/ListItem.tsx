@@ -48,19 +48,22 @@ export default ({ children, text, linkTo, openState, enableExtraPadding = false 
 
   return (
     <Link href={linkTo} naked>
-      <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }}>
-        <If condition={openState}>
-          <Then>
+      <If condition={openState}>
+        <Then>
+          <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }}>
             <ListItemIcon>{children}</ListItemIcon>
-          </Then>
-          <Else>
-            <Tooltip title={text}>
+            <ListItemText primary={text} />
+          </ListItem>
+        </Then>
+        <Else>
+          <Tooltip title={text}>
+            <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }}>
               <ListItemIcon>{children}</ListItemIcon>
-            </Tooltip>
-          </Else>
-        </If>
-        <ListItemText primary={text} />
-      </ListItem>
+              <ListItemText primary={text} />
+            </ListItem>
+          </Tooltip>
+        </Else>
+      </If>
     </Link>
   );
 };
