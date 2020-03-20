@@ -11,14 +11,13 @@ interface LinkProps extends NextLinkProps {
   as?: any;
   className?: string;
   href: string | UrlObject;
-  innerRef?: any;
   naked?: boolean;
   onClick?: any;
   prefer?: boolean;
 }
 
 export default forwardRef<any, PropsWithChildren<LinkProps>>(
-  ({ href, activeClassName = 'active', className: classNameProps, innerRef, naked, ...other }) => {
+  ({ href, activeClassName = 'active', className: classNameProps, naked, ...other }, ref) => {
     const router = useRouter();
     const pathname = typeof href === 'string' ? href : href.pathname;
     const className = clsx(classNameProps, {
@@ -26,9 +25,9 @@ export default forwardRef<any, PropsWithChildren<LinkProps>>(
     });
 
     if (naked) {
-      return <NextComposed className={className} ref={innerRef} href={href} {...other} />;
+      return <NextComposed className={className} ref={ref} href={href} {...other} />;
     }
 
-    return <MuiLink className={className} ref={innerRef} href={href as string} {...other} />;
+    return <MuiLink target="_blank" className={className} ref={ref} href={href as string} {...other} />;
   }
 );
