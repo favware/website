@@ -21,7 +21,8 @@
       "@Mui/*": ["components/Material-UI/*"],
       "@Next/*": ["components/Next/*"],
       "@Pres/*": ["components/Presentational/*"],
-      "@Svgs/*": ["components/Assets/Svgs/*"]
+      "@Svgs/*": ["components/Assets/Svgs/*"],
+      "@Utils/*": ["utils/*"]
     },
     "allowJs": true,
     "incremental": false
