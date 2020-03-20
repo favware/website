@@ -7,6 +7,7 @@ const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev, conf: { distDir: `${relative(cwd(), __dirname)}/../functions/next` } });
 const handle = app.getRequestHandler();
 
-export const favware = functions.https.onRequest((req, res) => {
-  return app.prepare().then(() => handle(req, res));
+export const favware = functions.https.onRequest(async (req, res) => {
+  await app.prepare();
+  return handle(req, res);
 });
