@@ -36,7 +36,10 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
         <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
 
         <NoScript>
-          <span>This site has been build with React and requires that you enable JavaScript to view the full content. Here are some strawberry eating unicorns to motivate you:</span>
+          <span>
+            This site has been build with React and requires that you enable JavaScript to view the full content. Here are some strawberry eating
+            unicorns to motivate you:
+          </span>
           <p>
             <span role="img" aria-label="cute unicorn munching on strawberries">
               🍓🦄🍓🦄🍓🦄

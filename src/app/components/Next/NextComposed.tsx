@@ -3,9 +3,9 @@ import NextLink from 'next/link';
 import React, { forwardRef } from 'react';
 
 interface NextComposedProps {
-  as: any;
+  as?: any;
   href: any;
-  className: string;
+  className?: string;
   prefetch?: boolean;
 }
 

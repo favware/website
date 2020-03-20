@@ -2,8 +2,9 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon, { ListItemIconProps } from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import Link from '@Mui/Link';
+import isBrowser from '@Utils/isBrowser';
 import clsx from 'clsx';
-import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { Else, If, Then } from 'react-if';
 import Tooltip from './Tooltip';
@@ -41,14 +42,12 @@ export default ({ children, text, linkTo, openState, enableExtraPadding = false 
     setSelected(false);
     const currentPath = window.location.pathname;
 
-    console.log(currentPath, linkTo);
-
     if (linkTo === currentPath) setSelected(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [linkTo, window.location.pathname]);
+  }, [linkTo, isBrowser ? window.location.pathname : null]);
 
   return (
-    <Link href={linkTo}>
+    <Link href={linkTo} naked>
       <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }}>
         <If condition={openState}>
           <Then>
