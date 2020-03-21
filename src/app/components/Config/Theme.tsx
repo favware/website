@@ -8,18 +8,8 @@ const theme = createMuiTheme({
       black: '#23272A'
     },
     type: 'dark',
-    primary: {
-      main: green[800],
-      light: cyan[300],
-      dark: green[900],
-      contrastText: grey[900]
-    },
-    secondary: {
-      main: '#074A43',
-      light: '#3C766E',
-      dark: '#00221C',
-      contrastText: '#EEEEEE'
-    },
+    primary: cyan,
+    secondary: green,
     error: {
       main: red.A400
     },

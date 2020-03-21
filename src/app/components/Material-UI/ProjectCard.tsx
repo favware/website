@@ -36,15 +36,15 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-interface CardAction {
+export interface CardAction {
   to: string;
   tooltipTitle: string;
   icon: ReactElement;
   external?: boolean;
 }
 
-interface CardProps extends MUICardProps {
-  textContent: string;
+export interface CardProps extends MUICardProps {
+  textContent: ReactNode;
   logo: ReactNode;
   logoAlt: string;
   cardHeaderProps: CardHeaderProps;
