@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default ({ children, text, linkTo, openState, enableExtraPadding = false }: ListItemProps) => {
+export default ({ children, text, linkTo, openState, enableExtraPadding = false, onClick }: ListItemProps) => {
   const classes = useStyles({ enableExtraPadding });
   const [selected, setSelected] = useState(false);
 
@@ -50,14 +50,14 @@ export default ({ children, text, linkTo, openState, enableExtraPadding = false 
     <Link href={linkTo} naked>
       <If condition={openState}>
         <Then>
-          <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }}>
+          <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }} onClick={onClick}>
             <ListItemIcon>{children}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         </Then>
         <Else>
           <Tooltip title={text}>
-            <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }}>
+            <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }} onClick={onClick}>
               <ListItemIcon>{children}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>

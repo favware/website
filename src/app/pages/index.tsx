@@ -1,27 +1,10 @@
+import HomeProjectCardData from '@Config/HomeProjectCardData';
 import { createSeoProps } from '@Config/next-seo.config';
 import { createStyles, makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import AddIcon from '@material-ui/icons/Add';
-import AssistantIcon from '@material-ui/icons/Assistant';
-import ChatIcon from '@material-ui/icons/Chat';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LanguageIcon from '@material-ui/icons/Language';
-import PlayCircleFilledWhiteIcon from '@material-ui/icons/PlayCircleFilledWhite';
 import Container from '@Mui/Container';
 import ProjectCard from '@Mui/ProjectCard';
-import SkyraLogo from '@Svgs/SkyraLogo';
-import {
-  DEXA_GITHUB_URL,
-  DEXA_SKILL_URL,
-  GRAPHQL_POKEMON_GITHUB_URL,
-  GRAPHQL_POKEMON_PLAYGROUND,
-  SKYRA_GITHUB_URL,
-  SKYRA_INVITE_URL,
-  SKYRA_SERVER_URL
-} from '@Utils/constants';
-import DexaLogo from 'components/Assets/DexaLogo';
-import GraphqlPokemonLogo from 'components/Assets/GraphqlPokemonLogo';
 import { NextSeo } from 'next-seo';
 import React from 'react';
 
@@ -48,7 +31,7 @@ export default () => {
       <Container spacing={6}>
         <Grid item>
           <Typography align="center" variant="h4" gutterBottom paragraph>
-            Software Engineer focussing on TypeScript
+            Software Engineer focusing on TypeScript
           </Typography>
           <Typography align="center" variant="h4" gutterBottom paragraph>
             (NodeJS and Web) and Java
@@ -86,70 +69,11 @@ export default () => {
           </Typography>
         </Grid>
         <Container item direction="row" alignContent="space-around" alignItems="stretch" justify="space-around">
-          <Grid item>
-            <ProjectCard
-              textContent="Skyra is the single most advanced moderation bot you'll ever need. She's a configurable Discord Bot with moderation, fun, and much more!"
-              logo={<SkyraLogo />}
-              logoAlt="Skyra Logo"
-              actions={[
-                { to: '/skyra', icon: <LanguageIcon />, tooltipTitle: 'More information' },
-                { to: SKYRA_INVITE_URL, icon: <AddIcon />, tooltipTitle: 'Add to your server', external: true },
-                { to: SKYRA_SERVER_URL, icon: <ChatIcon />, tooltipTitle: 'Get support with Skyra', external: true },
-                {
-                  to: SKYRA_GITHUB_URL,
-                  icon: <GitHubIcon />,
-                  tooltipTitle: 'Check out the source code on GitHub',
-                  external: true
-                }
-              ]}
-              cardHeaderProps={{
-                title: 'Skyra',
-                subheader: 'Multipurpose Discord Bot'
-              }}
-            />
-          </Grid>
-          <Grid item>
-            <ProjectCard
-              textContent="Dexa is a PokéDex Skill for Alexa that gives you information on Pokémon, Items, Abilities, Moves and type matchups"
-              logo={<DexaLogo />}
-              logoAlt="Dexa Logo"
-              actions={[
-                { to: '/dexa', icon: <LanguageIcon />, tooltipTitle: 'More information' },
-                { to: DEXA_SKILL_URL, icon: <AssistantIcon />, tooltipTitle: 'Add skill to your Alexa-enabled device', external: true },
-                {
-                  to: DEXA_GITHUB_URL,
-                  icon: <GitHubIcon />,
-                  tooltipTitle: 'Check out the source code on GitHub',
-                  external: true
-                }
-              ]}
-              cardHeaderProps={{
-                title: 'Dexa',
-                subheader: 'Advanced PokéDex Skill'
-              }}
-            />
-          </Grid>
-          <Grid item>
-            <ProjectCard
-              textContent="GraphQL based API offering a massive amount of Pokémon data - currently serving at least Skyra and Dexa"
-              logo={<GraphqlPokemonLogo />}
-              logoAlt="GraphQL Logo"
-              actions={[
-                { to: '/graphql-pokemon', icon: <LanguageIcon />, tooltipTitle: 'More information' },
-                { to: GRAPHQL_POKEMON_PLAYGROUND, icon: <PlayCircleFilledWhiteIcon />, tooltipTitle: 'Use the GraphQL-Playground', external: true },
-                {
-                  to: GRAPHQL_POKEMON_GITHUB_URL,
-                  icon: <GitHubIcon />,
-                  tooltipTitle: 'Check out the source code on GitHub',
-                  external: true
-                }
-              ]}
-              cardHeaderProps={{
-                title: 'GraphQL-Pokemon',
-                subheader: 'Advanced GraphQL Pokémon Data API'
-              }}
-            />
-          </Grid>
+          {HomeProjectCardData.map(({ textContent, logo, logoAlt, actions, cardHeaderProps, ...rest }, index) => (
+            <Grid item key={index}>
+              <ProjectCard textContent={textContent} logo={logo} logoAlt={logoAlt} actions={actions} cardHeaderProps={cardHeaderProps} {...rest} />
+            </Grid>
+          ))}
         </Container>
       </Container>
     </>
