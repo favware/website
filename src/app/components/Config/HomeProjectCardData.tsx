@@ -1,6 +1,7 @@
 import DexaLogo from '@Assets/DexaLogo';
 import GraphqlPokemonLogo from '@Assets/GraphqlPokemonLogo';
-import { Typography, Avatar } from '@material-ui/core';
+import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
 import AddIcon from '@material-ui/icons/Add';
 import AssistantIcon from '@material-ui/icons/Assistant';
 import ChatIcon from '@material-ui/icons/Chat';
