@@ -1,3 +1,4 @@
+import { createStyles, makeStyles } from '@material-ui/core';
 import MuiLink from '@material-ui/core/Link';
 import NextComposed from '@Next/NextComposed';
 import clsx from 'clsx';
@@ -16,11 +17,20 @@ interface LinkProps extends NextLinkProps {
   prefer?: boolean;
 }
 
+const useStyles = makeStyles(() =>
+  createStyles({
+    link: {
+      cursor: 'pointer'
+    }
+  })
+);
+
 export default forwardRef<any, PropsWithChildren<LinkProps>>(
   ({ href, activeClassName = 'active', className: classNameProps, naked, ...other }, ref) => {
     const router = useRouter();
+    const classes = useStyles();
     const pathname = typeof href === 'string' ? href : href.pathname;
-    const className = clsx(classNameProps, {
+    const className = clsx(classNameProps, classes.link, {
       [activeClassName]: router.pathname === pathname && activeClassName
     });
 
