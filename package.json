@@ -32,13 +32,12 @@
     "typecheck-app": "tsc --project src/app",
     "copy-deps": "cpx \"*{package.json,package-lock.json,yarn.lock}\" \"dist/functions\" -C",
     "install-deps": "cd \"dist/functions\" && yarn install",
-    "style": "prettier --write --loglevel=warn src/**"
+    "style": "prettier --write --loglevel=warn src/**/*.{html,js,ts,tsx,babelrc,json}"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.7",
     "@material-ui/icons": "^4.9.1",
     "clsx": "^1.1.0",
-    "firebase-admin": "^8.10.0",
     "firebase-functions": "^3.5.0",
     "next": "^9.3.1",
     "next-seo": "^4.4.0",
@@ -52,25 +51,22 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@favware/eslint-config": "^3.3.0",
     "@favware/ts-config": "^1.1.2",
-    "@firebase/app-types": "^0.6.0",
-    "@rws-air/eslint-config": "^3.0.8",
+    "@rws-air/commitizen-config": "^1.1.0",
+    "@rws-air/commitlint-config": "^1.1.1",
+    "@rws-air/eslint-config": "^3.0.10",
     "@types/node": "^13.9.2",
     "@types/react": "^16.9.25",
     "@types/react-dom": "16.9.5",
     "@types/react-gtm-module": "^2.0.0",
     "cpx": "1.5.0",
     "cross-env": "7.0.2",
-    "cz-conventional-changelog": "^3.1.0",
-    "firebase-tools": "^7.15.1",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
+    "lint-staged": "^10.0.9",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.19.1",
-    "prop-types": "^15.7.2",
+    "prettier": "^2.0.2",
     "rimraf": "3.0.2",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "typescript": "^3.8.3",
-    "webpack": "^4.42.0"
+    "typescript": "^3.8.3"
   },
   "husky": {
     "hooks": {
@@ -80,12 +76,12 @@
   },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@rws-air"
     ]
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/@rws-air/commitizen-config"
     }
   },
   "lint-staged": {
