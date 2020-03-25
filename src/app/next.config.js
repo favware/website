@@ -4,7 +4,7 @@ const TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { join } = require('path');
 
 module.exports = {
-  webpack: config => {
+  webpack: (config) => {
     if (config.resolve.plugins) {
       config.resolve.plugins.push(
         new TsConfigPathsPlugin({
