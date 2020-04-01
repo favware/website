@@ -1206,10 +1206,10 @@
   resolved "https://registry.yarnpkg.com/@next/polyfill-nomodule/-/polyfill-nomodule-9.3.3.tgz#07b206ead5cd65f6739e69accb71c1f8762ae891"
   integrity sha512-IsJeoEMleAqDU7kVuAxBael+z6CFyLyK0opEmubsCw6Ve6xAI291qCYJuOQK8IiG3693g7N7Nfr8Osh6NG0NvQ==
 
-"@rws-air/commitizen-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@rws-air/commitizen-config/-/commitizen-config-1.1.0.tgz#12914ea5a188c00512904248fb23b5c0de0f15b2"
-  integrity sha512-gdxIEM7kN4dJ4J6TR98SzH2Wh8Br19brjQzNaKuxcDE1w4LGOK49PIbOjqLY3CP6YQ4TBrUqJjIybpRzySI23w==
+"@rws-air/commitizen-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@rws-air/commitizen-config/-/commitizen-config-1.1.1.tgz#f1decd7800a328e9cfcdd1a2e6ebb141e6fb8e50"
+  integrity sha512-KzyqlfFfviRUVQWO8uU2mnsZyWj/72F1ZnTgjnUtsWUHQOuPbRVEsJeRAXmqzq1zj8/WjBFrYWOxQ7SUkXu7Nw==
   dependencies:
     chalk "^3.0.0"
     commitizen "^4.0.3"
@@ -1218,17 +1218,17 @@
     right-pad "^1.0.1"
     word-wrap "^1.2.3"
 
-"@rws-air/commitlint-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@rws-air/commitlint-config/-/commitlint-config-1.1.1.tgz#45c21c63230a35568c85dff927eb9f22873daf0c"
-  integrity sha512-oFQlwx8p0gk9kbte6EdOnwhMF6kaVFkO0eHC5hCCOUXDt7jVFsHoNrqV82d0rawZzlacNKJ2ES2EXpWAtmb+RQ==
+"@rws-air/commitlint-config@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@rws-air/commitlint-config/-/commitlint-config-1.1.2.tgz#ca35f598e181ac9db90b6932ed9d1146b7cfd503"
+  integrity sha512-ps0pvIYFYYW9UFqPqTpLgoLw2JDKGo4505G8Duhnd2lLWV5Xu/UBH8IJCoPU9zhesxI3hy6Mglq8PP14gqHXRw==
   dependencies:
     conventional-changelog-conventionalcommits "4.2.3"
 
-"@rws-air/eslint-config@^3.0.11":
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/@rws-air/eslint-config/-/eslint-config-3.0.11.tgz#5b5691d8f0ecf4f42c270c4ac494259f1b9e6475"
-  integrity sha512-Mv4Qea3dIN80foZw/kv+rwILaQTY7PCpXLZthTNjSA+Cs8ahkWtP2v8gUE5o7gWJm+qMldual8eN9GAxgTPdFA==
+"@rws-air/eslint-config@^3.0.12":
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/@rws-air/eslint-config/-/eslint-config-3.0.12.tgz#e4b83e9fc38dec601b2d2abc72e08332b690feb3"
+  integrity sha512-2lsHLeCDddMsMJbqGlXWjXvAM7od1tUGCymaZ4dKAZVO7eokeHOd7OX8Co6R8T27f4bBe4hHTKz1897zpMikXw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.25.0"
     "@typescript-eslint/parser" "^2.25.0"
@@ -1325,10 +1325,10 @@
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
   integrity sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==
 
-"@types/react-dom@16.9.5":
-  version "16.9.5"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.5.tgz#5de610b04a35d07ffd8f44edad93a71032d9aaa7"
-  integrity sha512-BX6RQ8s9D+2/gDhxrj8OW+YD4R+8hj7FEM/OJHGNR0KipE1h1mSsf39YeyC81qafkq+N3rU3h3RFbLSwE5VqUg==
+"@types/react-dom@16.9.6":
+  version "16.9.6"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.6.tgz#9e7f83d90566521cc2083be2277c6712dcaf754c"
+  integrity sha512-S6ihtlPMDotrlCJE9ST1fRmYrQNNwfgL61UB4I1W7M6kPulUKx9fXAleW5zpdIjUQ4fTaaog8uERezjsGUj9HQ==
   dependencies:
     "@types/react" "*"
 
@@ -1352,10 +1352,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@^16.9.29":
-  version "16.9.29"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.29.tgz#41c0353b5ea916cdb7a7e89b80b09b268c87a2f8"
-  integrity sha512-aE5sV9XVqKvIR8Lqa73hXvlqBzz5hBG0jtV9jZ1uuEWRmW8KN/mdQQmsYlPx6z/b2xa8zR3jtk7WoT+2/m4suA==
+"@types/react@^16.9.31":
+  version "16.9.31"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.31.tgz#6a543529766c8934ec8a89667376c2e73e9e2636"
+  integrity sha512-NpYJpNMWScFXtx3A2BJMeew2G3+9SEslVWMdxNJ6DLvxIuxWjY1bizK9q5Y1ujhln31vtjmhjOAYDr9Xx3k9FQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -4101,10 +4101,10 @@ findup-sync@^3.0.0:
     micromatch "^3.0.4"
     resolve-dir "^1.0.1"
 
-firebase-functions@^3.5.0:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/firebase-functions/-/firebase-functions-3.5.0.tgz#c42accc7a965b03b00a69d230ff06eeaff9e6fe2"
-  integrity sha512-BnhfsMyhi2eQfKO6RlOKg7bidiIzTrKY+7qF3M02c5yCczUaSQN3TvggqxphaZPOdEdPF2OjoBBK9xO2R2RHeg==
+firebase-functions@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/firebase-functions/-/firebase-functions-3.6.0.tgz#10fb2a46d13625a88299bbf9176750315f9da628"
+  integrity sha512-8S70Pq5nOblDKmBExq2CAgBMq+L8IDOcv10HfpDWGtgK5IpYlP0BKcchXYXcyjHtIG7xWHtR9oBLVtXFUiTp3A==
   dependencies:
     "@types/express" "^4.17.3"
     cors "^2.8.5"
@@ -4796,11 +4796,6 @@ is-binary-path@~2.1.0:
   dependencies:
     binary-extensions "^2.0.0"
 
-is-buffer@^1.1.5:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
-  integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
-
 is-callable@^1.1.4, is-callable@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.5.tgz#f7e46b596890456db74e7f6e976cb3273d06faab"
@@ -5309,26 +5304,7 @@ jws@^3.2.2:
     jwa "^1.4.1"
     safe-buffer "^5.0.1"
 
-kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-3.2.2.tgz#31ea21a734bab9bbb0f32466d893aea51e4a3c64"
-  integrity sha1-MeohpzS6ubuw8yRm2JOupR5KPGQ=
-  dependencies:
-    is-buffer "^1.1.5"
-
-kind-of@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-4.0.0.tgz#20813df3d712928b207378691a45066fae72dd57"
-  integrity sha1-IIE989cSkosgc3hpGkUGb65y3Vc=
-  dependencies:
-    is-buffer "^1.1.5"
-
-kind-of@^5.0.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-5.1.0.tgz#729c91e2d857b7a419a1f9aa65685c4c33f5845d"
-  integrity sha512-NGEErnH6F2vUuXDh+OlbcKW7/wOcfdRHaZ7VWtqCztfHri/++YKmP51OdWeGPuqCOba6kk2OTe5d02VmTB80Pw==
-
-kind-of@^6.0.0, kind-of@^6.0.2:
+kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0, kind-of@^4.0.0, kind-of@^5.0.0, kind-of@^6.0.0, kind-of@^6.0.2, kind-of@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
@@ -5354,10 +5330,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.1.0.tgz#18785bb005d5ed404f1c1db6563e082f7a7baac2"
-  integrity sha512-WzZ/T+O/aEaaT679sMgI4JqK5mnG69V5KQSouzVsShzZ8wGWte39HT3z61LsxjVNeCf8m/ChhvWJa2wTiQLy5A==
+lint-staged@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.1.1.tgz#1c8569b66d684e6e3553cd760c03053f41fca152"
+  integrity sha512-wAeu/ePaBAOfwM2+cVbgPWDtn17B0Sxiv0NvNEqDAIvB8Yhvl60vafKFiK4grcYn87K1iK+a0zVoETvKbdT9/Q==
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
