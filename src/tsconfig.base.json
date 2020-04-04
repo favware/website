@@ -1,0 +1,13 @@
+{
+  "extends": "@favware/ts-config",
+  "compilerOptions": {
+    "target": "ES6",
+    "importHelpers": false,
+    "declaration": false,
+    "incremental": false,
+    "skipLibCheck": true,
+    "preserveConstEnums": false,
+    "isolatedModules": true,
+    "resolveJsonModule": true
+  }
+}

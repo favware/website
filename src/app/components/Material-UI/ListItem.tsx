@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
     extraPadding: ({ enableExtraPadding }: Pick<ListItemProps, 'enableExtraPadding'>) => ({
       paddingLeft: enableExtraPadding ? theme.spacing(2.75) : theme.spacing(2),
       [theme.breakpoints.down('sm')]: {
-        paddingLeft: theme.spacing(2)
+        paddingLeft: enableExtraPadding ? theme.spacing(1.75) : theme.spacing(1)
       }
     })
   })

@@ -1,12 +1,19 @@
 {
   "functions": {
     "source": "dist/functions",
-    "predeploy": ["yarn clean", "yarn lint", "yarn typecheck-app", "yarn build-functions", "yarn build-app", "yarn copy-deps", "yarn install-deps"]
+    "predeploy": [
+      "yarn clean",
+      "yarn typecheck:app",
+      "yarn build:functions",
+      "yarn build:app",
+      "yarn copy:deps",
+      "yarn install:deps"
+    ]
   },
   "hosting": {
-    "site": "favware",
+    "site": "data-sunlight-146313",
     "public": "dist/public",
-    "predeploy": "yarn build-public",
+    "predeploy": "yarn run-s build:public copy:next",
     "rewrites": [
       {
         "source": "**/!(api)",

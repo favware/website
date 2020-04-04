@@ -1,3 +1,4 @@
+import Analytics from '@Config/Analytics';
 import HomeProjectCardData from '@Config/HomeProjectCardData';
 import { createSeoProps } from '@Config/next-seo.config';
 import { createStyles, makeStyles } from '@material-ui/core';
@@ -27,6 +28,7 @@ export default () => {
 
   return (
     <>
+      <Analytics />
       <NextSeo {...createSeoProps({ title: 'Index' })} />
       <Container spacing={6}>
         <Grid item>

@@ -8,7 +8,6 @@ import { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { PropsWithChildren, useEffect } from 'react';
-import TagManager, { TagManagerArgs } from 'react-gtm-module';
 
 const NoScript = dynamic(() => import('@Pres/NoScript'));
 
@@ -19,14 +18,6 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
     if (jssStyles) {
       jssStyles.parentElement?.removeChild(jssStyles);
     }
-  }, []);
-
-  useEffect(() => {
-    const tagManagerArgs: TagManagerArgs = {
-      gtmId: 'UA-114064877-3'
-    };
-
-    TagManager.initialize(tagManagerArgs);
   }, []);
 
   return (
@@ -40,12 +31,6 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
         <link rel="manifest" href="/favicons/manifest.json" />
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
-        <meta name="apple-mobile-web-app-title" content="Favware" />
-        <meta name="application-name" content="Favware" />
-        <meta name="msapplication-TileColor" content="#00aba9" />
-        <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png" />
-        <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
-        <meta name="theme-color" content="#ffffff" />
 
         <NoScript>
           <span>

@@ -29,7 +29,7 @@ import TavaLogo from 'components/Assets/TavaLogo';
 import UnescapeLogo from 'components/Assets/UnescapeLogo';
 import YamlreaderLogo from 'components/Assets/YamlreaderLogo';
 import ZalgoLogo from 'components/Assets/ZalgoLogo';
-import React, { PropsWithChildren, ReactElement, useState } from 'react';
+import React, { createRef, PropsWithChildren, ReactElement, useState } from 'react';
 
 const drawerWidth = 260;
 
@@ -99,6 +99,8 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+export const appBarRef = createRef<HTMLDivElement>();
+
 export default ({ children }: PropsWithChildren<unknown>) => {
   const classes = useStyles();
   const theme = useTheme();
@@ -139,6 +141,7 @@ export default ({ children }: PropsWithChildren<unknown>) => {
         className={clsx(classes.appBar, {
           [classes.appBarShift]: open
         })}
+        ref={appBarRef}
       >
         <Toolbar>
           <IconButton
