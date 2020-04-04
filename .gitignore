@@ -8,6 +8,7 @@ Thumbs.db
 
 # Build Artifacts
 dist/
+.next/
 
 # Logs
 logs/

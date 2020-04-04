@@ -20,8 +20,8 @@
     "lint": "eslint src --fix --ext ts,tsx",
     "up": "yarn upgrade-interactive --latest",
     "dev": "next src/app",
-    "start": "next src/app",
-    "build": "run-s clean typecheck:app build:app build:functions",
+    "build": "next build src/app",
+    "start": "next start src/app",
     "preserve": "run-s clean build:** copy:**",
     "serve": "cross-env NODE_ENV=production firebase serve",
     "deploy": "cross-env NODE_ENV=production firebase deploy",
@@ -33,7 +33,8 @@
     "copy:deps": "cpx \"*{package.json,yarn.lock,.yarnrc}\" \"dist/functions\" -C",
     "typecheck:app": "tsc --project src/app",
     "install:deps": "cd \"dist/functions\" && yarn install --frozen-lockfile",
-    "style": "prettier --write --loglevel=warn src/**/*.{html,js,ts,tsx,babelrc,json}"
+    "style": "prettier --write --loglevel=warn src/**/*.{html,js,ts,tsx,babelrc,json}",
+    "now:build": "cpx \".github/next.config.js\" \"src/app\" -C && next build src/app"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.8",
@@ -67,6 +68,7 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.2",
     "rimraf": "3.0.2",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.8.3"
   },
   "husky": {
