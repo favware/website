@@ -1,7 +1,8 @@
 import ReactGA from 'react-ga';
 
 export const initializeGoogleAnalytics = () => {
-  ReactGA.initialize('UA-114064877-3');
+  ReactGA.initialize('UA-114064877-3', { gaOptions: {} });
+  ReactGA.set({ anonymizeIp: true });
 };
 
 export const logPageView = () => {
@@ -20,7 +21,3 @@ export const logException = (description = '', fatal = false) => {
     ReactGA.exception({ description, fatal });
   }
 };
-
-export enum EVENTS {
-  OUTBOUND_LINK = '@@analytics/OUTBOUND_LINK'
-}
