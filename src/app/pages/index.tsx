@@ -30,7 +30,7 @@ export default () => {
     <>
       <Analytics />
       <NextSeo {...createSeoProps({ title: 'Index' })} />
-      <Container spacing={6}>
+      <Container spacing={5}>
         <Grid item>
           <Typography align="center" variant="h4" gutterBottom paragraph>
             Software Engineer focusing on TypeScript
@@ -57,11 +57,11 @@ export default () => {
             Bachelor of IT in the summer of 2019. At the time of writing I am working for CGI Inc. in The Netherlands as a Frontend Software Engineer.
           </Typography>
           <Typography classes={{ root: classes.bodyTypography }} gutterBottom paragraph align="left" variant="body1">
-            In my free time I have delved into a whole slew of small projects and some of these are used very actively! Notable mentions are my Discord
-            bot "Ribbon" built with NodeJS and a whole slew of NodeJS based libraries. Some of these libraries have their groundwork in JavaScript,
-            however since learning TypeScript I have converted them to this language as these days I have a strong preference for TypeScript and its
-            static type checking. I have also learned C# as I have been delving into the Unity3D Game Engine for the Game Design minor I have followed
-            as part of my Software Engineering major.
+            In my free time I have delved into a whole slew of small projects and some of these are used very actively! Notable mentions are my
+            Discord bot "Ribbon" built with NodeJS and a whole slew of NodeJS based libraries. Some of these libraries have their groundwork in
+            JavaScript, however since learning TypeScript I have converted them to this language as these days I have a strong preference for
+            TypeScript and its static type checking. I have also learned C# as I have been delving into the Unity3D Game Engine for the Game Design
+            minor I have followed as part of my Software Engineering major.
           </Typography>
           <Typography classes={{ root: classes.bodyTypography }} gutterBottom paragraph align="left" variant="body1">
             I still have a very broad future ahead of me and I expect that CGI will help me achieve many of my dreams. That said, however, playing
