@@ -53,6 +53,38 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
           a:focus {
             text-decoration: none !important;
           }
+
+          *::-webkit-scrollbar:hover {
+            background-color: rgba(100, 100, 100, 0.09);
+          }
+
+          *::-webkit-scrollbar-thumb:vertical {
+            background: rgba(100, 100, 100, 0.5);
+            -webkit-border-radius: 100px;
+          }
+
+          *::-webkit-scrollbar-thumb:vertical:active {
+            background: rgba(100, 100, 100, 0.61);
+            -webkit-border-radius: 100px;
+          }
+
+          *::-webkit-scrollbar {
+            width: 0.5em;
+            overflow: visible;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+          }
+
+          *::-webkit-scrollbar-track {
+            opacity: 0;
+            -webkit-transition: all 0.5s;
+          }
+
+          *::-webkit-scrollbar-thumb {
+            overflow: visible;
+            border-radius: 4px;
+            background: rgba(100, 100, 100, 0.2);
+          }
         `}</style>
         <Layout>
           <Component {...pageProps} />
