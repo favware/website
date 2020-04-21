@@ -5,30 +5,16 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader, { CardHeaderProps } from '@material-ui/core/CardHeader';
 import IconButton from '@material-ui/core/IconButton';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import { createStyles, makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Link from '@Mui/Link';
 import Tooltip from '@Mui/Tooltip';
 import React, { PropsWithChildren, ReactElement, ReactNode } from 'react';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     root: {
       maxWidth: 530
-    },
-    media: {
-      height: 0,
-      paddingbottom: '56.25%' // 16:9
-    },
-    expand: {
-      transform: 'rotate(0deg)',
-      marginLeft: 'auto',
-      transition: theme.transitions.create('transform', {
-        duration: theme.transitions.duration.shortest
-      })
-    },
-    expandOpen: {
-      transform: 'rotate(180deg)'
     },
     avatar: {
       backgroundColor: 'transparent'

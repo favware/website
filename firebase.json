@@ -5,6 +5,7 @@
       "yarn clean",
       "yarn typecheck:app",
       "yarn build:functions",
+      "yarn build:sitemap",
       "yarn build:app",
       "yarn copy:deps",
       "yarn install:deps"

@@ -12,6 +12,6 @@ To get ready to work on the codebase, please do the following:
 2. Run `yarn install`
 3. Code your heart out!
 4. Run `yarn lint` to confirm the linting is correct
-5. Run `yarn test` to confirm all unit tests pass
-6. Run `yarn build:ssr` to confirm the SSR build can be made
+5. Run `yarn style` to ensure your code has been transformed by Prettier
+6. Run `yarn build` to confirm that NextJS can build the application
 7. [Submit a pull request](https://github.com/favware/website/compare)
