@@ -10,8 +10,17 @@ export const DefaultSeo: DefaultSeoProps & KeyedObject = {
   canonical: 'https://favware.tech',
   additionalMetaTags: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'keywords', content: 'favna favware portfolio development skyra ribbon graphql-pokemon dexa' },
+    {
+      name: 'summary',
+      content: [
+        'On this website I am listing all the notable projects I have worked on.',
+        'Consider it to be my portfolio of sorts as well as a knowledge base of information.',
+        'There are also some small fun features here and more will be added in the future.'
+      ].join(' ')
+    },
     { name: 'robots', content: 'archive,follow,imageindex,index,odp,snippet,translate' },
-    { name: 'author', content: 'Jeroen Claassens, support@favware.tech' },
+    { name: 'author', content: `Jeroen Claassens, support@favware.tech` },
     { name: 'reply-to', content: 'support@favware.tech' },
     { name: 'target', content: 'all' },
     { name: 'audience', content: 'all' },
@@ -26,7 +35,9 @@ export const DefaultSeo: DefaultSeoProps & KeyedObject = {
     { name: 'msapplication-TileColor', content: '#00aba9' },
     { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
     { name: 'msapplication-config', content: '/favicons/browserconfig.xml' },
-    { name: 'theme-color', content: theme.palette.primary.main }
+    { name: 'theme-color', content: theme.palette.primary.main },
+    { property: 'og:email', content: 'support@favware.tech' },
+    { property: 'fb:app_id', content: '977960562367980' }
   ],
   openGraph: {
     title: 'Favware',
