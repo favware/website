@@ -20,7 +20,6 @@ import CryptoLogo from 'components/Assets/CryptoLogo';
 import DexaLogo from 'components/Assets/DexaLogo';
 import GraphqlPokemonLogo from 'components/Assets/GraphqlPokemonLogo';
 import HomeIcon from 'components/Assets/HomeIcon';
-import MilkyTSLintLogo from 'components/Assets/MilkyTSLintLogo';
 import QuerystringLogo from 'components/Assets/QuerystringLogo';
 import RibbonIcon from 'components/Assets/RibbonLogo';
 import SeedCheckerLogo from 'components/Assets/SeedCheckerLogo';
@@ -119,19 +118,18 @@ export default ({ children }: PropsWithChildren<unknown>) => {
     { text: 'Skyra', icon: <SkyraLogo />, linkTo: '/skyra', enableExtraPadding: true },
     { text: 'Dexa', icon: <DexaLogo />, linkTo: '/dexa' },
     { text: 'GraphQL Pokemon', icon: <GraphqlPokemonLogo />, linkTo: '/graphql-pokemon' },
-    { text: 'Ribbon', icon: <RibbonIcon />, linkTo: '/ribbon' },
-    { text: 'SeedChecker', icon: <SeedCheckerLogo />, linkTo: '/seedchecker' },
-    { text: 'ConvertBot', icon: <ConvertBotLogo />, linkTo: '/convertbot' },
-    { text: 'CatchCalc', icon: <CatchCalcLogo />, linkTo: '/catchcalc' },
-    { text: "Ta'Va", icon: <TavaLogo />, linkTo: '/tava' },
     { text: '@favware/querystring', icon: <QuerystringLogo />, linkTo: '/querystring' },
     { text: '@favware/converter', icon: <ConverterLogo />, linkTo: '/converter' },
     { text: '@favware/crypto', icon: <CryptoLogo />, linkTo: '/crypto' },
+    { text: "Ta'Va", icon: <TavaLogo />, linkTo: '/tava' },
+    { text: 'Ribbon', icon: <RibbonIcon />, linkTo: '/ribbon' },
+    { text: 'SeedChecker', icon: <SeedCheckerLogo />, linkTo: '/seedchecker' },
+    { text: 'CatchCalc', icon: <CatchCalcLogo />, linkTo: '/catchcalc' },
     { text: '@favware/zalgo', icon: <ZalgoLogo />, linkTo: '/zalgo' },
     { text: '@favware/yamlreader', icon: <YamlreaderLogo />, linkTo: '/yamlreader' },
     { text: '@favware/unescape', icon: <UnescapeLogo />, linkTo: '/unescape' },
     { text: 'Create DJS Bot', icon: <CreateDJSBotLogo />, linkTo: '/create-djsbot' },
-    { text: '@favware/milky-tslint', icon: <MilkyTSLintLogo />, linkTo: '/milky-tslint' }
+    { text: 'ConvertBot', icon: <ConvertBotLogo />, linkTo: '/convertbot' }
   ];
 
   return (

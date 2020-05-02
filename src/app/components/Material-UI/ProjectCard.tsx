@@ -31,7 +31,8 @@ export interface CardAction {
 
 export interface CardProps extends MUICardProps {
   textContent: ReactNode;
-  logo: ReactNode;
+  /** The name of an icon in `/images/`. Only name of the file required, `.png` extension added automatically */
+  logo: string | JSX.Element;
   logoAlt: string;
   cardHeaderProps: CardHeaderProps;
   actions: CardAction[];
@@ -45,8 +46,8 @@ export default ({ textContent, logo, logoAlt, cardHeaderProps, actions, ...props
       <CardHeader
         {...cardHeaderProps}
         avatar={
-          <Avatar aria-label={logoAlt} alt={logoAlt} className={classes.avatar}>
-            {logo}
+          <Avatar aria-label={logoAlt} alt={logoAlt} src={typeof logo === 'string' ? `/images/${logo}.png` : undefined} className={classes.avatar}>
+            {typeof logo === 'string' ? logoAlt : logo}
           </Avatar>
         }
         titleTypographyProps={{
