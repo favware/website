@@ -38,13 +38,13 @@
     "now:build": "cpx \".github/next.config.js\" \"src/app\" -C && next build src/app"
   },
   "dependencies": {
-    "@material-ui/core": "^4.9.13",
+    "@material-ui/core": "^4.9.14",
     "@material-ui/icons": "^4.9.1",
     "clsx": "^1.1.0",
     "firebase-admin": "^8.12.1",
     "firebase-functions": "^3.6.1",
-    "mdi-react": "^7.1.0",
-    "next": "^9.3.6",
+    "mdi-react": "^7.2.0",
+    "next": "^9.4.0",
     "next-seo": "^4.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -59,8 +59,8 @@
     "@rws-air/commitizen-config": "^1.1.3",
     "@rws-air/commitlint-config": "^1.1.3",
     "@rws-air/eslint-config": "^3.0.15",
-    "@types/node": "^13.13.5",
-    "@types/react": "^16.9.34",
+    "@types/node": "^13.13.6",
+    "@types/react": "^16.9.35",
     "@types/react-dom": "16.9.7",
     "@types/react-gtm-module": "^2.0.0",
     "cpx": "1.5.0",
@@ -72,7 +72,7 @@
     "prettier": "^2.0.5",
     "rimraf": "3.0.2",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.2"
   },
   "husky": {
     "hooks": {
