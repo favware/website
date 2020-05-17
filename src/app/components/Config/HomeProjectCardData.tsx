@@ -76,7 +76,7 @@ const HomeProjectCardData: CardProps[] = [
   {
     textContent: 'Dexa is a PokéDex Skill for Alexa that gives you information on Pokémon, Items, Abilities and Moves.',
     logo: 'dexa',
-    logoAlt: 'Dexa Logo',
+    logoAlt: 'D',
     actions: [
       { to: '/dexa', icon: <LanguageIcon />, tooltipTitle: 'More information' },
       { to: DEXA_SKILL_URL, icon: <AlexaIcon />, tooltipTitle: 'Add skill to your Alexa-enabled device', external: true },
@@ -111,7 +111,7 @@ const HomeProjectCardData: CardProps[] = [
       </Typography>
     ),
     logo: 'gqlp',
-    logoAlt: 'GraphQL-Pokemon Logo',
+    logoAlt: 'GP',
     actions: [
       { to: '/graphql-pokemon', icon: <LanguageIcon />, tooltipTitle: 'More information' },
       { to: GRAPHQL_POKEMON_PLAYGROUND, icon: <GraphqlIcon />, tooltipTitle: 'Use the GraphQL-Playground', external: true },
@@ -292,7 +292,7 @@ const HomeProjectCardData: CardProps[] = [
   {
     textContent: '⚡ CLI tool for to bootstrap a Discord.JS bot using the Commando framework. Has templates for both JavaScript and TypeScript.',
     logo: 'create-djsbot',
-    logoAlt: 'CDJS',
+    logoAlt: 'CDB',
     actions: [
       { to: '/create-djsbot', icon: <LanguageIcon />, tooltipTitle: 'More information' },
       { to: CREATE_DJSBOT_YARN, icon: <NpmIcon />, tooltipTitle: 'View on Yarnpkg', external: true },
