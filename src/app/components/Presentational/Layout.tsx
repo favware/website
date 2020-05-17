@@ -10,7 +10,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import MenuIcon from '@material-ui/icons/Menu';
-import ListItem, { ListItemProps } from '@Mui/ListItem';
+import SidenavListItem, { ListItemProps as SidenavListItemProps } from '@Mui/ListItem';
 import clsx from 'clsx';
 import CatchCalcLogo from 'components/Assets/CatchCalcLogo';
 import ConvertBotLogo from 'components/Assets/ConvertBotLogo';
@@ -176,14 +176,14 @@ export default ({ children }: PropsWithChildren<unknown>) => {
         </div>
         <Divider />
         <List>
-          <ListItem onClick={handleDrawerClose} key={-1} text="Contact" linkTo="/contact" openState={open} enableExtraPadding>
+          <SidenavListItem onClick={handleDrawerClose} key={-1} text="Contact" linkTo="/contact" openState={open} enableExtraPadding>
             <ContactMailIcon />
-          </ListItem>
+          </SidenavListItem>
 
           <Divider light classes={{ root: classes.divider }} />
 
           {navItems.map((navItem, index) => (
-            <ListItem
+            <SidenavListItem
               onClick={handleDrawerClose}
               key={index}
               text={navItem.text}
@@ -192,7 +192,7 @@ export default ({ children }: PropsWithChildren<unknown>) => {
               enableExtraPadding={navItem.enableExtraPadding}
             >
               {navItem.icon}
-            </ListItem>
+            </SidenavListItem>
           ))}
         </List>
       </Drawer>
@@ -204,7 +204,6 @@ export default ({ children }: PropsWithChildren<unknown>) => {
   );
 };
 
-interface NavItem extends Pick<ListItemProps, 'text' | 'linkTo'> {
+interface NavItem extends Pick<SidenavListItemProps, 'text' | 'linkTo' | 'enableExtraPadding'> {
   icon: ReactElement;
-  enableExtraPadding?: boolean;
 }
