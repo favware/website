@@ -1,0 +1,9 @@
+{
+  "install": {
+    "include": ["package.json"]
+  },
+  "restart": {
+    "include": ["src/app/next.config.js"]
+  },
+  "throttle": 250
+}
