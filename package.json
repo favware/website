@@ -22,6 +22,7 @@
     "dev": "next dev src/app",
     "build": "next build src/app",
     "start": "next start src/app",
+    "export": "next export src/app",
     "preserve": "run-s clean build:** copy:**",
     "serve": "cross-env NODE_ENV=production firebase serve",
     "deploy": "cross-env NODE_ENV=production firebase deploy",
@@ -35,7 +36,8 @@
     "typecheck:app": "tsc --project src/app",
     "install:deps": "cd \"dist/functions\" && yarn install --frozen-lockfile",
     "style": "prettier --write --loglevel=warn src/**/*.{html,js,ts,tsx,babelrc,json}",
-    "now:build": "cpx \".github/next.config.js\" \"src/app\" -C && next build src/app"
+    "now:build": "cpx \".github/next.config.js\" \"src/app\" -C && next build src/app",
+    "netlify:build": "run-s build export"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.14",
