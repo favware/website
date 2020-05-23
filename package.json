@@ -19,9 +19,9 @@
   "scripts": {
     "lint": "eslint src --fix --ext ts,tsx",
     "up": "yarn upgrade-interactive --latest",
+    "dev": "next dev src/app",
     "build": "next build src/app",
-    "start": "next src/app",
-    "prod": "next build src/app && next start src/app",
+    "start": "next start src/app",
     "preserve": "run-s clean build:** copy:**",
     "serve": "cross-env NODE_ENV=production firebase serve",
     "deploy": "cross-env NODE_ENV=production firebase deploy",
