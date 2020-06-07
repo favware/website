@@ -1,13 +1,18 @@
 /* eslint-disable @typescript-eslint/camelcase */
 import theme from '@Config/Theme';
+import { mergeDefault } from '@klasa/utils/dist/src/lib/mergeDefault';
 import { DefaultSeoProps, NextSeoProps } from 'next-seo';
-import mergeObjects, { KeyedObject } from 'utils/mergeObjects';
+
+type KeyedObject = Record<PropertyKey, unknown>;
 
 export const DefaultSeo: DefaultSeoProps & KeyedObject = {
   titleTemplate: 'Favware | %s',
   title: 'Home',
   description: 'For Hearth and Home! Check out favware projects here!',
   canonical: 'https://favware.tech',
+  facebook: {
+    appId: '977960562367980'
+  },
   additionalMetaTags: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     { name: 'keywords', content: 'favna favware portfolio development skyra ribbon graphql-pokemon dexa' },
@@ -36,22 +41,26 @@ export const DefaultSeo: DefaultSeoProps & KeyedObject = {
     { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
     { name: 'msapplication-config', content: '/favicons/browserconfig.xml' },
     { name: 'theme-color', content: theme.palette.primary.main },
-    { property: 'og:email', content: 'support@favware.tech' },
-    { property: 'fb:app_id', content: '977960562367980' }
+    { property: 'og:email', content: 'support@favware.tech' }
   ],
   openGraph: {
     title: 'Favware',
-    description: 'For Hearth and Home! Check out favware projects here!',
     url: 'https://favware.tech',
     images: [
       {
-        url: 'https://favware.tech/assets/og-image.png',
-        alt: 'Social Embeddable Image'
+        url: 'https://favware.tech/images/og.png',
+        alt: 'OpenGraphImage'
       }
     ],
     type: 'website',
     locale: 'en_GB',
-    site_name: 'Favware'
+    site_name: 'Favware',
+    profile: {
+      firstName: 'Jeroen',
+      lastName: 'Claassens',
+      username: 'Favna',
+      gender: 'male'
+    }
   },
   twitter: {
     handle: '@Favna_',
@@ -60,4 +69,4 @@ export const DefaultSeo: DefaultSeoProps & KeyedObject = {
   }
 };
 
-export const createSeoProps = (seoProps: NextSeoProps & KeyedObject) => mergeObjects(DefaultSeo, seoProps);
+export const createSeoProps = (seoProps: NextSeoProps & KeyedObject) => mergeDefault(DefaultSeo, seoProps);

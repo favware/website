@@ -1,4 +1,4 @@
-import { cyan, green, grey, red } from '@material-ui/core/colors';
+import { cyan, grey, lightBlue, red } from '@material-ui/core/colors';
 import { createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
@@ -9,7 +9,7 @@ const theme = createMuiTheme({
     },
     type: 'dark',
     primary: cyan,
-    secondary: green,
+    secondary: lightBlue,
     error: {
       main: red.A400
     },

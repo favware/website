@@ -6,13 +6,10 @@ import Link from '@Mui/Link';
 import isBrowser from '@Utils/isBrowser';
 import clsx from 'clsx';
 import React, { useEffect, useState } from 'react';
-import { Else, If, Then } from 'react-if';
-import Tooltip from './Tooltip';
 
 export interface ListItemProps extends ListItemIconProps {
   text: string;
   linkTo: string;
-  openState: boolean;
 
   enableExtraPadding?: boolean;
 }
@@ -34,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default ({ children, text, linkTo, openState, enableExtraPadding = false, onClick }: ListItemProps) => {
+export default ({ children, text, linkTo, enableExtraPadding = false, onClick }: ListItemProps) => {
   const classes = useStyles({ enableExtraPadding });
   const [selected, setSelected] = useState(false);
 
@@ -47,23 +44,11 @@ export default ({ children, text, linkTo, openState, enableExtraPadding = false,
   }, [linkTo, isBrowser ? window.location.pathname : null]);
 
   return (
-    <Link href={linkTo} naked>
-      <If condition={openState}>
-        <Then>
-          <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }} onClick={onClick}>
-            <ListItemIcon>{children}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        </Then>
-        <Else>
-          <Tooltip title={text}>
-            <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }} onClick={onClick}>
-              <ListItemIcon>{children}</ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          </Tooltip>
-        </Else>
-      </If>
+    <Link href={linkTo} nextPage>
+      <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }} onClick={onClick}>
+        <ListItemIcon>{children}</ListItemIcon>
+        <ListItemText primary={text} />
+      </ListItem>
     </Link>
   );
 };

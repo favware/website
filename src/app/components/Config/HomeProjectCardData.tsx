@@ -96,13 +96,13 @@ const HomeProjectCardData: CardProps[] = [
     textContent: (
       <Typography component="span" color="textSecondary" variant="body2">
         {'GraphQL based API offering a massive amount of Pokémon data - currently serving at least '}
-        <Link href="/skyra" naked>
+        <Link href="/skyra" nextPage>
           <Typography component="span" color="secondary" variant="body2">
             Skyra
           </Typography>
         </Link>
         {' and '}
-        <Link href="/dexa" naked>
+        <Link href="/dexa" nextPage>
           <Typography component="span" color="secondary" variant="body2">
             Dexa
           </Typography>

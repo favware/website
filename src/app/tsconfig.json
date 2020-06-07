@@ -17,7 +17,8 @@
       "@Svgs/*": ["components/Assets/Svgs/*"],
       "@Utils/*": ["utils/*"]
     },
-    "allowJs": true
+    "allowJs": true,
+    "module": "esnext"
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

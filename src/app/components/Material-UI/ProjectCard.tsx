@@ -14,7 +14,9 @@ import React, { PropsWithChildren, ReactElement, ReactNode } from 'react';
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
-      maxWidth: 530
+      maxWidth: 530,
+      height: '100%',
+      maxHeight: '100%'
     },
     avatar: {
       backgroundColor: 'transparent'
@@ -62,7 +64,7 @@ export default ({ textContent, logo, logoAlt, cardHeaderProps, actions, ...props
       <CardActions disableSpacing>
         {actions.map(({ icon, to, tooltipTitle, external = false }, index) => (
           <Box key={index} component="div">
-            <Link href={to} naked={!external}>
+            <Link href={to} nextPage={!external}>
               <Tooltip title={tooltipTitle} placement="bottom">
                 <IconButton aria-label={tooltipTitle}>{icon}</IconButton>
               </Tooltip>
