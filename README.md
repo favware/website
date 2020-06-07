@@ -22,3 +22,23 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/favna_?label=Follow%20@Favna_&logo=twitter&colorB=1DA1F2&style=flat-square)](https://twitter.com/Favna_/follow)
 [![Patreon Donate](https://img.shields.io/badge/patreon-donate-brightgreen.svg?label=Donate%20with%20Patreon&logo=patreon&colorB=F96854&style=flat-square&link=https://www.patreon.com/bePatron?u=9336537)](https://www.patreon.com/bePatron?u=9336537)
 [![PayPal Donate](https://img.shields.io/badge/paypal-donate-brightgreen.svg?label=Donate%20with%20Paypal&logo=paypal&colorB=00457C&style=flat-square&link=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)](https://www.patreon.com/bePatron?u=9336537)
+
+### License
+
+Copyright © 2019, [Favware](https://github.com/favware).
+Released under the [MIT License](LICENSE.md).
+
+### Buy us a donut
+
+Favware projects are open source and always will be, even if there are no donations. That said, we also know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!
+
+You can contribute in a multitude of ways:
+
+- [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XMAYCF9SDHZ34)
+- [Patreon](https://www.patreon.com/favna)
+- [Ko-Fi](https://ko-fi.com/favna)
+- [GitHub Sponsors Favware](https://github.com/sponsors/favware)
+- [GitHub Sponsors Favna](https://github.com/sponsors/Favna)
+- Bitcoin: `1E643TNif2MTh75rugepmXuq35Tck4TnE5`
+- Ethereum: `0xF653F666903cd8739030D2721bF01095896F5D6E`
+- LiteCoin: `LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6`
