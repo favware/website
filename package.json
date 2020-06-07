@@ -60,11 +60,10 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@favware/eslint-config": "^4.0.0",
-    "@favware/ts-config": "^2.0.0",
+    "@favware/eslint-config-react-app": "^1.0.0",
+    "@favware/ts-config": "^3.0.0",
     "@rws-air/commitizen-config": "^2.0.1",
     "@rws-air/commitlint-config": "^2.0.1",
-    "@rws-air/eslint-config": "^5.0.2",
     "@types/node": "^14.0.11",
     "@types/react": "^16.9.35",
     "@types/react-dom": "16.9.8",

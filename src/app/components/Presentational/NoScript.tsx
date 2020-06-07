@@ -16,5 +16,6 @@ export default ({ children }: PropsWithChildren<unknown>) => {
   }
 
   const staticMarkup = ReactDOMServer.renderToStaticMarkup(children);
+  // eslint-disable-next-line react/no-danger, @typescript-eslint/naming-convention
   return <noscript dangerouslySetInnerHTML={{ __html: staticMarkup }} />;
 };

@@ -34,7 +34,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-export default forwardRef<any, PropsWithChildren<LinkProps>>(
+export default forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps>>(
   ({ href, activeClassName = 'active', className: classNameFromProps, nextPage = true, ...other }, ref) => {
     const router = useRouter();
     const classes = useStyles();

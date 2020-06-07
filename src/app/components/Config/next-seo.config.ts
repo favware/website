@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/camelcase */
 import theme from '@Config/Theme';
 import { mergeDefault } from '@klasa/utils/dist/src/lib/mergeDefault';
 import { DefaultSeoProps, NextSeoProps } from 'next-seo';
@@ -54,6 +53,7 @@ export const DefaultSeo: DefaultSeoProps & KeyedObject = {
     ],
     type: 'website',
     locale: 'en_GB',
+    // eslint-disable-next-line @typescript-eslint/naming-convention
     site_name: 'Favware',
     profile: {
       firstName: 'Jeroen',
