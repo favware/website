@@ -4,7 +4,7 @@ const { resolve } = require('path');
 
 sitemap({
   baseUrl: 'https://favware.tech',
-  pagesDirectory: resolve(__dirname, '..', 'src', 'app', 'pages'),
-  targetDirectory: resolve(__dirname, '..', 'src', 'app', 'public'),
-  nextConfigPath: resolve(__dirname, '..', 'src', 'app', 'next.config.js')
+  pagesDirectory: resolve(__dirname, '..', 'src', 'pages'),
+  targetDirectory: resolve(__dirname, '..', 'src', 'public'),
+  nextConfigPath: resolve(__dirname, '..', 'src', 'next.config.js')
 });

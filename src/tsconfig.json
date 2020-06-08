@@ -1,7 +1,17 @@
 {
-  "extends": "../tsconfig.base.json",
+  "extends": "@favware/ts-config",
   "compileOnSave": false,
   "compilerOptions": {
+    "allowJs": true,
+    "module": "esnext",
+    "target": "ES6",
+    "declaration": false,
+    "declarationMap": false,
+    "incremental": false,
+    "skipLibCheck": true,
+    "preserveConstEnums": false,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
     "jsx": "preserve",
     "noImplicitAny": false,
     "noEmit": true,
@@ -16,10 +26,7 @@
       "@Assets/*": ["components/Assets/*"],
       "@Svgs/*": ["components/Assets/Svgs/*"],
       "@Utils/*": ["utils/*"]
-    },
-    "allowJs": true,
-    "module": "esnext"
+    }
   },
-  "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

@@ -1,9 +1,9 @@
 {
-  "extends": "./src/app/tsconfig.json",
+  "extends": "./src/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "allowJs": true,
     "checkJs": true
   },
-  "include": ["src", "scripts"]
+  "include": ["scripts", "src"]
 }
