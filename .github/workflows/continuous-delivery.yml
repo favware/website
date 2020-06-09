@@ -3,7 +3,7 @@ name: Continuous Delivery
 on:
   push:
     branches:
-      - react-rewrite
+      - master
     paths:
       - "src/**"
       - ".github/**"

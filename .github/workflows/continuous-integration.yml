@@ -4,7 +4,8 @@ on:
   pull_request:
   push:
     branches-ignore:
-      - react-rewrite
+      - master
+      - angular-legacy
 
 jobs:
   Linting:
