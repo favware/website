@@ -35,7 +35,7 @@ const useStyles = makeStyles(() =>
 );
 
 export default forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps>>(
-  ({ href, activeClassName = 'active', className: classNameFromProps, nextPage = true, ...other }, ref) => {
+  ({ href, activeClassName = 'active', className: classNameFromProps, nextPage = false, ...other }, ref) => {
     const router = useRouter();
     const classes = useStyles();
     const pathname = typeof href === 'string' ? href : href.pathname;

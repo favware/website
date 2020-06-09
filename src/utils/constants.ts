@@ -1,12 +1,13 @@
-const BASE_DOWNLOAD_URL = 'https://storage.googleapis.com/data-sunlight-146313.appspot.com/website-dist';
-export const DISCORD_SERVER_URL = 'https://www.discord.gg/sguypX8';
+const BASE_DOWNLOAD_URL = 'https://cdn.favware.tech/binaries';
+
+export const DISCORD_SERVER_URL = 'https://join.favware.tech';
 export const GITHUB_PROFILE = 'https://github.com/favna';
 export const TWITTER_PROFILE = 'https://twitter.com/favna_';
 export const COMMON_EMAIL = 'support@favware.tech';
 
 export const RIBBON_GITHUB_URL = 'https://www.github.com/favna/ribbon';
 
-export const DEXA_SKILL_URL = 'https://skills-store.amazon.com/deeplink/dp/B07DQM8CVR';
+export const DEXA_SKILL_URL = 'https://redirect.favware.tech/dexa';
 export const DEXA_GITHUB_URL = 'https://www.github.com/favware/Dexa';
 
 export const GRAPHQL_POKEMON_PLAYGROUND = 'https://graphqlpokemon.favware.tech/';
@@ -17,7 +18,7 @@ export const SEEDCHECKER_GITHUB_URL = 'https://www.github.com/favna/seedchecker'
 export const SEEDCHECKER_DOWNLOAD_URL = `${BASE_DOWNLOAD_URL}/SEEDChecker.jar`;
 
 export const CONVERTBOT_GITHUB_URL = 'https://www.github.com/favna/convertbot';
-export const CONVERTBOT_DOWNLOAD_URL = `${BASE_DOWNLOAD_URL}/ConvertBot.exe`;
+export const CONVERTBOT_DOWNLOAD_URL = `${BASE_DOWNLOAD_URL}/convertbot.exe`;
 
 export const CATCHCALC_GITHUB_URL = 'https://www.github.com/favna/catchcalc';
 export const CATCHCALC_DOWNLOAD_URL = `${BASE_DOWNLOAD_URL}catchcalc.jar`;
@@ -60,11 +61,11 @@ export const SKYRA_INVITE_URL = 'https://invite.skyra.pw';
 export const SKYRA_GITHUB_URL = 'https://github.com/skyra-project/skyra';
 export const SKYRA_DASHBOARD_URL = 'https://skyra.pw';
 
-export const CONTACT_FACEBOOK = 'https://www.facebook.com/messages/t/FavnaX';
-export const CONTACT_GITHUB = 'https://www.github.com/favware';
-export const CONTACT_LINKEDIN = 'https://www.linkedin.com/in/jeroenclaassensict';
-export const CONTACT_REDDIT = 'https://www.reddit.com/user/favna';
-export const CONTACT_TWITCH = 'https://www.twitch.tv/favna';
-export const CONTACT_TWITTER = 'https://twitter.com/intent/follow?screen_name=favna_';
+export const CONTACT_FACEBOOK = 'https://redirect.favware.tech/facebook';
+export const CONTACT_GITHUB = 'https://redirect.favware.tech/github';
+export const CONTACT_LINKEDIN = 'https://redirect.favware.tech/linkedin';
+export const CONTACT_REDDIT = 'https://redirect.favware.tech/reddit';
+export const CONTACT_TWITCH = 'https://redirect.favware.tech/twitch';
+export const CONTACT_TWITTER = 'https://redirect.favware.tech/twitter';
 export const CONTACT_MAIL = `mailto:${COMMON_EMAIL}`;
-export const CONTACT_YOUTUBE = 'https://www.youtube.com/c/favna?sub_confirmation=1';
+export const CONTACT_YOUTUBE = 'https://redirect.favware.tech/youtube';

@@ -9,12 +9,15 @@ import { createStyles, makeStyles, Theme, useTheme } from '@material-ui/core/sty
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import ContactMailIcon from '@material-ui/icons/ContactMail';
+import ContactSupportIcon from '@material-ui/icons/ContactSupport';
+import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from '@Mui/Link';
 import SidenavListItem, { ListItemProps as SidenavListItemProps } from '@Mui/ListItem';
 import Tooltip from '@Mui/Tooltip';
-import { noOp } from '@Utils/skyraUtils';
+import { CONTACT_MAIL, DISCORD_SERVER_URL } from '@Utils/constants';
+import { navigate, noOp } from '@Utils/skyraUtils';
+import clsx from 'clsx';
 import CatchCalcLogo from 'components/Assets/CatchCalcLogo';
 import ConvertBotLogo from 'components/Assets/ConvertBotLogo';
 import ConverterLogo from 'components/Assets/ConverterLogo';
@@ -31,6 +34,7 @@ import TavaLogo from 'components/Assets/TavaLogo';
 import UnescapeLogo from 'components/Assets/UnescapeLogo';
 import YamlreaderLogo from 'components/Assets/YamlreaderLogo';
 import ZalgoLogo from 'components/Assets/ZalgoLogo';
+import DiscordIcon from 'mdi-react/DiscordIcon';
 import React, { createRef, PropsWithChildren, ReactElement, useState } from 'react';
 
 const drawerWidth = 260;
@@ -90,6 +94,12 @@ const useStyles = makeStyles((theme: Theme) =>
       '&:hover': {
         cursor: 'pointer'
       }
+    },
+    contactIcon: {
+      color: 'white'
+    },
+    contactIconMargin: {
+      marginRight: theme.spacing(1)
     }
   })
 );
@@ -127,7 +137,7 @@ export default ({ children }: PropsWithChildren<unknown>) => {
   const drawer = (
     <>
       <Tooltip title="Go back to homepage">
-        <Link href={'/'} onClick={closeSidebarOnMobile} className={classes.appBarStretch} nextPage>
+        <Link href="/" onClick={closeSidebarOnMobile} className={classes.appBarStretch} nextPage>
           <Typography variant="h6" noWrap>
             Favware
           </Typography>
@@ -137,7 +147,7 @@ export default ({ children }: PropsWithChildren<unknown>) => {
 
       <List>
         <SidenavListItem onClick={closeSidebarOnMobile} key={-1} text="Contact" linkTo="/contact" enableExtraPadding>
-          <ContactMailIcon />
+          <ContactSupportIcon />
         </SidenavListItem>
 
         <Divider light classes={{ root: classes.divider }} />
@@ -166,6 +176,18 @@ export default ({ children }: PropsWithChildren<unknown>) => {
               <MenuIcon />
             </IconButton>
           </Hidden>
+          <Box flexGrow={1} />
+          <IconButton
+            color="inherit"
+            edge="end"
+            onClick={navigate(CONTACT_MAIL)}
+            classes={{ root: clsx(classes.contactIcon, classes.contactIconMargin) }}
+          >
+            <MailIcon />
+          </IconButton>
+          <IconButton color="inherit" edge="end" onClick={navigate(DISCORD_SERVER_URL)} classes={{ root: classes.contactIcon }}>
+            <DiscordIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
       <Box component="nav" className={classes.drawer}>

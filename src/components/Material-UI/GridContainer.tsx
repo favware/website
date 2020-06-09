@@ -18,10 +18,10 @@ export default memo(({ children, ...props }: PropsWithChildren<GridProps>) => {
       container
       classes={{ root: classes.root }}
       spacing={1}
-      direction="column"
-      justify="center"
+      direction="row"
+      justify="space-between"
+      alignContent="stretch"
       alignItems="center"
-      alignContent="center"
       {...props}
     >
       {children}
