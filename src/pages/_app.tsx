@@ -23,7 +23,7 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
     window.$discordMessage = {
       avatars: {
         default: 'blue',
-        favna: '/avatars/favna.png',
+        favna: 'https://cdn.favware.tech/img/favna.png',
         skyra: '/avatars/skyra.png'
       },
       profiles: {
@@ -36,12 +36,12 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
         },
         favna: {
           author: 'Favna',
-          avatar: '/avatars/favna.png',
+          avatar: 'https://cdn.favware.tech/img/favna.png',
           roleColor: '#FF0000'
         },
         kyra: {
           author: 'Kyra',
-          avatar: '/avatars/kyra.png',
+          avatar: 'https://cdn.favware.tech/img/kyra.png',
           roleColor: '#FF9D01'
         }
       }

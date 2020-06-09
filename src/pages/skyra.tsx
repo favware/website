@@ -32,7 +32,13 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const Section = ({ name, previewContent, text }: typeof SkyraFeatures extends Array<infer U> ? U : never) => {
+interface SectionProps {
+  name: string;
+  text: string | JSX.Element;
+  previewContent: JSX.Element;
+}
+
+const Section = ({ name, previewContent, text }: SectionProps) => {
   const classes = useStyles();
 
   return (
@@ -70,7 +76,7 @@ export default () => (
           url: 'https://favware.tech/skyra',
           images: [
             {
-              url: 'https://favware.tech/images/skyra.png',
+              url: 'https://cdn.favware.tech/img/skyra.png',
               alt: 'Skyra'
             }
           ]
@@ -82,7 +88,6 @@ export default () => (
       subtitle="Skyra is the single most advanced moderation bot you'll ever need. She's a configurable Discord Bot with moderation, fun, and much more!"
     />
     {SkyraFeatures.map(({ name, previewContent, text }) => (
-      // @ts-expect-error => TypeScript doesn't understand that `string | Element` is valid for `text`
       <Section name={name} text={text} previewContent={previewContent} key={name} />
     ))}
   </>
