@@ -150,7 +150,7 @@ export default ({ children }: PropsWithChildren<unknown>) => {
           <ContactSupportIcon />
         </SidenavListItem>
 
-        <Divider light classes={{ root: classes.divider }} />
+        <Divider component="li" light classes={{ root: classes.divider }} />
 
         {navItems.map((navItem, index) => (
           <SidenavListItem
@@ -172,7 +172,7 @@ export default ({ children }: PropsWithChildren<unknown>) => {
       <AppBar position="fixed" className={classes.appBar} ref={appBarRef}>
         <Toolbar>
           <Hidden smUp>
-            <IconButton color="inherit" edge="start" onClick={toggleSidebar} className={classes.menuButton}>
+            <IconButton aria-label="open navigation" color="inherit" edge="start" onClick={toggleSidebar} className={classes.menuButton}>
               <MenuIcon />
             </IconButton>
           </Hidden>
@@ -180,12 +180,19 @@ export default ({ children }: PropsWithChildren<unknown>) => {
           <IconButton
             color="inherit"
             edge="end"
+            aria-label="contact email"
             onClick={navigate(CONTACT_MAIL)}
             classes={{ root: clsx(classes.contactIcon, classes.contactIconMargin) }}
           >
             <MailIcon />
           </IconButton>
-          <IconButton color="inherit" edge="end" onClick={navigate(DISCORD_SERVER_URL)} classes={{ root: classes.contactIcon }}>
+          <IconButton
+            aria-label="join discord server"
+            color="inherit"
+            edge="end"
+            onClick={navigate(DISCORD_SERVER_URL)}
+            classes={{ root: classes.contactIcon }}
+          >
             <DiscordIcon />
           </IconButton>
         </Toolbar>

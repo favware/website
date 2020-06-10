@@ -47,6 +47,6 @@ export default forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps>>(
       return <NextComposed className={className} ref={ref} href={href} {...other} />;
     }
 
-    return <MuiLink target="_blank" className={className} ref={ref} href={href as string} {...other} />;
+    return <MuiLink target="_blank" rel="noreferer" className={className} ref={ref} href={href as string} {...other} />;
   }
 );

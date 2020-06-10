@@ -1,7 +1,8 @@
-import { createStyles, makeStyles, Theme } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon, { ListItemIconProps } from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import Link from '@Mui/Link';
 import isBrowser from '@Utils/isBrowser';
 import clsx from 'clsx';
@@ -44,11 +45,13 @@ export default ({ children, text, linkTo, enableExtraPadding = false, onClick }:
   }, [linkTo, isBrowser ? window.location.pathname : null]);
 
   return (
-    <Link href={linkTo} nextPage>
-      <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }} onClick={onClick}>
-        <ListItemIcon>{children}</ListItemIcon>
-        <ListItemText primary={text} />
-      </ListItem>
-    </Link>
+    <Box component="li">
+      <Link href={linkTo} nextPage>
+        <ListItem button key={text} selected={selected} classes={{ root: clsx(classes.root, classes.extraPadding) }} onClick={onClick}>
+          <ListItemIcon>{children}</ListItemIcon>
+          <ListItemText primary={text} />
+        </ListItem>
+      </Link>
+    </Box>
   );
 };
