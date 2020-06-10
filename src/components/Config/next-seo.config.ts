@@ -36,7 +36,7 @@ export const DefaultSeo: DefaultSeoProps & KeyedObject = {
     { name: 'HandheldFriendly', content: 'True' },
     { name: 'apple-mobile-web-app-title', content: 'Favware' },
     { name: 'application-name', content: 'Favware' },
-    { name: 'msapplication-TileColor', content: '#00aba9' },
+    { name: 'msapplication-TileColor', content: theme.palette.primary.main },
     { name: 'msapplication-TileImage', content: '/favicons/mstile-144x144.png' },
     { name: 'msapplication-config', content: '/favicons/browserconfig.xml' },
     { name: 'theme-color', content: theme.palette.primary.main },
