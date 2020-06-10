@@ -29,5 +29,6 @@
       "@Utils/*": ["utils/*"]
     }
   },
-  "include": ["."]
+  "include": ["."],
+  "exclude": ["public/sw.js", "public/workbox*.js"]
 }
