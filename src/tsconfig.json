@@ -3,6 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "allowJs": true,
+    "checkJs": true,
     "module": "esnext",
     "target": "ES6",
     "declaration": false,
@@ -28,5 +29,5 @@
       "@Utils/*": ["utils/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["."]
 }

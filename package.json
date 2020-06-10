@@ -17,7 +17,7 @@
     "node": "10"
   },
   "scripts": {
-    "lint": "eslint src --fix --ext ts,tsx",
+    "lint": "eslint src --fix --ext js,ts,tsx",
     "up": "yarn upgrade-interactive --latest",
     "dev": "next dev src",
     "prebuild": "yarn build:sitemap",
@@ -42,6 +42,7 @@
     "clsx": "^1.1.1",
     "mdi-react": "^7.3.0",
     "next": "^9.4.4",
+    "next-pwa": "^2.5.0",
     "next-seo": "^4.5.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",

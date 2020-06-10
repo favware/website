@@ -24,12 +24,12 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
       avatars: {
         default: 'blue',
         favna: 'https://cdn.favware.tech/img/favna.png',
-        skyra: '/avatars/skyra.png'
+        skyra: 'https://cdn.favware.tech/img/skyra.png'
       },
       profiles: {
         skyra: {
           author: 'Skyra',
-          avatar: '/avatars/skyra.png',
+          avatar: 'https://cdn.favware.tech/img/skyra.png',
           bot: true,
           verified: true,
           roleColor: '#1E88E5'
