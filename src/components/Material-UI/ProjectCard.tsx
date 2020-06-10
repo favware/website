@@ -36,7 +36,10 @@ export interface CardProps extends MUICardProps {
   /** The name of an icon in `/images/`. Only name of the file required, `.png` extension added automatically */
   logo: string | JSX.Element;
   logoAlt: string;
-  cardHeaderProps: CardHeaderProps;
+  cardHeaderProps: {
+    title: ReactNode;
+    subheader: ReactNode;
+  };
   actions: CardAction[];
 }
 

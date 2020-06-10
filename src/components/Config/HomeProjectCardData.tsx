@@ -137,7 +137,13 @@ const HomeProjectCardData: CardProps[] = [
       { to: QUERYSTRING_GITHUB, icon: <GitHubIcon />, tooltipTitle: 'View on Yarnpkg', external: true }
     ],
     cardHeaderProps: {
-      title: '@favware/querystring',
+      title: (
+        <span>
+          @favware/
+          <wbr />
+          querystring
+        </span>
+      ),
       subheader: 'yarn add @favware/querystring'
     }
   },
@@ -151,7 +157,13 @@ const HomeProjectCardData: CardProps[] = [
       { to: CONVERTER_GITHUB, icon: <GitHubIcon />, tooltipTitle: 'View GitHub repository', external: true }
     ],
     cardHeaderProps: {
-      title: '@favware/converter',
+      title: (
+        <span>
+          @favware/
+          <wbr />
+          converter
+        </span>
+      ),
       subheader: 'yarn add @favware/converter'
     }
   },
@@ -271,7 +283,13 @@ const HomeProjectCardData: CardProps[] = [
       { to: CONVERTER_GITHUB, icon: <GitHubIcon />, tooltipTitle: 'View GitHub repository', external: true }
     ],
     cardHeaderProps: {
-      title: '@favware/yamlreader',
+      title: (
+        <span>
+          @favware/
+          <wbr />
+          yamlreader
+        </span>
+      ),
       subheader: 'yarn add @favware/yamlreader'
     }
   },
@@ -285,7 +303,13 @@ const HomeProjectCardData: CardProps[] = [
       { to: UNESCAPE_GITHUB, icon: <GitHubIcon />, tooltipTitle: 'View GitHub repository', external: true }
     ],
     cardHeaderProps: {
-      title: '@favware/unescape',
+      title: (
+        <span>
+          @favware/
+          <wbr />
+          unescape
+        </span>
+      ),
       subheader: 'yarn add @favware/unescape'
     }
   },
