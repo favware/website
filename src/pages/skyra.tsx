@@ -1,6 +1,7 @@
 import Analytics from '@Config/Analytics';
 import { createSeoProps } from '@Config/next-seo.config';
 import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
 import Divider from '@material-ui/core/Divider';
 import Hidden from '@material-ui/core/Hidden';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
@@ -83,12 +84,14 @@ export default () => (
         }
       })}
     />
-    <PageHeader
-      title="Skyra"
-      subtitle="Skyra is the single most advanced moderation bot you'll ever need. She's a configurable Discord Bot with moderation, fun, and much more!"
-    />
-    {SkyraFeatures.map(({ name, previewContent, text }) => (
-      <Section name={name} text={text} previewContent={previewContent} key={name} />
-    ))}
+    <Container maxWidth="lg" disableGutters>
+      <PageHeader
+        title="Skyra"
+        subtitle="Skyra is the single most advanced moderation bot you'll ever need. She's a configurable Discord Bot with moderation, fun, and much more!"
+      />
+      {SkyraFeatures.map(({ name, previewContent, text }) => (
+        <Section name={name} text={text} previewContent={previewContent} key={name} />
+      ))}
+    </Container>
   </>
 );

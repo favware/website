@@ -1,6 +1,7 @@
 import Analytics from '@Config/Analytics';
 import { createSeoProps } from '@Config/next-seo.config';
 import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import GithubIcon from '@material-ui/icons/GitHub';
@@ -135,24 +136,26 @@ export default () => {
           }
         })}
       />
-      <PageHeader title="Contact" subtitle="Want to get in contact with Favware? You will find your methods here!" />
-      <GridContainer direction="row" classes={{}} spacing={4}>
-        {CONTACT_METHODS.map(({ StartIcon, navigationUrl, label, classKey }, index) => (
-          <Grid item xs={12} key={index}>
-            <Button
-              size="large"
-              fullWidth
-              classes={{ root: clsx(classes.contactButton, classes[`button${classKey}`]) }}
-              variant="contained"
-              color="primary"
-              startIcon={<StartIcon />}
-              onClick={navigate(navigationUrl)}
-            >
-              {label}
-            </Button>
-          </Grid>
-        ))}
-      </GridContainer>
+      <Container maxWidth="lg" disableGutters>
+        <PageHeader title="Contact" subtitle="Want to get in contact with Favware? You will find your methods here!" />
+        <GridContainer direction="row" classes={{}} spacing={4}>
+          {CONTACT_METHODS.map(({ StartIcon, navigationUrl, label, classKey }, index) => (
+            <Grid item xs={12} key={index}>
+              <Button
+                size="large"
+                fullWidth
+                classes={{ root: clsx(classes.contactButton, classes[`button${classKey}`]) }}
+                variant="contained"
+                color="primary"
+                startIcon={<StartIcon />}
+                onClick={navigate(navigationUrl)}
+              >
+                {label}
+              </Button>
+            </Grid>
+          ))}
+        </GridContainer>
+      </Container>
     </>
   );
 };

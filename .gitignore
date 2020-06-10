@@ -1,6 +1,8 @@
 # dependencies
 node_modules
 package-lock.json
+/.pnp
+.pnp.js
 
 # misc
 .DS_Store
@@ -8,6 +10,7 @@ Thumbs.db
 
 # Build Artifacts
 dist/
+build/
 .next/
 
 # Logs
@@ -15,9 +18,11 @@ logs/
 coverage/
 *.log*
 
-# Firebase
-.firebase/
-firebase-cors.json
+# Local env vars
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # IDE Settings
 .idea/

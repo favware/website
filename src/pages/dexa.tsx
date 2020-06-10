@@ -1,6 +1,7 @@
 import Analytics from '@Config/Analytics';
 import { createSeoProps } from '@Config/next-seo.config';
 import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
@@ -83,55 +84,57 @@ export default () => {
           }
         })}
       />
-      <PageHeader title="Dexa" subtitle="Simple and feature rich PokéDex skill for Alexa." />
-      <Button fullWidth variant="contained" color="primary" startIcon={<AlexaIcon />} onClick={navigate(DEXA_SKILL_URL)}>
-        Add Skill to your Alexa
-      </Button>
-      <Button
-        variant="contained"
-        color="inherit"
-        startIcon={<GhIcon />}
-        onClick={navigate(DEXA_GITHUB_URL)}
-        fullWidth
-        classes={{ root: clsx(classes.buttonMargin, classes.ghButton) }}
-      >
-        View source code on GitHub
-      </Button>
-      <GridContainer>
-        <Grid item xs={12}>
-          <Section title="What is Dexa?" />
-          <Typography gutterBottom paragraph align="left" variant="body1">
-            Dexa makes your Alexa just as smart as the PokéDex! It offers data about your favourite Pokémon, items, abilities, and moves just a voice
-            command away. If your device has a screen (such as the Echo Spot, the Echo Show, or your mobile app) it will even give a visual
-            description the information you request! The name Dexa is a portmanteau of "Dex" and "Alexa". Dexa uses the{' '}
-            <Link className={classes.link} href="/graphql-pokemon" nextPage>
-              GraphQL Pokémon API
-            </Link>{' '}
-            for a rich and up-to-date dataset. Want to know what devices are compatible with Dexa? Check out{' '}
-            <Link className={classes.link} href="//redirect.favware.tech/alexa-devices">
-              the page on Alexa compatible devices on Amazon here.
-            </Link>
-          </Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Section title="Voice Commands" />
-          {VOICE_COMMANDS.map(({ heading, description, example }, index) => (
-            <ExpansionPanel key={index}>
-              <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={`expansion panel ${heading}`}>
-                <Typography classes={{ root: classes.commandHeading }}>{heading}</Typography>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails classes={{ root: classes.columizedExpansionDetails }}>
-                <Typography gutterBottom paragraph align="left" variant="body1">
-                  {description}
-                </Typography>
-                <Typography gutterBottom paragraph align="left" variant="body1" classes={{ root: classes.commandExample }}>
-                  {example}
-                </Typography>
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
-          ))}
-        </Grid>
-      </GridContainer>
+      <Container maxWidth="lg" disableGutters>
+        <PageHeader title="Dexa" subtitle="Simple and feature rich PokéDex skill for Alexa." />
+        <Button fullWidth variant="contained" color="primary" startIcon={<AlexaIcon />} onClick={navigate(DEXA_SKILL_URL)}>
+          Add Skill to your Alexa
+        </Button>
+        <Button
+          variant="contained"
+          color="inherit"
+          startIcon={<GhIcon />}
+          onClick={navigate(DEXA_GITHUB_URL)}
+          fullWidth
+          classes={{ root: clsx(classes.buttonMargin, classes.ghButton) }}
+        >
+          View source code on GitHub
+        </Button>
+        <GridContainer>
+          <Grid item xs={12}>
+            <Section title="What is Dexa?" />
+            <Typography gutterBottom paragraph align="left" variant="body1">
+              Dexa makes your Alexa just as smart as the PokéDex! It offers data about your favourite Pokémon, items, abilities, and moves just a
+              voice command away. If your device has a screen (such as the Echo Spot, the Echo Show, or your mobile app) it will even give a visual
+              description the information you request! The name Dexa is a portmanteau of "Dex" and "Alexa". Dexa uses the{' '}
+              <Link className={classes.link} href="/graphql-pokemon" nextPage>
+                GraphQL Pokémon API
+              </Link>{' '}
+              for a rich and up-to-date dataset. Want to know what devices are compatible with Dexa? Check out{' '}
+              <Link className={classes.link} href="//redirect.favware.tech/alexa-devices">
+                the page on Alexa compatible devices on Amazon here.
+              </Link>
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Section title="Voice Commands" />
+            {VOICE_COMMANDS.map(({ heading, description, example }, index) => (
+              <ExpansionPanel key={index}>
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} aria-controls={`expansion panel ${heading}`}>
+                  <Typography classes={{ root: classes.commandHeading }}>{heading}</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails classes={{ root: classes.columizedExpansionDetails }}>
+                  <Typography gutterBottom paragraph align="left" variant="body1">
+                    {description}
+                  </Typography>
+                  <Typography gutterBottom paragraph align="left" variant="body1" classes={{ root: classes.commandExample }}>
+                    {example}
+                  </Typography>
+                </ExpansionPanelDetails>
+              </ExpansionPanel>
+            ))}
+          </Grid>
+        </GridContainer>
+      </Container>
     </>
   );
 };
