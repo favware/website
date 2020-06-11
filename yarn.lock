@@ -1135,38 +1135,43 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
-"@favware/eslint-config-react-app@0.1.0-alpha.0":
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@favware/eslint-config-react-app/-/eslint-config-react-app-0.1.0-alpha.0.tgz#44a00181da88ca50974ef981dfe9e0b1432dab0b"
-  integrity sha512-yyDigimj8P9QBL9YNwgaJzO6vpFD7XRbi4cXOvTkSpGuC0Qh+nOW4RDM0bSqOJ5XqZSlNnHAMYIYpHo+fpkp2w==
+"@favware/eslint-config-react-app@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@favware/eslint-config-react-app/-/eslint-config-react-app-1.0.0.tgz#627e13f95a6492fae7f17c7782c46112b5394909"
+  integrity sha512-aqD/zY9Mo+ddqcA2L2pDgrwCvCYh1SW+qvV8e+M/cW4ge1seEEc9DFQa6Y1r4afH3jr24I3diAyxeah7GGtBUQ==
   dependencies:
-    "@favware/eslint-config" "^5.0.0"
+    "@favware/eslint-config" latest
     eslint-plugin-import "^2.20.2"
     eslint-plugin-jsx-a11y "^6.2.3"
     eslint-plugin-react "^7.20.0"
     eslint-plugin-react-hooks "^4.0.4"
 
-"@favware/eslint-config@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@favware/eslint-config/-/eslint-config-5.0.0.tgz#2e3c8ab27d62597d0c95184a8be1e856d93cb3fb"
-  integrity sha512-htoPGfwyZ9BfG3pJyQ9vXn3b90clUu/pIOL+uDShpHljuQH+mk4ETol/fX4oWhAP3h7DT2eKSAj7WavY9qDuGw==
+"@favware/eslint-config@latest":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@favware/eslint-config/-/eslint-config-5.0.2.tgz#b7772749f1ddce2833c25df8b1334a9eaa5be2fb"
+  integrity sha512-ijH9QnHc1Jv9V0jFT5WJ6aYFQ/nC2oOfiXiVBYh/uGuUOu4MVtRBj2UVy/GbtRk2+vmMsI5PBG97WQd0KpJa5A==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^3.1.0"
     "@typescript-eslint/parser" "^3.1.0"
     eslint "^7.2.0"
 
-"@favware/syntax-highlighter-core@^0.1.0-alpha.0":
-  version "0.1.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@favware/syntax-highlighter-core/-/syntax-highlighter-core-0.1.0-alpha.0.tgz#4e01c174be860fb15fcdf77123f4b157bced2988"
-  integrity sha512-3xJxtcOD8gjQb9B7oydDlhn+OwcTSHaceuccT/NakCf/+gopanve44jILjPTZhksAgbjZr+kceAlsiXIGP6pYQ==
+"@favware/syntax-highlighter-core@^0.1.0-alpha.2":
+  version "0.1.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@favware/syntax-highlighter-core/-/syntax-highlighter-core-0.1.0-alpha.2.tgz#149e9269c1bc254634054026e622c61cbbdf5bcb"
+  integrity sha512-84vrGQf87EqtX/RB+7vdM/MVUZnqm+kbyoQRvtUiwhZIkF8ARGJSZVL7Q41XfW1ZMOdhC9Tj2O1ZwrxYGLXKzQ==
   dependencies:
     clipboard "^2.0.6"
     prismjs "^1.20.0"
 
-"@favware/ts-config@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@favware/ts-config/-/ts-config-3.0.0.tgz#7230f447745e40dc6f868ba17fa97927fff82ba2"
-  integrity sha512-0aivPOrru5nAYGFdFZFaw9rODYXMvinmHhk9+78JJlqLoLNIukHZg614dSiUteScB5lpyeh38ZbWr2yuWBB51Q==
+"@favware/syntax-highlighter-react@^0.1.0-alpha.2":
+  version "0.1.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@favware/syntax-highlighter-react/-/syntax-highlighter-react-0.1.0-alpha.2.tgz#1d798624a82a5b33de7f06919e02231b467e390a"
+  integrity sha512-Mds4SrczAaGHVRXvkjbosNRV92JLTW/ih1iuE6xhemvGGBSWmr6Ooi6gTKpevKhyxoMhe3mQfCWtCSJR+Htwsg==
+
+"@favware/ts-config@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@favware/ts-config/-/ts-config-3.0.2.tgz#4b8c96efc1ffe6359a6fda10c1a8211266308df7"
+  integrity sha512-T20sRidRETqffgiCzY+vi6uri0W30YUUD9ENZKpBz3+L4xkwoeBxVDqWjTk2OQBNhHFWsuoT4gRY4eBhczWdnw==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -1205,16 +1210,16 @@
   resolved "https://registry.yarnpkg.com/@klasa/utils/-/utils-0.0.8.tgz#8b017d8f7a771e5c1894b85f8dafefc219fc9d76"
   integrity sha512-6G/P9/HM8fTanKUFPrODFmmD3ff8Jwr7gG//2BsTeWfGBBulDn/H8ObWRJjIu81nLKX1I4iQ1jNcK5uOfso6ug==
 
-"@material-ui/core@^4.10.1":
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.10.1.tgz#e3db4ca55d2af6cc23a1159ef5c32ad97c43c39c"
-  integrity sha512-bJb/07JFTht0oSjoWMu0j7r1mx4EbJ2ZHx+OKiY+i6IYW/4JPZ1J6rZuFS2b9jT+slSONPZaZq/kHitbE5lcig==
+"@material-ui/core@^4.10.2":
+  version "4.10.2"
+  resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.10.2.tgz#0ef78572132fcef1a25f6969bce0d34652d42e31"
+  integrity sha512-Uf4iDLi9sW6HKbVQDyDZDr1nMR4RUAE7w/RIIJZGNVZResC0xwmpLRZMtaUdSO43N0R0yJehfxTi4Z461Cd49A==
   dependencies:
     "@babel/runtime" "^7.4.4"
     "@material-ui/styles" "^4.10.0"
     "@material-ui/system" "^4.9.14"
     "@material-ui/types" "^5.1.0"
-    "@material-ui/utils" "^4.9.12"
+    "@material-ui/utils" "^4.10.2"
     "@types/react-transition-group" "^4.2.0"
     clsx "^1.0.4"
     hoist-non-react-statics "^3.3.2"
@@ -1267,7 +1272,16 @@
   resolved "https://registry.yarnpkg.com/@material-ui/types/-/types-5.1.0.tgz#efa1c7a0b0eaa4c7c87ac0390445f0f88b0d88f2"
   integrity sha512-7cqRjrY50b8QzRSYyhSpx4WRw2YuO0KKIGQEVk5J8uoz2BanawykgZGoWEqKm7pVIbzFDN0SpPcVV4IhOFkl8A==
 
-"@material-ui/utils@^4.9.12", "@material-ui/utils@^4.9.6":
+"@material-ui/utils@^4.10.2":
+  version "4.10.2"
+  resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-4.10.2.tgz#3fd5470ca61b7341f1e0468ac8f29a70bf6df321"
+  integrity sha512-eg29v74P7W5r6a4tWWDAAfZldXIzfyO1am2fIsC39hdUUHm/33k6pGOKPbgDjg/U/4ifmgAePy/1OjkKN6rFRw==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+    prop-types "^15.7.2"
+    react-is "^16.8.0"
+
+"@material-ui/utils@^4.9.6":
   version "4.9.12"
   resolved "https://registry.yarnpkg.com/@material-ui/utils/-/utils-4.9.12.tgz#0d639f1c1ed83fffb2ae10c21d15a938795d9e65"
   integrity sha512-/0rgZPEOcZq5CFA4+4n6Q6zk7fi8skHhH2Bcra8R3epoJEYy5PL55LuMazPtPH1oKeRausDV/Omz4BbgFsn1HQ==

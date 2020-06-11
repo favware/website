@@ -1,6 +1,5 @@
 import { DefaultSeo as DefaultSeoProps } from '@Config/next-seo.config';
 import theme from '@Config/Theme';
-import * as syntaxHighlighter from '@favware/syntax-highlighter-core/loader';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Layout from '@Pres/Layout';
@@ -9,21 +8,6 @@ import { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { PropsWithChildren, useEffect } from 'react';
-
-declare global {
-  export namespace JSX {
-    type StencilToReact<T> = {
-      [P in keyof T]?: T[P] &
-        Omit<React.HTMLAttributes<Element>, 'className'> & {
-          class?: string;
-        };
-    };
-
-    interface IntrinsicElements extends StencilToReact<syntaxHighlighter.JSX.IntrinsicElements> {
-      foo: unknown;
-    }
-  }
-}
 
 const NoScript = dynamic(() => import('@Pres/NoScript'));
 
@@ -38,33 +22,29 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
     window.$discordMessage = {
       avatars: {
         default: 'blue',
-        favna: 'https://cdn.favware.tech/img/favna.png',
-        skyra: 'https://cdn.favware.tech/img/skyra.png'
+        favna: '/avatars/favna.png',
+        skyra: '/avatars/skyra.png'
       },
       profiles: {
         skyra: {
           author: 'Skyra',
-          avatar: 'https://cdn.favware.tech/img/skyra.png',
+          avatar: '/avatars/skyra.png',
           bot: true,
           verified: true,
           roleColor: '#1E88E5'
         },
         favna: {
           author: 'Favna',
-          avatar: 'https://cdn.favware.tech/img/favna.png',
+          avatar: '/avatars/favna.png',
           roleColor: '#FF0000'
         },
         kyra: {
           author: 'Kyra',
-          avatar: 'https://cdn.favware.tech/img/kyra.png',
+          avatar: '/avatars/kyra.png',
           roleColor: '#FF9D01'
         }
       }
     };
-
-    syntaxHighlighter.applyPolyfills().then(() => {
-      syntaxHighlighter.defineCustomElements(window);
-    });
   }, []);
 
   return (

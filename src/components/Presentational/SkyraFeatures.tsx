@@ -32,9 +32,9 @@ export default [
             <DiscordEmbed
               slot="embeds"
               color="#FFD54F"
-              authorImage="https://cdn.favware.tech/img/favna.png"
+              authorImage="/avatars/favna.png"
               authorName="Favna#0001"
-              footerImage="https://cdn.favware.tech/skyra.png"
+              footerImage="/avatars/skyra.png"
               timestamp={new Date()}
             >
               <strong>{heavyRightPointingArrow} Type</strong>: Temporary Mute

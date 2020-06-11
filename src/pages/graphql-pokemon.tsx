@@ -1,5 +1,6 @@
 import Analytics from '@Config/Analytics';
 import { createSeoProps } from '@Config/next-seo.config';
+import { SyntaxHighlighter } from '@favware/syntax-highlighter-react';
 import Container from '@material-ui/core/Container';
 // import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import PageHeader from '@Pres/PageHeader';
@@ -32,7 +33,7 @@ export default () => {
       />
       <Container maxWidth="lg" disableGutters>
         <PageHeader title="GraphQL Pokémon" subtitle="Extensive Pokemon API with all the data you ever need." />
-        <syntax-highlighter language="typescript" content={GqlpApollo} />
+        <SyntaxHighlighter language="typescript" content={GqlpApollo} />
       </Container>
     </>
   );
