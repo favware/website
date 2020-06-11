@@ -5,8 +5,8 @@ on:
     branches:
       - master
     paths:
-      - "src/**"
-      - ".github/**"
+      - 'src/**'
+      - '.github/**'
 
 jobs:
   Linting:
@@ -34,7 +34,6 @@ jobs:
     name: Compiling NextJS
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    needs: [Linting]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -65,8 +64,8 @@ jobs:
   Github-Package-Registry-Docker:
     name: Publish image to Github Package Registry
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    needs: Build
+    if: "!(contains(github.event.head_commit.message, '[skip ci]') ||contains(github.event.head_commit.message, '[skip docker]'))"
+    needs: [Linting, Build]
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
@@ -81,5 +80,5 @@ jobs:
           name: favware/website/website
           username: Favware-bot
           password: ${{ secrets.BOT_TOKEN }}
-          tags: "latest,stable"
+          tags: 'latest,stable'
           registry: docker.pkg.github.com
