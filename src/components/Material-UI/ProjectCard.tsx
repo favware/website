@@ -3,7 +3,7 @@ import Box from '@material-ui/core/Box';
 import Card, { CardProps as MUICardProps } from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardHeader, { CardHeaderProps } from '@material-ui/core/CardHeader';
+import CardHeader from '@material-ui/core/CardHeader';
 import IconButton from '@material-ui/core/IconButton';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';

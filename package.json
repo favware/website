@@ -34,7 +34,7 @@
     "docker:clean": "docker container stop favware-website && docker container rm favware-website && docker rmi -f favware/website"
   },
   "dependencies": {
-    "@favware/syntax-highlighter-core": "^0.1.0-alpha.2",
+    "@favware/syntax-highlighter-core": "^0.1.0-alpha.3",
     "@favware/syntax-highlighter-react": "^0.1.0-alpha.2",
     "@klasa/utils": "^0.0.8",
     "@material-ui/core": "^4.10.2",
@@ -55,8 +55,8 @@
   "devDependencies": {
     "@favware/eslint-config-react-app": "1.0.0",
     "@favware/ts-config": "^3.0.2",
-    "@types/node": "^14.0.11",
-    "@types/react": "^16.9.35",
+    "@types/node": "^14.0.13",
+    "@types/react": "^16.9.36",
     "@types/react-dom": "16.9.8",
     "@types/react-gtm-module": "^2.0.0",
     "cpx": "1.5.0",
