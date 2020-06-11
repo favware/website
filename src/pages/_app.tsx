@@ -1,14 +1,29 @@
 import { DefaultSeo as DefaultSeoProps } from '@Config/next-seo.config';
 import theme from '@Config/Theme';
+import * as syntaxHighlighter from '@favware/syntax-highlighter-core/loader';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Layout from '@Pres/Layout';
-import {} from '@skyra/discord-components-core';
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { PropsWithChildren, useEffect } from 'react';
+
+declare global {
+  export namespace JSX {
+    type StencilToReact<T> = {
+      [P in keyof T]?: T[P] &
+        Omit<React.HTMLAttributes<Element>, 'className'> & {
+          class?: string;
+        };
+    };
+
+    interface IntrinsicElements extends StencilToReact<syntaxHighlighter.JSX.IntrinsicElements> {
+      foo: unknown;
+    }
+  }
+}
 
 const NoScript = dynamic(() => import('@Pres/NoScript'));
 
@@ -46,6 +61,10 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
         }
       }
     };
+
+    syntaxHighlighter.applyPolyfills().then(() => {
+      syntaxHighlighter.defineCustomElements(window);
+    });
   }, []);
 
   return (
@@ -60,6 +79,8 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
         <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
         <NoScript>
           <span>
