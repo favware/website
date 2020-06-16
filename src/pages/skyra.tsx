@@ -10,10 +10,13 @@ import PageHeader from '@Pres/PageHeader';
 import SkyraFeatures from '@Pres/SkyraFeatures';
 import { NextSeo } from 'next-seo';
 import React from 'react';
+import { Else, If, Then } from 'react-if';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    oddBox: {
+    featureBox: {
+      gridAutoFlow: 'row',
+      gridRowGap: '0.25rem',
       '&:nth-of-type(odd)': {
         flexDirection: 'row-reverse'
       }
@@ -23,12 +26,15 @@ const useStyles = makeStyles((theme: Theme) =>
       marginBottom: theme.spacing(1.25)
     },
     text: {
-      display: 'flex',
-      flexDirection: 'column',
-      width: '47%',
-      [theme.breakpoints.down('md')]: {
-        width: '100%'
-      }
+      gridColumn: ({ index }: Pick<SectionProps, 'index'>) => (index % 2 ? '5/8' : '1/4'),
+      width: '100%'
+    },
+    previewBox: {
+      gridColumn: ({ index }: Pick<SectionProps, 'index'>) => (index % 2 ? '1/2' : '6/8')
+    },
+    splitGrid: {
+      gridColumn: ({ index }: Pick<SectionProps, 'index'>) => (index % 2 ? '3/4' : '5/6'),
+      width: theme.spacing(10)
     }
   })
 );
@@ -37,31 +43,42 @@ interface SectionProps {
   name: string;
   text: string | JSX.Element;
   previewContent: JSX.Element;
+  index: number;
 }
 
-const Section = ({ name, previewContent, text }: SectionProps) => {
-  const classes = useStyles();
+const Section = ({ name, previewContent, text, index }: SectionProps) => {
+  const classes = useStyles({ index });
 
   return (
-    <Box
-      p={5}
-      display="flex"
-      justifyContent="space-around"
-      alignItems="center"
-      alignContent="center"
-      flexWrap="wrap"
-      flexDirection="row"
-      minHeight="min-content"
-      className={classes.oddBox}
-    >
-      <div className={classes.text}>
-        <Typography variant="h3" component="h1">
-          {name}
-        </Typography>
-        <Divider classes={{ root: classes.divider }} />
-        <Typography>{text}</Typography>
-      </div>
-      <Hidden mdDown>{previewContent}</Hidden>
+    <Box p={5} display="grid" minHeight="min-content" className={classes.featureBox}>
+      <If condition={Boolean(index % 2)}>
+        <Then>
+          <Hidden mdDown>
+            <Box className={classes.previewBox}>{previewContent}</Box>
+            <Box className={classes.splitGrid} />
+          </Hidden>
+          <Box className={classes.text}>
+            <Typography variant="h3" component="h1">
+              {name}
+            </Typography>
+            <Divider classes={{ root: classes.divider }} />
+            <Typography>{text}</Typography>
+          </Box>
+        </Then>
+        <Else>
+          <Box className={classes.text}>
+            <Typography variant="h3" component="h1">
+              {name}
+            </Typography>
+            <Divider classes={{ root: classes.divider }} />
+            <Typography>{text}</Typography>
+          </Box>
+          <Hidden mdDown>
+            <Box className={classes.splitGrid} />
+            <Box className={classes.previewBox}>{previewContent}</Box>
+          </Hidden>
+        </Else>
+      </If>
     </Box>
   );
 };
@@ -89,8 +106,8 @@ export default () => (
         title="Skyra"
         subtitle="Skyra is the single most advanced moderation bot you'll ever need. She's a configurable Discord Bot with moderation, fun, and much more!"
       />
-      {SkyraFeatures.map(({ name, previewContent, text }) => (
-        <Section name={name} text={text} previewContent={previewContent} key={name} />
+      {SkyraFeatures.map(({ name, previewContent, text }, index) => (
+        <Section name={name} text={text} previewContent={previewContent} key={name} index={index} />
       ))}
     </Container>
   </>
