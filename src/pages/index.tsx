@@ -1,13 +1,13 @@
 import Analytics from '@Config/Analytics';
 import HomeProjectCardData from '@Config/HomeProjectCardData';
 import { createSeoProps } from '@Config/next-seo.config';
+import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import GridContainer from '@Mui/GridContainer';
 import ProjectCard from '@Mui/ProjectCard';
 import { NextSeo } from 'next-seo';
 import React from 'react';
-import Container from '@material-ui/core/Container';
 
 export default () => {
   const calculateAge = (birthday: Date) => {
@@ -23,10 +23,10 @@ export default () => {
       <Container maxWidth="lg" disableGutters>
         <GridContainer spacing={5} direction="row" justify="space-between" alignContent="stretch" alignItems="center">
           <Grid item xs={12}>
-            <Typography align="center" variant="h4" gutterBottom paragraph>
+            <Typography align="center" variant="h4" component="h1" gutterBottom paragraph>
               Software Engineer focusing on TypeScript
             </Typography>
-            <Typography align="center" variant="h4" gutterBottom paragraph>
+            <Typography align="center" variant="h4" component="h1" gutterBottom paragraph>
               (NodeJS and Web) and Java
             </Typography>
             <Typography align="center" variant="h6">
