@@ -59,8 +59,6 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
         <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicons/favicon.ico" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
         <NoScript>
           <span>
@@ -114,6 +112,48 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
             overflow: visible;
             border-radius: 4px;
             background: rgba(100, 100, 100, 0.2);
+          }
+
+          /* Whitney font face to match Discord */
+          @font-face {
+            font-family: Whitney;
+            font-style: light;
+            font-weight: 300;
+            src: url(https://discord.com/assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff) format('woff');
+          }
+          @font-face {
+            font-family: Whitney;
+            font-style: normal;
+            font-weight: 500;
+            src: url(https://discord.com/assets/e8acd7d9bf6207f99350ca9f9e23b168.woff) format('woff');
+          }
+          @font-face {
+            font-family: Whitney;
+            font-style: medium;
+            font-weight: 600;
+            src: url(https://discord.com/assets/3bdef1251a424500c1b3a78dea9b7e57.woff) format('woff');
+          }
+          @font-face {
+            font-family: WhitneyMedium;
+            font-style: medium;
+            font-weight: 600;
+            src: url(https://discord.com/assets/be0060dafb7a0e31d2a1ca17c0708636.woff) format('woff');
+          }
+          @font-face {
+            font-family: Whitney;
+            font-style: bold;
+            font-weight: 700;
+            src: url(https://discord.com/assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff) format('woff');
+          }
+
+          /* Setting default CSS for Discord messages */
+          .discord-message,
+          .discord-messages {
+            font-family: Whitney, Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          }
+
+          .discord-messages {
+            border-radius: 4px;
           }
         `}</style>
         <Layout>
