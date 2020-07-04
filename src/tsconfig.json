@@ -10,13 +10,10 @@
     "declarationMap": false,
     "incremental": false,
     "skipLibCheck": true,
-    "preserveConstEnums": false,
     "isolatedModules": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
-    "noImplicitAny": false,
     "noEmit": true,
-    "lib": ["dom", "es2020"],
     "baseUrl": ".",
     "rootDir": ".",
     "paths": {

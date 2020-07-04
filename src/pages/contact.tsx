@@ -144,6 +144,7 @@ export default () => {
               <Button
                 size="large"
                 fullWidth
+                // @ts-expect-error TS cannot properly parse the classKey access method
                 classes={{ root: clsx(classes.contactButton, classes[`button${classKey}`]) }}
                 variant="contained"
                 color="primary"

@@ -14,7 +14,7 @@
     "url": "https://github.com/favware/website/issues"
   },
   "engines": {
-    "node": "10"
+    "node": ">=12"
   },
   "scripts": {
     "lint": "eslint src --fix --ext js,ts,tsx",
@@ -24,20 +24,16 @@
     "build": "next build src",
     "start": "next start src",
     "export": "next export src",
-    "preserve": "run-s clean build:**",
-    "clean": "rimraf src/.next",
+    "clean": "rimraf src/.next src/public/sw.js src/public/workbox* src/public/sitemap.xml",
     "build:sitemap": "node scripts/sitemapGenerator.js",
     "style": "prettier --write --loglevel=warn src/**/*.{ts,tsx,html,json,xml}",
-    "netlify:build": "run-s build export",
-    "docker:build": "docker build -t favware/website:latest .",
-    "docker:run": "docker container run -d -it --name favware-website -p 2114:2114 favware/website:latest",
-    "docker:clean": "docker container stop favware-website && docker container rm favware-website && docker rmi -f favware/website"
+    "netlify:build": "run-s build export"
   },
   "dependencies": {
     "@favware/syntax-highlighter-core": "^1.0.0",
     "@favware/syntax-highlighter-react": "^1.0.0",
     "@klasa/utils": "^0.0.8",
-    "@material-ui/core": "^4.10.2",
+    "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@skyra/discord-components-core": "^1.1.2",
     "@skyra/discord-components-react": "^1.1.2",
@@ -45,11 +41,11 @@
     "mdi-react": "^7.3.0",
     "next": "^9.4.4",
     "next-pwa": "^3.0.1",
-    "next-seo": "^4.6.0",
+    "next-seo": "^4.7.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-emoji-render": "^1.2.4",
-    "react-ga": "^3.0.0",
+    "react-ga": "^3.1.1",
     "react-if": "^3.4.3"
   },
   "devDependencies": {
@@ -58,24 +54,11 @@
     "@types/node": "^14.0.14",
     "@types/react": "^16.9.41",
     "@types/react-dom": "16.9.8",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
     "nextjs-sitemap-generator": "^1.0.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "rimraf": "3.0.2",
-    "typescript": "^3.9.5"
-  },
-  "husky": {
-    "hooks": {}
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix --ext ts,tsx"
-    ],
-    "*.{html,babelrc,js,ts,tsx}": [
-      "prettier --write"
-    ]
+    "typescript": "^3.9.6"
   },
   "resolutions": {
     "acorn": "^6.4.1",
