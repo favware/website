@@ -8,7 +8,16 @@ export default () => {
   return (
     <>
       <Analytics />
-      <NextSeo {...createSeoProps({ title: '404', description: "How'd you get here?", openGraph: { description: "How'd you get here?" } })} />
+      <NextSeo
+        {...createSeoProps({
+          title: '404',
+          description: "How'd you get here?",
+          additionalMetaTags: [
+            { name: 'robots', content: 'noindex, nofollow' },
+            { name: 'googlebot', content: 'noindex, nofollow' }
+          ]
+        })}
+      />
       <Error includeMaybe />
     </>
   );
