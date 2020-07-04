@@ -67,9 +67,7 @@
     "typescript": "^3.9.5"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
