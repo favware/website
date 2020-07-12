@@ -1351,18 +1351,18 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@skyra/discord-components-core@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@skyra/discord-components-core/-/discord-components-core-1.1.2.tgz#3486e2ed7fcb6c74d9c88373eae45cb6e4ef1433"
-  integrity sha512-qV9otG2NfJxEcr6gv3P7kLPO18iyRCcv584mgHzA3EUDupRnkmn1MBptQl1aUUeVmvFL7VJykcbVyWciYrWArQ==
+"@skyra/discord-components-core@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@skyra/discord-components-core/-/discord-components-core-1.2.1.tgz#29b485d0ce85a8947fee57617d5d5989802a44ed"
+  integrity sha512-dK8fsGQdAQMFY+IX3Hb1eXOQQrNkM8TMOl0DkQzzEUCn82M2tW0o+htSy9CDC5DH8lMAImA8MWRBJvX1QSrrOw==
   dependencies:
-    clsx "^1.1.0"
+    clsx "^1.1.1"
     hex-to-rgba "^2.0.1"
 
-"@skyra/discord-components-react@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@skyra/discord-components-react/-/discord-components-react-1.1.2.tgz#fdb1b2186652cf0c5e05ff85c3264c273ec5bb4d"
-  integrity sha512-k1JSzbBG0S13aSlGArAG8s8g4V/QGlGRvync9zT8+jaO4mO9Iv6GRR2oQmY0YxhuhJJ/z03jmLUxn/BRBOXOQQ==
+"@skyra/discord-components-react@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@skyra/discord-components-react/-/discord-components-react-1.2.1.tgz#af0dcb0002a43337fb1fce9720d23e1fdf96af3f"
+  integrity sha512-JRYlO4FIVWnTSrmPR61ggUdfblRFfMYXtfjvHtaG1nCVw4bbVs0pFC4yq7VmNYA8YQst8PvmzxVI32FhMLmSyg==
 
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   version "1.4.1"
@@ -1420,10 +1420,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@*", "@types/node@^14.0.14":
-  version "14.0.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.14.tgz#24a0b5959f16ac141aeb0c5b3cd7a15b7c64cbce"
-  integrity sha512-syUgf67ZQpaJj01/tRTknkMNoBBLWJOBODF0Zm4NrXmiSuxjymFrxnTu1QVYRubhVkRcZLYZG8STTwJRdVm/WQ==
+"@types/node@*", "@types/node@^14.0.22":
+  version "14.0.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.22.tgz#23ea4d88189cec7d58f9e6b66f786b215eb61bdc"
+  integrity sha512-emeGcJvdiZ4Z3ohbmw93E/64jRzUHAItSHt8nF7M4TGgQTiWqFVGB8KNpLGFmUHmHLvjvBgFwVlqNcq+VuGv9g==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -1449,10 +1449,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.41":
-  version "16.9.41"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.41.tgz#925137ee4d2ff406a0ecf29e8e9237390844002e"
-  integrity sha512-6cFei7F7L4wwuM+IND/Q2cV1koQUvJ8iSV+Gwn0c3kvABZ691g7sp3hfEQHOUBJtccl1gPi+EyNjMIl9nGA0ug==
+"@types/react@*", "@types/react@^16.9.42":
+  version "16.9.42"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.42.tgz#9776508d59c1867bbf9bd7f036dab007fdaa1cb7"
+  integrity sha512-iGy6HwfVfotqJ+PfRZ4eqPHPP5NdPZgQlr0lTs8EfkODRBV9cYy8QMKcC9qPCe1JrESC1Im6SrCFR6tQgg74ag==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -2510,7 +2510,7 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
-clsx@^1.0.4, clsx@^1.1.0, clsx@^1.1.1:
+clsx@^1.0.4, clsx@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
   integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
@@ -5017,20 +5017,20 @@ neo-async@2.6.1, neo-async@^2.5.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-next-pwa@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-3.0.1.tgz#ac9d3bf86eae8f72a05f75022533f952ea0bbe74"
-  integrity sha512-yWRf1wOarWZiGvO+XO2s5WSWzkPWx08QgUesV6/eTvfN0j+E/cBh87x+YzWgO+LuGyhkIBbQ8zbPWyjEnNbaTA==
+next-pwa@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/next-pwa/-/next-pwa-3.0.2.tgz#cf9a733d55d8ec31c8408b725c531475a1387b7b"
+  integrity sha512-Ih2HEhTouG2oFDQoc++4ZjOAx1tUUie8ZcO4XkFTDVzjDe3gEtobmgja1Dw6ydPP/HAqzljZgRqjET94R6kGOA==
   dependencies:
     clean-webpack-plugin "^3.0.0"
     globby "^11.0.0"
     workbox-webpack-plugin "^5.1.3"
     workbox-window "^5.1.3"
 
-next-seo@^4.7.1:
-  version "4.7.1"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.7.1.tgz#881c88fb685b070ac49e77482d5ec785c39a03c8"
-  integrity sha512-gsNoxmqWLBh5IT9qQLNJoIo4iDiw+ptsFSGca5STVBhHYeJ2yKzaiWSZ9Ovp4opJvCXQQI7M3o2pM7lqQQxA8g==
+next-seo@^4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.7.2.tgz#18730a88ad21a466de63a1a203672091dde5e1eb"
+  integrity sha512-OfuaUfPXnXQn1ehbUSy7NDii9R/arvtHZH5VSDfhxMtk5iC5UWyzATe4p03CoVINKo76Bdln/QghUAw4NhQZXg==
 
 next-tick@~1.0.0:
   version "1.0.0"
@@ -6118,10 +6118,10 @@ react-emoji-render@^1.2.4:
     prop-types "^15.5.8"
     string-replace-to-array "^1.0.1"
 
-react-ga@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-3.1.1.tgz#3adcaa96e223d4eb530dab96b0ceac9a511d7be9"
-  integrity sha512-JYvbpgCEvy7XS0LioWZ5A2B2JHs7htnop4L2HtifkY5wu/LAnSnXtQp6D0xr9ieMtlWUKSaahNWSZ5fnhWW8Xg==
+react-ga@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-3.1.2.tgz#e13f211c51a2e5c401ea69cf094b9501fe3c51ce"
+  integrity sha512-OJrMqaHEHbodm+XsnjA6ISBEHTwvpFrxco65mctzl/v3CASMSLSyUkFqz9yYrPDKGBUfNQzKCjuMJwctjlWBbw==
 
 react-if@^3.4.3:
   version "3.4.3"
