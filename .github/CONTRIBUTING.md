@@ -8,7 +8,7 @@ If you wish to contribute to the [favware.tech](https://favware.tech) codebase o
 
 To get ready to work on the codebase, please do the following:
 
-1. Fork & clone the repository, and make sure you're on the **master** branch
+1. Fork & clone the repository, and make sure you're on the **main** branch
 2. Run `yarn install`
 3. Code your heart out!
 4. Run `yarn lint` to confirm the linting is correct
