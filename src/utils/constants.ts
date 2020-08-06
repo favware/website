@@ -28,24 +28,24 @@ export const TAVA_WINDOWS_DOWNLOAD = `${BASE_DOWNLOAD_URL}/tavawindows.7z`;
 export const TAVA_MAC_DOWNLOAD = `${BASE_DOWNLOAD_URL}/tavamac.7z`;
 
 export const UNESCAPE_YARN = 'https://yarnpkg.com/package/@favware/unescape';
-export const UNESCAPE_GITHUB = 'https://www.github.com/favware/node-packages/tree/master/packages/unescape';
+export const UNESCAPE_GITHUB = 'https://www.github.com/favware/node-packages/tree/main/packages/unescape';
 
 export const CONVERTER_YARN = 'https://yarnpkg.com/package/@favware/converter';
-export const CONVERTER_GITHUB = 'https://www.github.com/favware/node-packages/tree/master/packages/converter';
+export const CONVERTER_GITHUB = 'https://www.github.com/favware/node-packages/tree/main/packages/converter';
 
 export const QUERYSTRING_YARN = 'https://yarnpkg.com/package/@favware/querystring';
-export const QUERYSTRING_GITHUB = 'https://www.github.com/favware/node-packages/tree/master/packages/querystring';
+export const QUERYSTRING_GITHUB = 'https://www.github.com/favware/node-packages/tree/main/packages/querystring';
 
 export const MILKY_TSLINT_YARN = 'https://yarnpkg.com/package/@favware/milky-tslint';
 
 export const YAMLREADER_YARN = 'https://yarnpkg.com/package/@favware/yamlreader';
-export const YAMLREADER_GITHUB = 'https://www.github.com/favware/node-packages/tree/master/packages/yamlreader';
+export const YAMLREADER_GITHUB = 'https://www.github.com/favware/node-packages/tree/main/packages/yamlreader';
 
 export const ZALGO_YARN = 'https://yarnpkg.com/package/@favware/zalgo';
-export const ZALGO_GITHUB = 'https://www.github.com/favware/node-packages/tree/master/packages/zalgo';
+export const ZALGO_GITHUB = 'https://www.github.com/favware/node-packages/tree/main/packages/zalgo';
 
 export const CRYPTO_YARN = 'https://yarnpkg.com/package/@favware/crypto';
-export const CRYPTO_GITHUB = 'https://www.github.com/favware/node-packages/tree/master/packages/crypto';
+export const CRYPTO_GITHUB = 'https://www.github.com/favware/node-packages/tree/main/packages/crypto';
 
 export const CREATE_DJSBOT_YARN = 'https://yarnpkg.com/package/create-djsbot';
 export const CREATE_DJSBOT_GITHUB = 'https://www.github.com/favware/create-djsbot';
