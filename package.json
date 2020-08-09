@@ -30,8 +30,8 @@
     "netlify:build": "run-s build export"
   },
   "dependencies": {
-    "@favware/syntax-highlighter-core": "^1.0.0",
-    "@favware/syntax-highlighter-react": "^1.0.0",
+    "@favware/syntax-highlighter-core": "^1.0.1",
+    "@favware/syntax-highlighter-react": "^1.0.1",
     "@klasa/utils": "^0.0.8",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -50,9 +50,9 @@
   },
   "devDependencies": {
     "@favware/eslint-config-react-app": "1.1.0",
-    "@favware/ts-config": "^3.0.2",
+    "@favware/ts-config": "^3.0.3",
     "@types/node": "^14.0.26",
-    "@types/react": "^16.9.43",
+    "@types/react": "^16.9.45",
     "@types/react-dom": "16.9.8",
     "nextjs-sitemap-generator": "^1.0.0",
     "npm-run-all": "^4.1.5",
@@ -64,6 +64,6 @@
     "acorn": "^6.4.1",
     "minimist": "^1.2.2",
     "kind-of": "^6.0.3",
-		"dot-prop": "^5.2.0"
+    "dot-prop": "^5.2.0"
   }
 }

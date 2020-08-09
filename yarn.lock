@@ -1201,23 +1201,23 @@
     "@typescript-eslint/parser" "^3.2.0"
     eslint "^7.2.0"
 
-"@favware/syntax-highlighter-core@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@favware/syntax-highlighter-core/-/syntax-highlighter-core-1.0.0.tgz#bbda1dafcdd29b892a46a1361551f03d8629a8f1"
-  integrity sha512-vAcOZrAaa/X+N0IHN4SGjdfMJFszonOC2TA6AIvbwxTAEou9LCaqIRYb51vqecld4eiL3QAam6xceNS/WaQmiQ==
+"@favware/syntax-highlighter-core@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@favware/syntax-highlighter-core/-/syntax-highlighter-core-1.0.1.tgz#ca69bf387f08733b3c9792827290cb14603a7771"
+  integrity sha512-845bqUGStvNDXq+xZ0gJiaXz8XPQK4gJBIVvaGfm/Zo3RIrbPWslhUssnGR1TCJu2udn8xtE3KR58Q9lsmtH5A==
   dependencies:
     clipboard "^2.0.6"
     prismjs "^1.20.0"
 
-"@favware/syntax-highlighter-react@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@favware/syntax-highlighter-react/-/syntax-highlighter-react-1.0.0.tgz#d02b8dad0e4e3b653385b8bbde67f81891e8d1cc"
-  integrity sha512-N2AaIhKm3MbwSu4EFiI5f7ELdydEXmzti+Ye1XznrOuyPNpXUqHK4MFKDHaTqaC1+6ciRM5AThUKCCQswPPOwA==
+"@favware/syntax-highlighter-react@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@favware/syntax-highlighter-react/-/syntax-highlighter-react-1.0.1.tgz#566b43a55e3583830a91880953bc8c2b0da1ac7e"
+  integrity sha512-RnI32CaPtluMi8YTSE58A2QnepvnXkmWeCiS80ec1dvarjoJ5CJ7E0ge21/Lt5BpqXz0n7yuE8QiOxi0bnyiyA==
 
-"@favware/ts-config@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@favware/ts-config/-/ts-config-3.0.2.tgz#4b8c96efc1ffe6359a6fda10c1a8211266308df7"
-  integrity sha512-T20sRidRETqffgiCzY+vi6uri0W30YUUD9ENZKpBz3+L4xkwoeBxVDqWjTk2OQBNhHFWsuoT4gRY4eBhczWdnw==
+"@favware/ts-config@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@favware/ts-config/-/ts-config-3.0.3.tgz#c783dc58e4a939d75b281f9c331d1782fb3e22c6"
+  integrity sha512-ak/HgwjRgPdD7g0W+7QNMMOPa2NuSUxCPgmMLpDNAJ51+6lvvhGrGhAd/Yu2f9Eq60pMQqOk0swB0e63CFMMNg==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -1495,10 +1495,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.43":
-  version "16.9.44"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.44.tgz#da84b179c031aef67dc92c33bd3401f1da2fa3bc"
-  integrity sha512-BtLoJrXdW8DVZauKP+bY4Kmiq7ubcJq+H/aCpRfvPF7RAT3RwR73Sg8szdc2YasbAlWBDrQ6Q+AFM0KwtQY+WQ==
+"@types/react@*", "@types/react@^16.9.45":
+  version "16.9.45"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.45.tgz#b43ccf3d8a3d2020e6a48c8c8492e5a4bc10f097"
+  integrity sha512-vv950slTF5UZ5eDOf13b8qC1SD4rTvkqg3HfaUKzr17U97oeJZAa+dUaIHn0QoOJflNTIt6Pem9MmapULs9dkA==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
