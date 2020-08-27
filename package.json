@@ -32,15 +32,15 @@
   "dependencies": {
     "@favware/syntax-highlighter-core": "^1.0.1",
     "@favware/syntax-highlighter-react": "^1.0.1",
-    "@klasa/utils": "^0.0.8",
+    "@sapphire/utilities": "github:sapphire-project/utilities#build-utilities",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "@skyra/discord-components-core": "^1.2.2",
-    "@skyra/discord-components-react": "^1.2.2",
+    "@skyra/discord-components-core": "^1.3.0",
+    "@skyra/discord-components-react": "^1.3.0",
     "clsx": "^1.1.1",
     "mdi-react": "^7.3.0",
     "next": "^9.5.2",
-    "next-pwa": "^3.1.0",
+    "next-pwa": "^3.1.3",
     "next-seo": "^4.7.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -49,16 +49,16 @@
     "react-if": "^3.4.3"
   },
   "devDependencies": {
-    "@favware/eslint-config-react-app": "1.1.0",
+    "@favware/eslint-config-react-app": "1.1.1",
     "@favware/ts-config": "^3.0.3",
-    "@types/node": "^14.6.0",
-    "@types/react": "^16.9.46",
+    "@types/node": "^14.6.1",
+    "@types/react": "^16.9.48",
     "@types/react-dom": "16.9.8",
     "nextjs-sitemap-generator": "^1.1.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.5",
+    "prettier": "^2.1.1",
     "rimraf": "3.0.2",
-    "typescript": "^3.9.7"
+    "typescript": "^4.0.2"
   },
   "resolutions": {
     "acorn": "^6.4.1",

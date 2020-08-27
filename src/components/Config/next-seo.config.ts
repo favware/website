@@ -1,5 +1,5 @@
 import theme from '@Config/Theme';
-import { mergeDefault } from '@klasa/utils/dist/src/lib/mergeDefault';
+import { mergeDefault } from '@sapphire/utilities';
 import { DefaultSeoProps, NextSeoProps } from 'next-seo';
 
 type KeyedObject = Record<PropertyKey, unknown>;
