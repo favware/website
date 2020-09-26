@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-export default (props: PropsWithChildren<unknown>) => (
+const TavaTemple = (props: PropsWithChildren<unknown>) => (
   <svg viewBox="0 0 247.82 247.82" {...props}>
     <circle cx={123.91} cy={123.91} r={123.91} fill="#fed137" />
     <path
@@ -9,3 +9,5 @@ export default (props: PropsWithChildren<unknown>) => (
     />
   </svg>
 );
+
+export default TavaTemple;

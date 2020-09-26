@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <img src="/images/seedcheck.png" alt="SeedChecker Logo" height="32" />;
+const SeedCheckerLogo = () => <img src="/images/seedcheck.png" alt="SeedChecker Logo" height="32" />;
+
+export default SeedCheckerLogo;

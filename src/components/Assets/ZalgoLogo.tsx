@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <img src="/images/zalgo.png" alt="Zalgo Logo" height="32" />;
+const ZalgoLogo = () => <img src="/images/zalgo.png" alt="Zalgo Logo" height="32" />;
+
+export default ZalgoLogo;

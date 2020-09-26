@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-export default (props: PropsWithChildren<unknown>) => (
+const RedditLogo = (props: PropsWithChildren<unknown>) => (
   <svg viewBox="0 0 400 400" {...props}>
     <style>
       {'.reddit_svg__st0{display:none}.reddit_svg__st1{display:inline}.reddit_svg__st3{fill:#fff}.reddit_svg__st4{display:inline;fill:#3d5a98}'}
@@ -49,3 +49,5 @@ export default (props: PropsWithChildren<unknown>) => (
     </g>
   </svg>
 );
+
+export default RedditLogo;

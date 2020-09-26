@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-export default (props: PropsWithChildren<unknown>) => (
+const TwitchLogo = (props: PropsWithChildren<unknown>) => (
   <svg viewBox="0 0 400 400" {...props}>
     <style>
       {
@@ -121,3 +121,5 @@ export default (props: PropsWithChildren<unknown>) => (
     </g>
   </svg>
 );
+
+export default TwitchLogo;

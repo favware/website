@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default ({ title, placement, enterDelay, children, ...props }: TooltipProps) => {
+const Tooltip = ({ title, placement, enterDelay, children, ...props }: TooltipProps) => {
   const classes = useStyles();
 
   return (
@@ -35,3 +35,5 @@ export default ({ title, placement, enterDelay, children, ...props }: TooltipPro
     </MUITooltip>
   );
 };
+
+export default Tooltip;

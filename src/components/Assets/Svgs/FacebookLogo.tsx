@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-export default (props: PropsWithChildren<unknown>) => (
+const FacebookLogo = (props: PropsWithChildren<unknown>) => (
   <svg viewBox="0 0 400 400" {...props}>
     <style>{'.facebook_svg__st1{display:inline}.facebook_svg__st3{fill:#fff}.facebook_svg__st4{fill:#3d5a98}'}</style>
     <g>
@@ -16,3 +16,5 @@ export default (props: PropsWithChildren<unknown>) => (
     </g>
   </svg>
 );
+
+export default FacebookLogo;

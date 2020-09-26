@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <img src="/images/unescape.png" alt="Unescape Logo" height="32" />;
+const UnescapeLogo = () => <img src="/images/unescape.png" alt="Unescape Logo" height="32" />;
+
+export default UnescapeLogo;

@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <img src="/images/home.png" alt="Home Icon" height="32" />;
+const HomeIcon = () => <img src="/images/home.png" alt="Home Icon" height="32" />;
+
+export default HomeIcon;

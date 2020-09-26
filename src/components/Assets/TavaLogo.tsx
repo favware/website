@@ -1,3 +1,5 @@
 import React from 'react';
 
-export default () => <img src="/images/tava.png" alt="Tava" height="32" />;
+const TavaLogo = () => <img src="/images/tava.png" alt="Tava" height="32" />;
+
+export default TavaLogo;

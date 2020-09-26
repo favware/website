@@ -106,7 +106,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const appBarRef = createRef<HTMLDivElement>();
 
-export default ({ children }: PropsWithChildren<unknown>) => {
+const Layout = ({ children }: PropsWithChildren<unknown>) => {
   const classes = useStyles();
   const theme = useTheme();
   const isOnMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -232,6 +232,8 @@ export default ({ children }: PropsWithChildren<unknown>) => {
     </div>
   );
 };
+
+export default Layout;
 
 interface NavItem extends Pick<SidenavListItemProps, 'text' | 'linkTo' | 'enableExtraPadding'> {
   icon: ReactElement;

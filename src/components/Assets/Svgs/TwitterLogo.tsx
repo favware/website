@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-export default (props: PropsWithChildren<unknown>) => (
+const TwitterLogo = (props: PropsWithChildren<unknown>) => (
   <svg viewBox="0 0 400 400" {...props}>
     <circle cx={200} cy={200} r={200} fill="#1da1f2" />
     <path
@@ -9,3 +9,5 @@ export default (props: PropsWithChildren<unknown>) => (
     />
   </svg>
 );
+
+export default TwitterLogo;

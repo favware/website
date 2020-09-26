@@ -18,7 +18,6 @@
   },
   "scripts": {
     "lint": "eslint src --fix --ext js,ts,tsx",
-    "up": "yarn upgrade-interactive --latest",
     "dev": "next dev src",
     "prebuild": "yarn build:sitemap",
     "build": "next build src",
@@ -26,7 +25,8 @@
     "export": "next export src",
     "clean": "rimraf src/.next src/public/sw.js src/public/workbox* src/public/sitemap.xml",
     "build:sitemap": "node scripts/sitemapGenerator.js",
-    "style": "prettier --write --loglevel=warn src/**/*.{ts,tsx,html,json,xml}",
+    "format": "prettier --write \"src/**/*.{js,ts,tsx,json}\"",
+    "update": "yarn upgrade-interactive --latest",
     "netlify:build": "run-s build export"
   },
   "dependencies": {

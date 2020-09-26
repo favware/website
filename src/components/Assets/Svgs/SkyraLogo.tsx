@@ -19,7 +19,7 @@ const useStyles = makeStyles(() =>
   })
 );
 
-export default (props: PropsWithChildren<unknown>) => {
+const SkyraLogo = (props: PropsWithChildren<unknown>) => {
   const classes = useStyles();
 
   return (
@@ -39,3 +39,5 @@ export default (props: PropsWithChildren<unknown>) => {
     </svg>
   );
 };
+
+export default SkyraLogo;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, PropsWithChildren } from 'react';
 
-export default ({ children }: PropsWithChildren<unknown>) => {
+const NoScript = ({ children }: PropsWithChildren<unknown>) => {
   const [isComponentMounted, setIsComponentMounted] = useState(false);
 
   // We don't want to send 'react-dom/server' to the client
@@ -19,3 +19,5 @@ export default ({ children }: PropsWithChildren<unknown>) => {
   // eslint-disable-next-line react/no-danger, @typescript-eslint/naming-convention
   return <noscript dangerouslySetInnerHTML={{ __html: staticMarkup }} />;
 };
+
+export default NoScript;

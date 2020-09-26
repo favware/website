@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 
-export default (props: PropsWithChildren<unknown>) => (
+const DiscordLogo = (props: PropsWithChildren<unknown>) => (
   <svg viewBox="0 0 380 380" {...props} height="32">
     <g>
       <g>
@@ -12,3 +12,5 @@ export default (props: PropsWithChildren<unknown>) => (
     </g>
   </svg>
 );
+
+export default DiscordLogo;

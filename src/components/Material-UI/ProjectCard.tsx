@@ -43,7 +43,7 @@ export interface CardProps extends MUICardProps {
   actions: CardAction[];
 }
 
-export default ({ textContent, logo, logoAlt, cardHeaderProps, actions, ...props }: PropsWithChildren<CardProps>) => {
+const ProjectCard = ({ textContent, logo, logoAlt, cardHeaderProps, actions, ...props }: PropsWithChildren<CardProps>) => {
   const classes = useStyles();
 
   return (
@@ -78,3 +78,5 @@ export default ({ textContent, logo, logoAlt, cardHeaderProps, actions, ...props
     </Card>
   );
 };
+
+export default ProjectCard;

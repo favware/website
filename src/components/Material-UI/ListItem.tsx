@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default ({ children, text, linkTo, enableExtraPadding = false, onClick }: ListItemProps) => {
+const ListItemComponent = ({ children, text, linkTo, enableExtraPadding = false, onClick }: ListItemProps) => {
   const classes = useStyles({ enableExtraPadding });
   const [selected, setSelected] = useState(false);
 
@@ -55,3 +55,5 @@ export default ({ children, text, linkTo, enableExtraPadding = false, onClick }:
     </Box>
   );
 };
+
+export default ListItemComponent;
