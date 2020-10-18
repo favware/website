@@ -1313,10 +1313,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@sapphire/utilities@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.0.1.tgz#4f26d69a9491b521da4587a0aecb608bd6b1fff1"
-  integrity sha512-UuHNfJdPj2NaNNXwTIsWnSpnRzoMCCR4W7lHbqqjoRXMMnJ81qdfN07jrmkOdO1o/dx0tEr2M3cXZ3kXLSJKhQ==
+"@sapphire/utilities@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.0.2.tgz#91f4efc7208e5e9bb65096e7ee2c21b7322a2760"
+  integrity sha512-+VeSCI+M1Dd3vVbQjcDmFrS7erqWpKySrv+2qDtCTt57BQNZ+Ca406bUohN34JbJQ0rwAB3vtpCLpaWdOwaqhA==
 
 "@skyra/discord-components-core@^2.0.1":
   version "2.0.1"
@@ -1393,10 +1393,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.2.tgz#2de1ed6670439387da1c9f549a2ade2b0a799256"
   integrity sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
 
-"@types/node@^14.11.8":
-  version "14.11.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.8.tgz#fe2012f2355e4ce08bca44aeb3abbb21cf88d33f"
-  integrity sha512-KPcKqKm5UKDkaYPTuXSx8wEP7vE9GnuaXIZKijwRYcePpZFDVuy2a57LarFKiORbHOuTOOwYzxVxcUzsh2P2Pw==
+"@types/node@^14.11.10":
+  version "14.11.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.11.10.tgz#8c102aba13bf5253f35146affbf8b26275069bef"
+  integrity sha512-yV1nWZPlMFpoXyoknm4S56y2nlTAuFYaJuQtYRAOU7xA/FJ9RY0Xm7QOkaYMMmr8ESdHIuUb6oQgR/0+2NqlyA==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -1425,10 +1425,10 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
-"@types/react@^16.9.51":
-  version "16.9.51"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.51.tgz#f8aa51ffa9996f1387f63686696d9b59713d2b60"
-  integrity sha512-lQa12IyO+DMlnSZ3+AGHRUiUcpK47aakMMoBG8f7HGxJT8Yfe+WE128HIXaHOHVPReAW0oDS3KAI0JI2DDe1PQ==
+"@types/react@^16.9.53":
+  version "16.9.53"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.53.tgz#40cd4f8b8d6b9528aedd1fff8fcffe7a112a3d23"
+  integrity sha512-4nW60Sd4L7+WMXH1D6jCdVftuW7j4Za6zdp6tJ33Rqv0nk1ZAmQKML9ZLD4H0dehA3FZxXR/GM8gXplf82oNGw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -4821,10 +4821,10 @@ next-pwa@^3.1.5:
     workbox-webpack-plugin "^5.1.4"
     workbox-window "^5.1.4"
 
-next-seo@^4.11.0:
-  version "4.11.0"
-  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.11.0.tgz#b4f160414b49e6e3dc7791df25e29b50550ebb67"
-  integrity sha512-JrrGA+wD20ArI5jTqbLE2jipmA5VCCcjBlb1ZI2lKktd7lCXNs/IIvwkNfJPPK0vFp/ewwylA6kO5CyX2fflig==
+next-seo@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.13.0.tgz#db04ffff9cea375a6801f748572239b27daea471"
+  integrity sha512-y8r5rny7vp8UjqWt3J/rCIexVvG8djN5YqXEpRClzd9IDKSBAgXZUMY58G4WTHa5fW4OyX+StDx82ZObB7qc4Q==
 
 next-tick@~1.0.0:
   version "1.0.0"
@@ -5608,10 +5608,10 @@ react-emoji-render@^1.2.4:
     prop-types "^15.5.8"
     string-replace-to-array "^1.0.1"
 
-react-ga@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-3.1.2.tgz#e13f211c51a2e5c401ea69cf094b9501fe3c51ce"
-  integrity sha512-OJrMqaHEHbodm+XsnjA6ISBEHTwvpFrxco65mctzl/v3CASMSLSyUkFqz9yYrPDKGBUfNQzKCjuMJwctjlWBbw==
+react-ga@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-3.2.0.tgz#a8ea91e8e681f49d30afcee72d71fc5c71b67d57"
+  integrity sha512-YHHG5QIzRdDToB9ST1/BrGQhLZPzkrNjoeTu3SZLgwdqzeA9F2XOStuOGXAp1ak/SAo9pyR1Uo/hY0C5wZwfqA==
 
 react-if@^3.4.3:
   version "3.4.3"
