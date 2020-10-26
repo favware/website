@@ -1442,24 +1442,24 @@
   resolved "https://registry.yarnpkg.com/@sapphire/utilities/-/utilities-1.0.2.tgz#91f4efc7208e5e9bb65096e7ee2c21b7322a2760"
   integrity sha512-+VeSCI+M1Dd3vVbQjcDmFrS7erqWpKySrv+2qDtCTt57BQNZ+Ca406bUohN34JbJQ0rwAB3vtpCLpaWdOwaqhA==
 
-"@skyra/discord-components-core@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@skyra/discord-components-core/-/discord-components-core-2.0.1.tgz#501cd03723ed48dc98b3c6401574a3aa41c61e6f"
-  integrity sha512-xr/SnehBvV0WgZLQe+vsuKvESe+TQi+OUJZsae1LiPl+1pKYokCONvlChc8ZqSmulEs3Vl1iugZWCJCcFzPSVw==
+"@skyra/discord-components-core@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@skyra/discord-components-core/-/discord-components-core-2.0.2.tgz#d39f2c550ba3103ad285ea694b8af52c58653501"
+  integrity sha512-ipuEoieSLaUtZKRfvJjWQ0Y+F/z9WDucCWQUUpvtwlI2qUD1zI3XBsmyOV5vigvO3yMLbNcc0YB2mUysJPwjVQ==
   dependencies:
-    "@stencil/core" "^2.0.3"
+    "@stencil/core" "^2.1.1"
     clsx "^1.1.1"
     hex-to-rgba "^2.0.1"
 
-"@skyra/discord-components-react@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@skyra/discord-components-react/-/discord-components-react-2.0.1.tgz#c9d421caa29695d93c8e15731449b5cfc1acad51"
-  integrity sha512-6+bw1e8PXNXnxreT9Wtk5h0m3S9qcbmTmZh/0E/6quc2bnqQZsWiRL2uUardopEr7HYY9opfc2E1jI+b+dWfxw==
+"@skyra/discord-components-react@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@skyra/discord-components-react/-/discord-components-react-2.0.2.tgz#7e89349d94712c185427f067f51be1ec73611e85"
+  integrity sha512-niNSyqsVHOsV37cKMBXgj4LsHxEnMG9jbLv3YOHxdlLnz2NdRW5uM2wCZ+Eywt7RDESSQbXwIJHXKNUM5RMFuA==
 
-"@stencil/core@^2.0.3":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.1.0.tgz#3525c9e36da775bc3c5eb01b2e070be400386c8e"
-  integrity sha512-fvDBIddSx/oU4kQvHPqjw4WG3s7uBvmlhez69oEc7Z04yhWqZivyLYdQ0XWN/MS/KgKv6JTcWmMrGH+4IzItWQ==
+"@stencil/core@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-2.1.1.tgz#1b0576efd9e9172293274bd31393530b378b2a66"
+  integrity sha512-jcO/sv9wDSe/RSgySHDUUhYNtxPGWpWJy6ucLx/Z6nBau6239mtcXXdxS/KJwSCvHjjEubhz3Rj389eh+IEcZw==
 
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   version "1.4.1"
