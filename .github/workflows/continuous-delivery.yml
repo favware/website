@@ -59,7 +59,7 @@ jobs:
       - name: Build NextJS
         run: yarn build
       - name: Upload Bundle
-        uses: actions/upload-artifact@v2-preview
+        uses: actions/upload-artifact@v2
         with:
           name: next_bundle
           path: src/.next
@@ -73,7 +73,7 @@ jobs:
       - name: Checkout Project
         uses: actions/checkout@v2
       - name: Download build bundle artifact
-        uses: actions/download-artifact@v2-preview
+        uses: actions/download-artifact@v2
         with:
           name: next_bundle
           path: src/.next
