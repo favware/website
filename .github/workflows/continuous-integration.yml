@@ -28,7 +28,7 @@ jobs:
       - name: Install Deps
         run: yarn
       - name: Run ESLint
-        uses: icrawl/action-eslint@v1
+        run: yarn lint --fix=false
 
   Build:
     name: Compiling NextJS
