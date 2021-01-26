@@ -6,8 +6,13 @@ module.exports = withPWA({
     dest: 'public',
     disable: process.env.NODE_ENV === 'development'
   },
-  experimental: {
-    jsconfigPaths: true,
-    basePath: ''
+  // eslint-disable-next-line @typescript-eslint/require-await
+  async rewrites() {
+    return [
+      {
+        source: '/index',
+        destination: '/'
+      }
+    ];
   }
 });

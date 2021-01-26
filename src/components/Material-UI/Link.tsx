@@ -1,12 +1,12 @@
 import { createStyles, makeStyles } from '@material-ui/core';
 import MuiLink from '@material-ui/core/Link';
-import { CSSProperties } from '@material-ui/core/styles/withStyles';
+import type { CSSProperties } from '@material-ui/core/styles/withStyles';
 import NextComposed from '@Next/NextComposed';
 import clsx from 'clsx';
-import { LinkProps as NextLinkProps } from 'next/link';
+import type { LinkProps as NextLinkProps } from 'next/link';
 import { useRouter } from 'next/router';
 import React, { forwardRef, PropsWithChildren } from 'react';
-import { UrlObject } from 'url';
+import type { UrlObject } from 'url';
 
 interface LinkProps extends NextLinkProps {
   /** The href to navigate to */

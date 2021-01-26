@@ -1,6 +1,6 @@
 import theme from '@Config/Theme';
 import { mergeDefault } from '@sapphire/utilities';
-import { DefaultSeoProps, NextSeoProps } from 'next-seo';
+import type { DefaultSeoProps, NextSeoProps } from 'next-seo';
 
 type KeyedObject = Record<PropertyKey, unknown>;
 

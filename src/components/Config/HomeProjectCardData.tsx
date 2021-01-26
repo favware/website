@@ -5,7 +5,7 @@ import AppleIcon from '@material-ui/icons/Apple';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
 import Link from '@Mui/Link';
-import { CardProps } from '@Mui/ProjectCard';
+import type { CardProps } from '@Mui/ProjectCard';
 import {
   CATCHCALC_DOWNLOAD_URL,
   CATCHCALC_GITHUB_URL,

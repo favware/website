@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Layout from '@Pres/Layout';
 import { DefaultSeo } from 'next-seo';
-import { AppProps } from 'next/app';
+import type { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { PropsWithChildren, useEffect } from 'react';
