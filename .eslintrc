@@ -122,11 +122,11 @@
     "react-hooks/rules-of-hooks": "error"
   },
   "overrides": [
-		{
-			"files": ["src/next-env.d.ts"],
-			"rules": {
-				"spaced-comment": "off"
-			}
-		}
-	]
+    {
+      "files": ["src/next-env.d.ts"],
+      "rules": {
+        "spaced-comment": "off"
+      }
+    }
+  ]
 }
