@@ -8,10 +8,14 @@ package-lock.json
 .DS_Store
 Thumbs.db
 
-# Build Artifacts
-dist/
+# production
 build/
+dist/
 .next/
+.tsbuildinfo
+sitemap.xml
+sw.js
+workbox*.js
 
 # Logs
 logs/
