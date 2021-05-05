@@ -1,19 +1,21 @@
-FROM node:12-alpine
+FROM --platform=linux/amd64 node:16-alpine
+
+RUN apk add --no-cache dumb-init
 
 WORKDIR /workspace
 
-COPY package.json ./
-COPY yarn.lock ./
-COPY .yarnrc .
+COPY --chown=node:node package.json ./
+COPY --chown=node:node yarn.lock ./
+COPY --chown=node:node .yarnrc .
+COPY --chown=node:node src/ src/
 
-RUN yarn install --frozen-lockfile --link-duplicates
+ENV NODE_ENV production
 
-COPY src/ src/
-COPY scripts/ scripts/
-
-RUN yarn build
+RUN yarn install --frozen-lockfile --link-duplicates --ignore-scripts --non-interactive --production
 
 ENV PORT 2114
 EXPOSE 2114
 
-CMD [ "yarn", "start", "-p", "2114" ]
+USER node
+
+CMD [ "dumb-init", "yarn", "start", "-p", "2114" ]
