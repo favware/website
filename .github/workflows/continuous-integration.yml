@@ -16,17 +16,19 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js 12
+      - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 16
       - name: Restore CI Cache
         uses: actions/cache@v2.1.5
+        id: cache-restore
         with:
           path: node_modules
-          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Deps
-        run: yarn
+          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: yarn --frozen-lockfile
       - name: Run ESLint
         run: yarn lint --fix=false
 
@@ -37,16 +39,18 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js 12
+      - name: Use Node.js v16
         uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 16
       - name: Restore CI Cache
         uses: actions/cache@v2.1.5
+        id: cache-restore
         with:
           path: node_modules
-          key: ${{ runner.os }}-12-${{ hashFiles('**/yarn.lock') }}
-      - name: Install NodeJS Dependencies
-        run: yarn
+          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: yarn --frozen-lockfile
       - name: Build NextJS
         run: yarn build
