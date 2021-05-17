@@ -54,7 +54,7 @@
     "@sapphire/ts-config": "^2.2.1",
     "@types/node": "^15.0.2",
     "@types/react": "^17.0.5",
-    "@types/react-dom": "17.0.4",
+    "@types/react-dom": "17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.22.0",
     "eslint": "^7.26.0",
@@ -79,8 +79,8 @@
     "node-fetch": "^2.6.1",
     "object-path": "^0.11.5",
     "webpack": "^5.37.0",
-		"lodash": "^4.17.21",
-		"merge": "^2.1.1",
-		"trim": "^1.0.1"
+    "lodash": "^4.17.21",
+    "merge": "^2.1.1",
+    "trim": "^1.0.1"
   }
 }
