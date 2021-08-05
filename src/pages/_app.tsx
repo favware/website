@@ -3,6 +3,7 @@ import theme from '@Config/Theme';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import Layout from '@Pres/Layout';
+import type {} from '@skyra/discord-components-core';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import dynamic from 'next/dynamic';
@@ -163,32 +164,3 @@ export default ({ Component, pageProps }: PropsWithChildren<AppProps>) => {
     </>
   );
 };
-
-declare global {
-  type DiscordMessageAvatars = Record<string, string> &
-    Partial<{
-      blue: string;
-      gray: string;
-      green: string;
-      orange: string;
-      red: string;
-    }>;
-
-  type DiscordMessageProfile = Partial<{
-    author: string;
-    avatar: string;
-    bot: boolean;
-    verified: boolean;
-    roleColor: string;
-  }>;
-
-  interface Window {
-    $discordMessage: Partial<{
-      avatars: DiscordMessageAvatars;
-      profiles: Record<string, DiscordMessageProfile>;
-      defaultTheme: string;
-      defaultMode: string;
-      defaultBackground: 'discord' | 'none';
-    }>;
-  }
-}
