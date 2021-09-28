@@ -3,7 +3,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { appBarRef } from '@Pres/Layout';
-import React, { PropsWithChildren } from 'react';
+import React, { FC } from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,13 +23,13 @@ interface ErrorProps {
   includeMaybe?: boolean;
 }
 
-export default ({ includeMaybe = false }: PropsWithChildren<ErrorProps>) => {
+const ErrorPage: FC<ErrorProps> = ({ includeMaybe = false }) => {
   const classes = useStyles();
 
   return (
     <>
       <Container maxWidth="md">
-        <Grid container justify="center" alignContent="stretch" alignItems="center" classes={{ root: classes.root }}>
+        <Grid container justifyContent="center" alignContent="stretch" alignItems="center" classes={{ root: classes.root }}>
           <Grid item>
             <Typography variant="h3" color="initial" classes={{ root: classes.text }}>
               Oopsie woopsie, the site is bwoken ^w^ We awe wowking vewy hawd to sowve it.
@@ -41,3 +41,5 @@ export default ({ includeMaybe = false }: PropsWithChildren<ErrorProps>) => {
     </>
   );
 };
+
+export default ErrorPage;

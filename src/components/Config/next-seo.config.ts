@@ -1,10 +1,7 @@
 import theme from '@Config/Theme';
-import { mergeDefault } from '@sapphire/utilities';
-import type { DefaultSeoProps, NextSeoProps } from 'next-seo';
+import type { DefaultSeoProps } from 'next-seo';
 
-type KeyedObject = Record<PropertyKey, unknown>;
-
-export const DefaultSeo: DefaultSeoProps & KeyedObject = {
+export const DefaultSeo: DefaultSeoProps = {
   titleTemplate: 'Favware | %s',
   title: 'Home',
   description: 'For Hearth and Home! Check out favware projects here!',
@@ -68,5 +65,3 @@ export const DefaultSeo: DefaultSeoProps & KeyedObject = {
     cardType: 'summary'
   }
 };
-
-export const createSeoProps = (seoProps: NextSeoProps & KeyedObject) => mergeDefault(DefaultSeo, seoProps);

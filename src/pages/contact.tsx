@@ -1,5 +1,3 @@
-import Analytics from '@Config/Analytics';
-import { createSeoProps } from '@Config/next-seo.config';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
@@ -121,20 +119,17 @@ const CONTACT_METHODS: ContactMethod[] = [
   { StartIcon: YouTubeIcon, navigationUrl: CONTACT_YOUTUBE, label: 'Subscribe to me on YouTube', classKey: 'Youtube' }
 ];
 
-export default () => {
+const ContactPage = () => {
   const classes = useStyles();
 
   return (
     <>
-      <Analytics />
       <NextSeo
-        {...createSeoProps({
-          title: 'Contact',
-          description: 'Want to get in contact with Favware? You will find your methods here!',
-          openGraph: {
-            url: 'https://favware.tech/contact'
-          }
-        })}
+        title="Contact"
+        description="Want to get in contact with Favware? You will find your methods here!"
+        openGraph={{
+          url: 'https://favware.tech/contact'
+        }}
       />
       <Container maxWidth="lg" disableGutters>
         <PageHeader title="Contact" subtitle="Want to get in contact with Favware? You will find your methods here!" />
@@ -144,7 +139,6 @@ export default () => {
               <Button
                 size="large"
                 fullWidth
-                // @ts-expect-error TS cannot properly parse the classKey access method
                 classes={{ root: clsx(classes.contactButton, classes[`button${classKey}`]) }}
                 variant="contained"
                 color="primary"
@@ -160,6 +154,8 @@ export default () => {
     </>
   );
 };
+
+export default ContactPage;
 
 interface ContactMethod {
   StartIcon: ElementType;

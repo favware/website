@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from '@material-ui/core';
 import Grid, { GridProps } from '@material-ui/core/Grid';
-import React, { memo, PropsWithChildren } from 'react';
+import React, { FC, memo } from 'react';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default memo(({ children, ...props }: PropsWithChildren<GridProps>) => {
+const GridContainer: FC<GridProps> = ({ children, ...props }) => {
   const classes = useStyles();
 
   return (
@@ -19,7 +19,7 @@ export default memo(({ children, ...props }: PropsWithChildren<GridProps>) => {
       classes={{ root: classes.root }}
       spacing={1}
       direction="row"
-      justify="space-between"
+      justifyContent="space-between"
       alignContent="stretch"
       alignItems="center"
       {...props}
@@ -27,4 +27,6 @@ export default memo(({ children, ...props }: PropsWithChildren<GridProps>) => {
       {children}
     </Grid>
   );
-});
+};
+
+export default memo(GridContainer);

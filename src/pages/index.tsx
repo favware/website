@@ -1,15 +1,12 @@
-import Analytics from '@Config/Analytics';
-import HomeProjectCardData from '@Config/HomeProjectCardData';
-import { createSeoProps } from '@Config/next-seo.config';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import GridContainer from '@Mui/GridContainer';
-import ProjectCard from '@Mui/ProjectCard';
+import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
 import React from 'react';
 
-export default () => {
+const IndexPage: NextPage = () => {
   const calculateAge = (birthday: Date) => {
     const ageDifMs = Date.now() - birthday.getTime();
     const ageDate = new Date(ageDifMs);
@@ -18,10 +15,9 @@ export default () => {
 
   return (
     <>
-      <Analytics />
-      <NextSeo {...createSeoProps({ title: 'Index' })} />
+      <NextSeo />
       <Container maxWidth="lg" disableGutters>
-        <GridContainer spacing={5} direction="row" justify="space-between" alignContent="stretch" alignItems="center">
+        <GridContainer spacing={5} direction="row" justifyContent="space-between" alignContent="stretch" alignItems="center">
           <Grid item xs={12}>
             <Typography align="center" variant="h4" component="h1" gutterBottom paragraph>
               Software Engineer focusing on TypeScript
@@ -62,15 +58,10 @@ export default () => {
               found my first job after graduation.
             </Typography>
           </Grid>
-          <GridContainer item direction="row" alignContent="space-around" alignItems="stretch" justify="space-around">
-            {HomeProjectCardData.map(({ textContent, logo, logoAlt, actions, cardHeaderProps, ...rest }, index) => (
-              <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
-                <ProjectCard textContent={textContent} logo={logo} logoAlt={logoAlt} actions={actions} cardHeaderProps={cardHeaderProps} {...rest} />
-              </Grid>
-            ))}
-          </GridContainer>
         </GridContainer>
       </Container>
     </>
   );
 };
+
+export default IndexPage;

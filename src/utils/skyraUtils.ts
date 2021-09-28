@@ -16,13 +16,6 @@
 
 import Router from 'next/router';
 
-/**
- * No operation function
- */
-export function noOp() {
-  return undefined;
-}
-
 export function navigate(path: string) {
   if (path.startsWith('http') || path.startsWith('//') || path.startsWith('mailto:')) {
     return () => window.open(path, '_blank', 'noreferrer=yes');

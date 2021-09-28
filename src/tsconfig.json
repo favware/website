@@ -20,10 +20,7 @@
     "paths": {
       "@Config/*": ["components/Config/*"],
       "@Mui/*": ["components/Material-UI/*"],
-      "@Next/*": ["components/Next/*"],
       "@Pres/*": ["components/Presentational/*"],
-      "@Assets/*": ["components/Assets/*"],
-      "@Svgs/*": ["components/Assets/Svgs/*"],
       "@Utils/*": ["utils/*"]
     }
   },
