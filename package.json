@@ -78,7 +78,7 @@
     "kind-of": "^6.0.3",
     "dot-prop": "^6.0.1",
     "node-fetch": "^3.0.0",
-    "object-path": "^0.11.5",
+    "object-path": "^0.11.8",
     "webpack": "^5.50.0",
     "lodash": "^4.17.21",
     "merge": "^2.1.1",
