@@ -14,7 +14,7 @@
     "url": "https://github.com/favware/website/issues"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=v14.18.0"
   },
   "scripts": {
     "lint": "eslint src --fix --ext js,ts,tsx",
