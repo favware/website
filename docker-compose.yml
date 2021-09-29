@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  website:
+    container_name: favware_website
+    image: ghcr.io/favware/website:latest
+    build: ./
+    restart: 'no'
+    ports:
+      - '2114:2114'
+    environment:
+      NODE_ENV: production
