@@ -1,4 +1,4 @@
-import React, { useEffect, useState, PropsWithChildren } from 'react';
+import React, { PropsWithChildren, useEffect, useState } from 'react';
 
 const NoScript = ({ children }: PropsWithChildren<unknown>) => {
   const [isComponentMounted, setIsComponentMounted] = useState(false);

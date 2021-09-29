@@ -1,0 +1,16 @@
+{
+	"eslint.validate": ["typescript"],
+	"editor.tabSize": 4,
+	"editor.useTabStops": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
+	"files.eol": "\n",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/.yarn": true,
+		"**/.next/": true,
+		"**/.git/": true
+	}
+}

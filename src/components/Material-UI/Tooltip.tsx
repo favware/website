@@ -1,16 +1,16 @@
-import { createStyles, makeStyles, Theme } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
-import MUITooltip, { TooltipProps } from '@material-ui/core/Tooltip';
-import Zoom from '@material-ui/core/Zoom';
+import Box from '@mui/material/Box';
+import MUITooltip, { TooltipProps } from '@mui/material/Tooltip';
+import Zoom from '@mui/material/Zoom';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import clsx from 'clsx';
 import React from 'react';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     tooltip: {
-      backgroundColor: theme.palette.text.primary,
+      backgroundColor: theme.palette.background.paper,
       boxShadow: theme.shadows[5],
-      color: theme.palette.getContrastText(theme.palette.text.primary),
       fontSize: '0.8rem'
     },
     box: {

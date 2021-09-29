@@ -1,6 +1,7 @@
-import Divider from '@material-ui/core/Divider';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import Typography, { TypographyProps } from '@material-ui/core/Typography';
+import Divider from '@mui/material/Divider';
+import Typography, { TypographyProps } from '@mui/material/Typography';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import React, { FC, ReactNode } from 'react';
 
 interface PageHeaderProps {
@@ -14,7 +15,7 @@ interface PageHeaderProps {
   SubTitleTypographyProps?: TypographyProps;
 }
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     divider: {
       backgroundColor: theme.palette.secondary.light,

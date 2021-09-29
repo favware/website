@@ -1,14 +1,15 @@
-import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import GithubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import MailIcon from '@material-ui/icons/Mail';
-import RedditIcon from '@material-ui/icons/Reddit';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import YouTubeIcon from '@material-ui/icons/YouTube';
 import GridContainer from '@Mui/GridContainer';
+import GithubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MailIcon from '@mui/icons-material/Mail';
+import RedditIcon from '@mui/icons-material/Reddit';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import PageHeader from '@Pres/PageHeader';
 import {
   CONTACT_FACEBOOK,
@@ -29,7 +30,7 @@ import TwitchIcon from 'mdi-react/TwitchIcon';
 import { NextSeo } from 'next-seo';
 import React, { ElementType } from 'react';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     contactButton: {
       paddingTop: theme.spacing(1),
@@ -40,63 +41,63 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#838383',
       color: theme.palette.getContrastText('#838383'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#838383' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#838383' } }).dark
       }
     },
     buttonDiscord: {
       backgroundColor: '#7289DA',
       color: theme.palette.getContrastText('#7289DA'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#7289DA' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#7289DA' } }).dark
       }
     },
     buttonGithub: {
       backgroundColor: '#0C0C0C',
       color: theme.palette.getContrastText('#0C0C0C'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#0C0C0C' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#0C0C0C' } }).dark
       }
     },
     buttonLinkedin: {
       backgroundColor: '#2867B2',
       color: theme.palette.getContrastText('#2867B2'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#2867B2' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#2867B2' } }).dark
       }
     },
     buttonTwitter: {
       backgroundColor: '#1DA1F2',
       color: theme.palette.getContrastText('#1DA1F2'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#1DA1F2' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#1DA1F2' } }).dark
       }
     },
     buttonTwitch: {
       backgroundColor: '#6441A4',
       color: theme.palette.getContrastText('#6441A4'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#6441A4' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#6441A4' } }).dark
       }
     },
     buttonFacebook: {
       backgroundColor: '#0078FF',
       color: theme.palette.getContrastText('#0078FF'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#0078FF' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#0078FF' } }).dark
       }
     },
     buttonReddit: {
       backgroundColor: '#FF4500',
       color: theme.palette.getContrastText('#FF4500'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#FF4500' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#FF4500' } }).dark
       }
     },
     buttonYoutube: {
       backgroundColor: '#FF0000',
       color: theme.palette.getContrastText('#FF0000'),
       '&:hover': {
-        backgroundColor: theme.palette.augmentColor({ main: '#FF0000' }).dark
+        backgroundColor: theme.palette.augmentColor({ color: { main: '#FF0000' } }).dark
       }
     }
   })

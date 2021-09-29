@@ -1,18 +1,30 @@
 import { DefaultSeo as DefaultSeoProps } from '@Config/next-seo.config';
 import theme from '@Config/Theme';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { ThemeProvider } from '@material-ui/core/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { StyledEngineProvider, Theme, ThemeProvider } from '@mui/material/styles';
 import Layout from '@Pres/Layout';
 import type { NextPage } from 'next';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
+import { CacheProvider, EmotionCache } from '@emotion/react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React, { useEffect } from 'react';
+import createEmotionCache from '@Utils/createEmotionCache';
+
+declare module '@mui/styles/defaultTheme' {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
+
+interface Props extends AppProps {
+  emotionCache?: EmotionCache;
+}
 
 const NoScript = dynamic(() => import('@Pres/NoScript'));
+const clientSideEmotionCache = createEmotionCache();
 
-const App: NextPage<AppProps> = ({ Component, pageProps }) => {
+const App: NextPage<Props> = ({ Component, emotionCache = clientSideEmotionCache, pageProps }) => {
   useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -22,7 +34,7 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
   }, []);
 
   return (
-    <>
+    <CacheProvider value={emotionCache}>
       <DefaultSeo {...DefaultSeoProps} />
       <Head>
         <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
@@ -47,52 +59,54 @@ const App: NextPage<AppProps> = ({ Component, pageProps }) => {
         </NoScript>
       </Head>
 
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <style jsx global>{`
-          a,
-          a:hover,
-          a:focus {
-            text-decoration: none !important;
-          }
+      <StyledEngineProvider injectFirst>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <style jsx global>{`
+            a,
+            a:hover,
+            a:focus {
+              text-decoration: none !important;
+            }
 
-          *::-webkit-scrollbar:hover {
-            background-color: rgba(100, 100, 100, 0.09);
-          }
+            *::-webkit-scrollbar:hover {
+              background-color: rgba(100, 100, 100, 0.09);
+            }
 
-          *::-webkit-scrollbar-thumb:vertical {
-            background: rgba(100, 100, 100, 0.5);
-            -webkit-border-radius: 100px;
-          }
+            *::-webkit-scrollbar-thumb:vertical {
+              background: rgba(100, 100, 100, 0.5);
+              -webkit-border-radius: 100px;
+            }
 
-          *::-webkit-scrollbar-thumb:vertical:active {
-            background: rgba(100, 100, 100, 0.61);
-            -webkit-border-radius: 100px;
-          }
+            *::-webkit-scrollbar-thumb:vertical:active {
+              background: rgba(100, 100, 100, 0.61);
+              -webkit-border-radius: 100px;
+            }
 
-          *::-webkit-scrollbar {
-            width: 0.5em;
-            overflow: visible;
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-          }
+            *::-webkit-scrollbar {
+              width: 0.5em;
+              overflow: visible;
+              border-radius: 4px;
+              -webkit-border-radius: 4px;
+            }
 
-          *::-webkit-scrollbar-track {
-            opacity: 0;
-            -webkit-transition: all 0.5s;
-          }
+            *::-webkit-scrollbar-track {
+              opacity: 0;
+              -webkit-transition: all 0.5s;
+            }
 
-          *::-webkit-scrollbar-thumb {
-            overflow: visible;
-            border-radius: 4px;
-            background: rgba(100, 100, 100, 0.2);
-          }
-        `}</style>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </ThemeProvider>
-    </>
+            *::-webkit-scrollbar-thumb {
+              overflow: visible;
+              border-radius: 4px;
+              background: rgba(100, 100, 100, 0.2);
+            }
+          `}</style>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
+      </StyledEngineProvider>
+    </CacheProvider>
   );
 };
 

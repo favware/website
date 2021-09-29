@@ -1,11 +1,12 @@
-import AppBar from '@material-ui/core/AppBar';
-import Box from '@material-ui/core/Box';
-import IconButton from '@material-ui/core/IconButton';
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import Toolbar from '@material-ui/core/Toolbar';
-import ContactSupportIcon from '@material-ui/icons/ContactSupport';
-import HomeIcon from '@material-ui/icons/Home';
-import MailIcon from '@material-ui/icons/Mail';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import HomeIcon from '@mui/icons-material/Home';
+import MailIcon from '@mui/icons-material/Mail';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
+import Toolbar from '@mui/material/Toolbar';
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import Tooltip from '@Mui/Tooltip';
 import { CONTACT_MAIL, DISCORD_SERVER_URL } from '@Utils/constants';
 import { navigate } from '@Utils/skyraUtils';
@@ -14,7 +15,7 @@ import DiscordIcon from 'mdi-react/DiscordIcon';
 import { useRouter } from 'next/router';
 import React, { createRef, PropsWithChildren } from 'react';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       display: 'flex',
@@ -62,6 +63,7 @@ const Layout = ({ children }: PropsWithChildren<unknown>) => {
               aria-label="contact email"
               onClick={navigate(CONTACT_MAIL)}
               classes={{ root: clsx(classes.toolbarIcon, classes.toolbarIconMargin) }}
+              size="large"
             >
               <MailIcon />
             </IconButton>
@@ -73,8 +75,9 @@ const Layout = ({ children }: PropsWithChildren<unknown>) => {
               aria-label={pathname === '/contact' ? 'Go back home' : 'contact email'}
               onClick={navigate(pathname === '/contact' ? '/' : '/contact')}
               classes={{ root: clsx(classes.toolbarIcon, classes.toolbarIconMargin) }}
+              size="large"
             >
-              {pathname === '/contact' ? <HomeIcon /> : <ContactSupportIcon />}
+              {pathname === '/contact' ? <HomeIcon /> : <ContactPageIcon />}
             </IconButton>
           </Tooltip>
           <Tooltip title="Join my Discord server!" placement="bottom">
@@ -84,6 +87,7 @@ const Layout = ({ children }: PropsWithChildren<unknown>) => {
               edge="end"
               onClick={navigate(DISCORD_SERVER_URL)}
               classes={{ root: classes.toolbarIcon }}
+              size="large"
             >
               <DiscordIcon />
             </IconButton>
