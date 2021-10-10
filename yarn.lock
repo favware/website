@@ -1455,18 +1455,18 @@ __metadata:
     "@emotion/styled": ^11.3.0
     "@material-ui/core": ^4.12.3
     "@material-ui/icons": ^4.11.2
-    "@mui/icons-material": ^5.0.1
-    "@mui/material": ^5.0.2
+    "@mui/icons-material": ^5.0.3
+    "@mui/material": ^5.0.3
     "@mui/styles": ^5.0.1
     "@next/eslint-plugin-next": ^11.1.2
     "@sapphire/eslint-config": ^3.2.3
     "@sapphire/prettier-config": ^1.1.6
     "@sapphire/ts-config": ^3.0.0
     "@types/node": ^16.6.2
-    "@types/react": ^17.0.26
+    "@types/react": ^17.0.27
     "@types/react-dom": 17.0.9
-    "@typescript-eslint/eslint-plugin": ^4.32.0
-    "@typescript-eslint/parser": ^4.32.0
+    "@typescript-eslint/eslint-plugin": ^4.33.0
+    "@typescript-eslint/parser": ^4.33.0
     clsx: ^1.1.1
     eslint-config-next: ^11.1.2
     eslint-plugin-import: ^2.24.2
@@ -1656,9 +1656,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/core@npm:5.0.0-alpha.49":
-  version: 5.0.0-alpha.49
-  resolution: "@mui/core@npm:5.0.0-alpha.49"
+"@mui/core@npm:5.0.0-alpha.50":
+  version: 5.0.0-alpha.50
+  resolution: "@mui/core@npm:5.0.0-alpha.50"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@emotion/is-prop-valid": ^1.1.0
@@ -1673,13 +1673,13 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: cc2718df0555be2e5269666252471037cc9651ca0c63219e5cd89cfd7ff83c1c3960a4e1dca57806e2ebaafb8e700fc42ae5c6680d710d2cae09492822ac7d2a
+  checksum: 2459d8f9a84bcb48de451992db3457b5d3bc723df37978b483467798337311f3eea91e48acb5c139306dd2e7440dfed0e2680c09105739261fcde1b1f0396dca
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@mui/icons-material@npm:5.0.1"
+"@mui/icons-material@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@mui/icons-material@npm:5.0.3"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
@@ -1689,17 +1689,17 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 6363a29c5968f7a2960ec1b2a9ee59553441ceda050510d558e28e2253ab0dca2da0d0a3c972cec216629b8b691640f6034db3a00029f1ff9a9979aaece2d4cd
+  checksum: c67d73889ca8a774587dc8a1197a00d8e3a8187a621e6c967fc508d4fad4c66cfdb20e9092c574495e32a33d623a260cc148ef57c0d72287906fa775087ac63a
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "@mui/material@npm:5.0.2"
+"@mui/material@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@mui/material@npm:5.0.3"
   dependencies:
     "@babel/runtime": ^7.15.4
-    "@mui/core": 5.0.0-alpha.49
-    "@mui/system": ^5.0.2
+    "@mui/core": 5.0.0-alpha.50
+    "@mui/system": ^5.0.3
     "@mui/types": ^7.0.0
     "@mui/utils": ^5.0.1
     "@popperjs/core": ^2.4.4
@@ -1723,7 +1723,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: b0b52dfa235ebebe9f38e4c4c1ba2c44b1fef63a22a4f05f19d290395b067070d9f6023a8e026bf866b6030a145ddf503cf66d308adac0cf33209737c2fde3f6
+  checksum: cd304be09bee551d7c84e63a5436df03c4b655a74ff66a396beee5317c34be49d3a203f76c48a25ad7b8d590281d617bdd2199343c0061e141ee486163aa58e4
   languageName: node
   linkType: hard
 
@@ -1795,9 +1795,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/system@npm:^5.0.2":
-  version: 5.0.2
-  resolution: "@mui/system@npm:5.0.2"
+"@mui/system@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@mui/system@npm:5.0.3"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@mui/private-theming": ^5.0.1
@@ -1819,7 +1819,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 184f79bcc859ac2dbf4c5c6dd9246a2b3ac662334cc7d0bf622dd73b38be6939c6213b217106434ef04404ea19e91615972de428081e547b0cdacfe21d712ea9
+  checksum: 49d5c8d9cae427b6164ed2063cd5c39ee3bcbf1f766a82c8a43696fe768e64e2c7a65e3362665c71affac16de80c834469a897acdd52c5756d71669717a326b0
   languageName: node
   linkType: hard
 
@@ -2219,14 +2219,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^17.0.26":
-  version: 17.0.26
-  resolution: "@types/react@npm:17.0.26"
+"@types/react@npm:^17.0.27":
+  version: 17.0.27
+  resolution: "@types/react@npm:17.0.27"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 943fe7e912ea6d664910fb9391a96d8f31c985265fb768d448461123dd970080494b7987a9bd54ca664c8675cb09680c8763823ff18622222e302c8d121b7d31
+  checksum: 3a1147d963c16dc9bbea5afb20c4be94f2389cf4eca4c5fbe9b02f3406bd9957602c0459ea017c95f8c3d523221f572e8bd842f94654835776d4c2923357f9dc
   languageName: node
   linkType: hard
 
@@ -2301,7 +2301,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.28.3, @typescript-eslint/eslint-plugin@npm:^4.32.0":
+"@typescript-eslint/eslint-plugin@npm:^4.28.3":
   version: 4.32.0
   resolution: "@typescript-eslint/eslint-plugin@npm:4.32.0"
   dependencies:
@@ -2323,6 +2323,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/eslint-plugin@npm:^4.33.0":
+  version: 4.33.0
+  resolution: "@typescript-eslint/eslint-plugin@npm:4.33.0"
+  dependencies:
+    "@typescript-eslint/experimental-utils": 4.33.0
+    "@typescript-eslint/scope-manager": 4.33.0
+    debug: ^4.3.1
+    functional-red-black-tree: ^1.0.1
+    ignore: ^5.1.8
+    regexpp: ^3.1.0
+    semver: ^7.3.5
+    tsutils: ^3.21.0
+  peerDependencies:
+    "@typescript-eslint/parser": ^4.0.0
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: d74855d0a5ffe0b2f362ec02fcd9301d39a53fb4155b9bd0cb15a0a31d065143129ebf98df9d86af4b6f74de1d423a4c0d8c0095520844068117453afda5bc4f
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/experimental-utils@npm:4.32.0":
   version: 4.32.0
   resolution: "@typescript-eslint/experimental-utils@npm:4.32.0"
@@ -2339,7 +2361,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.20.0, @typescript-eslint/parser@npm:^4.28.3, @typescript-eslint/parser@npm:^4.32.0":
+"@typescript-eslint/experimental-utils@npm:4.33.0":
+  version: 4.33.0
+  resolution: "@typescript-eslint/experimental-utils@npm:4.33.0"
+  dependencies:
+    "@types/json-schema": ^7.0.7
+    "@typescript-eslint/scope-manager": 4.33.0
+    "@typescript-eslint/types": 4.33.0
+    "@typescript-eslint/typescript-estree": 4.33.0
+    eslint-scope: ^5.1.1
+    eslint-utils: ^3.0.0
+  peerDependencies:
+    eslint: "*"
+  checksum: f859800ada0884f92db6856f24efcb1d073ac9883ddc2b1aa9339f392215487895bed8447ebce3741e8141bb32e545244abef62b73193ba9a8a0527c523aabae
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^4.20.0, @typescript-eslint/parser@npm:^4.28.3":
   version: 4.32.0
   resolution: "@typescript-eslint/parser@npm:4.32.0"
   dependencies:
@@ -2356,6 +2394,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/parser@npm:^4.33.0":
+  version: 4.33.0
+  resolution: "@typescript-eslint/parser@npm:4.33.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": 4.33.0
+    "@typescript-eslint/types": 4.33.0
+    "@typescript-eslint/typescript-estree": 4.33.0
+    debug: ^4.3.1
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 102457eae1acd516211098fea081c8a2ed728522bbda7f5a557b6ef23d88970514f9a0f6285d53fca134d3d4d7d17822b5d5e12438d5918df4d1f89cc9e67d57
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/scope-manager@npm:4.32.0":
   version: 4.32.0
   resolution: "@typescript-eslint/scope-manager@npm:4.32.0"
@@ -2366,10 +2421,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/scope-manager@npm:4.33.0":
+  version: 4.33.0
+  resolution: "@typescript-eslint/scope-manager@npm:4.33.0"
+  dependencies:
+    "@typescript-eslint/types": 4.33.0
+    "@typescript-eslint/visitor-keys": 4.33.0
+  checksum: 9a25fb7ba7c725ea7227a24d315b0f6aacbad002e2549a049edf723c1d3615c22f5c301f0d7d615b377f2cdf2f3519d97e79af0c459de6ef8d2aaf0906dff13e
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/types@npm:4.32.0":
   version: 4.32.0
   resolution: "@typescript-eslint/types@npm:4.32.0"
   checksum: e93ce12ee3ee0fa1ac6f6e51f9aec8c4b7b603296dad2d5cb11790710de12fd7bf88fca0f8220e51f18e696aba8764e26ff960fa0cc1aef50055ee1e1e72c207
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/types@npm:4.33.0":
+  version: 4.33.0
+  resolution: "@typescript-eslint/types@npm:4.33.0"
+  checksum: 3baae1ca35872421b4eb60f5d3f3f32dc1d513f2ae0a67dee28c7d159fd7a43ed0d11a8a5a0f0c2d38507ffa036fc7c511cb0f18a5e8ac524b3ebde77390ec53
   languageName: node
   linkType: hard
 
@@ -2391,6 +2463,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@typescript-eslint/typescript-estree@npm:4.33.0":
+  version: 4.33.0
+  resolution: "@typescript-eslint/typescript-estree@npm:4.33.0"
+  dependencies:
+    "@typescript-eslint/types": 4.33.0
+    "@typescript-eslint/visitor-keys": 4.33.0
+    debug: ^4.3.1
+    globby: ^11.0.3
+    is-glob: ^4.0.1
+    semver: ^7.3.5
+    tsutils: ^3.21.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 2566984390c76bd95f43240057215c068c69769e406e27aba41e9f21fd300074d6772e4983fa58fe61e80eb5550af1548d2e31e80550d92ba1d051bb00fe6f5c
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/visitor-keys@npm:4.32.0":
   version: 4.32.0
   resolution: "@typescript-eslint/visitor-keys@npm:4.32.0"
@@ -2398,6 +2488,16 @@ __metadata:
     "@typescript-eslint/types": 4.32.0
     eslint-visitor-keys: ^2.0.0
   checksum: 233bf479b6373bae2e61976ed1f2d0fb5c365203984e1233024a2677da0958fb3b19753b67047e8c9a9f4cec7603d1027d73b1302fef0d49c5e92be012d3d92e
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/visitor-keys@npm:4.33.0":
+  version: 4.33.0
+  resolution: "@typescript-eslint/visitor-keys@npm:4.33.0"
+  dependencies:
+    "@typescript-eslint/types": 4.33.0
+    eslint-visitor-keys: ^2.0.0
+  checksum: 59953e474ad4610c1aa23b2b1a964445e2c6201521da6367752f37939d854352bbfced5c04ea539274065e012b1337ba3ffa49c2647a240a4e87155378ba9873
   languageName: node
   linkType: hard
 
