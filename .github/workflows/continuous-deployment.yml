@@ -50,6 +50,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Install Dependencies
         run: yarn --frozen-lockfile
       - name: Run ESLint
@@ -68,6 +69,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
+          registry-url: https://registry.npmjs.org/
       - name: Restore NextJS Cache
         uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # renovate: tag=v2.1.6
         with:
