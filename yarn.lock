@@ -1509,7 +1509,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.5.1
     eslint-plugin-react: ^7.27.1
     eslint-plugin-react-hooks: ^4.3.0
-    mdi-react: ^7.5.0
+    mdi-react: ^8.4.0
     next: ^11.1.2
     next-pwa: ^5.4.0
     next-seo: ^4.28.1
@@ -5624,12 +5624,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdi-react@npm:^7.5.0":
-  version: 7.5.0
-  resolution: "mdi-react@npm:7.5.0"
+"mdi-react@npm:^8.4.0":
+  version: 8.4.0
+  resolution: "mdi-react@npm:8.4.0"
   peerDependencies:
     react: ">=0.14.0"
-  checksum: 6c4014a79b06e90ed09f043260b77ab4a5b3a3c0263a3a839165795e634b297a29de9ac5bfdf24b9f76241646bb4d0016ce7e5cc87a197fcc11bce010d746536
+  checksum: 3de168559428b2f69874b7f54682e41e936fe12035b6a9a72105ea905596735523d6252ae92167e9dea45423775bf9d79ab77826a561967e7f80e40772ef0828
   languageName: node
   linkType: hard
 
