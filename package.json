@@ -3,6 +3,7 @@
 	"version": "2.0.0",
 	"description": "For hearth and home",
 	"author": "@favware",
+	"license": "MIT",
 	"homepage": "https://favware.tech",
 	"private": true,
 	"scripts": {
