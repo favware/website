@@ -11,7 +11,9 @@
 		"dev": "nuxt dev",
 		"generate": "nuxt generate",
 		"preview": "nuxt preview",
-		"format": "prettier --write --loglevel=warn \"{assets,components,composables,layouts,pages}/**/*.{js,ts,json,vue}\" \"app.vue\" \"nuxt.config.ts\""
+		"start": "node .output/server/index.mjs",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
 	},
 	"devDependencies": {
 		"@nuxtjs/tailwindcss": "^6.1.3",

@@ -4,11 +4,9 @@ const description = "For Hearth and Home! This is Favna's personal website.";
 
 export default defineNuxtConfig({
 	modules: ['@nuxtjs/tailwindcss'],
-	ssr: false,
 	typescript: {
 		shim: false
 	},
-	pages: true,
 	app: {
 		head: {
 			charset: 'utf-8',

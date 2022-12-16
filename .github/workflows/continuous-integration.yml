@@ -4,43 +4,41 @@ on:
   pull_request:
   push:
     branches-ignore:
-      - master
       - main
       - angular-legacy
+      - nextjs-legacy
 
 jobs:
-  Linting:
-    name: Linting
-    runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # renovate: tag=v2
-      - name: Use Node.js v16
-        uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c # renovate: tag=v2
-        with:
-          node-version: 16
-          cache: yarn
-          registry-url: https://registry.npmjs.org/
-      - name: Install Dependencies
-        run: yarn --frozen-lockfile
-      - name: Run ESLint
-        run: yarn lint --fix=false
-
   Build:
-    name: Compiling NextJS
+    name: Build Nuxt
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout Project
-        uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f # renovate: tag=v2
-      - name: Use Node.js v16
-        uses: actions/setup-node@270253e841af726300e85d718a5f606959b2903c # renovate: tag=v2
+        uses: actions/checkout@v3
+      - name: Use Node.js v18
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           cache: yarn
-          registry-url: https://registry.npmjs.org/
+          registry-url: https://registry.yarnpkg.com/
       - name: Install Dependencies
-        run: yarn --frozen-lockfile
-      - name: Build NextJS
+        run: yarn --immutable
+      - name: Build Nuxt
         run: yarn build
+
+  FormatCheck:
+    name: Prettier Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+      - name: Use Node.js v18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+          registry-url: https://registry.yarnpkg.com/
+      - name: Install Dependencies
+        run: yarn --immutable
+      - name: Prettier Check
+        run: yarn format:check
