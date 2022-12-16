@@ -27,15 +27,16 @@
 					at home where I found my first job after graduation.
 				</p>
 
-				<div class="flex flex-wrap justify-center">
-					<button-link href="mailto:support@favware.tech" text="Send an e-mail" class="ml-2" />
-					<button-link href="https://join.favware.tech" text="Join my Discord server" />
+				<div class="w-full mb-1 flex flex-wrap justify-center">
+					<button-link type="email" href="mailto:support@favware.tech" text="Send an e-mail" class="mb-2 lg:mb-0" />
+					<button-link type="discord" href="https://join.favware.tech" text="Join my Discord server" class="mb-2 lg:mb-0" />
+					<button-link type="github" href="https://redirect.favware.tech/github" text="Find me on GitHub" class="mb-2 lg:mb-0" />
 				</div>
-				<div class="flex flex-wrap justify-center mt-2">
-					<button-link href="https://github.com/kyranet" text="GitHub" />
-					<button-link href="https://twitter.com/kyranet_" text="Twitter" class="ml-2" />
-					<button-link href="https://twitter.com/kyranet_" text="Twitter" class="ml-2" />
-					<button-link href="https://redirect.favware.tech/github" text="Find me on GitHub" class="ml-2" />
+
+				<div class="w-full flex flex-wrap justify-center">
+					<button-link type="linkedin" href="https://redirect.favware.tech/linkedin" text="Visit my LinkedIn" class="mb-2 lg:mb-0" />
+					<button-link type="twitter" href="https://redirect.favware.tech/twitter" text="Follow me on Twitter" class="mb-2 lg:mb-0" />
+					<button-link type="facebook" href="https://redirect.favware.tech/facebook" text="Message on Facebook" class="mb-2 lg:mb-0" />
 				</div>
 			</div>
 		</div>

@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 		head: {
 			charset: 'utf-8',
 			viewport: 'width=device-width, initial-scale=1',
-			title: 'Favware | Home',
+			title: 'Favware',
 			htmlAttrs: { lang: 'en_GB' },
 			meta: [
 				{ name: 'description', content: description },
