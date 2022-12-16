@@ -8,4 +8,4 @@ This issue tracker is only for bug reports and enhancement suggestions. You won'
 
 **Further details:**
 
-- Priority this issue should have – please be realistic and elaborate if possible:
+-   Priority this issue should have – please be realistic and elaborate if possible:

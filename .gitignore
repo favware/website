@@ -10,15 +10,6 @@ package-lock.json
 .DS_Store
 Thumbs.db
 
-# production
-build/
-dist/
-.next/
-.tsbuildinfo
-sitemap.xml
-sw.js
-workbox*.js
-
 # Logs
 logs/
 coverage/
@@ -33,3 +24,11 @@ coverage/
 # IDE Settings
 .idea/
 .vs/
+
+# Nuxt files
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist

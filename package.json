@@ -1,74 +1,26 @@
 {
-  "name": "@favware/website",
-  "version": "1.0.0",
-  "description": "For hearth and home",
-  "author": "@favware",
-  "license": "MIT",
-  "homepage": "https://favware.tech",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/favware/website.git"
-  },
-  "bugs": {
-    "url": "https://github.com/favware/website/issues"
-  },
-  "engines": {
-    "node": ">=16"
-  },
-  "scripts": {
-    "dev": "next dev src",
-    "prebuild": "yarn build:sitemap",
-    "build": "next build src",
-    "start": "next start src",
-    "export": "next export src",
-    "lint": "next lint src --fix",
-    "clean": "node scripts/clean.mjs",
-    "build:sitemap": "node scripts/sitemapGenerator.mjs",
-    "format": "prettier --write --loglevel=error src/**/*.{js,jsx,ts,tsx}",
-    "update": "yarn upgrade-interactive --latest"
-  },
-  "dependencies": {
-    "@emotion/cache": "^11.6.0",
-    "@emotion/react": "^11.6.0",
-    "@emotion/server": "^11.4.0",
-    "@emotion/styled": "^11.6.0",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.1.1",
-    "@mui/material": "^5.1.1",
-    "@mui/styles": "^5.1.1",
-    "clsx": "^1.1.1",
-    "mdi-react": "^7.5.0",
-    "next": "^11.1.2",
-    "next-pwa": "^5.4.0",
-    "next-seo": "^4.28.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "devDependencies": {
-    "@next/eslint-plugin-next": "^11.1.2",
-    "@sapphire/eslint-config": "^4.2.0",
-    "@sapphire/prettier-config": "^1.3.0",
-    "@sapphire/ts-config": "^3.3.1",
-    "@types/node": "^16.11.9",
-    "@types/react": "^17.0.35",
-    "@types/react-dom": "17.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "eslint-config-next": "^11.1.2",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "nextjs-sitemap-generator": "^1.3.1",
-    "prettier": "^2.4.1",
-    "typescript": "^4.5.2"
-  },
-  "resolutions": {
-    "acorn": "^8.6.0",
-    "ansi-regex": "^5.0.1",
-    "minimist": "^1.2.6"
-  },
-  "packageManager": "yarn@3.2.0"
+	"name": "@favware/website",
+	"version": "2.0.0",
+	"description": "For hearth and home",
+	"author": "@favware",
+	"homepage": "https://favware.tech",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"format": "prettier --write --loglevel=warn \"{assets,components,composables,layouts,pages}/**/*.{js,ts,json,vue}\" \"app.vue\" \"nuxt.config.ts\""
+	},
+	"devDependencies": {
+		"@nuxtjs/tailwindcss": "^6.1.3",
+		"@sapphire/prettier-config": "^1.4.4",
+		"@sapphire/ts-config": "^3.3.4",
+		"nuxt": "3.0.0",
+		"prettier": "^2.8.1",
+		"typescript": "^4.9.4",
+		"vue-meta": "^2.4.0"
+	},
+	"prettier": "@sapphire/prettier-config",
+	"packageManager": "yarn@3.3.0"
 }
