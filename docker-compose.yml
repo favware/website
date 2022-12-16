@@ -5,6 +5,7 @@ services:
     image: ghcr.io/favware/website:latest
     build: ./
     restart: 'no'
+    tty: true
     ports:
       - '2114:2114'
     environment:

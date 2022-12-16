@@ -5,16 +5,12 @@
 
   <p>
 <h1> Official Favware Website </h1>
-<h3> NextJS Source files for <a href="https://favware.tech">https://favware.tech</a></h3>
+<h3> Nuxt Source files for <a href="https://favware.tech">https://favware.tech</a></h3>
   </p>
 
 </div>
 
 ---
-
-**Project Status**
-
-[![GitHub](https://img.shields.io/github/license/favware/website?logo=github&style=flat-square)](https://github.com/favware/website/blob/main/LICENSE.md)
 
 **Social Media and Donations**
 
@@ -26,19 +22,3 @@
 ### License
 
 Copyright © 2019, [Favware](https://github.com/favware).
-Released under the [MIT License](LICENSE.md).
-
-### Buy us a donut
-
-Favware projects are open source and always will be, even if there are no donations. That said, we also know there are people out there that may still want to donate just to show their appreciation so this is for you guys. Thanks in advance!
-
-You can contribute in a multitude of ways:
-
-- [PayPal](https://donate.favware.tech/paypal)
-- [Patreon](https://www.patreon.com/favna)
-- [Ko-Fi](https://ko-fi.com/favna)
-- [GitHub Sponsors Favware](https://github.com/sponsors/favware)
-- [GitHub Sponsors Favna](https://github.com/sponsors/Favna)
-- Bitcoin: `1E643TNif2MTh75rugepmXuq35Tck4TnE5`
-- Ethereum: `0xF653F666903cd8739030D2721bF01095896F5D6E`
-- LiteCoin: `LZHvBkaJqKJRa8N7Dyu41Jd1PDBAofCik6`

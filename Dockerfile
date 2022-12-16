@@ -1,8 +1,7 @@
-FROM node:16-alpine
+FROM node:18-alpine
 
 ENV NODE_ENV="production"
 ENV PORT=2114
-ENV CI=true
 
 WORKDIR /workspace
 
@@ -10,16 +9,14 @@ RUN apk add --no-cache dumb-init
 
 EXPOSE 2114
 
-COPY --chown=node:node package.json ./
-COPY --chown=node:node yarn.lock ./
-COPY --chown=node:node .yarnrc.yml .
-COPY --chown=node:node .yarn/ .yarn/
-COPY --chown=node:node src/ src/
+COPY --chown=node:node . .
 
-RUN yarn workspaces focus --all --production
+RUN yarn install --immutable
+
+RUN yarn build
 
 USER node
 
 ENTRYPOINT ["dumb-init", "--"]
 
-CMD [ "yarn", "run", "start", "-p", "2114" ]
+CMD [ "yarn", "run", "start"]
