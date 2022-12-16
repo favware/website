@@ -3,9 +3,12 @@ import 'nuxt';
 const description = "For Hearth and Home! This is Favna's personal website.";
 
 export default defineNuxtConfig({
-	modules: ['@nuxtjs/tailwindcss'],
+	modules: ['@nuxtjs/tailwindcss', '~/modules/sitemap'],
 	typescript: {
 		shim: false
+	},
+	sitemap: {
+		hostname: 'https://favware.tech'
 	},
 	app: {
 		head: {
