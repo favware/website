@@ -1,7 +1,7 @@
 <template>
 	<nuxt-link
 		:to="href"
-		target="_blank"
+		:target="type === 'email' ? undefined : '_blank'"
 		class="w-full mx-0 lg:w-3/12 lg:mr-12 text-white py-2 px-6 focus:outline-none rounded"
 		:class="types[type ?? 'none']"
 	>
