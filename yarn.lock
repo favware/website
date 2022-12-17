@@ -538,6 +538,7 @@ __metadata:
   resolution: "@favware/website@workspace:."
   dependencies:
     "@nuxtjs/tailwindcss": ^6.1.3
+    "@prettier/plugin-xml": ^2.2.0
     "@sapphire/prettier-config": ^1.4.4
     "@sapphire/ts-config": ^3.3.4
     nuxt: 3.0.0
@@ -879,6 +880,16 @@ __metadata:
     tailwindcss: ^3.2.0
     ufo: ^0.8.6
   checksum: 110669c27eb10ffbb20f1f419824ddd384a8943ec56d0b0fb75d31517d3f2e463c577af850336a083b4dae9e557cf08e653c6fc1b8a4993ec8fda370a7194a26
+  languageName: node
+  linkType: hard
+
+"@prettier/plugin-xml@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@prettier/plugin-xml@npm:2.2.0"
+  dependencies:
+    "@xml-tools/parser": ^1.0.11
+    prettier: ">=2.4.0"
+  checksum: 480fb67fe711463ab6b5678ce996486873b4d6440c31338af3f8dd5054c7ae9539dd81621637c85eed904727cfe17b7213e717d451df2fee56c8c50251f6bb69
   languageName: node
   linkType: hard
 
@@ -1324,6 +1335,15 @@ __metadata:
   peerDependencies:
     vue: ">=2.7 || >=3"
   checksum: e886142669713744f563f52ae84e92c5ffc586bf0447ac5cf98f68d928d0e3ec002d9accc25e3218f314e979d78907471251ff407cd5d7d21bed13643783d34a
+  languageName: node
+  linkType: hard
+
+"@xml-tools/parser@npm:^1.0.11":
+  version: 1.0.11
+  resolution: "@xml-tools/parser@npm:1.0.11"
+  dependencies:
+    chevrotain: 7.1.1
+  checksum: 79f32386ef935c1ba65d421e36b556fb14593c7b7e5ca99160ec8ec6dba912a00be6c32d0ab8bad35f82cb5640c05f1a8cfd1d227d563aed20ecc57d678ceab2
   languageName: node
   linkType: hard
 
@@ -1909,6 +1929,15 @@ __metadata:
   version: 0.7.0
   resolution: "chardet@npm:0.7.0"
   checksum: 6fd5da1f5d18ff5712c1e0aed41da200d7c51c28f11b36ee3c7b483f3696dabc08927fc6b227735eb8f0e1215c9a8abd8154637f3eff8cada5959df7f58b024d
+  languageName: node
+  linkType: hard
+
+"chevrotain@npm:7.1.1":
+  version: 7.1.1
+  resolution: "chevrotain@npm:7.1.1"
+  dependencies:
+    regexp-to-ast: 0.5.0
+  checksum: 3ba268b745b89674712930f5d5b212f0bae6218309a05e1f89301384a9a2e8482429c83b9c52f38e536c38bb1940a53c2c0e6149e15277ea6bc6a1307528474d
   languageName: node
   linkType: hard
 
@@ -5934,7 +5963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.7.1, prettier@npm:^2.8.1":
+"prettier@npm:>=2.4.0, prettier@npm:^2.7.1, prettier@npm:^2.8.1":
   version: 2.8.1
   resolution: "prettier@npm:2.8.1"
   bin:
@@ -6116,6 +6145,13 @@ __metadata:
   dependencies:
     redis-errors: ^1.0.0
   checksum: 89290ae530332f2ae37577647fa18208d10308a1a6ba750b9d9a093e7398f5e5253f19855b64c98757f7129cccce958e4af2573fdc33bad41405f87f1943459a
+  languageName: node
+  linkType: hard
+
+"regexp-to-ast@npm:0.5.0":
+  version: 0.5.0
+  resolution: "regexp-to-ast@npm:0.5.0"
+  checksum: 72e32f2a1217bb22398ac30867ddd43e16943b6b569dd4eb472de47494c7a39e34f47ee3e92ad4cbf92308f98997da366fe094a0e58eb6b93eab0ee956fff86d
   languageName: node
   linkType: hard
 
