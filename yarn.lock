@@ -540,7 +540,6 @@ __metadata:
     "@nuxtjs/tailwindcss": ^6.2.0
     "@prettier/plugin-xml": ^2.2.0
     "@sapphire/prettier-config": ^1.4.4
-    "@sapphire/ts-config": ^3.3.4
     nuxt: 3.0.0
     prettier: ^2.8.1
     typescript: ^4.9.4
@@ -1033,16 +1032,6 @@ __metadata:
   dependencies:
     prettier: ^2.7.1
   checksum: bf0f37de120b72b054da8b90ddf08c23210c8b01e42f66c4a6833d55ac78c02e3df7f9af6d35f2574e9c9f5c8b131625730a60bcac055b211789b52101a8921e
-  languageName: node
-  linkType: hard
-
-"@sapphire/ts-config@npm:^3.3.4":
-  version: 3.3.4
-  resolution: "@sapphire/ts-config@npm:3.3.4"
-  dependencies:
-    tslib: ^2.3.1
-    typescript: ^4.6.3
-  checksum: c26dee331e17dd1762caa499ca6f1d1ee22fe781a5486575ead625c399678fbf3b33cf963a4f48aad04df5d515a4b3d2f80a03272d2413894d96f799d5f5ca87
   languageName: node
   linkType: hard
 
@@ -6910,7 +6899,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.1.0, tslib@npm:^2.3.1":
+"tslib@npm:^2.1.0":
   version: 2.4.1
   resolution: "tslib@npm:2.4.1"
   checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
@@ -6955,7 +6944,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.6.3, typescript@npm:^4.9.4":
+"typescript@npm:^4.9.4":
   version: 4.9.4
   resolution: "typescript@npm:4.9.4"
   bin:
@@ -6965,7 +6954,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.6.3#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
   version: 4.9.4
   resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
   bin:
