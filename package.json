@@ -16,7 +16,7 @@
 		"format:check": "prettier --check ."
 	},
 	"devDependencies": {
-		"@nuxtjs/tailwindcss": "^6.6.4",
+		"@nuxtjs/tailwindcss": "^6.6.5",
 		"@prettier/plugin-xml": "^2.2.0",
 		"@sapphire/prettier-config": "^1.4.5",
 		"nuxt": "3.3.2",
