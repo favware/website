@@ -25,5 +25,5 @@
 		"vue-meta": "^2.4.0"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@3.5.0"
+	"packageManager": "yarn@3.5.1"
 }
