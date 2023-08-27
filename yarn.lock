@@ -723,7 +723,7 @@ __metadata:
   resolution: "@favware/website@workspace:."
   dependencies:
     "@nuxtjs/tailwindcss": ^6.8.0
-    "@prettier/plugin-xml": ^2.2.0
+    "@prettier/plugin-xml": ^3.2.0
     "@sapphire/prettier-config": ^1.4.5
     nuxt: 3.7.0
     prettier: ^2.8.8
@@ -1244,13 +1244,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prettier/plugin-xml@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@prettier/plugin-xml@npm:2.2.0"
+"@prettier/plugin-xml@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@prettier/plugin-xml@npm:3.2.0"
   dependencies:
     "@xml-tools/parser": ^1.0.11
-    prettier: ">=2.4.0"
-  checksum: 480fb67fe711463ab6b5678ce996486873b4d6440c31338af3f8dd5054c7ae9539dd81621637c85eed904727cfe17b7213e717d451df2fee56c8c50251f6bb69
+  peerDependencies:
+    prettier: ^3.0.0
+  checksum: 9345a6bc13007baa504e368e89cab1bc69dbcb622b127ecb5f9faa9e1a6cdf9736a3b8cd5563866dc8ddeb5f9273e59daef8ff13b31c008188ea61e77aa0cddb
   languageName: node
   linkType: hard
 
@@ -6164,7 +6165,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:>=2.4.0, prettier@npm:^2.8.2, prettier@npm:^2.8.8":
+"prettier@npm:^2.8.2, prettier@npm:^2.8.8":
   version: 2.8.8
   resolution: "prettier@npm:2.8.8"
   bin:
