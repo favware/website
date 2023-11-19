@@ -16,14 +16,14 @@
 		"format:check": "prettier --check ."
 	},
 	"devDependencies": {
-		"@nuxtjs/tailwindcss": "^6.9.4",
+		"@nuxtjs/tailwindcss": "^6.9.5",
 		"@prettier/plugin-xml": "^3.2.2",
 		"@sapphire/prettier-config": "^2.0.0",
 		"nuxt": "3.8.1",
-		"prettier": "^3.0.3",
+		"prettier": "^3.1.0",
 		"typescript": "^5.2.2",
 		"vue-meta": "^2.4.0"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.0.1"
+	"packageManager": "yarn@4.0.2"
 }
