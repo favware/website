@@ -46,7 +46,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.23.0, @babel/core@npm:^7.23.3, @babel/core@npm:^7.23.7":
+"@babel/core@npm:^7.22.9, @babel/core@npm:^7.23.0, @babel/core@npm:^7.23.3":
   version: 7.23.7
   resolution: "@babel/core@npm:7.23.7"
   dependencies:
@@ -371,7 +371,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/standalone@npm:^7.23.8":
+"@babel/standalone@npm:^7.22.9":
   version: 7.23.8
   resolution: "@babel/standalone@npm:7.23.8"
   checksum: 5134d9545c415911d49e40c5e022c18fedbdbd9859671ce679f953733cd63b7b003688f27060c0fb290cbd1fb2b312ac8ce83797b8a7258df126f0be91f586ee
@@ -7688,20 +7688,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"untyped@npm:^1.4.0":
-  version: 1.4.1
-  resolution: "untyped@npm:1.4.1"
+"untyped@npm:1.4.0":
+  version: 1.4.0
+  resolution: "untyped@npm:1.4.0"
   dependencies:
-    "@babel/core": "npm:^7.23.7"
-    "@babel/standalone": "npm:^7.23.8"
-    "@babel/types": "npm:^7.23.6"
-    defu: "npm:^6.1.4"
-    jiti: "npm:^1.21.0"
+    "@babel/core": "npm:^7.22.9"
+    "@babel/standalone": "npm:^7.22.9"
+    "@babel/types": "npm:^7.22.5"
+    defu: "npm:^6.1.2"
+    jiti: "npm:^1.19.1"
     mri: "npm:^1.2.0"
-    scule: "npm:^1.2.0"
+    scule: "npm:^1.0.0"
   bin:
     untyped: dist/cli.mjs
-  checksum: 1631cf9a6947558ef2580572d4a0e063338c9e323ef62d4aed59712604377d7fe9be489e70cb19060b3b505b60b6fb66e998f7d7dc90cb2fc09a1e1bf7dcd8bb
+  checksum: 7e87c34672d42afc438a79b759c5ed0d3b12ecc5aaaf187318f9b890ccab140caf44a8889229ac20079cb48eacc3be75646bce892d9ce4f2375999c827ecb0d5
   languageName: node
   linkType: hard
 

@@ -24,6 +24,9 @@
 		"typescript": "^5.3.3",
 		"vue-meta": "^2.4.0"
 	},
+	"resolutions": {
+		"untyped": "1.4.0"
+	},
 	"prettier": "@sapphire/prettier-config",
 	"packageManager": "yarn@4.0.2"
 }
