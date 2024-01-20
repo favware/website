@@ -25,7 +25,8 @@
 		"vue-meta": "^2.4.0"
 	},
 	"resolutions": {
-		"untyped": "1.4.0"
+		"untyped": "1.4.0",
+		"vite": "5.0.12"
 	},
 	"prettier": "@sapphire/prettier-config",
 	"packageManager": "yarn@4.0.2"
