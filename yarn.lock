@@ -46,7 +46,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.22.9, @babel/core@npm:^7.23.0, @babel/core@npm:^7.23.3":
+"@babel/core@npm:^7.23.0, @babel/core@npm:^7.23.3, @babel/core@npm:^7.23.7":
   version: 7.23.7
   resolution: "@babel/core@npm:7.23.7"
   dependencies:
@@ -371,7 +371,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/standalone@npm:^7.22.9":
+"@babel/standalone@npm:^7.23.8":
   version: 7.23.8
   resolution: "@babel/standalone@npm:7.23.8"
   checksum: 5134d9545c415911d49e40c5e022c18fedbdbd9859671ce679f953733cd63b7b003688f27060c0fb290cbd1fb2b312ac8ce83797b8a7258df126f0be91f586ee
@@ -634,7 +634,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@favware/website@workspace:."
   dependencies:
-    "@nuxtjs/tailwindcss": "npm:^6.10.4"
+    "@nuxtjs/tailwindcss": "npm:^6.11.0"
     "@prettier/plugin-xml": "npm:^3.2.2"
     "@sapphire/prettier-config": "npm:^2.0.0"
     nuxt: "npm:3.9.3"
@@ -986,7 +986,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.9.3, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.1":
+"@nuxt/kit@npm:3.9.3, @nuxt/kit@npm:^3.8.2, @nuxt/kit@npm:^3.9.1, @nuxt/kit@npm:^3.9.3":
   version: 3.9.3
   resolution: "@nuxt/kit@npm:3.9.3"
   dependencies:
@@ -1108,12 +1108,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/tailwindcss@npm:^6.10.4":
-  version: 6.10.4
-  resolution: "@nuxtjs/tailwindcss@npm:6.10.4"
+"@nuxtjs/tailwindcss@npm:^6.11.0":
+  version: 6.11.0
+  resolution: "@nuxtjs/tailwindcss@npm:6.11.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.9.1"
-    autoprefixer: "npm:^10.4.16"
+    "@nuxt/kit": "npm:^3.9.3"
+    autoprefixer: "npm:^10.4.17"
     chokidar: "npm:^3.5.3"
     clear-module: "npm:^4.1.2"
     colorette: "npm:^2.0.20"
@@ -1121,14 +1121,14 @@ __metadata:
     defu: "npm:^6.1.4"
     h3: "npm:^1.10.0"
     micromatch: "npm:^4.0.5"
-    pathe: "npm:^1.1.1"
+    pathe: "npm:^1.1.2"
     postcss: "npm:^8.4.33"
     postcss-custom-properties: "npm:^13.3.4"
     postcss-nesting: "npm:^12.0.2"
     tailwind-config-viewer: "npm:^1.7.3"
     tailwindcss: "npm:~3.4.1"
     ufo: "npm:^1.3.2"
-  checksum: 5e69d1309ce32f03c078cbdc0ab829093509ff18da8ad2b668240fac6c33b58d9091811bc30b767f929b8ef4c9aa22862c39dcdc3edb542073bc97155e13fdf3
+  checksum: 650b66bec1b0d0f77966117c2a57b285ed4ea9f62d90fd72253a57df34f71b258dab56656da8b6ee2c04de3998b2af8fd1f81bd43d5322ab7a01496a0cc778ad
   languageName: node
   linkType: hard
 
@@ -2190,7 +2190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.16":
+"autoprefixer@npm:^10.4.16, autoprefixer@npm:^10.4.17":
   version: 10.4.17
   resolution: "autoprefixer@npm:10.4.17"
   dependencies:
@@ -7688,20 +7688,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"untyped@npm:1.4.0":
-  version: 1.4.0
-  resolution: "untyped@npm:1.4.0"
+"untyped@npm:1.4.2":
+  version: 1.4.2
+  resolution: "untyped@npm:1.4.2"
   dependencies:
-    "@babel/core": "npm:^7.22.9"
-    "@babel/standalone": "npm:^7.22.9"
-    "@babel/types": "npm:^7.22.5"
-    defu: "npm:^6.1.2"
-    jiti: "npm:^1.19.1"
+    "@babel/core": "npm:^7.23.7"
+    "@babel/standalone": "npm:^7.23.8"
+    "@babel/types": "npm:^7.23.6"
+    defu: "npm:^6.1.4"
+    jiti: "npm:^1.21.0"
     mri: "npm:^1.2.0"
-    scule: "npm:^1.0.0"
+    scule: "npm:^1.2.0"
   bin:
     untyped: dist/cli.mjs
-  checksum: 7e87c34672d42afc438a79b759c5ed0d3b12ecc5aaaf187318f9b890ccab140caf44a8889229ac20079cb48eacc3be75646bce892d9ce4f2375999c827ecb0d5
+  checksum: f7054b7e3f1645dd3e702049ae8813a64e41086fc52fa04f8d7580bdd9a9438f9e86249b252587f085a78f576a0f1ce8bddb039757c9d3096fe73e7389973dd0
   languageName: node
   linkType: hard
 
