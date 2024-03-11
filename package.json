@@ -21,13 +21,13 @@
 		"@sapphire/prettier-config": "^2.0.0",
 		"nuxt": "3.10.3",
 		"prettier": "^3.2.5",
-		"typescript": "^5.3.3",
+		"typescript": "^5.4.2",
 		"vue-meta": "^2.4.0"
 	},
 	"resolutions": {
 		"untyped": "1.4.2",
-		"vite": "5.1.4"
+		"vite": "5.1.5"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.1.0"
+	"packageManager": "yarn@4.1.1"
 }
