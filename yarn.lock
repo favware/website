@@ -653,7 +653,7 @@ __metadata:
   resolution: "@favware/website@workspace:."
   dependencies:
     "@nuxtjs/tailwindcss": "npm:^6.11.4"
-    "@prettier/plugin-xml": "npm:^3.3.1"
+    "@prettier/plugin-xml": "npm:^3.4.1"
     "@sapphire/prettier-config": "npm:^2.0.0"
     nuxt: "npm:3.11.1"
     prettier: "npm:^3.2.5"
@@ -1323,14 +1323,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@prettier/plugin-xml@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "@prettier/plugin-xml@npm:3.3.1"
+"@prettier/plugin-xml@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "@prettier/plugin-xml@npm:3.4.1"
   dependencies:
     "@xml-tools/parser": "npm:^1.0.11"
   peerDependencies:
     prettier: ^3.0.0
-  checksum: 10/73eff46fd0bfd9f81a0bbee4945d20d906512221455ed3055d604f4780d446fa1a83576ef8a890398e8043a6123ae31e8b1178b2fe1e7d4f1b77e37de71eee47
+  checksum: 10/3b90eb7e04747be40b7755003e502ec821e2349678fdc8b46ff58ebfa2ba86399e29545126a3df5e53e9ef450956ecd8ec66bb3a61c9e0ed47a05053b0ad8c18
   languageName: node
   linkType: hard
 
@@ -6351,7 +6351,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.23, postcss@npm:^8.4.33, postcss@npm:^8.4.35, postcss@npm:^8.4.36":
+"postcss@npm:^8.4.23, postcss@npm:^8.4.33, postcss@npm:^8.4.35, postcss@npm:^8.4.36, postcss@npm:^8.4.38":
   version: 8.4.38
   resolution: "postcss@npm:8.4.38"
   dependencies:
@@ -7983,13 +7983,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:5.2.4":
-  version: 5.2.4
-  resolution: "vite@npm:5.2.4"
+"vite@npm:5.2.7":
+  version: 5.2.7
+  resolution: "vite@npm:5.2.7"
   dependencies:
     esbuild: "npm:^0.20.1"
     fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.36"
+    postcss: "npm:^8.4.38"
     rollup: "npm:^4.13.0"
   peerDependencies:
     "@types/node": ^18.0.0 || >=20.0.0
@@ -8019,7 +8019,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/ed3d4fa2023642dd578e90eb02876e01729fda0af196304bb1c3a7f037b457f1a505bfa36c10f28d0466945b9da7d7972219716554d43ff3c025f26ed3d89e11
+  checksum: 10/a00173446c8392069a70a92be78b060f7e5895f28c229eb25198953daa55c16ffbddcd4e8f015f220b2b1113e12d30e7a892221de34be336b222a12cddbb78a4
   languageName: node
   linkType: hard
 
