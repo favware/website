@@ -21,7 +21,7 @@
 		"@sapphire/prettier-config": "^2.0.0",
 		"nuxt": "3.11.2",
 		"prettier": "^3.2.5",
-		"typescript": "^5.4.4",
+		"typescript": "^5.4.5",
 		"vue-meta": "^2.4.0"
 	},
 	"resolutions": {
