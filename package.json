@@ -16,7 +16,7 @@
 		"format:check": "prettier --check ."
 	},
 	"devDependencies": {
-		"@nuxtjs/tailwindcss": "^6.11.4",
+		"@nuxtjs/tailwindcss": "^6.12.0",
 		"@prettier/plugin-xml": "^3.4.1",
 		"@sapphire/prettier-config": "^2.0.0",
 		"nuxt": "3.11.2",
@@ -26,7 +26,7 @@
 	},
 	"resolutions": {
 		"untyped": "1.4.2",
-		"vite": "5.2.8"
+		"vite": "5.2.10"
 	},
 	"prettier": "@sapphire/prettier-config",
 	"packageManager": "yarn@4.1.1"
