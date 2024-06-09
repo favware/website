@@ -20,13 +20,13 @@
 		"@prettier/plugin-xml": "^3.4.1",
 		"@sapphire/prettier-config": "^2.0.0",
 		"nuxt": "3.11.2",
-		"prettier": "^3.3.0",
+		"prettier": "^3.3.1",
 		"typescript": "^5.4.5",
 		"vue-meta": "^2.4.0"
 	},
 	"resolutions": {
 		"untyped": "1.4.2",
-		"vite": "5.2.12"
+		"vite": "5.2.13"
 	},
 	"prettier": "@sapphire/prettier-config",
 	"packageManager": "yarn@4.2.2"
