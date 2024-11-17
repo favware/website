@@ -26,7 +26,7 @@
 	},
 	"resolutions": {
 		"untyped": "1.5.1",
-		"vite": "5.4.10"
+		"vite": "5.4.11"
 	},
 	"prettier": "@sapphire/prettier-config",
 	"packageManager": "yarn@4.5.1"
