@@ -19,7 +19,7 @@
 		"@nuxtjs/tailwindcss": "^6.12.2",
 		"@prettier/plugin-xml": "^3.4.1",
 		"@sapphire/prettier-config": "^2.0.0",
-		"nuxt": "3.14.159",
+		"nuxt": "3.14.1592",
 		"prettier": "^3.3.3",
 		"typescript": "^5.5.2",
 		"vue-meta": "^2.4.0"
@@ -29,5 +29,5 @@
 		"vite": "5.4.11"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.5.1"
+	"packageManager": "yarn@4.5.2"
 }
