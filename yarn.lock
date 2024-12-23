@@ -47,7 +47,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.23.0, @babel/core@npm:^7.25.7, @babel/core@npm:^7.26.0":
+"@babel/core@npm:^7.23.0, @babel/core@npm:^7.26.0":
   version: 7.26.0
   resolution: "@babel/core@npm:7.26.0"
   dependencies:
@@ -319,10 +319,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/standalone@npm:^7.25.7":
-  version: 7.25.8
-  resolution: "@babel/standalone@npm:7.25.8"
-  checksum: 10/1012f3ba1b706c0298127c2a1f8868cd0660b8cce2b06e0cb58eed8baa3bbb652b9b9e3cdfebf38cec770708cd5ac24c3954147047b66880665d9ee48561bed3
+"@babel/standalone@npm:^7.26.4":
+  version: 7.26.4
+  resolution: "@babel/standalone@npm:7.26.4"
+  checksum: 10/3ff49cef76d4906a37fe8b4911a46b79c6351ebfe4c280f4762ea8c62a7a2d08fb19a3a283ae1155f8d0cec256b9f3112cbf6e603bf7cba5c91464852b14e929
   languageName: node
   linkType: hard
 
@@ -352,13 +352,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/types@npm:^7.25.0, @babel/types@npm:^7.25.4, @babel/types@npm:^7.25.6, @babel/types@npm:^7.25.7, @babel/types@npm:^7.25.9, @babel/types@npm:^7.26.0":
+"@babel/types@npm:^7.25.0, @babel/types@npm:^7.25.4, @babel/types@npm:^7.25.6, @babel/types@npm:^7.25.9, @babel/types@npm:^7.26.0":
   version: 7.26.0
   resolution: "@babel/types@npm:7.26.0"
   dependencies:
     "@babel/helper-string-parser": "npm:^7.25.9"
     "@babel/helper-validator-identifier": "npm:^7.25.9"
   checksum: 10/40780741ecec886ed9edae234b5eb4976968cc70d72b4e5a40d55f83ff2cc457de20f9b0f4fe9d858350e43dab0ea496e7ef62e2b2f08df699481a76df02cd6e
+  languageName: node
+  linkType: hard
+
+"@babel/types@npm:^7.26.3":
+  version: 7.26.3
+  resolution: "@babel/types@npm:7.26.3"
+  dependencies:
+    "@babel/helper-string-parser": "npm:^7.25.9"
+    "@babel/helper-validator-identifier": "npm:^7.25.9"
+  checksum: 10/c31d0549630a89abfa11410bf82a318b0c87aa846fbf5f9905e47ba5e2aa44f41cc746442f105d622c519e4dc532d35a8d8080460ff4692f9fc7485fbf3a00eb
   languageName: node
   linkType: hard
 
@@ -3223,7 +3233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.24.0":
+"esbuild@npm:0.24.0, esbuild@npm:^0.24.0":
   version: 0.24.0
   resolution: "esbuild@npm:0.24.0"
   dependencies:
@@ -4342,12 +4352,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jiti@npm:^2.1.2, jiti@npm:^2.3.0, jiti@npm:^2.3.1, jiti@npm:^2.4.0":
+"jiti@npm:^2.1.2, jiti@npm:^2.3.0, jiti@npm:^2.4.0":
   version: 2.4.0
   resolution: "jiti@npm:2.4.0"
   bin:
     jiti: lib/jiti-cli.mjs
   checksum: 10/10aa999a4f9bccc82b1dab9ebaf4484a8770450883c1bf7fafc07f8fca1e417fd8e7731e651337d1060c9e2ff3f97362dcdfd27e86d1f385db97f4adf7b5a21d
+  languageName: node
+  linkType: hard
+
+"jiti@npm:^2.4.1":
+  version: 2.4.2
+  resolution: "jiti@npm:2.4.2"
+  bin:
+    jiti: lib/jiti-cli.mjs
+  checksum: 10/e2b07eb2e3fbb245e29ad288dddecab31804967fc84d5e01d39858997d2743b5e248946defcecf99272275a00284ecaf7ec88b8c841331324f0c946d8274414b
   languageName: node
   linkType: hard
 
@@ -4455,6 +4474,13 @@ __metadata:
   version: 1.1.0
   resolution: "knitwork@npm:1.1.0"
   checksum: 10/f4258d7be47161ff084939b986e2b5023c7aca43ef605b98a0f37a2fed435418d220ac06e7a9ef3688cda665dd7942fdf14b6275261ce7efd662ec99a65cb0c2
+  languageName: node
+  linkType: hard
+
+"knitwork@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "knitwork@npm:1.2.0"
+  checksum: 10/752af916f0f362b92700bf91b6bd7d33012bc15b933cd0b81189f2548c511c795f6d30d155e179a92b1d04ffc22946f2cdbcf079a2284617318512f3b0acb932
   languageName: node
   linkType: hard
 
@@ -7472,20 +7498,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"untyped@npm:1.5.1":
-  version: 1.5.1
-  resolution: "untyped@npm:1.5.1"
+"untyped@npm:1.5.2":
+  version: 1.5.2
+  resolution: "untyped@npm:1.5.2"
   dependencies:
-    "@babel/core": "npm:^7.25.7"
-    "@babel/standalone": "npm:^7.25.7"
-    "@babel/types": "npm:^7.25.7"
+    "@babel/core": "npm:^7.26.0"
+    "@babel/standalone": "npm:^7.26.4"
+    "@babel/types": "npm:^7.26.3"
+    citty: "npm:^0.1.6"
     defu: "npm:^6.1.4"
-    jiti: "npm:^2.3.1"
-    mri: "npm:^1.2.0"
+    jiti: "npm:^2.4.1"
+    knitwork: "npm:^1.2.0"
     scule: "npm:^1.3.0"
   bin:
     untyped: dist/cli.mjs
-  checksum: 10/dd1c74f4644c9a8f79a2bd66e6675780c07da80e7c9898c0156fe261f2cb6cc2743b99e3dc519b4461c20e0e1b277f15636a8a87dc02ec4e47823f3ac5dcc490
+  checksum: 10/2ce48a5d45e73cc9fd543759f5205cbe8e5fa014effbdf1ec35e02bab90edb05aef9e9e03414da774fe2cce94ebf7e9711174a1e0f170fe16dbb4f1c92ca5bd6
   languageName: node
   linkType: hard
 
@@ -7669,11 +7696,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:6.0.3":
-  version: 6.0.3
-  resolution: "vite@npm:6.0.3"
+"vite@npm:6.0.5":
+  version: 6.0.5
+  resolution: "vite@npm:6.0.5"
   dependencies:
-    esbuild: "npm:^0.24.0"
+    esbuild: "npm:0.24.0"
     fsevents: "npm:~2.3.3"
     postcss: "npm:^8.4.49"
     rollup: "npm:^4.23.0"
@@ -7717,7 +7744,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/eca0949b8cbc887e78977515d8fc22eaa2d03425d60a0a422f2db1da9d26bd1b431b2815a273c798e8e3fe176a99e105c3d87b0ba615ca19b8bf19e0334d807a
+  checksum: 10/582bc53c14ae8c8dcb6887a1a24fb554ad6f19446ae0f9df18a47e7ab8787a08687e94a2f4c8636001233207640f91d081e31b00cc3ef9d90908a4bae26410b4
   languageName: node
   linkType: hard
 
