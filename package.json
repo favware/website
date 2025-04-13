@@ -29,5 +29,5 @@
 		"vite": "6.2.6"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@4.8.1"
+	"packageManager": "yarn@4.9.0"
 }
