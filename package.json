@@ -19,7 +19,7 @@
 		"@nuxtjs/tailwindcss": "^6.14.0",
 		"@prettier/plugin-xml": "^3.4.1",
 		"@sapphire/prettier-config": "^2.0.0",
-		"nuxt": "3.17.2",
+		"nuxt": "3.17.4",
 		"prettier": "^3.5.3",
 		"typescript": "^5.5.2",
 		"vue-meta": "^2.4.0"
